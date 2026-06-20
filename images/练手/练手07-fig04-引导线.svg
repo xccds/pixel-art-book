@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .legend-label { font-size: 11px; fill: #333; }
+    .legend-desc { font-size: 9px; fill: #666; }
+    .frame { fill: none; stroke: #333; stroke-width: 2; }
+    .road { stroke: #3498DB; stroke-width: 2; stroke-dasharray: 8,4; fill: none; }
+    .railing { stroke: #E67E22; stroke-width: 2; stroke-dasharray: 4,3; fill: none; }
+    .light { stroke: #F1C40F; stroke-width: 2; stroke-dasharray: 3,5; fill: none; }
+    .bg { fill: #F8F9FA; }
+  </style>
+
+  <defs>
+    <marker id="arrow-road" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0,0 7,2.5 0,5" fill="#3498DB"/>
+    </marker>
+    <marker id="arrow-rail" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0,0 7,2.5 0,5" fill="#E67E22"/>
+    </marker>
+    <marker id="arrow-light" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0,0 7,2.5 0,5" fill="#F1C40F"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手07.4  引导线——设计观众的眼睛走向</text>
+
+  <!-- Scene frame -->
+  <rect x="40" y="50" width="540" height="380" class="frame" rx="2"/>
+
+  <!-- Simple background elements: ground, sky line -->
+  <rect x="40" y="280" width="540" height="150" fill="#EFEFEF"/>
+  <line x1="40" y1="280" x2="580" y2="280" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Mountains in background -->
+  <polygon points="100,280 180,200 260,280" fill="#DDD" stroke="#CCC" stroke-width="0.5"/>
+  <polygon points="220,280 320,180 420,280" fill="#D8D8D8" stroke="#CCC" stroke-width="0.5"/>
+  <polygon points="380,280 480,210 540,280" fill="#DDD" stroke="#CCC" stroke-width="0.5"/>
+
+  <!-- Castle in distance (focal destination for road) -->
+  <g transform="translate(260, 195)">
+    <rect x="-18" y="-30" width="36" height="30" fill="#DDD" stroke="#999" stroke-width="1"/>
+    <rect x="-18" y="-28" width="12" height="10" fill="#EEE" stroke="#999" stroke-width="0.5"/>
+    <rect x="6" y="-28" width="12" height="10" fill="#EEE" stroke="#999" stroke-width="0.5"/>
+    <polygon points="-20,-30 0,-50 20,-30" fill="#DDD" stroke="#999" stroke-width="1"/>
+    <!-- Flag -->
+    <line x1="0" y1="-50" x2="0" y2="-60" stroke="#999" stroke-width="0.8"/>
+    <polygon points="0,-60 12,-57 0,-54" fill="#E74C3C"/>
+  </g>
+  <text x="260" y="188" class="subtitle" fill="#3498DB" text-anchor="middle">焦点</text>
+
+  <!-- Road: blue leading line from bottom-left to castle -->
+  <path d="M130 430 Q 160 380, 190 340 Q 220 300, 260 240" class="road" marker-end="url(#arrow-road)"/>
+  <text x="140" y="388" class="subtitle" fill="#3498DB" transform="rotate(-50, 140, 388)">道路→</text>
+
+  <!-- Railing: orange leading line from bottom-right to center -->
+  <!-- A simple gate/railing structure on the right side pointing toward center -->
+  <path d="M510 430 Q 460 380, 400 340" class="railing" marker-end="url(#arrow-rail)"/>
+  <!-- Fence posts along the railing -->
+  <rect x="500" y="415" width="3" height="12" fill="#999"/>
+  <rect x="475" y="403" width="3" height="12" fill="#999"/>
+  <rect x="450" y="388" width="3" height="12" fill="#999"/>
+  <rect x="425" y="368" width="3" height="12" fill="#999"/>
+  <text x="450" y="376" class="subtitle" fill="#E67E22" transform="rotate(-40, 450, 376)">栏杆→</text>
+
+  <!-- Center character (what both lines point to) -->
+  <g transform="translate(400, 295)">
+    <circle cx="0" cy="-14" r="7" fill="none" stroke="#E74C3C" stroke-width="1.5"/>
+    <line x1="0" y1="-7" x2="0" y2="6" stroke="#E74C3C" stroke-width="1.5"/>
+    <line x1="0" y1="-1" x2="-8" y2="-10" stroke="#E74C3C" stroke-width="1.2"/>
+    <line x1="0" y1="-1" x2="8" y2="-10" stroke="#E74C3C" stroke-width="1.2"/>
+    <line x1="0" y1="6" x2="-6" y2="16" stroke="#E74C3C" stroke-width="1.2"/>
+    <line x1="0" y1="6" x2="6" y2="16" stroke="#E74C3C" stroke-width="1.2"/>
+  </g>
+  <text x="400" y="315" class="subtitle" fill="#E74C3C" text-anchor="middle">角色</text>
+
+  <!-- Light: yellow diagonal beam from top-left window to treasure at bottom -->
+  <g transform="translate(100, 130)">
+    <rect x="0" y="0" width="40" height="40" fill="#F8F9FA" stroke="#999" stroke-width="1"/>
+    <line x1="20" y1="0" x2="20" y2="40" stroke="#999" stroke-width="1"/>
+    <line x1="0" y1="20" x2="40" y2="20" stroke="#999" stroke-width="1"/>
+    <!-- Window pane -->
+    <rect x="2" y="2" width="16" height="16" fill="#F1C40F" opacity="0.3"/>
+  </g>
+  <text x="120" y="115" class="subtitle" fill="#F1C40F" text-anchor="middle">窗户</text>
+
+  <!-- Light beam from window to treasure -->
+  <path d="M140 150 L 200 280 L 220 270 Z" fill="#F1C40F" opacity="0.08"/>
+  <path d="M140 150 L 210 275" class="light" marker-end="url(#arrow-light)"/>
+  <text x="168" y="216" class="subtitle" fill="#F1C40F" transform="rotate(56, 168, 216)">光线→</text>
+
+  <!-- Treasure chest at bottom, under the light -->
+  <g transform="translate(200, 360)">
+    <rect x="-12" y="-10" width="24" height="16" fill="none" stroke="#E67E22" stroke-width="1.2"/>
+    <line x1="-12" y1="-2" x2="12" y2="-2" stroke="#E67E22" stroke-width="0.8"/>
+    <rect x="-3" y="-4" width="6" height="4" fill="none" stroke="#E67E22" stroke-width="0.8"/>
+  </g>
+  <text x="200" y="388" class="subtitle" fill="#E67E22" text-anchor="middle">宝箱</text>
+
+  <!-- Legend box -->
+  <g transform="translate(600, 60)">
+    <rect x="0" y="0" width="185" height="130" fill="#FAFAFA" stroke="#ddd" stroke-width="1" rx="4"/>
+    <text x="92" y="18" class="title" text-anchor="middle" font-size="13">图例</text>
+
+    <line x1="15" y1="40" x2="55" y2="40" stroke="#3498DB" stroke-width="2" stroke-dasharray="8,4"/>
+    <text x="65" y="44" class="legend-label">道路</text>
+    <text x="65" y="56" class="legend-desc">指向远景城堡</text>
+
+    <line x1="15" y1="75" x2="55" y2="75" stroke="#E67E22" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="65" y="79" class="legend-label">栏杆</text>
+    <text x="65" y="91" class="legend-desc">指向画面中心的角色</text>
+
+    <line x1="15" y1="110" x2="55" y2="110" stroke="#F1C40F" stroke-width="2" stroke-dasharray="3,5"/>
+    <text x="65" y="114" class="legend-label">光线</text>
+    <text x="65" y="126" class="legend-desc">从窗户指向宝箱</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="455" class="subtitle" text-anchor="middle">程序员类比：引导线 ≈ 页面上的 &lt;a href="#focal-point"&gt; 锚点链接——告诉眼睛"从这里往那里看"</text>
+  <text x="400" y="485" class="subtitle" text-anchor="middle">图 练手07.4：三条不同来源的引导线（道路、栏杆、光线）将观众视线导向不同焦点。就像页面上有多条 hyperlink 指向不同锚点。</text>
+</svg>

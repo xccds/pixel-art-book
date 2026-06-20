@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .genre-title { font-size: 14px; font-weight: bold; fill: #333; }
+    .genre-desc { font-size: 10px; fill: #666; }
+    .frame { fill: none; stroke: #333; stroke-width: 2; }
+    .arrow-h { stroke: #E74C3C; stroke-width: 1.8; fill: none; }
+    .arrow-depth { stroke: #3498DB; stroke-width: 1.8; fill: none; }
+    .focus-dot { fill: #E74C3C; }
+    .tag { font-size: 9px; fill: #E74C3C; }
+    .tag-blue { font-size: 9px; fill: #3498DB; }
+  </style>
+
+  <defs>
+    <marker id="arrowred2" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0,0 7,2.5 0,5" fill="#E74C3C"/>
+    </marker>
+    <marker id="arrowblue2" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0,0 7,2.5 0,5" fill="#3498DB"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手07.5  三种游戏类型的构图策略差异</text>
+
+  <!-- ====== Panel 1: Platformer ====== -->
+  <g transform="translate(30, 55)">
+    <text x="120" y="-5" class="genre-title" text-anchor="middle">平台跳跃</text>
+    <text x="120" y="10" class="genre-desc" text-anchor="middle">横向视线流，从左上到右下</text>
+
+    <rect x="0" y="20" width="240" height="160" class="frame" rx="2"/>
+
+    <!-- Ground platforms -->
+    <rect x="20" y="150" width="90" height="10" fill="#8E8E8E"/>
+    <rect x="130" y="140" width="90" height="10" fill="#8E8E8E"/>
+    <rect x="80" y="110" width="50" height="8" fill="#9E9E9E"/>
+    <rect x="20" y="80" width="60" height="8" fill="#9E9E9E"/>
+
+    <!-- Player character on a platform -->
+    <circle cx="150" cy="126" r="8" fill="none" stroke="#E74C3C" stroke-width="1.5"/>
+    <text x="150" y="136" class="tag" text-anchor="middle">玩家</text>
+
+    <!-- Enemy / goal on far right -->
+    <circle cx="205" cy="66" r="6" fill="#DDD" stroke="#E67E22" stroke-width="1"/>
+    <text x="205" y="58" class="tag" text-anchor="middle" fill="#E67E22">目标</text>
+
+    <!-- Coins / collectibles along the Z path -->
+    <circle cx="50" cy="135" r="3" fill="#F1C40F"/>
+    <circle cx="75" cy="120" r="3" fill="#F1C40F"/>
+    <circle cx="105" cy="100" r="3" fill="#F1C40F"/>
+    <circle cx="170" cy="110" r="3" fill="#F1C40F"/>
+    <circle cx="190" cy="90" r="3" fill="#F1C40F"/>
+
+    <!-- Horizontal arrow flow -->
+    <path d="M30 30 L 210 30" class="arrow-h" stroke-dasharray="6,4" marker-end="url(#arrowred2)"/>
+    <text x="120" y="24" class="tag" text-anchor="middle">← Z 型视线扫描 →</text>
+  </g>
+
+  <!-- ====== Panel 2: Top-Down ====== -->
+  <g transform="translate(280, 55)">
+    <text x="120" y="-5" class="genre-title" text-anchor="middle">俯视角</text>
+    <text x="120" y="10" class="genre-desc" text-anchor="middle">全局均衡，中心吸引</text>
+
+    <rect x="0" y="20" width="240" height="160" class="frame" rx="2"/>
+
+    <!-- Grid pattern on ground -->
+    <g stroke="#E0E0E0" stroke-width="0.4">
+      <line x1="0" y1="60" x2="240" y2="60"/>
+      <line x1="0" y1="100" x2="240" y2="100"/>
+      <line x1="0" y1="140" x2="240" y2="140"/>
+      <line x1="80" y1="20" x2="80" y2="180"/>
+      <line x1="160" y1="20" x2="160" y2="180"/>
+    </g>
+
+    <!-- Player in center -->
+    <circle cx="120" cy="100" r="14" class="focus-dot" opacity="0.8"/>
+    <circle cx="120" cy="100" r="6" fill="white"/>
+    <text x="120" y="122" class="tag" text-anchor="middle">玩家 / 中心</text>
+
+    <!-- Peripheral elements: scattered dots -->
+    <circle cx="30" cy="50" r="6" fill="#DDD" stroke="#999" stroke-width="1"/>
+    <text x="30" y="66" class="genre-desc" text-anchor="middle">敌人</text>
+
+    <circle cx="200" cy="60" r="5" fill="#DDD" stroke="#999" stroke-width="1"/>
+    <text x="200" y="76" class="genre-desc" text-anchor="middle">物品</text>
+
+    <circle cx="50" cy="150" r="5" fill="#DDD" stroke="#999" stroke-width="1"/>
+
+    <circle cx="190" cy="140" r="7" fill="#DDD" stroke="#999" stroke-width="1"/>
+    <text x="190" y="156" class="genre-desc" text-anchor="middle">障碍</text>
+
+    <!-- Radial arrows pointing toward center -->
+    <g stroke="#E74C3C" stroke-width="0.6" stroke-dasharray="3,2" opacity="0.5">
+      <line x1="40" y1="60" x2="95" y2="85"/>
+      <line x1="190" y1="70" x2="140" y2="88"/>
+      <line x1="60" y1="140" x2="100" y2="110"/>
+      <line x1="185" y1="130" x2="140" y2="110"/>
+    </g>
+    <text x="120" y="180" class="tag" text-anchor="middle">四周分散，中心吸引</text>
+  </g>
+
+  <!-- ====== Panel 3: First-Person ====== -->
+  <g transform="translate(530, 55)">
+    <text x="120" y="-5" class="genre-title" text-anchor="middle">第一人称</text>
+    <text x="120" y="10" class="genre-desc" text-anchor="middle">深度引导，Z 轴纵深</text>
+
+    <rect x="0" y="20" width="240" height="160" class="frame" rx="2"/>
+
+    <!-- 1-point perspective: vanishing point at center -->
+    <!-- Corridor walls -->
+    <polygon points="0,180 60,40 180,40 240,180" fill="#F0F0F0" stroke="#CCC" stroke-width="0.5"/>
+
+    <!-- Perspective lines -->
+    <line x1="0" y1="180" x2="120" y2="40" stroke="#CCC" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <line x1="240" y1="180" x2="120" y2="40" stroke="#CCC" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <line x1="0" y1="100" x2="120" y2="40" stroke="#CCC" stroke-width="0.3"/>
+    <line x1="240" y1="100" x2="120" y2="40" stroke="#CCC" stroke-width="0.3"/>
+
+    <!-- Vanishing point -->
+    <circle cx="120" cy="40" r="4" class="focus-dot"/>
+    <text x="120" y="32" class="tag" text-anchor="middle">消失点</text>
+
+    <!-- Depth arrows -->
+    <path d="M80 160 L 100 100 L 115 60" class="arrow-depth" stroke-dasharray="6,3" marker-end="url(#arrowblue2)"/>
+    <text x="72" y="150" class="tag-blue" text-anchor="middle" transform="rotate(-50, 72, 150)">深度→</text>
+
+    <path d="M160 160 L 140 100 L 128 60" class="arrow-depth" stroke-dasharray="6,3" marker-end="url(#arrowblue2)"/>
+
+    <!-- Door at end of corridor -->
+    <rect x="100" y="48" width="40" height="60" fill="none" stroke="#999" stroke-width="1"/>
+    <line x1="100" y1="78" x2="140" y2="78" stroke="#999" stroke-width="0.5"/>
+
+    <!-- Objects along Z-axis for depth cues -->
+    <!-- Near: large -->
+    <rect x="25" y="160" width="30" height="20" fill="#DDD" stroke="#999" stroke-width="0.8"/>
+    <text x="40" y="172" class="genre-desc" text-anchor="middle">近</text>
+
+    <!-- Mid: medium -->
+    <rect x="55" y="110" width="15" height="10" fill="#DDD" stroke="#999" stroke-width="0.6"/>
+    <text x="62" y="116" class="genre-desc" text-anchor="middle" font-size="8">中</text>
+
+    <!-- Far: small -->
+    <rect x="80" y="72" width="8" height="6" fill="#DDD" stroke="#999" stroke-width="0.5"/>
+    <text x="84" y="76" class="genre-desc" text-anchor="middle" font-size="8">远</text>
+
+    <text x="120" y="180" class="tag-blue" text-anchor="middle">Z 轴纵深引导，视线被推向消失点</text>
+  </g>
+
+  <!-- Bottom summary bar -->
+  <g transform="translate(30, 350)">
+    <rect x="0" y="0" width="740" height="55" fill="#E8F4FD" rx="4"/>
+    <text x="370" y="20" class="subtitle" text-anchor="middle" fill="#333">三种策略的本质区别</text>
+    <text x="370" y="38" class="subtitle" text-anchor="middle">平台跳跃：左右扫视，视线沿 Z 型路径 → 俯视角：360° 监控，视线被中心锚点拉回 → 第一人称：前后穿透，视线沿深度轴推进</text>
+  </g>
+
+  <text x="400" y="455" class="subtitle" text-anchor="middle">构图没有万能公式。每种游戏类型用不同的"视线管理"策略，就像不同页面类型需要不同的 CSS 布局模式。</text>
+  <text x="400" y="485" class="subtitle" text-anchor="middle">图 练手07.5：三种游戏类型的构图策略差异。平台跳跃引导视线横向扫描，俯视角维持全局均衡，第一人称将视线推向画面深处的消失点。</text>
+</svg>

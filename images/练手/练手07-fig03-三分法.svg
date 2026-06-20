@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .grid-line { stroke: #999; stroke-width: 1; stroke-dasharray: 5,4; }
+    .hotspot { fill: #E74C3C; }
+    .label { font-size: 10px; fill: #E74C3C; }
+    .z-line { stroke: #3498DB; stroke-width: 1.5; stroke-dasharray: 6,4; fill: none; }
+    .frame { fill: none; stroke: #333; stroke-width: 2; }
+  </style>
+
+  <defs>
+    <marker id="arrowblue" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0,0 7,2.5 0,5" fill="#3498DB"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手07.3  三分法——画面切成 3×3 grid</text>
+
+  <!-- Frame -->
+  <rect x="120" y="60" width="560" height="360" class="frame" rx="2"/>
+
+  <!-- 3x3 Grid lines -->
+  <line x1="306" y1="60" x2="306" y2="420" class="grid-line"/>
+  <line x1="493" y1="60" x2="493" y2="420" class="grid-line"/>
+  <line x1="120" y1="180" x2="680" y2="180" class="grid-line"/>
+  <line x1="120" y1="300" x2="680" y2="300" class="grid-line"/>
+
+  <!-- Upper-left column label -->
+  <text x="213" y="136" class="subtitle" text-anchor="middle">1</text>
+  <text x="400" y="136" class="subtitle" text-anchor="middle">2</text>
+  <text x="587" y="136" class="subtitle" text-anchor="middle">3</text>
+  <text x="88" y="176" class="subtitle" text-anchor="middle">1</text>
+  <text x="88" y="260" class="subtitle" text-anchor="middle">2</text>
+
+  <!-- Four hotspot intersection points -->
+  <circle cx="306" cy="180" r="8" class="hotspot"/>
+  <circle cx="306" cy="180" r="4" fill="white"/>
+  <text x="306" y="166" class="label" text-anchor="middle">焦点 A</text>
+
+  <circle cx="493" cy="180" r="8" class="hotspot"/>
+  <circle cx="493" cy="180" r="4" fill="white"/>
+  <text x="493" y="166" class="label" text-anchor="middle">焦点 B</text>
+
+  <circle cx="306" cy="300" r="8" class="hotspot"/>
+  <circle cx="306" cy="300" r="4" fill="white"/>
+  <text x="306" y="322" class="label" text-anchor="middle">焦点 C</text>
+
+  <circle cx="493" cy="300" r="8" class="hotspot"/>
+  <circle cx="493" cy="300" r="4" fill="white"/>
+  <text x="493" y="322" class="label" text-anchor="middle">焦点 D</text>
+
+  <!-- Z-path flow line -->
+  <path d="M130 140 Q 200 140, 280 165 L 310 175 L 330 185 Q 400 200, 470 185 L 490 175 L 510 165 Q 590 140, 660 140" class="z-line" marker-end="url(#arrowblue)"/>
+  <text x="680" y="136" class="subtitle" fill="#3498DB">Z 型视线流</text>
+
+  <!-- Small scene objects placed on hotspots for demonstration -->
+  <!-- A simple figure/stick figure at hotspot B -->
+  <g transform="translate(493, 180)">
+    <circle cx="0" cy="-22" r="10" fill="none" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="-12" x2="0" y2="10" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="-4" x2="-12" y2="-14" stroke="#333" stroke-width="1.2"/>
+    <line x1="0" y1="-4" x2="12" y2="-14" stroke="#333" stroke-width="1.2"/>
+    <line x1="0" y1="10" x2="-10" y2="24" stroke="#333" stroke-width="1.2"/>
+    <line x1="0" y1="10" x2="10" y2="24" stroke="#333" stroke-width="1.2"/>
+  </g>
+
+  <!-- Simple house/tree at hotspot C -->
+  <g transform="translate(306, 300)">
+    <rect x="-12" y="-12" width="24" height="20" fill="none" stroke="#333" stroke-width="1"/>
+    <polygon points="-14,-12 0,-28 14,-12" fill="none" stroke="#333" stroke-width="1"/>
+    <rect x="-3" y="-4" width="6" height="8" fill="none" stroke="#333" stroke-width="0.8"/>
+  </g>
+
+  <!-- Grid labels at bottom -->
+  <text x="213" y="398" class="subtitle" text-anchor="middle">左 1/3</text>
+  <text x="400" y="398" class="subtitle" text-anchor="middle">中 1/3</text>
+  <text x="587" y="398" class="subtitle" text-anchor="middle">右 1/3</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="455" class="subtitle" text-anchor="middle">程序员类比：三分法 ≈ CSS Grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr；四个交点是自然的视觉焦点位置</text>
+  <text x="400" y="485" class="subtitle" text-anchor="middle">图 练手07.3：两条横线和两条竖线将画面切成 3×3。四个交点（红点）是放置主体的最佳位置。人眼自然遵循 Z 型从左到右、从上到下的扫描路径。</text>
+</svg>

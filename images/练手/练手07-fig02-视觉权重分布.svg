@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .score { font-size: 9px; fill: #666; text-anchor: middle; }
+    .score-high { font-size: 10px; font-weight: bold; fill: #E74C3C; text-anchor: middle; }
+    .frame { fill: none; stroke: #333; stroke-width: 2; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手07.2  视觉权重分布示意</text>
+
+  <!-- Picture frame -->
+  <rect x="80" y="55" width="640" height="380" class="frame" rx="2"/>
+
+  <!-- Element 1: Small dark dot (weight 1) -->
+  <circle cx="200" cy="160" r="14" fill="#555"/>
+  <text x="200" y="182" class="score">权重 1</text>
+
+  <!-- Element 2: Medium gray dot (weight 2) -->
+  <circle cx="520" cy="140" r="20" fill="#888"/>
+  <text x="520" y="172" class="score">权重 2</text>
+
+  <!-- Element 3: Large gray dot (weight 3) -->
+  <circle cx="340" cy="280" r="30" fill="#777"/>
+  <text x="340" y="322" class="score">权重 3</text>
+
+  <!-- Element 4: Medium warm dot (weight 4) -->
+  <circle cx="620" cy="320" r="22" fill="#E67E22"/>
+  <text x="620" y="354" class="score">权重 4</text>
+
+  <!-- Element 5: Medium bright dot near edge (weight 2.5) -->
+  <circle cx="160" cy="380" r="24" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <text x="160" y="416" class="score">权重 2.5</text>
+
+  <!-- Element 6: Largest, red, high-contrast dot (weight 5 - focal point) -->
+  <circle cx="380" cy="200" r="42" fill="#E74C3C"/>
+  <circle cx="375" cy="193" r="14" fill="white" opacity="0.3"/>
+  <text x="380" y="260" class="score-high">权重 5 → 最先看到</text>
+
+  <!-- Arrow pointing to the 5 -->
+  <line x1="440" y1="210" x2="480" y2="210" stroke="#E74C3C" stroke-width="1.5" marker-end="url(#arrowred)"/>
+
+  <defs>
+    <marker id="arrowred" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0,0 6,2 0,4" fill="#E74C3C"/>
+    </marker>
+  </defs>
+
+  <!-- Annotation box -->
+  <g transform="translate(500, 210)">
+    <rect x="0" y="0" width="200" height="65" fill="#FFF5F5" stroke="#E74C3C" stroke-width="1" rx="4"/>
+    <text x="100" y="18" class="score-high" text-anchor="middle">视觉权重规则</text>
+    <text x="100" y="34" class="score" text-anchor="middle">亮＞暗 | 大＞小</text>
+    <text x="100" y="48" class="score" text-anchor="middle">暖色＞冷色 | 高对比＞低对比</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="455" class="subtitle" text-anchor="middle">视觉权重近似 CSS flex-grow：权重大的元素占据更多视觉空间</text>
+  <text x="400" y="485" class="subtitle" text-anchor="middle">图 练手07.2：同一画面中六个元素拥有不同的视觉权重。红色的权重 5 圆点最先被看到，灰色小圆最后被注意到。</text>
+</svg>

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .panel-title { font-size: 12px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .panel-desc { font-size: 9px; fill: #666; text-anchor: middle; }
+    .pose { stroke: #999; stroke-width: 1.5; fill: none; }
+    .action-line { stroke: #E74C3C; stroke-width: 3; fill: none; stroke-linecap: round; }
+    .analogy { font-size: 10px; fill: #333; }
+    .frame { fill: #FAFAFA; stroke: #ddd; stroke-width: 1; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手07.6  动作线形状指南——五种动作线 × 角色姿态</text>
+
+  <!-- Panel 1: C-curve -->
+  <g transform="translate(20, 55)">
+    <rect x="0" y="0" width="140" height="310" class="frame" rx="4"/>
+    <text x="70" y="20" class="panel-title">C 形曲线</text>
+    <text x="70" y="34" class="panel-desc">灵活 · 有机 · 柔软</text>
+    <!-- Head -->
+    <circle cx="55" cy="85" r="11" class="pose"/>
+    <!-- Body curving like C -->
+    <path d="M55 96 Q 42 125, 55 160 Q 72 195, 58 225 Q 46 255, 60 280" class="pose"/>
+    <!-- Arms -->
+    <path d="M55 118 Q 28 140, 32 172" class="pose"/>
+    <path d="M55 118 Q 82 140, 78 172" class="pose"/>
+    <!-- Legs -->
+    <path d="M60 280 L 48 300" class="pose"/>
+    <path d="M60 280 L 72 300" class="pose"/>
+    <!-- Action line: C curve -->
+    <path d="M55 72 Q 28 170, 60 285" class="action-line"/>
+    <text x="70" y="315" class="panel-desc">柔和前倾</text>
+  </g>
+
+  <!-- Panel 2: S-curve -->
+  <g transform="translate(175, 55)">
+    <rect x="0" y="0" width="140" height="310" class="frame" rx="4"/>
+    <text x="70" y="20" class="panel-title">S 形曲线</text>
+    <text x="70" y="34" class="panel-desc">极度灵活 · 优雅</text>
+    <!-- Head -->
+    <circle cx="75" cy="85" r="11" class="pose"/>
+    <!-- Body in S curve -->
+    <path d="M75 96 Q 88 125, 68 160 Q 52 195, 75 225 Q 88 255, 68 280" class="pose"/>
+    <!-- Arms -->
+    <path d="M75 118 Q 102 140, 98 172" class="pose"/>
+    <path d="M75 118 Q 48 140, 52 172" class="pose"/>
+    <!-- Legs -->
+    <path d="M68 280 L 56 300" class="pose"/>
+    <path d="M68 280 L 80 300" class="pose"/>
+    <!-- Action line: S curve -->
+    <path d="M75 72 Q 92 170, 68 285" class="action-line"/>
+    <text x="70" y="315" class="panel-desc">优雅站立</text>
+  </g>
+
+  <!-- Panel 3: Z-zigzag -->
+  <g transform="translate(330, 55)">
+    <rect x="0" y="0" width="140" height="310" class="frame" rx="4"/>
+    <text x="70" y="20" class="panel-title">Z 形折线</text>
+    <text x="70" y="34" class="panel-desc">力量 · 冲击 · 硬朗</text>
+    <!-- Head -->
+    <circle cx="48" cy="82" r="11" class="pose"/>
+    <!-- Body zigzag -->
+    <path d="M48 93 L 82 128 L 52 165 L 82 205 L 58 280" class="pose"/>
+    <!-- Arms - one raised for attack -->
+    <path d="M50 108 L 22 88 L 12 72" class="pose"/>
+    <path d="M60 112 L 95 138" class="pose"/>
+    <!-- Legs -->
+    <path d="M58 280 L 42 300" class="pose"/>
+    <path d="M58 280 L 78 300" class="pose"/>
+    <!-- Action line: Z zigzag -->
+    <path d="M48 70 L 88 128 L 48 175 L 80 285" class="action-line"/>
+    <text x="70" y="315" class="panel-desc">攻击挥拳</text>
+  </g>
+
+  <!-- Panel 4: Vertical -->
+  <g transform="translate(485, 55)">
+    <rect x="0" y="0" width="140" height="310" class="frame" rx="4"/>
+    <text x="70" y="20" class="panel-title">垂直直线</text>
+    <text x="70" y="34" class="panel-desc">静止 · 稳定 · 庄严</text>
+    <!-- Head -->
+    <circle cx="70" cy="85" r="11" class="pose"/>
+    <!-- Body straight down -->
+    <path d="M70 96 L 70 280" class="pose"/>
+    <!-- Arms at sides -->
+    <path d="M70 110 L 48 160" class="pose"/>
+    <path d="M70 110 L 92 160" class="pose"/>
+    <!-- Legs apart -->
+    <path d="M70 280 L 54 300" class="pose"/>
+    <path d="M70 280 L 86 300" class="pose"/>
+    <!-- Action line: vertical -->
+    <path d="M70 70 L 70 285" class="action-line"/>
+    <text x="70" y="315" class="panel-desc">守卫站姿</text>
+  </g>
+
+  <!-- Panel 5: Tilted -->
+  <g transform="translate(640, 55)">
+    <rect x="0" y="0" width="140" height="310" class="frame" rx="4"/>
+    <text x="70" y="20" class="panel-title">倾斜直线</text>
+    <text x="70" y="34" class="panel-desc">动势 · 不稳定</text>
+    <!-- Head -->
+    <circle cx="52" cy="82" r="11" class="pose"/>
+    <!-- Body tilted forward -->
+    <path d="M52 93 L 75 280" class="pose"/>
+    <!-- Arms - one forward one back -->
+    <path d="M58 108 L 30 118" class="pose"/>
+    <path d="M58 108 L 98 96" class="pose"/>
+    <!-- Legs in running pose -->
+    <path d="M75 280 L 58 300" class="pose"/>
+    <path d="M75 280 L 98 285" class="pose"/>
+    <!-- Action line: tilted -->
+    <path d="M42 70 L 85 285" class="action-line"/>
+    <text x="70" y="315" class="panel-desc">奔跑冲刺</text>
+  </g>
+
+  <!-- Bottom analogy annotation -->
+  <g transform="translate(30, 385)">
+    <rect x="0" y="0" width="740" height="58" fill="#FFF5F5" stroke="#E74C3C" stroke-width="1" rx="4"/>
+    <text x="370" y="20" class="panel-title" fill="#E74C3C" text-anchor="middle">程序员类比：动作线 = 函数签名（function signature）</text>
+    <text x="370" y="38" class="analogy" text-anchor="middle">先定动作线再画细节 = 先写函数签名再填实现。动作线是主返回值，细节是副作用（side effects）。</text>
+    <text x="370" y="52" class="analogy" text-anchor="middle">动作线错了 = 签名错了 = 实现再优雅也是死代码。</text>
+  </g>
+
+  <!-- Bottom notes -->
+  <text x="400" y="460" class="subtitle" text-anchor="middle">五种动作线形状对应五种能量趋势。角色草稿第一笔是动作线，不是眼睛或盔甲。</text>
+  <text x="400" y="488" class="subtitle" text-anchor="middle">图 练手07.6：C/S/Z/竖/斜五种动作线叠加在简化角色姿态上。红线是动作线，灰线是角色身体结构。</text>
+</svg>

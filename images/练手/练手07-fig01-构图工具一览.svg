@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .tool-name { font-size: 13px; font-weight: bold; fill: #333; }
+    .tool-desc { font-size: 9px; fill: #666; }
+    .center-label { font-size: 20px; font-weight: bold; fill: #E74C3C; }
+    .line { stroke: #ccc; stroke-width: 1; }
+    .connector { stroke: #E74C3C; stroke-width: 0.8; stroke-dasharray: 3,2; opacity: 0.5; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手07.1  构图八工具一览</text>
+
+  <!-- Center circle -->
+  <circle cx="400" cy="270" r="50" fill="#E74C3C" opacity="0.12"/>
+  <circle cx="400" cy="270" r="50" fill="none" stroke="#E74C3C" stroke-width="2"/>
+  <text x="400" y="266" class="center-label" text-anchor="middle">构图</text>
+  <text x="400" y="286" class="tool-desc" text-anchor="middle" fill="#E74C3C">视觉版面的 CSS</text>
+
+  <!-- Connector lines from center to each tool -->
+  <line x1="400" y1="220" x2="400" y2="88" class="connector"/>
+  <line x1="450" y1="220" x2="563" y2="88" class="connector"/>
+  <line x1="450" y1="320" x2="563" y2="452" class="connector"/>
+  <line x1="400" y1="320" x2="400" y2="452" class="connector"/>
+  <line x1="350" y1="320" x2="237" y2="452" class="connector"/>
+  <line x1="350" y1="220" x2="237" y2="88" class="connector"/>
+  <line x1="443" y1="227" x2="670" y2="180" class="connector"/>
+  <line x1="357" y1="227" x2="130" y2="180" class="connector"/>
+
+  <!-- Tool 1: Visual Weight (top) -->
+  <g transform="translate(340, 42)">
+    <rect x="0" y="0" width="120" height="46" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4"/>
+    <text x="60" y="17" class="tool-name" text-anchor="middle">视觉权重</text>
+    <text x="60" y="33" class="tool-desc" text-anchor="middle">亮于暗，大于小</text>
+  </g>
+
+  <!-- Tool 2: Leading Lines (top-right) -->
+  <g transform="translate(563, 42)">
+    <rect x="0" y="0" width="120" height="46" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4"/>
+    <text x="60" y="17" class="tool-name" text-anchor="middle">引导线</text>
+    <text x="60" y="33" class="tool-desc" text-anchor="middle">视线 hyperlink</text>
+  </g>
+
+  <!-- Tool 3: Rule of Thirds (right) -->
+  <g transform="translate(670, 160)">
+    <rect x="0" y="0" width="120" height="46" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4"/>
+    <text x="60" y="17" class="tool-name" text-anchor="middle">三分法</text>
+    <text x="60" y="33" class="tool-desc" text-anchor="middle">画面 3×3 grid</text>
+  </g>
+
+  <!-- Tool 4: Framing (bottom-right) -->
+  <g transform="translate(563, 412)">
+    <rect x="0" y="0" width="120" height="46" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4"/>
+    <text x="60" y="17" class="tool-name" text-anchor="middle">框景</text>
+    <text x="60" y="33" class="tool-desc" text-anchor="middle">前景元素框焦点</text>
+  </g>
+
+  <!-- Tool 5: Repetition & Rhythm (bottom) -->
+  <g transform="translate(340, 412)">
+    <rect x="0" y="0" width="120" height="46" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4"/>
+    <text x="60" y="17" class="tool-name" text-anchor="middle">重复与节奏</text>
+    <text x="60" y="33" class="tool-desc" text-anchor="middle">规律平和不规则紧张</text>
+  </g>
+
+  <!-- Tool 6: Contrast (bottom-left) -->
+  <g transform="translate(117, 412)">
+    <rect x="0" y="0" width="120" height="46" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4"/>
+    <text x="60" y="17" class="tool-name" text-anchor="middle">对比</text>
+    <text x="60" y="33" class="tool-desc" text-anchor="middle">大小明暗冷暖差异</text>
+  </g>
+
+  <!-- Tool 7: Depth (left) -->
+  <g transform="translate(10, 160)">
+    <rect x="0" y="0" width="120" height="46" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4"/>
+    <text x="60" y="17" class="tool-name" text-anchor="middle">层次感</text>
+    <text x="60" y="33" class="tool-desc" text-anchor="middle">前景中景远景递减</text>
+  </g>
+
+  <!-- Tool 8: Dynamic Tension -->
+  <g transform="translate(117, 42)">
+    <rect x="0" y="0" width="120" height="46" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4"/>
+    <text x="60" y="17" class="tool-name" text-anchor="middle">动势</text>
+    <text x="60" y="33" class="tool-desc" text-anchor="middle">元素的运动方向感</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="485" class="subtitle" text-anchor="middle">图 练手07.1：八个构图工具形成围绕中心的放射结构。每个工具都是一个独立的手段，但实际使用时它们相互叠加。</text>
+</svg>

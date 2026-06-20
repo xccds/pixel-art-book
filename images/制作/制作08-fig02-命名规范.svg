@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="#FAFBFC"/>
+
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">命名的艺术：为什么程序员会秒懂</text>
+  <text x="400" y="58" text-anchor="middle" font-size="12" fill="#666">Naming Convention — 类比：就像代码里的变量名，`tmp`和`player_health`是两种人生</text>
+
+  <!-- ===== LEFT: BAD ===== -->
+  <rect x="20" y="80" width="370" height="395" rx="12" fill="#FFF" stroke="#E74C3C" stroke-width="2" filter="url(#shadow)"/>
+
+  <rect x="20" y="80" width="370" height="40" rx="12" fill="#E74C3C"/>
+  <rect x="20" y="100" width="370" height="20" fill="#E74C3C"/>
+  <text x="205" y="106" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFF">❌ 反面教材：混乱是常态</text>
+
+  <!-- Mock folder with bad files -->
+  <rect x="40" y="135" width="330" height="200" rx="8" fill="#1E1E1E"/>
+
+  <!-- Title bar -->
+  <rect x="40" y="135" width="330" height="28" rx="8" fill="#2D2D2D"/>
+  <rect x="40" y="147" width="330" height="16" fill="#2D2D2D"/>
+  <text x="55" y="154" font-size="10" fill="#999">📁 project_assets/sprites/</text>
+
+  <!-- Bad file entries -->
+  <circle cx="58" cy="175" r="3" fill="#E74C3C"/>
+  <text x="68" y="178" font-size="9.5" fill="#E74C3C">未命名-3-final-v2.png</text>
+
+  <circle cx="58" cy="195" r="3" fill="#F0A030"/>
+  <text x="68" y="198" font-size="9.5" fill="#F0A030">character.png</text>
+
+  <circle cx="58" cy="215" r="3" fill="#E74C3C"/>
+  <text x="68" y="218" font-size="9.5" fill="#E74C3C">player_final_FINAL_use_this_one.png</text>
+
+  <circle cx="58" cy="235" r="3" fill="#F0A030"/>
+  <text x="68" y="238" font-size="9.5" fill="#F0A030">enemy-1.png</text>
+
+  <circle cx="58" cy="255" r="3" fill="#E74C3C"/>
+  <text x="68" y="258" font-size="9.5" fill="#E74C3C">New_Character_Walk_001.png</text>
+
+  <circle cx="58" cy="275" r="3" fill="#F0A030"/>
+  <text x="68" y="278" font-size="9.5" fill="#F0A030">BOSS_v3_副本_副本.png</text>
+
+  <circle cx="58" cy="295" r="3" fill="#E74C3C"/>
+  <text x="68" y="298" font-size="9.5" fill="#E74C3C">img_20240512.png</text>
+
+  <circle cx="58" cy="315" r="3" fill="#F0A030"/>
+  <text x="68" y="318" font-size="9.5" fill="#F0A030">hero.png</text>
+
+  <!-- Chaos arrows -->
+  <text x="205" y="355" text-anchor="middle" font-size="12" fill="#E74C3C">↓ ↓ ↓</text>
+  <text x="205" y="378" text-anchor="middle" font-size="11" fill="#E74C3C">三周后：</text>
+  <text x="205" y="396" text-anchor="middle" font-size="11" fill="#E74C3C">"哪个才是boss的最终版？？"</text>
+  <text x="205" y="414" text-anchor="middle" font-size="11" fill="#E74C3C">"为什么有15个final？"</text>
+  <text x="205" y="440" text-anchor="middle" font-size="11" fill="#999">↑ 这就是命名的技术债</text>
+
+  <!-- Cross divider -->
+  <line x1="395" y1="100" x2="395" y2="470" stroke="#DDD" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- VS label -->
+  <circle cx="395" cy="275" r="18" fill="#333"/>
+  <text x="395" y="280" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFF">VS</text>
+
+  <!-- ===== RIGHT: GOOD ===== -->
+  <rect x="410" y="80" width="370" height="395" rx="12" fill="#FFF" stroke="#43A047" stroke-width="2" filter="url(#shadow)"/>
+
+  <rect x="410" y="80" width="370" height="40" rx="12" fill="#43A047"/>
+  <rect x="410" y="100" width="370" height="20" fill="#43A047"/>
+  <text x="595" y="106" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFF">✓ 正面范例：一看就懂</text>
+
+  <!-- Mock folder with good files -->
+  <rect x="430" y="135" width="330" height="200" rx="8" fill="#1E1E1E"/>
+
+  <!-- Title bar -->
+  <rect x="430" y="135" width="330" height="28" rx="8" fill="#2D2D2D"/>
+  <rect x="430" y="147" width="330" height="16" fill="#2D2D2D"/>
+  <text x="445" y="154" font-size="10" fill="#999">📁 project_assets/sprites/</text>
+
+  <!-- Good file entries -->
+  <circle cx="448" cy="175" r="3" fill="#43A047"/>
+  <text x="458" y="178" font-size="9.5" fill="#43A047">spr_hero_idle_01.png</text>
+
+  <circle cx="448" cy="195" r="3" fill="#66BB6A"/>
+  <text x="458" y="198" font-size="9.5" fill="#66BB6A">spr_hero_walk_01.png</text>
+
+  <circle cx="448" cy="215" r="3" fill="#43A047"/>
+  <text x="458" y="218" font-size="9.5" fill="#43A047">spr_hero_attack_01.png</text>
+
+  <circle cx="448" cy="235" r="3" fill="#66BB6A"/>
+  <text x="458" y="238" font-size="9.5" fill="#66BB6A">spr_boss_idle_01.png</text>
+
+  <circle cx="448" cy="255" r="3" fill="#43A047"/>
+  <text x="458" y="258" font-size="9.5" fill="#43A047">spr_boss_attack_01.png</text>
+
+  <circle cx="448" cy="275" r="3" fill="#66BB6A"/>
+  <text x="458" y="278" font-size="9.5" fill="#66BB6A">spr_enemy_slime_idle_01.png</text>
+
+  <circle cx="448" cy="295" r="3" fill="#43A047"/>
+  <text x="458" y="298" font-size="9.5" fill="#43A047">spr_enemy_slime_move_01.png</text>
+
+  <circle cx="448" cy="315" r="3" fill="#66BB6A"/>
+  <text x="458" y="318" font-size="9.5" fill="#66BB6A">spr_npc_merchant_01.png</text>
+
+  <!-- Clean arrows -->
+  <text x="595" y="355" text-anchor="middle" font-size="12" fill="#43A047">↓ ↓ ↓</text>
+  <text x="595" y="378" text-anchor="middle" font-size="11" fill="#43A047">任何时间打开：</text>
+  <text x="595" y="396" text-anchor="middle" font-size="11" fill="#43A047">"spr_hero_attack → 主角攻击动画"</text>
+  <text x="595" y="414" text-anchor="middle" font-size="11" fill="#43A047">按名称排序自动分组！</text>
+  <text x="595" y="440" text-anchor="middle" font-size="11" fill="#999">↑ 这就是命名的自动化收益</text>
+
+  <!-- Bottom: naming convention formula -->
+  <rect x="20" y="480" width="760" height="1" fill="#EEE"/>
+  <text x="400" y="497" text-anchor="middle" font-size="10" fill="#666">命名公式：类型_对象_动作_序号.png → 如 spr_hero_idle_01.png | tile_grass_01.png | ui_btn_start_01.png</text>
+</svg>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+      .title { font-size: 22px; font-weight: bold; fill: #333; }
+      .subtitle { font-size: 13px; fill: #666; }
+      .label { font-size: 14px; font-weight: bold; fill: #333; }
+      .desc { font-size: 11px; fill: #666; }
+      .hex { font-size: 7px; fill: #444; font-family: 'Menlo','Consolas',monospace; }
+      .analogy { font-size: 10px; fill: #0F0; font-family: monospace; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#FAFAFA"/>
+  <text x="400" y="32" text-anchor="middle" class="title">六种色彩和谐方案速查</text>
+  <text x="400" y="52" text-anchor="middle" class="subtitle">色轮上按几何规律取色 · 配 60-30-10 主辅比</text>
+  <circle cx="150" cy="135" r="58" fill="none" stroke="#D8D8D8" stroke-width="2"/>
+  <circle cx="150" cy="135" r="3" fill="#999"/>
+  <line x1="150.0" y1="77.0" x2="150.0" y2="85.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="179.0" y1="84.8" x2="175.0" y2="91.7" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="200.2" y1="106.0" x2="193.3" y2="110.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="208.0" y1="135.0" x2="200.0" y2="135.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="200.2" y1="164.0" x2="193.3" y2="160.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="179.0" y1="185.2" x2="175.0" y2="178.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="150.0" y1="193.0" x2="150.0" y2="185.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="121.0" y1="185.2" x2="125.0" y2="178.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="99.8" y1="164.0" x2="106.7" y2="160.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="92.0" y1="135.0" x2="100.0" y2="135.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="99.8" y1="106.0" x2="106.7" y2="110.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="121.0" y1="84.8" x2="125.0" y2="91.7" stroke="#E8E8E8" stroke-width="1"/>
+  <circle cx="121.0" cy="185.2" r="8" fill="#2A8CED" stroke="#FFF" stroke-width="2"/>
+  <circle cx="129.0" cy="171.4" r="8" fill="#397FC5" stroke="#FFF" stroke-width="2"/>
+  <circle cx="136.0" cy="159.2" r="8" fill="#859EB6" stroke="#FFF" stroke-width="2"/>
+  <text x="150" y="219" text-anchor="middle" class="label">单色 Monochromatic</text>
+  <text x="150" y="237" text-anchor="middle" class="desc">1 色相 · 多明度/饱和</text>
+  <circle cx="400" cy="135" r="58" fill="none" stroke="#D8D8D8" stroke-width="2"/>
+  <circle cx="400" cy="135" r="3" fill="#999"/>
+  <line x1="400.0" y1="77.0" x2="400.0" y2="85.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="429.0" y1="84.8" x2="425.0" y2="91.7" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="450.2" y1="106.0" x2="443.3" y2="110.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="458.0" y1="135.0" x2="450.0" y2="135.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="450.2" y1="164.0" x2="443.3" y2="160.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="429.0" y1="185.2" x2="425.0" y2="178.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="400.0" y1="193.0" x2="400.0" y2="185.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="371.0" y1="185.2" x2="375.0" y2="178.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="349.8" y1="164.0" x2="356.7" y2="160.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="342.0" y1="135.0" x2="350.0" y2="135.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="349.8" y1="106.0" x2="356.7" y2="110.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="371.0" y1="84.8" x2="375.0" y2="91.7" stroke="#E8E8E8" stroke-width="1"/>
+  <polygon points="429.0,84.8 450.2,106.0 458.0,135.0" fill="none" stroke="#999" stroke-width="1.5"/>
+  <circle cx="429.0" cy="84.8" r="9" fill="#EA8C2E" stroke="#FFF" stroke-width="2"/>
+  <circle cx="450.2" cy="106.0" r="9" fill="#EAEA2E" stroke="#FFF" stroke-width="2"/>
+  <circle cx="458.0" cy="135.0" r="9" fill="#8CEA2E" stroke="#FFF" stroke-width="2"/>
+  <text x="400" y="219" text-anchor="middle" class="label">类比 Analogous</text>
+  <text x="400" y="237" text-anchor="middle" class="desc">相邻 2-3 色 · 30°-60°</text>
+  <circle cx="650" cy="135" r="58" fill="none" stroke="#D8D8D8" stroke-width="2"/>
+  <circle cx="650" cy="135" r="3" fill="#999"/>
+  <line x1="650.0" y1="77.0" x2="650.0" y2="85.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="679.0" y1="84.8" x2="675.0" y2="91.7" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="700.2" y1="106.0" x2="693.3" y2="110.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="708.0" y1="135.0" x2="700.0" y2="135.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="700.2" y1="164.0" x2="693.3" y2="160.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="679.0" y1="185.2" x2="675.0" y2="178.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="650.0" y1="193.0" x2="650.0" y2="185.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="621.0" y1="185.2" x2="625.0" y2="178.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="599.8" y1="164.0" x2="606.7" y2="160.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="592.0" y1="135.0" x2="600.0" y2="135.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="599.8" y1="106.0" x2="606.7" y2="110.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="621.0" y1="84.8" x2="625.0" y2="91.7" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="679.0" y1="84.8" x2="621.0" y2="185.2" stroke="#999" stroke-width="1.5"/>
+  <circle cx="679.0" cy="84.8" r="9" fill="#EA8C2E" stroke="#FFF" stroke-width="2"/>
+  <circle cx="621.0" cy="185.2" r="9" fill="#2E8CEA" stroke="#FFF" stroke-width="2"/>
+  <text x="650" y="219" text-anchor="middle" class="label">互补 Complementary</text>
+  <text x="650" y="237" text-anchor="middle" class="desc">180° 对比 · 70/30 主辅</text>
+  <circle cx="150" cy="335" r="58" fill="none" stroke="#D8D8D8" stroke-width="2"/>
+  <circle cx="150" cy="335" r="3" fill="#999"/>
+  <line x1="150.0" y1="277.0" x2="150.0" y2="285.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="179.0" y1="284.8" x2="175.0" y2="291.7" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="200.2" y1="306.0" x2="193.3" y2="310.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="208.0" y1="335.0" x2="200.0" y2="335.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="200.2" y1="364.0" x2="193.3" y2="360.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="179.0" y1="385.2" x2="175.0" y2="378.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="150.0" y1="393.0" x2="150.0" y2="385.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="121.0" y1="385.2" x2="125.0" y2="378.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="99.8" y1="364.0" x2="106.7" y2="360.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="92.0" y1="335.0" x2="100.0" y2="335.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="99.8" y1="306.0" x2="106.7" y2="310.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="121.0" y1="284.8" x2="125.0" y2="291.7" stroke="#E8E8E8" stroke-width="1"/>
+  <polygon points="121.0,385.2 150.0,277.0 200.2,306.0" fill="none" stroke="#999" stroke-width="1.5"/>
+  <circle cx="121.0" cy="385.2" r="9" fill="#2E8CEA" stroke="#FFF" stroke-width="2"/>
+  <circle cx="150.0" cy="277.0" r="9" fill="#EA2E2E" stroke="#FFF" stroke-width="2"/>
+  <circle cx="200.2" cy="306.0" r="9" fill="#EAEA2E" stroke="#FFF" stroke-width="2"/>
+  <text x="150" y="419" text-anchor="middle" class="label">分裂互补 Split-Comp</text>
+  <text x="150" y="437" text-anchor="middle" class="desc">主色 + 补色两侧 ±30°</text>
+  <circle cx="400" cy="335" r="58" fill="none" stroke="#D8D8D8" stroke-width="2"/>
+  <circle cx="400" cy="335" r="3" fill="#999"/>
+  <line x1="400.0" y1="277.0" x2="400.0" y2="285.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="429.0" y1="284.8" x2="425.0" y2="291.7" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="450.2" y1="306.0" x2="443.3" y2="310.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="458.0" y1="335.0" x2="450.0" y2="335.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="450.2" y1="364.0" x2="443.3" y2="360.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="429.0" y1="385.2" x2="425.0" y2="378.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="400.0" y1="393.0" x2="400.0" y2="385.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="371.0" y1="385.2" x2="375.0" y2="378.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="349.8" y1="364.0" x2="356.7" y2="360.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="342.0" y1="335.0" x2="350.0" y2="335.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="349.8" y1="306.0" x2="356.7" y2="310.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="371.0" y1="284.8" x2="375.0" y2="291.7" stroke="#E8E8E8" stroke-width="1"/>
+  <polygon points="400.0,277.0 450.2,364.0 349.8,364.0" fill="none" stroke="#999" stroke-width="1.5"/>
+  <circle cx="400.0" cy="277.0" r="9" fill="#EA2E2E" stroke="#FFF" stroke-width="2"/>
+  <circle cx="450.2" cy="364.0" r="9" fill="#2EEA2E" stroke="#FFF" stroke-width="2"/>
+  <circle cx="349.8" cy="364.0" r="9" fill="#2E2EEA" stroke="#FFF" stroke-width="2"/>
+  <text x="400" y="419" text-anchor="middle" class="label">三角 Triadic</text>
+  <text x="400" y="437" text-anchor="middle" class="desc">120° 均布 · 活泼均衡</text>
+  <circle cx="650" cy="335" r="58" fill="none" stroke="#D8D8D8" stroke-width="2"/>
+  <circle cx="650" cy="335" r="3" fill="#999"/>
+  <line x1="650.0" y1="277.0" x2="650.0" y2="285.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="679.0" y1="284.8" x2="675.0" y2="291.7" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="700.2" y1="306.0" x2="693.3" y2="310.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="708.0" y1="335.0" x2="700.0" y2="335.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="700.2" y1="364.0" x2="693.3" y2="360.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="679.0" y1="385.2" x2="675.0" y2="378.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="650.0" y1="393.0" x2="650.0" y2="385.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="621.0" y1="385.2" x2="625.0" y2="378.3" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="599.8" y1="364.0" x2="606.7" y2="360.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="592.0" y1="335.0" x2="600.0" y2="335.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="599.8" y1="306.0" x2="606.7" y2="310.0" stroke="#E8E8E8" stroke-width="1"/>
+  <line x1="621.0" y1="284.8" x2="625.0" y2="291.7" stroke="#E8E8E8" stroke-width="1"/>
+  <polygon points="679.0,284.8 700.2,364.0 621.0,385.2 599.8,306.0" fill="none" stroke="#999" stroke-width="1.5"/>
+  <circle cx="679.0" cy="284.8" r="9" fill="#EA8C2E" stroke="#FFF" stroke-width="2"/>
+  <circle cx="700.2" cy="364.0" r="9" fill="#2EEA2E" stroke="#FFF" stroke-width="2"/>
+  <circle cx="621.0" cy="385.2" r="9" fill="#2E8CEA" stroke="#FFF" stroke-width="2"/>
+  <circle cx="599.8" cy="306.0" r="9" fill="#EA2EEA" stroke="#FFF" stroke-width="2"/>
+  <text x="650" y="419" text-anchor="middle" class="label">四角 Tetradic</text>
+  <text x="650" y="437" text-anchor="middle" class="desc">两组互补 · 降饱和控冲突</text>
+  <rect x="30" y="455" width="740" height="32" rx="4" fill="#333"/>
+  <text x="40" y="475" class="analogy">// 程序员类比: 和谐方案 = 色轮上的取色算法（enum/几何约束）；60-30-10 = 主色/辅色/点缀色的面积权重配比</text>
+</svg>

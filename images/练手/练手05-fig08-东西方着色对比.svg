@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+      .title { font-size: 22px; font-weight: bold; fill: #333; }
+      .subtitle { font-size: 13px; fill: #666; }
+      .label { font-size: 14px; font-weight: bold; fill: #333; }
+      .desc { font-size: 11px; fill: #666; }
+      .swatch-label { font-size: 10px; fill: #444; }
+      .hex { font-size: 7px; fill: #555; font-family: 'Menlo','Consolas',monospace; }
+      .analogy { font-size: 10px; fill: #0F0; font-family: monospace; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#FAFAFA"/>
+  <text x="400" y="32" text-anchor="middle" class="title">东西方着色两流派（Western vs Eastern）</text>
+  <text x="400" y="52" text-anchor="middle" class="subtitle">同一球体两种着色法：左·西式逐级明度（色相不变）  右·东式色相偏移（暖高光→冷阴影）</text>
+  <circle cx="222.0" cy="257.0" r="100.0" fill="#5C3008"/>
+  <circle cx="217.6" cy="252.6" r="85.7" fill="#8A4D14"/>
+  <circle cx="213.2" cy="248.2" r="71.4" fill="#B56820"/>
+  <circle cx="208.8" cy="243.8" r="57.1" fill="#E09040"/>
+  <circle cx="204.4" cy="239.4" r="42.9" fill="#FFB870"/>
+  <circle cx="200.0" cy="235.0" r="28.6" fill="#FFD9A0"/>
+  <circle cx="622.0" cy="257.0" r="100.0" fill="#2A1F4A"/>
+  <circle cx="617.6" cy="252.6" r="85.7" fill="#5A3866"/>
+  <circle cx="613.2" cy="248.2" r="71.4" fill="#9A5868"/>
+  <circle cx="608.8" cy="243.8" r="57.1" fill="#E09040"/>
+  <circle cx="604.4" cy="239.4" r="42.9" fill="#FFC060"/>
+  <circle cx="600.0" cy="235.0" r="28.6" fill="#FFE890"/>
+  <line x1="400" y1="80" x2="400" y2="340" stroke="#CCC" stroke-dasharray="4 4"/>
+  <text x="200" y="360" text-anchor="middle" class="label">西式方法（Western）</text>
+  <text x="200" y="378" text-anchor="middle" class="desc">色相不变 · 只调明度（加黑/加白）</text>
+  <text x="600" y="360" text-anchor="middle" class="label">东式方法（Eastern）</text>
+  <text x="600" y="378" text-anchor="middle" class="desc">色相偏移 · 暖高光 → 冷阴影</text>
+  <rect x="96.0" y="395.0" width="58.0" height="34.0" fill="#5C3008" stroke="#999" stroke-width="0.5"/>
+  <text x="125.0" y="443" text-anchor="middle" class="swatch-label">阴影</text>
+  <rect x="158.0" y="395.0" width="58.0" height="34.0" fill="#8A4D14" stroke="#999" stroke-width="0.5"/>
+  <text x="187.0" y="443" text-anchor="middle" class="swatch-label">暗面</text>
+  <rect x="220.0" y="395.0" width="58.0" height="34.0" fill="#B56820" stroke="#999" stroke-width="0.5"/>
+  <text x="249.0" y="443" text-anchor="middle" class="swatch-label">中间偏暗</text>
+  <rect x="282.0" y="395.0" width="58.0" height="34.0" fill="#E09040" stroke="#999" stroke-width="0.5"/>
+  <text x="311.0" y="443" text-anchor="middle" class="swatch-label">中间调</text>
+  <rect x="344.0" y="395.0" width="58.0" height="34.0" fill="#FFB870" stroke="#999" stroke-width="0.5"/>
+  <text x="373.0" y="443" text-anchor="middle" class="swatch-label">亮面</text>
+  <rect x="406.0" y="395.0" width="58.0" height="34.0" fill="#FFD9A0" stroke="#999" stroke-width="0.5"/>
+  <text x="435.0" y="443" text-anchor="middle" class="swatch-label">高光</text>
+  <rect x="496.0" y="395.0" width="58.0" height="34.0" fill="#2A1F4A" stroke="#999" stroke-width="0.5"/>
+  <text x="525.0" y="443" text-anchor="middle" class="swatch-label">阴影</text>
+  <rect x="558.0" y="395.0" width="58.0" height="34.0" fill="#5A3866" stroke="#999" stroke-width="0.5"/>
+  <text x="587.0" y="443" text-anchor="middle" class="swatch-label">暗面</text>
+  <rect x="620.0" y="395.0" width="58.0" height="34.0" fill="#9A5868" stroke="#999" stroke-width="0.5"/>
+  <text x="649.0" y="443" text-anchor="middle" class="swatch-label">中间偏暗</text>
+  <rect x="682.0" y="395.0" width="58.0" height="34.0" fill="#E09040" stroke="#999" stroke-width="0.5"/>
+  <text x="711.0" y="443" text-anchor="middle" class="swatch-label">中间调</text>
+  <rect x="744.0" y="395.0" width="58.0" height="34.0" fill="#FFC060" stroke="#999" stroke-width="0.5"/>
+  <text x="773.0" y="443" text-anchor="middle" class="swatch-label">亮面</text>
+  <rect x="806.0" y="395.0" width="58.0" height="34.0" fill="#FFE890" stroke="#999" stroke-width="0.5"/>
+  <text x="835.0" y="443" text-anchor="middle" class="swatch-label">高光</text>
+  <rect x="30" y="460" width="740" height="30" rx="4" fill="#333"/>
+  <text x="40" y="479" class="analogy">// 程序员类比: 色相偏移 = 给 ramp 加 HSL 空间曲线插值（非线性灰阶），暗部往冷色偏、亮部往暖色偏，像给数值加相位偏移</text>
+</svg>

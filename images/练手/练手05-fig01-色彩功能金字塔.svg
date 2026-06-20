@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+      .title { font-size: 22px; font-weight: bold; fill: #333; }
+      .subtitle { font-size: 13px; fill: #666; }
+      .layer-label { font-size: 15px; font-weight: bold; }
+      .example { font-size: 11px; fill: #666; }
+      .priority { font-size: 12px; fill: #E74C3C; font-weight: bold; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#FAFAFA"/>
+
+  <text x="400" y="32" text-anchor="middle" class="title">色彩功能分层（Color Function Hierarchy）</text>
+  <text x="400" y="54" text-anchor="middle" class="subtitle">在游戏中，颜色首先是信号，其次才是装饰——就像代码的优先级</text>
+
+  <!-- Layer 4: Decoration (largest, bottom) -->
+  <polygon points="400,480 140,320 660,320" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="400" y="400" text-anchor="middle" class="layer-label" fill="#999">装饰层（Decoration）</text>
+  <text x="400" y="420" text-anchor="middle" class="example">天空色调 · 环境氛围色 · 视觉偏好</text>
+  <text x="400" y="438" text-anchor="middle" class="priority">优先级最低 · 可被覆盖</text>
+
+  <!-- Layer 3: Emotion -->
+  <polygon points="400,320 190,220 610,220" fill="#D5E8D4" stroke="#AAD" stroke-width="1"/>
+  <text x="400" y="260" text-anchor="middle" class="layer-label" fill="#5A8A5A">情绪层（Emotion）</text>
+  <text x="400" y="280" text-anchor="middle" class="example">暖色调=安全/温馨 · 冷色调=孤独/危险 · 灰色调=怀旧</text>
+  <text x="400" y="298" text-anchor="middle" class="priority">游戏案例：《Gris》色调随情绪变化</text>
+
+  <!-- Layer 2: Information -->
+  <polygon points="400,220 240,140 560,140" fill="#B3D9FF" stroke="#8AC" stroke-width="1"/>
+  <text x="400" y="168" text-anchor="middle" class="layer-label" fill="#2E6BA6">信息层（Information）</text>
+  <text x="400" y="188" text-anchor="middle" class="example">阵营颜色 · 稀有度标识 · 属性类型 · 状态标识</text>
+  <text x="400" y="206" text-anchor="middle" class="priority">游戏案例：RPG品质色（白/绿/蓝/紫/橙）</text>
+
+  <!-- Layer 1: Interaction (smallest, top, brightest) -->
+  <polygon points="400,140 290,78 510,78" fill="#FFE0E0" stroke="#E74C3C" stroke-width="2.5"/>
+  <text x="400" y="100" text-anchor="middle" class="layer-label" fill="#E74C3C">交互层（Interaction）</text>
+  <text x="400" y="118" text-anchor="middle" class="example">危险提示 · 选中状态 · 可交互高亮 · 生命值</text>
+  <text x="400" y="136" text-anchor="middle" class="priority" fill="#E74C3C">最高优先级 · 覆盖所有下层</text>
+
+  <!-- Priority arrow on the right -->
+  <line x1="680" y1="460" x2="680" y2="80" stroke="#E74C3C" stroke-width="2"/>
+  <polygon points="680,75 674,87 686,87" fill="#E74C3C"/>
+  <text x="700" y="270" class="priority" font-size="13">高</text>
+
+  <!-- Left annotations -->
+  <text x="110" y="110" class="example" font-size="12" fill="#E74C3C">《蔚蓝》：冷紫=危险区</text>
+  <text x="110" y="128" class="example" font-size="12" fill="#E74C3C">暖橙=安全平台</text>
+  <text x="110" y="155" class="example" font-size="12" fill="#E67E22">→ 交互层示例</text>
+
+  <!-- Code analogy -->
+  <rect x="30" y="455" width="140" height="28" rx="3" fill="#333"/>
+  <text x="100" y="474" text-anchor="middle" class="example" fill="#0F0" font-size="10" font-family="monospace">// 代码类比: z-index</text>
+</svg>

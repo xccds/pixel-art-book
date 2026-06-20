@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+      .title { font-size: 22px; font-weight: bold; fill: #333; }
+      .subtitle { font-size: 13px; fill: #666; }
+      .label { font-size: 14px; font-weight: bold; fill: #333; }
+      .desc { font-size: 11px; fill: #666; }
+      .hex { font-size: 7px; fill: #444; font-family: 'Menlo','Consolas',monospace; }
+      .analogy { font-size: 10px; fill: #0F0; font-family: monospace; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#FAFAFA"/>
+  <text x="400" y="30" text-anchor="middle" class="title">经典像素调色板陈列</text>
+  <text x="400" y="50" text-anchor="middle" class="subtitle">社区验证的现成色板 · 直接在 Aseprite 导入 · 更多见 Lospec</text>
+  <text x="20" y="64" class="label">PICO-8</text>  <text x="20" y="80" class="desc">16 色</text>  <rect x="170.00" y="72" width="37.50" height="28" fill="#000000" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="207.50" y="72" width="37.50" height="28" fill="#1D2B53" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="245.00" y="72" width="37.50" height="28" fill="#7E2553" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="282.50" y="72" width="37.50" height="28" fill="#008751" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="320.00" y="72" width="37.50" height="28" fill="#AB5236" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="357.50" y="72" width="37.50" height="28" fill="#5F574F" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="395.00" y="72" width="37.50" height="28" fill="#C2C3C7" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="432.50" y="72" width="37.50" height="28" fill="#FFF1E8" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="470.00" y="72" width="37.50" height="28" fill="#FF004D" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="507.50" y="72" width="37.50" height="28" fill="#FFA300" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="545.00" y="72" width="37.50" height="28" fill="#FFEC27" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="582.50" y="72" width="37.50" height="28" fill="#00E436" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="620.00" y="72" width="37.50" height="28" fill="#29ADFF" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="657.50" y="72" width="37.50" height="28" fill="#83769C" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="695.00" y="72" width="37.50" height="28" fill="#FF77A8" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="732.50" y="72" width="37.50" height="28" fill="#FFCCAA" stroke="#BBB" stroke-width="0.4"/>
+  <text x="170" y="112" class="hex">#000000 #1D2B53 #7E2553 #008751 #AB5236 #5F574F #C2C3C7 #FFF1E8 #FF004D #FFA300 #FFEC27 #00E436 #29ADFF #83769C #FF77A8 #FFCCAA</text>
+  <text x="20" y="134" class="label">DB16 (DawnBringer 16)</text>  <text x="20" y="150" class="desc">16 色</text>  <rect x="170.00" y="142" width="37.50" height="28" fill="#140c1c" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="207.50" y="142" width="37.50" height="28" fill="#442434" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="245.00" y="142" width="37.50" height="28" fill="#30346d" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="282.50" y="142" width="37.50" height="28" fill="#4e4a4e" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="320.00" y="142" width="37.50" height="28" fill="#854c30" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="357.50" y="142" width="37.50" height="28" fill="#346524" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="395.00" y="142" width="37.50" height="28" fill="#d04648" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="432.50" y="142" width="37.50" height="28" fill="#757161" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="470.00" y="142" width="37.50" height="28" fill="#597dce" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="507.50" y="142" width="37.50" height="28" fill="#d27d2c" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="545.00" y="142" width="37.50" height="28" fill="#8595a1" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="582.50" y="142" width="37.50" height="28" fill="#6daa2c" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="620.00" y="142" width="37.50" height="28" fill="#d2aa99" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="657.50" y="142" width="37.50" height="28" fill="#6dc2ca" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="695.00" y="142" width="37.50" height="28" fill="#dad45e" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="732.50" y="142" width="37.50" height="28" fill="#deeed6" stroke="#BBB" stroke-width="0.4"/>
+  <text x="170" y="182" class="hex">#140C1C #442434 #30346D #4E4A4E #854C30 #346524 #D04648 #757161 #597DCE #D27D2C #8595A1 #6DAA2C #D2AA99 #6DC2CA #DAD45E #DEEED6</text>
+  <text x="20" y="204" class="label">Sweetie 16</text>  <text x="20" y="220" class="desc">16 色</text>  <rect x="170.00" y="212" width="37.50" height="28" fill="#1a1c2c" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="207.50" y="212" width="37.50" height="28" fill="#5d275d" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="245.00" y="212" width="37.50" height="28" fill="#b13e53" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="282.50" y="212" width="37.50" height="28" fill="#ef7d57" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="320.00" y="212" width="37.50" height="28" fill="#ffcd75" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="357.50" y="212" width="37.50" height="28" fill="#a7f070" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="395.00" y="212" width="37.50" height="28" fill="#38b764" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="432.50" y="212" width="37.50" height="28" fill="#257179" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="470.00" y="212" width="37.50" height="28" fill="#29366f" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="507.50" y="212" width="37.50" height="28" fill="#3b5dc9" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="545.00" y="212" width="37.50" height="28" fill="#41a6f6" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="582.50" y="212" width="37.50" height="28" fill="#73eff7" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="620.00" y="212" width="37.50" height="28" fill="#f4f4f4" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="657.50" y="212" width="37.50" height="28" fill="#94b0c2" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="695.00" y="212" width="37.50" height="28" fill="#566c86" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="732.50" y="212" width="37.50" height="28" fill="#333c57" stroke="#BBB" stroke-width="0.4"/>
+  <text x="170" y="252" class="hex">#1A1C2C #5D275D #B13E53 #EF7D57 #FFCD75 #A7F070 #38B764 #257179 #29366F #3B5DC9 #41A6F6 #73EFF7 #F4F4F4 #94B0C2 #566C86 #333C57</text>
+  <text x="20" y="274" class="label">Endesga 32</text>  <text x="20" y="290" class="desc">32 色</text>  <rect x="170.00" y="282" width="18.75" height="28" fill="#be4a2f" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="188.75" y="282" width="18.75" height="28" fill="#d77643" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="207.50" y="282" width="18.75" height="28" fill="#ead4aa" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="226.25" y="282" width="18.75" height="28" fill="#e4a672" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="245.00" y="282" width="18.75" height="28" fill="#b86f50" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="263.75" y="282" width="18.75" height="28" fill="#733e39" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="282.50" y="282" width="18.75" height="28" fill="#3e2731" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="301.25" y="282" width="18.75" height="28" fill="#a22633" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="320.00" y="282" width="18.75" height="28" fill="#e43b44" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="338.75" y="282" width="18.75" height="28" fill="#f77622" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="357.50" y="282" width="18.75" height="28" fill="#feae34" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="376.25" y="282" width="18.75" height="28" fill="#fee761" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="395.00" y="282" width="18.75" height="28" fill="#63c74d" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="413.75" y="282" width="18.75" height="28" fill="#3e8948" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="432.50" y="282" width="18.75" height="28" fill="#265c42" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="451.25" y="282" width="18.75" height="28" fill="#193c3e" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="470.00" y="282" width="18.75" height="28" fill="#124e89" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="488.75" y="282" width="18.75" height="28" fill="#0099db" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="507.50" y="282" width="18.75" height="28" fill="#2ce8f5" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="526.25" y="282" width="18.75" height="28" fill="#ffffff" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="545.00" y="282" width="18.75" height="28" fill="#c0cbdc" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="563.75" y="282" width="18.75" height="28" fill="#8b9bb4" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="582.50" y="282" width="18.75" height="28" fill="#5a6988" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="601.25" y="282" width="18.75" height="28" fill="#3a4466" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="620.00" y="282" width="18.75" height="28" fill="#262b44" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="638.75" y="282" width="18.75" height="28" fill="#181425" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="657.50" y="282" width="18.75" height="28" fill="#ff0044" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="676.25" y="282" width="18.75" height="28" fill="#68386c" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="695.00" y="282" width="18.75" height="28" fill="#b55088" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="713.75" y="282" width="18.75" height="28" fill="#f6757a" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="732.50" y="282" width="18.75" height="28" fill="#e8b796" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="751.25" y="282" width="18.75" height="28" fill="#c28569" stroke="#BBB" stroke-width="0.4"/>
+  <text x="170" y="322" class="hex">#BE4A2F #D77643 #EAD4AA #E4A672 #B86F50 #733E39 #3E2731 #A22633 #E43B44 #F77622 #FEAE34 #FEE761 #63C74D #3E8948 #265C42 #193C3E</text>
+  <text x="170" y="334" class="hex">#124E89 #0099DB #2CE8F5 #FFFFFF #C0CBDC #8B9BB4 #5A6988 #3A4466 #262B44 #181425 #FF0044 #68386C #B55088 #F6757A #E8B796 #C28569</text>
+  <text x="20" y="380" class="label">ARQ4 (Endesga 4)</text>  <text x="20" y="396" class="desc">4 色</text>  <rect x="170.00" y="388" width="150.00" height="40" fill="#ffffff" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="320.00" y="388" width="150.00" height="40" fill="#6772a9" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="470.00" y="388" width="150.00" height="40" fill="#3a3277" stroke="#BBB" stroke-width="0.4"/>
+  <rect x="620.00" y="388" width="150.00" height="40" fill="#000000" stroke="#BBB" stroke-width="0.4"/>
+  <text x="170" y="440" class="hex">#FFFFFF #6772A9 #3A3277 #000000</text>
+  <rect x="30" y="455" width="740" height="32" rx="4" fill="#333"/>
+  <text x="40" y="475" class="analogy">// 程序员类比: 经典调色板 = 社区维护的 enum 常量库；导入即用，省去手调 HSV，调色板替换 = 运行时换 enum 实例</text>
+</svg>

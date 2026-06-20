@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"
+     width="800" height="500"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .title { font-size: 20px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .caption { font-size: 14px; fill: #666; text-anchor: middle; }
+    .card-bg { fill: #FAFAFA; stroke: #CCC; stroke-width: 1.5; }
+    .card-title { font-size: 16px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .field-label { font-size: 12px; fill: #888; font-weight: bold; }
+    .field-value { font-size: 13px; fill: #333; }
+    .dim-label { font-size: 12px; font-weight: bold; fill: #4A90D9; }
+    .dim-hint { font-size: 11px; fill: #999; }
+    .summary-label { font-size: 12px; font-weight: bold; fill: #E74C3C; }
+    .divider { stroke: #EEE; stroke-width: 1; }
+    .meta-line { stroke: #DDD; stroke-width: 1; }
+  </style>
+
+  <text x="400" y="28" class="title">每日画面分析模板（5-10 分钟）</text>
+
+  <!-- Card background -->
+  <rect x="40" y="50" width="720" height="410" rx="10" class="card-bg"/>
+
+  <!-- Card header -->
+  <rect x="40" y="50" width="720" height="42" rx="10" fill="#4A90D9"/>
+  <rect x="40" y="72" width="720" height="20" fill="#4A90D9"/>
+  <text x="400" y="76" class="title" fill="#FFF" font-size="16">每日画面分析卡</text>
+
+  <!-- Meta info row -->
+  <text x="70" y="117" class="field-label">作品名称：</text>
+  <text x="150" y="117" class="field-value">_________________</text>
+  <text x="330" y="117" class="field-label">艺术家/工作室：</text>
+  <text x="440" y="117" class="field-value">_________________</text>
+  <text x="590" y="117" class="field-label">年代：</text>
+  <text x="630" y="117" class="field-value">_______</text>
+  <line x1="70" y1="130" x2="730" y2="130" class="meta-line"/>
+
+  <!-- 8 Dimension rows -->
+  <!-- Row 1: 线条 & 形状 -->
+  <text x="70" y="155" class="dim-label">1. 线条</text>
+  <text x="140" y="155" class="dim-hint">方向的引导感？轮廓线怎么处理？</text>
+  <line x1="70" y1="165" x2="730" y2="165" class="divider"/>
+
+  <text x="70" y="185" class="dim-label">2. 形状</text>
+  <text x="140" y="185" class="dim-hint">剪影能认出吗？形状是圆/方/三角主导？</text>
+  <line x1="70" y1="195" x2="730" y2="195" class="divider"/>
+
+  <text x="70" y="215" class="dim-label">3. 空间</text>
+  <text x="140" y="215" class="dim-hint">正负形比例？前景/中景/远景怎么分？</text>
+  <line x1="70" y1="225" x2="730" y2="225" class="divider"/>
+
+  <text x="70" y="245" class="dim-label">4. 明度</text>
+  <text x="140" y="245" class="dim-hint">去色后焦点还在吗？最亮/最暗在哪？</text>
+  <line x1="70" y1="255" x2="730" y2="255" class="divider"/>
+
+  <text x="70" y="275" class="dim-label">5. 色彩</text>
+  <text x="140" y="275" class="dim-hint">主色板是什么？色彩在发信号还是造情绪？</text>
+  <line x1="70" y1="285" x2="730" y2="285" class="divider"/>
+
+  <text x="70" y="305" class="dim-label">6. 质感</text>
+  <text x="140" y="305" class="dim-hint">表面触感暗示？纹理密度如何分布？</text>
+  <line x1="70" y1="315" x2="730" y2="315" class="divider"/>
+
+  <text x="70" y="335" class="dim-label">7. 构图</text>
+  <text x="140" y="335" class="dim-hint">视觉焦点在哪？有哪些引导线？</text>
+  <line x1="70" y1="345" x2="730" y2="345" class="divider"/>
+
+  <text x="70" y="365" class="dim-label">8. 风格</text>
+  <text x="140" y="365" class="dim-hint">整体视觉语言是什么？各元素统一吗？</text>
+  <line x1="70" y1="375" x2="730" y2="375" class="divider"/>
+
+  <!-- Summary row -->
+  <rect x="70" y="393" width="660" height="32" rx="5" fill="#FFF5F5" stroke="#E74C3C" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="90" y="414" class="summary-label">一句话总结：</text>
+  <text x="180" y="414" class="field-value" fill="#E74C3C">_____________________________________________</text>
+
+  <!-- Footer -->
+  <text x="400" y="450" fill="#888" font-size="11" text-anchor="middle">每天任选 3 个维度 + 一句话总结 ｜ 坚持两周，你再看任何画面都会自动"解构"它</text>
+
+  <text x="400" y="490" class="caption">图 3.2：每日练习模板——不需要全部填满，每天挑 3 个维度分析一张图，写一句话，5 分钟足够。</text>
+</svg>

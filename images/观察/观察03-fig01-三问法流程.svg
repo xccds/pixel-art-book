@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"
+     width="800" height="500"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .title { font-size: 20px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .caption { font-size: 14px; fill: #666; text-anchor: middle; }
+    .qbox { fill: #E8F4FD; stroke: #4A90D9; stroke-width: 2; }
+    .qnum { font-size: 16px; font-weight: bold; fill: #4A90D9; text-anchor: middle; }
+    .qtext { font-size: 14px; fill: #333; text-anchor: middle; }
+    .qtext-en { font-size: 11px; fill: #888; text-anchor: middle; }
+    .analog-label { font-size: 11px; fill: #E74C3C; text-anchor: middle; font-style: italic; }
+    .arrow { stroke: #4A90D9; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+    .arrow-label-bg { fill: #FFF; stroke: none; }
+    .arrow-label { font-size: 12px; fill: #666; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90D9"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="32" class="title">VTS 三问法 · 循环分析流程</text>
+
+  <!-- Q1 Box (Top) -->
+  <rect x="280" y="55" width="240" height="90" rx="10" class="qbox"/>
+  <text x="400" y="78" class="qnum">问题 1</text>
+  <text x="400" y="98" class="qtext">这幅画里发生了什么？</text>
+  <text x="400" y="115" class="qtext-en">What's going on in this picture?</text>
+  <text x="400" y="133" class="analog-label">类比：这个函数在干什么？</text>
+
+  <!-- Q2 Box (Bottom-Right) -->
+  <rect x="470" y="280" width="260" height="90" rx="10" class="qbox"/>
+  <text x="600" y="303" class="qnum">问题 2</text>
+  <text x="600" y="323" class="qtext">你看到了什么让你这么说？</text>
+  <text x="600" y="340" class="qtext-en">What do you see that makes you say that?</text>
+  <text x="600" y="358" class="analog-label">类比：凭什么说这里有 bug？证据在哪？</text>
+
+  <!-- Q3 Box (Bottom-Left) -->
+  <rect x="70" y="280" width="260" height="90" rx="10" class="qbox"/>
+  <text x="200" y="303" class="qnum">问题 3</text>
+  <text x="200" y="323" class="qtext">我们还能发现什么？</text>
+  <text x="200" y="340" class="qtext-en">What more can we find?</text>
+  <text x="200" y="358" class="analog-label">类比：还有什么边界条件没测到？</text>
+
+  <!-- Arrow Q1 → Q2 (Right-down) -->
+  <path d="M 480 145 Q 530 200 550 280" class="arrow"/>
+  <rect x="498" y="205" width="60" height="18" rx="3" class="arrow-label-bg"/>
+  <text x="528" y="218" class="arrow-label">找出证据</text>
+
+  <!-- Arrow Q2 → Q3 (Left) -->
+  <path d="M 470 330 Q 400 370 330 330" class="arrow"/>
+  <rect x="370" y="345" width="60" height="18" rx="3" class="arrow-label-bg"/>
+  <text x="400" y="358" class="arrow-label">继续追问</text>
+
+  <!-- Arrow Q3 → Q1 (Left-up, back to start) -->
+  <path d="M 200 280 Q 180 180 280 100" class="arrow"/>
+  <rect x="185" y="180" width="60" height="18" rx="3" class="arrow-label-bg"/>
+  <text x="215" y="193" class="arrow-label">循环深化</text>
+
+  <!-- Cycle annotation -->
+  <text x="400" y="415" fill="#666" font-size="13" text-anchor="middle">每轮循环，分析深度递增——第一轮看到"有什么"，第三轮看到"为什么有效/为什么垮了"</text>
+
+  <text x="400" y="488" class="caption">图 3.1：VTS 三问法核心流程——三个问题形成闭环，每一轮循环都将分析推深一层。</text>
+</svg>

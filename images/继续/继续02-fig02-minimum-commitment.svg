@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <!-- 标题 -->
+  <text x="400" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">最低承诺系统</text>
+  <text x="400" y="58" text-anchor="middle" font-size="13" fill="#666">Minimum Commitment System — 在最差的一天，你也能做到</text>
+
+  <!-- 外圈：每月1次社区发布 -->
+  <circle cx="400" cy="275" r="180" fill="#E8F4FD" stroke="#E74C3C" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="400" y="85" text-anchor="middle" font-size="15" fill="#E74C3C" font-weight="bold">每月 1 次社区发布</text>
+  <text x="400" y="102" text-anchor="middle" font-size="11" fill="#666">获得外部反馈 · 建立作品集 · 保持节奏</text>
+
+  <!-- 中圈：每周1张稿 -->
+  <circle cx="400" cy="275" r="120" fill="#fff" stroke="#333" stroke-width="3" stroke-dasharray="6,4"/>
+  <text x="400" y="145" text-anchor="middle" font-size="15" fill="#333" font-weight="bold">每周 1 张稿</text>
+  <text x="400" y="162" text-anchor="middle" font-size="11" fill="#666">保持输出 · 积累素材库 · 形成习惯</text>
+
+  <!-- 内圈：每天5分钟（底线） -->
+  <circle cx="400" cy="275" r="60" fill="#E74C3C" opacity="0.12" stroke="#E74C3C" stroke-width="4"/>
+  <text x="400" y="258" text-anchor="middle" font-size="16" fill="#E74C3C" font-weight="bold">每天 5 分钟</text>
+  <text x="400" y="278" text-anchor="middle" font-size="13" fill="#E74C3C" font-weight="bold">不可跳过的底线</text>
+  <text x="400" y="296" text-anchor="middle" font-size="11" fill="#666">比昨天多画一条线</text>
+
+  <!-- 从内到外的箭头标注 -->
+  <!-- 内→中 -->
+  <line x1="460" y1="260" x2="520" y2="220" stroke="#999" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="500" y="230" font-size="10" fill="#999">积累</text>
+
+  <!-- 中→外 -->
+  <line x1="475" y1="160" x2="530" y2="110" stroke="#999" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="520" y="130" font-size="10" fill="#999">分享</text>
+
+  <defs>
+    <marker id="arrowGray" markerWidth="6" markerHeight="5" refX="5" refY="2.5" orient="auto">
+      <polygon points="0 0, 6 2.5, 0 5" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- 底部原则 -->
+  <rect x="100" y="448" width="600" height="36" rx="6" fill="#333"/>
+  <text x="400" y="472" text-anchor="middle" font-size="13" fill="#fff">核心原则：完成的丑画 &gt; 完美的未完成 · 不是鼓励你少做，是确保你在最差的一天也能做到</text>
+</svg>

@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .zone-title { font-size: 13px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .zone-sub { font-size: 9px; fill: #fff; text-anchor: middle; opacity: 0.8; }
+    .zone-label { font-size: 9px; fill: #555; }
+    .zone-value { font-size: 9px; fill: #E74C3C; font-weight: bold; }
+    .slider-label { font-size: 8px; fill: #666; text-anchor: middle; }
+    .slider-value { font-size: 9px; fill: #333; font-weight: bold; text-anchor: middle; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 制作03.3  关卡视觉节奏调控——三元参数（对比度 + 细节密度 + 色温）的节奏设计</text>
+  <text x="400" y="46" class="subtitle" text-anchor="middle">一个关卡不是一根"亮度带"——是有呼吸感的视觉节奏。紧张→释放→过渡→再紧张</text>
+
+  <!-- Linear level timeline -->
+  <rect x="20" y="65" width="760" height="12" fill="#E0E0E0" rx="6"/>
+
+  <!-- Safety zone 1 -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="220" height="105" fill="#E8F8F0" stroke="#27AE60" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="220" height="32" fill="#27AE60" rx="8"/>
+    <rect x="0" y="16" width="220" height="16" fill="#27AE60"/>
+    <text x="110" y="14" class="zone-title" font-size="11">安全区</text>
+    <text x="110" y="28" class="zone-sub">Safe Zone</text>
+
+    <text x="15" y="48" class="zone-label">低对比 · 暖色 · 少细节</text>
+
+    <!-- Mini illustration of safe zone -->
+    <g transform="translate(15, 56)">
+      <rect x="0" y="0" width="190" height="36" fill="#ABEBC6" opacity="0.4" rx="3"/>
+      <rect x="40" y="8" width="30" height="22" fill="#27AE60" opacity="0.4" rx="2"/>
+      <rect x="100" y="12" width="20" height="16" fill="#82E0AA" opacity="0.4" rx="2"/>
+      <circle cx="150" cy="12" r="6" fill="#F1C40F" opacity="0.3"/>
+      <text x="95" y="34" style="font-size:6.5px; fill:#7F8C8D;" text-anchor="middle">玩家在此休息、存档、对话</text>
+    </g>
+  </g>
+
+  <!-- Arrow between safety and tension -->
+  <g transform="translate(265, 125)">
+    <line x1="0" y1="5" x2="30" y2="5" stroke="#999" stroke-width="1.2"/>
+    <polygon points="30,0 38,5 30,10" fill="#999"/>
+    <text x="19" y="-5" text-anchor="middle" style="font-size:7px; fill:#999;">过渡</text>
+  </g>
+
+  <!-- Tension zone -->
+  <g transform="translate(305, 80)">
+    <rect x="0" y="0" width="220" height="105" fill="#FDEDEC" stroke="#E74C3C" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="220" height="32" fill="#E74C3C" rx="8"/>
+    <rect x="0" y="16" width="220" height="16" fill="#E74C3C"/>
+    <text x="110" y="14" class="zone-title" font-size="11">紧张区</text>
+    <text x="110" y="28" class="zone-sub">Tension Zone</text>
+
+    <text x="15" y="48" class="zone-label" fill="#C0392B">高对比 · 冷色 · 多细节</text>
+
+    <g transform="translate(15, 56)">
+      <rect x="0" y="0" width="190" height="36" fill="#D5D8DC" opacity="0.4" rx="3"/>
+      <rect x="20" y="10" width="25" height="18" fill="#E74C3C" opacity="0.5" rx="2"/>
+      <rect x="70" y="6" width="20" height="22" fill="#C0392B" opacity="0.4" rx="2"/>
+      <rect x="120" y="12" width="16" height="16" fill="#922B21" opacity="0.4" rx="2"/>
+      <!-- Spikes -->
+      <polygon points="60,2 65,10 55,10" fill="#E74C3C" opacity="0.5"/>
+      <polygon points="85,4 90,12 80,12" fill="#E74C3C" opacity="0.4"/>
+      <text x="95" y="34" style="font-size:6.5px; fill:#C0392B;" text-anchor="middle">敌人密集 · 陷阱 · 危险导航</text>
+    </g>
+  </g>
+
+  <!-- Arrow between tension and transition -->
+  <g transform="translate(530, 125)">
+    <line x1="0" y1="5" x2="30" y2="5" stroke="#999" stroke-width="1.2"/>
+    <polygon points="30,0 38,5 30,10" fill="#999"/>
+    <text x="19" y="-5" text-anchor="middle" style="font-size:7px; fill:#999;">过渡</text>
+  </g>
+
+  <!-- Transition zone -->
+  <g transform="translate(565, 80)">
+    <rect x="0" y="0" width="215" height="105" fill="#FEF9E7" stroke="#F39C12" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="215" height="32" fill="#F39C12" rx="8"/>
+    <rect x="0" y="16" width="215" height="16" fill="#F39C12"/>
+    <text x="107" y="14" class="zone-title" font-size="11">过渡区</text>
+    <text x="107" y="28" class="zone-sub">Transition Zone</text>
+
+    <text x="15" y="48" class="zone-label" fill="#D4AC0D">中等对比 · 中性色 · 渐变细节</text>
+
+    <g transform="translate(12, 56)">
+      <rect x="0" y="0" width="190" height="36" fill="#FDEBD0" opacity="0.4" rx="3"/>
+      <rect x="50" y="8" width="25" height="22" fill="#F39C12" opacity="0.3" rx="2"/>
+      <rect x="110" y="12" width="18" height="16" fill="#D4AC0D" opacity="0.2" rx="2"/>
+      <text x="95" y="34" style="font-size:6.5px; fill:#B7950B;" text-anchor="middle">节奏回调 · 准备下一次紧张</text>
+    </g>
+  </g>
+
+  <!-- Rhythm wave line -->
+  <g transform="translate(20, 200)">
+    <rect x="0" y="0" width="760" height="90" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="6"/>
+
+    <text x="20" y="18" style="font-size:11px; font-weight:bold; fill:#333;">三元参数节奏曲线——关卡中三参数的变化模式</text>
+
+    <!-- Contrast slider -->
+    <text x="20" y="44" class="zone-label" font-weight="bold" fill="#E74C3C">对比度</text>
+    <rect x="80" y="34" width="660" height="16" fill="#F0F0F0" rx="8"/>
+    <rect x="90" y="38" width="100" height="8" fill="#27AE60" rx="4" opacity="0.7"/>
+    <rect x="370" y="38" width="160" height="8" fill="#E74C3C" rx="4" opacity="0.7"/>
+    <rect x="550" y="38" width="80" height="8" fill="#F39C12" rx="4" opacity="0.5"/>
+    <rect x="650" y="38" width="80" height="8" fill="#27AE60" rx="4" opacity="0.6"/>
+    <text x="200" y="48" class="slider-label">低 →</text>
+    <text x="450" y="48" class="slider-label">→ 高</text>
+    <text x="630" y="48" class="slider-label">→ 中 →</text>
+    <text x="735" y="48" class="slider-label">低</text>
+
+    <!-- Detail density slider -->
+    <text x="20" y="66" class="zone-label" font-weight="bold" fill="#E74C3C">细节密度</text>
+    <rect x="80" y="56" width="660" height="16" fill="#F0F0F0" rx="8"/>
+    <rect x="90" y="60" width="90" height="8" fill="#27AE60" rx="4" opacity="0.6"/>
+    <rect x="370" y="60" width="170" height="8" fill="#E74C3C" rx="4" opacity="0.7"/>
+    <rect x="550" y="60" width="80" height="8" fill="#F39C12" rx="4" opacity="0.5"/>
+    <rect x="650" y="60" width="80" height="8" fill="#27AE60" rx="4" opacity="0.5"/>
+    <text x="200" y="70" class="slider-label">少 →</text>
+    <text x="455" y="70" class="slider-label">→ 多</text>
+    <text x="630" y="70" class="slider-label">→ 中 →</text>
+    <text x="735" y="70" class="slider-label">少</text>
+
+    <!-- Color temp slider -->
+    <text x="20" y="88" class="zone-label" font-weight="bold" fill="#E74C3C">色温</text>
+    <rect x="80" y="78" width="660" height="16" fill="#F0F0F0" rx="8"/>
+    <rect x="90" y="82" width="100" height="8" fill="#F1C40F" rx="4" opacity="0.6"/>
+    <rect x="370" y="82" width="160" height="8" fill="#2980B9" rx="4" opacity="0.7"/>
+    <rect x="550" y="82" width="80" height="8" fill="#AAB7B8" rx="4" opacity="0.5"/>
+    <rect x="650" y="82" width="80" height="8" fill="#F1C40F" rx="4" opacity="0.5"/>
+    <text x="200" y="92" class="slider-label">暖 →</text>
+    <text x="450" y="92" class="slider-label">→ 冷</text>
+    <text x="630" y="92" class="slider-label">→ 中性 →</text>
+    <text x="735" y="92" class="slider-label">暖</text>
+  </g>
+
+  <!-- Safety zone 2 (return) -->
+  <g transform="translate(540, 305)">
+    <rect x="0" y="0" width="220" height="55" fill="#E8F8F0" stroke="#27AE60" stroke-width="1.5" rx="6" stroke-dasharray="8,3"/>
+    <text x="110" y="20" class="zone-title" font-size="10" fill="#27AE60">安全区（回归）</text>
+    <text x="110" y="38" class="zone-sub" fill="#1E8449">奖励 · 存档 · 升级</text>
+  </g>
+
+  <!-- Arrow right -->
+  <g transform="translate(355, 332)">
+    <line x1="0" y1="0" x2="175" y2="0" stroke="#999" stroke-width="1"/>
+    <polygon points="175,-4 183,0 175,4" fill="#999"/>
+    <text x="90" y="-8" text-anchor="middle" style="font-size:7px; fill:#999;">关卡推进方向 →</text>
+  </g>
+
+  <!-- Bottom: design principles -->
+  <g transform="translate(20, 380)">
+    <rect x="0" y="0" width="760" height="105" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1" rx="6"/>
+
+    <text x="20" y="20" style="font-size:11px; font-weight:bold; fill:#E74C3C;">视觉节奏调控的六条铁律：</text>
+
+    <g transform="translate(20, 35)">
+      <text x="0" y="0" style="font-size:8.5px; fill:#333;">1. 紧张区 &lt; 关卡总长的 40%——长时间紧张 = 视觉疲劳 = 玩家关闭游戏</text>
+      <text x="0" y="16" style="font-size:8.5px; fill:#333;">2. 安全区必需——玩家需要视觉上的"呼吸点"。没有安全区的关卡是"视觉窒息"</text>
+      <text x="0" y="32" style="font-size:8.5px; fill:#333;">3. 过渡区用梯度，不要硬切——从暖色到冷色要有中间色过渡，从低对比到高对比要有中间对比度</text>
+      <text x="0" y="48" style="font-size:8.5px; fill:#333;">4. 三元参数联动——一个参数变化时另外两个参数也应该微调（例：对比度升高→色温向冷色微移→细节密度升高）</text>
+      <text x="0" y="64" style="font-size:8.5px; fill:#333;">5. Boss 战前 3-5 秒 = "视觉紧张爬坡"——不是 Boss 出现瞬间变红——是在接近 Boss 房的过程中视觉参数逐渐紧张化</text>
+      <text x="0" y="80" style="font-size:8.5px; fill:#333;">6. 用 Gold Standard 对照——每个区段截一张引擎里的实机图，放在 Gold Standard 旁对照——确保三个区段"看起来是同一个游戏的不同部分"而不是"三个不同的游戏"</text>
+    </g>
+  </g>
+</svg>

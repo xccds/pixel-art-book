@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .form-label { font-size: 11px; font-weight: bold; fill: #333; }
+    .form-hint { font-size: 9px; fill: #999; }
+    .input-box { fill: #fff; stroke: #A8D8F0; stroke-width: 1.2; }
+    .input-text { font-size: 10px; fill: #555; }
+    .result-box { fill: #E8F4FD; stroke: #A8D8F0; stroke-width: 1; }
+    .result-title { font-size: 12px; font-weight: bold; fill: #E74C3C; }
+    .result-text { font-size: 9px; fill: #555; }
+    .arrow { stroke: #E74C3C; stroke-width: 1.5; fill: none; }
+    .note { font-size: 10px; fill: #999; }
+    .icon-bg { fill: #E8F4FD; stroke: #A8D8F0; stroke-width: 0.5; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 风格03.1  约束清单法——"不是选你喜欢的，是选你做得起的"</text>
+
+  <!-- Form area -->
+  <g transform="translate(30, 45)">
+    <rect x="0" y="0" width="400" height="400" fill="#fff" stroke="#ccc" stroke-width="1" rx="5"/>
+
+    <!-- Form title -->
+    <rect x="0" y="0" width="400" height="32" fill="#333" rx="5"/>
+    <rect x="0" y="16" width="400" height="16" fill="#333"/>
+    <text x="200" y="20" text-anchor="middle" style="font-size:13px; fill:#fff; font-weight:bold;">约束清单 （Constraint Checklist）</text>
+
+    <!-- Row 1: 时间 -->
+    <g transform="translate(15, 48)">
+      <rect x="0" y="-2" width="32" height="20" rx="3" fill="#E74C3C"/>
+      <text x="16" y="12" text-anchor="middle" style="font-size:10px; fill:#fff; font-weight:bold;">1</text>
+      <text x="42" y="12" class="form-label">开发时间（Time）</text>
+      <text x="42" y="28" class="form-hint">你能投入多少个月？全职/兼职？</text>
+      <rect x="42" y="34" width="340" height="24" class="input-box" rx="3"/>
+      <text x="52" y="51" class="input-text">示例：兼职 12 个月，每周 20 小时 → 约 960 工时</text>
+    </g>
+
+    <!-- Row 2: 技能 -->
+    <g transform="translate(15, 128)">
+      <rect x="0" y="-2" width="32" height="20" rx="3" fill="#E74C3C"/>
+      <text x="16" y="12" text-anchor="middle" style="font-size:10px; fill:#fff; font-weight:bold;">2</text>
+      <text x="42" y="12" class="form-label">技能栈（Skills）</text>
+      <text x="42" y="28" class="form-hint">你会什么？不会什么？愿意学什么？</text>
+      <rect x="42" y="34" width="340" height="24" class="input-box" rx="3"/>
+      <text x="52" y="51" class="input-text">示例：会像素画（2年）· 不会手绘 · 愿意学高比特 32 色技法</text>
+    </g>
+
+    <!-- Row 3: 平台 -->
+    <g transform="translate(15, 208)">
+      <rect x="0" y="-2" width="32" height="20" rx="3" fill="#E74C3C"/>
+      <text x="16" y="12" text-anchor="middle" style="font-size:10px; fill:#fff; font-weight:bold;">3</text>
+      <text x="42" y="12" class="form-label">目标平台（Platform）</text>
+      <text x="42" y="28" class="form-hint">PC / 移动端 / 主机 / 网页？</text>
+      <rect x="42" y="34" width="340" height="24" class="input-box" rx="3"/>
+      <text x="52" y="51" class="input-text">示例：PC (Steam) + Switch → 需支持 720p-1080p，16:9</text>
+    </g>
+
+    <!-- Row 4: 受众 -->
+    <g transform="translate(15, 288)">
+      <rect x="0" y="-2" width="32" height="20" rx="3" fill="#E74C3C"/>
+      <text x="16" y="12" text-anchor="middle" style="font-size:10px; fill:#fff; font-weight:bold;">4</text>
+      <text x="42" y="12" class="form-label">目标受众（Audience）</text>
+      <text x="42" y="28" class="form-hint">玩家画像：年龄/口味/审美期望</text>
+      <rect x="42" y="34" width="340" height="24" class="input-box" rx="3"/>
+      <text x="52" y="51" class="input-text">示例：策略游戏玩家（25-40岁），接受低画质但要求清晰可读</text>
+    </g>
+
+    <!-- Row 5: 资产量 -->
+    <g transform="translate(15, 368)">
+      <rect x="0" y="-2" width="32" height="20" rx="3" fill="#E74C3C"/>
+      <text x="16" y="12" text-anchor="middle" style="font-size:10px; fill:#fff; font-weight:bold;">5</text>
+      <text x="42" y="12" class="form-label">资产量预估（Asset Volume）</text>
+      <text x="42" y="28" class="form-hint">预计需要多少个角色 / 场景 / UI元素？</text>
+      <rect x="42" y="34" width="340" height="24" class="input-box" rx="3"/>
+      <text x="52" y="51" class="input-text">示例：~20个角色 × 4方向 × 10帧动画 = 800帧像素画（查风格02工时表）</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(440, 240)">
+    <path d="M 0,0 L 40,0" class="arrow" marker-end="url(#arrowHead)"/>
+    <defs>
+      <marker id="arrowHead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0,0 8,3 0,6" fill="#E74C3C"/>
+      </marker>
+    </defs>
+    <text x="20" y="-6" text-anchor="middle" style="font-size:9px; fill:#E74C3C; font-weight:bold;">过滤</text>
+  </g>
+
+  <!-- Result area -->
+  <g transform="translate(490, 45)">
+    <rect x="0" y="0" width="280" height="400" class="result-box" rx="5"/>
+    <text x="140" y="24" text-anchor="middle" class="result-title">可选像素子风格池</text>
+    <text x="140" y="40" text-anchor="middle" style="font-size:9px; fill:#999;">（四代 × 分辨率 × 色数 · 按约束过滤）</text>
+
+    <line x1="15" y1="50" x2="265" y2="50" stroke="#A8D8F0" stroke-width="0.5"/>
+
+    <g transform="translate(15, 62)">
+      <rect x="0" y="0" width="250" height="30" fill="#27AE60" opacity="0.15" rx="3"/>
+      <rect x="0" y="0" width="4" height="30" fill="#27AE60" rx="2"/>
+      <text x="12" y="12" style="font-size:10px; font-weight:bold; fill:#1E8449;">✅ 匹配子风格</text>
+      <text x="12" y="25" style="font-size:9px; fill:#555;">16-bit / 32×32 / 16色 → 低资产成本，匹配工时</text>
+    </g>
+
+    <g transform="translate(15, 102)">
+      <rect x="0" y="0" width="250" height="30" fill="#F1C40F" opacity="0.15" rx="3"/>
+      <rect x="0" y="0" width="4" height="30" fill="#F1C40F" rx="2"/>
+      <text x="12" y="12" style="font-size:10px; font-weight:bold; fill:#B7950B;">⚠ 需努力</text>
+      <text x="12" y="25" style="font-size:9px; fill:#555;">高比特 32色 / 调色板艺术 → 需更高工时或美术功底</text>
+    </g>
+
+    <g transform="translate(15, 142)">
+      <rect x="0" y="0" width="250" height="30" fill="#E74C3C" opacity="0.12" rx="3"/>
+      <rect x="0" y="0" width="4" height="30" fill="#E74C3C" rx="2"/>
+      <text x="12" y="12" style="font-size:10px; font-weight:bold; fill:#C0392B;">✕ 排除</text>
+      <text x="12" y="25" style="font-size:9px; fill:#555;">64×64 全动画 / 非像素路线 → 工时黑洞（非像素见继续04）</text>
+    </g>
+
+    <line x1="15" y1="185" x2="265" y2="185" stroke="#A8D8F0" stroke-width="0.5"/>
+
+    <g transform="translate(15, 198)">
+      <text x="0" y="0" style="font-size:11px; font-weight:bold; fill:#333;">关键原则：</text>
+      <text x="0" y="18" style="font-size:9px; fill:#555;">1. 不是选你喜欢的——是选你做得起的</text>
+      <text x="0" y="34" style="font-size:9px; fill:#555;">2. 五项约束中，时间 和 技能 权重最高</text>
+      <text x="0" y="50" style="font-size:9px; fill:#555;">3. 平台决定分辨率下限 → 从画面倒数</text>
+      <text x="0" y="66" style="font-size:9px; fill:#555;">4. 资产量 × 单件工时 = 总工时 → 必须≤可用时间</text>
+      <text x="0" y="82" style="font-size:9px; fill:#555;">5. 如果五项约束让你只剩一种选择——那就对了</text>
+    </g>
+
+    <g transform="translate(15, 295)">
+      <rect x="0" y="0" width="250" height="28" fill="#E74C3C" opacity="0.1" rx="3"/>
+      <text x="125" y="12" text-anchor="middle" style="font-size:9px; fill:#E74C3C; font-weight:bold;">程序员类比：约束 = 你的技术栈预算</text>
+      <text x="125" y="24" text-anchor="middle" style="font-size:8px; fill:#999;">你不会用 Rust 写一天就上线的 MVP → 也不要用 64×64 全动画做三个月的小品</text>
+    </g>
+  </g>
+</svg>

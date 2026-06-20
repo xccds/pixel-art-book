@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .principle-num { font-size: 18px; font-weight: bold; fill: #E74C3C; text-anchor: middle; }
+    .principle-title { font-size: 13px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .principle-sub { font-size: 10px; fill: #666; text-anchor: middle; }
+    .demo-label { font-size: 9px; fill: #555; }
+    .note { font-size: 9px; fill: #999; }
+    .box { stroke: #ccc; stroke-width: 1; }
+    .bad-mark { font-size: 11px; fill: #E74C3C; font-weight: bold; }
+    .good-mark { font-size: 11px; fill: #27AE60; font-weight: bold; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 风格03.2  混血风格三原则——主次分明 · 过渡区域 · 冲突解决</text>
+
+  <!-- ====== Principle 1: 主次分明 ====== -->
+  <g transform="translate(20, 45)">
+    <rect x="0" y="0" width="245" height="430" fill="#fff" stroke="#ccc" stroke-width="1" rx="5"/>
+    <rect x="0" y="0" width="245" height="36" fill="#333" rx="5"/>
+    <rect x="0" y="18" width="245" height="18" fill="#333"/>
+
+    <text x="122" y="14" class="principle-title" fill="#fff">原则一：</text>
+    <text x="122" y="30" class="principle-title" fill="#fff">主次分明（Dominance Hierarchy）</text>
+
+    <text x="122" y="55" class="principle-sub">一个系统占 70%+，另一个点缀</text>
+
+    <!-- Demo: big circle + small triangle -->
+    <g transform="translate(20, 70)">
+      <text x="102" y="0" class="demo-label" text-anchor="middle">✅ 正确：大圆主导（70%）+ 小三角点缀（30%）</text>
+
+      <circle cx="75" cy="65" r="42" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5"/>
+      <text x="75" y="70" class="demo-label" text-anchor="middle" fill="#555">主体A</text>
+      <text x="75" y="82" class="demo-label" text-anchor="middle" fill="#999">像素风格</text>
+
+      <polygon points="115,35 130,65 100,65" fill="none" stroke="#E74C3C" stroke-width="1.5"/>
+      <text x="115" y="52" class="demo-label" text-anchor="middle" fill="#E74C3C">点缀B</text>
+      <text x="115" y="63" class="demo-label" text-anchor="middle" fill="#999" font-size="8">矢量边框</text>
+    </g>
+
+    <!-- Bad example -->
+    <g transform="translate(20, 210)">
+      <text x="102" y="0" class="demo-label" text-anchor="middle">❌ 错误：50/50 冲突——两个系统在打架</text>
+
+      <circle cx="52" cy="50" r="30" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5"/>
+      <text x="52" y="54" class="demo-label" text-anchor="middle" fill="#555">A</text>
+
+      <rect x="102" y="20" width="50" height="50" fill="#FDEBD0" stroke="#F1C40F" stroke-width="1.5" rx="3"/>
+      <text x="127" y="48" class="demo-label" text-anchor="middle" fill="#555">B</text>
+
+      <text x="102" y="85" class="demo-label" text-anchor="middle" fill="#999" font-size="8">等面积 = 等视觉权重 = 冲突</text>
+    </g>
+
+    <!-- 70-20-10 rule -->
+    <g transform="translate(15, 340)">
+      <rect x="0" y="0" width="215" height="75" fill="#E8F4FD" rx="3"/>
+      <text x="107" y="16" class="principle-title" font-size="10" fill="#333">70-20-10 规则</text>
+      <rect x="20" y="28" width="126" height="8" fill="#A8D8F0" rx="2"/>
+      <rect x="150" y="28" width="36" height="8" fill="#E74C3C" opacity="0.5" rx="2"/>
+      <rect x="190" y="28" width="16" height="8" fill="#F1C40F" opacity="0.5" rx="2"/>
+      <text x="83" y="50" class="demo-label" text-anchor="middle" fill="#555">70% 主风格</text>
+      <text x="168" y="50" class="demo-label" text-anchor="middle" fill="#E74C3C">20% 辅风格</text>
+      <text x="198" y="50" class="demo-label" text-anchor="middle" fill="#B7950B">10%</text>
+      <text x="198" y="62" class="demo-label" text-anchor="middle" fill="#B7950B">点缀</text>
+    </g>
+  </g>
+
+  <!-- ====== Principle 2: 过渡区域 ====== -->
+  <g transform="translate(280, 45)">
+    <rect x="0" y="0" width="245" height="430" fill="#fff" stroke="#ccc" stroke-width="1" rx="5"/>
+    <rect x="0" y="0" width="245" height="36" fill="#333" rx="5"/>
+    <rect x="0" y="18" width="245" height="18" fill="#333"/>
+
+    <text x="122" y="14" class="principle-title" fill="#fff">原则二：</text>
+    <text x="122" y="30" class="principle-title" fill="#fff">过渡区域设计（Transition Zone）</text>
+
+    <text x="122" y="55" class="principle-sub">两个风格之间必须加缓冲区</text>
+
+    <!-- Demo: two color blocks with gradient -->
+    <g transform="translate(15, 65)">
+      <!-- Bad: hard cut -->
+      <rect x="0" y="10" width="80" height="45" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="0.5"/>
+      <text x="40" y="33" text-anchor="middle" class="demo-label" fill="#888">像素</text>
+      <rect x="80" y="10" width="80" height="45" fill="#FDEBD0" stroke="#F1C40F" stroke-width="0.5"/>
+      <text x="120" y="33" text-anchor="middle" class="demo-label" fill="#888">矢量UI</text>
+      <text x="85" y="65" text-anchor="middle" class="bad-mark" font-size="9">❌硬切</text>
+
+      <line x1="78" y1="62" x2="78" y2="55" stroke="#E74C3C" stroke-width="1"/>
+
+      <!-- Better: 1px gap -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="10" width="75" height="45" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="0.5"/>
+        <text x="37" y="33" text-anchor="middle" class="demo-label" fill="#888">像素</text>
+        <rect x="75" y="10" width="10" height="45" fill="#E0E0E0" stroke="none"/>
+        <text x="80" y="33" text-anchor="middle" class="demo-label" fill="#666" font-size="7">过渡</text>
+        <rect x="85" y="10" width="75" height="45" fill="#FDEBD0" stroke="#F1C40F" stroke-width="0.5"/>
+        <text x="122" y="33" text-anchor="middle" class="demo-label" fill="#888">矢量UI</text>
+        <text x="85" y="65" text-anchor="middle" class="good-mark" font-size="9">✅过渡区</text>
+      </g>
+
+      <!-- Ideal: blended zone -->
+      <g transform="translate(0, 165)">
+        <rect x="0" y="10" width="55" height="45" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="0.5"/>
+        <text x="27" y="33" text-anchor="middle" class="demo-label" fill="#888">像素</text>
+
+        <!-- Blend zone -->
+        <defs>
+          <linearGradient id="blendGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#E8F4FD"/>
+            <stop offset="50%" stop-color="#D8E8E0"/>
+            <stop offset="100%" stop-color="#FDEBD0"/>
+          </linearGradient>
+        </defs>
+        <rect x="55" y="10" width="50" height="45" fill="url(#blendGrad)" stroke="none"/>
+        <text x="80" y="33" text-anchor="middle" class="demo-label" fill="#666" font-size="7">混合过渡</text>
+
+        <rect x="105" y="10" width="55" height="45" fill="#FDEBD0" stroke="#F1C40F" stroke-width="0.5"/>
+        <text x="132" y="33" text-anchor="middle" class="demo-label" fill="#888">矢量UI</text>
+
+        <text x="80" y="65" text-anchor="middle" class="good-mark" font-size="9">✅ 最佳</text>
+      </g>
+    </g>
+
+    <!-- Rules list -->
+    <g transform="translate(15, 280)">
+      <text x="0" y="0" class="principle-title" text-anchor="start" font-size="10" fill="#333">过渡区设计规则：</text>
+      <text x="0" y="18" class="note">· 永远不要"硬切"——加至少 2-4px 过渡</text>
+      <text x="0" y="34" class="note">· 像素画面 → 矢量UI 用边框/留白过渡</text>
+      <text x="0" y="50" class="note">· 角色 → 背景用景深/明度差过渡</text>
+      <text x="0" y="66" class="note">· 8-bit → 16-bit 用色数渐变（dither）过渡</text>
+      <text x="0" y="82" class="note">· 低色数 → 高色数 用色数过渡面接触</text>
+    </g>
+
+    <!-- Code analogy -->
+    <g transform="translate(15, 380)">
+      <rect x="0" y="0" width="215" height="35" fill="#333" rx="3"/>
+      <text x="107" y="15" text-anchor="middle" style="font-size:8px; fill:#0F0; font-family:monospace;">// 类比: API 中间层（Adapter Pattern）</text>
+      <text x="107" y="28" text-anchor="middle" style="font-size:8px; fill:#0F0; font-family:monospace;">不要直接对接两个接口 → 加一层适配</text>
+    </g>
+  </g>
+
+  <!-- ====== Principle 3: 冲突解决 ====== -->
+  <g transform="translate(540, 45)">
+    <rect x="0" y="0" width="245" height="430" fill="#fff" stroke="#ccc" stroke-width="1" rx="5"/>
+    <rect x="0" y="0" width="245" height="36" fill="#333" rx="5"/>
+    <rect x="0" y="18" width="245" height="18" fill="#333"/>
+
+    <text x="122" y="14" class="principle-title" fill="#fff">原则三：</text>
+    <text x="122" y="30" class="principle-title" fill="#fff">风格冲突的优雅解决（Conflict Resolution）</text>
+
+    <text x="122" y="55" class="principle-sub">不要让玩家"看见"缝合线</text>
+
+    <!-- Demo: pixel + hand-drawn with mix zone -->
+    <g transform="translate(15, 70)">
+      <!-- Left: pixel -->
+      <rect x="0" y="5" width="60" height="65" fill="#F8F8F8" stroke="#ccc" stroke-width="0.5" rx="2"/>
+      <text x="30" y="15" class="demo-label" text-anchor="middle" fill="#333">像素</text>
+      <rect x="5" y="22" width="12" height="12" fill="#555"/>
+      <rect x="17" y="22" width="12" height="12" fill="#AAA"/>
+      <rect x="29" y="22" width="12" height="12" fill="#555"/>
+      <rect x="5" y="34" width="12" height="12" fill="#AAA"/>
+      <rect x="17" y="34" width="12" height="12" fill="#555"/>
+      <rect x="29" y="34" width="12" height="12" fill="#AAA"/>
+      <rect x="5" y="46" width="12" height="12" fill="#555"/>
+      <rect x="17" y="46" width="12" height="12" fill="#AAA"/>
+      <rect x="29" y="46" width="12" height="12" fill="#555"/>
+
+      <!-- Mix zone -->
+      <rect x="63" y="5" width="40" height="65" fill="#E0E0E0" stroke="#ccc" stroke-width="0.3" rx="1"/>
+      <text x="83" y="15" class="demo-label" text-anchor="middle" fill="#E74C3C">混合</text>
+      <text x="83" y="25" class="demo-label" text-anchor="middle" fill="#E74C3C">区</text>
+      <text x="83" y="45" class="demo-label" text-anchor="middle" fill="#999" font-size="7">纹理</text>
+      <text x="83" y="55" class="demo-label" text-anchor="middle" fill="#999" font-size="7">桥接</text>
+      <text x="83" y="65" class="demo-label" text-anchor="middle" fill="#999" font-size="7">Dither</text>
+
+      <!-- Right: hand-drawn -->
+      <rect x="106" y="5" width="60" height="65" fill="#F8F8F8" stroke="#ccc" stroke-width="0.5" rx="2"/>
+      <text x="136" y="15" class="demo-label" text-anchor="middle" fill="#333">矢量UI</text>
+      <circle cx="136" cy="34" r="18" fill="none" stroke="#777" stroke-width="1.2" stroke-dasharray="2,2"/>
+      <circle cx="136" cy="50" r="10" fill="none" stroke="#999" stroke-width="0.8"/>
+    </g>
+
+    <!-- Strategies -->
+    <g transform="translate(15, 200)">
+      <text x="0" y="0" class="principle-title" text-anchor="start" font-size="10" fill="#333">三步冲突解决法：</text>
+
+      <rect x="0" y="10" width="215" height="48" fill="#E8F4FD" rx="2"/>
+      <text x="5" y="24" style="font-size:9px; fill:#333; font-weight:bold;">Step 1：识别冲突点</text>
+      <text x="5" y="38" style="font-size:8px; fill:#666;">像素硬边 vs 矢量软边 → 线质冲突</text>
+      <text x="5" y="50" style="font-size:8px; fill:#666;">16色调色板 vs 矢量连续色 → 色板冲突</text>
+
+      <rect x="0" y="68" width="215" height="48" fill="#E8F4FD" rx="2"/>
+      <text x="5" y="82" style="font-size:9px; fill:#333; font-weight:bold;">Step 2：加桥接层</text>
+      <text x="5" y="96" style="font-size:8px; fill:#666;">在两子风格间加 dithering 过渡区</text>
+      <text x="5" y="108" style="font-size:8px; fill:#666;">像素边缘用抗锯齿像素模拟软边</text>
+
+      <rect x="0" y="126" width="215" height="48" fill="#E8F4FD" rx="2"/>
+      <text x="5" y="140" style="font-size:9px; fill:#333; font-weight:bold;">Step 3：统一锚点</text>
+      <text x="5" y="154" style="font-size:8px; fill:#666;">找到一个共有维度：两个风格都保持相同</text>
+      <text x="5" y="166" style="font-size:8px; fill:#666;">的饱和度范围、明度范围、或色温</text>
+    </g>
+
+    <g transform="translate(15, 390)">
+      <rect x="0" y="0" width="215" height="25" fill="#E74C3C" opacity="0.08" rx="2"/>
+      <text x="107" y="16" text-anchor="middle" style="font-size:8px; fill:#E74C3C; font-weight:bold;">终极原则：如果不确定——删一个</text>
+    </g>
+  </g>
+</svg>

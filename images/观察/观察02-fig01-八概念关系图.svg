@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520"
+     width="800" height="520"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .label { font-size: 14px; fill: #333; }
+    .title { font-size: 20px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .caption { font-size: 14px; fill: #666; }
+    .concept-title { font-size: 16px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .concept-sub { font-size: 12px; fill: #555; text-anchor: middle; }
+    .center-title { font-size: 18px; font-weight: bold; fill: #FFF; text-anchor: middle; }
+    .center-sub { font-size: 12px; fill: rgba(255,255,255,0.8); text-anchor: middle; }
+    .connector { stroke: #BDC3C7; stroke-width: 1.2; fill: none; }
+  </style>
+
+  <text x="400" y="28" class="title">八概念关系图</text>
+
+  <!-- Central node: 视觉权重 -->
+  <circle cx="400" cy="295" r="44" fill="#2C3E50"/>
+  <text x="400" y="287" class="center-title">视觉权重</text>
+  <text x="400" y="305" class="center-sub">Visual Weight</text>
+
+  <!-- 8 concept blocks arranged in a circle -->
+  <!-- Top: 线条 -->
+  <rect x="320" y="55" width="160" height="42" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="400" y="72" class="concept-title">线条 Line</text>
+  <text x="400" y="89" class="concept-sub">引导视线、界定轮廓</text>
+  <line x1="400" y1="97" x2="400" y2="251" class="connector"/>
+
+  <!-- Top-right: 形状 -->
+  <rect x="540" y="95" width="160" height="42" rx="6" fill="#E0F5E0" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="620" y="112" class="concept-title">形状 Shape</text>
+  <text x="620" y="129" class="concept-sub">圆/方/三角的心理暗示</text>
+  <line x1="560" y1="130" x2="440" y2="275" class="connector"/>
+
+  <!-- Right: 空间 -->
+  <rect x="610" y="235" width="160" height="42" rx="6" fill="#FFF3CD" stroke="#E6A817" stroke-width="1.5"/>
+  <text x="690" y="252" class="concept-title">空间 Space</text>
+  <text x="690" y="269" class="concept-sub">正负形、纵深层次</text>
+  <line x1="610" y1="270" x2="444" y2="305" class="connector"/>
+
+  <!-- Bottom-right: 明度 -->
+  <rect x="540" y="375" width="160" height="42" rx="6" fill="#FCE4EC" stroke="#E91E63" stroke-width="1.5"/>
+  <text x="620" y="392" class="concept-title">明度 Value</text>
+  <text x="620" y="409" class="concept-sub">亮暗分布·最基础要素</text>
+  <line x1="555" y1="380" x2="440" y2="322" class="connector"/>
+
+  <!-- Bottom: 色彩 -->
+  <rect x="320" y="420" width="160" height="42" rx="6" fill="#EDE7F6" stroke="#7E57C2" stroke-width="1.5"/>
+  <text x="400" y="437" class="concept-title">色彩 Color</text>
+  <text x="400" y="454" class="concept-sub">色相/饱和度/明度</text>
+  <line x1="400" y1="420" x2="400" y2="339" class="connector"/>
+
+  <!-- Bottom-left: 质感 -->
+  <rect x="100" y="375" width="160" height="42" rx="6" fill="#E0F2F1" stroke="#00897B" stroke-width="1.5"/>
+  <text x="180" y="392" class="concept-title">质感 Texture</text>
+  <text x="180" y="409" class="concept-sub">表面触觉暗示</text>
+  <line x1="245" y1="380" x2="360" y2="322" class="connector"/>
+
+  <!-- Left: 构图 -->
+  <rect x="30" y="235" width="160" height="42" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.5"/>
+  <text x="110" y="252" class="concept-title">构图 Composition</text>
+  <text x="110" y="269" class="concept-sub">元素组织的策略</text>
+  <line x1="190" y1="270" x2="356" y2="305" class="connector"/>
+
+  <!-- Top-left: 风格 -->
+  <rect x="100" y="95" width="160" height="42" rx="6" fill="#F3E5F5" stroke="#AB47BC" stroke-width="1.5"/>
+  <text x="180" y="112" class="concept-title">风格 Style</text>
+  <text x="180" y="129" class="concept-sub">所有元素的统一语言</text>
+  <line x1="240" y1="130" x2="360" y2="275" class="connector"/>
+
+  <!-- Annotation -->
+  <text x="400" y="498" class="caption" text-anchor="middle">图 2.1：八个概念不是孤立的——它们全部作用于"视觉权重"这个核心。一个元素在哪方面权重高，玩家的眼睛就会先看到它。</text>
+</svg>

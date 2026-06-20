@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <filter id="softShadow" x="-4%" y="-2%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: #FAFBFC; }
+    .title { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 17px; font-weight: 700; fill: #333; }
+    .subtitle { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 10px; fill: #999; }
+    .tline { stroke: #d0d0d0; stroke-width: 1; fill: none; }
+    .tline-hover { stroke: #c0c0c0; stroke-width: 1; fill: none; }
+    .dot { fill: #d0d0d0; }
+    .folder-label { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 11.5px; font-weight: 600; }
+    .file-label { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 10.5px; fill: #555; }
+    .file-desc { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 9px; fill: #bbb; }
+    .root-label { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 12.5px; font-weight: 700; fill: #333; }
+    .cat-label { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 11.5px; font-weight: 600; }
+    .tip-text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 10px; fill: #555; }
+    .tip-num { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 12px; font-weight: 700; }
+    .note { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 9px; fill: #aaa; }
+
+    .c-red { fill: #E74C3C; }
+    .c-blue { fill: #2980B9; }
+    .c-green { fill: #27AE60; }
+    .c-orange { fill: #F39C12; }
+    .c-purple { fill: #8E44AD; }
+    .c-grey { fill: #95A5A6; }
+
+    .card-red { fill: #FDEDEC; stroke: #F0D0D0; stroke-width: 1; }
+    .card-blue { fill: #E8F4FD; stroke: #D0E0F0; stroke-width: 1; }
+    .card-green { fill: #E8F8E8; stroke: #C8E0C8; stroke-width: 1; }
+    .card-orange { fill: #FEF5E7; stroke: #F0E0C0; stroke-width: 1; }
+    .card-purple { fill: #F4ECF7; stroke: #E0D0E8; stroke-width: 1; }
+    .card-grey { fill: #F2F3F4; stroke: #E0E0E0; stroke-width: 1; }
+  </style>
+
+  <rect width="800" height="500" rx="6" class="bg"/>
+
+  <!-- Title -->
+  <text x="400" y="28" text-anchor="middle" class="title">参考图系统文件夹结构——"按功能分类，不按游戏分类"</text>
+  <text x="400" y="44" text-anchor="middle" class="subtitle">五大板块，统一根目录 参考/，每条参考附分析注释而非仅收藏</text>
+
+  <!-- ===== LEFT PANEL: Tree structure ===== -->
+
+  <!-- Root -->
+  <rect x="12" y="62" width="280" height="410" rx="4" fill="none" stroke="#E8E8E8" stroke-width="0.5"/>
+
+  <!-- Row 1: refs/ (root) -->
+  <path d="M38,78 L48,78" class="tline"/>
+  <path d="M24,8 L18,16 L26,16Z" fill="#555" transform="translate(20,70)"/> <!-- folder tab -->
+  <rect x="18" y="70" width="20" height="16" rx="1.5" fill="#666" opacity="0.9"/>
+  <rect x="19" y="69" width="8" height="3" rx="1" fill="#555"/>
+  <text x="47" y="83" class="root-label">参考/</text>
+  <text x="100" y="83" class="file-desc">← 根目录（放在项目根目录下）</text>
+
+  <!-- Vertical line from refs/ down to last child -->
+  <line x1="38" y1="86" x2="38" y2="465" class="tline"/>
+
+  <!-- Row 2: 角色 -->
+  <path d="M38,105 L55,105 M55,100 L55,250" class="tline"/>
+  <circle cx="55" cy="105" r="2" class="dot"/>
+  <rect x="62" y="94" width="192" height="24" rx="4" class="card-red"/>
+  <text x="70" y="111" class="cat-label c-red">角色 (characters)</text>
+  <text x="200" y="111" class="file-desc">▸ 32x32/48x48</text>
+
+  <!-- Row 3: 主角 -->
+  <line x1="55" y="118" x2="70" y2="125" class="tline"/>
+  <circle cx="70" cy="125" r="1.8" class="dot"/>
+  <line x1="70" y1="125" x2="70" y2="170" class="tline"/>
+  <path d="M71,125 L73,120 L75,125Z" fill="#d0d0d0"/>
+  <path d="M78,122 L76,128 L80,128Z" fill="#E74C3C" opacity="0.8"/>
+  <text x="86" y="130" class="folder-label c-red">主角/</text>
+
+  <!-- Row 4: face_ref -->
+  <line x1="70" y1="130" x2="102" y2="143" class="tline"/>
+  <circle cx="102" cy="143" r="1.5" class="dot"/>
+  <rect x="108" y="137" width="14" height="12" rx="1" fill="#E74C3C" opacity="0.25" stroke="#E74C3C" stroke-width="0.5"/>
+  <path d="M112,137 L112,141 L116,141 L116,137Z" fill="#E74C3C" opacity="0.5"/>
+  <text x="128" y="148" class="file-label">hero_idle_ref</text>
+  <text x="200" y="148" class="file-desc">待机帧·32x32剪影</text>
+
+  <!-- Row 5: outfit_ref -->
+  <path d="M70,153 L102,161" class="tline"/>
+  <circle cx="102" cy="161" r="1.5" class="dot"/>
+  <rect x="108" y="155" width="14" height="12" rx="1" fill="#E74C3C" opacity="0.25" stroke="#E74C3C" stroke-width="0.5"/>
+  <path d="M112,155 L112,159 L116,159 L116,155Z" fill="#E74C3C" opacity="0.5"/>
+  <text x="128" y="166" class="file-label">hero_walk_ref</text>
+  <text x="200" y="166" class="file-desc">走路循环·6帧序列</text>
+
+  <!-- Row 6: 反派 -->
+  <line x1="55" y1="173" x2="70" y2="180" class="tline"/>
+  <circle cx="70" cy="180" r="1.8" class="dot"/>
+  <line x1="70" y1="180" x2="70" y2="210" class="tline"/>
+  <path d="M71,180 L73,175 L75,180Z" fill="#d0d0d0"/>
+  <path d="M78,177 L76,183 L80,183Z" fill="#E74C3C" opacity="0.8"/>
+  <text x="86" y="185" class="folder-label c-red">反派/</text>
+
+  <!-- Row 7: villain_ref -->
+  <path d="M70,195 L102,203" class="tline"/>
+  <circle cx="102" cy="203" r="1.5" class="dot"/>
+  <rect x="108" y="197" width="14" height="12" rx="1" fill="#E74C3C" opacity="0.25" stroke="#E74C3C" stroke-width="0.5"/>
+  <path d="M112,197 L112,201 L116,201 L116,197Z" fill="#E74C3C" opacity="0.5"/>
+  <text x="128" y="208" class="file-label">npc_villager_ref</text>
+  <text x="200" y="208" class="file-desc">村民·32x32</text>
+
+  <!-- Row 8: NPC -->
+  <line x1="55" y1="213" x2="70" y2="220" class="tline"/>
+  <circle cx="70" cy="220" r="1.8" class="dot"/>
+  <path d="M71,220 L73,215 L75,220Z" fill="#d0d0d0"/>
+  <path d="M78,217 L76,223 L80,223Z" fill="#E74C3C" opacity="0.8"/>
+  <text x="86" y="225" class="folder-label c-red">NPC/</text>
+  <text x="130" y="225" class="file-desc">▸ 48x48/动物/怪物 3个子文件夹</text>
+
+  <!-- Row 9: 场景 -->
+  <path d="M38,247 L55,247 M55,247 L55,345" class="tline"/>
+  <circle cx="55" cy="247" r="2" class="dot"/>
+  <rect x="62" y="236" width="192" height="24" rx="4" class="card-blue"/>
+  <text x="70" y="253" class="cat-label c-blue">Tile (tilesets)</text>
+
+  <!-- Row 10: 森林 -->
+  <line x1="55" y1="260" x2="70" y2="267" class="tline"/>
+  <circle cx="70" cy="267" r="1.8" class="dot"/>
+  <line x1="70" y1="267" x2="70" y2="297" class="tline"/>
+  <path d="M71,267 L73,262 L75,267Z" fill="#d0d0d0"/>
+  <path d="M78,264 L76,270 L80,270Z" fill="#2980B9" opacity="0.8"/>
+  <text x="86" y="272" class="folder-label c-blue">地牢/</text>
+
+  <!-- Row 11: forest_refs -->
+  <path d="M70,290 L102,298" class="tline"/>
+  <circle cx="102" cy="298" r="1.5" class="dot"/>
+  <rect x="108" y="292" width="14" height="12" rx="1" fill="#2980B9" opacity="0.25" stroke="#2980B9" stroke-width="0.5"/>
+  <path d="M112,292 L112,296 L116,296 L116,292Z" fill="#2980B9" opacity="0.5"/>
+  <text x="128" y="303" class="file-label">dungeon_wall</text>
+  <text x="200" y="303" class="file-desc">地牢墙体·16px tile</text>
+
+  <!-- Row 12: 城市 -->
+  <path d="M55,300 L70,307" class="tline"/>
+  <circle cx="70" cy="307" r="1.8" class="dot"/>
+  <line x1="70" y1="307" x2="70" y2="324" class="tline"/>
+  <path d="M71,307 L73,302 L75,307Z" fill="#d0d0d0"/>
+  <path d="M78,304 L76,310 L80,310Z" fill="#2980B9" opacity="0.8"/>
+  <text x="86" y="312" class="folder-label c-blue">草地/</text>
+  <text x="130" y="312" class="file-desc">▸ 草地/洞穴/室外 子文件夹</text>
+
+  <!-- Row 13: 室内 -->
+  <path d="M55,327 L70,334" class="tline"/>
+  <circle cx="70" cy="334" r="1.8" class="dot"/>
+  <path d="M71,334 L73,329 L75,334Z" fill="#d0d0d0"/>
+  <path d="M78,331 L76,337 L80,337Z" fill="#2980B9" opacity="0.8"/>
+  <text x="86" y="339" class="folder-label c-blue">室内/</text>
+  <text x="130" y="339" class="file-desc">▸ 不同光照条件下的室内场景</text>
+
+  <!-- Row 14: UI -->
+  <path d="M38,357 L55,357" class="tline"/>
+  <circle cx="55" cy="357" r="2" class="dot"/>
+  <line x1="55" y1="357" x2="55" y2="420" class="tline"/>
+  <rect x="62" y="346" width="192" height="24" rx="4" class="card-green"/>
+  <text x="70" y="363" class="cat-label c-green">UI (interface)</text>
+  <text x="140" y="363" class="file-desc">▸ 主菜单/HUD/图标</text>
+
+  <!-- Row 15: 色彩 -->
+  <path d="M38,395 L55,395" class="tline"/>
+  <circle cx="55" cy="395" r="2" class="dot"/>
+  <line x1="55" y1="395" x2="55" y2="448" class="tline"/>
+  <rect x="62" y="384" width="192" height="24" rx="4" class="card-orange"/>
+  <text x="70" y="401" class="cat-label c-orange">调色板 (palette)</text>
+  <text x="140" y="401" class="file-desc">▸ lospec/情绪板</text>
+
+  <!-- Row 16: 质感 -->
+  <path d="M38,433 L55,433" class="tline"/>
+  <circle cx="55" cy="433" r="2" class="dot"/>
+  <rect x="62" y="422" width="192" height="24" rx="4" class="card-purple"/>
+  <text x="70" y="439" class="cat-label c-purple">动画 (animation)</text>
+  <text x="140" y="439" class="file-desc">▸ 帧序列/走路/攻击/爆炸</text>
+
+  <!-- ===== RIGHT PANEL: Annotations / Tips ===== -->
+  <rect x="310" y="62" width="478" height="410" rx="4" fill="none" stroke="#E8E8E8" stroke-width="0.5"/>
+
+  <!-- Tip 1 -->
+  <rect x="330" y="78" width="438" height="72" rx="4" fill="#FEFEFE" stroke="#EEE" stroke-width="0.8" filter="url(#softShadow)"/>
+  <text x="350" y="98" class="tip-num c-red">01</text>
+  <text x="372" y="98" class="tip-text" font-weight="600" fill="#333">每条参考图必须写"为什么被吸引"</text>
+  <text x="372" y="117" class="tip-text" fill="#666">不是"这张图好看"，而是"这个角色的剪影轮廓在逆光下清晰可辨，用</text>
+  <text x="372" y="133" class="tip-text" fill="#666">高对比度做了形状识别（Shape Recognition）"——就像 code review 里的</text>
+  <text x="372" y="149" class="tip-text" fill="#666">commit message，过三个月你还能看懂当时的判断。</text>
+
+  <!-- Tip 2 -->
+  <rect x="330" y="166" width="438" height="72" rx="4" fill="#FEFEFE" stroke="#EEE" stroke-width="0.8" filter="url(#softShadow)"/>
+  <text x="350" y="186" class="tip-num c-blue">02</text>
+  <text x="372" y="186" class="tip-text" font-weight="600" fill="#333">按"功能分类"，不按"游戏分类"</text>
+  <text x="372" y="205" class="tip-text" fill="#666">错误：参考/塞尔达/、参考/空洞骑士/ → 跨项目难复用</text>
+  <text x="372" y="221" class="tip-text" fill="#666">正确：参考/角色/、参考/Tile/ → 像 library，任何项目都能 import</text>
+  <text x="372" y="237" class="tip-text" fill="#666">这相当于把视觉参考从 hardcoded 变成 dependency-injected。</text>
+
+  <!-- Tip 3 -->
+  <rect x="330" y="254" width="438" height="72" rx="4" fill="#FEFEFE" stroke="#EEE" stroke-width="0.8" filter="url(#softShadow)"/>
+  <text x="350" y="274" class="tip-num c-green">03</text>
+  <text x="372" y="274" class="tip-text" font-weight="600" fill="#333">用 PureRef 做"多窗口 IDE 式"参考面板</text>
+  <text x="372" y="293" class="tip-text" fill="#666">PureRef 是一个悬浮参考图面板，可以置顶在屏幕最上层。用法相当于</text>
+  <text x="372" y="309" class="tip-text" fill="#666">你在 Aseprite/Photoshop 旁边开了几个 reference monitor——画像素时</text>
+  <text x="372" y="325" class="tip-text" fill="#666">瞄一眼，不用 Alt+Tab 切换窗口。免费，Windows/Mac/Linux 全平台。</text>
+
+  <!-- Tip 4 -->
+  <rect x="330" y="342" width="438" height="72" rx="4" fill="#FEFEFE" stroke="#EEE" stroke-width="0.8" filter="url(#softShadow)"/>
+  <text x="350" y="362" class="tip-num c-orange">04</text>
+  <text x="372" y="362" class="tip-text" font-weight="600" fill="#333">用 Notion 建"视觉 Wiki"，记录你的视觉判断进化史</text>
+  <text x="372" y="381" class="tip-text" fill="#666">每个条目三要素：① 图源链接（Pinterest/Are.na URL）② 分析笔记（为</text>
+  <text x="372" y="397" class="tip-text" fill="#666">什么有用）③ 日期（标记收藏时间）。半年后回看，你会看到自己的视</text>
+  <text x="372" y="413" class="tip-text" fill="#666">觉判断力从"说不清"变成"能精准表达"——这就是视觉能力的证据。</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="475" text-anchor="middle" class="note">▲ 你的参考库是和代码库一起成长的知识资产——像 node_modules 一样，一开始是空的，持续积累后就成为不可替代的创作基础设施</text>
+</svg>

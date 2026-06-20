@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: #FAFBFC; }
+    .title { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 17px; font-weight: 700; fill: #333; }
+    .subtitle { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 10.5px; fill: #999; }
+    .day-hdr { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 11px; font-weight: 600; fill: #888; }
+    .week-lbl { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 9.5px; fill: #bbb; font-weight: 600; }
+    .cell-type { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 11px; font-weight: 700; }
+    .cell-kw { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 9.5px; fill: #555; }
+    .cell-en { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 7.5px; fill: #bbb; }
+    .lg-text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 9px; fill: #666; }
+    .lg-title { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 9px; font-weight: 600; fill: #888; }
+    .note { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 8.5px; fill: #bbb; }
+
+    .c-art { fill: #FDEDEC; stroke: #E8D0CF; }
+    .c-film { fill: #F4ECF7; stroke: #DDD0E8; }
+    .c-nature { fill: #E8F8E8; stroke: #C8E0C8; }
+    .c-arch { fill: #FEF5E7; stroke: #F0E0C0; }
+    .c-game { fill: #E8F4FD; stroke: #C8D8F0; }
+    .c-org { fill: #F2F3F4; stroke: #DDDFE0; }
+    .c-free { fill: #E8FCF8; stroke: #C8E8E0; }
+
+    .t-art { fill: #E74C3C; }
+    .t-film { fill: #8E44AD; }
+    .t-nature { fill: #27AE60; }
+    .t-arch { fill: #F39C12; }
+    .t-game { fill: #2980B9; }
+    .t-org { fill: #95A5A6; }
+    .t-free { fill: #1ABC9C; }
+  </style>
+
+  <rect width="800" height="500" rx="6" class="bg"/>
+
+  <text x="400" y="31" text-anchor="middle" class="title">月度"看画食谱"——每周循环四类输入源</text>
+  <text x="400" y="49" text-anchor="middle" class="subtitle">每天15分钟专注浏览一种视觉源，周末整理归档。24/7 不中断，四周后开始自动识别视觉模式</text>
+
+  <!-- Column headers (y=65) -->
+  <text x="103" y="68" text-anchor="middle" class="day-hdr">周一</text>
+  <text x="202" y="68" text-anchor="middle" class="day-hdr">周二</text>
+  <text x="301" y="68" text-anchor="middle" class="day-hdr">周三</text>
+  <text x="400" y="68" text-anchor="middle" class="day-hdr">周四</text>
+  <text x="499" y="68" text-anchor="middle" class="day-hdr">周五</text>
+  <text x="598" y="68" text-anchor="middle" class="day-hdr">周六</text>
+  <text x="697" y="68" text-anchor="middle" class="day-hdr">周日</text>
+
+  <!-- ===== Week 1 (y=72, h=83) ===== -->
+  <text x="56" y="109" class="week-lbl">W1</text>
+
+  <rect x="56" y="76" width="94" height="83" rx="5" class="c-art" filter="url(#shadow)"/>
+  <text x="103" y="104" text-anchor="middle" class="cell-type t-art">传统艺术</text>
+  <text x="103" y="124" text-anchor="middle" class="cell-kw">明暗对照法</text>
+  <text x="103" y="142" text-anchor="middle" class="cell-en">Chiaroscuro</text>
+
+  <rect x="155" y="76" width="94" height="83" rx="5" class="c-film" filter="url(#shadow)"/>
+  <text x="202" y="104" text-anchor="middle" class="cell-type t-film">电影动画</text>
+  <text x="202" y="124" text-anchor="middle" class="cell-kw">三分法构图</text>
+  <text x="202" y="142" text-anchor="middle" class="cell-en">Rule of Thirds</text>
+
+  <rect x="254" y="76" width="94" height="83" rx="5" class="c-nature" filter="url(#shadow)"/>
+  <text x="301" y="104" text-anchor="middle" class="cell-type t-nature">自然界</text>
+  <text x="301" y="124" text-anchor="middle" class="cell-kw">天空渐变</text>
+  <text x="301" y="142" text-anchor="middle" class="cell-en">Sky Gradient</text>
+
+  <rect x="353" y="76" width="94" height="83" rx="5" class="c-arch" filter="url(#shadow)"/>
+  <text x="400" y="104" text-anchor="middle" class="cell-type t-arch">建筑空间</text>
+  <text x="400" y="124" text-anchor="middle" class="cell-kw">负空间</text>
+  <text x="400" y="142" text-anchor="middle" class="cell-en">Negative Space</text>
+
+  <rect x="452" y="76" width="94" height="83" rx="5" class="c-game" filter="url(#shadow)"/>
+  <text x="499" y="104" text-anchor="middle" class="cell-type t-game">游戏截图</text>
+  <text x="499" y="124" text-anchor="middle" class="cell-kw">UI布局</text>
+  <text x="499" y="142" text-anchor="middle" class="cell-en">UI Layout</text>
+
+  <rect x="551" y="76" width="94" height="83" rx="5" class="c-org" filter="url(#shadow)"/>
+  <text x="598" y="104" text-anchor="middle" class="cell-type t-org">整理归档</text>
+  <text x="598" y="124" text-anchor="middle" class="cell-kw">写分析笔记</text>
+  <text x="598" y="142" text-anchor="middle" class="cell-en">Write Notes</text>
+
+  <rect x="650" y="76" width="94" height="83" rx="5" class="c-free" filter="url(#shadow)"/>
+  <text x="697" y="104" text-anchor="middle" class="cell-type t-free">自由浏览</text>
+  <text x="697" y="124" text-anchor="middle" class="cell-kw">逛 Pinterest</text>
+  <text x="697" y="142" text-anchor="middle" class="cell-en">Explore</text>
+
+  <!-- ===== Week 2 (y=167, h=83) ===== -->
+  <text x="56" y="203" class="week-lbl">W2</text>
+
+  <rect x="56" y="167" width="94" height="83" rx="5" class="c-art" filter="url(#shadow)"/>
+  <text x="103" y="195" text-anchor="middle" class="cell-type t-art">传统艺术</text>
+  <text x="103" y="215" text-anchor="middle" class="cell-kw">色彩搭配</text>
+  <text x="103" y="233" text-anchor="middle" class="cell-en">Color Palette</text>
+
+  <rect x="155" y="167" width="94" height="83" rx="5" class="c-film" filter="url(#shadow)"/>
+  <text x="202" y="195" text-anchor="middle" class="cell-type t-film">电影动画</text>
+  <text x="202" y="215" text-anchor="middle" class="cell-kw">布光情绪</text>
+  <text x="202" y="233" text-anchor="middle" class="cell-en">Lighting Mood</text>
+
+  <rect x="254" y="167" width="94" height="83" rx="5" class="c-nature" filter="url(#shadow)"/>
+  <text x="301" y="195" text-anchor="middle" class="cell-type t-nature">自然界</text>
+  <text x="301" y="215" text-anchor="middle" class="cell-kw">纹理质感</text>
+  <text x="301" y="233" text-anchor="middle" class="cell-en">Texture</text>
+
+  <rect x="353" y="167" width="94" height="83" rx="5" class="c-arch" filter="url(#shadow)"/>
+  <text x="400" y="195" text-anchor="middle" class="cell-type t-arch">建筑空间</text>
+  <text x="400" y="215" text-anchor="middle" class="cell-kw">城市色彩倾向</text>
+  <text x="400" y="233" text-anchor="middle" class="cell-en">City Palette</text>
+
+  <rect x="452" y="167" width="94" height="83" rx="5" class="c-game" filter="url(#shadow)"/>
+  <text x="499" y="195" text-anchor="middle" class="cell-type t-game">游戏截图</text>
+  <text x="499" y="215" text-anchor="middle" class="cell-kw">角色设计</text>
+  <text x="499" y="233" text-anchor="middle" class="cell-en">Character</text>
+
+  <rect x="551" y="167" width="94" height="83" rx="5" class="c-org" filter="url(#shadow)"/>
+  <text x="598" y="195" text-anchor="middle" class="cell-type t-org">整理归档</text>
+  <text x="598" y="215" text-anchor="middle" class="cell-kw">分类+关键词</text>
+  <text x="598" y="233" text-anchor="middle" class="cell-en">Tag &amp; Sort</text>
+
+  <rect x="650" y="167" width="94" height="83" rx="5" class="c-free" filter="url(#shadow)"/>
+  <text x="697" y="195" text-anchor="middle" class="cell-type t-free">自由浏览</text>
+  <text x="697" y="215" text-anchor="middle" class="cell-kw">逛 Are.na</text>
+  <text x="697" y="233" text-anchor="middle" class="cell-en">Explore</text>
+
+  <!-- ===== Week 3 (y=258, h=83) ===== -->
+  <text x="56" y="294" class="week-lbl">W3</text>
+
+  <rect x="56" y="258" width="94" height="83" rx="5" class="c-art" filter="url(#shadow)"/>
+  <text x="103" y="286" text-anchor="middle" class="cell-type t-art">传统艺术</text>
+  <text x="103" y="306" text-anchor="middle" class="cell-kw">构图法则</text>
+  <text x="103" y="324" text-anchor="middle" class="cell-en">Composition</text>
+
+  <rect x="155" y="258" width="94" height="83" rx="5" class="c-film" filter="url(#shadow)"/>
+  <text x="202" y="286" text-anchor="middle" class="cell-type t-film">电影动画</text>
+  <text x="202" y="306" text-anchor="middle" class="cell-kw">角色剪影</text>
+  <text x="202" y="324" text-anchor="middle" class="cell-en">Silhouette</text>
+
+  <rect x="254" y="258" width="94" height="83" rx="5" class="c-nature" filter="url(#shadow)"/>
+  <text x="301" y="286" text-anchor="middle" class="cell-type t-nature">自然界</text>
+  <text x="301" y="306" text-anchor="middle" class="cell-kw">水面反射</text>
+  <text x="301" y="324" text-anchor="middle" class="cell-en">Reflection</text>
+
+  <rect x="353" y="258" width="94" height="83" rx="5" class="c-arch" filter="url(#shadow)"/>
+  <text x="400" y="286" text-anchor="middle" class="cell-type t-arch">建筑空间</text>
+  <text x="400" y="306" text-anchor="middle" class="cell-kw">空间层次</text>
+  <text x="400" y="324" text-anchor="middle" class="cell-en">Depth Layers</text>
+
+  <rect x="452" y="258" width="94" height="83" rx="5" class="c-game" filter="url(#shadow)"/>
+  <text x="499" y="286" text-anchor="middle" class="cell-type t-game">游戏截图</text>
+  <text x="499" y="306" text-anchor="middle" class="cell-kw">特效/粒子</text>
+  <text x="499" y="324" text-anchor="middle" class="cell-en">VFX</text>
+
+  <rect x="551" y="258" width="94" height="83" rx="5" class="c-org" filter="url(#shadow)"/>
+  <text x="598" y="286" text-anchor="middle" class="cell-type t-org">整理归档</text>
+  <text x="598" y="306" text-anchor="middle" class="cell-kw">更新视觉Wiki</text>
+  <text x="598" y="324" text-anchor="middle" class="cell-en">Update Wiki</text>
+
+  <rect x="650" y="258" width="94" height="83" rx="5" class="c-free" filter="url(#shadow)"/>
+  <text x="697" y="286" text-anchor="middle" class="cell-type t-free">自由浏览</text>
+  <text x="697" y="306" text-anchor="middle" class="cell-kw">看纪录片</text>
+  <text x="697" y="324" text-anchor="middle" class="cell-en">Documentary</text>
+
+  <!-- ===== Week 4 (y=349, h=83) ===== -->
+  <text x="56" y="385" class="week-lbl">W4</text>
+
+  <rect x="56" y="349" width="94" height="83" rx="5" class="c-art" filter="url(#shadow)"/>
+  <text x="103" y="377" text-anchor="middle" class="cell-type t-art">传统艺术</text>
+  <text x="103" y="397" text-anchor="middle" class="cell-kw">笔触肌理</text>
+  <text x="103" y="415" text-anchor="middle" class="cell-en">Brushwork</text>
+
+  <rect x="155" y="349" width="94" height="83" rx="5" class="c-film" filter="url(#shadow)"/>
+  <text x="202" y="377" text-anchor="middle" class="cell-type t-film">电影动画</text>
+  <text x="202" y="397" text-anchor="middle" class="cell-kw">色彩脚本</text>
+  <text x="202" y="415" text-anchor="middle" class="cell-en">Color Script</text>
+
+  <rect x="254" y="349" width="94" height="83" rx="5" class="c-nature" filter="url(#shadow)"/>
+  <text x="301" y="377" text-anchor="middle" class="cell-type t-nature">自然界</text>
+  <text x="301" y="397" text-anchor="middle" class="cell-kw">地形光影</text>
+  <text x="301" y="415" text-anchor="middle" class="cell-en">Terrain Light</text>
+
+  <rect x="353" y="349" width="94" height="83" rx="5" class="c-arch" filter="url(#shadow)"/>
+  <text x="400" y="377" text-anchor="middle" class="cell-type t-arch">建筑空间</text>
+  <text x="400" y="397" text-anchor="middle" class="cell-kw">街道尺度</text>
+  <text x="400" y="415" text-anchor="middle" class="cell-en">Street Scale</text>
+
+  <rect x="452" y="349" width="94" height="83" rx="5" class="c-game" filter="url(#shadow)"/>
+  <text x="499" y="377" text-anchor="middle" class="cell-type t-game">游戏截图</text>
+  <text x="499" y="397" text-anchor="middle" class="cell-kw">动画节奏</text>
+  <text x="499" y="415" text-anchor="middle" class="cell-en">Animation</text>
+
+  <rect x="551" y="349" width="94" height="83" rx="5" class="c-org" filter="url(#shadow)"/>
+  <text x="598" y="377" text-anchor="middle" class="cell-type t-org">整理归档</text>
+  <text x="598" y="397" text-anchor="middle" class="cell-kw">月度回顾</text>
+  <text x="598" y="415" text-anchor="middle" class="cell-en">Review</text>
+
+  <rect x="650" y="349" width="94" height="83" rx="5" class="c-free" filter="url(#shadow)"/>
+  <text x="697" y="377" text-anchor="middle" class="cell-type t-free">自由浏览</text>
+  <text x="697" y="397" text-anchor="middle" class="cell-kw">随意翻画册</text>
+  <text x="697" y="415" text-anchor="middle" class="cell-en">Art Book</text>
+
+  <!-- Legend at bottom -->
+  <text x="56" y="455" class="lg-title">图例</text>
+
+  <rect x="110" y="444" width="10" height="10" rx="2" class="c-art"/>
+  <text x="124" y="454" class="lg-text t-art">传统艺术</text>
+
+  <rect x="175" y="444" width="10" height="10" rx="2" class="c-film"/>
+  <text x="189" y="454" class="lg-text t-film">电影动画</text>
+
+  <rect x="240" y="444" width="10" height="10" rx="2" class="c-nature"/>
+  <text x="254" y="454" class="lg-text" fill="#27AE60">自然界</text>
+
+  <rect x="295" y="444" width="10" height="10" rx="2" class="c-arch"/>
+  <text x="309" y="454" class="lg-text" fill="#F39C12">建筑空间</text>
+
+  <rect x="360" y="444" width="10" height="10" rx="2" class="c-game"/>
+  <text x="374" y="454" class="lg-text" fill="#2980B9">游戏截图</text>
+
+  <rect x="425" y="444" width="10" height="10" rx="2" class="c-org"/>
+  <text x="439" y="454" class="lg-text" fill="#95A5A6">整理归档</text>
+
+  <rect x="490" y="444" width="10" height="10" rx="2" class="c-free"/>
+  <text x="504" y="454" class="lg-text" fill="#1ABC9C">自由浏览</text>
+
+  <text x="697" y="454" text-anchor="end" class="note">每个格子 = 一天15分钟，一周后循环。关键词是当天的聚焦点。</text>
+
+  <text x="400" y="482" text-anchor="middle" class="note">▲ 四周后回到 W1 时，你会发现看"明暗对照法"已经不再是看"黑白对比"，而是看到更具体的视觉层次</text>
+</svg>

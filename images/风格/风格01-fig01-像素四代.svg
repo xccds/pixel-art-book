@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .gen-title { font-size: 13px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .gen-sub { font-size: 10px; fill: #666; text-anchor: middle; }
+    .gen-game { font-size: 9px; fill: #E74C3C; text-anchor: middle; font-style: italic; }
+    .gen-res { font-size: 9px; fill: #666; text-anchor: middle; }
+    .label { font-size: 10px; fill: #555; }
+    .box { fill: #E8F4FD; stroke: #B0D4F1; stroke-width: 1.5; rx: 6; }
+    .arrow-text { font-size: 9px; fill: #E74C3C; text-anchor: middle; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 风格01.1  像素艺术的四个子代——从 8-bit 到调色板艺术</text>
+  <text x="400" y="46" class="subtitle" text-anchor="middle">每个子代不是"更好的技术"而是"不同的设计语言"——选择基于你的游戏需求而非"越新越好"</text>
+
+  <!-- Arrow from left to right at top -->
+  <line x1="130" y1="62" x2="670" y2="62" stroke="#E74C3C" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="400" y="75" class="arrow-text">硬件限制减弱 → 设计自由度增加 → 制作成本梯度上升</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#E74C3C"/>
+    </marker>
+  </defs>
+
+  <!-- Box 1: NES 8-bit -->
+  <g transform="translate(20, 90)">
+    <rect x="0" y="0" width="175" height="380" class="box" rx="8"/>
+    <rect x="0" y="0" width="175" height="32" fill="#E74C3C" rx="8"/>
+    <rect x="0" y="16" width="175" height="16" fill="#E74C3C"/>
+    <text x="87" y="22" class="gen-title" fill="#fff">NES 8-bit</text>
+
+    <!-- Pixel character demo - 4 colors, blocky -->
+    <g transform="translate(55, 50)">
+      <!-- Background -->
+      <rect x="0" y="0" width="64" height="64" fill="#1a1a2e"/>
+      <!-- Simple character: 16x16 pixel blocks (scaled 4x) -->
+      <!-- Head -->
+      <rect x="20" y="4" width="24" height="20" fill="#E8D5A3"/>
+      <!-- Eyes -->
+      <rect x="28" y="10" width="4" height="4" fill="#333"/>
+      <rect x="40" y="10" width="4" height="4" fill="#333"/>
+      <!-- Body -->
+      <rect x="24" y="24" width="16" height="16" fill="#E74C3C"/>
+      <!-- Legs -->
+      <rect x="28" y="40" width="8" height="12" fill="#3B5998"/>
+      <rect x="36" y="40" width="8" height="12" fill="#3B5998"/>
+      <!-- Arms -->
+      <rect x="16" y="24" width="8" height="4" fill="#E8D5A3"/>
+      <rect x="40" y="24" width="8" height="4" fill="#E8D5A3"/>
+    </g>
+
+    <text x="87" y="145" class="gen-sub">硬边·4色·无透明度</text>
+    <text x="87" y="162" class="gen-res">16×16 像素/角色</text>
+    <line x1="30" y1="178" x2="145" y2="178" stroke="#B0D4F1" stroke-width="0.8"/>
+    <text x="87" y="195" class="gen-game" fill="#E74C3C">代表游戏：</text>
+    <text x="87" y="212" class="gen-game">Super Mario Bros.</text>
+    <text x="87" y="228" class="gen-game">The Legend of Zelda</text>
+    <text x="87" y="244" class="gen-game">Shovel Knight</text>
+    <text x="87" y="260" class="gen-game">Celeste</text>
+    <line x1="30" y1="276" x2="145" y2="276" stroke="#B0D4F1" stroke-width="0.8"/>
+    <text x="87" y="295" class="label" text-anchor="middle" fill="#333" font-weight="bold">适合项目：</text>
+    <text x="87" y="312" class="label" text-anchor="middle">平台跳跃·肉鸽·</text>
+    <text x="87" y="328" class="label" text-anchor="middle">怀旧题材·极低预算</text>
+    <text x="87" y="348" class="label" text-anchor="middle" fill="#E74C3C">超低资产成本</text>
+    <text x="87" y="364" class="label" text-anchor="middle" fill="#E74C3C">但动画帧数恐惧</text>
+  </g>
+
+  <!-- Box 2: SNES 16-bit -->
+  <g transform="translate(210, 90)">
+    <rect x="0" y="0" width="175" height="380" class="box" rx="8"/>
+    <rect x="0" y="0" width="175" height="32" fill="#E67E22" rx="8"/>
+    <rect x="0" y="16" width="175" height="16" fill="#E67E22"/>
+    <text x="87" y="22" class="gen-title" fill="#fff">SNES 16-bit</text>
+
+    <!-- Pixel character demo - more colors, larger -->
+    <g transform="translate(47, 50)">
+      <rect x="0" y="0" width="80" height="64" fill="#2d1b4e"/>
+      <!-- Sky gradient bg -->
+      <rect x="0" y="0" width="80" height="24" fill="#4a3f6b"/>
+      <rect x="0" y="4" width="80" height="16" fill="#6b5b8a"/>
+      <!-- Ground -->
+      <rect x="0" y="44" width="80" height="20" fill="#4a6741"/>
+      <rect x="0" y="48" width="80" height="16" fill="#3a5731"/>
+      <!-- Character - more detail -->
+      <rect x="28" y="12" width="20" height="20" rx="2" fill="#F0C8A0"/>
+      <!-- Hair -->
+      <rect x="26" y="6" width="24" height="12" fill="#8B4513"/>
+      <rect x="24" y="8" width="4" height="10" fill="#8B4513"/>
+      <rect x="48" y="8" width="4" height="10" fill="#8B4513"/>
+      <!-- Eyes -->
+      <rect x="34" y="16" width="4" height="4" fill="#333"/>
+      <rect x="42" y="16" width="4" height="4" fill="#333"/>
+      <!-- Mouth -->
+      <line x1="36" y1="28" x2="44" y2="28" stroke="#C0392B" stroke-width="2"/>
+      <!-- Body with armor -->
+      <rect x="30" y="32" width="16" height="16" fill="#5DADE2"/>
+      <rect x="32" y="34" width="12" height="2" fill="#85C1E9"/>
+      <!-- Pants -->
+      <rect x="30" y="48" width="6" height="10" fill="#566573"/>
+      <rect x="40" y="48" width="6" height="10" fill="#566573"/>
+      <!-- Sword -->
+      <rect x="52" y="12" width="4" height="16" fill="#BDC3C7"/>
+      <rect x="50" y="28" width="8" height="4" fill="#95A5A6"/>
+    </g>
+
+    <text x="87" y="145" class="gen-sub">更多色·伪3D·渐变</text>
+    <text x="87" y="162" class="gen-res">16-32×16-32 像素</text>
+    <line x1="30" y1="178" x2="145" y2="178" stroke="#B0D4F1" stroke-width="0.8"/>
+    <text x="87" y="195" class="gen-game">代表游戏：</text>
+    <text x="87" y="212" class="gen-game">Chrono Trigger</text>
+    <text x="87" y="228" class="gen-game">Stardew Valley</text>
+    <text x="87" y="244" class="gen-game">Hyper Light Drifter</text>
+    <text x="87" y="260" class="gen-game">Eastward</text>
+    <line x1="30" y1="276" x2="145" y2="276" stroke="#B0D4F1" stroke-width="0.8"/>
+    <text x="87" y="295" class="label" text-anchor="middle" fill="#333" font-weight="bold">适合项目：</text>
+    <text x="87" y="312" class="label" text-anchor="middle">JRPG·种田·冒险·</text>
+    <text x="87" y="328" class="label" text-anchor="middle">需要氛围感的游戏</text>
+    <text x="87" y="348" class="label" text-anchor="middle" fill="#E67E22">中等成本</text>
+    <text x="87" y="364" class="label" text-anchor="middle" fill="#E67E22">色彩管理更复杂</text>
+  </g>
+
+  <!-- Box 3: 现代高比特 -->
+  <g transform="translate(400, 90)">
+    <rect x="0" y="0" width="175" height="380" class="box" rx="8"/>
+    <rect x="0" y="0" width="175" height="32" fill="#27AE60" rx="8"/>
+    <rect x="0" y="16" width="175" height="16" fill="#27AE60"/>
+    <text x="87" y="22" class="gen-title" fill="#fff">现代高比特</text>
+
+    <!-- Detail pixel character demo -->
+    <g transform="translate(47, 50)">
+      <rect x="0" y="0" width="80" height="64" fill="#1C2833"/>
+      <!-- Dark detailed bg -->
+      <rect x="0" y="0" width="80" height="24" fill="#212F3D"/>
+      <rect x="8" y="8" width="8" height="12" fill="#283747"/>
+      <rect x="64" y="12" width="8" height="8" fill="#283747"/>
+      <!-- Ground tiles -->
+      <rect x="0" y="48" width="20" height="16" fill="#2E4053"/>
+      <rect x="20" y="48" width="20" height="16" fill="#34495E"/>
+      <rect x="40" y="48" width="20" height="16" fill="#2E4053"/>
+      <rect x="60" y="48" width="20" height="16" fill="#34495E"/>
+      <!-- Character - high detail -->
+      <rect x="30" y="8" width="18" height="20" rx="2" fill="#FAD7A1"/>
+      <!-- Hair detail -->
+      <rect x="28" y="2" width="22" height="12" fill="#5D3A1A"/>
+      <rect x="28" y="4" width="6" height="8" fill="#7D4A2A"/>
+      <rect x="44" y="4" width="6" height="8" fill="#7D4A2A"/>
+      <rect x="30" y="10" width="2" height="6" fill="#FAD7A1"/>
+      <!-- Eyes with pupils -->
+      <rect x="34" y="12" width="5" height="4" fill="#fff"/>
+      <rect x="36" y="13" width="2" height="2" fill="#333"/>
+      <rect x="42" y="12" width="5" height="4" fill="#fff"/>
+      <rect x="44" y="13" width="2" height="2" fill="#333"/>
+      <!-- Eyebrow -->
+      <rect x="33" y="10" width="6" height="1.5" fill="#3D1A0A"/>
+      <rect x="42" y="10" width="6" height="1.5" fill="#3D1A0A"/>
+      <!-- Scarf -->
+      <rect x="28" y="22" width="22" height="4" fill="#E74C3C"/>
+      <rect x="24" y="20" width="4" height="8" fill="#C0392B"/>
+      <!-- Armor body -->
+      <rect x="28" y="28" width="20" height="16" fill="#566573"/>
+      <rect x="30" y="30" width="16" height="2" fill="#85929E"/>
+      <rect x="30" y="38" width="16" height="2" fill="#85929E"/>
+      <!-- Legs -->
+      <rect x="30" y="44" width="6" height="8" fill="#2C3E50"/>
+      <rect x="42" y="44" width="6" height="8" fill="#2C3E50"/>
+      <!-- Boots -->
+      <rect x="28" y="52" width="8" height="4" fill="#4A2311"/>
+      <rect x="42" y="52" width="8" height="4" fill="#4A2311"/>
+      <!-- Weapon -->
+      <rect x="52" y="8" width="3" height="22" fill="#95A5A6"/>
+      <rect x="50" y="6" width="7" height="6" fill="#1ABC9C"/>
+    </g>
+
+    <text x="87" y="145" class="gen-sub">大分辨率·细腻·全色</text>
+    <text x="87" y="162" class="gen-res">32-64×32-64 像素</text>
+    <line x1="30" y1="178" x2="145" y2="178" stroke="#B0D4F1" stroke-width="0.8"/>
+    <text x="87" y="195" class="gen-game">代表游戏：</text>
+    <text x="87" y="212" class="gen-game">Dead Cells</text>
+    <text x="87" y="228" class="gen-game">Blasphemous</text>
+    <text x="87" y="244" class="gen-game">Owlboy</text>
+    <text x="87" y="260" class="gen-game">Katana Zero</text>
+    <line x1="30" y1="276" x2="145" y2="276" stroke="#B0D4F1" stroke-width="0.8"/>
+    <text x="87" y="295" class="label" text-anchor="middle" fill="#333" font-weight="bold">适合项目：</text>
+    <text x="87" y="312" class="label" text-anchor="middle">动作·类银河城·</text>
+    <text x="87" y="328" class="label" text-anchor="middle">追求现代感的像素</text>
+    <text x="87" y="348" class="label" text-anchor="middle" fill="#27AE60">高制作成本</text>
+    <text x="87" y="364" class="label" text-anchor="middle" fill="#27AE60">动画帧数爆发</text>
+  </g>
+
+  <!-- Box 4: 调色板艺术 -->
+  <g transform="translate(590, 90)">
+    <rect x="0" y="0" width="175" height="380" class="box" rx="8"/>
+    <rect x="0" y="0" width="175" height="32" fill="#8E44AD" rx="8"/>
+    <rect x="0" y="16" width="175" height="16" fill="#8E44AD"/>
+    <text x="87" y="22" class="gen-title" fill="#fff">调色板艺术</text>
+
+    <!-- Minimal palette art demo -->
+    <g transform="translate(55, 50)">
+      <rect x="0" y="0" width="64" height="64" fill="#FDF5E6"/>
+      <!-- Minimal landscape with 4-6 colors -->
+      <!-- Sun -->
+      <circle cx="48" cy="12" r="8" fill="#E74C3C"/>
+      <!-- Mountains - extreme simplicity -->
+      <polygon points="4,52 24,24 44,52" fill="#2C3E50"/>
+      <polygon points="26,52 44,28 62,52" fill="#34495E"/>
+      <!-- Ground -->
+      <rect x="0" y="52" width="64" height="12" fill="#27AE60"/>
+      <!-- Character - abstract but readable -->
+      <rect x="24" y="32" width="6" height="6" fill="#E74C3C"/>
+      <rect x="24" y="38" width="6" height="10" fill="#333"/>
+      <!-- Tree - geometric -->
+      <rect x="12" y="36" width="3" height="24" fill="#8B4513"/>
+      <polygon points="2,36 28,20 28,36" fill="#229954"/>
+    </g>
+
+    <text x="87" y="145" class="gen-sub">4-6色·极简·高设计</text>
+    <text x="87" y="162" class="gen-res">不限·靠色板定义</text>
+    <line x1="30" y1="178" x2="145" y2="178" stroke="#B0D4F1" stroke-width="0.8"/>
+    <text x="87" y="195" class="gen-game">代表游戏：</text>
+    <text x="87" y="212" class="gen-game">Downwell</text>
+    <text x="87" y="228" class="gen-game">Gato Roboto</text>
+    <text x="87" y="244" class="gen-game">Minit</text>
+    <text x="87" y="260" class="gen-game">Return of the Obra Dinn</text>
+    <line x1="30" y1="276" x2="145" y2="276" stroke="#B0D4F1" stroke-width="0.8"/>
+    <text x="87" y="295" class="label" text-anchor="middle" fill="#333" font-weight="bold">适合项目：</text>
+    <text x="87" y="312" class="label" text-anchor="middle">极简·实验·Game Jam·</text>
+    <text x="87" y="328" class="label" text-anchor="middle">需要强视觉签名</text>
+    <text x="87" y="348" class="label" text-anchor="middle" fill="#8E44AD">设计门槛极高</text>
+    <text x="87" y="364" class="label" text-anchor="middle" fill="#8E44AD">少色=每色放大</text>
+  </g>
+</svg>

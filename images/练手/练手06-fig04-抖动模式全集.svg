@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+      .title { font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-size: 12px; fill: #666; }
+      .pat-label { font-size: 12px; font-weight: bold; fill: #333; }
+      .pat-sub { font-size: 9px; fill: #888; }
+      .on { fill: #2C3E50; }
+      .bg { fill: #fafafa; }
+      .legend { font-size: 11px; fill: #555; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#FFFFFF"/>
+
+  <text x="400" y="30" text-anchor="middle" class="title">抖动模式全集——四家族九式（Unified Dithering Taxonomy）</text>
+  <text x="400" y="50" text-anchor="middle" class="subtitle">A 的"四模式" × B 的"棋盘格及变体" = 一套完整抖动谱。边框颜色 = 家族归属。</text>
+
+  <!-- ====== Row 1 ====== -->
+  <!-- P1: 棋盘格 50% (有序, red) -->
+  <g transform="translate(102,70)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#E74C3C" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="0" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="48" y="0" width="12" height="12"/><rect x="72" y="0" width="12" height="12"/>
+      <rect x="12" y="12" width="12" height="12"/><rect x="36" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="84" y="12" width="12" height="12"/>
+      <rect x="0" y="24" width="12" height="12"/><rect x="24" y="24" width="12" height="12"/><rect x="48" y="24" width="12" height="12"/><rect x="72" y="24" width="12" height="12"/>
+      <rect x="12" y="36" width="12" height="12"/><rect x="36" y="36" width="12" height="12"/><rect x="60" y="36" width="12" height="12"/><rect x="84" y="36" width="12" height="12"/>
+      <rect x="0" y="48" width="12" height="12"/><rect x="24" y="48" width="12" height="12"/><rect x="48" y="48" width="12" height="12"/><rect x="72" y="48" width="12" height="12"/>
+      <rect x="12" y="60" width="12" height="12"/><rect x="36" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/><rect x="84" y="60" width="12" height="12"/>
+      <rect x="0" y="72" width="12" height="12"/><rect x="24" y="72" width="12" height="12"/><rect x="48" y="72" width="12" height="12"/><rect x="72" y="72" width="12" height="12"/>
+      <rect x="12" y="84" width="12" height="12"/><rect x="36" y="84" width="12" height="12"/><rect x="60" y="84" width="12" height="12"/><rect x="84" y="84" width="12" height="12"/>
+    </g>
+  </g>
+  <text x="150" y="184" text-anchor="middle" class="pat-label">① 棋盘格 50%</text>
+  <text x="150" y="196" text-anchor="middle" class="pat-sub">有序 · 最基础形态</text>
+
+  <!-- P2: 棋盘格 25% (有序, red) -->
+  <g transform="translate(352,70)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#E74C3C" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="0" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="48" y="0" width="12" height="12"/><rect x="72" y="0" width="12" height="12"/>
+      <rect x="0" y="24" width="12" height="12"/><rect x="24" y="24" width="12" height="12"/><rect x="48" y="24" width="12" height="12"/><rect x="72" y="24" width="12" height="12"/>
+      <rect x="0" y="48" width="12" height="12"/><rect x="24" y="48" width="12" height="12"/><rect x="48" y="48" width="12" height="12"/><rect x="72" y="48" width="12" height="12"/>
+      <rect x="0" y="72" width="12" height="12"/><rect x="24" y="72" width="12" height="12"/><rect x="48" y="72" width="12" height="12"/><rect x="72" y="72" width="12" height="12"/>
+    </g>
+  </g>
+  <text x="400" y="184" text-anchor="middle" class="pat-label">② 棋盘格 25%</text>
+  <text x="400" y="196" text-anchor="middle" class="pat-sub">有序 · 稀疏化（更亮过渡）</text>
+
+  <!-- P3: 凹痕 (有序, red) -->
+  <g transform="translate(602,70)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#E74C3C" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="0" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="48" y="0" width="12" height="12"/><rect x="72" y="0" width="12" height="12"/>
+      <rect x="12" y="12" width="12" height="12"/><rect x="36" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="84" y="12" width="12" height="12"/>
+    </g>
+  </g>
+  <text x="650" y="184" text-anchor="middle" class="pat-label">③ 凹痕 (Dents)</text>
+  <text x="650" y="196" text-anchor="middle" class="pat-sub">有序 · 单/双行棋盘，省空间</text>
+
+  <!-- ====== Row 2 ====== -->
+  <!-- P4: 平行线 (有序, red) -->
+  <g transform="translate(102,200)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#E74C3C" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="0" y="0" width="96" height="12"/>
+      <rect x="0" y="24" width="96" height="12"/>
+      <rect x="0" y="48" width="96" height="12"/>
+      <rect x="0" y="72" width="96" height="12"/>
+    </g>
+  </g>
+  <text x="150" y="314" text-anchor="middle" class="pat-label">④ 平行线 (Parallel)</text>
+  <text x="150" y="326" text-anchor="middle" class="pat-sub">有序 · Genesis/CRT 扫描线</text>
+
+  <!-- P5: 断线 (有序, red) -->
+  <g transform="translate(352,200)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#E74C3C" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="0" y="0" width="24" height="12"/><rect x="48" y="0" width="24" height="12"/>
+      <rect x="0" y="24" width="24" height="12"/><rect x="48" y="24" width="24" height="12"/>
+      <rect x="0" y="48" width="24" height="12"/><rect x="48" y="48" width="24" height="12"/>
+      <rect x="0" y="72" width="24" height="12"/><rect x="48" y="72" width="24" height="12"/>
+    </g>
+  </g>
+  <text x="400" y="314" text-anchor="middle" class="pat-label">⑤ 断线 (Discontinued)</text>
+  <text x="400" y="326" text-anchor="middle" class="pat-sub">有序 · 平行线变体，更多梯度</text>
+
+  <!-- P6: 交织 (有序, red) -->
+  <g transform="translate(602,200)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#E74C3C" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="0" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="48" y="0" width="12" height="12"/><rect x="72" y="0" width="12" height="12"/>
+      <rect x="12" y="12" width="12" height="12"/><rect x="36" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="84" y="12" width="12" height="12"/>
+      <rect x="0" y="24" width="12" height="12"/><rect x="24" y="24" width="12" height="12"/><rect x="48" y="24" width="12" height="12"/><rect x="72" y="24" width="12" height="12"/>
+      <rect x="12" y="36" width="12" height="12"/><rect x="36" y="36" width="12" height="12"/><rect x="60" y="36" width="12" height="12"/><rect x="84" y="36" width="12" height="12"/>
+      <rect x="12" y="48" width="12" height="12"/><rect x="36" y="48" width="12" height="12"/><rect x="60" y="48" width="12" height="12"/><rect x="84" y="48" width="12" height="12"/>
+      <rect x="0" y="60" width="12" height="12"/><rect x="24" y="60" width="12" height="12"/><rect x="48" y="60" width="12" height="12"/><rect x="72" y="60" width="12" height="12"/>
+      <rect x="12" y="72" width="12" height="12"/><rect x="36" y="72" width="12" height="12"/><rect x="60" y="72" width="12" height="12"/><rect x="84" y="72" width="12" height="12"/>
+      <rect x="0" y="84" width="12" height="12"/><rect x="24" y="84" width="12" height="12"/><rect x="48" y="84" width="12" height="12"/><rect x="72" y="84" width="12" height="12"/>
+    </g>
+    <line x1="0" y1="48" x2="96" y2="48" stroke="#E74C3C" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.7"/>
+  </g>
+  <text x="650" y="314" text-anchor="middle" class="pat-label">⑥ 交织 (Intertwined)</text>
+  <text x="650" y="326" text-anchor="middle" class="pat-sub">有序 · 上下半区反向棋盘</text>
+
+  <!-- ====== Row 3 ====== -->
+  <!-- P7: Bayer 4x4 @37.5% (Bayer, blue) -->
+  <g transform="translate(102,330)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#3498DB" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="0" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="48" y="0" width="12" height="12"/><rect x="72" y="0" width="12" height="12"/>
+      <rect x="12" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/>
+      <rect x="0" y="24" width="12" height="12"/><rect x="24" y="24" width="12" height="12"/><rect x="48" y="24" width="12" height="12"/><rect x="72" y="24" width="12" height="12"/>
+      <rect x="36" y="36" width="12" height="12"/><rect x="84" y="36" width="12" height="12"/>
+      <rect x="0" y="48" width="12" height="12"/><rect x="24" y="48" width="12" height="12"/><rect x="48" y="48" width="12" height="12"/><rect x="72" y="48" width="12" height="12"/>
+      <rect x="12" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/>
+      <rect x="0" y="72" width="12" height="12"/><rect x="24" y="72" width="12" height="12"/><rect x="48" y="72" width="12" height="12"/><rect x="72" y="72" width="12" height="12"/>
+      <rect x="36" y="84" width="12" height="12"/><rect x="84" y="84" width="12" height="12"/>
+    </g>
+  </g>
+  <text x="150" y="444" text-anchor="middle" class="pat-label">⑦ Bayer 4×4 矩阵</text>
+  <text x="150" y="456" text-anchor="middle" class="pat-sub">Bayer · 阈值查表，近似渐变</text>
+
+  <!-- P8: 随机 (随机, green) -->
+  <g transform="translate(352,330)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#27AE60" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="12" y="0" width="12" height="12"/><rect x="60" y="0" width="12" height="12"/>
+      <rect x="36" y="12" width="12" height="12"/><rect x="84" y="12" width="12" height="12"/>
+      <rect x="0" y="24" width="12" height="12"/><rect x="36" y="24" width="12" height="12"/><rect x="72" y="24" width="12" height="12"/>
+      <rect x="24" y="36" width="12" height="12"/><rect x="48" y="36" width="12" height="12"/><rect x="84" y="36" width="12" height="12"/>
+      <rect x="12" y="48" width="12" height="12"/><rect x="60" y="48" width="12" height="12"/>
+      <rect x="0" y="60" width="12" height="12"/><rect x="36" y="60" width="12" height="12"/><rect x="72" y="60" width="12" height="12"/>
+      <rect x="24" y="72" width="12" height="12"/><rect x="60" y="72" width="12" height="12"/>
+      <rect x="12" y="84" width="12" height="12"/><rect x="48" y="84" width="12" height="12"/><rect x="84" y="84" width="12" height="12"/>
+    </g>
+  </g>
+  <text x="400" y="444" text-anchor="middle" class="pat-label">⑧ 随机 (Random)</text>
+  <text x="400" y="456" text-anchor="middle" class="pat-sub">随机 · 颗粒感，易脏需精修</text>
+
+  <!-- P9: 风格化斜线 (风格化, purple) -->
+  <g transform="translate(602,330)">
+    <rect width="96" height="96" class="bg" rx="2"/>
+    <rect width="96" height="96" fill="none" stroke="#8E44AD" stroke-width="1.8" rx="2"/>
+    <g class="on">
+      <rect x="0" y="0" width="12" height="12"/><rect x="48" y="0" width="12" height="12"/>
+      <rect x="12" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/>
+      <rect x="24" y="24" width="12" height="12"/><rect x="72" y="24" width="12" height="12"/>
+      <rect x="36" y="36" width="12" height="12"/><rect x="84" y="36" width="12" height="12"/>
+      <rect x="0" y="48" width="12" height="12"/><rect x="48" y="48" width="12" height="12"/>
+      <rect x="12" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/>
+      <rect x="24" y="72" width="12" height="12"/><rect x="72" y="72" width="12" height="12"/>
+      <rect x="36" y="84" width="12" height="12"/><rect x="84" y="84" width="12" height="12"/>
+    </g>
+  </g>
+  <text x="650" y="444" text-anchor="middle" class="pat-label">⑨ 风格化（斜线核）</text>
+  <text x="650" y="456" text-anchor="middle" class="pat-sub">风格化 · 自定义采样形状</text>
+
+  <!-- ====== Family legend ====== -->
+  <g transform="translate(110,472)">
+    <rect x="0" y="0" width="14" height="14" fill="none" stroke="#E74C3C" stroke-width="1.8" rx="2"/>
+    <text x="20" y="11" class="legend">有序家族（①–⑥）</text>
+    <rect x="170" y="0" width="14" height="14" fill="none" stroke="#3498DB" stroke-width="1.8" rx="2"/>
+    <text x="190" y="11" class="legend">Bayer 矩阵（⑦）</text>
+    <rect x="330" y="0" width="14" height="14" fill="none" stroke="#27AE60" stroke-width="1.8" rx="2"/>
+    <text x="350" y="11" class="legend">随机（⑧）</text>
+    <rect x="440" y="0" width="14" height="14" fill="none" stroke="#8E44AD" stroke-width="1.8" rx="2"/>
+    <text x="460" y="11" class="legend">风格化（⑨）</text>
+    <text x="560" y="11" class="legend" fill="#888">→ 详见 6.2.2 抖动全谱</text>
+  </g>
+</svg>

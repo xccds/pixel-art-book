@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .grid-cell { stroke: #ccc; stroke-width: 0.4; }
+    .grid-fill { fill: #2C3E50; }
+    .grid-fill-mid { fill: #5D6D7E; }
+    .grid-fill-light { fill: #aab7c4; }
+    .grid-bg { fill: #fafafa; }
+    .tile-border { fill: none; stroke: #E74C3C; stroke-width: 1.2; stroke-dasharray: 5,4; }
+    .seam-arrow { stroke: #E74C3C; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .seam-label { font-size: 10px; fill: #E74C3C; font-weight: bold; }
+    .issue-callout { font-size: 9px; fill: #555; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0,0 6,2 0,4" fill="#E74C3C"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="30" class="title" text-anchor="middle">拼接检验——4×4 重复排列的 tile（Tiling Test）</text>
+
+  <!-- ====== 4x4 Tiling Grid ====== -->
+  <g transform="translate(50, 55)">
+    <!-- Background -->
+    <rect x="0" y="0" width="340" height="340" class="grid-bg" rx="2"/>
+
+    <!-- Tile borders (4x4 grid) -->
+    <rect x="0"   y="0"   width="85" height="85" class="tile-border"/>
+    <rect x="85"  y="0"   width="85" height="85" class="tile-border"/>
+    <rect x="170" y="0"   width="85" height="85" class="tile-border"/>
+    <rect x="255" y="0"   width="85" height="85" class="tile-border"/>
+
+    <rect x="0"   y="85"  width="85" height="85" class="tile-border"/>
+    <rect x="85"  y="85"  width="85" height="85" class="tile-border"/>
+    <rect x="170" y="85"  width="85" height="85" class="tile-border"/>
+    <rect x="255" y="85"  width="85" height="85" class="tile-border"/>
+
+    <rect x="0"   y="170" width="85" height="85" class="tile-border"/>
+    <rect x="85"  y="170" width="85" height="85" class="tile-border"/>
+    <rect x="170" y="170" width="85" height="85" class="tile-border"/>
+    <rect x="255" y="170" width="85" height="85" class="tile-border"/>
+
+    <rect x="0"   y="255" width="85" height="85" class="tile-border"/>
+    <rect x="85"  y="255" width="85" height="85" class="tile-border"/>
+    <rect x="170" y="255" width="85" height="85" class="tile-border"/>
+    <rect x="255" y="255" width="85" height="85" class="tile-border"/>
+
+    <!-- Tile pattern - repeated in all 16 cells -->
+    <!-- Row 1 -->
+    <rect x="5" y="5" width="10" height="10" class="grid-fill"/>
+    <rect x="30" y="15" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="55" y="5" width="10" height="10" class="grid-fill-light"/>
+    <rect x="15" y="35" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="45" y="45" width="10" height="10" class="grid-fill"/>
+    <rect x="5" y="60" width="10" height="8" class="grid-fill-light"/>
+    <rect x="60" y="30" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="35" y="65" width="10" height="10" class="grid-fill"/>
+    <rect x="70" y="60" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="90" y="5" width="10" height="10" class="grid-fill"/>
+    <rect x="115" y="15" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="140" y="5" width="10" height="10" class="grid-fill-light"/>
+    <rect x="100" y="35" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="130" y="45" width="10" height="10" class="grid-fill"/>
+    <rect x="90" y="60" width="10" height="8" class="grid-fill-light"/>
+    <rect x="145" y="30" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="120" y="65" width="10" height="10" class="grid-fill"/>
+    <rect x="155" y="60" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="175" y="5" width="10" height="10" class="grid-fill"/>
+    <rect x="200" y="15" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="225" y="5" width="10" height="10" class="grid-fill-light"/>
+    <rect x="185" y="35" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="215" y="45" width="10" height="10" class="grid-fill"/>
+    <rect x="175" y="60" width="10" height="8" class="grid-fill-light"/>
+    <rect x="230" y="30" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="205" y="65" width="10" height="10" class="grid-fill"/>
+    <rect x="240" y="60" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="260" y="5" width="10" height="10" class="grid-fill"/>
+    <rect x="285" y="15" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="310" y="5" width="10" height="10" class="grid-fill-light"/>
+    <rect x="270" y="35" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="300" y="45" width="10" height="10" class="grid-fill"/>
+    <rect x="260" y="60" width="10" height="8" class="grid-fill-light"/>
+    <rect x="315" y="30" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="290" y="65" width="10" height="10" class="grid-fill"/>
+    <rect x="325" y="60" width="8" height="8" class="grid-fill-light"/>
+
+    <!-- Row 2 -->
+    <rect x="5" y="90" width="10" height="10" class="grid-fill"/>
+    <rect x="30" y="100" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="55" y="90" width="10" height="10" class="grid-fill-light"/>
+    <rect x="15" y="120" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="45" y="130" width="10" height="10" class="grid-fill"/>
+    <rect x="5" y="145" width="10" height="8" class="grid-fill-light"/>
+    <rect x="60" y="115" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="35" y="150" width="10" height="10" class="grid-fill"/>
+    <rect x="70" y="145" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="90" y="90" width="10" height="10" class="grid-fill"/>
+    <rect x="115" y="100" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="140" y="90" width="10" height="10" class="grid-fill-light"/>
+    <rect x="100" y="120" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="130" y="130" width="10" height="10" class="grid-fill"/>
+    <rect x="90" y="145" width="10" height="8" class="grid-fill-light"/>
+    <rect x="145" y="115" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="120" y="150" width="10" height="10" class="grid-fill"/>
+    <rect x="155" y="145" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="175" y="90" width="10" height="10" class="grid-fill"/>
+    <rect x="200" y="100" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="225" y="90" width="10" height="10" class="grid-fill-light"/>
+    <rect x="185" y="120" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="215" y="130" width="10" height="10" class="grid-fill"/>
+    <rect x="175" y="145" width="10" height="8" class="grid-fill-light"/>
+    <rect x="230" y="115" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="205" y="150" width="10" height="10" class="grid-fill"/>
+    <rect x="240" y="145" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="260" y="90" width="10" height="10" class="grid-fill"/>
+    <rect x="285" y="100" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="310" y="90" width="10" height="10" class="grid-fill-light"/>
+    <rect x="270" y="120" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="300" y="130" width="10" height="10" class="grid-fill"/>
+    <rect x="260" y="145" width="10" height="8" class="grid-fill-light"/>
+    <rect x="315" y="115" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="290" y="150" width="10" height="10" class="grid-fill"/>
+    <rect x="325" y="145" width="8" height="8" class="grid-fill-light"/>
+
+    <!-- Row 3 and 4 similarly -->
+    <rect x="5" y="175" width="10" height="10" class="grid-fill"/>
+    <rect x="30" y="185" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="55" y="175" width="10" height="10" class="grid-fill-light"/>
+    <rect x="15" y="205" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="45" y="215" width="10" height="10" class="grid-fill"/>
+    <rect x="5" y="230" width="10" height="8" class="grid-fill-light"/>
+    <rect x="60" y="200" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="35" y="235" width="10" height="10" class="grid-fill"/>
+    <rect x="70" y="230" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="90" y="175" width="10" height="10" class="grid-fill"/>
+    <rect x="115" y="185" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="140" y="175" width="10" height="10" class="grid-fill-light"/>
+    <rect x="100" y="205" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="130" y="215" width="10" height="10" class="grid-fill"/>
+    <rect x="90" y="230" width="10" height="8" class="grid-fill-light"/>
+    <rect x="145" y="200" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="120" y="235" width="10" height="10" class="grid-fill"/>
+    <rect x="155" y="230" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="175" y="175" width="10" height="10" class="grid-fill"/>
+    <rect x="200" y="185" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="225" y="175" width="10" height="10" class="grid-fill-light"/>
+    <rect x="185" y="205" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="215" y="215" width="10" height="10" class="grid-fill"/>
+    <rect x="175" y="230" width="10" height="8" class="grid-fill-light"/>
+    <rect x="230" y="200" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="205" y="235" width="10" height="10" class="grid-fill"/>
+    <rect x="240" y="230" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="260" y="175" width="10" height="10" class="grid-fill"/>
+    <rect x="285" y="185" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="310" y="175" width="10" height="10" class="grid-fill-light"/>
+    <rect x="270" y="205" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="300" y="215" width="10" height="10" class="grid-fill"/>
+    <rect x="260" y="230" width="10" height="8" class="grid-fill-light"/>
+    <rect x="315" y="200" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="290" y="235" width="10" height="10" class="grid-fill"/>
+    <rect x="325" y="230" width="8" height="8" class="grid-fill-light"/>
+
+    <!-- Row 4 -->
+    <rect x="5" y="260" width="10" height="10" class="grid-fill"/>
+    <rect x="30" y="270" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="55" y="260" width="10" height="10" class="grid-fill-light"/>
+    <rect x="15" y="290" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="45" y="300" width="10" height="10" class="grid-fill"/>
+    <rect x="5" y="315" width="10" height="8" class="grid-fill-light"/>
+    <rect x="60" y="285" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="35" y="320" width="10" height="10" class="grid-fill"/>
+    <rect x="70" y="315" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="90" y="260" width="10" height="10" class="grid-fill"/>
+    <rect x="115" y="270" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="140" y="260" width="10" height="10" class="grid-fill-light"/>
+    <rect x="100" y="290" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="130" y="300" width="10" height="10" class="grid-fill"/>
+    <rect x="90" y="315" width="10" height="8" class="grid-fill-light"/>
+    <rect x="145" y="285" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="120" y="320" width="10" height="10" class="grid-fill"/>
+    <rect x="155" y="315" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="175" y="260" width="10" height="10" class="grid-fill"/>
+    <rect x="200" y="270" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="225" y="260" width="10" height="10" class="grid-fill-light"/>
+    <rect x="185" y="290" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="215" y="300" width="10" height="10" class="grid-fill"/>
+    <rect x="175" y="315" width="10" height="8" class="grid-fill-light"/>
+    <rect x="230" y="285" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="205" y="320" width="10" height="10" class="grid-fill"/>
+    <rect x="240" y="315" width="8" height="8" class="grid-fill-light"/>
+
+    <rect x="260" y="260" width="10" height="10" class="grid-fill"/>
+    <rect x="285" y="270" width="10" height="8" class="grid-fill-mid"/>
+    <rect x="310" y="260" width="10" height="10" class="grid-fill-light"/>
+    <rect x="270" y="290" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="300" y="300" width="10" height="10" class="grid-fill"/>
+    <rect x="260" y="315" width="10" height="8" class="grid-fill-light"/>
+    <rect x="315" y="285" width="8" height="8" class="grid-fill-mid"/>
+    <rect x="290" y="320" width="10" height="10" class="grid-fill"/>
+    <rect x="325" y="315" width="8" height="8" class="grid-fill-light"/>
+  </g>
+
+  <!-- ====== Right side: Diagnostic labels ====== -->
+  <g transform="translate(420, 60)">
+    <text x="0" y="0" font-size="13px" font-weight="bold" fill="#333">拼接诊断三项</text>
+
+    <!-- Item 1 -->
+    <rect x="0" y="16" width="340" height="80" fill="#FFF5F5" stroke="#E74C3C" stroke-width="0.8" rx="4"/>
+    <text x="12" y="38" font-size="12px" font-weight="bold" fill="#E74C3C">❶ 出现接缝线？</text>
+    <text x="12" y="56" font-size="10px" fill="#555">tile 边界处像素密度突变，形成肉眼可见的"网格"。原因：</text>
+    <text x="12" y="72" font-size="10px" fill="#555">边界两边的像素值没有连续过渡。修复：在边界两侧各复制</text>
+    <text x="12" y="88" font-size="10px" fill="#555">1-2 行/列像素，让 seam 处的信息量保持一致。</text>
+
+    <!-- Item 2 -->
+    <rect x="0" y="110" width="340" height="80" fill="#FFF8F0" stroke="#E67E22" stroke-width="0.8" rx="4"/>
+    <text x="12" y="132" font-size="12px" font-weight="bold" fill="#E67E22">❷ 出现网格感？</text>
+    <text x="12" y="150" font-size="10px" fill="#555">人眼察觉到重复 tile 的边界，画面像"铺了地砖"。原因：</text>
+    <text x="12" y="166" font-size="10px" fill="#555">tile 内部有明显的"高密度区"或"方向性纹理"，重复后这些</text>
+    <text x="12" y="182" font-size="10px" fill="#555">特征被大脑自动检测为周期性图案。修复：打散明显的聚集</text>
+    <text x="12" y="198" font-size="10px" fill="#555">块，使特征分布趋于均匀；或创建 tile 变体交替使用。</text>
+
+    <!-- Item 3 -->
+    <rect x="0" y="205" width="340" height="65" fill="#F5F0FF" stroke="#8E44AD" stroke-width="0.8" rx="4"/>
+    <text x="12" y="227" font-size="12px" font-weight="bold" fill="#8E44AD">❸ 亮度不一致？</text>
+    <text x="12" y="245" font-size="10px" fill="#555">某块 tile 比周围的亮或暗。原因：绘制时潜意识里在 tile</text>
+    <text x="12" y="261" font-size="10px" fill="#555">内部制造了明暗渐变，拼在一起形成棋盘格。修复：确保</text>
+    <text x="12" y="277" font-size="10px" fill="#555">tile 四条边的平均明度一致。</text>
+
+    <!-- Quick test method -->
+    <rect x="0" y="285" width="340" height="55" fill="#E8F4FD" rx="4"/>
+    <text x="12" y="305" font-size="11px" font-weight="bold" fill="#333">快速检验法</text>
+    <text x="12" y="322" font-size="10px" fill="#555">眯眼看 → 能看到网格线 = 接缝问题。拉远看(缩放25%) → </text>
+    <text x="12" y="337" font-size="10px" fill="#555">能看到棋盘格 = 亮度不均。盯5秒 → 眼睛开始找规律 = 重复感。</text>
+  </g>
+
+  <!-- Bottom annotation arrows pointing from grid to issues -->
+  <line x1="220" y1="400" x2="220" y2="395" class="seam-arrow"/>
+  <line x1="305" y1="400" x2="305" y2="395" class="seam-arrow"/>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-opacity="0.10"/>
+    </filter>
+    <filter id="shadow-light" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="0.5" stdDeviation="1" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6 Z" fill="#27AE60"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6 Z" fill="#2980B9"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6 Z" fill="#95A5A6"/>
+    </marker>
+  </defs>
+
+  <style>
+    .bg { fill: #FAFBFC; }
+    .title { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 17px; font-weight: 700; fill: #333; }
+    .subtitle { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 10px; fill: #999; }
+    .block-title { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 13px; font-weight: 700; }
+    .block-desc { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 9px; fill: #555; }
+    .block-pro { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 8.5px; fill: #27AE60; }
+    .block-con { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 8.5px; fill: #E74C3C; }
+    .tl-label { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 10px; font-weight: 600; fill: #555; }
+    .tl-freq { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 8.5px; fill: #999; }
+    .arrow-label { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 8px; fill: #888; }
+    .rec-text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 10px; fill: #333; }
+    .rec-highlight { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 10px; font-weight: 700; fill: #2980B9; }
+    .note { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; font-size: 8.5px; fill: #bbb; }
+
+    .card-self { fill: #F2F3F4; stroke: #CCC; }
+    .card-ai { fill: #E8F4FD; stroke: #C8D8F0; }
+    .card-community { fill: #F4ECF7; stroke: #DDD0E8; }
+    .card-peer { fill: #E8F8E8; stroke: #C8E0C8; }
+
+    .t-self { fill: #95A5A6; }
+    .t-ai { fill: #2980B9; }
+    .t-community { fill: #8E44AD; }
+    .t-peer { fill: #27AE60; }
+  </style>
+
+  <rect width="800" height="500" rx="6" class="bg"/>
+
+  <text x="400" y="33" text-anchor="middle" class="title">四种反馈方式的互补策略</text>
+  <text x="400" y="50" text-anchor="middle" class="subtitle">没有"最好的"反馈方式——只有"组合使用"才是最优解</text>
+
+  <!-- Timeline bar at top -->
+  <rect x="70" y="68" width="660" height="32" rx="6" fill="#F8F9FA" stroke="#DDDFE0" stroke-width="0.5"/>
+  <text x="180" y="79" class="tl-label">日常练习</text>
+  <text x="180" y="93" class="tl-freq">每天</text>
+
+  <line x1="260" y1="84" x2="270" y2="84" stroke="#CCC" stroke-width="1"/>
+
+  <text x="370" y="79" class="tl-label">定稿筛选</text>
+  <text x="370" y="93" class="tl-freq">每 1-2 周</text>
+
+  <line x1="460" y1="84" x2="470" y2="84" stroke="#CCC" stroke-width="1"/>
+
+  <text x="575" y="79" class="tl-label">深度复盘</text>
+  <text x="575" y="93" class="tl-freq">每月</text>
+
+  <!-- Arrow from timeline to blocks -->
+  <line x1="160" y1="100" x2="140" y2="125" stroke="#95A5A6" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="360" y1="100" x2="340" y2="125" stroke="#2980B9" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="580" y1="100" x2="590" y2="125" stroke="#8E44AD" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="620" y1="100" x2="660" y2="125" stroke="#27AE60" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Block 1: 自评量表 (top-left) -->
+  <rect x="35" y="125" width="170" height="115" rx="8" class="card-self" filter="url(#shadow-light)"/>
+  <text x="120" y="148" text-anchor="middle" class="block-title t-self">📋 自评量表</text>
+  <text x="120" y="166" text-anchor="middle" class="block-desc">用 VTS 三问 + 八维度自查</text>
+  <text x="50" y="186" class="block-pro">✓ 零依赖，100% 可执行</text>
+  <text x="50" y="200" class="block-con">✗ 盲区无法自测</text>
+  <text x="50" y="214" class="block-con">✗ 进步慢，缺乏外部校准</text>
+
+  <!-- Block 2: AI反馈 (top-right) -->
+  <rect x="240" y="125" width="170" height="115" rx="8" class="card-ai" filter="url(#shadow-light)"/>
+  <text x="325" y="148" text-anchor="middle" class="block-title t-ai">🤖 AI 反馈</text>
+  <text x="325" y="166" text-anchor="middle" class="block-desc">结构化提示词 + 八维度分析</text>
+  <text x="255" y="186" class="block-pro">✓ 24h 在线，无限耐心</text>
+  <text x="255" y="200" class="block-pro">✓ 覆盖维度全面</text>
+  <text x="255" y="214" class="block-con">✗ 明度/像素判断不准</text>
+
+  <!-- Block 3: 社区反馈 (bottom-left) -->
+  <rect x="445" y="125" width="170" height="115" rx="8" class="card-community" filter="url(#shadow-light)"/>
+  <text x="530" y="148" text-anchor="middle" class="block-title t-community">🌐 社区反馈</text>
+  <text x="530" y="166" text-anchor="middle" class="block-desc">发到社交媒体或论坛</text>
+  <text x="460" y="186" class="block-pro">✓ 真实玩家视角</text>
+  <text x="460" y="200" class="block-pro">✓ 多人交叉验证</text>
+  <text x="460" y="214" class="block-con">✗ 质量参差不齐</text>
+
+  <!-- Block 4: 同伴互评 (bottom-right) -->
+  <rect x="650" y="125" width="115" height="115" rx="8" class="card-peer" filter="url(#shadow-light)"/>
+  <text x="707" y="148" text-anchor="middle" class="block-title t-peer">👥 同伴互评</text>
+  <text x="707" y="166" text-anchor="middle" class="block-desc">找 1-2 个开发者</text>
+  <text x="665" y="186" class="block-pro">✓ 深度信任</text>
+  <text x="665" y="200" class="block-pro">✓ 持续追踪</text>
+  <text x="665" y="214" class="block-con">✗ 需要经营关系</text>
+
+  <!-- Connecting arrows between blocks -->
+  <!-- Self -> AI -->
+  <line x1="205" y1="175" x2="235" y2="175" stroke="#95A5A6" stroke-width="0.8" stroke-dasharray="3,2" marker-end="url(#arrowGray)"/>
+
+  <!-- AI -> Community -->
+  <line x1="415" y1="175" x2="440" y2="175" stroke="#2980B9" stroke-width="0.8" stroke-dasharray="3,2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Community -> Peer -->
+  <line x1="615" y1="175" x2="645" y2="175" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="3,2" marker-end="url(#arrowGray)"/>
+
+  <!-- Self <-> AI bidirectional -->
+  <path d="M 195 140 C 200 115, 235 115, 240 140" fill="none" stroke="#95A5A6" stroke-width="0.8" stroke-dasharray="3,2" marker-end="url(#arrowGray)"/>
+
+  <!-- Recommendation box -->
+  <rect x="70" y="270" width="660" height="100" rx="8" fill="#FFF3CD" stroke="#E8D0A0" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <text x="90" y="295" class="rec-text">💡 <tspan class="rec-highlight">推荐节奏：</tspan>日常练习用 AI 反馈快速迭代（高频率、零心理负担）</text>
+  <text x="90" y="315" class="rec-text">    每 1–2 周从本周作品中选 1 张最好的，发到社区（获取真实玩家视角）</text>
+  <text x="90" y="335" class="rec-text">    每月找同伴做一次深度互评（校准方向，防止盲区积累）</text>
+  <text x="90" y="355" class="rec-text">    自评量表始终贯穿全程——它是所有外部反馈的"内化锚点"</text>
+
+  <!-- Bottom right: complementarity note -->
+  <text x="740" y="415" text-anchor="end" class="arrow-label">从左到右：反馈深度递增，但频率递减</text>
+  <text x="740" y="428" text-anchor="end" class="arrow-label">四者互补，不是替代——就像单元测试 + 集成测试 + E2E + 人工验收</text>
+
+  <!-- Footer note -->
+  <text x="400" y="495" text-anchor="middle" class="note">类比：自评 = 单元测试 · AI 反馈 = linter · 社区 = 用户测试 · 同伴 = code review</text>
+</svg>

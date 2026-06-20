@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- 标题 -->
+  <text x="400" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">赛后复盘模板</text>
+  <text x="400" y="58" text-anchor="middle" font-size="13" fill="#666">Game Jam Postmortem — 视觉层面四象限评估</text>
+
+  <!-- 四象限背景 -->
+  <!-- 左上：视觉一致性 -->
+  <rect x="40" y="80" width="350" height="200" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="80" width="350" height="40" rx="10" fill="#333"/>
+  <rect x="40" y="100" width="350" height="20" fill="#333"/>
+  <text x="215" y="106" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">🎨 视觉一致性 Visual Consistency</text>
+
+  <text x="60" y="145" font-size="12" fill="#666">• 所有素材放在同一个画面里，像一个人画的吗？</text>
+  <text x="60" y="168" font-size="12" fill="#666">• 角色和场景的线条粗细/色块风格统一吗？</text>
+  <text x="60" y="191" font-size="12" fill="#666">• 是否有某张素材明显"画风不同"？</text>
+  <text x="60" y="220" font-size="11" fill="#E74C3C">打分（1-10）：____  最大问题：_________</text>
+  <text x="60" y="245" font-size="11" fill="#999">类比：代码风格检查——变量命名、缩进、文件</text>
+  <text x="60" y="262" font-size="11" fill="#999">结构一个项目里应该一致，视觉同理。</text>
+
+  <!-- 右上：动画流畅度 -->
+  <rect x="410" y="80" width="350" height="200" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="410" y="80" width="350" height="40" rx="10" fill="#E74C3C"/>
+  <rect x="410" y="100" width="350" height="20" fill="#E74C3C"/>
+  <text x="585" y="106" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">🏃 动画流畅度 Animation Fluidity</text>
+
+  <text x="430" y="145" font-size="12" fill="#666">• 关键帧之间是否有突兀跳帧？</text>
+  <text x="430" y="168" font-size="12" fill="#666">• 动作的缓入缓出（easing）自然吗？</text>
+  <text x="430" y="191" font-size="12" fill="#666">• 不同动画的速度节奏是否协调？</text>
+  <text x="430" y="220" font-size="11" fill="#E74C3C">打分（1-10）：____  最大问题：_________</text>
+  <text x="430" y="245" font-size="11" fill="#999">类比：帧率——60fps流畅 vs 15fps卡顿，</text>
+  <text x="430" y="262" font-size="11" fill="#999">动画少几帧没人怪你，跳帧一定有人注意到。</text>
+
+  <!-- 左下：UI清晰度 -->
+  <rect x="40" y="290" width="350" height="193" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="290" width="350" height="40" rx="10" fill="#E74C3C"/>
+  <rect x="40" y="310" width="350" height="20" fill="#E74C3C"/>
+  <text x="215" y="316" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">📱 UI清晰度 UI Clarity</text>
+
+  <text x="60" y="355" font-size="12" fill="#666">• 血条/分数/按钮——3秒内能看懂吗？</text>
+  <text x="60" y="378" font-size="12" fill="#666">• 文字和背景的对比度够不够？</text>
+  <text x="60" y="401" font-size="12" fill="#666">• 菜单层级是否超过2层？</text>
+  <text x="60" y="430" font-size="11" fill="#E74C3C">打分（1-10）：____  最大问题：_________</text>
+  <text x="60" y="455" font-size="11" fill="#999">类比：API文档——不需要读源码就能用的</text>
+  <text x="60" y="472" font-size="11" fill="#999">才是好接口，不需要看说明的UI才是好UI。</text>
+
+  <!-- 右下：配色统一性 -->
+  <rect x="410" y="290" width="350" height="193" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="410" y="290" width="350" height="40" rx="10" fill="#333"/>
+  <rect x="410" y="310" width="350" height="20" fill="#333"/>
+  <text x="585" y="316" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">🎯 配色统一性 Color Unity</text>
+
+  <text x="430" y="355" font-size="12" fill="#666">• 主色不超过3种，辅助色不超过2种？</text>
+  <text x="430" y="378" font-size="12" fill="#666">• 玩家/敌人/道具用色彩区分了吗？</text>
+  <text x="430" y="401" font-size="12" fill="#666">• 有没有某个颜色"孤立"出现在画面中？</text>
+  <text x="430" y="430" font-size="11" fill="#E74C3C">打分（1-10）：____  最大问题：_________</text>
+  <text x="430" y="455" font-size="11" fill="#999">类比：配色方案=数据库schema，定义好主键</text>
+  <text x="430" y="472" font-size="11" fill="#999">和外键关系，别让颜色之间毫无关联。</text>
+</svg>

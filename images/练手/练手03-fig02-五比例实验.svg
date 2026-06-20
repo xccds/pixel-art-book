@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .frame { fill: #1A1A2E; stroke: #333; stroke-width: 1.5; }
+    .block { fill: #ECF0F1; }
+    .label-ratio { font-size: 12px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .label-emotion { font-size: 10px; fill: #E74C3C; font-weight: bold; text-anchor: middle; }
+    .label-desc { font-size: 9px; fill: #666; text-anchor: middle; }
+    .note { font-size: 10px; fill: #888; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">正负形五比例实验——同一元素，不同空间比例，不同情绪</text>
+
+  <!-- Frame 1: 50:50 -->
+  <g transform="translate(25, 50)">
+    <rect x="0" y="0" width="130" height="130" class="frame" rx="3"/>
+    <rect x="32.5" y="32.5" width="65" height="65" class="block" rx="2"/>
+    <text x="65" y="150" class="label-ratio">50 : 50</text>
+    <text x="65" y="167" class="label-emotion">稳定 / 平庸</text>
+    <text x="65" y="182" class="label-desc">元素和留白等量</text>
+    <text x="65" y="196" class="label-desc">没有紧张感</text>
+    <text x="65" y="212" class="label-desc" fill="#888">像一首没有高潮的歌</text>
+  </g>
+
+  <!-- Frame 2: 30:70 -->
+  <g transform="translate(175, 50)">
+    <rect x="0" y="0" width="130" height="130" class="frame" rx="3"/>
+    <rect x="19" y="19" width="39" height="39" class="block" rx="2"/>
+    <text x="65" y="150" class="label-ratio">30 : 70</text>
+    <text x="65" y="167" class="label-emotion">紧张 / 对比强</text>
+    <text x="65" y="182" class="label-desc">小球在大空间</text>
+    <text x="65" y="196" class="label-desc">视觉张力最强</text>
+    <text x="65" y="212" class="label-desc" fill="#888">游戏 Boss 出场常用</text>
+  </g>
+
+  <!-- Frame 3: 70:30 -->
+  <g transform="translate(325, 50)">
+    <rect x="0" y="0" width="130" height="130" class="frame" rx="3"/>
+    <rect x="19" y="19" width="91" height="91" class="block" rx="2"/>
+    <text x="65" y="150" class="label-ratio">70 : 30</text>
+    <text x="65" y="167" class="label-emotion">压迫 / 拥挤</text>
+    <text x="65" y="182" class="label-desc">元素几乎充满</text>
+    <text x="65" y="196" class="label-desc">像瓮中之鳖</text>
+    <text x="65" y="212" class="label-desc" fill="#888">UI 菜单常用：内容多</text>
+  </g>
+
+  <!-- Frame 4: 10:90 -->
+  <g transform="translate(475, 50)">
+    <rect x="0" y="0" width="130" height="130" class="frame" rx="3"/>
+    <rect x="65" y="65" width="13" height="13" class="block" rx="1"/>
+    <text x="65" y="150" class="label-ratio">10 : 90</text>
+    <text x="65" y="167" class="label-emotion">孤独 / 渺小</text>
+    <text x="65" y="182" class="label-desc">广袤中的一点</text>
+    <text x="65" y="196" class="label-desc">像沙漠里一个人</text>
+    <text x="65" y="212" class="label-desc" fill="#888">《Minit》式空灵</text>
+  </g>
+
+  <!-- Frame 5: 90:10 -->
+  <g transform="translate(625, 50)">
+    <rect x="0" y="0" width="130" height="130" class="frame" rx="3"/>
+    <rect x="6.5" y="6.5" width="117" height="117" class="block" rx="2"/>
+    <text x="65" y="150" class="label-ratio">90 : 10</text>
+    <text x="65" y="167" class="label-emotion">窒息 / 膨胀</text>
+    <text x="65" y="182" class="label-desc">几乎溢出画框</text>
+    <text x="65" y="196" class="label-desc">像特写镜头怼脸</text>
+    <text x="65" y="212" class="label-desc" fill="#888">恐怖/紧张效果满分</text>
+  </g>
+
+  <!-- Bottom: principle -->
+  <rect x="25" y="282" width="750" height="55" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
+  <text x="400" y="302" text-anchor="middle" class="note" fill="#2C3E50" font-size="11" font-weight="bold">核心发现：同样的白色方块，只因所在空间不同，传达的情绪完全不同</text>
+  <text x="400" y="320" text-anchor="middle" class="note" fill="#666">Arthur Wesley Dow 定律：“空白是绘画的肺”——你往画面上加元素是“吸气”，留白是“呼气”。只吸不呼的画面会“憋死”玩家</text>
+
+  <!-- Case examples -->
+  <text x="25" y="375" class="label-ratio" font-size="11" fill="#666">游戏案例对照：</text>
+
+  <g transform="translate(25, 385)">
+    <rect x="0" y="0" width="6" height="6" rx="1" fill="#E74C3C"/>
+    <text x="12" y="6" class="note">《Hyper Light Drifter》Titan 出场前：漂泊者渺小（10:90）→ Titan 巨大（30:70）——比例变化比任何文字都更能说“你打不过他”</text>
+  </g>
+  <g transform="translate(25, 402)">
+    <rect x="0" y="0" width="6" height="6" rx="1" fill="#4A90D9"/>
+    <text x="12" y="6" class="note">《Super Mario》1-1 关卡：Mario 占画面约 5%——给右侧留出 80% 的空间暗示“往前走”</text>
+  </g>
+  <g transform="translate(25, 419)">
+    <rect x="0" y="0" width="6" height="6" rx="1" fill="#27AE60"/>
+    <text x="12" y="6" class="note">你的游戏 UI：对话框占画面 70%？改到 40% 以下试试——玩家的“喘气感”会回来</text>
+  </g>
+
+  <rect x="25" y="440" width="750" height="36" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
+  <text x="400" y="463" text-anchor="middle" class="note" fill="#2C3E50">程序员类比：就像 CSS 盒模型中 margin 和 content 的比例——margin:0 的密集文字让人头大，margin:40px 才有呼吸感</text>
+</svg>

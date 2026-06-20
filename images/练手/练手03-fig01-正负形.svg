@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .sub { font-size: 12px; fill: #666; }
+    .label { font-size: 12px; fill: #333; font-weight: bold; }
+    .note { font-size: 10px; fill: #888; }
+    .box { stroke: #333; stroke-width: 1.5; fill: none; }
+    .pos-fill { fill: #E74C3C; opacity: 0.35; }
+    .neg-fill { fill: #4A90D9; opacity: 0.35; }
+    .pos-outline { stroke: #E74C3C; stroke-width: 1.5; fill: none; stroke-dasharray: 4,3; }
+    .neg-outline { stroke: #4A90D9; stroke-width: 1.5; fill: none; stroke-dasharray: 4,3; }
+    .square-fill { fill: #2C3E50; }
+    .circle-fill { fill: #2C3E50; }
+    .tri-fill { fill: #2C3E50; }
+    .legend-pos { font-size: 11px; fill: #E74C3C; font-weight: bold; }
+    .legend-neg { font-size: 11px; fill: #4A90D9; font-weight: bold; }
+    .ratio-text { font-size: 11px; fill: #333; font-weight: bold; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">正形与负形——画面的"内容"和"肺"</text>
+
+  <!-- Left: Original scene -->
+  <g transform="translate(50, 55)">
+    <text x="145" y="0" class="label" text-anchor="middle">原始场景</text>
+    <rect x="0" y="10" width="290" height="230" rx="3" class="box"/>
+
+    <!-- Ground line -->
+    <line x1="0" y1="195" x2="290" y2="195" stroke="#BDC3C7" stroke-width="1"/>
+
+    <!-- Big square (house shape) -->
+    <rect x="50" y="70" width="90" height="120" class="square-fill" rx="2"/>
+
+    <!-- Small tree (triangle + rectangle trunk) -->
+    <polygon points="190,55 220,130 160,130" class="tri-fill"/>
+    <rect x="185" y="130" width="20" height="20" class="square-fill"/>
+
+    <!-- Small cloud -->
+    <circle cx="120" cy="45" r="18" class="circle-fill" opacity="0.6"/>
+    <circle cx="145" cy="40" r="14" class="circle-fill" opacity="0.6"/>
+    <circle cx="103" cy="42" r="12" class="circle-fill" opacity="0.6"/>
+
+    <!-- Ground grass hint -->
+    <rect x="0" y="196" width="290" height="44" fill="#ECF0F1"/>
+
+    <text x="145" y="257" class="note" text-anchor="middle">一个简单场景：房子、树、云</text>
+  </g>
+
+  <!-- Arrow between -->
+  <g transform="translate(350, 170)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Right: Positive/Negative overlay -->
+  <g transform="translate(410, 55)">
+    <text x="145" y="0" class="label" text-anchor="middle">正形 / 负形分析</text>
+    <rect x="0" y="10" width="290" height="230" rx="3" class="box"/>
+
+    <!-- Ground line -->
+    <line x1="0" y1="195" x2="290" y2="195" stroke="#BDC3C7" stroke-width="1"/>
+
+    <!-- Ground negative space -->
+    <rect x="0" y="10" width="290" height="185" class="neg-fill"/>
+    <rect x="0" y="196" width="290" height="44" class="neg-fill"/>
+
+    <!-- House positive space -->
+    <rect x="50" y="70" width="90" height="120" class="pos-fill"/>
+    <rect x="50" y="70" width="90" height="120" class="pos-outline"/>
+
+    <!-- Tree positive space -->
+    <polygon points="190,55 220,130 160,130" class="pos-fill"/>
+    <polygon points="190,55 220,130 160,130" class="pos-outline"/>
+    <rect x="185" y="130" width="20" height="20" class="pos-fill"/>
+    <rect x="185" y="130" width="20" height="20" class="pos-outline"/>
+
+    <!-- Cloud positive space -->
+    <circle cx="120" cy="45" r="18" class="pos-fill"/>
+    <circle cx="145" cy="40" r="14" class="pos-fill"/>
+    <circle cx="103" cy="42" r="12" class="pos-fill"/>
+
+    <!-- Negative space outlines (surrounding shapes) -->
+    <rect x="0" y="10" width="290" height="185" class="neg-outline"/>
+    <rect x="0" y="196" width="290" height="44" class="neg-outline"/>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(50, 360)">
+    <rect x="0" y="0" width="16" height="16" rx="2" class="pos-fill"/>
+    <rect x="0" y="0" width="16" height="16" rx="2" class="pos-outline"/>
+    <text x="22" y="12" class="legend-pos">红色 = 正形（有内容的元素）</text>
+
+    <rect x="240" y="0" width="16" height="16" rx="2" class="neg-fill"/>
+    <rect x="240" y="0" width="16" height="16" rx="2" class="neg-outline"/>
+    <text x="262" y="12" class="legend-neg">蓝色 = 负形（留白 / 空间）</text>
+
+    <text x="400" y="40" text-anchor="middle" class="ratio-text">正负形比例约 25:75 —— 70% 以上的留白让人感到舒适</text>
+  </g>
+
+  <!-- Bottom analogy -->
+  <rect x="50" y="435" width="700" height="36" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
+  <text x="400" y="458" text-anchor="middle" class="note" fill="#2C3E50">程序员类比：正形 = HTML 中有内容的元素（div 里的文字、图片）；负形 = margin + padding —— 没有 margin 的页面让人窒息，没有负空间的画面同理</text>
+</svg>

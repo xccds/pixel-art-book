@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+      .title { font-size: 22px; font-weight: bold; fill: #333; }
+      .subtitle { font-size: 14px; fill: #666; }
+      .label { font-size: 14px; font-weight: bold; fill: #333; }
+      .note { font-size: 12px; fill: #666; }
+      .highlight { font-size: 13px; fill: #E74C3C; font-weight: bold; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#FAFAFA"/>
+
+  <text x="400" y="32" text-anchor="middle" class="title">游戏中的明度分层——可读性设计</text>
+  <text x="400" y="54" text-anchor="middle" class="subtitle">玩家需要在0.3秒内分辨出"什么能交互、什么是背景"</text>
+
+  <!-- Example 1: Player vs Background -->
+  <rect x="30" y="75" width="350" height="180" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <text x="205" y="98" text-anchor="middle" class="label">明度分离 = 可读性</text>
+
+  <!-- Background blocks (low contrast, murky) -->
+  <rect x="55" y="110" width="300" height="60" fill="#999" rx="2"/>
+  <text x="205" y="144" text-anchor="middle" class="note" fill="#FFF" font-size="13">背景（低对比，灰度接近）</text>
+  <rect x="65" y="130" width="60" height="20" fill="#AAA" rx="1"/>
+  <rect x="135" y="125" width="40" height="25" fill="#888" rx="1"/>
+  <rect x="185" y="135" width="35" height="15" fill="#AAA" rx="1"/>
+
+  <!-- Player character (high contrast, stands out) -->
+  <rect x="185" y="175" width="40" height="50" fill="#333" rx="3" stroke="#FFF" stroke-width="2"/>
+  <circle cx="205" cy="190" r="14" fill="#333" stroke="#FFF" stroke-width="2"/>
+  <text x="205" y="240" text-anchor="middle" class="highlight">主角：高对比 → 0.3秒识别</text>
+
+  <!-- Example 2: Vignette / Direction -->
+  <rect x="420" y="75" width="350" height="180" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <text x="595" y="98" text-anchor="middle" class="label">暗角（Vignette）= 视线引导</text>
+
+  <!-- Vignette simulation -->
+  <rect x="420" y="100" width="350" height="155" fill="#2C2C2C"/>
+  <rect x="470" y="120" width="250" height="115" fill="#3A3A3A"/>
+  <rect x="510" y="140" width="170" height="75" fill="#555"/>
+  <rect x="545" y="157" width="100" height="40" fill="#777"/>
+  <circle cx="595" cy="177" r="12" fill="#EEE"/>
+
+  <!-- Arrow showing eye direction -->
+  <text x="660" y="130" text-anchor="middle" class="note" font-size="10">← 暗角推视线</text>
+  <text x="530" y="130" text-anchor="middle" class="note" font-size="10">暗角推视线 →</text>
+  <text x="430" y="177" text-anchor="middle" class="note" font-size="10" fill="#AAA">暗</text>
+  <text x="760" y="177" text-anchor="middle" class="note" font-size="10" fill="#AAA">暗</text>
+  <text x="595" y="177" text-anchor="middle" class="note" fill="#FFF" font-size="12">玩家眼睛 → 聚向中心</text>
+
+  <text x="595" y="240" text-anchor="middle" class="highlight">暗角 = 镜头级的注意力控制</text>
+
+  <!-- Example 3: Global moods -->
+  <rect x="30" y="275" width="740" height="140" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <text x="400" y="298" text-anchor="middle" class="label">全局明度 = 情绪基线</text>
+
+  <!-- Safe scene (bright) -->
+  <rect x="50" y="312" width="220" height="85" rx="3" fill="#EAEAEA"/>
+  <rect x="60" y="320" width="200" height="14" fill="#DDD" rx="2"/>
+  <rect x="80" y="345" width="160" height="14" fill="#DDD" rx="2"/>
+  <ellipse cx="150" cy="360" rx="12" ry="8" fill="#CCC"/>
+  <text x="160" y="392" text-anchor="middle" class="note" font-size="12">全局亮 = 安全</text>
+
+  <!-- Dangerous scene (dark with bright spot) -->
+  <rect x="290" y="312" width="220" height="85" rx="3" fill="#1A1A1A"/>
+  <rect x="300" y="320" width="200" height="14" fill="#333" rx="2"/>
+  <rect x="320" y="345" width="160" height="14" fill="#333" rx="2"/>
+  <ellipse cx="400" cy="360" rx="25" ry="12" fill="#666"/>
+  <ellipse cx="400" cy="365" rx="10" ry="5" fill="#FFF9C4"/>
+  <text x="400" y="392" text-anchor="middle" class="note" font-size="12">全局暗+局部亮 = 危险</text>
+
+  <!-- Tension scene (high contrast) -->
+  <rect x="530" y="312" width="220" height="85" rx="3" fill="#333"/>
+  <rect x="540" y="322" width="100" height="50" fill="#FFF" rx="2"/>
+  <rect x="660" y="340" width="80" height="25" fill="#111" rx="2"/>
+  <text x="640" y="392" text-anchor="middle" class="note" font-size="12">亮暗极端并置 = 紧张</text>
+
+  <!-- Summary bar -->
+  <rect x="30" y="430" width="740" height="48" rx="4" fill="#E8F4FD"/>
+  <text x="400" y="450" text-anchor="middle" class="label" font-size="15">核心规则：游戏画面的明度结构服务于"可读性"——</text>
+  <text x="400" y="468" text-anchor="middle" class="note" font-size="13">主角 > 敌人 > 可交互物 > 装饰 > 远景背景（明度对比依次递减）</text>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+      .title { font-size: 22px; font-weight: bold; fill: #333; }
+      .template-title { font-size: 16px; font-weight: bold; fill: #333; }
+      .note { font-size: 12px; fill: #666; }
+      .label-light { font-size: 11px; fill: #FFFFFF; }
+      .label-dark { font-size: 11px; fill: #333; }
+      .percent { font-size: 14px; font-weight: bold; fill: #E74C3C; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#FAFAFA"/>
+
+  <text x="400" y="32" text-anchor="middle" class="title">四种主流明度模板</text>
+  <text x="400" y="52" text-anchor="middle" class="note">每种模板对应不同的情绪和游戏场景</text>
+
+  <!-- Template 1: High Key (高调) -->
+  <rect x="30" y="75" width="170" height="200" rx="3" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <text x="115" y="95" text-anchor="middle" class="template-title">高调 High Key</text>
+
+  <rect x="40" y="108" width="150" height="22" rx="2" fill="#E8E8E8"/>
+  <rect x="40" y="134" width="150" height="22" rx="2" fill="#F5F5F5"/>
+  <rect x="40" y="160" width="150" height="22" rx="2" fill="#FFFFFF"/>
+  <rect x="40" y="186" width="150" height="22" rx="2" fill="#EAEAEA"/>
+  <rect x="40" y="212" width="150" height="22" rx="2" fill="#DDDDDD"/>
+  <rect x="40" y="238" width="150" height="22" rx="2" fill="#F0F0F0"/>
+
+  <text x="115" y="260" text-anchor="middle" class="percent">~80% 亮区</text>
+  <text x="115" y="274" text-anchor="middle" class="note">明亮 · 轻快 · 开阔</text>
+
+  <!-- Template 2: Low Key (低调) -->
+  <rect x="220" y="75" width="170" height="200" rx="3" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <text x="305" y="95" text-anchor="middle" class="template-title">低调 Low Key</text>
+
+  <rect x="230" y="108" width="150" height="22" rx="2" fill="#1A1A1A"/>
+  <rect x="230" y="134" width="150" height="22" rx="2" fill="#2C2C2C"/>
+  <rect x="230" y="160" width="150" height="22" rx="2" fill="#111111"/>
+  <rect x="230" y="186" width="150" height="22" rx="2" fill="#3A3A3A"/>
+  <rect x="230" y="212" width="150" height="22" rx="2" fill="#1F1F1F"/>
+  <rect x="230" y="238" width="150" height="22" rx="2" fill="#444444"/>
+
+  <text x="305" y="260" text-anchor="middle" class="percent" fill="#3498DB">~60% 暗区</text>
+  <text x="305" y="274" text-anchor="middle" class="note">神秘 · 压抑 · 恐怖</text>
+
+  <!-- Template 3: High Contrast (高对比) -->
+  <rect x="410" y="75" width="170" height="200" rx="3" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <text x="495" y="95" text-anchor="middle" class="template-title">高对比</text>
+
+  <rect x="420" y="108" width="150" height="22" rx="2" fill="#0A0A0A"/>
+  <rect x="420" y="134" width="150" height="22" rx="2" fill="#FFFFFF"/>
+  <rect x="420" y="160" width="150" height="22" rx="2" fill="#1C1C1C"/>
+  <rect x="420" y="186" width="150" height="22" rx="2" fill="#F8F8F8"/>
+  <rect x="420" y="212" width="150" height="22" rx="2" fill="#0D0D0D"/>
+  <rect x="420" y="238" width="150" height="22" rx="2" fill="#FFFFFF"/>
+
+  <text x="495" y="260" text-anchor="middle" class="percent" fill="#E74C3C">亮暗极端</text>
+  <text x="495" y="274" text-anchor="middle" class="note">戏剧 · 紧张 · 冲击</text>
+
+  <!-- Template 4: Low Contrast (低对比) -->
+  <rect x="600" y="75" width="170" height="200" rx="3" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <text x="685" y="95" text-anchor="middle" class="template-title">低对比</text>
+
+  <rect x="610" y="108" width="150" height="22" rx="2" fill="#AAAAAA"/>
+  <rect x="610" y="134" width="150" height="22" rx="2" fill="#BBBBBB"/>
+  <rect x="610" y="160" width="150" height="22" rx="2" fill="#999999"/>
+  <rect x="610" y="186" width="150" height="22" rx="2" fill="#C0C0C0"/>
+  <rect x="610" y="212" width="150" height="22" rx="2" fill="#A5A5A5"/>
+  <rect x="610" y="238" width="150" height="22" rx="2" fill="#B5B5B5"/>
+
+  <text x="685" y="260" text-anchor="middle" class="percent" fill="#E67E22">灰度接近</text>
+  <text x="685" y="274" text-anchor="middle" class="note">柔和 · 朦胧 · 怀旧</text>
+
+  <!-- Application examples -->
+  <text x="400" y="320" text-anchor="middle" class="title" font-size="16">游戏中的应用</text>
+
+  <rect x="30" y="340" width="170" height="60" rx="3" fill="#E8F4FD"/>
+  <text x="115" y="360" text-anchor="middle" class="note">《旅途》《星露谷物语》</text>
+  <text x="115" y="378" text-anchor="middle" class="note" font-size="11">白天场景·探索感</text>
+
+  <rect x="220" y="340" width="170" height="60" rx="3" fill="#E8F4FD"/>
+  <text x="305" y="360" text-anchor="middle" class="note">《Inside》《Limbo》</text>
+  <text x="305" y="378" text-anchor="middle" class="note" font-size="11">恐怖·悬疑·潜行</text>
+
+  <rect x="410" y="340" width="170" height="60" rx="3" fill="#E8F4FD"/>
+  <text x="495" y="360" text-anchor="middle" class="note">《茶杯头》《哈迪斯》</text>
+  <text x="495" y="378" text-anchor="middle" class="note" font-size="11">BOSS战·高潮时刻</text>
+
+  <rect x="600" y="340" width="170" height="60" rx="3" fill="#E8F4FD"/>
+  <text x="685" y="360" text-anchor="middle" class="note">《Gris》回忆场景</text>
+  <text x="685" y="378" text-anchor="middle" class="note" font-size="11">梦境·闪回·抒情</text>
+
+  <rect x="30" y="420" width="740" height="55" rx="4" fill="#FFF3E0"/>
+  <text x="400" y="442" text-anchor="middle" class="note" fill="#E67E22" font-size="13">实用建议：建立四个明度图层（前景/中景/远景/背景），给每一层设定一个明度范围，限定在该层内不可以越界。</text>
+  <text x="400" y="460" text-anchor="middle" class="note" fill="#999" font-size="11">来源：Nathan Fowkes 明度结构化方法 · Gurney《Color and Light》</text>
+</svg>

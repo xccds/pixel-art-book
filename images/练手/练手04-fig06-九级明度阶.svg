@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+      .title { font-size: 22px; font-weight: bold; fill: #333; }
+      .subtitle { font-size: 14px; fill: #666; }
+      .num { font-size: 18px; font-weight: bold; fill: #333; }
+      .num-dark { font-size: 18px; font-weight: bold; fill: #FFF; }
+      .val { font-size: 11px; fill: #888; }
+      .axis { font-size: 14px; font-weight: bold; fill: #555; }
+      .tier { font-size: 13px; font-weight: bold; fill: #2C3E50; }
+      .box-title { font-size: 15px; font-weight: bold; fill: #E67E22; }
+      .box-note { font-size: 13px; fill: #555; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#FAFAFA"/>
+
+  <text x="400" y="36" text-anchor="middle" class="title">九级明度阶（9-Step Value Scale）</text>
+  <text x="400" y="58" text-anchor="middle" class="subtitle">把 0–255 灰度量化成 9 个离散档位 · 像素画常用其中 4–6 级</text>
+
+  <!-- axis labels -->
+  <text x="65" y="92" text-anchor="start" class="axis">白（纯白）</text>
+  <text x="735" y="92" text-anchor="end" class="axis">黑（纯黑）</text>
+  <line x1="120" y1="86" x2="680" y2="86" stroke="#999" stroke-width="1" marker-end="url(#arrR)"/>
+
+  <!-- 9 value rectangles: 1=white ... 9=black -->
+  <rect x="65"  y="105" width="70" height="165" fill="#FFFFFF" stroke="#CCC" stroke-width="1"/>
+  <rect x="140" y="105" width="70" height="165" fill="#E0E0E0" stroke="#CCC" stroke-width="1"/>
+  <rect x="215" y="105" width="70" height="165" fill="#C0C0C0" stroke="#CCC" stroke-width="1"/>
+  <rect x="290" y="105" width="70" height="165" fill="#A0A0A0" stroke="#CCC" stroke-width="1"/>
+  <rect x="365" y="105" width="70" height="165" fill="#808080" stroke="#CCC" stroke-width="1"/>
+  <rect x="440" y="105" width="70" height="165" fill="#606060" stroke="#CCC" stroke-width="1"/>
+  <rect x="515" y="105" width="70" height="165" fill="#404040" stroke="#CCC" stroke-width="1"/>
+  <rect x="590" y="105" width="70" height="165" fill="#202020" stroke="#CCC" stroke-width="1"/>
+  <rect x="665" y="105" width="70" height="165" fill="#000000" stroke="#CCC" stroke-width="1"/>
+
+  <!-- number labels (1-9) centered on each rect -->
+  <text x="100" y="295" text-anchor="middle" class="num">1</text>
+  <text x="175" y="295" text-anchor="middle" class="num">2</text>
+  <text x="250" y="295" text-anchor="middle" class="num">3</text>
+  <text x="325" y="295" text-anchor="middle" class="num">4</text>
+  <text x="400" y="295" text-anchor="middle" class="num">5</text>
+  <text x="475" y="295" text-anchor="middle" class="num">6</text>
+  <text x="550" y="295" text-anchor="middle" class="num">7</text>
+  <text x="625" y="295" text-anchor="middle" class="num">8</text>
+  <text x="700" y="295" text-anchor="middle" class="num">9</text>
+
+  <!-- gray value labels -->
+  <text x="100" y="313" text-anchor="middle" class="val">255</text>
+  <text x="175" y="313" text-anchor="middle" class="val">224</text>
+  <text x="250" y="313" text-anchor="middle" class="val">192</text>
+  <text x="325" y="313" text-anchor="middle" class="val">160</text>
+  <text x="400" y="313" text-anchor="middle" class="val">128</text>
+  <text x="475" y="313" text-anchor="middle" class="val">96</text>
+  <text x="550" y="313" text-anchor="middle" class="val">64</text>
+  <text x="625" y="313" text-anchor="middle" class="val">32</text>
+  <text x="700" y="313" text-anchor="middle" class="val">0</text>
+
+  <!-- tier brackets: 高光(1) 亮面(2-3) 中间调(4-5) 暗面(6-7) 闭塞(8-9) -->
+  <line x1="65"  y1="330" x2="135" y2="330" stroke="#888" stroke-width="1.5"/>
+  <line x1="65"  y1="330" x2="65"  y2="335" stroke="#888" stroke-width="1.5"/>
+  <line x1="135" y1="330" x2="135" y2="335" stroke="#888" stroke-width="1.5"/>
+  <text x="100" y="352" text-anchor="middle" class="tier">高光</text>
+
+  <line x1="140" y1="330" x2="285" y2="330" stroke="#888" stroke-width="1.5"/>
+  <line x1="140" y1="330" x2="140" y2="335" stroke="#888" stroke-width="1.5"/>
+  <line x1="285" y1="330" x2="285" y2="335" stroke="#888" stroke-width="1.5"/>
+  <text x="212" y="352" text-anchor="middle" class="tier">亮面</text>
+
+  <line x1="290" y1="330" x2="435" y2="330" stroke="#888" stroke-width="1.5"/>
+  <line x1="290" y1="330" x2="290" y2="335" stroke="#888" stroke-width="1.5"/>
+  <line x1="435" y1="330" x2="435" y2="335" stroke="#888" stroke-width="1.5"/>
+  <text x="362" y="352" text-anchor="middle" class="tier">中间调</text>
+
+  <line x1="440" y1="330" x2="585" y2="330" stroke="#888" stroke-width="1.5"/>
+  <line x1="440" y1="330" x2="440" y2="335" stroke="#888" stroke-width="1.5"/>
+  <line x1="585" y1="330" x2="585" y2="335" stroke="#888" stroke-width="1.5"/>
+  <text x="512" y="352" text-anchor="middle" class="tier">暗面</text>
+
+  <line x1="590" y1="330" x2="735" y2="330" stroke="#888" stroke-width="1.5"/>
+  <line x1="590" y1="330" x2="590" y2="335" stroke="#888" stroke-width="1.5"/>
+  <line x1="735" y1="330" x2="735" y2="335" stroke="#888" stroke-width="1.5"/>
+  <text x="662" y="352" text-anchor="middle" class="tier">闭塞</text>
+
+  <!-- squint-test annotation -->
+  <rect x="40" y="372" width="720" height="108" rx="4" fill="#FFF8E1" stroke="#FFE082" stroke-width="1"/>
+  <text x="60" y="397" class="box-title">眯眼测试（Squint Test）</text>
+  <text x="60" y="422" class="box-note">眯起眼看上面这 9 级——它们会合并成 3–4 个大块。那几个大块就是你画面的明度骨架。</text>
+  <text x="60" y="445" class="box-note">模糊后还立得住 = 明度结构扎实；模糊后塌成一坨 = 你在靠色相这种高频细节撑场面。</text>
+  <text x="60" y="468" class="box-note">经验法则：每个色板阶梯跨 2–4 级，高光与阴影明度差 ≥ 3 级，不同物体明度差 ≥ 1 级。</text>
+</svg>

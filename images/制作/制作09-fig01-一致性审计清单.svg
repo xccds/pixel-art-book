@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 10px; fill: #666; }
+    .check-item { font-size: 12px; fill: #333; }
+    .check-en { font-size: 8px; fill: #999; }
+    .pass-text { font-size: 10px; fill: #27AE60; font-weight: bold; }
+    .fail-text { font-size: 10px; fill: #E74C3C; font-weight: bold; }
+    .row-label { font-size: 8px; fill: #aaa; }
+  </style>
+
+  <text x="400" y="24" class="title" text-anchor="middle">图 制作09.1  一致性审计 10 项检查清单——所有截图看起来是"一家人"吗</text>
+  <text x="400" y="40" class="subtitle" text-anchor="middle">每项只需回答"是/否"——真实回答，不要自我安慰</text>
+
+  <!-- Row 1: PASS -->
+  <g transform="translate(40, 58)">
+    <rect x="0" y="0" width="720" height="32" fill="#F0FFF0" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <!-- Checkbox -->
+    <rect x="12" y="7" width="18" height="18" fill="#27AE60" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✓</text>
+    <!-- Item -->
+    <text x="42" y="13" class="check-item">1. 线宽统一 —— 所有 Sprite 的描边宽度 / 线条粗细保持一致（如全部 2px）</text>
+    <text x="42" y="25" class="check-en">Line Weight Consistent</text>
+    <text x="685" y="21" class="pass-text">通过</text>
+  </g>
+
+  <!-- Row 2: PASS -->
+  <g transform="translate(40, 94)">
+    <rect x="0" y="0" width="720" height="32" fill="#F0FFF0" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#27AE60" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✓</text>
+    <text x="42" y="13" class="check-item">2. 色板一致 —— 所有 Sprite 使用同一色板，无"外来颜色"混入</text>
+    <text x="42" y="25" class="check-en">Color Palette Consistent</text>
+    <text x="685" y="21" class="pass-text">通过</text>
+  </g>
+
+  <!-- Row 3: PASS -->
+  <g transform="translate(40, 130)">
+    <rect x="0" y="0" width="720" height="32" fill="#F0FFF0" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#27AE60" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✓</text>
+    <text x="42" y="13" class="check-item">3. 细节密度连贯 —— 场景 A 和场景 B 的细节密度（Detail Density）不跳跃</text>
+    <text x="42" y="25" class="check-en">Detail Density Consistent</text>
+    <text x="685" y="21" class="pass-text">通过</text>
+  </g>
+
+  <!-- Row 4: PASS -->
+  <g transform="translate(40, 166)">
+    <rect x="0" y="0" width="720" height="32" fill="#F0FFF0" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#27AE60" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✓</text>
+    <text x="42" y="13" class="check-item">4. 抗锯齿方式统一 —— 全部硬边 / 或全部抗锯齿，不混用</text>
+    <text x="42" y="25" class="check-en">Anti-aliasing Uniform</text>
+    <text x="685" y="21" class="pass-text">通过</text>
+  </g>
+
+  <!-- Row 5: PASS -->
+  <g transform="translate(40, 202)">
+    <rect x="0" y="0" width="720" height="32" fill="#F0FFF0" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#27AE60" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✓</text>
+    <text x="42" y="13" class="check-item">5. UI 风格融合 —— UI 元素（血条/按钮/文字）与游戏画面风格匹配</text>
+    <text x="42" y="25" class="check-en">UI Integrates with World</text>
+    <text x="685" y="21" class="pass-text">通过</text>
+  </g>
+
+  <!-- Row 6: PASS -->
+  <g transform="translate(40, 238)">
+    <rect x="0" y="0" width="720" height="32" fill="#F0FFF0" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#27AE60" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✓</text>
+    <text x="42" y="13" class="check-item">6. 帧率风格匹配 —— 走/跑/攻击动画的帧率（FPS）风格一致</text>
+    <text x="42" y="25" class="check-en">Frame Rate Style Matched</text>
+    <text x="685" y="21" class="pass-text">通过</text>
+  </g>
+
+  <!-- Row 7: FAIL -->
+  <g transform="translate(40, 274)">
+    <rect x="0" y="0" width="720" height="32" fill="#FFF5F5" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#E74C3C" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✗</text>
+    <text x="42" y="13" class="check-item">7. 光源统一 —— 所有 Sprite 的光源方向一致（如全部左上 45° 光源）</text>
+    <text x="42" y="25" class="check-en">Light Source Direction Uniform</text>
+    <text x="685" y="21" class="fail-text">需修复</text>
+  </g>
+
+  <!-- Row 8: FAIL -->
+  <g transform="translate(40, 310)">
+    <rect x="0" y="0" width="720" height="32" fill="#FFF5F5" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#E74C3C" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✗</text>
+    <text x="42" y="13" class="check-item">8. 透视一致 —— 所有 Sprite 使用同一透视规则（如全部正俯视 / 或全部 3/4 侧视）</text>
+    <text x="42" y="25" class="check-en">Perspective Consistent</text>
+    <text x="685" y="21" class="fail-text">需修复</text>
+  </g>
+
+  <!-- Row 9: PASS -->
+  <g transform="translate(40, 346)">
+    <rect x="0" y="0" width="720" height="32" fill="#F0FFF0" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#27AE60" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✓</text>
+    <text x="42" y="13" class="check-item">9. 比例协调 —— 角色 / 道具 / 场景的比例关系统一（如全部 2:1 头身比）</text>
+    <text x="42" y="25" class="check-en">Proportions Coordinate</text>
+    <text x="685" y="21" class="pass-text">通过</text>
+  </g>
+
+  <!-- Row 10: PASS -->
+  <g transform="translate(40, 382)">
+    <rect x="0" y="0" width="720" height="32" fill="#F0FFF0" rx="4"/>
+    <rect x="0" y="0" width="720" height="32" fill="none" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+    <rect x="12" y="7" width="18" height="18" fill="#27AE60" rx="2"/>
+    <text x="21" y="21" fill="#fff" font-size="13" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">✓</text>
+    <text x="42" y="13" class="check-item">10. 字体融入画面 —— UI 文字的字体选择与游戏世界不冲突（像素风配像素字 / 奇幻配衬线字）</text>
+    <text x="42" y="25" class="check-en">Typography Integrates with World</text>
+    <text x="685" y="21" class="pass-text">通过</text>
+  </g>
+
+  <!-- Summary bar -->
+  <g transform="translate(40, 430)">
+    <rect x="0" y="0" width="720" height="44" fill="#E8F4FD" rx="6"/>
+    <text x="360" y="18" font-size="12" font-weight="bold" fill="#333" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">审计结果：8/10 通过 · 2 项需修复</text>
+    <text x="360" y="34" font-size="9" fill="#666" text-anchor="middle">修复第 7、8 项后重新审计——直到 10/10——不可"差不多就行"</text>
+  </g>
+</svg>

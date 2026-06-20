@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 625"
+     width="800" height="625"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .title { font-size: 18px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .caption { font-size: 13px; fill: #666; text-anchor: middle; }
+    .in-box { fill: #E8F4FD; stroke: #4A90D9; stroke-width: 1.6; }
+    .in-title { font-size: 12px; font-weight: bold; fill: #2C6FAA; text-anchor: middle; }
+    .in-text { font-size: 10px; fill: #444; text-anchor: middle; }
+    .step-box { fill: #FEF9E7; stroke: #F39C12; stroke-width: 2; }
+    .step-title { font-size: 14px; font-weight: bold; fill: #B9770E; text-anchor: middle; }
+    .opt-box { fill: #FFFFFF; stroke: #B0B0B0; stroke-width: 1.3; }
+    .opt-box-sweet { fill: #FEF9E7; stroke: #F39C12; stroke-width: 2; }
+    .opt-num { font-size: 15px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .opt-num-sweet { font-size: 15px; font-weight: bold; fill: #B9770E; text-anchor: middle; }
+    .opt-desc { font-size: 9px; fill: #666; text-anchor: middle; }
+    .opt-game { font-size: 8.5px; fill: #999; text-anchor: middle; font-style: italic; }
+    .branch-box { fill: #E8F8F0; stroke: #27AE60; stroke-width: 1.8; }
+    .branch-box-cust { fill: #FDEDEC; stroke: #E74C3C; stroke-width: 1.8; }
+    .branch-title { font-size: 12px; font-weight: bold; fill: #1E8449; text-anchor: middle; }
+    .branch-title-cust { font-size: 12px; font-weight: bold; fill: #B03A2E; text-anchor: middle; }
+    .branch-text { font-size: 9.5px; fill: #444; text-anchor: middle; }
+    .out-box { fill: #EAEDED; stroke: #566; stroke-width: 1.8; }
+    .out-text { font-size: 12px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .analog { font-size: 10px; fill: #E74C3C; text-anchor: middle; font-style: italic; }
+    .arrow { stroke: #7A8A99; stroke-width: 2; fill: none; marker-end: url(#ah); }
+    .arrow-label-bg { fill: #FFF; stroke: none; }
+    .arrow-label { font-size: 11px; fill: #555; text-anchor: middle; }
+    .star { font-size: 13px; fill: #F39C12; font-weight: bold; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#7A8A99"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="28" class="title">调色板决策流程 · 从项目约束到锁定色板</text>
+
+  <!-- Row 1: four constraint input boxes -->
+  <g>
+    <rect x="25" y="50" width="175" height="72" rx="8" class="in-box"/>
+    <text x="112" y="72" class="in-title">① 平台限制</text>
+    <text x="112" y="90" class="in-text">NES 4色 / SNES 256</text>
+    <text x="112" y="106" class="in-text">现代无限制</text>
+
+    <rect x="215" y="50" width="175" height="72" rx="8" class="in-box"/>
+    <text x="302" y="72" class="in-title">② 情绪基调</text>
+    <text x="302" y="90" class="in-text">冷/暖/黑白</text>
+    <text x="302" y="106" class="in-text">高饱和/低饱和</text>
+
+    <rect x="405" y="50" width="175" height="72" rx="8" class="in-box"/>
+    <text x="492" y="72" class="in-title">③ 团队规模</text>
+    <text x="492" y="90" class="in-text">solo / 小队</text>
+    <text x="492" y="106" class="in-text">固定板=一致性</text>
+
+    <rect x="595" y="50" width="175" height="72" rx="8" class="in-box"/>
+    <text x="682" y="72" class="in-title">④ 动画/换色需求</text>
+    <text x="682" y="90" class="in-text">多帧 / 多换色</text>
+    <text x="682" y="106" class="in-text">色少→swap 快</text>
+  </g>
+
+  <!-- arrows: 4 constraints -> decision1 -->
+  <path d="M 112 122 Q 112 138 340 150" class="arrow"/>
+  <path d="M 302 122 Q 302 138 370 150" class="arrow"/>
+  <path d="M 492 122 Q 492 138 430 150" class="arrow"/>
+  <path d="M 682 122 Q 682 138 460 150" class="arrow"/>
+
+  <!-- Row 2: decision 1 -->
+  <rect x="280" y="150" width="240" height="52" rx="8" class="step-box"/>
+  <text x="400" y="173" class="step-title">第一步：定色数</text>
+  <text x="400" y="192" class="analog">类比：给项目定 enum 的取值集合大小</text>
+
+  <!-- arrows: decision1 -> 5 count options (fan) -->
+  <path d="M 400 202 Q 400 218 95 250" class="arrow"/>
+  <path d="M 400 202 Q 400 220 240 250" class="arrow"/>
+  <path d="M 400 202 L 385 250" class="arrow"/>
+  <path d="M 400 202 Q 400 220 530 250" class="arrow"/>
+  <path d="M 400 202 Q 400 218 675 250" class="arrow"/>
+
+  <!-- Row 3: five color-count option boxes -->
+  <g>
+    <rect x="30" y="250" width="130" height="98" rx="6" class="opt-box"/>
+    <text x="95" y="272" class="opt-num">3 色</text>
+    <text x="95" y="289" class="opt-desc">1-bit / 三色</text>
+    <text x="95" y="304" class="opt-desc">极简·签名</text>
+    <text x="95" y="320" class="opt-desc">solo + 少帧</text>
+    <text x="95" y="338" class="opt-game">Downwell 黑白红</text>
+
+    <rect x="175" y="250" width="130" height="98" rx="6" class="opt-box"/>
+    <text x="240" y="272" class="opt-num">4 色</text>
+    <text x="240" y="289" class="opt-desc">NES / ARQ4</text>
+    <text x="240" y="304" class="opt-desc">复古·Game Jam</text>
+    <text x="240" y="320" class="opt-desc">快速原型</text>
+    <text x="240" y="338" class="opt-game">Shovel Knight</text>
+
+    <rect x="320" y="250" width="130" height="98" rx="6" class="opt-box-sweet"/>
+    <text x="385" y="272" class="opt-num-sweet">16 色 ⭐</text>
+    <text x="385" y="289" class="opt-desc">PICO-8/DB16</text>
+    <text x="385" y="304" class="opt-desc">大众化·甜点</text>
+    <text x="385" y="320" class="opt-desc">swap 最友好</text>
+    <text x="385" y="338" class="opt-game">多数独立像素</text>
+
+    <rect x="465" y="250" width="130" height="98" rx="6" class="opt-box"/>
+    <text x="530" y="272" class="opt-num">8 色</text>
+    <text x="530" y="289" class="opt-desc">Game Boy 色</text>
+    <text x="530" y="304" class="opt-desc">怀旧·统一氛围</text>
+    <text x="530" y="320" class="opt-desc">规划每色用途</text>
+    <text x="530" y="338" class="opt-game">Gato Roboto</text>
+
+    <rect x="610" y="250" width="130" height="98" rx="6" class="opt-box"/>
+    <text x="675" y="272" class="opt-num">32 色</text>
+    <text x="675" y="289" class="opt-desc">Endesga32</text>
+    <text x="675" y="304" class="opt-desc">丰富材质·高比特</text>
+    <text x="675" y="320" class="opt-desc">sprite ≥48×48</text>
+    <text x="675" y="338" class="opt-game">高比特像素</text>
+  </g>
+
+  <!-- arrow: count strip -> decision2 -->
+  <path d="M 400 348 L 400 380" class="arrow"/>
+  <rect x="355" y="356" width="90" height="18" rx="3" class="arrow-label-bg"/>
+  <text x="400" y="370" class="arrow-label">选定色数后</text>
+
+  <!-- Row 4: decision 2 -->
+  <rect x="270" y="380" width="260" height="52" rx="8" class="step-box"/>
+  <text x="400" y="403" class="step-title">第二步：固定板 还是 自定义？</text>
+  <text x="400" y="422" class="analog">类比：用标准库预设 还是 自己实现一个等价物</text>
+
+  <!-- arrows: decision2 -> 2 branches -->
+  <path d="M 340 432 Q 300 446 175 460" class="arrow"/>
+  <path d="M 460 432 Q 500 446 625 460" class="arrow"/>
+
+  <!-- Row 5: two branch boxes -->
+  <rect x="60" y="460" width="230" height="72" rx="8" class="branch-box"/>
+  <text x="175" y="482" class="branch-title">固定调色板 · 约束即自由</text>
+  <text x="175" y="500" class="branch-text">PICO-8 / DB16 / Endesga32</text>
+  <text x="175" y="515" class="branch-text">省决策开销 · 团队一致 · 即时合法</text>
+  <text x="175" y="528" class="branch-text">约束逼出设计（少即是多）</text>
+
+  <rect x="510" y="460" width="230" height="72" rx="8" class="branch-box-cust"/>
+  <text x="625" y="482" class="branch-title-cust">自定义调色板</text>
+  <text x="625" y="500" class="branch-text">情绪不合任何固定板</text>
+  <text x="625" y="515" class="branch-text">需专属视觉签名</text>
+  <text x="625" y="528" class="branch-text">愿付数小时-数天调平</text>
+
+  <!-- arrows: 2 branches -> output -->
+  <path d="M 175 532 Q 175 548 350 558" class="arrow"/>
+  <path d="M 625 532 Q 625 548 450 558" class="arrow"/>
+
+  <!-- Row 6: output -->
+  <rect x="250" y="556" width="300" height="40" rx="8" class="out-box"/>
+  <text x="400" y="575" class="out-text">锁定调色板</text>
+  <text x="400" y="590" class="out-text">→ 写入视觉宪法（风格04）</text>
+
+  <text x="400" y="614" class="caption">图 风格02.1：调色板决策流程——四约束 → 定色数（16 色为甜点）→ 固定/自定义 → 锁定。</text>
+</svg>

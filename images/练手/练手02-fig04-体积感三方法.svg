@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    .bg { fill: #FAFAFA; }
+    .title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #2C3E50; }
+    .method-title { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #2C3E50; }
+    .method-desc { font-family: sans-serif; font-size: 10px; fill: #666; }
+    .highlight { fill: #E74C3C; }
+  </style>
+  <rect class="bg" width="800" height="500"/>
+
+  <text x="400" y="34" text-anchor="middle" class="title">体积感的三种制造方法</text>
+
+  <!-- Method 1: Light & Shadow (Chiaroscuro) -->
+  <g transform="translate(40, 50)">
+    <rect x="0" y="0" width="230" height="400" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <!-- Sphere with shading -->
+    <g transform="translate(115, 160)">
+      <defs>
+        <radialGradient id="sphere1" cx="35%" cy="30%" r="55%">
+          <stop offset="0%" stop-color="#fff"/>
+          <stop offset="30%" stop-color="#E8E8E8"/>
+          <stop offset="70%" stop-color="#999"/>
+          <stop offset="95%" stop-color="#333"/>
+          <stop offset="100%" stop-color="#1a1a1a"/>
+        </radialGradient>
+      </defs>
+      <circle cx="0" cy="0" r="55" fill="url(#sphere1)"/>
+      
+      <!-- Shadow cast -->
+      <ellipse cx="15" cy="62" rx="50" ry="10" fill="rgba(0,0,0,0.15)"/>
+      
+      <!-- Labels -->
+      <line x1="0" y1="-55" x2="0" y2="-42" stroke="#E74C3C" stroke-width="1"/>
+      <line x1="40" y1="-20" x2="55" y2="-12" stroke="#E74C3C" stroke-width="1"/>
+      <line x1="-50" y1="20" x2="-65" y2="25" stroke="#E74C3C" stroke-width="1"/>
+      
+      <text x="-5" y="-60" class="method-desc" fill="#E74C3C">高光</text>
+      <text x="60" y="-10" class="method-desc" fill="#E74C3C">亮面</text>
+      <text x="-72" y="30" class="method-desc" fill="#E74C3C">暗面</text>
+    </g>
+
+    <text x="115" y="56" text-anchor="middle" class="method-title">方法一：光影法</text>
+    <text x="115" y="76" text-anchor="middle" class="method-desc">（Chiaroscuro / 明暗法）</text>
+    
+    <g transform="translate(15, 310)">
+      <text x="100" y="0" text-anchor="middle" class="method-desc">原理：模拟光源照射</text>
+      <text x="100" y="20" text-anchor="middle" class="method-desc">亮面 = 朝向光源</text>
+      <text x="100" y="40" text-anchor="middle" class="method-desc">暗面 = 背向光源</text>
+      <text x="100" y="60" text-anchor="middle" class="method-desc">投影 = 光被遮挡</text>
+    </g>
+  </g>
+
+  <!-- Method 2: Perspective -->
+  <g transform="translate(285, 50)">
+    <rect x="0" y="0" width="230" height="400" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <g transform="translate(115, 160)">
+      <!-- Sphere by construction lines -->
+      <!-- Horizon line -->
+      <line x1="-80" y1="0" x2="80" y2="0" stroke="#BDC3C7" stroke-width="0.8" stroke-dasharray="4,3"/>
+      
+      <!-- Center vertical -->
+      <line x1="0" y1="-55" x2="0" y2="55" stroke="#BDC3C7" stroke-width="0.8" stroke-dasharray="4,3"/>
+      
+      <!-- Center horizontal -->
+      <line x1="-55" y1="0" x2="55" y2="0" stroke="#BDC3C7" stroke-width="0.8" stroke-dasharray="4,3"/>
+      
+      <!-- Perspective circle: use ellipse in perspective -->
+      <ellipse cx="0" cy="0" rx="55" ry="25" stroke="#3498DB" stroke-width="1" fill="none"/>
+      <ellipse cx="0" cy="10" rx="55" ry="25" stroke="#3498DB" stroke-width="1" fill="none"/>
+      <ellipse cx="0" cy="20" rx="50" ry="22" stroke="#3498DB" stroke-width="1" fill="none"/>
+      <ellipse cx="0" cy="28" rx="40" ry="16" stroke="#3498DB" stroke-width="1" fill="none"/>
+      <ellipse cx="0" cy="34" rx="28" ry="10" stroke="#3498DB" stroke-width="1" fill="none"/>
+      <ellipse cx="0" cy="38" rx="14" ry="4" stroke="#3498DB" stroke-width="1" fill="none"/>
+      
+      <!-- Vertical lines connecting ellipses -->
+      <path d="M-55,0 Q-55,20 -50,34 Q-45,40 -28,38 Q-10,36 0,35" stroke="#3498DB" stroke-width="0.6" fill="none"/>
+      <path d="M55,0 Q55,20 50,34 Q45,40 28,38 Q10,36 0,35" stroke="#3498DB" stroke-width="0.6" fill="none"/>
+      
+      <!-- Final sphere outline -->
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#2C3E50" stroke-width="1.5"/>
+    </g>
+
+    <text x="115" y="56" text-anchor="middle" class="method-title">方法二：透视法</text>
+    <text x="115" y="76" text-anchor="middle" class="method-desc">（Perspective / 结构线）</text>
+    
+    <g transform="translate(15, 310)">
+      <text x="100" y="0" text-anchor="middle" class="method-desc">原理：用辅助线构建空间</text>
+      <text x="100" y="20" text-anchor="middle" class="method-desc">椭圆 = 透视下的圆</text>
+      <text x="100" y="40" text-anchor="middle" class="method-desc">线的疏密 = 空间远近</text>
+      <text x="100" y="60" text-anchor="middle" class="method-desc">适合：需要严谨结构的场合</text>
+    </g>
+  </g>
+
+  <!-- Method 3: Overlap -->
+  <g transform="translate(530, 50)">
+    <rect x="0" y="0" width="230" height="400" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <g transform="translate(115, 160)">
+      <!-- Three overlapping circles to suggest sphere volume -->
+      <circle cx="-12" cy="-8" r="52" fill="#E8F4FD" stroke="#3498DB" stroke-width="1.5" opacity="0.7"/>
+      <circle cx="8" cy="4" r="52" fill="#D6EAF8" stroke="#2980B9" stroke-width="1.5" opacity="0.7"/>
+      <circle cx="-2" cy="-4" r="52" fill="#AED6F1" stroke="#2471A3" stroke-width="1" opacity="0.7"/>
+      
+      <!-- Center core -->
+      <circle cx="-2" cy="-2" r="8" fill="#2C3E50" opacity="0.3"/>
+    </g>
+
+    <text x="115" y="56" text-anchor="middle" class="method-title">方法三：叠压法</text>
+    <text x="115" y="76" text-anchor="middle" class="method-desc">（Overlap / 前后遮挡）</text>
+    
+    <g transform="translate(15, 310)">
+      <text x="100" y="0" text-anchor="middle" class="method-desc">原理：A遮住B → A在前B在后</text>
+      <text x="100" y="20" text-anchor="middle" class="method-desc">无需光源或透视</text>
+      <text x="100" y="40" text-anchor="middle" class="method-desc">最简单的体积表现手法</text>
+      <text x="100" y="60" text-anchor="middle" class="method-desc">适合：平面风格 / 扁平化</text>
+    </g>
+  </g>
+
+  <!-- Bottom summary -->
+  <rect x="40" y="464" width="720" height="28" rx="4" fill="#2C3E50"/>
+  <text x="400" y="483" text-anchor="middle" style="font-family: sans-serif; font-size: 11px; fill: #E8F4FD;">三种方法可以组合使用。光影法 + 透视法 = 写实；叠压法 + 光影法 = 扁平插画；三者都强 = 专业3A</text>
+</svg>

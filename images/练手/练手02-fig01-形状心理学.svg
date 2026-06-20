@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    .bg { fill: #FAFAFA; }
+    .title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #2C3E50; }
+    .label-shape { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label-text { font-family: sans-serif; font-size: 12px; fill: #333; }
+    .label-small { font-family: sans-serif; font-size: 10px; fill: #666; }
+    .line { stroke: #BDC3C7; stroke-width: 1; }
+    .hline { stroke: #E0E0E0; stroke-width: 0.5; }
+  </style>
+  <rect class="bg" width="800" height="500"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" class="title">形状心理学：三种基本形状的语言</text>
+
+  <!-- Three columns -->
+  <!-- Column 1: Circle -->
+  <g transform="translate(90, 60)">
+    <circle cx="80" cy="90" r="60" fill="#E8F4FD" stroke="#3498DB" stroke-width="2"/>
+    <text x="80" y="170" text-anchor="middle" class="label-shape" fill="#3498DB">圆 形</text>
+    <line x1="0" y1="180" x2="160" y2="180" class="hline"/>
+    <text x="80" y="200" text-anchor="middle" class="label-text">属性：友好 · 柔软 · 安全</text>
+    <text x="80" y="220" text-anchor="middle" class="label-text">游戏案例：卡比、史莱姆</text>
+    <text x="80" y="245" text-anchor="middle" class="label-small">Affordance：可交互 / 不会伤害你</text>
+    <text x="80" y="265" text-anchor="middle" class="label-small">程序员类比：圆角按钮 ≈ "安全的默认"</text>
+  </g>
+
+  <!-- Column 2: Square -->
+  <g transform="translate(310, 60)">
+    <rect x="20" y="30" width="120" height="120" fill="#F0F0F0" stroke="#7F8C8D" stroke-width="2"/>
+    <text x="80" y="170" text-anchor="middle" class="label-shape" fill="#7F8C8D">方 形</text>
+    <line x1="0" y1="180" x2="160" y2="180" class="hline"/>
+    <text x="80" y="200" text-anchor="middle" class="label-text">属性：可靠 · 稳重 · 坚固</text>
+    <text x="80" y="220" text-anchor="middle" class="label-text">游戏案例：Minecraft Steve、箱子</text>
+    <text x="80" y="245" text-anchor="middle" class="label-small">Affordance：可推动 / 稳定平台</text>
+    <text x="80" y="265" text-anchor="middle" class="label-small">程序员类比：矩形输入框 ≈ "可编辑"</text>
+  </g>
+
+  <!-- Column 3: Triangle -->
+  <g transform="translate(530, 60)">
+    <polygon points="80,20 150,140 10,140" fill="#FDEDEC" stroke="#E74C3C" stroke-width="2"/>
+    <text x="80" y="170" text-anchor="middle" class="label-shape" fill="#E74C3C">三角形</text>
+    <line x1="0" y1="180" x2="160" y2="180" class="hline"/>
+    <text x="80" y="200" text-anchor="middle" class="label-text">属性：危险 · 尖锐 · 攻击</text>
+    <text x="80" y="220" text-anchor="middle" class="label-text">游戏案例：塞尔达敌人、尖刺陷阱</text>
+    <text x="80" y="245" text-anchor="middle" class="label-small">Affordance：危险 / 不要靠近</text>
+    <text x="80" y="265" text-anchor="middle" class="label-small">程序员类比：红色警告图标 ≈ "危险操作"</text>
+  </g>
+
+  <!-- Bottom summary -->
+  <line x1="40" y1="370" x2="760" y2="370" class="line"/>
+  <text x="400" y="398" text-anchor="middle" class="label-text">核心原则：玩家在看到颜色和细节之前，形状已经在传递信息</text>
+  <text x="400" y="420" text-anchor="middle" class="label-small">基本形状组合可以产生无限变化：六边形 = 科技感 · 星形 = 魔法/特殊 · 有机形 = 自然/生物</text>
+
+  <!-- Context: just rectangles + triangles at bottom -->
+  <rect x="40" y="440" width="720" height="38" rx="4" fill="#E8F4FD" stroke="#3498DB" stroke-width="1"/>
+  <text x="400" y="464" text-anchor="middle" class="label-small" fill="#2C3E50">程序员类比：基本形状 ≈ 基本数据类型（int/float/string），组合后就像 struct 定义一个新类型</text>
+</svg>

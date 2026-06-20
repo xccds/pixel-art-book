@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    .bg { fill: #FAFAFA; }
+    .title { font-family: sans-serif; font-size: 17px; font-weight: bold; fill: #2C3E50; }
+    .panel-title { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #2C3E50; }
+    .desc { font-family: sans-serif; font-size: 9px; fill: #666; }
+    .panel-bg { fill: #fff; stroke: #E0E0E0; stroke-width: 1; }
+    .tag { font-family: sans-serif; font-size: 9px; fill: #E74C3C; }
+  </style>
+  <rect class="bg" width="800" height="500"/>
+  <text x="400" y="32" text-anchor="middle" class="title">材质区分：同一形体换五种皮肤</text>
+  <text x="400" y="50" text-anchor="middle" class="desc">同一个球体 · 光源不变 · 只改"着色器参数"</text>
+
+  <defs>
+    <radialGradient id="m-metal" cx="30%" cy="26%" r="78%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="8%" stop-color="#E8EEF5"/>
+      <stop offset="20%" stop-color="#7A8FA6"/>
+      <stop offset="45%" stop-color="#1E2A38"/>
+      <stop offset="78%" stop-color="#0A0F16"/>
+      <stop offset="90%" stop-color="#2E4055"/>
+      <stop offset="100%" stop-color="#16202B"/>
+    </radialGradient>
+    <radialGradient id="m-fabric" cx="32%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#F4D9B0"/>
+      <stop offset="40%" stop-color="#D9B98C"/>
+      <stop offset="75%" stop-color="#9C7A56"/>
+      <stop offset="100%" stop-color="#6E5238"/>
+    </radialGradient>
+    <radialGradient id="m-skin" cx="32%" cy="28%" r="78%">
+      <stop offset="0%" stop-color="#FFE4D2"/>
+      <stop offset="30%" stop-color="#F5B898"/>
+      <stop offset="62%" stop-color="#C77A5E"/>
+      <stop offset="86%" stop-color="#8E4A3C"/>
+      <stop offset="100%" stop-color="#9C4A48"/>
+    </radialGradient>
+    <radialGradient id="m-glass" cx="32%" cy="26%" r="80%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="14%" stop-color="#D6F0F5" stop-opacity="0.7"/>
+      <stop offset="55%" stop-color="#A6CFD9" stop-opacity="0.45"/>
+      <stop offset="82%" stop-color="#5E8FA0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#2E5566" stop-opacity="0.75"/>
+    </radialGradient>
+    <radialGradient id="m-wood" cx="32%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#E0BC8A"/>
+      <stop offset="45%" stop-color="#B08858"/>
+      <stop offset="80%" stop-color="#7A5232"/>
+      <stop offset="100%" stop-color="#523820"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 金属 -->
+  <g transform="translate(20, 70)">
+    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <text x="74" y="22" text-anchor="middle" class="panel-title">金 属</text>
+    <circle cx="74" cy="130" r="48" fill="url(#m-metal)" stroke="#2C3E50" stroke-width="0.6"/>
+    <circle cx="56" cy="112" r="3" fill="#FFFFFF"/>
+    <text x="74" y="212" text-anchor="middle" class="desc">高对比 · 锐利高光</text>
+    <text x="74" y="228" text-anchor="middle" class="desc">暗面反射环境色</text>
+    <text x="74" y="252" text-anchor="middle" class="tag">specular=高 diffuse=低</text>
+  </g>
+
+  <!-- 布料 -->
+  <g transform="translate(178, 70)">
+    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <text x="74" y="22" text-anchor="middle" class="panel-title">布 料</text>
+    <circle cx="74" cy="130" r="48" fill="url(#m-fabric)" stroke="#6E5238" stroke-width="0.6"/>
+    <path d="M40,140 Q74,150 108,138" stroke="#6E5238" stroke-width="0.7" fill="none" opacity="0.6"/>
+    <path d="M44,156 Q74,166 104,154" stroke="#6E5238" stroke-width="0.7" fill="none" opacity="0.5"/>
+    <text x="74" y="212" text-anchor="middle" class="desc">低对比 · 柔和过渡</text>
+    <text x="74" y="228" text-anchor="middle" class="desc">几乎无高光</text>
+    <text x="74" y="252" text-anchor="middle" class="tag">specular=低 diffuse=高</text>
+  </g>
+
+  <!-- 皮肤 -->
+  <g transform="translate(336, 70)">
+    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <text x="74" y="22" text-anchor="middle" class="panel-title">皮 肤</text>
+    <circle cx="74" cy="130" r="48" fill="url(#m-skin)" stroke="#6E3028" stroke-width="0.6"/>
+    <ellipse cx="62" cy="118" rx="10" ry="7" fill="#FFE4D2" opacity="0.55"/>
+    <text x="74" y="212" text-anchor="middle" class="desc">柔和渐变</text>
+    <text x="74" y="228" text-anchor="middle" class="desc">暗面偏红(次表面散射)</text>
+    <text x="74" y="252" text-anchor="middle" class="tag">subsurface scattering</text>
+  </g>
+
+  <!-- 水/玻璃 -->
+  <g transform="translate(494, 70)">
+    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <text x="74" y="22" text-anchor="middle" class="panel-title">水/玻璃</text>
+    <circle cx="74" cy="130" r="48" fill="url(#m-glass)" stroke="#2E5566" stroke-width="0.8"/>
+    <circle cx="56" cy="110" r="6" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M48,150 Q74,142 100,152" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.6"/>
+    <text x="74" y="212" text-anchor="middle" class="desc">透明 · 折射</text>
+    <text x="74" y="228" text-anchor="middle" class="desc">极锐利白色高光</text>
+    <text x="74" y="252" text-anchor="middle" class="tag">transmission + sharp spec</text>
+  </g>
+
+  <!-- 木材 -->
+  <g transform="translate(652, 70)">
+    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <text x="74" y="22" text-anchor="middle" class="panel-title">木 材</text>
+    <circle cx="74" cy="130" r="48" fill="url(#m-wood)" stroke="#523820" stroke-width="0.6"/>
+    <ellipse cx="74" cy="130" rx="34" ry="9" fill="none" stroke="#523820" stroke-width="0.5" opacity="0.5"/>
+    <ellipse cx="74" cy="130" rx="22" ry="6" fill="none" stroke="#523820" stroke-width="0.5" opacity="0.5"/>
+    <ellipse cx="74" cy="130" rx="11" ry="3" fill="none" stroke="#523820" stroke-width="0.5" opacity="0.5"/>
+    <text x="74" y="212" text-anchor="middle" class="desc">低对比 · 漫反射</text>
+    <text x="74" y="228" text-anchor="middle" class="desc">无锐利高光 · 木纹</text>
+    <text x="74" y="252" text-anchor="middle" class="tag">pure diffuse + grain</text>
+  </g>
+
+  <rect x="40" y="432" width="720" height="52" rx="4" fill="#2C3E50"/>
+  <text x="400" y="454" text-anchor="middle" style="font-family:sans-serif;font-size:12px;font-weight:bold;fill:#E8F4FD;">程序员类比：材质 = 着色器（shader）的参数集</text>
+  <text x="400" y="472" text-anchor="middle" style="font-family:sans-serif;font-size:10px;fill:#BDC3C7;">同一网格，换一套 specular/diffuse/subsurface/transmission 参数 = 换一种材质。光影结构不变，只是"渲染管线"换了配置。</text>
+</svg>

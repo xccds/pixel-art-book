@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    .bg { fill: #FAFAFA; }
+    .title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #2C3E50; }
+    .label { font-family: sans-serif; font-size: 13px; fill: #333; }
+    .small { font-family: sans-serif; font-size: 10px; fill: #666; }
+    .verdict-pass { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #27AE60; }
+    .verdict-fail { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #E74C3C; }
+    .arrow { fill: #BDC3C7; }
+  </style>
+  <rect class="bg" width="800" height="500"/>
+
+  <text x="400" y="36" text-anchor="middle" class="title">剪影测试：填黑 → 缩小 → 还能辨认吗？</text>
+
+  <!-- Left half: Good silhouette -->
+  <text x="200" y="72" text-anchor="middle" class="verdict-pass">✓ 通过</text>
+
+  <!-- Person silhouette at large size -->
+  <g transform="translate(120, 90)">
+    <!-- Head -->
+    <ellipse cx="80" cy="22" rx="18" ry="20" fill="#333"/>
+    <!-- Body -->
+    <rect x="52" y="42" width="56" height="55" rx="4" fill="#333"/>
+    <!-- Legs -->
+    <rect x="54" y="95" width="18" height="50" rx="3" fill="#333"/>
+    <rect x="88" y="95" width="18" height="50" rx="3" fill="#333"/>
+    <!-- Arms: one by side, one raised (holding weapon) -->
+    <rect x="30" y="48" width="14" height="40" rx="4" fill="#333" transform="rotate(15, 37, 48)"/>
+    <rect x="108" y="40" width="14" height="45" rx="4" fill="#333" transform="rotate(-50, 115, 40)"/>
+    <!-- Sword -->
+    <rect x="126" y="0" width="6" height="55" rx="2" fill="#333"/>
+    <rect x="117" y="50" width="24" height="4" rx="1" fill="#333"/>
+    <!-- Cape -->
+    <path d="M52,42 Q30,70 35,130 L55,120 L60,70 Z" fill="#333"/>
+  </g>
+
+  <!-- Arrow to small versions -->
+  <line x1="280" y1="225" x2="310" y2="225" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Small versions: 64, 48, 32 -->
+  <g transform="translate(320, 160)">
+    <text x="0" y="-10" class="small">64×64</text>
+    <ellipse cx="15" cy="18" rx="10" ry="10" fill="#333"/>
+    <rect x="7" y="28" width="16" height="16" rx="2" fill="#333"/>
+    <rect x="5" y="43" width="7" height="20" rx="1" fill="#333"/>
+    <rect x="18" y="43" width="7" height="20" rx="1" fill="#333"/>
+    <rect x="-2" y="31" width="5" height="12" rx="2" fill="#333" transform="rotate(10, 0, 31)"/>
+    <rect x="22" y="22" width="8" height="25" rx="1" fill="#333" transform="rotate(-50, 26, 22)"/>
+  </g>
+
+  <g transform="translate(400, 195)">
+    <text x="0" y="-10" class="small">48×48</text>
+    <ellipse cx="10" cy="14" rx="8" ry="9" fill="#333"/>
+    <rect x="4" y="23" width="12" height="12" rx="2" fill="#333"/>
+    <rect x="3" y="34" width="5" height="14" rx="1" fill="#333"/>
+    <rect x="12" y="34" width="5" height="14" rx="1" fill="#333"/>
+    <rect x="-1" y="25" width="4" height="9" rx="1" fill="#333"/>
+    <rect x="16" y="18" width="6" height="18" rx="1" fill="#333" transform="rotate(-50, 19, 18)"/>
+  </g>
+
+  <g transform="translate(470, 210)">
+    <text x="0" y="-10" class="small">32×32</text>
+    <ellipse cx="7" cy="9" rx="5" ry="6" fill="#333"/>
+    <rect x="3" y="15" width="8" height="8" rx="1" fill="#333"/>
+    <rect x="2" y="22" width="3" height="9" rx="1" fill="#333"/>
+    <rect x="9" y="22" width="3" height="9" rx="1" fill="#333"/>
+    <rect x="-1" y="17" width="3" height="6" rx="1" fill="#333"/>
+    <polygon points="17,13 19,19 14,19" fill="#333"/>
+  </g>
+
+  <!-- Right half: Bad silhouette -->
+  <text x="600" y="72" text-anchor="middle" class="verdict-fail">✗ 失败</text>
+
+  <g transform="translate(520, 90)">
+    <!-- Mushy blob: indistinct shape -->
+    <ellipse cx="80" cy="30" rx="50" ry="30" fill="#333"/>
+    <ellipse cx="80" cy="70" rx="45" ry="55" fill="#333"/>
+    <ellipse cx="60" cy="100" rx="25" ry="30" fill="#333"/>
+    <ellipse cx="100" cy="100" rx="25" ry="30" fill="#333"/>
+    <!-- Extra noise -->
+    <circle cx="30" cy="60" r="12" fill="#333"/>
+    <circle cx="130" cy="60" r="12" fill="#333"/>
+    <circle cx="80" cy="40" r="10" fill="#333"/>
+    <circle cx="50" cy="30" r="8" fill="#333"/>
+    <circle cx="110" cy="25" r="9" fill="#333"/>
+  </g>
+
+  <!-- Arrow to small versions -->
+  <line x1="680" y1="225" x2="710" y2="225" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <g transform="translate(720, 165)">
+    <text x="0" y="-10" class="small">64×64</text>
+    <ellipse cx="15" cy="12" rx="15" ry="8" fill="#333"/>
+    <ellipse cx="15" cy="24" rx="14" ry="16" fill="#333"/>
+    <ellipse cx="7" cy="32" rx="8" ry="10" fill="#333"/>
+    <ellipse cx="23" cy="32" rx="8" ry="10" fill="#333"/>
+    <circle cx="4" cy="22" r="4" fill="#333"/>
+    <circle cx="26" cy="22" r="4" fill="#333"/>
+  </g>
+
+  <g transform="translate(770, 175)">
+    <text x="0" y="-10" class="small">48×48</text>
+    <ellipse cx="10" cy="10" rx="10" ry="6" fill="#333"/>
+    <ellipse cx="10" cy="18" rx="10" ry="12" fill="#333"/>
+    <ellipse cx="4" cy="24" rx="6" ry="8" fill="#333"/>
+    <ellipse cx="16" cy="24" rx="6" ry="8" fill="#333"/>
+  </g>
+
+  <g transform="translate(810, 180)">
+    <text x="0" y="-10" class="small">32×32</text>
+    <circle cx="8" cy="12" r="8" fill="#333"/>
+  </g>
+
+  <!-- Bottom area -->
+  <line x1="40" y1="330" x2="760" y2="330" stroke="#BDC3C7" stroke-width="1"/>
+
+  <text x="400" y="358" text-anchor="middle" class="label" font-weight="bold">测试标准：把角色填成全黑 → 缩小到 32×32 像素 → 还能认出是"持剑人形"吗？</text>
+  <text x="400" y="378" text-anchor="middle" class="small">左侧：清晰的人形 + 道具 + 动势 → 即使缩到 32px 仍能识别（持剑姿势 + 披风三角）</text>
+  <text x="400" y="396" text-anchor="middle" class="small">右侧：模糊的块状轮廓 → 缩小后变成一坨圆形，无法判断是什么</text>
+
+  <rect x="40" y="420" width="720" height="56" rx="4" fill="#2C3E50"/>
+  <text x="400" y="444" text-anchor="middle" class="label" fill="#E8F4FD">程序员类比</text>
+  <text x="400" y="462" text-anchor="middle" class="small" fill="#BDC3C7">剪影测试 ≈ 单元测试：只测"最小可验证单元"（纯黑轮廓）。通过了，加细节就是锦上添花；失败，细节再多也无法挽救。</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#BDC3C7"/>
+    </marker>
+  </defs>
+</svg>

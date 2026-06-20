@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    .bg { fill: #FAFAFA; }
+    .title { font-family: sans-serif; font-size: 17px; font-weight: bold; fill: #2C3E50; }
+    .col-title { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; }
+    .desc { font-family: sans-serif; font-size: 10px; fill: #666; }
+    .small { font-family: sans-serif; font-size: 9px; fill: #888; }
+    .pass { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #27AE60; }
+    .fail { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #E74C3C; }
+    .panel-bg { fill: #fff; stroke: #E0E0E0; stroke-width: 1; }
+    .lbl { font-family: sans-serif; font-size: 9px; fill: #E74C3C; }
+  </style>
+  <rect class="bg" width="800" height="500"/>
+  <text x="400" y="32" text-anchor="middle" class="title">可读性检查：100% 实尺 + 模糊测试</text>
+  <text x="400" y="50" text-anchor="middle" class="desc">小尺寸下信息密度要克制——"活下来"的特征才是真焦点</text>
+
+  <defs>
+    <filter id="blur8" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+  </defs>
+
+  <!-- Column 1: 100% clean readable sprite -->
+  <g transform="translate(40, 70)">
+    <rect class="panel-bg" x="0" y="0" width="220" height="340" rx="6"/>
+    <text x="110" y="24" text-anchor="middle" class="col-title">100% 实尺</text>
+    <text x="110" y="42" text-anchor="middle" class="pass">✓ 可读</text>
+    <!-- a clean 16x16-ish knight sprite, pixel-grid idiom -->
+    <g transform="translate(70, 60)">
+      <!-- helmet -->
+      <rect x="6" y="0" width="8" height="3" fill="#3498DB"/>
+      <rect x="5" y="3" width="10" height="2" fill="#2980B9"/>
+      <!-- plume -->
+      <rect x="9" y="-3" width="2" height="3" fill="#E74C3C"/>
+      <!-- face -->
+      <rect x="6" y="5" width="8" height="4" fill="#FDBFA3"/>
+      <rect x="7" y="6" width="1" height="1" fill="#2C3E50"/>
+      <rect x="12" y="6" width="1" height="1" fill="#2C3E50"/>
+      <!-- body/armor -->
+      <rect x="4" y="9" width="12" height="8" fill="#3498DB"/>
+      <rect x="4" y="9" width="12" height="2" fill="#5DADE2"/>
+      <rect x="8" y="11" width="4" height="2" fill="#F1C40F"/>
+      <!-- belt -->
+      <rect x="4" y="17" width="12" height="2" fill="#7F4A2A"/>
+      <!-- legs -->
+      <rect x="5" y="19" width="4" height="6" fill="#34495E"/>
+      <rect x="11" y="19" width="4" height="6" fill="#34495E"/>
+      <rect x="5" y="25" width="4" height="2" fill="#7F4A2A"/>
+      <rect x="11" y="25" width="4" height="2" fill="#7F4A2A"/>
+      <!-- arm + sword -->
+      <rect x="2" y="10" width="2" height="6" fill="#3498DB"/>
+      <rect x="16" y="3" width="2" height="14" fill="#ECF0F1"/>
+      <rect x="15" y="14" width="4" height="1" fill="#7F4A2A"/>
+      <!-- cape -->
+      <rect x="3" y="9" width="2" height="10" fill="#E74C3C"/>
+    </g>
+    <text x="110" y="200" text-anchor="middle" class="desc">剪影 + 关键锚点（剑/羽/腰带扣）</text>
+    <text x="110" y="218" text-anchor="middle" class="desc">一眼可辨"持剑骑士"</text>
+    <text x="110" y="250" text-anchor="middle" class="small">缩到游戏内尺寸后仍认得出</text>
+    <text x="110" y="270" text-anchor="middle" class="small">= 可读性通过</text>
+  </g>
+
+  <!-- Column 2: blurred -->
+  <g transform="translate(290, 70)">
+    <rect class="panel-bg" x="0" y="0" width="220" height="340" rx="6"/>
+    <text x="110" y="24" text-anchor="middle" class="col-title">模糊测试</text>
+    <text x="110" y="42" text-anchor="middle" class="pass">✓ 焦点活下来</text>
+    <g transform="translate(70, 60)" filter="url(#blur8)">
+      <rect x="6" y="0" width="8" height="3" fill="#3498DB"/>
+      <rect x="5" y="3" width="10" height="2" fill="#2980B9"/>
+      <rect x="9" y="-3" width="2" height="3" fill="#E74C3C"/>
+      <rect x="6" y="5" width="8" height="4" fill="#FDBFA3"/>
+      <rect x="4" y="9" width="12" height="8" fill="#3498DB"/>
+      <rect x="4" y="17" width="12" height="2" fill="#7F4A2A"/>
+      <rect x="5" y="19" width="4" height="6" fill="#34495E"/>
+      <rect x="11" y="19" width="4" height="6" fill="#34495E"/>
+      <rect x="2" y="10" width="2" height="6" fill="#3498DB"/>
+      <rect x="16" y="3" width="2" height="14" fill="#ECF0F1"/>
+      <rect x="3" y="9" width="2" height="10" fill="#E74C3C"/>
+    </g>
+    <text x="110" y="200" text-anchor="middle" class="desc">细节被抹平后还剩什么？</text>
+    <text x="110" y="218" text-anchor="middle" class="desc">→ 剪影 + 红羽 + 剑的方向</text>
+    <text x="110" y="250" text-anchor="middle" class="small">活下来的 = 真焦点</text>
+    <text x="110" y="270" text-anchor="middle" class="small">被抹掉的 = 可删的装饰</text>
+  </g>
+
+  <!-- Column 3: tiny 8x8 + overload failure -->
+  <g transform="translate(540, 70)">
+    <rect class="panel-bg" x="0" y="0" width="220" height="340" rx="6"/>
+    <text x="110" y="24" text-anchor="middle" class="col-title">信息过载</text>
+    <text x="110" y="42" text-anchor="middle" class="fail">✗ 糊成一团</text>
+    <g transform="translate(70, 60)">
+      <!-- same body but overloaded with extra noise pixels -->
+      <rect x="6" y="0" width="8" height="3" fill="#3498DB"/>
+      <rect x="5" y="3" width="10" height="2" fill="#2980B9"/>
+      <rect x="9" y="-3" width="2" height="3" fill="#E74C3C"/>
+      <rect x="6" y="5" width="8" height="4" fill="#FDBFA3"/>
+      <rect x="4" y="9" width="12" height="8" fill="#3498DB"/>
+      <rect x="4" y="17" width="12" height="2" fill="#7F4A2A"/>
+      <rect x="5" y="19" width="4" height="6" fill="#34495E"/>
+      <rect x="11" y="19" width="4" height="6" fill="#34495E"/>
+      <rect x="2" y="10" width="2" height="6" fill="#3498DB"/>
+      <rect x="16" y="3" width="2" height="14" fill="#ECF0F1"/>
+      <rect x="3" y="9" width="2" height="10" fill="#E74C3C"/>
+      <!-- noise: extra decorative pixels that destroy silhouette -->
+      <rect x="0" y="6" width="2" height="2" fill="#F1C40F"/>
+      <rect x="18" y="8" width="2" height="2" fill="#F1C40F"/>
+      <rect x="6" y="2" width="1" height="1" fill="#27AE60"/>
+      <rect x="13" y="2" width="1" height="1" fill="#27AE60"/>
+      <rect x="8" y="13" width="1" height="1" fill="#FFFFFF"/>
+      <rect x="11" y="13" width="1" height="1" fill="#FFFFFF"/>
+      <rect x="7" y="9" width="1" height="1" fill="#9B59B6"/>
+      <rect x="12" y="9" width="1" height="1" fill="#9B59B6"/>
+      <rect x="14" y="20" width="1" height="1" fill="#E67E22"/>
+      <rect x="5" y="20" width="1" height="1" fill="#E67E22"/>
+    </g>
+    <text x="110" y="200" text-anchor="middle" class="desc">堆了 8 色装饰 · 边缘被吃</text>
+    <text x="110" y="218" text-anchor="middle" class="desc">剪影变碎 · 不知看哪</text>
+    <text x="110" y="250" text-anchor="middle" class="small">有疑虑 → 删减，而非增加</text>
+    <text x="110" y="270" text-anchor="middle" class="small">少即是多（less is more）</text>
+  </g>
+
+  <rect x="40" y="432" width="720" height="52" rx="4" fill="#2C3E50"/>
+  <text x="400" y="454" text-anchor="middle" style="font-family:sans-serif;font-size:12px;font-weight:bold;fill:#E8F4FD;">程序员类比：可读性 = API 的最小惊讶原则</text>
+  <text x="400" y="472" text-anchor="middle" style="font-family:sans-serif;font-size:10px;fill:#BDC3C7;">小尺寸下信息密度要克制——接口暴露的字段越少，调用方越不容易误用。模糊测试 = 压测：扛住降级的字段才是真契约。</text>
+</svg>

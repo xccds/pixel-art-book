@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    .bg { fill: #FAFAFA; }
+    .title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #2C3E50; }
+    .step-num { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #3498DB; }
+    .step-title { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #2C3E50; }
+    .step-desc { font-family: sans-serif; font-size: 10px; fill: #666; }
+    .arrow { fill: #BDC3C7; }
+    .callout { font-family: sans-serif; font-size: 10px; fill: #E74C3C; }
+  </style>
+  <rect class="bg" width="800" height="500"/>
+
+  <text x="400" y="36" text-anchor="middle" class="title">从剪影到三视图：角色成型四步法</text>
+
+  <!-- Step 1: Pure silhouette -->
+  <g transform="translate(25, 58)">
+    <rect x="0" y="0" width="170" height="330" rx="6" fill="#fff" stroke="#BDC3C7" stroke-width="1"/>
+    <text x="85" y="22" text-anchor="middle" class="step-num">STEP 1</text>
+    
+    <!-- Silhouette figure -->
+    <g transform="translate(25, 35)">
+      <ellipse cx="60" cy="18" rx="14" ry="16" fill="#2C3E50"/>
+      <rect x="38" y="34" width="44" height="42" rx="3" fill="#2C3E50"/>
+      <rect x="40" y="74" width="14" height="38" rx="2" fill="#2C3E50"/>
+      <rect x="66" y="74" width="14" height="38" rx="2" fill="#2C3E50"/>
+      <rect x="18" y="40" width="11" height="30" rx="3" fill="#2C3E50" transform="rotate(12, 23, 40)"/>
+      <rect x="86" y="30" width="11" height="35" rx="3" fill="#2C3E50" transform="rotate(-45, 92, 30)"/>
+      <rect x="98" y="2" width="5" height="42" rx="1" fill="#2C3E50"/>
+      <rect x="90" y="38" width="20" height="3" rx="1" fill="#2C3E50"/>
+      <path d="M38,34 Q22,50 28,100 L40,90 L46,60 Z" fill="#2C3E50"/>
+    </g>
+
+    <text x="85" y="270" text-anchor="middle" class="step-title">纯黑剪影</text>
+    <text x="85" y="290" text-anchor="middle" class="step-desc">只关心轮廓是否清晰</text>
+    <text x="85" y="306" text-anchor="middle" class="step-desc">剪影测试通过后才继续</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <path d="M200,223 L230,223" stroke="#3498DB" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Step 2: Internal structure lines -->
+  <g transform="translate(235, 58)">
+    <rect x="0" y="0" width="170" height="330" rx="6" fill="#fff" stroke="#BDC3C7" stroke-width="1"/>
+    <text x="85" y="22" text-anchor="middle" class="step-num">STEP 2</text>
+    
+    <g transform="translate(25, 35)">
+      <!-- Same silhouette but with internal lines -->
+      <ellipse cx="60" cy="18" rx="14" ry="16" fill="#2C3E50" opacity="0.7"/>
+      <rect x="38" y="34" width="44" height="42" rx="3" fill="#2C3E50" opacity="0.7"/>
+      <rect x="40" y="74" width="14" height="38" rx="2" fill="#2C3E50" opacity="0.7"/>
+      <rect x="66" y="74" width="14" height="38" rx="2" fill="#2C3E50" opacity="0.7"/>
+      <rect x="18" y="40" width="11" height="30" rx="3" fill="#2C3E50" opacity="0.7" transform="rotate(12, 23, 40)"/>
+      <rect x="86" y="30" width="11" height="35" rx="3" fill="#2C3E50" opacity="0.7" transform="rotate(-45, 92, 30)"/>
+      <rect x="98" y="2" width="5" height="42" rx="1" fill="#2C3E50" opacity="0.7"/>
+      <rect x="90" y="38" width="20" height="3" rx="1" fill="#2C3E50" opacity="0.7"/>
+      <path d="M38,34 Q22,50 28,100 L40,90 L46,60 Z" fill="#2C3E50" opacity="0.7"/>
+      
+      <!-- Internal construction lines -->
+      <line x1="60" y1="0" x2="60" y2="112" stroke="#E74C3C" stroke-width="0.8" stroke-dasharray="4,3"/>
+      <line x1="25" y1="50" x2="95" y2="50" stroke="#E74C3C" stroke-width="0.8" stroke-dasharray="4,3"/>
+      <line x1="30" y1="34" x2="90" y2="34" stroke="#3498DB" stroke-width="0.8" stroke-dasharray="3,3"/>
+      <line x1="30" y1="76" x2="90" y2="76" stroke="#3498DB" stroke-width="0.8" stroke-dasharray="3,3"/>
+      <line x1="48" y1="34" x2="48" y2="72" stroke="#3498DB" stroke-width="0.8" stroke-dasharray="3,3"/>
+      <line x1="72" y1="34" x2="72" y2="72" stroke="#3498DB" stroke-width="0.8" stroke-dasharray="3,3"/>
+    </g>
+
+    <text x="85" y="270" text-anchor="middle" class="step-title">加内部结构线</text>
+    <text x="85" y="290" text-anchor="middle" class="step-desc">确定比例：几头身？</text>
+    <text x="85" y="306" text-anchor="middle" class="step-desc">手臂长度？腿的分布？</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <path d="M410,223 L440,223" stroke="#3498DB" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Step 3: Details -->
+  <g transform="translate(445, 58)">
+    <rect x="0" y="0" width="170" height="330" rx="6" fill="#fff" stroke="#BDC3C7" stroke-width="1"/>
+    <text x="85" y="22" text-anchor="middle" class="step-num">STEP 3</text>
+    
+    <g transform="translate(25, 35)">
+      <!-- Detailed line art -->
+      <ellipse cx="60" cy="18" rx="14" ry="16" fill="#fff" stroke="#2C3E50" stroke-width="1.5"/>
+      <!-- Eyes -->
+      <circle cx="54" cy="16" r="3" fill="#2C3E50"/>
+      <circle cx="66" cy="16" r="3" fill="#2C3E50"/>
+      <!-- Mouth -->
+      <path d="M56,22 Q60,26 64,22" fill="none" stroke="#2C3E50" stroke-width="1"/>
+      <!-- Body -->
+      <rect x="38" y="34" width="44" height="42" rx="3" fill="#fff" stroke="#2C3E50" stroke-width="1.5"/>
+      <!-- Belt -->
+      <rect x="38" y="54" width="44" height="6" fill="#2C3E50"/>
+      <rect x="55" y="50" width="10" height="10" rx="2" fill="#E8F4FD" stroke="#2C3E50" stroke-width="1"/>
+      <!-- Armor details -->
+      <line x1="42" y1="40" x2="78" y2="40" stroke="#2C3E50" stroke-width="0.8"/>
+      <line x1="42" y1="46" x2="78" y2="46" stroke="#2C3E50" stroke-width="0.8"/>
+      <!-- Legs -->
+      <rect x="40" y="74" width="14" height="38" rx="2" fill="#fff" stroke="#2C3E50" stroke-width="1.5"/>
+      <rect x="66" y="74" width="14" height="38" rx="2" fill="#fff" stroke="#2C3E50" stroke-width="1.5"/>
+      <!-- Boots -->
+      <path d="M38,106 L56,106 L56,112 L38,112 Z" fill="#2C3E50"/>
+      <path d="M64,106 L82,106 L82,112 L64,112 Z" fill="#2C3E50"/>
+      <!-- Arms -->
+      <rect x="18" y="40" width="11" height="30" rx="3" fill="#fff" stroke="#2C3E50" stroke-width="1.5"/>
+      <rect x="86" y="30" width="11" height="35" rx="3" fill="#fff" stroke="#2C3E50" stroke-width="1.5"/>
+      <!-- Sword -->
+      <rect x="98" y="2" width="5" height="42" rx="1" fill="#E8F4FD" stroke="#2C3E50" stroke-width="1"/>
+      <rect x="90" y="38" width="20" height="3" rx="1" fill="#BDC3C7" stroke="#2C3E50" stroke-width="1"/>
+      <!-- Cape -->
+      <path d="M38,34 Q22,50 28,100 L40,90 L46,60 Z" fill="#FDEDEC" stroke="#2C3E50" stroke-width="1"/>
+    </g>
+
+    <text x="85" y="270" text-anchor="middle" class="step-title">加细节</text>
+    <text x="85" y="290" text-anchor="middle" class="step-desc">面部、服装、盔甲纹路</text>
+    <text x="85" y="306" text-anchor="middle" class="step-desc">道具细化（剑的造型）</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <path d="M620,223 L650,223" stroke="#3498DB" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Step 4: Color and shading -->
+  <g transform="translate(655, 58)">
+    <rect x="0" y="0" width="170" height="330" rx="6" fill="#fff" stroke="#BDC3C7" stroke-width="1"/>
+    <text x="85" y="22" text-anchor="middle" class="step-num">STEP 4</text>
+    
+    <g transform="translate(25, 35)">
+      <!-- Colored final -->
+      <ellipse cx="60" cy="18" rx="14" ry="16" fill="#FDBFA3" stroke="#2C3E50" stroke-width="1.5"/>
+      <circle cx="54" cy="16" r="3" fill="#2C3E50"/>
+      <circle cx="66" cy="16" r="3" fill="#2C3E50"/>
+      <path d="M56,22 Q60,26 64,22" fill="none" stroke="#2C3E50" stroke-width="1"/>
+      <rect x="38" y="34" width="44" height="42" rx="3" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+      <rect x="38" y="54" width="44" height="6" fill="#7F4A2A" stroke="#2C3E50" stroke-width="1"/>
+      <rect x="55" y="50" width="10" height="10" rx="2" fill="#F1C40F" stroke="#2C3E50" stroke-width="1"/>
+      <line x1="42" y1="40" x2="78" y2="40" stroke="#2980B9" stroke-width="0.8"/>
+      <line x1="42" y1="46" x2="78" y2="46" stroke="#2980B9" stroke-width="0.8"/>
+      <rect x="40" y="74" width="14" height="38" rx="2" fill="#34495E" stroke="#2C3E50" stroke-width="1.5"/>
+      <rect x="66" y="74" width="14" height="38" rx="2" fill="#34495E" stroke="#2C3E50" stroke-width="1.5"/>
+      <path d="M38,106 L56,106 L56,112 L38,112 Z" fill="#7F4A2A" stroke="#2C3E50" stroke-width="1"/>
+      <path d="M64,106 L82,106 L82,112 L64,112 Z" fill="#7F4A2A" stroke="#2C3E50" stroke-width="1"/>
+      <rect x="18" y="40" width="11" height="30" rx="3" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+      <rect x="86" y="30" width="11" height="35" rx="3" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+      <rect x="98" y="2" width="5" height="42" rx="1" fill="#E8F4FD" stroke="#2C3E50" stroke-width="1"/>
+      <rect x="90" y="38" width="20" height="3" rx="1" fill="#BDC3C7" stroke="#2C3E50" stroke-width="1"/>
+      <path d="M38,34 Q22,50 28,100 L40,90 L46,60 Z" fill="#E74C3C" stroke="#2C3E50" stroke-width="1" opacity="0.85"/>
+    </g>
+
+    <text x="85" y="270" text-anchor="middle" class="step-title">加色彩</text>
+    <text x="85" y="290" text-anchor="middle" class="step-desc">最后一步才是上色</text>
+    <text x="85" y="306" text-anchor="middle" class="step-desc">好剪影 + 差色彩 = 可辨认</text>
+  </g>
+
+  <!-- Bottom rule -->
+  <line x1="25" y1="410" x2="775" y2="410" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="400" y="440" text-anchor="middle" class="step-title">关键原则：顺序不能乱</text>
+  <text x="400" y="462" text-anchor="middle" class="step-desc">剪影（辨识度） → 结构（比例） → 细节（造型） → 色彩（氛围）</text>
+  <text x="400" y="482" text-anchor="middle" class="callout">不要跳到第四步才后悔第一步没过！</text>
+
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 2, 8 5, 0 8" fill="#3498DB"/>
+    </marker>
+  </defs>
+</svg>

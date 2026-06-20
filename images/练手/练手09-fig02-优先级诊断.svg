@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 10px; fill: #888; }
+    .node-fill { fill: #2C3E50; }
+    .node-text { font-size: 12px; fill: #fff; font-weight: bold; }
+    .node-text-sm { font-size: 10px; fill: #fff; }
+    .decision-fill { fill: #F8F9FA; stroke: #2C3E50; stroke-width: 1.2; }
+    .decision-text { font-size: 10px; fill: #333; }
+    .answer-yes { font-size: 9px; fill: #27AE60; font-weight: bold; }
+    .answer-no { font-size: 9px; fill: #E74C3C; font-weight: bold; }
+    .connector { stroke: #555; stroke-width: 1.2; fill: none; }
+    .connector-thin { stroke: #999; stroke-width: 0.8; fill: none; stroke-dasharray: 3,3; }
+    .result-fill { fill: #E8F4FD; stroke: #4A90D9; stroke-width: 1; }
+    .result-text { font-size: 10px; fill: #333; }
+    .result-text-bold { font-size: 10px; fill: #2C3E50; font-weight: bold; }
+    .inline-code { font-size: 9px; fill: #E74C3C; font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .step-num { font-size: 13px; font-weight: bold; fill: #E74C3C; text-anchor: middle; }
+  </style>
+
+  <text x="400" y="25" class="title" text-anchor="middle">图 练手09.2  八概念优先级诊断流程——"画面有问题"排障树</text>
+
+  <!-- ====== Root Node ====== -->
+  <g transform="translate(310, 50)">
+    <rect x="0" y="0" width="180" height="32" rx="6" class="node-fill"/>
+    <text x="90" y="21" class="node-text" text-anchor="middle">画面有问题</text>
+
+    <!-- Arrow down -->
+    <line x1="90" y1="32" x2="90" y2="52" class="connector"/>
+    <text x="95" y="45" class="answer-yes" font-size="9">↓ 开始排查</text>
+  </g>
+
+  <!-- ====== Priority 1: 明度 ====== -->
+  <g transform="translate(60, 105)">
+    <text x="10" y="-5" class="step-num">①</text>
+    <rect x="0" y="0" width="200" height="36" rx="4" fill="#2C3E50"/>
+    <text x="100" y="15" class="node-text-sm" text-anchor="middle">先检查明度（骨架）</text>
+    <text x="100" y="29" class="node-text-sm" text-anchor="middle">去色后焦点还在吗？</text>
+
+    <!-- Yes branch -->
+    <line x1="100" y1="36" x2="100" y2="70" class="connector"/>
+    <text x="105" y="55" class="answer-yes">是 →</text>
+    <rect x="30" y="70" width="140" height="26" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
+    <text x="100" y="87" class="result-text" text-anchor="middle" font-size="9">明度结构健康</text>
+    <text x="100" y="99" class="result-text" text-anchor="middle" font-size="8" fill="#888">继续 ↓</text>
+
+    <!-- No branch (right side) -->
+    <line x1="200" y1="18" x2="280" y2="18" class="connector"/>
+    <text x="215" y="13" class="answer-no">否 →</text>
+    <rect x="280" y="0" width="170" height="36" rx="6" class="result-fill"/>
+    <text x="365" y="15" class="result-text-bold" text-anchor="middle">问题在明度！</text>
+    <text x="365" y="29" class="result-text" text-anchor="middle" font-size="9">→ 先修明度再往下</text>
+    <line x1="365" y1="36" x2="365" y2="54" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="365" y="66" class="inline-code" text-anchor="middle" font-size="9">停！此处优先</text>
+  </g>
+
+  <!-- ====== Priority 2: 构图 ====== -->
+  <g transform="translate(60, 155)">
+    <text x="10" y="-3" class="step-num">②</text>
+    <rect x="0" y="0" width="200" height="36" rx="4" fill="#34495E"/>
+    <text x="100" y="15" class="node-text-sm" text-anchor="middle">再检查构图（布局）</text>
+    <text x="100" y="29" class="node-text-sm" text-anchor="middle">视线有明确的落点吗？</text>
+
+    <!-- Yes -->
+    <line x1="100" y1="36" x2="100" y2="70" class="connector"/>
+    <text x="105" y="55" class="answer-yes">是 →</text>
+    <rect x="30" y="70" width="140" height="26" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
+    <text x="100" y="87" class="result-text" text-anchor="middle" font-size="9">构图基本 ok</text>
+    <text x="100" y="99" class="result-text" text-anchor="middle" font-size="8" fill="#888">继续 ↓</text>
+
+    <!-- No -->
+    <line x1="200" y1="18" x2="280" y2="18" class="connector"/>
+    <text x="215" y="13" class="answer-no">否 →</text>
+    <rect x="280" y="0" width="170" height="36" rx="6" class="result-fill"/>
+    <text x="365" y="15" class="result-text-bold" text-anchor="middle">问题在构图！</text>
+    <text x="365" y="29" class="result-text" text-anchor="middle" font-size="9">→ 调整构图再往下</text>
+  </g>
+
+  <!-- ====== Priority 3: 色彩 ====== -->
+  <g transform="translate(60, 255)">
+    <text x="10" y="-3" class="step-num">③</text>
+    <rect x="0" y="0" width="200" height="36" rx="4" fill="#5D6D7E"/>
+    <text x="100" y="15" class="node-text-sm" text-anchor="middle">然后检查色彩（皮肤）</text>
+    <text x="100" y="29" class="node-text-sm" text-anchor="middle">配色有冲突或不统一吗？</text>
+
+    <!-- Yes -->
+    <line x1="100" y1="36" x2="100" y2="70" class="connector"/>
+    <text x="105" y="55" class="answer-yes">否 →</text>
+    <rect x="30" y="70" width="140" height="26" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
+    <text x="100" y="87" class="result-text" text-anchor="middle" font-size="9">配色没大问题</text>
+    <text x="100" y="99" class="result-text" text-anchor="middle" font-size="8" fill="#888">继续 ↓</text>
+
+    <!-- No (yes to problem) -->
+    <line x1="200" y1="18" x2="280" y2="18" class="connector"/>
+    <text x="215" y="13" class="answer-no">是 →</text>
+    <rect x="280" y="0" width="170" height="36" rx="6" class="result-fill"/>
+    <text x="365" y="15" class="result-text-bold" text-anchor="middle">问题在色彩！</text>
+    <text x="365" y="29" class="result-text" text-anchor="middle" font-size="9">→ 限定调色板试试</text>
+  </g>
+
+  <!-- ====== Priority 4: 质感 ====== -->
+  <g transform="translate(60, 350)">
+    <text x="10" y="-3" class="step-num">④</text>
+    <rect x="0" y="0" width="200" height="36" rx="4" fill="#8899AA"/>
+    <text x="100" y="15" class="node-text-sm" text-anchor="middle">最后检查质感（细节）</text>
+    <text x="100" y="29" class="node-text-sm" text-anchor="middle">表面有不该有的网格/接缝吗？</text>
+
+    <!-- Yes -->
+    <line x1="100" y1="36" x2="100" y2="70" class="connector"/>
+    <text x="105" y="55" class="answer-yes">否 →</text>
+    <rect x="30" y="70" width="140" height="26" rx="6" fill="#D5F5E3" stroke="#27AE60" stroke-width="1"/>
+    <text x="100" y="87" class="result-text" text-anchor="middle" font-size="9" fill="#27AE60" font-weight="bold">四个维度都 ok！</text>
+    <text x="100" y="99" class="result-text" text-anchor="middle" font-size="8" fill="#888">可能是风格一致性问题↓</text>
+    <line x1="100" y1="102" x2="100" y2="118" stroke="#27AE60" stroke-width="1"/>
+    <rect x="10" y="118" width="180" height="22" rx="4" fill="#27AE60"/>
+    <text x="100" y="133" class="node-text-sm" text-anchor="middle" font-size="9">→ 检查线条/形状/风格一致</text>
+
+    <!-- No (yes to problem) -->
+    <line x1="200" y1="18" x2="280" y2="18" class="connector"/>
+    <text x="215" y="13" class="answer-no">是 →</text>
+    <rect x="280" y="0" width="170" height="36" rx="6" class="result-fill"/>
+    <text x="365" y="15" class="result-text-bold" text-anchor="middle">问题在质感！</text>
+    <text x="365" y="29" class="result-text" text-anchor="middle" font-size="9">→ tile 重复 / seam / dither</text>
+  </g>
+
+  <!-- ====== Right sidebar: Rules ====== -->
+  <g transform="translate(490, 105)">
+    <rect x="0" y="0" width="280" height="88" fill="#FFF5F5" stroke="#E74C3C" stroke-width="0.8" rx="4"/>
+    <text x="12" y="20" font-size="11px" font-weight="bold" fill="#E74C3C">排查铁律</text>
+    <text x="12" y="38" font-size="10px" fill="#555">❶ 永远从明度开始。明度是骨架，骨架歪了，</text>
+    <text x="12" y="52" font-size="10px" fill="#555">&#8194;&#8194;后面的构图和色彩都是白费力气。</text>
+    <text x="12" y="68" font-size="10px" fill="#555">❷ 每次只改一个维度。改完明度再动构图；</text>
+    <text x="12" y="82" font-size="10px" fill="#555">&#8194;&#8194;否则你不知道修好画面的到底是哪个改动。</text>
+
+    <rect x="0" y="100" width="280" height="88" fill="#F0F8FF" stroke="#3498DB" stroke-width="0.8" rx="4"/>
+    <text x="12" y="120" font-size="11px" font-weight="bold" fill="#3498DB">程序员类比</text>
+    <text x="12" y="138" font-size="10px" fill="#555">这套排查顺序就是视觉版的 bug 优先级：</text>
+    <text x="12" y="154" font-size="10px" fill="#555">明度 = NullPointerException（基础崩溃）</text>
+    <text x="12" y="168" font-size="10px" fill="#555">构图 = Control Flow（逻辑错误）</text>
+    <text x="12" y="182" font-size="10px" fill="#555">色彩 = UI Polish（显示层），质感 = Edge Case</text>
+
+    <rect x="0" y="200" width="280" height="70" fill="#F5F0FF" stroke="#8E44AD" stroke-width="0.8" rx="4"/>
+    <text x="12" y="220" font-size="11px" font-weight="bold" fill="#8E44AD">常见反模式</text>
+    <text x="12" y="238" font-size="10px" fill="#555">⚠ 在明度没调好的情况下反复换颜色</text>
+    <text x="12" y="254" font-size="10px" fill="#555">⚠ 在构图散乱的前提下增加细节（越加越乱）</text>
+    <text x="12" y="270" font-size="10px" fill="#555">⚠ 同时调三四个参数，修好了也不知道是哪</text>
+    <text x="12" y="286" font-size="10px" fill="#555">&#8194;&#8194;个改对了</text>
+  </g>
+
+  <text x="400" y="510" font-size="10px" fill="#888" text-anchor="middle">图 练手09.2：八概念优先级诊断流程。优先级的顺序不是随意的——它对应视觉信息在大脑中的处理层级：明度 &gt; 构图 &gt; 色彩 &gt; 质感。</text>
+</svg>

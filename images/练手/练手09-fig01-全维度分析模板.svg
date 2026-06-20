@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .header-cell { fill: #2C3E50; }
+    .header-text { font-size: 11px; fill: #fff; font-weight: bold; }
+    .row-odd { fill: #FAFBFC; }
+    .row-even { fill: #F0F3F5; }
+    .cell-text { font-size: 10px; fill: #333; }
+    .cell-text-en { font-size: 9px; fill: #888; }
+    .cell-prompt { font-size: 9px; fill: #555; }
+    .section-border { stroke: #dee2e6; stroke-width: 1; }
+    .col-divider { stroke: #e9ecef; stroke-width: 0.5; }
+    .summary-fill { fill: #E8F4FD; }
+    .summary-text { font-size: 10px; fill: #333; }
+    .concept-num { font-size: 9px; fill: #E74C3C; font-weight: bold; }
+  </style>
+
+  <text x="400" y="25" class="title" text-anchor="middle">图 练手09.1  全维度分析报告模板</text>
+  <text x="400" y="44" font-size="10px" fill="#888" text-anchor="middle">游戏截图：_______________________ &#8194; 日期：________ &#8194; 分析人：________</text>
+
+  <!-- Table -->
+  <g transform="translate(20, 60)">
+    <!-- Header row -->
+    <rect x="0" y="0" width="760" height="28" class="header-cell" rx="2"/>
+    <line x1="50" y1="0" x2="50" y2="28" class="col-divider"/>
+    <line x1="160" y1="0" x2="160" y2="28" class="col-divider"/>
+
+    <text x="25" y="19" class="header-text" text-anchor="middle">#</text>
+    <text x="105" y="19" class="header-text" text-anchor="middle">视觉概念</text>
+    <text x="460" y="19" class="header-text" text-anchor="middle">你的观察（每个概念写 2-3 行）</text>
+
+    <!-- Row 1: 线条 -->
+    <rect x="0" y="28" width="760" height="42" class="row-odd"/>
+    <line x1="50" y1="28" x2="50" y2="70" class="col-divider"/>
+    <line x1="160" y1="28" x2="160" y2="70" class="col-divider"/>
+    <text x="25" y="54" class="concept-num" text-anchor="middle">1</text>
+    <text x="105" y="48" class="cell-text" text-anchor="middle" font-weight="bold">线条 Line</text>
+    <text x="105" y="62" class="cell-text-en" text-anchor="middle">轮廓/引导/动势</text>
+    <text x="460" y="48" class="cell-prompt" text-anchor="middle">▸ 轮廓线统一吗（1px/2px）？有 Jaggies 吗？</text>
+    <text x="460" y="62" class="cell-prompt" text-anchor="middle">▸ 有没有引导线把视线带到焦点？线的情绪方向是什么？</text>
+
+    <!-- Row 2: 形状 -->
+    <rect x="0" y="70" width="760" height="42" class="row-even"/>
+    <line x1="50" y1="70" x2="50" y2="112" class="col-divider"/>
+    <line x1="160" y1="70" x2="160" y2="112" class="col-divider"/>
+    <text x="25" y="96" class="concept-num" text-anchor="middle">2</text>
+    <text x="105" y="90" class="cell-text" text-anchor="middle" font-weight="bold">形状与体积 Shape &amp; Form</text>
+    <text x="105" y="104" class="cell-text-en" text-anchor="middle">剪影/圆方三角</text>
+    <text x="460" y="90" class="cell-prompt" text-anchor="middle">▸ 主体剪影能认出来吗？形状语言（圆/方/三角）占比如何？</text>
+    <text x="460" y="104" class="cell-prompt" text-anchor="middle">▸ 体积感靠什么建立（明暗/透视/交叠）？</text>
+
+    <!-- Row 3: 空间 -->
+    <rect x="0" y="112" width="760" height="42" class="row-odd"/>
+    <line x1="50" y1="112" x2="50" y2="154" class="col-divider"/>
+    <line x1="160" y1="112" x2="160" y2="154" class="col-divider"/>
+    <text x="25" y="138" class="concept-num" text-anchor="middle">3</text>
+    <text x="105" y="132" class="cell-text" text-anchor="middle" font-weight="bold">空间 Space</text>
+    <text x="105" y="146" class="cell-text-en" text-anchor="middle">正负形/纵深</text>
+    <text x="460" y="132" class="cell-prompt" text-anchor="middle">▸ 负空间够不够呼吸？正形/负形比大概多少？</text>
+    <text x="460" y="146" class="cell-prompt" text-anchor="middle">▸ 有几个纵深层次？前景/中景/远景各放了什么？</text>
+
+    <!-- Row 4: 明度 -->
+    <rect x="0" y="154" width="760" height="42" class="row-even"/>
+    <line x1="50" y1="154" x2="50" y2="196" class="col-divider"/>
+    <line x1="160" y1="154" x2="160" y2="196" class="col-divider"/>
+    <text x="25" y="180" class="concept-num" text-anchor="middle">4</text>
+    <text x="105" y="174" class="cell-text" text-anchor="middle" font-weight="bold">明度 Value</text>
+    <text x="105" y="188" class="cell-text-en" text-anchor="middle">亮暗/骨架</text>
+    <text x="460" y="174" class="cell-prompt" text-anchor="middle">▸ 明度模板是哪一种（高调/低调/强对比/柔和）？</text>
+    <text x="460" y="188" class="cell-prompt" text-anchor="middle">▸ 去色后焦点还在吗？最亮区和最暗区在哪？</text>
+
+    <!-- Row 5: 色彩 -->
+    <rect x="0" y="196" width="760" height="42" class="row-odd"/>
+    <line x1="50" y1="196" x2="50" y2="238" class="col-divider"/>
+    <line x1="160" y1="196" x2="160" y2="238" class="col-divider"/>
+    <text x="25" y="222" class="concept-num" text-anchor="middle">5</text>
+    <text x="105" y="216" class="cell-text" text-anchor="middle" font-weight="bold">色彩 Color</text>
+    <text x="105" y="230" class="cell-text-en" text-anchor="middle">色相/饱和/温度</text>
+    <text x="460" y="216" class="cell-prompt" text-anchor="middle">▸ 主色调是什么？用了限定调色板吗（大约几个颜色）？</text>
+    <text x="460" y="230" class="cell-prompt" text-anchor="middle">▸ 色彩承担了什么功能（区分/情绪/焦点/写实）？冷暖对比在哪？</text>
+
+    <!-- Row 6: 质感 -->
+    <rect x="0" y="238" width="760" height="42" class="row-even"/>
+    <line x1="50" y1="238" x2="50" y2="280" class="col-divider"/>
+    <line x1="160" y1="238" x2="160" y2="280" class="col-divider"/>
+    <text x="25" y="264" class="concept-num" text-anchor="middle">6</text>
+    <text x="105" y="258" class="cell-text" text-anchor="middle" font-weight="bold">质感 Texture</text>
+    <text x="105" y="272" class="cell-text-en" text-anchor="middle">表面触觉</text>
+    <text x="460" y="258" class="cell-prompt" text-anchor="middle">▸ 有没有 tile 纹理？拼接处有接缝/网格/重复感吗？</text>
+    <text x="460" y="272" class="cell-prompt" text-anchor="middle">▸ 用了抖动（dithering）吗？什么模式？质感帮助了情绪还是干扰了？</text>
+
+    <!-- Row 7: 构图 -->
+    <rect x="0" y="280" width="760" height="42" class="row-odd"/>
+    <line x1="50" y1="280" x2="50" y2="322" class="col-divider"/>
+    <line x1="160" y1="280" x2="160" y2="322" class="col-divider"/>
+    <text x="25" y="306" class="concept-num" text-anchor="middle">7</text>
+    <text x="105" y="300" class="cell-text" text-anchor="middle" font-weight="bold">构图 Composition</text>
+    <text x="105" y="314" class="cell-text-en" text-anchor="middle">组织/权重/平衡</text>
+    <text x="460" y="300" class="cell-prompt" text-anchor="middle">▸ 视觉焦点在哪？用了什么构图策略（三分/对称/三角形等）？</text>
+    <text x="460" y="314" class="cell-prompt" text-anchor="middle">▸ 有没有引导线？视线流从哪开始、怎么走、停在哪？</text>
+
+    <!-- Row 8: 风格 -->
+    <rect x="0" y="322" width="760" height="42" class="row-even"/>
+    <line x1="50" y1="322" x2="50" y2="364" class="col-divider"/>
+    <line x1="160" y1="322" x2="160" y2="364" class="col-divider"/>
+    <text x="25" y="348" class="concept-num" text-anchor="middle">8</text>
+    <text x="105" y="342" class="cell-text" text-anchor="middle" font-weight="bold">风格 Style</text>
+    <text x="105" y="356" class="cell-text-en" text-anchor="middle">统一视觉语言</text>
+    <text x="460" y="342" class="cell-prompt" text-anchor="middle">▸ 识别得出风格标签吗（像素/手绘/low poly/赛博朋克…）？</text>
+    <text x="460" y="356" class="cell-prompt" text-anchor="middle">▸ 所有元素（线/色/形/质）风格统一吗？有没有出戏的元素？</text>
+
+    <!-- Summary row -->
+    <rect x="0" y="364" width="760" height="75" class="summary-fill" rx="2"/>
+    <line x1="0" y1="364" x2="760" y2="364" stroke="#4A90D9" stroke-width="1.5"/>
+    <text x="25" y="388" class="concept-num" text-anchor="middle">⇩</text>
+    <text x="105" y="382" class="cell-text" text-anchor="middle" font-weight="bold">综合判断</text>
+    <text x="105" y="396" class="cell-text-en" text-anchor="middle">Synthesis</text>
+
+    <text x="180" y="385" class="summary-text">▸ 这张图最成功的一个视觉维度是_______________，因为_______________</text>
+    <text x="180" y="401" class="summary-text">▸ 如果只能改一个地方，我会改_______________，因为_______________</text>
+    <text x="180" y="417" class="summary-text">▸ 这张图的情绪基调是_______________，主要靠_______________（1-2 个概念）实现的</text>
+    <text x="180" y="433" class="summary-text">▸ 我想在自己的游戏里借鉴的是：_______________</text>
+
+    <!-- Column borders for summary -->
+    <line x1="50" y1="364" x2="50" y2="439" class="col-divider"/>
+    <line x1="160" y1="364" x2="160" y2="439" class="col-divider"/>
+  </g>
+
+  <text x="400" y="510" font-size="10px" fill="#888" text-anchor="middle">图 练手09.1：全维度分析模板。填完这张表，你对这张截图的理解就从"好看/不好看"变成了可复现的配方。</text>
+</svg>

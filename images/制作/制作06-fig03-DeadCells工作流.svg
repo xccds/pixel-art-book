@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="820" height="540">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .section-label { font-size: 10px; fill: #3498DB; font-weight: bold; }
+    .step-box { fill: #FAFAFA; stroke: #888; stroke-width: 1; rx: 5; }
+    .step-box-3d { fill: #FDEBD0; stroke: #E67E22; stroke-width: 1; rx: 5; }
+    .step-box-render { fill: #F4ECF7; stroke: #8E44AD; stroke-width: 1; rx: 5; }
+    .step-box-fix { fill: #E8F8E8; stroke: #27AE60; stroke-width: 1; rx: 5; }
+    .step-num { font-size: 9px; fill: #E74C3C; text-anchor: middle; font-weight: bold; }
+    .step-title { font-size: 10px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .step-sub { font-size: 7.5px; fill: #666; text-anchor: middle; }
+    .step-quote { font-size: 7px; fill: #999; text-anchor: middle; font-style: italic; }
+    .arrow { stroke: #888; stroke-width: 1.2; fill: none; marker-end: url(#ah3); }
+    .arrow-ir { stroke: #E67E22; stroke-width: 1.4; fill: none; marker-end: url(#ah3o); stroke-dasharray: 5,3; }
+    .analogy-tag { font-size: 9px; fill: #1A5276; text-anchor: middle; font-weight: bold; }
+    .analogy-bg { fill: #EBF5FB; stroke: #AED6F1; stroke-width: 0.6; rx: 3; }
+    .phase-bar { stroke: #E67E22; stroke-width: 2; stroke-dasharray: 4,3; }
+    .note { font-size: 9px; fill: #666; text-anchor: middle; }
+    .quote-box { fill: #FDF6E3; stroke: #F1C40F; stroke-width: 0.8; rx: 4; }
+    .quote-text { font-size: 9.5px; fill: #7D6608; text-anchor: middle; font-style: italic; }
+    .quote-attr { font-size: 8px; fill: #999; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="ah3" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#888"/>
+    </marker>
+    <marker id="ah3o" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#E67E22"/>
+    </marker>
+  </defs>
+
+  <text x="410" y="28" class="title" text-anchor="middle">图 制作06.3 Dead Cells 工作流——3D 当 IR（中间表示），2D sprite 进游戏</text>
+
+  <!-- Phase labels -->
+  <text x="170" y="58" class="section-label">编译期：3D 作为中间表示（IR）</text>
+  <text x="660" y="58" class="section-label" fill="#27AE60">运行时：只有 2D sprite</text>
+  <line x1="20" y1="63" x2="490" y2="63" class="phase-bar"/>
+  <line x1="510" y1="63" x2="800" y2="63" stroke="#27AE60" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- ===== Row 1: steps 1-4 ===== -->
+  <!-- Step 1: 2D 概念图 -->
+  <rect x="30" y="78" width="110" height="68" class="step-box"/>
+  <text x="85" y="96" class="step-num">Step 1</text>
+  <text x="85" y="111" class="step-title">2D 概念图</text>
+  <text x="85" y="126" class="step-sub">像素角色概念稿</text>
+  <text x="85" y="139" class="step-sub">定基调与比例</text>
+  <line x1="140" y1="112" x2="176" y2="112" class="arrow"/>
+
+  <!-- Step 2: 3D 建模 -->
+  <rect x="180" y="78" width="110" height="68" class="step-box-3d"/>
+  <text x="235" y="96" class="step-num">Step 2</text>
+  <text x="235" y="111" class="step-title">3D 建模</text>
+  <text x="235" y="126" class="step-sub">3DS Max 极低面数</text>
+  <text x="235" y="139" class="step-quote">"让 3D 艺术家流泪"</text>
+  <line x1="290" y1="112" x2="326" y2="112" class="arrow"/>
+
+  <!-- Step 3: 骨骼绑定 -->
+  <rect x="330" y="78" width="110" height="68" class="step-box-3d"/>
+  <text x="385" y="96" class="step-num">Step 3</text>
+  <text x="385" y="111" class="step-title">骨骼绑定</text>
+  <text x="385" y="126" class="step-sub">绑骨架准备动画</text>
+  <text x="385" y="139" class="step-sub">8-10 根骨骼</text>
+  <line x1="440" y1="112" x2="476" y2="112" class="arrow-ir"/>
+
+  <!-- Step 4: 关键帧动画 -->
+  <rect x="480" y="78" width="110" height="68" class="step-box-3d"/>
+  <text x="535" y="96" class="step-num">Step 4</text>
+  <text x="535" y="111" class="step-title">关键帧动画</text>
+  <text x="535" y="126" class="step-sub">Pose-to-Pose</text>
+  <text x="535" y="139" class="step-sub">设关键姿势</text>
+
+  <!-- IR label spanning steps 2-4 -->
+  <rect x="180" y="152" width="410" height="20" class="analogy-bg"/>
+  <text x="385" y="166" class="analogy-tag" fill="#E67E22">3D IR 阶段：建模 · 绑骨 · 动画（3D 只在此期存在）</text>
+
+  <!-- ===== Row 2: steps 5-8 ===== -->
+  <!-- Step 5: 插值策略 -->
+  <rect x="30" y="182" width="110" height="68" class="step-box-3d"/>
+  <text x="85" y="200" class="step-num">Step 5</text>
+  <text x="85" y="215" class="step-title">插值策略</text>
+  <text x="85" y="230" class="step-sub">插值帧加在关键帧</text>
+  <text x="85" y="243" class="step-quote">"绝不在中间"</text>
+  <line x1="140" y1="216" x2="176" y2="216" class="arrow-ir"/>
+
+  <!-- Step 6: 低分辨率渲染 -->
+  <rect x="180" y="182" width="110" height="68" class="step-box-render"/>
+  <text x="235" y="200" class="step-num">Step 6</text>
+  <text x="235" y="215" class="step-title">低分辨率渲染</text>
+  <text x="235" y="230" class="step-sub">自研 Homebrew 程序</text>
+  <text x="235" y="243" class="step-sub">无抗锯齿输出</text>
+  <line x1="290" y1="216" x2="326" y2="216" class="arrow-ir"/>
+
+  <!-- Step 7: 法线贴图着色 -->
+  <rect x="330" y="182" width="110" height="68" class="step-box-render"/>
+  <text x="385" y="200" class="step-num">Step 7</text>
+  <text x="385" y="215" class="step-title">法线贴图着色</text>
+  <text x="385" y="230" class="step-sub">法线贴图 + Toon</text>
+  <text x="385" y="243" class="step-sub">保留体积感</text>
+  <line x1="440" y1="216" x2="476" y2="216" class="arrow-ir"/>
+
+  <!-- Step 8: 手工精修 -->
+  <rect x="480" y="182" width="110" height="68" class="step-box-fix"/>
+  <text x="535" y="200" class="step-num">Step 8</text>
+  <text x="535" y="215" class="step-title">手工精修</text>
+  <text x="535" y="230" class="step-sub">关键帧清理闪烁</text>
+  <text x="535" y="243" class="step-quote">"违背初衷就不修"</text>
+
+  <!-- codegen label spanning steps 6-8 -->
+  <rect x="180" y="256" width="410" height="20" class="analogy-bg"/>
+  <text x="385" y="270" class="analogy-tag" fill="#8E44AD">codegen：渲染 · 着色 · 精修（3D → 2D sprite 的编译输出）</text>
+
+  <!-- ===== Output: 2D sprite (runtime) ===== -->
+  <line x1="535" y1="250" x2="660" y2="290" class="arrow"/>
+  <rect x="660" y="270" width="140" height="68" class="step-box-fix" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="730" y="290" style="font-size:9px;fill:#27AE60;text-anchor:middle;font-weight:bold;">运行时产物</text>
+  <text x="730" y="306" class="step-title" fill="#27AE60">2D Sprite Sheet</text>
+  <text x="730" y="321" class="step-sub">序列帧进游戏</text>
+  <text x="730" y="334" class="step-quote">3D 从不进入运行时</text>
+
+  <!-- IR analogy explanation -->
+  <rect x="660" y="346" width="140" height="20" fill="#E8F8E8" stroke="#27AE60" stroke-width="0.6" rx="3"/>
+  <text x="730" y="360" class="analogy-tag" fill="#27AE60">= 目标码（发布）</text>
+
+  <!-- ===== Quote box ===== -->
+  <rect x="60" y="300" width="560" height="56" class="quote-box"/>
+  <text x="340" y="322" class="quote-text">"Movement is love, movement is life."</text>
+  <text x="340" y="338" class="quote-attr">运动节奏比单帧像素精度更重要——3D 管线把精力投在运动上，像素闪烁是可接受的取舍</text>
+  <text x="340" y="350" class="quote-attr">— Thomas Vasseur，Dead Cells 主美</text>
+
+  <!-- ===== IR vs JIT comparison ===== -->
+  <rect x="30" y="376" width="770" height="78" fill="#F9F9F9" stroke="#ddd" stroke-width="0.6" rx="4"/>
+  <text x="40" y="396" style="font-size:11px;fill:#333;font-weight:bold;">3D 当 IR vs 引擎实时（JIT）——两种哲学</text>
+  <text x="40" y="416" style="font-size:9px;fill:#555;">Dead Cells（本章）：3D 只在编译期 → 输出 2D sprite → 游戏跑 sprite。3D 不进运行时 = AOT 编译。省 GPU，吃存储（存海量序列帧）。</text>
+  <text x="40" y="432" style="font-size:9px;fill:#555;">引擎实时（6.6）：3D 进运行时 → 每帧 JIT 编译成像素。省存储（一个模型 = 无限视角），吃 GPU（每帧跑 3D 渲染 + 像素化）。</text>
+  <text x="40" y="448" style="font-size:9px;fill:#888;">选哪个看你的运行时瓶颈是存储还是 GPU——Dead Cells 选 AOT 因为它要 2D 玩法 + 高质量像素；3D 玩法选 JIT。</text>
+
+  <!-- Bottom note -->
+  <text x="410" y="476" class="note">8 步管线从 2D 概念图到手工精修——核心取舍是"运动 > 像素精度"，像素闪烁未被根除是"违背初衷就不修"的主动选择。</text>
+  <text x="410" y="494" class="note">迭代速度极快（新武器几天内完成）、timing 几分钟迭代几十次、多人并行——这是 3D 当 IR 相对手绘逐帧的根本效率优势。</text>
+
+  <!-- Footer analogy summary -->
+  <rect x="180" y="508" width="460" height="24" class="analogy-bg"/>
+  <text x="410" y="524" class="analogy-tag">3D = IR（编译期）　·　2D sprite = 目标码（运行时）　·　3D 从不进入游戏 = 发布二进制里没有 IR</text>
+</svg>

@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="820" height="540">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .section-label { font-size: 10px; fill: #3498DB; font-weight: bold; }
+    .node-box { fill: #FAFAFA; stroke: #888; stroke-width: 1; rx: 5; }
+    .node-box-render { fill: #FDEBD0; stroke: #E67E22; stroke-width: 1; rx: 5; }
+    .node-box-comp { fill: #E8F4FD; stroke: #2980B9; stroke-width: 1; rx: 5; }
+    .node-box-output { fill: #E8F8E8; stroke: #27AE60; stroke-width: 1; rx: 5; }
+    .node-title { font-size: 10px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .node-sub { font-size: 7.5px; fill: #666; text-anchor: middle; }
+    .node-param { font-size: 7px; fill: #2980B9; text-anchor: middle; font-style: italic; }
+    .arrow { stroke: #888; stroke-width: 1.2; fill: none; marker-end: url(#ah2); }
+    .arrow-ir { stroke: #2980B9; stroke-width: 1.4; fill: none; marker-end: url(#ah2b); }
+    .analogy-tag { font-size: 8.5px; fill: #1A5276; text-anchor: middle; font-weight: bold; }
+    .analogy-bg { fill: #EBF5FB; stroke: #AED6F1; stroke-width: 0.6; rx: 3; }
+    .phase-bar { stroke: #2980B9; stroke-width: 2; stroke-dasharray: 4,3; }
+    .note { font-size: 9px; fill: #666; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="ah2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#888"/>
+    </marker>
+    <marker id="ah2b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2980B9"/>
+    </marker>
+  </defs>
+
+  <text x="410" y="28" class="title" text-anchor="middle">图 制作06.2 Blender 3D → 像素完整流程——从 3D 源码到像素目标码</text>
+
+  <!-- ===== Upper: pipeline overview ===== -->
+  <text x="20" y="58" class="section-label">上半：管线全景（3D 源码 → IR 阶段 → 目标码生成）</text>
+  <line x1="20" y1="63" x2="800" y2="63" class="phase-bar"/>
+
+  <!-- Stage A: 建模 -->
+  <rect x="30" y="78" width="120" height="62" class="node-box"/>
+  <text x="90" y="98" class="node-title">① 3D 建模</text>
+  <text x="90" y="113" class="node-sub">低模 · 大色块</text>
+  <text x="90" y="126" class="node-sub">Mirror + SubSurf</text>
+  <text x="90" y="137" class="node-sub">Shadeless 材质</text>
+
+  <line x1="150" y1="109" x2="186" y2="109" class="arrow"/>
+
+  <!-- Stage B: 渲染 -->
+  <rect x="190" y="78" width="120" height="62" class="node-box-render"/>
+  <text x="250" y="98" class="node-title">② 渲染</text>
+  <text x="250" y="113" class="node-sub">320×180 · 0.01px</text>
+  <text x="250" y="126" class="node-sub">Closest 过滤</text>
+  <text x="250" y="137" class="node-sub">EEVEE / Cycles</text>
+
+  <line x1="310" y1="109" x2="346" y2="109" class="arrow"/>
+
+  <!-- Stage C: Compositor -->
+  <rect x="350" y="78" width="150" height="62" class="node-box-comp"/>
+  <text x="425" y="98" class="node-title">③ Compositor 合成器</text>
+  <text x="425" y="113" class="node-sub">像素化 · 量化 · 抖动</text>
+  <text x="425" y="126" class="node-param">= LLVM IR 阶段</text>
+  <text x="425" y="137" class="node-sub">见下半节点链</text>
+
+  <line x1="500" y1="109" x2="536" y2="109" class="arrow"/>
+
+  <!-- Stage D: downscale -->
+  <rect x="540" y="78" width="120" height="62" class="node-box-comp"/>
+  <text x="600" y="98" class="node-title">④ Scale 放大</text>
+  <text x="600" y="113" class="node-sub">Closest 最近邻</text>
+  <text x="600" y="126" class="node-param">= codegen 目标码</text>
+  <text x="600" y="137" class="node-sub">禁止平滑插值</text>
+
+  <line x1="660" y1="109" x2="696" y2="109" class="arrow"/>
+
+  <!-- Stage E: pixel sprite -->
+  <rect x="700" y="78" width="100" height="62" class="node-box-output"/>
+  <text x="750" y="98" class="node-title">⑤ 像素 sprite</text>
+  <text x="750" y="113" class="node-sub">PNG 序列帧</text>
+  <text x="750" y="126" class="node-sub">12-15 FPS</text>
+  <text x="750" y="137" class="node-sub">→ Aseprite 精修</text>
+
+  <!-- Compiler analogy band -->
+  <rect x="30" y="150" width="770" height="26" class="analogy-bg"/>
+  <text x="90" y="167" class="analogy-tag">源码</text>
+  <text x="250" y="167" class="analogy-tag">编译前端</text>
+  <text x="425" y="167" class="analogy-tag">LLVM IR（中间表示优化）</text>
+  <text x="600" y="167" class="analogy-tag">codegen</text>
+  <text x="750" y="167" class="analogy-tag">目标码</text>
+
+  <!-- ===== Lower: Compositor node chain ===== -->
+  <text x="20" y="200" class="section-label">下半：Compositor 内部节点链（IR pass 链——每个节点一个处理 pass）</text>
+  <line x1="20" y1="205" x2="800" y2="205" class="phase-bar"/>
+
+  <!-- Node 1: Render Layers -->
+  <rect x="30" y="222" width="130" height="78" class="node-box-render"/>
+  <text x="95" y="244" class="node-title">Render Layers</text>
+  <text x="95" y="261" class="node-sub">3D 渲染输入</text>
+  <text x="95" y="275" class="node-sub">320×180 连续渐变</text>
+  <text x="95" y="290" class="node-param">源码进入 IR</text>
+
+  <line x1="160" y1="261" x2="196" y2="261" class="arrow-ir"/>
+
+  <!-- Node 2: Pixelate -->
+  <rect x="200" y="222" width="130" height="78" class="node-box-comp"/>
+  <text x="265" y="244" class="node-title">Pixelate</text>
+  <text x="265" y="261" class="node-sub">像素块化</text>
+  <text x="265" y="275" class="node-param">Size X=2, Y=2</text>
+  <text x="265" y="290" class="node-sub">→ 160×90 块</text>
+
+  <line x1="330" y1="261" x2="366" y2="261" class="arrow-ir"/>
+
+  <!-- Node 3: Posterize -->
+  <rect x="370" y="222" width="130" height="78" class="node-box-comp"/>
+  <text x="435" y="244" class="node-title">Posterize</text>
+  <text x="435" y="261" class="node-sub">颜色量化</text>
+  <text x="435" y="275" class="node-param">Values=5</text>
+  <text x="435" y="290" class="node-sub">≈ 5³ = 125 色</text>
+
+  <line x1="500" y1="261" x2="536" y2="261" class="arrow-ir"/>
+
+  <!-- Node 4: Scale -->
+  <rect x="540" y="222" width="130" height="78" class="node-box-comp"/>
+  <text x="605" y="244" class="node-title">Scale</text>
+  <text x="605" y="261" class="node-sub">最近邻放大</text>
+  <text x="605" y="275" class="node-param">☑ Closest</text>
+  <text x="605" y="290" class="node-sub">回目标分辨率</text>
+
+  <line x1="670" y1="261" x2="706" y2="261" class="arrow-ir"/>
+
+  <!-- Node 5: Composite -->
+  <rect x="710" y="222" width="90" height="78" class="node-box-output"/>
+  <text x="755" y="244" class="node-title">Composite</text>
+  <text x="755" y="261" class="node-sub">输出</text>
+  <text x="755" y="275" class="node-sub">像素 sprite</text>
+  <text x="755" y="290" class="node-param">目标码落盘</text>
+
+  <!-- IR pass labels under node chain -->
+  <text x="95" y="318" class="analogy-tag" fill="#E67E22">pass 0: 输入</text>
+  <text x="265" y="318" class="analogy-tag">pass 1: 像素化</text>
+  <text x="435" y="318" class="analogy-tag">pass 2: 量化</text>
+  <text x="605" y="318" class="analogy-tag">pass 3: 放大</text>
+  <text x="755" y="318" class="analogy-tag" fill="#27AE60">pass 4: 输出</text>
+
+  <!-- Key parameter callout box -->
+  <rect x="30" y="338" width="770" height="92" fill="#F9F9F9" stroke="#ddd" stroke-width="0.6" rx="4"/>
+  <text x="40" y="358" style="font-size:11px;fill:#333;font-weight:bold;">关键参数速查（6.2.4 / 6.2.5）</text>
+  <text x="40" y="376" style="font-size:9px;fill:#555;">渲染分辨率 320×180 或 160×90（越低像素感越强）　│　Pixel Filter = Box / 0.01px（消除亚像素模糊，最关键）</text>
+  <text x="40" y="392" style="font-size:9px;fill:#555;">纹理过滤 Interpolation = Closest（最近邻，防纹理糊）　│　Posterize Values = 3-6（3³=27 到 6³=216 色，建议 5）</text>
+  <text x="40" y="408" style="font-size:9px;fill:#555;">Color Ramp Interpolation = Constant（常量插值，砍渐变为色阶）　│　Scale ☑ Closest（放大禁止平滑）</text>
+  <text x="40" y="424" style="font-size:9px;fill:#888;">迭代用 EEVEE（快），定稿切 Cycles（精确，8-Mat Ditherer 需 Cycles）——和 debug build / release build 同节奏。</text>
+
+  <!-- Bottom note -->
+  <text x="410" y="452" class="note">改源码（3D 模型）→ 重新编译 → 得到新目标码（像素 sprite）。迭代成本是"重新渲染"不是"重画所有帧"——这是 3D 管线效率优势的根源。</text>
+  <text x="410" y="470" class="note">像素闪烁是这条管线最顽固的 bug：相邻帧边缘落在不同像素位置。解法见 6.2.8——固定摄像机 / 多级采样 / Aseprite 手修几帧。</text>
+
+  <!-- IR analogy footer -->
+  <rect x="200" y="488" width="420" height="34" class="analogy-bg"/>
+  <text x="410" y="506" class="analogy-tag">3D = 高维源码　·　Compositor = LLVM IR　·　Scale(Closest) = codegen　·　PNG = 目标码</text>
+  <text x="410" y="518" class="analogy-sub" style="font-size:8px;fill:#5D6D7E;text-anchor:middle;">节点链和编译器 IR pass 链同构——每个节点一个 pass，箭头是数据流</text>
+</svg>

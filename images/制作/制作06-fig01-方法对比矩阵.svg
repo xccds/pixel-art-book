@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" width="820" height="520">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .col-head { font-size: 10.5px; fill: #34495E; text-anchor: middle; font-weight: bold; }
+    .row-label { font-size: 11.5px; fill: #333; font-weight: bold; }
+    .row-sub { font-size: 8.5px; fill: #888; }
+    .cell { font-size: 11px; text-anchor: middle; font-weight: bold; }
+    .axis-label { font-size: 8px; fill: #aaa; text-anchor: middle; }
+    .analogy-box { fill: #E8F4FD; stroke: #3498DB; stroke-width: 0.8; rx: 4; }
+    .analogy-text { font-size: 9.5px; fill: #1A5276; text-anchor: middle; font-weight: bold; }
+    .analogy-sub { font-size: 7.5px; fill: #5D6D7E; text-anchor: middle; }
+    .grid-line { stroke: #E5E5E5; stroke-width: 0.6; }
+    .grid-main { stroke: #bbb; stroke-width: 0.8; }
+    .header-bg { fill: #F4F6F7; }
+    .dot-hi { fill: #27AE60; }
+    .dot-mid { fill: #F39C12; }
+    .dot-lo { fill: #C0392B; }
+    .note { font-size: 9px; fill: #666; text-anchor: middle; }
+  </style>
+
+  <text x="410" y="28" class="title" text-anchor="middle">图 制作06.1 四条非手绘管线对比矩阵——五个维度 × 程序员类比</text>
+
+  <!-- Column headers (5 axes) -->
+  <rect x="170" y="48" width="600" height="34" class="header-bg" rx="3"/>
+  <text x="230" y="69" class="col-head">效率</text>
+  <text x="350" y="69" class="col-head">质量上限</text>
+  <text x="470" y="69" class="col-head">可控性</text>
+  <text x="590" y="69" class="col-head">工具成本</text>
+  <text x="710" y="69" class="col-head">学习门槛</text>
+
+  <!-- Axis direction hints -->
+  <text x="230" y="92" class="axis-label">高=快</text>
+  <text x="350" y="92" class="axis-label">高=好</text>
+  <text x="470" y="92" class="axis-label">高=强</text>
+  <text x="590" y="92" class="axis-label">低=省</text>
+  <text x="710" y="92" class="axis-label">低=易</text>
+
+  <!-- Grid lines (vertical) -->
+  <line x1="170" y1="100" x2="170" y2="440" class="grid-main"/>
+  <line x1="290" y1="100" x2="290" y2="440" class="grid-line"/>
+  <line x1="410" y1="100" x2="410" y2="440" class="grid-line"/>
+  <line x1="530" y1="100" x2="530" y2="440" class="grid-line"/>
+  <line x1="650" y1="100" x2="650" y2="440" class="grid-line"/>
+  <line x1="770" y1="100" x2="770" y2="440" class="grid-main"/>
+
+  <!-- Row 1: 3D 渲染管线 -->
+  <rect x="10" y="108" width="155" height="78" fill="#FAFAFA" stroke="#ddd" stroke-width="0.6" rx="3"/>
+  <text x="20" y="128" class="row-label">3D 渲染管线</text>
+  <text x="20" y="142" class="row-sub">Blender 3D → 像素</text>
+  <text x="20" y="156" class="row-sub">Dead Cells 用此管线</text>
+  <!-- dots row -->
+  <circle cx="230" cy="148" r="4" class="dot-mid"/><circle cx="230" cy="148" r="4" class="dot-mid" opacity="0"/>
+  <circle cx="350" cy="148" r="4" class="dot-hi"/>
+  <circle cx="470" cy="148" r="4" class="dot-hi"/>
+  <circle cx="590" cy="148" r="4" class="dot-hi"/>
+  <circle cx="710" cy="148" r="4" class="dot-mid"/>
+  <text x="230" y="172" class="cell" fill="#F39C12">5-10×</text>
+  <text x="350" y="172" class="cell" fill="#27AE60">★★★★</text>
+  <text x="470" y="172" class="cell" fill="#27AE60">★★★★</text>
+  <text x="590" y="172" class="cell" fill="#27AE60">免费</text>
+  <text x="710" y="172" class="cell" fill="#F39C12">中</text>
+
+  <line x1="170" y1="190" x2="770" y2="190" class="grid-line"/>
+
+  <!-- Row 2: AI 生成 -->
+  <rect x="10" y="196" width="155" height="78" fill="#FAFAFA" stroke="#ddd" stroke-width="0.6" rx="3"/>
+  <text x="20" y="216" class="row-label">AI 生成</text>
+  <text x="20" y="230" class="row-sub">扩散模型 / LLM</text>
+  <text x="20" y="244" class="row-sub">产出 → 人工精修</text>
+  <circle cx="230" cy="236" r="4" class="dot-hi"/>
+  <circle cx="350" cy="236" r="4" class="dot-mid"/>
+  <circle cx="470" cy="236" r="4" class="dot-lo"/>
+  <circle cx="590" cy="236" r="4" class="dot-mid"/>
+  <circle cx="710" cy="236" r="4" class="dot-hi"/>
+  <text x="230" y="260" class="cell" fill="#27AE60">20-100×</text>
+  <text x="350" y="260" class="cell" fill="#F39C12">★★★</text>
+  <text x="470" y="260" class="cell" fill="#C0392B">★★</text>
+  <text x="590" y="260" class="cell" fill="#F39C12">订阅</text>
+  <text x="710" y="260" class="cell" fill="#27AE60">低</text>
+
+  <line x1="170" y1="278" x2="770" y2="278" class="grid-line"/>
+
+  <!-- Row 3: 程序化生成 -->
+  <rect x="10" y="284" width="155" height="78" fill="#FAFAFA" stroke="#ddd" stroke-width="0.6" rx="3"/>
+  <text x="20" y="304" class="row-label">程序化生成</text>
+  <text x="20" y="318" class="row-sub">代码 / 规则批量</text>
+  <text x="20" y="332" class="row-sub">f(seed) → sprite</text>
+  <circle cx="230" cy="324" r="4" class="dot-hi"/>
+  <circle cx="350" cy="324" r="4" class="dot-mid"/>
+  <circle cx="470" cy="324" r="4" class="dot-hi"/>
+  <circle cx="590" cy="324" r="4" class="dot-hi"/>
+  <circle cx="710" cy="324" r="4" class="dot-mid"/>
+  <text x="230" y="348" class="cell" fill="#27AE60">50-100×</text>
+  <text x="350" y="348" class="cell" fill="#F39C12">★★★</text>
+  <text x="470" y="348" class="cell" fill="#27AE60">★★★★</text>
+  <text x="590" y="348" class="cell" fill="#27AE60">免费</text>
+  <text x="710" y="348" class="cell" fill="#F39C12">中</text>
+
+  <line x1="170" y1="366" x2="770" y2="366" class="grid-line"/>
+
+  <!-- Row 4: 引擎实时渲染 -->
+  <rect x="10" y="372" width="155" height="78" fill="#FAFAFA" stroke="#ddd" stroke-width="0.6" rx="3"/>
+  <text x="20" y="392" class="row-label">引擎实时渲染</text>
+  <text x="20" y="406" class="row-sub">Godot / Unity / Bevy</text>
+  <text x="20" y="420" class="row-sub">运行时 3D → 像素</text>
+  <circle cx="230" cy="412" r="4" class="dot-mid"/>
+  <circle cx="350" cy="412" r="4" class="dot-hi"/>
+  <circle cx="470" cy="412" r="4" class="dot-mid"/>
+  <circle cx="590" cy="412" r="4" class="dot-hi"/>
+  <circle cx="710" cy="412" r="4" class="dot-lo"/>
+  <text x="230" y="436" class="cell" fill="#F39C12">10-50×</text>
+  <text x="350" y="436" class="cell" fill="#27AE60">★★★★</text>
+  <text x="470" y="436" class="cell" fill="#F39C12">★★★</text>
+  <text x="590" y="436" class="cell" fill="#27AE60">免费</text>
+  <text x="710" y="436" class="cell" fill="#C0392B">高</text>
+
+  <!-- Analogy labels (right column, aligned with each row) -->
+  <rect x="10" y="460" width="760" height="0" fill="none"/>
+
+  <!-- Analogy band at bottom -->
+  <rect x="20" y="462" width="180" height="46" class="analogy-box"/>
+  <text x="110" y="480" class="analogy-text">3D → 像素 = 编译器</text>
+  <text x="110" y="496" class="analogy-sub">高维源码 → 像素目标码</text>
+
+  <rect x="215" y="462" width="180" height="46" class="analogy-box"/>
+  <text x="305" y="480" class="analogy-text">AI = 代码生成器</text>
+  <text x="305" y="496" class="analogy-sub">起骨架不保正确性</text>
+
+  <rect x="410" y="462" width="180" height="46" class="analogy-box"/>
+  <text x="500" y="480" class="analogy-text">程序化 = 脚本批量</text>
+  <text x="500" y="496" class="analogy-sub">确定性 · 可复现</text>
+
+  <rect x="605" y="462" width="175" height="46" class="analogy-box"/>
+  <text x="692" y="480" class="analogy-text">引擎实时 = JIT</text>
+  <text x="692" y="496" class="analogy-sub">省存储 · 吃 GPU</text>
+
+  <text x="410" y="516" class="note">没有一条在所有维度占优——选型就是选你愿意付的代价（绿=优 / 橙=中 / 红=劣）。</text>
+</svg>

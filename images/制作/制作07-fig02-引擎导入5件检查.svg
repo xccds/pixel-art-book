@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 10px; fill: #666; }
+    .step-num { font-size: 20px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .step-title { font-size: 13px; font-weight: bold; fill: #333; }
+    .step-en { font-size: 9px; fill: #999; }
+    .step-desc { font-size: 10px; fill: #555; }
+    .step-check { font-size: 10px; fill: #555; }
+    .arrow-text { font-size: 9px; fill: #27AE60; text-anchor: middle; font-weight: bold; }
+    .done-text { font-size: 14px; font-weight: bold; fill: #27AE60; text-anchor: middle; }
+    .done-sub { font-size: 10px; fill: #666; text-anchor: middle; }
+    .godot-mark { fill: #27AE60; font-weight: bold; }
+  </style>
+
+  <text x="400" y="24" class="title" text-anchor="middle">图 制作07.2  引擎导入 5 件检查——Godot 为本书默认引擎，Unity/GameMaker 仅作对照</text>
+  <text x="400" y="40" class="subtitle" text-anchor="middle">5 件全部通过 → 素材可用。任一件未通过 → 回到画布修正（源画布修，不在引擎修）</text>
+
+  <!-- Step 1: Filter -->
+  <g transform="translate(50, 58)">
+    <rect x="0" y="0" width="700" height="55" fill="#FFF" stroke="#E74C3C" stroke-width="1.8" rx="6"/>
+    <rect x="0" y="0" width="55" height="55" fill="#E74C3C" rx="6"/>
+    <rect x="0" y="49" width="55" height="6" fill="#E74C3C" rx="0"/>
+    <text x="27" y="34" class="step-num">1</text>
+    <text x="72" y="22" class="step-title">Filter 过滤模式 → 必须设为 Nearest / Point</text>
+    <text x="72" y="38" class="step-check">检查：Import 面板 → Filter 关闭（Godot 默认开 Bilinear，必须手动关）</text>
+    <text x="72" y="50" class="step-en"><tspan class="godot-mark">★Godot(本书默认):</tspan> Filter = false | Unity: Filter Mode = Point | GameMaker: 取消勾选"Interpolate colors"</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(400, 115)">
+    <polygon points="0,0 6,8 12,0" fill="#27AE60"/>
+  </g>
+  <text x="415" y="126" class="arrow-text">↓</text>
+
+  <!-- Step 2: Scale -->
+  <g transform="translate(50, 128)">
+    <rect x="0" y="0" width="700" height="55" fill="#FFF" stroke="#E67E22" stroke-width="1.8" rx="6"/>
+    <rect x="0" y="0" width="55" height="55" fill="#E67E22" rx="6"/>
+    <rect x="0" y="49" width="55" height="6" fill="#E67E22" rx="0"/>
+    <text x="27" y="34" class="step-num">2</text>
+    <text x="72" y="22" class="step-title">缩放比例 → 整数倍（1x / 2x / 3x），PPU 统一</text>
+    <text x="72" y="38" class="step-check">检查：所有 Sprite 缩放比不是小数；canvas_items stretch + aspect keep</text>
+    <text x="72" y="50" class="step-en"><tspan class="godot-mark">★Godot(本书默认):</tspan> Stretch Mode=canvas_items, Aspect=keep | Unity: PPU 统一 | GM: 纹理页大小匹配</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(400, 185)">
+    <polygon points="0,0 6,8 12,0" fill="#27AE60"/>
+  </g>
+  <text x="415" y="196" class="arrow-text">↓</text>
+
+  <!-- Step 3: Anchor -->
+  <g transform="translate(50, 198)">
+    <rect x="0" y="0" width="700" height="55" fill="#FFF" stroke="#2C3E50" stroke-width="1.8" rx="6"/>
+    <rect x="0" y="0" width="55" height="55" fill="#2C3E50" rx="6"/>
+    <rect x="0" y="49" width="55" height="6" fill="#2C3E50" rx="0"/>
+    <text x="27" y="34" class="step-num">3</text>
+    <text x="72" y="22" class="step-title">锚点位置（Pivot / Anchor）→ 所有同类 Sprite 统一基准点</text>
+    <text x="72" y="38" class="step-check">检查：角色锚点在脚底、物品锚点在中心、UI 锚点在左上</text>
+    <text x="72" y="50" class="step-en"><tspan class="godot-mark">★Godot(本书默认):</tspan> Sprite2D → Offset/Centered | Unity: Sprite Editor → Pivot | GM: Sprite → Origin</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(400, 255)">
+    <polygon points="0,0 6,8 12,0" fill="#27AE60"/>
+  </g>
+  <text x="415" y="266" class="arrow-text">↓</text>
+
+  <!-- Step 4: Alpha -->
+  <g transform="translate(50, 268)">
+    <rect x="0" y="0" width="700" height="55" fill="#FFF" stroke="#8E44AD" stroke-width="1.8" rx="6"/>
+    <rect x="0" y="0" width="55" height="55" fill="#8E44AD" rx="6"/>
+    <rect x="0" y="49" width="55" height="6" fill="#8E44AD" rx="0"/>
+    <text x="27" y="34" class="step-num">4</text>
+    <text x="72" y="22" class="step-title">Alpha 通道 → 透明区域无白边、无杂色</text>
+    <text x="72" y="38" class="step-check">检查：Sprite 边缘没有白色/黑色"光晕"；透明区域在引擎中完全透明</text>
+    <text x="72" y="50" class="step-en"><tspan class="godot-mark">★Godot(本书默认):</tspan> Texture → Fix Alpha Border | Unity: Alpha Is Transparency = true | GM: 自动处理</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(400, 325)">
+    <polygon points="0,0 6,8 12,0" fill="#27AE60"/>
+  </g>
+  <text x="415" y="336" class="arrow-text">↓</text>
+
+  <!-- Step 5: Frame Sequence -->
+  <g transform="translate(50, 338)">
+    <rect x="0" y="0" width="700" height="55" fill="#FFF" stroke="#3498DB" stroke-width="1.8" rx="6"/>
+    <rect x="0" y="0" width="55" height="55" fill="#3498DB" rx="6"/>
+    <rect x="0" y="49" width="55" height="6" fill="#3498DB" rx="0"/>
+    <text x="27" y="34" class="step-num">5</text>
+    <text x="72" y="22" class="step-title">帧序列（Frame Sequence）→ 顺序无错乱、帧时长统一</text>
+    <text x="72" y="38" class="step-check">检查：Sprite Sheet 的行/列数匹配；播放顺序无跳帧</text>
+    <text x="72" y="50" class="step-en"><tspan class="godot-mark">★Godot(本书默认):</tspan> AnimatedSprite2D → FPS | Unity: Animation Clip → Sample Rate | GM: Image Speed</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(400, 395)">
+    <polygon points="0,0 6,8 12,0" fill="#27AE60"/>
+  </g>
+  <text x="415" y="406" class="arrow-text">↓</text>
+
+  <!-- Final: Done -->
+  <g transform="translate(230, 412)">
+    <rect x="0" y="0" width="340" height="50" fill="#E8F8F0" stroke="#27AE60" stroke-width="2" rx="8"/>
+    <circle cx="30" cy="25" r="12" fill="#27AE60"/>
+    <text x="30" y="30" class="step-num" font-size="16">✓</text>
+    <text x="52" y="22" class="done-text">5 件全部通过 → 素材就绪</text>
+    <text x="52" y="38" class="done-sub">如果任一件检查失败——不要改引擎设置——回到画布修正原始文件</text>
+  </g>
+</svg>

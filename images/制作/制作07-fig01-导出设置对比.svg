@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <filter id="bilinear-blur">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <!-- Pixel character: 16x16 warrior sprite at 1x scale -->
+    <g id="pixel-char">
+      <!-- Hair (dark brown #4A3728) -->
+      <rect x="3" y="0" width="10" height="2" fill="#4A3728"/>
+      <rect x="2" y="2" width="12" height="2" fill="#4A3728"/>
+      <rect x="1" y="4" width="14" height="1" fill="#4A3728"/>
+      <!-- Face (skin #F5C6A0), row within hair -->
+      <rect x="4" y="6" width="8" height="2" fill="#F5C6A0"/>
+      <!-- Eyes (dark #222) -->
+      <rect x="5" y="7" width="2" height="1" fill="#222"/>
+      <rect x="9" y="7" width="2" height="1" fill="#222"/>
+      <!-- Mouth -->
+      <rect x="7" y="9" width="2" height="1" fill="#222"/>
+      <!-- Hair bottom -->
+      <rect x="2" y="8" width="1" height="2" fill="#4A3728"/>
+      <rect x="13" y="8" width="1" height="2" fill="#4A3728"/>
+      <rect x="3" y="10" width="10" height="1" fill="#4A3728"/>
+      <!-- Body / armor (blue #4A90D9) -->
+      <rect x="4" y="11" width="8" height="3" fill="#4A90D9"/>
+      <rect x="3" y="14" width="10" height="2" fill="#4A90D9"/>
+      <rect x="4" y="16" width="8" height="2" fill="#3A7BC8"/>
+      <!-- Belt (brown) -->
+      <rect x="4" y="18" width="8" height="1" fill="#8B6914"/>
+      <!-- Left arm (skin + blue sleeve) -->
+      <rect x="1" y="12" width="3" height="2" fill="#4A90D9"/>
+      <rect x="0" y="14" width="3" height="2" fill="#F5C6A0"/>
+      <rect x="0" y="16" width="2" height="2" fill="#F5C6A0"/>
+      <!-- Right arm with sword -->
+      <rect x="13" y="12" width="2" height="2" fill="#4A90D9"/>
+      <rect x="15" y="9" width="1" height="1" fill="#C0C0C0"/><!-- sword grip -->
+      <rect x="15" y="10" width="1" height="6" fill="#C0C0C0"/><!-- sword blade -->
+      <rect x="15" y="8" width="1" height="1" fill="#E8E8E8"/><!-- sword tip -->
+      <!-- Legs (dark pants #3C3C3C) -->
+      <rect x="5" y="19" width="3" height="4" fill="#3C3C3C"/>
+      <rect x="8" y="19" width="3" height="4" fill="#3C3C3C"/>
+      <!-- Boots -->
+      <rect x="4" y="23" width="4" height="1" fill="#5C3A1E"/>
+      <rect x="8" y="23" width="4" height="1" fill="#5C3A1E"/>
+      <!-- Face pixel detail (side hair) -->
+      <rect x="2" y="6" width="2" height="2" fill="#4A3728"/>
+      <rect x="12" y="6" width="2" height="2" fill="#4A3728"/>
+    </g>
+  </defs>
+
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 10px; fill: #666; }
+    .label-correct { font-size: 13px; font-weight: bold; fill: #27AE60; text-anchor: middle; }
+    .label-wrong { font-size: 13px; font-weight: bold; fill: #E74C3C; text-anchor: middle; }
+    .label-en { font-size: 9px; fill: #999; text-anchor: middle; }
+    .desc { font-size: 10px; fill: #555; text-anchor: middle; }
+    .note { font-size: 8px; fill: #aaa; text-anchor: middle; }
+  </style>
+
+  <text x="400" y="26" class="title" text-anchor="middle">图 制作07.1  导出设置对比——Bilinear（错误）vs Nearest Neighbor（正确）</text>
+  <text x="400" y="44" class="subtitle" text-anchor="middle">同一 16×16 像素角色放大 4 倍——两种缩放算法的视觉差异巨大</text>
+
+  <!-- Dividing line -->
+  <line x1="400" y1="58" x2="400" y2="440" stroke="#DDD" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ====== Left: Bilinear (WRONG) ====== -->
+  <rect x="30" y="58" width="340" height="390" fill="#FFF5F5" rx="6"/>
+
+  <!-- Bilinear version with blur -->
+  <g transform="translate(135, 78)">
+    <use href="#pixel-char" transform="scale(4)" filter="url(#bilinear-blur)"/>
+    <!-- Grid overlay to show original pixel boundaries -->
+    <g opacity="0.08" stroke="#E74C3C" stroke-width="0.5">
+      <line x1="0" y1="12" x2="64" y2="12"/>
+      <line x1="0" y1="24" x2="64" y2="24"/>
+      <line x1="0" y1="36" x2="64" y2="36"/>
+      <line x1="0" y1="48" x2="64" y2="48"/>
+      <line x1="16" y1="0" x2="16" y2="64"/>
+      <line x1="32" y1="0" x2="32" y2="64"/>
+      <line x1="48" y1="0" x2="48" y2="64"/>
+    </g>
+  </g>
+
+  <text x="200" y="170" class="label-wrong">✗ Bilinear 双线性插值</text>
+  <text x="200" y="186" class="label-en">Bilinear Interpolation</text>
+
+  <!-- Zoom-in detail: 4 pixel area -->
+  <g transform="translate(80, 210)">
+    <text x="120" y="0" class="desc">放大查看：边缘像素被"平均"——颜色渗入相邻像素</text>
+    <!-- Simulated bilinear blending: 4 blocks show color bleeding -->
+    <rect x="60" y="10" width="40" height="40" fill="#4A90D9" opacity="1" rx="0"/>
+    <rect x="100" y="10" width="40" height="40" fill="#E8F4FD" opacity="1" rx="0"/>
+    <rect x="60" y="50" width="40" height="40" fill="#8BB8E8" opacity="1"/>
+    <rect x="100" y="50" width="40" height="40" fill="#D0E4F8" opacity="1"/>
+    <!-- Labels -->
+    <text x="80" y="8" class="note" text-anchor="middle">像素A</text>
+    <text x="120" y="8" class="note" text-anchor="middle">像素B</text>
+    <text x="200" y="30" class="note" text-anchor="start" font-size="9" fill="#E74C3C">← 过渡色"污染"</text>
+    <text x="80" y="98" class="note" text-anchor="middle" fill="#E74C3C">边缘变糊，不再是清晰方块</text>
+  </g>
+
+  <!-- Consequence list -->
+  <g transform="translate(55, 340)">
+    <text x="0" y="0" class="desc" text-anchor="start" fill="#E74C3C" font-weight="bold">后果：</text>
+    <text x="0" y="18" class="desc" text-anchor="start" fill="#555">• 角色边缘模糊——"近视感"</text>
+    <text x="0" y="33" class="desc" text-anchor="start" fill="#555">• 像素色块边界消失</text>
+    <text x="0" y="48" class="desc" text-anchor="start" fill="#555">• 小文字不可读（尤其像素字体）</text>
+  </g>
+
+  <!-- ====== Right: Nearest Neighbor (CORRECT) ====== -->
+  <rect x="430" y="58" width="340" height="390" fill="#F0FFF0" rx="6"/>
+
+  <!-- Nearest Neighbor version - crisp -->
+  <g transform="translate(545, 78)">
+    <use href="#pixel-char" transform="scale(4)"/>
+  </g>
+
+  <text x="600" y="170" class="label-correct">✓ Nearest Neighbor 最近邻</text>
+  <text x="600" y="186" class="label-en">Nearest Neighbor / Point Sampling</text>
+
+  <!-- Zoom-in detail -->
+  <g transform="translate(490, 210)">
+    <text x="120" y="0" class="desc">放大查看：每个像素仍是独立方块——无颜色混合</text>
+    <!-- Simulated nearest neighbor: 4 clean blocks -->
+    <rect x="60" y="10" width="40" height="40" fill="#4A90D9" rx="0"/>
+    <rect x="100" y="10" width="40" height="40" fill="#E8F4FD" rx="0"/>
+    <rect x="60" y="50" width="40" height="40" fill="#4A90D9" rx="0"/>
+    <rect x="100" y="50" width="40" height="40" fill="#E8F4FD" rx="0"/>
+    <text x="80" y="8" class="note" text-anchor="middle">像素A</text>
+    <text x="120" y="8" class="note" text-anchor="middle">像素B</text>
+    <text x="200" y="30" class="note" text-anchor="start" font-size="9" fill="#27AE60">← 边界分明</text>
+    <text x="80" y="98" class="note" text-anchor="middle" fill="#27AE60">每个像素独立——锐利清晰</text>
+  </g>
+
+  <!-- Benefit list -->
+  <g transform="translate(465, 340)">
+    <text x="0" y="0" class="desc" text-anchor="start" fill="#27AE60" font-weight="bold">结果：</text>
+    <text x="0" y="18" class="desc" text-anchor="start" fill="#555">• 像素边界锐利——"清爽感"</text>
+    <text x="0" y="33" class="desc" text-anchor="start" fill="#555">• 小文字清晰可读</text>
+    <text x="0" y="48" class="desc" text-anchor="start" fill="#555">• 像素艺术的特征被保留</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="488" class="note" text-anchor="middle" font-size="8">关键规则：像素艺术导出必须用 Nearest Neighbor（或 Point Sampling）。任何其他采样算法都会破坏像素边界。</text>
+</svg>

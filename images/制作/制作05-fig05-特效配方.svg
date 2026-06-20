@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .section { font-size: 11px; font-weight: bold; fill: #2980B9; }
+    .frame-label { font-size: 8px; fill: #555; text-anchor: middle; }
+    .beat-label { font-size: 8.5px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .beat-sub { font-size: 7.5px; fill: #888; text-anchor: middle; }
+    .legend { font-size: 7.5px; fill: #555; }
+    .note { font-size: 7.5px; fill: #999; }
+    .analogy-title { font-size: 9px; font-weight: bold; fill: #E74C3C; }
+    .analogy-text { font-size: 8px; fill: #555; }
+  </style>
+
+  <text x="400" y="24" class="title" text-anchor="middle">图 制作05.5  特效配方卡——火焰（色板阶梯）+ 爆炸（四拍结构）+ 换色复用</text>
+  <text x="400" y="42" class="subtitle" text-anchor="middle">同一份 sprite 换 palette index = 火/毒/冰/诅咒，零额外绘制（像换主题）</text>
+
+  <!-- ============ FIRE section ============ -->
+  <text x="40" y="66" class="section">火焰 Fire · 3-6 帧循环 · 根部固定 / 顶部渐暗 / 每帧变形</text>
+
+  <!-- color ramp legend -->
+  <g transform="translate(46, 76)">
+    <text x="0" y="0" class="legend" font-weight="bold">色板阶梯</text>
+    <rect x="0" y="6" width="14" height="10" fill="#FFFFFF" stroke="#ccc" stroke-width="0.3"/>
+    <text x="18" y="14" class="legend">白 (根·最热)</text>
+    <rect x="0" y="20" width="14" height="10" fill="#FFE600"/>
+    <text x="18" y="28" class="legend">亮黄</text>
+    <rect x="0" y="34" width="14" height="10" fill="#FF8C00"/>
+    <text x="18" y="42" class="legend">橙</text>
+    <rect x="0" y="48" width="14" height="10" fill="#E84A18"/>
+    <text x="18" y="56" class="legend">红橙</text>
+    <rect x="0" y="62" width="14" height="10" fill="#6B0000"/>
+    <text x="18" y="70" class="legend">深红 (顶·最冷)</text>
+  </g>
+
+  <!-- 4 flame frames, cx=170,300,430,560 ; root at y=176, tip ~y=148 -->
+  <!-- F1 -->
+  <g>
+    <rect x="120" y="74" width="100" height="118" fill="#1A1A2E" rx="3"/>
+    <text x="170" y="86" class="frame-label" fill="#ccc">F1</text>
+    <rect x="158" y="172" width="24" height="4" fill="#FFFFFF"/>
+    <rect x="160" y="168" width="20" height="4" fill="#FFFFFF"/>
+    <rect x="160" y="164" width="20" height="4" fill="#FFE600"/>
+    <rect x="162" y="160" width="16" height="4" fill="#FFE600"/>
+    <rect x="163" y="156" width="14" height="4" fill="#FF8C00"/>
+    <rect x="165" y="152" width="10" height="4" fill="#E84A18"/>
+    <rect x="166" y="148" width="8" height="4" fill="#B22222"/>
+    <rect x="168" y="144" width="4" height="4" fill="#6B0000"/>
+  </g>
+  <!-- F2 (fatter tip) -->
+  <g>
+    <rect x="250" y="74" width="100" height="118" fill="#1A1A2E" rx="3"/>
+    <text x="300" y="86" class="frame-label" fill="#ccc">F2</text>
+    <rect x="288" y="172" width="24" height="4" fill="#FFFFFF"/>
+    <rect x="290" y="168" width="20" height="4" fill="#FFFFFF"/>
+    <rect x="290" y="164" width="20" height="4" fill="#FFE600"/>
+    <rect x="292" y="160" width="16" height="4" fill="#FFE600"/>
+    <rect x="293" y="156" width="14" height="4" fill="#FF8C00"/>
+    <rect x="294" y="152" width="12" height="4" fill="#E84A18"/>
+    <rect x="296" y="148" width="8" height="4" fill="#B22222"/>
+    <rect x="298" y="144" width="4" height="4" fill="#6B0000"/>
+  </g>
+  <!-- F3 (lean right, wider mid) -->
+  <g>
+    <rect x="380" y="74" width="100" height="118" fill="#1A1A2E" rx="3"/>
+    <text x="430" y="86" class="frame-label" fill="#ccc">F3</text>
+    <rect x="418" y="172" width="24" height="4" fill="#FFFFFF"/>
+    <rect x="420" y="168" width="20" height="4" fill="#FFFFFF"/>
+    <rect x="420" y="164" width="20" height="4" fill="#FFE600"/>
+    <rect x="422" y="160" width="16" height="4" fill="#FFE600"/>
+    <rect x="423" y="156" width="14" height="4" fill="#FF8C00"/>
+    <rect x="425" y="152" width="12" height="4" fill="#E84A18"/>
+    <rect x="427" y="148" width="8" height="4" fill="#B22222"/>
+    <rect x="431" y="144" width="4" height="4" fill="#6B0000"/>
+  </g>
+  <!-- F4 (tall narrow) -->
+  <g>
+    <rect x="510" y="74" width="100" height="118" fill="#1A1A2E" rx="3"/>
+    <text x="560" y="86" class="frame-label" fill="#ccc">F4</text>
+    <rect x="548" y="172" width="24" height="4" fill="#FFFFFF"/>
+    <rect x="550" y="168" width="20" height="4" fill="#FFFFFF"/>
+    <rect x="550" y="164" width="20" height="4" fill="#FFE600"/>
+    <rect x="552" y="160" width="16" height="4" fill="#FFE600"/>
+    <rect x="553" y="156" width="14" height="4" fill="#FF8C00"/>
+    <rect x="555" y="152" width="10" height="4" fill="#E84A18"/>
+    <rect x="556" y="148" width="8" height="4" fill="#B22222"/>
+    <rect x="558" y="140" width="4" height="8" fill="#6B0000"/>
+  </g>
+  <text x="170" y="200" class="note" text-anchor="middle">根部固定</text>
+  <text x="430" y="200" class="note" text-anchor="middle">顶部渐暗 · 每帧形状不同</text>
+
+  <!-- ============ EXPLOSION section ============ -->
+  <text x="40" y="216" class="section">爆炸 Explosion · 四拍结构：闪光 → 扩张 → 峰值 → 消散</text>
+
+  <!-- beat centers cx=110,290,470,650 ; center y=272 ; cell 150 wide -->
+  <!-- Beat1 闪光 -->
+  <g>
+    <rect x="40" y="226" width="140" height="92" fill="#1A1A2E" rx="3"/>
+    <rect x="104" y="266" width="12" height="12" fill="#FFFFFF"/>
+    <rect x="100" y="262" width="4" height="4" fill="#FFFFFF" opacity="0.8"/>
+    <rect x="116" y="262" width="4" height="4" fill="#FFFFFF" opacity="0.8"/>
+    <rect x="100" y="278" width="4" height="4" fill="#FFFFFF" opacity="0.8"/>
+    <rect x="116" y="278" width="4" height="4" fill="#FFFFFF" opacity="0.8"/>
+    <text x="110" y="296" class="beat-label" fill="#fff">① 闪光</text>
+    <text x="110" y="307" class="beat-sub" fill="#aaa">白色亮点 · 起始</text>
+  </g>
+  <!-- Beat2 扩张 -->
+  <g>
+    <rect x="220" y="226" width="140" height="92" fill="#1A1A2E" rx="3"/>
+    <rect x="286" y="268" width="8" height="8" fill="#FFFFFF"/>
+    <rect x="270" y="252" width="40" height="40" fill="none" stroke="#FF8C00" stroke-width="2"/>
+    <rect x="248" y="244" width="4" height="4" fill="#FF8C00"/>
+    <rect x="328" y="244" width="4" height="4" fill="#FF8C00"/>
+    <rect x="248" y="296" width="4" height="4" fill="#FF8C00"/>
+    <rect x="328" y="296" width="4" height="4" fill="#FF8C00"/>
+    <text x="290" y="296" class="beat-label" fill="#fff">② 扩张</text>
+    <text x="290" y="307" class="beat-sub" fill="#aaa">碎片外飞 · 环扩散</text>
+  </g>
+  <!-- Beat3 峰值 -->
+  <g>
+    <rect x="400" y="226" width="140" height="92" fill="#1A1A2E" rx="3"/>
+    <rect x="467" y="269" width="6" height="6" fill="#FFE600"/>
+    <rect x="440" y="242" width="60" height="60" fill="none" stroke="#E84A18" stroke-width="2"/>
+    <rect x="416" y="232" width="4" height="4" fill="#E84A18"/>
+    <rect x="520" y="232" width="4" height="4" fill="#E84A18"/>
+    <rect x="416" y="308" width="4" height="4" fill="#E84A18"/>
+    <rect x="520" y="308" width="4" height="4" fill="#E84A18"/>
+    <rect x="428" y="238" width="4" height="4" fill="#FF8C00"/>
+    <rect x="508" y="238" width="4" height="4" fill="#FF8C00"/>
+    <rect x="455" y="226" width="8" height="6" fill="#888" opacity="0.8"/>
+    <rect x="475" y="228" width="8" height="6" fill="#888" opacity="0.7"/>
+    <text x="470" y="296" class="beat-label" fill="#fff">③ 峰值</text>
+    <text x="470" y="307" class="beat-sub" fill="#aaa">最大范围 · 烟雾起</text>
+  </g>
+  <!-- Beat4 消散 -->
+  <g>
+    <rect x="580" y="226" width="140" height="92" fill="#1A1A2E" rx="3"/>
+    <rect x="625" y="248" width="50" height="50" fill="none" stroke="#888" stroke-width="1.5" opacity="0.6"/>
+    <rect x="635" y="238" width="10" height="8" fill="#aaa" opacity="0.7"/>
+    <rect x="655" y="242" width="10" height="8" fill="#aaa" opacity="0.5"/>
+    <rect x="620" y="250" width="10" height="8" fill="#aaa" opacity="0.6"/>
+    <rect x="645" y="304" width="4" height="4" fill="#666" opacity="0.7"/>
+    <rect x="660" y="306" width="4" height="4" fill="#666" opacity="0.5"/>
+    <text x="650" y="296" class="beat-label" fill="#fff">④ 消散</text>
+    <text x="650" y="307" class="beat-sub" fill="#aaa">烟雾渐隐 · 碎片坠</text>
+  </g>
+
+  <!-- ============ REUSE section ============ -->
+  <text x="40" y="338" class="section">特效复用 · 换 palette index：同一份火焰 sprite = 四种元素</text>
+
+  <!-- 4 mini flames cx=80,200,320,440 ; root y=470, block=3 ; palettes: 火/毒/冰/诅咒 -->
+  <!-- 火 (red) -->
+  <g>
+    <rect x="40" y="350" width="80" height="130" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.6" rx="3"/>
+    <rect x="74" y="464" width="18" height="6" fill="#FFFFFF"/>
+    <rect x="76" y="458" width="14" height="6" fill="#FFFFFF"/>
+    <rect x="76" y="452" width="14" height="6" fill="#FFE600"/>
+    <rect x="78" y="446" width="10" height="6" fill="#FF8C00"/>
+    <rect x="79" y="440" width="8" height="6" fill="#E84A18"/>
+    <rect x="80" y="434" width="6" height="6" fill="#6B0000"/>
+    <text x="83" y="486" class="beat-label">火</text>
+    <text x="83" y="496" class="beat-sub">红色调</text>
+  </g>
+  <!-- 毒 (green) -->
+  <g>
+    <rect x="160" y="350" width="80" height="130" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.6" rx="3"/>
+    <rect x="194" y="464" width="18" height="6" fill="#E8FFE8"/>
+    <rect x="196" y="458" width="14" height="6" fill="#9CFF9C"/>
+    <rect x="196" y="452" width="14" height="6" fill="#39E639"/>
+    <rect x="198" y="446" width="10" height="6" fill="#1FA81F"/>
+    <rect x="199" y="440" width="8" height="6" fill="#0C7A0C"/>
+    <rect x="200" y="434" width="6" height="6" fill="#054D05"/>
+    <text x="203" y="486" class="beat-label" fill="#1FA81F">毒</text>
+    <text x="203" y="496" class="beat-sub">绿色调</text>
+  </g>
+  <!-- 冰 (blue) -->
+  <g>
+    <rect x="280" y="350" width="80" height="130" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.6" rx="3"/>
+    <rect x="314" y="464" width="18" height="6" fill="#E8F8FF"/>
+    <rect x="316" y="458" width="14" height="6" fill="#9CE6FF"/>
+    <rect x="316" y="452" width="14" height="6" fill="#39B6E6"/>
+    <rect x="318" y="446" width="10" height="6" fill="#1F8AA8"/>
+    <rect x="319" y="440" width="8" height="6" fill="#0C5A7A"/>
+    <rect x="320" y="434" width="6" height="6" fill="#05334D"/>
+    <text x="323" y="486" class="beat-label" fill="#1F8AA8">冰</text>
+    <text x="323" y="496" class="beat-sub">蓝色调</text>
+  </g>
+  <!-- 诅咒 (purple) -->
+  <g>
+    <rect x="400" y="350" width="80" height="130" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.6" rx="3"/>
+    <rect x="434" y="464" width="18" height="6" fill="#F5E8FF"/>
+    <rect x="436" y="458" width="14" height="6" fill="#D89CFF"/>
+    <rect x="436" y="452" width="14" height="6" fill="#A639E6"/>
+    <rect x="438" y="446" width="10" height="6" fill="#7A1FA8"/>
+    <rect x="439" y="440" width="8" height="6" fill="#4D0C7A"/>
+    <rect x="440" y="434" width="6" height="6" fill="#2E054D"/>
+    <text x="443" y="486" class="beat-label" fill="#7A1FA8">诅咒</text>
+    <text x="443" y="496" class="beat-sub">紫色调</text>
+  </g>
+
+  <!-- analogy panel on right -->
+  <g transform="translate(495, 350)">
+    <rect x="0" y="0" width="265" height="130" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="6"/>
+    <text x="12" y="18" class="analogy-title">程序员类比（换色复用）</text>
+    <text x="12" y="36" class="analogy-text">同一特效 sprite 换 palette index</text>
+    <text x="12" y="50" class="analogy-text">——火→毒→冰→诅咒，零额外绘制，</text>
+    <text x="12" y="64" class="analogy-text">像换主题（dark/light 切 CSS 变量）。</text>
+    <text x="12" y="84" class="analogy-text" fill="#666">像素图颜色存独立的调色板表，</text>
+    <text x="12" y="98" class="analogy-text" fill="#666">sprite 存的是索引——改表里几个</text>
+    <text x="12" y="112" class="analogy-text" fill="#666">RGB 值，所有引用该 index 的像素</text>
+    <text x="12" y="124" class="analogy-text" fill="#666">自动变色。1 份 sprite + 4 调色板 = 4 种特效。</text>
+  </g>
+</svg>

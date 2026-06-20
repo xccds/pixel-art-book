@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .header-text { font-size: 10px; font-weight: bold; fill: #fff; }
+    .cell-text { font-size: 9px; fill: #333; }
+    .cell-num { font-size: 9px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .cell-sub { font-size: 8px; fill: #888; }
+    .note { font-size: 7.5px; fill: #999; }
+    .highlight { font-size: 8px; fill: #E74C3C; font-weight: bold; }
+    .range-low { font-size: 8px; fill: #2ECC71; font-weight: bold; }
+    .range-high { font-size: 8px; fill: #F39C12; font-weight: bold; }
+  </style>
+
+  <text x="400" y="26" class="title" text-anchor="middle">图 制作05.2  帧数 / 时长参考表——独立游戏角色动画的"工时基准"</text>
+  <text x="400" y="44" class="subtitle" text-anchor="middle">数据来源：Sprite-AI 统计 + 独立游戏社区实际项目产出——这不是"最好的"，是"最常见的"</text>
+
+  <!-- Table -->
+  <g transform="translate(25, 60)">
+    <!-- Table header -->
+    <rect x="0" y="0" width="750" height="32" fill="#333" rx="3"/>
+    <rect x="0" y="16" width="750" height="16" fill="#333"/>
+
+    <text x="130" y="14" class="header-text" text-anchor="middle">动作</text>
+    <text x="260" y="14" class="header-text" text-anchor="middle">帧数</text>
+    <text x="390" y="14" class="header-text" text-anchor="middle">每帧时长 (ms)</text>
+    <text x="530" y="14" class="header-text" text-anchor="middle">总时长</text>
+    <text x="670" y="14" class="header-text" text-anchor="middle">独立游戏建议</text>
+
+    <!-- Column dividers -->
+    <line x1="175" y1="0" x2="175" y2="32" stroke="#555" stroke-width="0.5"/>
+    <line x1="310" y1="0" x2="310" y2="32" stroke="#555" stroke-width="0.5"/>
+    <line x1="460" y1="0" x2="460" y2="32" stroke="#555" stroke-width="0.5"/>
+    <line x1="610" y1="0" x2="610" y2="32" stroke="#555" stroke-width="0.5"/>
+
+    <!-- Row 1: Idle -->
+    <rect x="0" y="34" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 34)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">空闲呼吸 Idle</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">站立不动时的微小浮动</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">2 – 4 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">最少 2 帧（身体微上下）</text>
+
+      <text x="390" y="28" class="cell-num">300 – 500 ms / 帧</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle">慢！呼吸是缓慢的</text>
+
+      <text x="530" y="28" class="cell-num">~ 1 – 2 秒循环</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">呼吸一次 = 吸 + 呼</text>
+
+      <text x="670" y="28" class="cell-text" fill="#E74C3C">最少 2 帧！</text>
+      <text x="670" y="42" class="note" text-anchor="middle">站姿+微移动="活着"</text>
+    </g>
+
+    <!-- Row 2: Walk -->
+    <rect x="0" y="80" width="750" height="46" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 80)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">行走 Walk</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">正常速度的走路</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">4 – 6 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">4 帧 = 极简可行</text>
+
+      <text x="390" y="28" class="cell-num">100 – 150 ms / 帧</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle">中速——走路有节奏</text>
+
+      <text x="530" y="28" class="cell-num">~ 0.5 – 0.8 秒循环</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">两步完成一个循环</text>
+
+      <text x="670" y="28" class="cell-text" fill="#333">6 帧 ≈ 横版游戏标配</text>
+      <text x="670" y="42" class="note" text-anchor="middle">减少帧数="滑行感"</text>
+    </g>
+
+    <!-- Row 3: Run -->
+    <rect x="0" y="126" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 126)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">跑步 Run</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">快速移动</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">6 – 8 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">比走路多 2 帧 = 更流畅</text>
+
+      <text x="390" y="28" class="cell-num">60 – 100 ms / 帧</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle">快！帧间短</text>
+
+      <text x="530" y="28" class="cell-num">~ 0.5 – 0.7 秒循环</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">循环比走路快</text>
+
+      <text x="670" y="28" class="cell-text" fill="#333">8 帧才够流畅</text>
+      <text x="670" y="42" class="note" text-anchor="middle">低帧数跑步="溜冰"</text>
+    </g>
+
+    <!-- Row 4: Attack Wind-up -->
+    <rect x="0" y="172" width="750" height="46" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 172)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">攻击蓄力 Attack Windup</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">举起武器/拉弓</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">1 – 2 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">1 帧 = 瞬间蓄力</text>
+
+      <text x="390" y="28" class="cell-num">60 – 80 ms / 帧</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle"><tspan font-weight="bold" fill="#E74C3C">快！</tspan> 前摇不能拖</text>
+
+      <text x="530" y="28" class="cell-num">~ 60 – 160 ms</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">蓄力总时间极短</text>
+
+      <text x="670" y="28" class="cell-text" fill="#E74C3C">蓄力太重 = 手感"肉"</text>
+      <text x="670" y="42" class="note" text-anchor="middle">独立动作游戏——快！</text>
+    </g>
+
+    <!-- Row 5: Attack Hit -->
+    <rect x="0" y="218" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 218)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">攻击命中 Attack Hit</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">攻击帧（出拳/挥砍/射击）</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">1 – 2 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">1 帧 = 瞬间命中</text>
+
+      <text x="390" y="28" class="cell-num">120 – 200 ms / 帧</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle"><tspan font-weight="bold" fill="#E74C3C">持长！</tspan> 命中帧要"挂"</text>
+
+      <text x="530" y="28" class="cell-num">~ 120 – 400 ms</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">越长的命中有越强的"打击感"</text>
+
+      <text x="670" y="28" class="cell-text" fill="#E74C3C">命中帧 = 攻击手感核心</text>
+      <text x="670" y="42" class="note" text-anchor="middle">不要一闪而过——"挂"住</text>
+    </g>
+
+    <!-- Row 6: Hurt -->
+    <rect x="0" y="264" width="750" height="46" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 264)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">受击 Hurt</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">被敌人击中后的反应</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">2 – 3 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">身体后仰 + 表情变化</text>
+
+      <text x="390" y="28" class="cell-num">80 – 120 ms / 帧</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle">中速——有痛感</text>
+
+      <text x="530" y="28" class="cell-num">~ 160 – 360 ms</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">短受击 = 不打断手感</text>
+
+      <text x="670" y="28" class="cell-text" fill="#333">2 帧就够了</text>
+      <text x="670" y="42" class="note" text-anchor="middle">加闪白/闪红强化反馈</text>
+    </g>
+
+    <!-- Row 7: Jump Takeoff -->
+    <rect x="0" y="310" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 310)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">跳跃腾空 Jump Takeoff</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">从地面离开的瞬间</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">1 – 2 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">1 帧 = 瞬间离地</text>
+
+      <text x="390" y="28" class="cell-num">60 – 80 ms / 帧</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle"><tspan font-weight="bold" fill="#E74C3C">快！</tspan> 反应要即时</text>
+
+      <text x="530" y="28" class="cell-num">~ 60 – 160 ms</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">按跳就跳——不要延迟</text>
+
+      <text x="670" y="28" class="cell-text" fill="#E74C3C">必须 1 帧回应！</text>
+      <text x="670" y="42" class="note" text-anchor="middle">跳跃延迟 = 游戏死刑</text>
+    </g>
+
+    <!-- Row 8: Jump Apex -->
+    <rect x="0" y="356" width="750" height="46" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 356)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">跳跃顶点 Jump Apex</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">上升到最高点的停顿</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">1 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">1 帧（停顿感）</text>
+
+      <text x="390" y="28" class="cell-num">120 – 180 ms</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle"><tspan font-weight="bold" fill="#E74C3C">持长！</tspan> 顶点要有"悬挂感"</text>
+
+      <text x="530" y="28" class="cell-num">~ 120 – 180 ms</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">顶点越久—跳跃越"飘"</text>
+
+      <text x="670" y="28" class="cell-text" fill="#333">1 帧 + 长停留 = 好跳跃</text>
+      <text x="670" y="42" class="note" text-anchor="middle">平台跳跃的"灵魂"</text>
+    </g>
+
+    <!-- Row 9: Land -->
+    <rect x="0" y="402" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <g transform="translate(0, 402)">
+      <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">落地压缩 Land</text>
+      <text x="130" y="42" class="cell-sub" text-anchor="middle">落地瞬间的下蹲+回弹</text>
+
+      <text x="260" y="28" class="cell-num" fill="#E74C3C">1 – 2 帧</text>
+      <text x="260" y="42" class="cell-sub" text-anchor="middle">1 帧 = 瞬间蹲下</text>
+
+      <text x="390" y="28" class="cell-num">80 – 120 ms / 帧</text>
+      <text x="390" y="42" class="cell-sub" text-anchor="middle">落地后回弹恢复</text>
+
+      <text x="530" y="28" class="cell-num">~ 80 – 240 ms</text>
+      <text x="530" y="42" class="cell-sub" text-anchor="middle">蹲下+恢复站立</text>
+
+      <text x="670" y="28" class="cell-text" fill="#333">1 帧蹲 + 1 帧恢复</text>
+      <text x="670" y="42" class="note" text-anchor="middle">没有落地帧="失重"</text>
+    </g>
+  </g>
+
+  <!-- Bottom summary -->
+  <g transform="translate(25, 468)">
+    <rect x="0" y="0" width="750" height="22" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="3"/>
+    <text x="12" y="15" class="note" fill="#2980B9">
+      <tspan font-weight="bold">记忆法则：</tspan>
+      <tspan fill="#E74C3C">攻击</tspan> = 蓄力快(60-80ms) + 命中长(120-200ms) ——
+      <tspan fill="#27AE60">跳跃</tspan> = 腾空快(60-80ms) + 顶点长(120-180ms) ——
+      快速帧 = 反应力 / 长帧 = 重量感
+    </text>
+  </g>
+</svg>

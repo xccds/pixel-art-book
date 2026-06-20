@@ -1,0 +1,374 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .principle-name { font-size: 11px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .principle-en { font-size: 8px; fill: #999; text-anchor: middle; }
+    .principle-desc { font-size: 8px; fill: #555; text-anchor: middle; }
+    .frame-num { font-size: 7px; fill: #999; text-anchor: middle; }
+    .note { font-size: 7px; fill: #aaa; }
+  </style>
+
+  <text x="400" y="24" class="title" text-anchor="middle">图 制作05.1  动画 5 条核心原则——从迪士尼 12 条中精选对独立游戏最重要的</text>
+  <text x="400" y="40" class="subtitle" text-anchor="middle">每条原则用 3-4 帧的 stick figure 展示——注意帧与帧之间的"关键变化"</text>
+
+  <!-- Principle 1: Squash & Stretch -->
+  <g transform="translate(18, 52)">
+    <rect x="0" y="0" width="145" height="200" fill="#FAFAFA" stroke="#E74C3C" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="28" fill="#E74C3C" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="14" fill="#E74C3C" opacity="0.12"/>
+    <text x="72" y="12" class="principle-name" fill="#E74C3C">挤压拉伸</text>
+    <text x="72" y="24" class="principle-en">Squash &amp; Stretch</text>
+
+    <!-- Stick figure animation sequence -->
+    <!-- Frame 1: Standing -->
+    <g transform="translate(14, 48)">
+      <text x="12" y="0" class="frame-num">F1 站立</text>
+      <!-- Head -->
+      <circle cx="12" cy="18" r="7" fill="none" stroke="#333" stroke-width="1.5"/>
+      <!-- Body -->
+      <line x1="12" y1="25" x2="12" y2="40" stroke="#333" stroke-width="1.5"/>
+      <!-- Arms -->
+      <line x1="12" y1="30" x2="2" y2="36" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="30" x2="22" y2="36" stroke="#333" stroke-width="1.2"/>
+      <!-- Legs -->
+      <line x1="12" y1="40" x2="6" y2="52" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="40" x2="18" y2="52" stroke="#333" stroke-width="1.5"/>
+    </g>
+
+    <!-- Frame 2: Squash (compress down) -->
+    <g transform="translate(55, 48)">
+      <text x="12" y="0" class="frame-num">F2 下压</text>
+      <ellipse cx="12" cy="20" rx="10" ry="5" fill="none" stroke="#E74C3C" stroke-width="1.5"/>
+      <line x1="12" y1="25" x2="12" y2="36" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="28" x2="4" y2="32" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="28" x2="20" y2="32" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="36" x2="8" y2="48" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="36" x2="16" y2="48" stroke="#333" stroke-width="1.5"/>
+      <!-- Squash arrows -->
+      <text x="12" y="62" class="note" fill="#E74C3C">←→ 加宽</text>
+    </g>
+
+    <!-- Frame 3: Stretch (extend up) -->
+    <g transform="translate(96, 48)">
+      <text x="12" y="0" class="frame-num">F3 跃起</text>
+      <ellipse cx="12" cy="18" rx="5" ry="10" fill="none" stroke="#E74C3C" stroke-width="1.5"/>
+      <line x1="12" y1="28" x2="12" y2="45" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="32" x2="4" y2="28" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="32" x2="20" y2="28" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="45" x2="6" y2="54" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="45" x2="18" y2="54" stroke="#333" stroke-width="1.5"/>
+      <text x="12" y="62" class="note" fill="#E74C3C">↕ 拉长</text>
+    </g>
+
+    <text x="72" y="130" class="principle-desc" style="font-size:7.5px;">跳起前身体被"压扁"——</text>
+    <text x="72" y="142" class="principle-desc" style="font-size:7.5px;">跳起时身体被"拉长"——</text>
+    <text x="72" y="154" class="principle-desc" style="font-size:7.5px;">体积不变，形状变</text>
+
+    <rect x="15" y="168" width="115" height="22" fill="#E74C3C" opacity="0.08" rx="3"/>
+    <text x="72" y="183" class="note" fill="#E74C3C" text-anchor="middle">游戏感核心来源</text>
+  </g>
+
+  <!-- Principle 2: Anticipation -->
+  <g transform="translate(173, 52)">
+    <rect x="0" y="0" width="145" height="200" fill="#FAFAFA" stroke="#E67E22" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="28" fill="#E67E22" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="14" fill="#E67E22" opacity="0.12"/>
+    <text x="72" y="12" class="principle-name" fill="#E67E22">预备动作</text>
+    <text x="72" y="24" class="principle-en">Anticipation</text>
+
+    <!-- Attack anticipation sequence -->
+    <g transform="translate(14, 48)">
+      <text x="12" y="0" class="frame-num">F1 持剑</text>
+      <circle cx="12" cy="16" r="6" fill="none" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="22" x2="12" y2="36" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="27" x2="22" y2="22" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="27" x2="4" y2="34" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="36" x2="6" y2="48" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="36" x2="18" y2="48" stroke="#333" stroke-width="1.5"/>
+      <!-- Sword -->
+      <line x1="4" y1="34" x2="-2" y2="18" stroke="#333" stroke-width="1.5"/>
+    </g>
+
+    <g transform="translate(55, 48)">
+      <text x="12" y="0" class="frame-num">F2 后摆</text>
+      <circle cx="14" cy="16" r="6" fill="none" stroke="#E67E22" stroke-width="1.5"/>
+      <line x1="14" y1="22" x2="14" y2="36" stroke="#333" stroke-width="1.5"/>
+      <line x1="14" y1="27" x2="22" y2="22" stroke="#333" stroke-width="1.2"/>
+      <line x1="14" y1="27" x2="4" y2="30" stroke="#333" stroke-width="1.2"/>
+      <line x1="14" y1="36" x2="8" y2="48" stroke="#333" stroke-width="1.5"/>
+      <line x1="14" y1="36" x2="20" y2="48" stroke="#333" stroke-width="1.5"/>
+      <!-- Sword swings back -->
+      <line x1="4" y1="30" x2="-6" y2="14" stroke="#E67E22" stroke-width="1.8"/>
+      <text x="12" y="62" class="note" fill="#E67E22">← 后摆</text>
+    </g>
+
+    <g transform="translate(96, 48)">
+      <text x="12" y="0" class="frame-num">F3 前斩</text>
+      <circle cx="10" cy="16" r="6" fill="none" stroke="#333" stroke-width="1.5"/>
+      <line x1="10" y1="22" x2="10" y2="36" stroke="#333" stroke-width="1.5"/>
+      <line x1="10" y1="27" x2="20" y2="22" stroke="#333" stroke-width="1.2"/>
+      <line x1="10" y1="27" x2="0" y2="32" stroke="#333" stroke-width="1.2"/>
+      <line x1="10" y1="36" x2="4" y2="48" stroke="#333" stroke-width="1.5"/>
+      <line x1="10" y1="36" x2="16" y2="48" stroke="#333" stroke-width="1.5"/>
+      <!-- Sword swings forward -->
+      <line x1="20" y1="22" x2="34" y2="6" stroke="#333" stroke-width="1.8"/>
+      <!-- Speed lines -->
+      <line x1="33" y1="5" x2="38" y2="3" stroke="#E67E22" stroke-width="0.8"/>
+      <line x1="32" y1="9" x2="36" y2="8" stroke="#E67E22" stroke-width="0.8"/>
+      <text x="12" y="62" class="note" fill="#E67E22">→ 前斩!</text>
+    </g>
+
+    <text x="72" y="130" class="principle-desc" style="font-size:7.5px;">任何动作之前先向反方向</text>
+    <text x="72" y="142" class="principle-desc" style="font-size:7.5px;">摆一下——给玩家大脑</text>
+    <text x="72" y="154" class="principle-desc" style="font-size:7.5px;">0.1秒的"预判时间"</text>
+
+    <rect x="15" y="168" width="115" height="22" fill="#E67E22" opacity="0.08" rx="3"/>
+    <text x="72" y="183" class="note" fill="#E67E22" text-anchor="middle">攻击可读性的关键</text>
+  </g>
+
+  <!-- Principle 3: Slow In & Slow Out -->
+  <g transform="translate(328, 52)">
+    <rect x="0" y="0" width="145" height="200" fill="#FAFAFA" stroke="#2ECC71" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="28" fill="#2ECC71" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="14" fill="#2ECC71" opacity="0.12"/>
+    <text x="72" y="12" class="principle-name" fill="#27AE60">缓入缓出</text>
+    <text x="72" y="24" class="principle-en">Slow In &amp; Slow Out</text>
+
+    <!-- Easing curve + ball drop -->
+    <g transform="translate(25, 44)">
+      <!-- Easing curve diagram -->
+      <text x="47" y="0" class="frame-num" text-anchor="middle">时间→</text>
+      <!-- Spacing dots showing easing -->
+      <circle cx="10" cy="16" r="2" fill="#2ECC71"/><text x="14" y="19" class="note" text-anchor="middle">慢</text>
+      <circle cx="32" cy="12" r="2" fill="#2ECC71"/>
+      <circle cx="48" cy="8" r="2" fill="#2ECC71"/><text x="54" y="19" class="note" text-anchor="middle">快</text>
+      <circle cx="64" cy="12" r="2" fill="#2ECC71"/>
+      <circle cx="80" cy="16" r="2" fill="#2ECC71"/><text x="84" y="19" class="note" text-anchor="middle">慢</text>
+
+      <!-- Ball drop with easing frames -->
+      <g transform="translate(10, 30)">
+        <!-- Frame 1: Top, slow -->
+        <circle cx="10" cy="6" r="4" fill="#2ECC71" opacity="0.4"/>
+        <text x="10" y="2" class="frame-num">F1</text>
+        <!-- Frame 2: Middle, faster -->
+        <circle cx="30" cy="18" r="4" fill="#2ECC71" opacity="0.6"/>
+        <text x="30" y="14" class="frame-num">F2</text>
+        <!-- Frame 3: Near bottom, fastest -->
+        <ellipse cx="52" cy="32" rx="5" ry="4" fill="#2ECC71" opacity="0.9"/>
+        <text x="52" y="28" class="frame-num">F3</text>
+        <!-- Frame 4: Bottom squash -->
+        <ellipse cx="72" cy="34" rx="7" ry="3" fill="#2ECC71"/>
+        <text x="72" y="30" class="frame-num">F4</text>
+
+        <!-- Spacing indicators -->
+        <line x1="14" y1="6" x2="14" y2="36" stroke="#E0E0E0" stroke-width="0.3"/>
+        <line x1="34" y1="14" x2="34" y2="36" stroke="#E0E0E0" stroke-width="0.3"/>
+        <line x1="56" y1="28" x2="56" y2="36" stroke="#E0E0E0" stroke-width="0.3"/>
+        <line x1="76" y1="32" x2="76" y2="36" stroke="#E0E0E0" stroke-width="0.3"/>
+
+        <!-- Spacing labels -->
+        <text x="14" y="48" class="note">帧距大</text>
+        <text x="34" y="48" class="note">帧距小</text>
+        <text x="56" y="48" class="note">帧距极小</text>
+        <text x="76" y="48" class="note">帧距极小</text>
+      </g>
+    </g>
+
+    <text x="72" y="155" class="principle-desc" style="font-size:7.5px;">开始慢、中间快、结束慢</text>
+    <text x="72" y="167" class="principle-desc" style="font-size:7.5px;">——不用匀速！相邻帧的</text>
+    <text x="72" y="179" class="principle-desc" style="font-size:7.5px;">间距就是"速度"</text>
+
+    <rect x="15" y="168" width="115" height="22" fill="#27AE60" opacity="0.08" rx="3"/>
+    <text x="72" y="183" class="note" fill="#27AE60" text-anchor="middle">区别"机械"与"自然"</text>
+  </g>
+
+  <!-- Principle 4: Follow Through -->
+  <g transform="translate(483, 52)">
+    <rect x="0" y="0" width="145" height="200" fill="#FAFAFA" stroke="#3498DB" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="28" fill="#3498DB" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="14" fill="#3498DB" opacity="0.12"/>
+    <text x="72" y="12" class="principle-name" fill="#2980B9">跟随动作</text>
+    <text x="72" y="24" class="principle-en">Follow Through</text>
+
+    <!-- Character stopping with hair/cloth still moving -->
+    <g transform="translate(14, 48)">
+      <text x="12" y="0" class="frame-num">F1 奔跑</text>
+      <circle cx="12" cy="16" r="6" fill="none" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="22" x2="12" y2="40" stroke="#333" stroke-width="1.5" transform="rotate(-10,12,22)"/>
+      <line x1="12" y1="28" x2="2" y2="34" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="28" x2="22" y2="34" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="40" x2="6" y2="52" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="40" x2="18" y2="48" stroke="#333" stroke-width="1.5" transform="rotate(15,18,48)"/>
+      <!-- Hair flowing back -->
+      <path d="M8,10 Q3,6 0,8" stroke="#3498DB" stroke-width="1.5" fill="none"/>
+      <path d="M10,10 Q5,6 2,7" stroke="#3498DB" stroke-width="1.5" fill="none"/>
+      <!-- Cape -->
+      <path d="M8,22 Q-2,28 -4,36" stroke="#3498DB" stroke-width="1.5" fill="none"/>
+    </g>
+
+    <g transform="translate(55, 48)">
+      <text x="12" y="0" class="frame-num">F2 停步</text>
+      <circle cx="12" cy="16" r="6" fill="none" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="22" x2="12" y2="40" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="28" x2="4" y2="34" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="28" x2="20" y2="34" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="40" x2="6" y2="50" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="40" x2="18" y2="50" stroke="#333" stroke-width="1.5"/>
+      <!-- Hair still swinging forward -->
+      <path d="M12,10 Q16,6 18,8" stroke="#3498DB" stroke-width="1.5" fill="none"/>
+      <!-- Cape still swinging -->
+      <path d="M12,22 Q18,28 20,34" stroke="#3498DB" stroke-width="1.5" fill="none"/>
+      <text x="12" y="62" class="note" fill="#3498DB">身体停了</text>
+    </g>
+
+    <g transform="translate(96, 48)">
+      <text x="12" y="0" class="frame-num">F3 静止</text>
+      <circle cx="12" cy="16" r="6" fill="none" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="22" x2="12" y2="40" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="28" x2="4" y2="34" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="28" x2="20" y2="34" stroke="#333" stroke-width="1.2"/>
+      <line x1="12" y1="40" x2="6" y2="50" stroke="#333" stroke-width="1.5"/>
+      <line x1="12" y1="40" x2="18" y2="50" stroke="#333" stroke-width="1.5"/>
+      <!-- Hair settled -->
+      <path d="M8,10 Q9,14 10,14" stroke="#3498DB" stroke-width="1.2" fill="none"/>
+      <text x="12" y="62" class="note" fill="#3498DB">头发/披风</text>
+    </g>
+
+    <text x="72" y="130" class="principle-desc" style="font-size:7.5px;">主体停止后——附属物</text>
+    <text x="72" y="142" class="principle-desc" style="font-size:7.5px;">（头发、披风、尾巴）</text>
+    <text x="72" y="154" class="principle-desc" style="font-size:7.5px;">继续运动、再回弹静止</text>
+
+    <rect x="15" y="168" width="115" height="22" fill="#2980B9" opacity="0.08" rx="3"/>
+    <text x="72" y="183" class="note" fill="#2980B9" text-anchor="middle">"活"的权重感</text>
+  </g>
+
+  <!-- Principle 5: Exaggeration -->
+  <g transform="translate(638, 52)">
+    <rect x="0" y="0" width="145" height="200" fill="#FAFAFA" stroke="#9B59B6" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="28" fill="#9B59B6" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="14" fill="#9B59B6" opacity="0.12"/>
+    <text x="72" y="12" class="principle-name" fill="#8E44AD">夸张</text>
+    <text x="72" y="24" class="principle-en">Exaggeration</text>
+
+    <!-- Realistic vs exaggerated punch -->
+    <g transform="translate(14, 48)">
+      <text x="12" y="0" class="frame-num">真实摆拳</text>
+      <circle cx="12" cy="14" r="6" fill="none" stroke="#999" stroke-width="1"/>
+      <line x1="12" y1="20" x2="12" y2="34" stroke="#999" stroke-width="1"/>
+      <line x1="12" y1="24" x2="4" y2="30" stroke="#999" stroke-width="1"/>
+      <line x1="12" y1="24" x2="20" y2="18" stroke="#999" stroke-width="1"/>
+      <line x1="12" y1="34" x2="6" y2="46" stroke="#999" stroke-width="1"/>
+      <line x1="12" y1="34" x2="18" y2="46" stroke="#999" stroke-width="1"/>
+      <text x="12" y="58" class="note" fill="#999">太"平"——像真人</text>
+      <text x="12" y="68" class="note" fill="#999">不像游戏角色</text>
+    </g>
+
+    <g transform="translate(55, 48)">
+      <text x="12" y="0" class="frame-num">F1 蓄力</text>
+      <circle cx="14" cy="14" r="6" fill="none" stroke="#333" stroke-width="1.5"/>
+      <line x1="14" y1="20" x2="14" y2="34" stroke="#333" stroke-width="1.5"/>
+      <line x1="14" y1="24" x2="24" y2="28" stroke="#333" stroke-width="1.2"/>
+      <line x1="14" y1="24" x2="2" y2="20" stroke="#9B59B6" stroke-width="1.8"/>
+      <line x1="14" y1="34" x2="8" y2="46" stroke="#333" stroke-width="1.5"/>
+      <line x1="14" y1="34" x2="20" y2="46" stroke="#333" stroke-width="1.5"/>
+      <text x="12" y="62" class="note" fill="#9B59B6">拳拉得更远</text>
+    </g>
+
+    <g transform="translate(96, 48)">
+      <text x="12" y="0" class="frame-num">F2 出拳!</text>
+      <circle cx="10" cy="14" r="6" fill="none" stroke="#333" stroke-width="1.5"/>
+      <line x1="10" y1="20" x2="10" y2="34" stroke="#333" stroke-width="1.5" transform="rotate(5,10,20)"/>
+      <line x1="10" y1="24" x2="0" y2="30" stroke="#333" stroke-width="1.2"/>
+      <line x1="10" y1="24" x2="28" y2="10" stroke="#9B59B6" stroke-width="2.5"/>
+      <line x1="10" y1="34" x2="4" y2="46" stroke="#333" stroke-width="1.5"/>
+      <line x1="10" y1="34" x2="16" y2="46" stroke="#333" stroke-width="1.5"/>
+      <!-- Impact burst / speed lines -->
+      <line x1="30" y1="8" x2="34" y2="4" stroke="#9B59B6" stroke-width="1"/>
+      <line x1="29" y1="12" x2="33" y2="9" stroke="#9B59B6" stroke-width="1"/>
+      <line x1="28" y1="16" x2="31" y2="14" stroke="#9B59B6" stroke-width="1"/>
+      <text x="12" y="62" class="note" fill="#9B59B6">打得更远!</text>
+    </g>
+
+    <text x="72" y="130" class="principle-desc" style="font-size:7.5px;">现实动作 × 1.5 或更多</text>
+    <text x="72" y="142" class="principle-desc" style="font-size:7.5px;">——游戏不是模拟器</text>
+    <text x="72" y="154" class="principle-desc" style="font-size:7.5px;">你的角色不是真人</text>
+
+    <rect x="15" y="168" width="115" height="22" fill="#8E44AD" opacity="0.08" rx="3"/>
+    <text x="72" y="183" class="note" fill="#8E44AD" text-anchor="middle">从"真实"到"好玩"</text>
+  </g>
+
+  <!-- Bottom: comparison row -->
+  <g transform="translate(18, 262)">
+    <rect x="0" y="0" width="765" height="70" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="6"/>
+
+    <text x="15" y="18" style="font-size:10px;font-weight:bold;fill:#2980B9;">💻 程序员类比：动画 = 关键帧之间的"插值"——但你不是用 lerp() 做匀速运动</text>
+
+    <g transform="translate(15, 30)">
+      <!-- Bad easing -->
+      <rect x="0" y="0" width="340" height="32" fill="#fff" rx="3"/>
+      <text x="10" y="13" class="note" fill="#666">❌ 引擎的默认匀速：<tspan fill="#E74C3C" font-weight="bold">position = lerp(start, end, t)</tspan> ——每一步的视觉间距相同</text>
+      <text x="10" y="26" class="note" fill="#999">结果：你的动画"机器人感"——因为真实世界没有东西是匀速运动的</text>
+    </g>
+
+    <g transform="translate(390, 30)">
+      <rect x="0" y="0" width="360" height="32" fill="#fff" rx="3"/>
+      <text x="10" y="13" class="note" fill="#666">✅ 用缓动公式：<tspan fill="#27AE60" font-weight="bold">position = lerp(start, end, easeInOut(t))</tspan></text>
+      <text x="10" y="26" class="note" fill="#999">——开头的帧密集（慢）、中间稀疏（快）、末尾再密集（慢）</text>
+    </g>
+  </g>
+
+  <!-- Bottom: 5 principles summary bar -->
+  <g transform="translate(18, 342)">
+    <rect x="0" y="0" width="765" height="150" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="6"/>
+
+    <text x="15" y="20" style="font-size:10px;font-weight:bold;fill:#333;">五条原则在游戏中的应用对照</text>
+    <line x1="15" y1="26" x2="750" y2="26" stroke="#E0E0E0" stroke-width="0.5"/>
+
+    <g transform="translate(15, 40)">
+      <rect x="0" y="0" width="140" height="90" fill="#fff" stroke="#E74C3C" stroke-width="0.8" rx="3"/>
+      <text x="70" y="16" class="note" fill="#E74C3C" text-anchor="middle" font-weight="bold">挤压拉伸</text>
+      <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">跳跃的压缩/拉长</text>
+      <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">受击的身体变形</text>
+      <text x="70" y="60" class="note" fill="#555" text-anchor="middle" font-size="7">挥砍的武器弧线</text>
+      <text x="70" y="78" class="note" fill="#E74C3C" text-anchor="middle" font-size="7">→ 游戏感的"第一来源"</text>
+    </g>
+
+    <g transform="translate(165, 40)">
+      <rect x="0" y="0" width="140" height="90" fill="#fff" stroke="#E67E22" stroke-width="0.8" rx="3"/>
+      <text x="70" y="16" class="note" fill="#E67E22" text-anchor="middle" font-weight="bold">预备动作</text>
+      <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">Boss 攻击前摇</text>
+      <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">跳跃前下蹲</text>
+      <text x="70" y="60" class="note" fill="#555" text-anchor="middle" font-size="7">开门前伸手</text>
+      <text x="70" y="78" class="note" fill="#E67E22" text-anchor="middle" font-size="7">→ 让玩家有"反应窗口"</text>
+    </g>
+
+    <g transform="translate(315, 40)">
+      <rect x="0" y="0" width="140" height="90" fill="#fff" stroke="#27AE60" stroke-width="0.8" rx="3"/>
+      <text x="70" y="16" class="note" fill="#27AE60" text-anchor="middle" font-weight="bold">缓入缓出</text>
+      <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">所有 UI 过渡</text>
+      <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">摄像机平滑跟随</text>
+      <text x="70" y="60" class="note" fill="#555" text-anchor="middle" font-size="7">平台移动/电梯</text>
+      <text x="70" y="78" class="note" fill="#27AE60" text-anchor="middle" font-size="7">→ 区分"死的"和"活的"</text>
+    </g>
+
+    <g transform="translate(465, 40)">
+      <rect x="0" y="0" width="140" height="90" fill="#fff" stroke="#2980B9" stroke-width="0.8" rx="3"/>
+      <text x="70" y="16" class="note" fill="#2980B9" text-anchor="middle" font-weight="bold">跟随动作</text>
+      <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">角色停步后披风飘</text>
+      <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">武器挥砍后回弹</text>
+      <text x="70" y="60" class="note" fill="#555" text-anchor="middle" font-size="7">UI 弹窗的弹性</text>
+      <text x="70" y="78" class="note" fill="#2980B9" text-anchor="middle" font-size="7">→ 创造"重量感"和"材质"</text>
+    </g>
+
+    <g transform="translate(615, 40)">
+      <rect x="0" y="0" width="140" height="90" fill="#fff" stroke="#8E44AD" stroke-width="0.8" rx="3"/>
+      <text x="70" y="16" class="note" fill="#8E44AD" text-anchor="middle" font-weight="bold">夸张</text>
+      <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">攻击特效的放大</text>
+      <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">死亡动画的戏剧化</text>
+      <text x="70" y="60" class="note" fill="#555" text-anchor="middle" font-size="7">获得物品的庆祝感</text>
+      <text x="70" y="78" class="note" fill="#8E44AD" text-anchor="middle" font-size="7">→ 你做的不是模拟器</text>
+    </g>
+  </g>
+</svg>

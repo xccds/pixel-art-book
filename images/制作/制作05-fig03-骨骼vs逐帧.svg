@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .col-title { font-size: 13px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .col-sub { font-size: 9px; fill: #fff; opacity: 0.85; text-anchor: middle; }
+    .step-label { font-size: 9px; font-weight: bold; fill: #333; }
+    .step-desc { font-size: 8px; fill: #555; }
+    .pro-item { font-size: 8px; fill: #27AE60; }
+    .con-item { font-size: 8px; fill: #E74C3C; }
+    .note { font-size: 7.5px; fill: #999; }
+  </style>
+
+  <text x="400" y="26" class="title" text-anchor="middle">图 制作05.3  骨骼动画 vs 逐帧动画——不是"哪个好"的问题，是"哪个适合你"的问题</text>
+  <text x="400" y="44" class="subtitle" text-anchor="middle">选骨骼：快速迭代+多方向+一致性要求高 / 选逐帧：独特风格+小分辨率+帧数少</text>
+
+  <!-- Left column: Bone Animation -->
+  <g transform="translate(18, 60)">
+    <rect x="0" y="0" width="375" height="425" fill="#FAFAFA" stroke="#2980B9" stroke-width="2" rx="8"/>
+
+    <!-- Column header -->
+    <rect x="0" y="0" width="375" height="42" fill="#2980B9" rx="8"/>
+    <rect x="0" y="21" width="375" height="21" fill="#2980B9"/>
+    <text x="188" y="16" class="col-title">骨骼动画 Bone Animation</text>
+    <text x="188" y="34" class="col-sub">Spine / DragonBones / Unity 2D Animation</text>
+
+    <!-- Visual: bone rig -->
+    <g transform="translate(25, 55)">
+      <text x="162" y="0" class="step-label" text-anchor="middle">同一套骨骼——不同姿势 = 旋转节点</text>
+
+      <!-- Pose 1: Standing -->
+      <g transform="translate(20, 15)">
+        <text x="30" y="-5" class="note" text-anchor="middle">站姿</text>
+        <!-- Head -->
+        <circle cx="30" cy="18" r="10" fill="#D4A574" stroke="#A0845C" stroke-width="0.8"/>
+        <!-- Eyes -->
+        <circle cx="26" cy="16" r="2" fill="#333"/>
+        <circle cx="34" cy="16" r="2" fill="#333"/>
+        <!-- Body -->
+        <rect x="22" y="28" width="16" height="28" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5"/>
+        <!-- Arms (from shoulder joints) -->
+        <rect x="10" y="30" width="8" height="24" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-8,14,30)"/>
+        <rect x="42" y="30" width="8" height="24" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(8,46,30)"/>
+        <!-- Legs (from hip joints) -->
+        <rect x="24" y="56" width="8" height="20" fill="#2E4053" rx="3"/>
+        <rect x="32" y="56" width="8" height="20" fill="#2E4053" rx="3"/>
+        <!-- Joint dots -->
+        <circle cx="14" cy="30" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
+        <circle cx="46" cy="30" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
+        <circle cx="26" cy="56" r="3" fill="#3498DB" stroke="#2980B9" stroke-width="0.5"/>
+        <circle cx="38" cy="56" r="3" fill="#3498DB" stroke="#2980B9" stroke-width="0.5"/>
+      </g>
+
+      <!-- Pose 2: Run pose (same rig, rotated joints) -->
+      <g transform="translate(120, 15)">
+        <text x="30" y="-5" class="note" text-anchor="middle">跑步</text>
+        <!-- Head (same, maybe tilted) -->
+        <circle cx="30" cy="16" r="10" fill="#D4A574" stroke="#A0845C" stroke-width="0.8" transform="rotate(-5,30,16)"/>
+        <circle cx="25" cy="14" r="2" fill="#333"/>
+        <circle cx="33" cy="14" r="2" fill="#333"/>
+        <!-- Body tilted -->
+        <rect x="20" y="28" width="16" height="28" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5" transform="rotate(-8,28,42)"/>
+        <!-- Arms rotated -->
+        <rect x="10" y="26" width="8" height="24" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(20,14,30)"/>
+        <rect x="40" y="28" width="8" height="24" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-15,44,30)"/>
+        <!-- Legs rotated -->
+        <rect x="22" y="56" width="8" height="20" fill="#2E4053" rx="3" transform="rotate(10,26,60)"/>
+        <rect x="34" y="54" width="8" height="20" fill="#2E4053" rx="3" transform="rotate(-12,38,60)"/>
+        <!-- Same joint dots -->
+        <circle cx="12" cy="28" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
+        <circle cx="44" cy="28" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
+        <circle cx="24" cy="56" r="3" fill="#3498DB" stroke="#2980B9" stroke-width="0.5"/>
+        <circle cx="36" cy="56" r="3" fill="#3498DB" stroke="#2980B9" stroke-width="0.5"/>
+      </g>
+
+      <!-- Pose 3: Attack (same rig, extreme rotation) -->
+      <g transform="translate(220, 15)">
+        <text x="30" y="-5" class="note" text-anchor="middle">攻击</text>
+        <circle cx="30" cy="15" r="10" fill="#D4A574" stroke="#A0845C" stroke-width="0.8"/>
+        <circle cx="26" cy="13" r="2" fill="#333"/>
+        <circle cx="34" cy="13" r="2" fill="#333"/>
+        <rect x="22" y="25" width="16" height="28" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5" transform="rotate(-12,30,39)"/>
+        <!-- Sword arm: extreme rotation forward -->
+        <rect x="38" y="22" width="8" height="26" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-40,42,22)"/>
+        <!-- Sword -->
+        <rect x="44" y="0" width="4" height="26" fill="#BDC3C7" rx="1" transform="rotate(-40,46,4)"/>
+        <circle cx="40" cy="24" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
+        <!-- Other arm -->
+        <rect x="10" y="30" width="8" height="22" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(8,14,30)"/>
+        <circle cx="14" cy="30" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
+        <rect x="24" y="56" width="8" height="20" fill="#2E4053" rx="3"/>
+        <rect x="32" y="56" width="8" height="20" fill="#2E4053" rx="3"/>
+        <circle cx="26" cy="56" r="3" fill="#3498DB"/>
+        <circle cx="38" cy="56" r="3" fill="#3498DB"/>
+      </g>
+
+      <text x="162" y="95" class="note" text-anchor="middle">← 同一个"骨骼"，旋转 3 组关节 → 3 个不同姿势</text>
+    </g>
+
+    <!-- Pros -->
+    <g transform="translate(20, 175)">
+      <text x="0" y="0" class="step-label" fill="#2980B9">✓ 优点</text>
+      <text x="0" y="15" class="pro-item">• 1 个角色 + 1 套骨骼 = 无限姿势（旋转节点即可）</text>
+      <text x="0" y="30" class="pro-item">• 改一个姿势不需要重画全部帧——改姿态参数</text>
+      <text x="0" y="45" class="pro-item">• 多方向角色只需旋转骨骼根节点——不需要"画 4 个方向的所有帧"</text>
+      <text x="0" y="60" class="pro-item">• 换装/换武器：替换纹理 + 骨骼不变 = 所有动画复用</text>
+      <text x="0" y="75" class="pro-item">• 动画数据小——存骨骼关键帧而不是每帧的完整图片</text>
+    </g>
+
+    <!-- Cons -->
+    <g transform="translate(20, 270)">
+      <text x="0" y="0" class="step-label" fill="#E74C3C">✗ 缺点</text>
+      <text x="0" y="15" class="con-item">• 需要"骨骼绑定"（Rigging）——这是一项独立的技能</text>
+      <text x="0" y="30" class="con-item">• 骨骼的"机械感"——关节过渡可能看起来像"机器人"</text>
+      <text x="0" y="45" class="con-item">• 不适合极小的分辨率（如 16×16）——像素级细节无法用骨骼控制</text>
+      <text x="0" y="60" class="con-item">• 复杂骨骼需要 Mesh Deformation（FFD）——入门门槛高</text>
+      <text x="0" y="75" class="con-item">• 风格约束：极简风格（非像素）骨骼效果最好</text>
+    </g>
+
+    <!-- Recommendation badge -->
+    <g transform="translate(20, 365)">
+      <rect x="0" y="0" width="335" height="40" fill="#2980B9" opacity="0.1" rx="4"/>
+      <text x="10" y="16" class="step-label" fill="#2980B9">推荐场景：</text>
+      <text x="10" y="30" class="step-desc" fill="#333">手绘 2D 风格 + 多方向角色 + 频繁迭代动画 + 需要换装系统</text>
+    </g>
+  </g>
+
+  <!-- Right column: Frame-by-Frame Animation -->
+  <g transform="translate(408, 60)">
+    <rect x="0" y="0" width="375" height="425" fill="#FAFAFA" stroke="#E74C3C" stroke-width="2" rx="8"/>
+
+    <!-- Column header -->
+    <rect x="0" y="0" width="375" height="42" fill="#E74C3C" rx="8"/>
+    <rect x="0" y="21" width="375" height="21" fill="#E74C3C"/>
+    <text x="188" y="16" class="col-title">逐帧动画 Frame-by-Frame</text>
+    <text x="188" y="34" class="col-sub">Aseprite / Photoshop Timeline / Krita</text>
+
+    <!-- Visual: frame strip -->
+    <g transform="translate(25, 55)">
+      <text x="162" y="0" class="step-label" text-anchor="middle">每帧独立绘制——9 帧 = 9 次"重新画"</text>
+
+      <!-- Frame strip: 9 frames of a character -->
+      <!-- F1 -->
+      <rect x="2" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="18" y="41" width="5" height="10" fill="#2E4053"/>
+
+      <!-- F2 -->
+      <rect x="42" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="14" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="16" y="41" width="6" height="10" fill="#2E4053"/>
+
+      <!-- F3 -->
+      <rect x="82" y="10" width="36" height="48" fill="#1A1A2E" stroke="#E74C3C" stroke-width="0.8" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="19" y="41" width="5" height="10" fill="#2E4053"/>
+
+      <!-- F4 -->
+      <rect x="122" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="16" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="20" y="41" width="5" height="10" fill="#2E4053"/>
+
+      <!-- F5 -->
+      <rect x="162" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="17" y="41" width="5" height="10" fill="#2E4053"/>
+
+      <!-- F6 -->
+      <rect x="202" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="14" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="15" y="41" width="6" height="10" fill="#2E4053"/>
+
+      <!-- F7 -->
+      <rect x="242" y="10" width="36" height="48" fill="#1A1A2E" stroke="#E74C3C" stroke-width="0.8" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="18" y="41" width="5" height="10" fill="#2E4053"/>
+
+      <!-- F8 -->
+      <rect x="282" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="16" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="20" y="41" width="5" height="10" fill="#2E4053"/>
+
+      <!-- F9 -->
+      <rect x="322" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="17" y="41" width="5" height="10" fill="#2E4053"/>
+
+      <!-- Frame numbering -->
+      <text x="20" y="72" class="note" text-anchor="middle">F1</text>
+      <text x="60" y="72" class="note" text-anchor="middle">F2</text>
+      <text x="100" y="72" class="note" text-anchor="middle" fill="#E74C3C">F3</text>
+      <text x="140" y="72" class="note" text-anchor="middle">F4</text>
+      <text x="180" y="72" class="note" text-anchor="middle">F5</text>
+      <text x="220" y="72" class="note" text-anchor="middle">F6</text>
+      <text x="260" y="72" class="note" text-anchor="middle" fill="#E74C3C">F7</text>
+      <text x="300" y="72" class="note" text-anchor="middle">F8</text>
+      <text x="340" y="72" class="note" text-anchor="middle">F9</text>
+
+      <text x="185" y="90" class="note" text-anchor="middle" fill="#E74C3C">红色框 = 关键帧（Keyframe） —— 非关键帧（In-between）可以由助手/AI 补充</text>
+    </g>
+
+    <!-- Pros -->
+    <g transform="translate(20, 175)">
+      <text x="0" y="0" class="step-label" fill="#27AE60">✓ 优点</text>
+      <text x="0" y="15" class="pro-item">• 每帧可控——你不会被骨骼的"机械感"限制</text>
+      <text x="0" y="30" class="pro-item">• 像素艺术的唯一正确做法——骨骼无法处理像素级的细节</text>
+      <text x="0" y="45" class="pro-item">• 独特风格——动画师的手绘"个性"在每一帧中</text>
+      <text x="0" y="60" class="pro-item">• 帧数少时（每动作 2-6 帧）——成本低于骨骼 + 绑定 + 调试</text>
+      <text x="0" y="75" class="pro-item">• 不需要学习骨骼绑定工具链</text>
+    </g>
+
+    <!-- Cons -->
+    <g transform="translate(20, 270)">
+      <text x="0" y="0" class="step-label" fill="#E74C3C">✗ 缺点</text>
+      <text x="0" y="15" class="con-item">• 修改一个动作 = 重画该动作的所有帧——9 帧 = 9 次修改</text>
+      <text x="0" y="30" class="con-item">• 多方向角色——4 方向 × 每方向 n 帧 = 工作量 × 4</text>
+      <text x="0" y="45" class="con-item">• 帧数多时（每动作 8+ 帧）→ 总帧数爆炸（见 图 制作05.2）</text>
+      <text x="0" y="60" class="con-item">• 一致性难——不同帧中的角色"围巾"可能每条帧都长得不一样</text>
+      <text x="0" y="75" class="con-item">• 换装系统极度困难——新服装 = 重画所有帧</text>
+    </g>
+
+    <!-- Recommendation badge -->
+    <g transform="translate(20, 365)">
+      <rect x="0" y="0" width="335" height="40" fill="#E74C3C" opacity="0.1" rx="4"/>
+      <text x="10" y="16" class="step-label" fill="#E74C3C">推荐场景：</text>
+      <text x="10" y="30" class="step-desc" fill="#333">像素艺术 + 帧数少 + 单方向 + 追求独特"手感" + 不需要换装</text>
+    </g>
+  </g>
+
+  <!-- Central divider text -->
+  <text x="400" y="55" class="note" fill="#666" text-anchor="middle" font-size="8">没有"哪个好"——只有"哪个适合你"</text>
+</svg>

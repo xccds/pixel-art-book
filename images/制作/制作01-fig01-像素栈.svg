@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .stack-title { font-size: 14px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .tool-name { font-size: 11px; fill: #555; text-anchor: middle; font-weight: bold; }
+    .star-text { font-size: 9px; fill: #666; text-anchor: middle; }
+    .suit-label { font-size: 9.5px; fill: #333; font-weight: bold; }
+    .suit-text { font-size: 8.5px; fill: #555; }
+    .divider { stroke: #ddd; stroke-width: 0.5; }
+    .box-border { fill: none; stroke: #bbb; stroke-width: 1.5; }
+    .header-bg { fill: #E8F4FD; }
+    .tri-label { font-size: 10.5px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .tri-desc { font-size: 8.5px; fill: #666; text-anchor: middle; }
+    .tri-soft { font-size: 8.5px; fill: #999; text-anchor: middle; }
+    .note-text { font-size: 9.5px; fill: #666; text-anchor: middle; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 制作01.1 像素栈——本书锁定的工具链与三原则位置</text>
+
+  <!-- Left: Pixel Stack panel -->
+  <g transform="translate(20, 45)">
+    <rect x="0" y="0" width="360" height="430" class="box-border" fill="#FAFAFA" rx="6"/>
+    <rect x="0" y="0" width="360" height="42" class="header-bg" rx="6"/>
+    <rect x="0" y="36" width="360" height="6" fill="#E8F4FD"/>
+    <text x="180" y="26" class="stack-title">像素栈（本书锁定）</text>
+
+    <text x="180" y="65" class="tool-name">Aseprite</text>
+    <text x="180" y="80" class="star-text">像素精灵编辑器 · $20 买断 / 开源可编译</text>
+    <text x="180" y="100" class="tool-name">Lospec</text>
+    <text x="180" y="115" class="star-text">调色板库 · 免费在线 · 一键导入</text>
+    <text x="180" y="135" class="tool-name">Tiled / LDtk</text>
+    <text x="180" y="150" class="star-text">关卡编辑器 · 免费</text>
+    <text x="180" y="170" class="tool-name">Godot（引擎）</text>
+    <text x="180" y="185" class="star-text">免费开源 · canvas_item 默认 Nearest Neighbor</text>
+
+    <line x1="20" y1="200" x2="340" y2="200" class="divider"/>
+
+    <text x="20" y="220" class="star-text" text-anchor="start">入门成本</text>
+    <text x="340" y="220" class="star-text" text-anchor="end">★★☆☆☆ 低（15 分钟出第一张）</text>
+    <text x="20" y="240" class="star-text" text-anchor="start">产出效率</text>
+    <text x="340" y="240" class="star-text" text-anchor="end">★★★★☆ 高（色板/模板复用）</text>
+    <text x="20" y="260" class="star-text" text-anchor="start">天花板高度</text>
+    <text x="340" y="260" class="star-text" text-anchor="end">★★★★★ 极高（上限=设计力）</text>
+
+    <line x1="20" y1="275" x2="340" y2="275" class="divider"/>
+
+    <text x="20" y="295" class="suit-label">✓ 选它的情况：</text>
+    <text x="20" y="313" class="suit-text">• 2D 平台 / 俯视 / Roguelike，接受整数画布与逐帧</text>
+    <text x="20" y="331" class="suit-text">• "限制越多表达越强"的美学偏好</text>
+    <text x="20" y="349" class="suit-text">• 需要快速产出大量素材（换色即新怪）</text>
+
+    <text x="20" y="375" class="suit-label" fill="#E74C3C">✗ 不选它的情况：</text>
+    <text x="20" y="393" class="suit-text">• 需要平滑动画 / 任意缩放 / 大量 UI 文字</text>
+    <text x="20" y="411" class="suit-text">• 2D 手绘栈与 3D 低模栈不展开——见继续04</text>
+  </g>
+
+  <!-- Right: Impossible triangle -->
+  <g transform="translate(420, 45)">
+    <rect x="0" y="0" width="360" height="430" fill="#FAFAFA" stroke="#bbb" stroke-width="1.5" rx="6"/>
+    <text x="180" y="26" class="stack-title">三原则的不可能三角</text>
+
+    <!-- Triangle -->
+    <polygon points="180,70 70,250 290,250" fill="none" stroke="#3498DB" stroke-width="1.5"/>
+
+    <!-- Vertex labels -->
+    <text x="180" y="62" class="tri-label">入门成本低</text>
+    <text x="60" y="268" class="tri-label" text-anchor="start">产出效率高</text>
+    <text x="300" y="268" class="tri-label" text-anchor="end">天花板高</text>
+
+    <!-- Aseprite dot near the rare triple -->
+    <circle cx="180" cy="195" r="6" fill="#E74C3C"/>
+    <text x="180" y="187" class="tri-desc" fill="#E74C3C" font-weight="bold">Aseprite</text>
+    <text x="180" y="214" class="tri-desc">三项全占——像素栈的稀有之处</text>
+
+    <!-- Other tools position -->
+    <circle cx="108" cy="165" r="4" fill="#F39C12"/>
+    <text x="108" y="158" class="tri-desc">Blender（低模）</text>
+    <text x="108" y="238" class="tri-soft">入门高·效率高·天花板中</text>
+
+    <circle cx="252" cy="165" r="4" fill="#27AE60"/>
+    <text x="252" y="158" class="tri-desc">Krita 手绘</text>
+    <text x="252" y="238" class="tri-soft">入门中·效率低·天花板高</text>
+
+    <line x1="20" y1="280" x2="340" y2="280" class="divider"/>
+
+    <text x="180" y="302" class="suit-label" text-anchor="middle">本书为什么锁定 Aseprite + Godot</text>
+    <text x="20" y="322" class="suit-text">• Aseprite：每行代码为像素写，图层/帧/索引色原生</text>
+    <text x="20" y="340" class="suit-text">• Godot：免费开源，纹理默认 Nearest Neighbor，</text>
+    <text x="20" y="355" class="suit-text">  导入 PNG 不抗锯齿，像素不糊</text>
+    <text x="20" y="376" class="suit-text">• 管线极短：.aseprite → PNG → Godot 即可上线</text>
+    <text x="20" y="397" class="suit-text">• 选兵器就此坍缩——你直接开始画</text>
+  </g>
+
+  <text x="400" y="490" class="note-text">不是选"最强的工具"——是选"在你当前项目规模上最不慢的"。像素栈入门低 × 效率高 = 第一个月生存概率最高。</text>
+</svg>

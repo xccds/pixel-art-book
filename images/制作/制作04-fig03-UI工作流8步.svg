@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .step-num { font-size: 14px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .step-name { font-size: 11px; font-weight: bold; fill: #333; }
+    .step-en { font-size: 8px; fill: #999; }
+    .step-desc { font-size: 8.5px; fill: #555; }
+    .step-detail { font-size: 8px; fill: #888; }
+    .arrow-label { font-size: 8px; fill: #E74C3C; font-weight: bold; }
+    .source { font-size: 7.5px; fill: #aaa; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 制作04.3  8 步 UI 工作顺序——从布局到真人测试，不可跳级</text>
+  <text x="400" y="46" class="subtitle" text-anchor="middle">来源：Respawn Entertainment UI 设计指南——独立开发者可以跳过像素精度，但不可以跳过"验证"</text>
+
+  <text x="42" y="53" class="source">来源：Respawn Guide "8-Step UI Workflow"</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(30, 62)">
+    <rect x="0" y="0" width="340" height="50" fill="#E74C3C" rx="4" opacity="0.08"/>
+    <circle cx="25" cy="25" r="16" fill="#E74C3C"/>
+    <text x="25" y="30" class="step-num" font-size="14">1</text>
+    <text x="50" y="18" class="step-name">布局层次（Layout Hierarchy）</text>
+    <text x="50" y="32" class="step-desc">决定什么在最前/最中/最后。核心信息（血/魔/弹药）→ 位置固定在</text>
+    <text x="50" y="44" class="step-detail">屏幕四角；次要信息（buff/debuff）→ 中央偏下；临时信息（伤害数字）→ 顶部弹出</text>
+  </g>
+
+  <g transform="translate(195, 110)">
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
+    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
+    <text x="10" y="10" class="arrow-label">↓ 验证布局在不同分辨率下是否合理</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(30, 122)">
+    <rect x="0" y="0" width="340" height="50" fill="#E67E22" rx="4" opacity="0.08"/>
+    <circle cx="25" cy="25" r="16" fill="#E67E22"/>
+    <text x="25" y="30" class="step-num">2</text>
+    <text x="50" y="18" class="step-name">安全区（Safe Zone）</text>
+    <text x="50" y="32" class="step-desc">不同屏幕有不同的裁剪/过扫描区。UI 元素必须在安全区内——</text>
+    <text x="50" y="44" class="step-detail">16:9 安全区 ≈ 90% 屏幕面积；手机安全区 ≈ 85%（避开刘海/圆角/手势条）</text>
+  </g>
+
+  <g transform="translate(195, 170)">
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
+    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
+    <text x="10" y="10" class="arrow-label">↓ 比例完成 → 切入引擎实现</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(30, 182)">
+    <rect x="0" y="0" width="340" height="50" fill="#2ECC71" rx="4" opacity="0.08"/>
+    <circle cx="25" cy="25" r="16" fill="#2ECC71"/>
+    <text x="25" y="30" class="step-num">3</text>
+    <text x="50" y="18" class="step-name">先建 HUD（HUD First）</text>
+    <text x="50" y="32" class="step-desc">在引擎中实现 HUD 原型——不是"先做完整界面再做 HUD"。用</text>
+    <text x="50" y="44" class="step-detail">引擎的 UI Canvas 系统存放矩形色块占位——先让数据"流"出来</text>
+  </g>
+
+  <g transform="translate(195, 230)">
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
+    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
+    <text x="10" y="10" class="arrow-label">↓ HUD 可用 → 进入测试循环</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(30, 242)">
+    <rect x="0" y="0" width="340" height="50" fill="#3498DB" rx="4" opacity="0.08"/>
+    <circle cx="25" cy="25" r="16" fill="#3498DB"/>
+    <text x="25" y="30" class="step-num">4</text>
+    <text x="50" y="18" class="step-name">测试可读性（Readability Test）</text>
+    <text x="50" y="32" class="step-desc">不同距离/光照/运动状态下 HUD 可读吗？关键测试：</text>
+    <text x="50" y="44" class="step-detail">①退后2米看屏幕 ②在强烈背光下看 ③在角色高速移动中读HUD数字</text>
+  </g>
+
+  <g transform="translate(195, 290)">
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
+    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
+    <text x="10" y="10" class="arrow-label">↓ 可读性通过 → 考虑不同视觉能力的人</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g transform="translate(30, 302)">
+    <rect x="0" y="0" width="340" height="50" fill="#9B59B6" rx="4" opacity="0.08"/>
+    <circle cx="25" cy="25" r="16" fill="#9B59B6"/>
+    <text x="25" y="30" class="step-num">5</text>
+    <text x="50" y="18" class="step-name">色盲模拟（Color Blindness Simulation）</text>
+    <text x="50" y="32" class="step-desc">至少模拟红色盲（Protanopia）和绿色盲（Deuteranopia）。</text>
+    <text x="50" y="44" class="step-detail">关掉颜色只看明度——如果信息在灰度中仍然可辨识→通过</text>
+  </g>
+
+  <g transform="translate(195, 350)">
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
+    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
+    <text x="10" y="10" class="arrow-label">↓ 色盲通过 → UI 已经是"真实的"了 → 让它"活的"</text>
+  </g>
+
+  <!-- Step 6 -->
+  <g transform="translate(30, 362)">
+    <rect x="0" y="0" width="340" height="50" fill="#F1C40F" rx="4" opacity="0.08"/>
+    <circle cx="25" cy="25" r="16" fill="#F1C40F"/>
+    <text x="25" y="30" class="step-num" fill="#333">6</text>
+    <text x="50" y="18" class="step-name">添加 Juice 反馈（Juice &amp; Feedback）</text>
+    <text x="50" y="32" class="step-desc">血量低于 25% 的闪红/抖动、升级弹窗的弹出动画、</text>
+    <text x="50" y="44" class="step-detail">获得物品的飞入效果。这些是"让HUD有生命"的微交互——但必须在前5步全过之后再加</text>
+  </g>
+
+  <g transform="translate(195, 410)">
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
+    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
+    <text x="10" y="10" class="arrow-label">↓ Juice 完成 → 接入无障碍系统</text>
+  </g>
+
+  <!-- Step 7 -->
+  <g transform="translate(30, 422)">
+    <rect x="0" y="0" width="340" height="50" fill="#1ABC9C" rx="4" opacity="0.08"/>
+    <circle cx="25" cy="25" r="16" fill="#1ABC9C"/>
+    <text x="25" y="30" class="step-num">7</text>
+    <text x="50" y="18" class="step-name">集成无障碍（Accessibility Integration）</text>
+    <text x="50" y="32" class="step-desc">HUD缩放选项、对比度增强模式、色觉辅助模式、</text>
+    <text x="50" y="44" class="step-detail">字体大小调节。这些不是"额外功能"——是让更多人玩到你的游戏的"基础设施"</text>
+  </g>
+
+  <g transform="translate(195, 470)">
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
+    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
+    <text x="10" y="10" class="arrow-label">↓ 无障碍集成 → 最终验证：真人</text>
+  </g>
+
+  <!-- Step 8 -->
+  <g transform="translate(30, 482)">
+    <rect x="0" y="0" width="340" height="50" fill="#E74C3C" rx="4" opacity="0.12"/>
+    <circle cx="25" cy="25" r="16" fill="#E74C3C"/>
+    <text x="25" y="30" class="step-num">8</text>
+    <text x="50" y="18" class="step-name">观察真人使用（Live User Observation）</text>
+    <text x="50" y="32" class="step-desc">找人玩——不说话——只看。看他们：在哪里犹豫了？</text>
+    <text x="50" y="44" class="step-detail">在哪里点错了？在哪里反复看 UI？在哪里完全忽略 UI 提示？</text>
+  </g>
+
+  <!-- Right side: notes column -->
+  <g transform="translate(400, 62)">
+    <rect x="0" y="0" width="370" height="470" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="6"/>
+
+    <text x="15" y="22" style="font-size:10px;font-weight:bold;fill:#E74C3C;">独立开发者适配要点</text>
+    <line x1="15" y1="30" x2="355" y2="30" stroke="#E0E0E0" stroke-width="0.5"/>
+
+    <!-- Adaptations -->
+    <g transform="translate(15, 45)">
+      <circle cx="5" cy="5" r="4" fill="#E74C3C"/>
+      <text x="14" y="9" class="step-desc" fill="#333"><tspan font-weight="bold">步骤1-2</tspan>：用 Figma 的 Auto Layout 快速迭代。不画像素——用矩形块 + 颜色占位。一个下午能出 5 版布局。</text>
+    </g>
+
+    <g transform="translate(15, 90)">
+      <circle cx="5" cy="5" r="4" fill="#E67E22"/>
+      <text x="14" y="9" class="step-desc" fill="#333"><tspan font-weight="bold">步骤3</tspan>：Unity 用 Canvas Scaler / Godot 用 Control 节点。先放纯色 Rect——数据绑定先走通，美化后面再说。</text>
+    </g>
+
+    <g transform="translate(15, 135)">
+      <circle cx="5" cy="5" r="4" fill="#2ECC71"/>
+      <text x="14" y="9" class="step-desc" fill="#333"><tspan font-weight="bold">步骤4</tspan>：如果你在手机上开发——在户外阳光下测试。如果 PC 上——在窗户背光处测试。不要只在黑暗房间里看。</text>
+    </g>
+
+    <g transform="translate(15, 180)">
+      <circle cx="5" cy="5" r="4" fill="#9B59B6"/>
+      <text x="14" y="9" class="step-desc" fill="#333"><tspan font-weight="bold">步骤5</tspan>：色盲模拟工具：Color Oracle（免费桌面app）、Chrome DevTools 的 Rendering 面板、Unity 的 Color Blindness Filter。</text>
+    </g>
+
+    <g transform="translate(15, 225)">
+      <circle cx="5" cy="5" r="4" fill="#F1C40F"/>
+      <text x="14" y="9" class="step-desc" fill="#333"><tspan font-weight="bold">步骤6</tspan>：独立游戏 Juice 不需要复杂——血条闪红就用 Color.Lerp 加个 sine 波。3 行代码的反馈 > 没有反馈。</text>
+    </g>
+
+    <g transform="translate(15, 270)">
+      <circle cx="5" cy="5" r="4" fill="#1ABC9C"/>
+      <text x="14" y="9" class="step-desc" fill="#333"><tspan font-weight="bold">步骤7</tspan>：至少做 3 个：①字体大小选项（小/中/大）②高对比度模式 ③色盲模式（用图案代替纯色）。这是独立游戏也能做的。</text>
+    </g>
+
+    <g transform="translate(15, 320)">
+      <circle cx="5" cy="5" r="4" fill="#E74C3C"/>
+      <text x="14" y="9" class="step-desc" fill="#333"><tspan font-weight="bold">步骤8</tspan>：你的朋友、你的家人、你的 Discord 社区——找 3-5 个人，不解释任何东西，坐旁边看。记录每个"卡住"的瞬间。</text>
+    </g>
+
+    <!-- Bottom: programmer analogy -->
+    <g transform="translate(15, 375)">
+      <rect x="0" y="0" width="340" height="75" fill="#E8F4FD" rx="4"/>
+      <text x="12" y="18" style="font-size:9px;font-weight:bold;fill:#2980B9;">💻 程序员类比</text>
+      <text x="12" y="34" class="step-detail" fill="#555">这 8 步 ≈ 你的 CI/CD Pipeline ——每步是一个 stage。</text>
+      <text x="12" y="48" class="step-detail" fill="#555">第 1 步定义"接口"（布局）→ 第 2-3 步"实现"→</text>
+      <text x="12" y="62" class="step-detail" fill="#555">第 4-5 步"单元测试"→ 第 6-7 步"feature flag"</text>
+      <text x="12" y="76" class="step-detail" fill="#555">→ 第 8 步 = 部署到生产 + 监控用户行为</text>
+    </g>
+  </g>
+</svg>

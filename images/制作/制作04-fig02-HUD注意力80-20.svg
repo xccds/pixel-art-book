@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .zone-label { font-size: 13px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .zone-sub { font-size: 10px; fill: #fff; text-anchor: middle; opacity: 0.8; }
+    .hud-item { font-size: 9px; fill: #E74C3C; font-weight: bold; }
+    .hud-value { font-size: 9px; fill: #555; }
+    .note { font-size: 8px; fill: #999; }
+    .stat { font-size: 10px; font-weight: bold; fill: #333; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 制作04.2  玩家视觉注意力的 80/20 分配——HUD 的每个像素都在和游戏世界抢注意</text>
+  <text x="400" y="46" class="subtitle" text-anchor="middle">数据来源：眼动追踪研究发现玩家仅 20% 注意力在 HUD 元素上——这意味着你的 HUD 不能"贴上去就行"</text>
+
+  <!-- Main screen frame -->
+  <g transform="translate(35, 65)">
+    <rect x="0" y="0" width="730" height="400" fill="#1A1A2E" stroke="#333" stroke-width="2" rx="6"/>
+
+    <!-- 80% zone: Game World (center circle) -->
+    <circle cx="365" cy="200" r="180" fill="none" stroke="#2ECC71" stroke-width="2.5" stroke-dasharray="8,4" opacity="0.6"/>
+    <circle cx="365" cy="200" r="175" fill="#1A3A1A" opacity="0.25"/>
+
+    <text x="365" y="175" class="zone-label" font-size="15" fill="#2ECC71">🎮 游戏世界</text>
+    <text x="365" y="195" class="zone-sub" fill="#2ECC71">80% 视觉注意力</text>
+    <text x="365" y="212" class="note" fill="#2ECC71" opacity="0.7">玩家在这里"生活"</text>
+
+    <!-- Mini scene inside game world -->
+    <g transform="translate(220, 230)">
+      <rect x="0" y="0" width="290" height="130" fill="#2E4053" rx="4"/>
+      <rect x="0" y="0" width="290" height="55" fill="#5B8DB8" rx="4"/>
+      <rect x="0" y="35" width="290" height="20" fill="#5B8DB8"/>
+      <!-- Ground -->
+      <rect x="0" y="85" width="290" height="45" fill="#5D6D3E" rx="4"/>
+      <rect x="0" y="100" width="290" height="30" fill="#5D6D3E"/>
+      <!-- Trees -->
+      <rect x="40" y="40" width="6" height="46" fill="#3E2723"/>
+      <ellipse cx="43" cy="35" rx="18" ry="22" fill="#2E7D32" opacity="0.7"/>
+      <rect x="200" y="48" width="6" height="38" fill="#3E2723"/>
+      <ellipse cx="203" cy="43" rx="16" ry="20" fill="#2E7D32" opacity="0.7"/>
+      <rect x="120" y="45" width="6" height="42" fill="#3E2723"/>
+      <ellipse cx="123" cy="40" rx="15" ry="18" fill="#388E3C" opacity="0.6"/>
+      <!-- Character -->
+      <ellipse cx="145" cy="75" rx="8" ry="10" fill="#D4A574"/>
+      <rect x="137" y="84" width="16" height="18" fill="#2E86C1"/>
+      <rect x="133" y="100" width="8" height="10" fill="#2E4053"/>
+      <rect x="149" y="100" width="8" height="10" fill="#2E4053"/>
+      <!-- Enemy -->
+      <circle cx="220" cy="78" r="6" fill="#E74C3C"/>
+      <rect x="216" y="84" width="8" height="12" fill="#C0392B"/>
+    </g>
+
+    <!-- 20% zone: HUD edges (bounding regions) -->
+    <!-- Top-left HUD: Health -->
+    <g>
+      <rect x="8" y="8" width="160" height="50" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4" opacity="0.9"/>
+      <text x="16" y="24" class="hud-item">❤️ 生命值</text>
+      <rect x="56" y="15" width="100" height="10" fill="#E0E0E0" rx="3"/>
+      <rect x="56" y="15" width="76" height="10" fill="#E74C3C" rx="3"/>
+      <text x="16" y="46" class="hud-value">占比：8% 注意力</text>
+    </g>
+
+    <!-- Top-right HUD: Minimap -->
+    <g>
+      <rect x="558" y="8" width="164" height="50" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4" opacity="0.9"/>
+      <text x="566" y="24" class="hud-item">🗺️ 小地图</text>
+      <rect x="620" y="16" width="94" height="30" fill="#D5E8D4" rx="2" stroke="#82B366" stroke-width="0.5"/>
+      <!-- Mini map dots -->
+      <circle cx="640" cy="31" r="3" fill="#E74C3C"/>
+      <circle cx="680" cy="26" r="2" fill="#F1C40F"/>
+      <circle cx="670" cy="25" r="2" fill="#3498DB"/>
+      <text x="566" y="46" class="hud-value">占比：6% 注意力</text>
+    </g>
+
+    <!-- Bottom-left HUD: Health bar alternative -->
+    <g>
+      <rect x="8" y="340" width="160" height="50" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4" opacity="0.9"/>
+      <text x="16" y="356" class="hud-item">🔫 弹药</text>
+      <text x="56" y="356" class="hud-value" font-size="12">12 / 30</text>
+      <rect x="56" y="362" width="100" height="6" fill="#E0E0E0" rx="2"/>
+      <rect x="56" y="362" width="40" height="6" fill="#F39C12" rx="2"/>
+      <text x="16" y="382" class="hud-value">占比：4% 注意力</text>
+    </g>
+
+    <!-- Bottom-right HUD: Quest/Objective -->
+    <g>
+      <rect x="558" y="340" width="164" height="50" fill="#E8F4FD" stroke="#3498DB" stroke-width="1" rx="4" opacity="0.9"/>
+      <text x="566" y="356" class="hud-item">🎯 任务目标</text>
+      <text x="566" y="372" class="hud-value">找到森林深处的钥匙</text>
+      <text x="566" y="382" class="hud-value">占比：2% 注意力</text>
+    </g>
+
+    <!-- Attention flow arrows from center to edges -->
+    <line x1="300" y1="200" x2="90" y2="60" stroke="#E74C3C" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+    <line x1="430" y1="200" x2="640" y2="60" stroke="#E74C3C" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+    <line x1="300" y1="250" x2="90" y2="365" stroke="#E74C3C" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+    <line x1="430" y1="250" x2="640" y2="365" stroke="#E74C3C" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+
+    <!-- Center label: total -->
+    <g transform="translate(305, 275)">
+      <text x="145" y="15" class="stat" fill="#2ECC71" font-size="9" text-anchor="middle">玩家每 5 秒扫一次 HUD——其他时间都在看游戏世界</text>
+    </g>
+  </g>
+
+  <!-- Bottom takeaway -->
+  <g transform="translate(35, 475)">
+    <rect x="0" y="0" width="730" height="18" fill="#E74C3C" opacity="0.1" rx="3"/>
+    <text x="365" y="13" class="note" fill="#E74C3C" text-anchor="middle" font-size="9">核心原则：HUD 的每个像素都必须有"存在的理由"——你不能因为"别人游戏都有"就加一个元素</text>
+  </g>
+</svg>

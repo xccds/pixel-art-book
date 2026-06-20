@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .type-label { font-size: 12px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .type-en { font-size: 9px; fill: #999; text-anchor: middle; }
+    .type-desc { font-size: 9px; fill: #555; text-anchor: middle; }
+    .box-title { font-size: 10px; font-weight: bold; fill: #E74C3C; text-anchor: middle; }
+    .note { font-size: 8px; fill: #999; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 制作04.1  UI 四类型——同一个血量信息，四种"世界化"程度</text>
+  <text x="400" y="46" class="subtitle" text-anchor="middle">从纯屏幕到纯游戏世界——每向外走一步，UI 就越像"游戏世界的一部分"</text>
+
+  <!-- Type 1: Non-diegetic -->
+  <g transform="translate(20, 62)">
+    <rect x="0" y="0" width="180" height="380" fill="#FAFAFA" stroke="#333" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="180" height="36" fill="#1A1A2E" rx="6"/>
+    <rect x="0" y="18" width="180" height="18" fill="#1A1A2E"/>
+    <text x="90" y="14" class="box-title" fill="#E74C3C">类型一</text>
+    <text x="90" y="29" class="box-title" fill="#fff" font-size="9">Non-diegetic</text>
+
+    <!-- Game scene mockup -->
+    <rect x="12" y="46" width="156" height="120" fill="#2E4053" rx="3"/>
+    <!-- Sky -->
+    <rect x="12" y="46" width="156" height="60" fill="#5B8DB8" rx="3"/>
+    <rect x="12" y="66" width="156" height="40" fill="#5B8DB8"/>
+    <!-- Ground -->
+    <rect x="12" y="110" width="156" height="56" fill="#5D6D3E" rx="3"/>
+    <rect x="12" y="130" width="156" height="36" fill="#5D6D3E"/>
+    <!-- Character -->
+    <ellipse cx="90" cy="98" rx="10" ry="12" fill="#D4A574"/>
+    <rect x="80" y="110" width="20" height="24" fill="#2E86C1"/>
+    <rect x="76" y="130" width="8" height="14" fill="#2E4053"/>
+    <rect x="96" y="130" width="8" height="14" fill="#2E4053"/>
+    <!-- Enemy -->
+    <rect x="140" y="106" width="14" height="20" fill="#C0392B" rx="2"/>
+    <rect x="141" y="123" width="5" height="8" fill="#922B21"/>
+    <rect x="148" y="123" width="5" height="8" fill="#922B21"/>
+    <!-- Health bar overlay (HUD) -->
+    <rect x="22" y="54" width="60" height="10" fill="#1A1A1A" rx="3" opacity="0.8"/>
+    <rect x="24" y="56" width="42" height="6" fill="#E74C3C" rx="2"/>
+    <text x="22" y="53" class="note" fill="#fff" font-size="6">HP</text>
+    <!-- Ammo -->
+    <text x="142" y="165" class="note" fill="#fff" font-size="8">弹药 ⬤⬤⬤ 12/30</text>
+
+    <text x="90" y="185" class="type-desc">纯屏幕叠加——血条、</text>
+    <text x="90" y="198" class="type-desc">弹药数直接贴在最上层</text>
+    <line x1="90" y1="210" x2="90" y2="222" stroke="#E0E0E0" stroke-width="0.5"/>
+    <text x="90" y="235" class="type-desc" fill="#E74C3C" font-size="8">案例：Dead Cells 血条</text>
+    <text x="90" y="248" class="type-desc" fill="#E74C3C" font-size="8">Hollow Knight（手绘风）</text>
+  </g>
+
+  <!-- Type 2: Diegetic -->
+  <g transform="translate(215, 62)">
+    <rect x="0" y="0" width="180" height="380" fill="#FAFAFA" stroke="#333" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="180" height="36" fill="#1A2A1E" rx="6"/>
+    <rect x="0" y="18" width="180" height="18" fill="#1A2A1E"/>
+    <text x="90" y="14" class="box-title" fill="#27AE60">类型二</text>
+    <text x="90" y="29" class="box-title" fill="#fff" font-size="9">Diegetic</text>
+
+    <!-- Character with spine health bar -->
+    <rect x="12" y="46" width="156" height="120" fill="#1C1C1C" rx="3"/>
+    <!-- Dark scene -->
+    <rect x="12" y="46" width="156" height="120" fill="#2C3E50"/>
+    <!-- Floor -->
+    <rect x="12" y="146" width="156" height="20" fill="#5D6D7E"/>
+    <line x1="12" y1="146" x2="168" y2="146" stroke="#4A6A8A" stroke-width="0.5"/>
+    <!-- Character back view -->
+    <ellipse cx="90" cy="98" rx="14" ry="14" fill="#3E2723"/>
+    <rect x="78" y="100" width="24" height="12" fill="#3E2723"/>
+    <rect x="76" y="112" width="28" height="28" fill="#4A4A4A"/>
+    <!-- Spine health bar (glowing on character) -->
+    <line x1="84" y1="98" x2="84" y2="132" stroke="#E74C3C" stroke-width="3" stroke-linecap="round"/>
+    <line x1="84" y1="98" x2="84" y2="118" stroke="#2ECC71" stroke-width="3" stroke-linecap="round"/>
+    <!-- Glow -->
+    <line x1="84" y1="98" x2="84" y2="132" stroke="#E74C3C" stroke-width="6" stroke-linecap="round" opacity="0.15"/>
+
+    <text x="90" y="185" class="type-desc">存在于游戏世界中——</text>
+    <text x="90" y="198" class="type-desc">角色身体上的发光条</text>
+    <text x="90" y="211" class="type-desc">= 血量显示</text>
+    <line x1="90" y1="223" x2="90" y2="235" stroke="#E0E0E0" stroke-width="0.5"/>
+    <text x="90" y="248" class="type-desc" fill="#27AE60" font-size="8">案例：Dead Space</text>
+    <text x="90" y="261" class="type-desc" fill="#27AE60" font-size="8">脊背血量显示</text>
+  </g>
+
+  <!-- Type 3: Spatial -->
+  <g transform="translate(410, 62)">
+    <rect x="0" y="0" width="180" height="380" fill="#FAFAFA" stroke="#333" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="180" height="36" fill="#1A2A3E" rx="6"/>
+    <rect x="0" y="18" width="180" height="18" fill="#1A2A3E"/>
+    <text x="90" y="14" class="box-title" fill="#3498DB">类型三</text>
+    <text x="90" y="29" class="box-title" fill="#fff" font-size="9">Spatial</text>
+
+    <!-- 3D space scene with floating markers -->
+    <rect x="12" y="46" width="156" height="120" fill="#1B2631" rx="3"/>
+    <!-- Floor perspective -->
+    <polygon points="12,166 168,166 140,96 40,96" fill="#2E4053" opacity="0.5"/>
+    <line x1="40" y1="96" x2="12" y2="166" stroke="#4A6A8A" stroke-width="0.3"/>
+    <line x1="140" y1="96" x2="168" y2="166" stroke="#4A6A8A" stroke-width="0.3"/>
+    <!-- Character -->
+    <ellipse cx="90" cy="130" rx="8" ry="10" fill="#D4A574"/>
+    <rect x="82" y="140" width="16" height="18" fill="#2E86C1"/>
+    <!-- Floating waypoint marker 1 -->
+    <g transform="translate(50, 80)">
+      <rect x="-18" y="-24" width="36" height="18" fill="#1A1A1A" rx="3" opacity="0.85"/>
+      <text x="0" y="-11" class="note" fill="#F1C40F" font-size="7" text-anchor="middle">目标 120m</text>
+      <line x1="0" y1="-6" x2="0" y2="8" stroke="#F1C40F" stroke-width="2"/>
+      <polygon points="0,12 -4,4 4,4" fill="#F1C40F"/>
+    </g>
+    <!-- Floating waypoint marker 2 -->
+    <g transform="translate(130, 88)">
+      <rect x="-16" y="-24" width="32" height="18" fill="#1A1A1A" rx="3" opacity="0.85"/>
+      <text x="0" y="-11" class="note" fill="#3498DB" font-size="7" text-anchor="middle">NPC</text>
+      <line x1="0" y1="-6" x2="0" y2="6" stroke="#3498DB" stroke-width="2"/>
+      <polygon points="0,10 -4,2 4,2" fill="#3498DB"/>
+    </g>
+
+    <text x="90" y="185" class="type-desc">3D空间内浮空标记——</text>
+    <text x="90" y="198" class="type-desc">角色"看得到"但不可交互</text>
+    <line x1="90" y1="210" x2="90" y2="222" stroke="#E0E0E0" stroke-width="0.5"/>
+    <text x="90" y="235" class="type-desc" fill="#3498DB" font-size="8">案例：Skyrim 罗盘标记</text>
+    <text x="90" y="248" class="type-desc" fill="#3498DB" font-size="8">Horizon 浮空路标</text>
+  </g>
+
+  <!-- Type 4: Meta -->
+  <g transform="translate(605, 62)">
+    <rect x="0" y="0" width="175" height="380" fill="#FAFAFA" stroke="#333" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="175" height="36" fill="#2E1A1A" rx="6"/>
+    <rect x="0" y="18" width="175" height="18" fill="#2E1A1A"/>
+    <text x="88" y="14" class="box-title" fill="#922B21">类型四</text>
+    <text x="88" y="29" class="box-title" fill="#fff" font-size="9">Meta</text>
+
+    <!-- Screen with blood splatter edges -->
+    <rect x="12" y="46" width="151" height="120" fill="#1A1A1A" rx="3"/>
+    <!-- Game scene -->
+    <rect x="12" y="46" width="151" height="120" fill="#2C3E50"/>
+    <rect x="12" y="146" width="151" height="20" fill="#5D6D7E"/>
+    <line x1="12" y1="146" x2="163" y2="146" stroke="#4A6A8A" stroke-width="0.5"/>
+    <!-- Character -->
+    <ellipse cx="88" cy="128" rx="9" ry="11" fill="#D4A574"/>
+    <rect x="79" y="138" width="18" height="20" fill="#2E86C1"/>
+    <!-- Blood splatter on screen edges -->
+    <ellipse cx="30" cy="65" rx="22" ry="18" fill="#922B21" opacity="0.7"/>
+    <ellipse cx="125" cy="58" rx="18" ry="22" fill="#922B21" opacity="0.5"/>
+    <ellipse cx="20" cy="140" rx="15" ry="12" fill="#922B21" opacity="0.4"/>
+    <ellipse cx="148" cy="135" rx="12" ry="15" fill="#922B21" opacity="0.5"/>
+    <ellipse cx="88" cy="55" rx="25" ry="8" fill="#922B21" opacity="0.3"/>
+    <!-- Red vignette -->
+    <rect x="12" y="46" width="151" height="120" fill="url(#redVignette)" rx="3"/>
+
+    <defs>
+      <radialGradient id="redVignette" cx="50%" cy="50%" r="60%">
+        <stop offset="50%" stop-color="#922B21" stop-opacity="0"/>
+        <stop offset="85%" stop-color="#922B21" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="#922B21" stop-opacity="0.35"/>
+      </radialGradient>
+    </defs>
+
+    <text x="88" y="185" class="type-desc">屏幕效果——角色并不</text>
+    <text x="88" y="198" class="type-desc">"看到"血溅屏幕</text>
+    <text x="88" y="211" class="type-desc">但玩家感受到了伤害</text>
+    <line x1="88" y1="223" x2="88" y2="235" stroke="#E0E0E0" stroke-width="0.5"/>
+    <text x="88" y="248" class="type-desc" fill="#922B21" font-size="8">案例：Dead Cells 低血暗角</text>
+    <text x="88" y="261" class="type-desc" fill="#922B21" font-size="8">Undertale 屏幕震动</text>
+    <text x="88" y="274" class="type-desc" fill="#922B21" font-size="8">Celeste 死亡闪白</text>
+  </g>
+
+  <!-- Bottom summary bar -->
+  <g transform="translate(20, 452)">
+    <rect x="0" y="0" width="760" height="36" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="4"/>
+    <text x="20" y="14" class="note" fill="#333">"世界化"程度：</text>
+    <text x="20" y="28" class="note" fill="#E74C3C">Non-diegetic（最远）</text>
+    <text x="115" y="28" class="note" fill="#666">→ Diegetic → Spatial →</text>
+    <text x="260" y="28" class="note" fill="#922B21">Meta（特殊）</text>
+    <text x="340" y="28" class="note" fill="#666">| 独立像素游戏最常用第1+第4种</text>
+  </g>
+</svg>

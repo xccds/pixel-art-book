@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420"
+     width="800" height="420"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .title { font-size: 20px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .caption { font-size: 14px; fill: #666; text-anchor: middle; }
+    .score-box { font-size: 22px; font-weight: bold; fill: #FFF; text-anchor: middle; }
+    .route-box { fill: #FFF; stroke-width: 1.5; }
+    .route-title { font-size: 16px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .route-desc { font-size: 13px; fill: #555; text-anchor: start; }
+    .note { font-size: 13px; fill: #777; text-anchor: middle; }
+    .arrow { stroke: #555; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="30" class="title">自评分数 → 阅读起点</text>
+
+  <!-- Row 1: 0-15 -->
+  <rect x="30" y="55" width="160" height="50" rx="6" fill="#EF5350"/>
+  <text x="110" y="86" class="score-box">0-15 分</text>
+  <line x1="190" y1="80" x2="220" y2="80" class="arrow"/>
+  <rect x="230" y="48" width="540" height="64" rx="8" stroke="#EF5350" class="route-box"/>
+  <text x="500" y="70" class="route-title">从 观察02 开始——先学会“看”</text>
+  <text x="248" y="95" class="route-desc">输入严重不足。先走完第一部（观察02-05）建立感知与词汇，别碰画笔。</text>
+
+  <!-- Row 2: 16-30 -->
+  <rect x="30" y="125" width="160" height="50" rx="6" fill="#FFA726"/>
+  <text x="110" y="156" class="score-box">16-30 分</text>
+  <line x1="190" y1="150" x2="220" y2="150" class="arrow"/>
+  <rect x="230" y="118" width="540" height="64" rx="8" stroke="#FFA726" class="route-box"/>
+  <text x="500" y="140" class="route-title">从 观察03 → 练手01——补分析力与基本功</text>
+  <text x="248" y="165" class="route-desc">有感知但说不清、画不出。补 VTS 侦探法，再进练手部逐概念过。24周平衡版。</text>
+
+  <!-- Row 3: 31-40 -->
+  <rect x="30" y="195" width="160" height="50" rx="6" fill="#5C6BC0"/>
+  <text x="110" y="226" class="score-box">31-40 分</text>
+  <line x1="190" y1="220" x2="220" y2="220" class="arrow"/>
+  <rect x="230" y="188" width="540" height="64" rx="8" stroke="#5C6BC0" class="route-box"/>
+  <text x="500" y="210" class="route-title">从 风格01 → 制作02——定方向，进实战</text>
+  <text x="248" y="235" class="route-desc">感知和概念够用。先定像素子风格方向，查漏练手，直接做角色工作流实战。</text>
+
+  <!-- Row 4: 41-50 -->
+  <rect x="30" y="265" width="160" height="50" rx="6" fill="#26A69A"/>
+  <text x="110" y="296" class="score-box">41-50 分</text>
+  <line x1="190" y1="290" x2="220" y2="290" class="arrow"/>
+  <rect x="230" y="258" width="540" height="64" rx="8" stroke="#26A69A" class="route-box"/>
+  <text x="500" y="280" class="route-title">从 制作07 → 继续01——补整合，上输出</text>
+  <text x="248" y="305" class="route-desc">技术够用，缺整合与持续。补上引擎/一致性审计（制作09），用 GameJam 做输出压力测试。</text>
+
+  <!-- note -->
+  <text x="400" y="352" class="note">总分定档；但若某轴明显凹进去，优先补那一轴对应的部。</text>
+
+  <!-- caption -->
+  <text x="400" y="392" class="caption">图 1.3：别在错的地方浪费时间——你的分数直接告诉你去哪一章效率最高。</text>
+</svg>

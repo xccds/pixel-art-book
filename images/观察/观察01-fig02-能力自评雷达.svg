@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520"
+     width="800" height="520"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .title { font-size: 20px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .caption { font-size: 14px; fill: #666; text-anchor: middle; }
+    .axis { stroke: #CCC; stroke-width: 1; }
+    .axis-label { font-size: 17px; font-weight: bold; text-anchor: middle; }
+    .axis-sub { font-size: 12px; fill: #777; text-anchor: middle; }
+    .scale-label { font-size: 11px; fill: #999; text-anchor: middle; }
+    .legend { font-size: 13px; fill: #333; }
+    .legend-sub { font-size: 12px; fill: #777; }
+  </style>
+
+  <text x="400" y="30" class="title">三能力雷达图 · 自测模板</text>
+
+  <g transform="translate(360, 270)">
+    <!-- 3 axes at 120°: 看 -90°(top), 做 30°(lower-right), 整 150°(lower-left) -->
+    <!-- r per level = 18×L; level 10 = 180 max -->
+
+    <!-- Grid triangles (levels 2,4,6,8,10) -->
+    <polygon points="0,-36 31,18 -31,18" fill="none" stroke="#F0F0F0" stroke-width="0.8"/>
+    <polygon points="0,-72 62,36 -62,36" fill="none" stroke="#EEEEEE" stroke-width="0.8"/>
+    <polygon points="0,-108 94,54 -94,54" fill="none" stroke="#EEEEEE" stroke-width="0.8"/>
+    <polygon points="0,-144 125,72 -125,72" fill="none" stroke="#E0E0E0" stroke-width="0.9"/>
+    <polygon points="0,-180 156,90 -156,90" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+
+    <!-- Axes (extend slightly past max) -->
+    <line x1="0" y1="0" x2="0" y2="-195" class="axis"/>
+    <line x1="0" y1="0" x2="169" y2="98" class="axis"/>
+    <line x1="0" y1="0" x2="-169" y2="98" class="axis"/>
+
+    <!-- Scale dots on 看 axis (top) -->
+    <circle cx="0" cy="-36" r="3" fill="#DDD"/>
+    <circle cx="0" cy="-72" r="3" fill="#DDD"/>
+    <circle cx="0" cy="-108" r="3" fill="#DDD"/>
+    <circle cx="0" cy="-144" r="3" fill="#DDD"/>
+    <circle cx="0" cy="-180" r="4" fill="#CCC"/>
+
+    <!-- Scale labels on 看 axis -->
+    <text x="10" y="-36" class="scale-label" text-anchor="start">2</text>
+    <text x="10" y="-72" class="scale-label" text-anchor="start">4</text>
+    <text x="10" y="-108" class="scale-label" text-anchor="start">6</text>
+    <text x="10" y="-144" class="scale-label" text-anchor="start">8</text>
+    <text x="10" y="-180" class="scale-label" text-anchor="start">10</text>
+
+    <!-- Axis labels (in ability colors) -->
+    <text x="0" y="-208" class="axis-label" fill="#EF5350">看</text>
+    <text x="0" y="-223" class="axis-sub">感知+词汇</text>
+
+    <text x="190" y="108" class="axis-label" fill="#26A69A">做</text>
+    <text x="190" y="124" class="axis-sub">执行+工具</text>
+
+    <text x="-190" y="108" class="axis-label" fill="#7E57C2">整</text>
+    <text x="-190" y="124" class="axis-sub">整合</text>
+
+    <!-- Center -->
+    <circle cx="0" cy="0" r="5" fill="#999"/>
+  </g>
+
+  <!-- Legend (right side) -->
+  <text x="600" y="120" class="legend" font-weight="bold">雷达轴 = 0-10（已折算）</text>
+  <text x="600" y="146" class="legend">10 = 满分</text>
+  <text x="600" y="168" class="legend">8 = 熟练</text>
+  <text x="600" y="190" class="legend">6 = 能用</text>
+  <text x="600" y="212" class="legend">4 = 了解</text>
+  <text x="600" y="234" class="legend">2 = 听过</text>
+  <text x="600" y="256" class="legend">0 = 空白</text>
+  <text x="600" y="290" class="legend-sub">折算公式：</text>
+  <text x="600" y="308" class="legend-sub">雷达分 = 得分 ÷ 满分 × 10</text>
+  <text x="600" y="330" class="legend-sub">看满分 20 ｜ 做满分 15 ｜ 整满分 15</text>
+
+  <!-- caption -->
+  <text x="400" y="495" class="caption">图 1.2：空白雷达图——把每个能力的得分折算到 0-10，在三轴上标点连线，得到你的能力轮廓。凹进去的那一轴就是你最该补的。</text>
+</svg>

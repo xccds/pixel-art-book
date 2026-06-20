@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .doc-title-text { font-size: 12px; font-weight: bold; fill: #333; }
+    .doc-label { font-size: 8.5px; fill: #555; }
+    .doc-item { font-size: 8px; fill: #666; }
+    .doc-accent { font-size: 8px; fill: #E74C3C; font-weight: bold; }
+    .section-title { font-size: 9px; font-weight: bold; fill: #333; }
+    .footer-text { font-size: 10px; fill: #E74C3C; font-weight: bold; }
+    .arrow-label { font-size: 9px; fill: #999; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 24.1  风格文档三种体量模板——从 Game Jam 到完整项目</text>
+
+  <!-- Size 1: A4 page (smallest) -->
+  <g transform="translate(15, 50)">
+    <rect x="0" y="0" width="230" height="370" fill="#fff" stroke="#27AE60" stroke-width="2" rx="8"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="230" height="40" fill="#27AE60" rx="8"/>
+    <rect x="0" y="20" width="230" height="20" fill="#27AE60"/>
+    <text x="115" y="16" text-anchor="middle" style="font-size:12px; font-weight:bold; fill:#fff;">Game Jam 版</text>
+    <text x="115" y="31" text-anchor="middle" style="font-size:9px; fill:#fff; opacity:0.8;">1 页 A4 · 1 小时做完</text>
+
+    <!-- Content rows -->
+    <g transform="translate(12, 52)">
+      <text x="0" y="0" class="section-title">▎关键词（3-5个）</text>
+      <rect x="0" y="8" width="206" height="36" fill="#E8F8F0" rx="3"/>
+      <text x="8" y="24" class="doc-item">"温暖 · 简洁 · 童趣 · 秋天"</text>
+      <text x="8" y="38" class="doc-item" style="fill:#999;">这 4 个词定义了整个游戏的视觉基调</text>
+
+      <text x="0" y="62" class="section-title">▎色板（5-8 色）</text>
+      <rect x="0" y="70" width="206" height="28" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <circle cx="14" cy="84" r="6" fill="#F5B041"/>
+      <circle cx="34" cy="84" r="6" fill="#27AE60"/>
+      <circle cx="54" cy="84" r="6" fill="#85C1E9"/>
+      <circle cx="74" cy="84" r="6" fill="#6E2C00"/>
+      <circle cx="94" cy="84" r="6" fill="#FADBD8"/>
+      <circle cx="114" cy="84" r="6" fill="#333"/>
+      <text x="130" y="88" class="doc-item" fill="#999">+ 2 强调色</text>
+
+      <text x="0" y="115" class="section-title">▎三条"不做"</text>
+      <rect x="0" y="123" width="206" height="60" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.3" rx="3"/>
+      <text x="8" y="139" class="doc-accent">✕ 不做纹理贴图</text>
+      <text x="8" y="155" class="doc-accent">✕ 不做写实光照</text>
+      <text x="8" y="171" class="doc-accent">✕ 不做高饱和颜色</text>
+
+      <line x1="0" y1="195" x2="206" y2="195" stroke="#E0E0E0" stroke-width="0.5"/>
+      <text x="103" y="212" text-anchor="middle" class="doc-label" fill="#27AE60">够用就好——约束即风格</text>
+
+      <text x="0" y="232" class="section-title">▎像素规格（锁两项）</text>
+      <rect x="0" y="240" width="206" height="36" fill="#EAF6EF" stroke="#27AE60" stroke-width="0.3" rx="3"/>
+      <text x="6" y="253" class="doc-item">分辨率：320×180 → 6×1080p · 角色 16×16</text>
+      <text x="6" y="267" class="doc-item">色板：DB8（8 色）+ 2 强调色</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(252, 235)">
+    <line x1="0" y1="0" x2="22" y2="0" stroke="#999" stroke-width="1.2"/>
+    <polygon points="22,-4 30,0 22,4" fill="#999"/>
+  </g>
+
+  <!-- Size 2: Notion page (medium) -->
+  <g transform="translate(285, 50)">
+    <rect x="0" y="0" width="230" height="370" fill="#fff" stroke="#F39C12" stroke-width="2" rx="8"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="230" height="40" fill="#F39C12" rx="8"/>
+    <rect x="0" y="20" width="230" height="20" fill="#F39C12"/>
+    <text x="115" y="16" text-anchor="middle" style="font-size:12px; font-weight:bold; fill:#fff;">小型项目版</text>
+    <text x="115" y="31" text-anchor="middle" style="font-size:9px; fill:#fff; opacity:0.8;">1 页 Notion · 半天做完</text>
+
+    <g transform="translate(12, 52)">
+      <text x="0" y="0" class="section-title">▎关键词 + 参考截图</text>
+      <rect x="0" y="8" width="206" height="16" fill="#FEF9E7" stroke="#F1C40F" stroke-width="0.3" rx="2"/>
+      <text x="6" y="20" class="doc-item">"孤独探索"→ 3 张参考图附件</text>
+
+      <text x="0" y="38" class="section-title">▎角色规格</text>
+      <rect x="0" y="46" width="206" height="36" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <text x="6" y="58" class="doc-item">主角：32×32px · 8 色 · 4 方向行走</text>
+      <text x="6" y="74" class="doc-item">NPC：24×24px · 5 色 · 2 帧站立</text>
+
+      <text x="0" y="95" class="section-title">▎环境层级</text>
+      <rect x="0" y="103" width="206" height="28" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <text x="6" y="115" class="doc-item">远景（天空+远山）→ 中景（建筑）→ 前景（地面）</text>
+      <text x="6" y="127" class="doc-item" fill="#999">各层 dithering 参数: 远景 8×8 / 中景 4×4</text>
+
+      <text x="0" y="143" class="section-title">▎UI 规则</text>
+      <rect x="0" y="151" width="206" height="28" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <text x="6" y="163" class="doc-item">字体：Zpix 14px · 对话框：底部 1/5 屏幕</text>
+      <text x="6" y="177" class="doc-item" fill="#999">UI 色板独立于场景色板</text>
+
+      <text x="0" y="192" class="section-title">▎三条"不做"</text>
+      <rect x="0" y="200" width="206" height="36" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.3" rx="3"/>
+      <text x="6" y="214" class="doc-accent">✕ 不做粒子特效 | ✕ 不做多光源</text>
+      <text x="6" y="228" class="doc-accent">✕ 不做透明叠加</text>
+
+      <line x1="0" y1="245" x2="206" y2="245" stroke="#E0E0E0" stroke-width="0.5"/>
+      <text x="103" y="260" text-anchor="middle" class="doc-label" fill="#F39C12">每加一个元素都对照本文档</text>
+
+      <text x="0" y="278" class="section-title">▎像素规格（七项各一行）</text>
+      <rect x="0" y="286" width="206" height="36" fill="#FEF5E7" stroke="#F39C12" stroke-width="0.3" rx="3"/>
+      <text x="6" y="299" class="doc-item">AA：曲线 ≥2:1 才用 · 轮廓：练手01 第三种 1px</text>
+      <text x="6" y="313" class="doc-item">Tile：16px · 帧：Idle4 / Walk6 / Atk8</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(522, 235)">
+    <line x1="0" y1="0" x2="22" y2="0" stroke="#999" stroke-width="1.2"/>
+    <polygon points="22,-4 30,0 22,4" fill="#999"/>
+  </g>
+
+  <!-- Size 3: Wiki (largest) -->
+  <g transform="translate(555, 50)">
+    <rect x="0" y="0" width="230" height="370" fill="#fff" stroke="#E74C3C" stroke-width="2" rx="8"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="230" height="40" fill="#E74C3C" rx="8"/>
+    <rect x="0" y="20" width="230" height="20" fill="#E74C3C"/>
+    <text x="115" y="16" text-anchor="middle" style="font-size:12px; font-weight:bold; fill:#fff;">完整版</text>
+    <text x="115" y="31" text-anchor="middle" style="font-size:9px; fill:#fff; opacity:0.8;">多页 Wiki · 2-3 天做完</text>
+
+    <g transform="translate(12, 52)">
+      <text x="0" y="0" class="section-title">▎关键词 · 参考 · 情绪板</text>
+      <rect x="0" y="8" width="206" height="12" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.3" rx="2"/>
+      <text x="6" y="17" class="doc-item">15+ 参考图，附来源 URL</text>
+
+      <text x="0" y="33" class="section-title">▎角色规格（全）</text>
+      <rect x="0" y="41" width="206" height="52" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <text x="6" y="53" class="doc-item">头身比 · 色配额 · 帧预算 · 尺寸 · 轮廓 · AA</text>
+      <text x="6" y="67" class="doc-item">与其他角色比例表 · 换色方案</text>
+      <text x="6" y="81" class="doc-item">动作状态机图 · 表情变化集</text>
+
+      <text x="0" y="104" class="section-title">▎环境规格</text>
+      <rect x="0" y="112" width="206" height="36" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <text x="6" y="124" class="doc-item">场景层级（前/中/远景）参数</text>
+      <text x="6" y="138" class="doc-item">Tileset 自动拼接规则 · 变体防重复 · dithering 模式</text>
+
+      <text x="0" y="160" class="section-title">▎光照规范</text>
+      <rect x="0" y="168" width="206" height="28" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <text x="6" y="180" class="doc-item">主光源角度 · 补光强度 · 色温</text>
+      <text x="6" y="192" class="doc-item" fill="#999">每场景光照预设文件路径</text>
+
+      <text x="0" y="208" class="section-title">▎动画帧数标准</text>
+      <rect x="0" y="216" width="206" height="22" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <text x="6" y="232" class="doc-item">Idle 4f · Walk 6f · Attack 8f · Death 10f</text>
+
+      <text x="0" y="252" class="section-title">▎音画配合节奏</text>
+      <rect x="0" y="260" width="206" height="22" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.5" rx="3"/>
+      <text x="6" y="276" class="doc-item">关键帧触发点对应音效/音乐变化</text>
+
+      <text x="0" y="296" class="section-title">▎三条"不做"（拓展）</text>
+      <rect x="0" y="304" width="206" height="30" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.3" rx="3"/>
+      <text x="6" y="318" class="doc-accent">附"为什么不做"的理由和替代方案</text>
+
+      <line x1="0" y1="340" x2="206" y2="340" stroke="#E0E0E0" stroke-width="0.5"/>
+      <text x="103" y="355" text-anchor="middle" class="doc-label" fill="#E74C3C">一切视觉决策的唯一依据</text>
+    </g>
+  </g>
+
+  <!-- Bottom annotation -->
+  <rect x="120" y="438" width="560" height="42" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1" rx="6"/>
+  <text x="400" y="458" text-anchor="middle" class="footer-text">体量越大约束越细——但起点都是这三项：关键词 · 色板 · 三条"不做"</text>
+  <text x="400" y="474" text-anchor="middle" style="font-size:8px; fill:#999;">Game Jam 版 = 最速决策 | 小型项目版 = 团队共享 | 完整版 = 不可推翻的宪法</text>
+</svg>

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .table-header { font-size: 10px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .table-cell { font-size: 9px; fill: #333; text-anchor: middle; }
+    .table-cell-left { font-size: 9px; fill: #333; }
+    .table-cell-accent { font-size: 9px; fill: #E74C3C; font-weight: bold; text-anchor: middle; }
+    .table-cell-gray { font-size: 9px; fill: #666; text-anchor: middle; }
+    .table-row-label { font-size: 10px; font-weight: bold; fill: #fff; }
+    .formula { font-size: 8px; fill: #999; font-style: italic; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 制作02.3  角色规格表模板——一个角色在项目开始前必须回答的 8 个问题</text>
+  <text x="400" y="46" class="subtitle" text-anchor="middle">这不是"画着画着就知道了"——这是在第一个像素/第一个面之前填完的约束，否则角色之间必然不一致</text>
+
+  <!-- Main table -->
+  <g transform="translate(20, 62)">
+    <rect x="0" y="0" width="760" height="420" fill="#fff" stroke="#D0D0D0" stroke-width="1" rx="6"/>
+
+    <!-- Header row -->
+    <rect x="0" y="0" width="760" height="32" fill="#2C3E50" rx="6"/>
+    <rect x="0" y="16" width="760" height="16" fill="#2C3E50"/>
+    <text x="20" y="21" class="table-row-label">规格维度</text>
+    <text x="200" y="21" class="table-header">主角</text>
+    <text x="400" y="21" class="table-header">NPC</text>
+    <text x="600" y="21" class="table-header">敌人（Boss）</text>
+
+    <!-- Row 1: 头身比 -->
+    <g transform="translate(0, 32)">
+      <rect x="0" y="0" width="760" height="38" fill="#FAFAFA"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
+      <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">头身比</text>
+      <text x="15" y="30" class="formula" fill="#999">Head-to-Body Ratio</text>
+      <text x="260" y="22" class="table-cell">2-3 头身</text>
+      <text x="260" y="34" class="table-cell-gray">Q版，可爱，易动画</text>
+      <text x="460" y="22" class="table-cell">2 头身</text>
+      <text x="460" y="34" class="table-cell-gray">更Q，更简化，更低动画帧</text>
+      <text x="660" y="22" class="table-cell">2.5-4 头身</text>
+      <text x="660" y="34" class="table-cell-gray">更大体型，更有威胁感</text>
+    </g>
+
+    <!-- Row 2: 颜色配额 -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="760" height="38" fill="#fff"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
+      <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">颜色配额</text>
+      <text x="15" y="30" class="formula" fill="#999">Color Quota</text>
+      <text x="260" y="22" class="table-cell-accent">8-12 色</text>
+      <text x="260" y="34" class="table-cell-gray">5主色 + 2强调 + 3渐变</text>
+      <text x="460" y="22" class="table-cell">5-7 色</text>
+      <text x="460" y="34" class="table-cell-gray">3主色 + 1强调 + 2渐变</text>
+      <text x="660" y="22" class="table-cell-accent">6-10 色</text>
+      <text x="660" y="34" class="table-cell-gray">强调色集中在武器/眼睛</text>
+    </g>
+
+    <!-- Row 3: 帧预算(动画) -->
+    <g transform="translate(0, 108)">
+      <rect x="0" y="0" width="760" height="38" fill="#FAFAFA"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
+      <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">帧预算（动画）</text>
+      <text x="15" y="30" class="formula" fill="#999">Frame Budget</text>
+      <text x="260" y="22" class="table-cell-accent">Idle 4f · Walk 6-8f · Run 6f</text>
+      <text x="260" y="34" class="table-cell-accent">Attack 6-8f · Death 8-10f</text>
+      <text x="460" y="22" class="table-cell">Idle 2f · Walk 4f</text>
+      <text x="460" y="34" class="table-cell-gray">最小化——仅需站立+基本移动</text>
+      <text x="660" y="22" class="table-cell-accent">Idle 4f · Walk 6f · Attack 8-12f</text>
+      <text x="660" y="34" class="table-cell-gray">攻击帧多是因为攻击是核心可读信息</text>
+    </g>
+
+    <!-- Row 4: 尺寸(px) -->
+    <g transform="translate(0, 146)">
+      <rect x="0" y="0" width="760" height="38" fill="#fff"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
+      <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">尺寸（像素/面数）</text>
+      <text x="15" y="30" class="formula" fill="#999">Sprite/Model Size</text>
+      <text x="260" y="22" class="table-cell">32×32px / 300面</text>
+      <text x="260" y="34" class="table-cell-gray">像素：32×32甜点区 / 3D：300面</text>
+      <text x="460" y="22" class="table-cell">24×24px / 100面</text>
+      <text x="460" y="34" class="table-cell-gray">比主角小一圈，但不至看不清</text>
+      <text x="660" y="22" class="table-cell">48×48px / 500面</text>
+      <text x="660" y="34" class="table-cell-gray">Boss 比主角大，但不是"大到模糊"</text>
+    </g>
+
+    <!-- Row 5: 与其他角色比例 -->
+    <g transform="translate(0, 184)">
+      <rect x="0" y="0" width="760" height="38" fill="#FAFAFA"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
+      <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">与其他角色比例</text>
+      <text x="15" y="30" class="formula" fill="#999">Relative Scale</text>
+      <text x="260" y="22" class="table-cell">基准 = 1.0×</text>
+      <text x="260" y="34" class="table-cell-gray">所有比例以主角为参考</text>
+      <text x="460" y="22" class="table-cell">0.75× 主角</text>
+      <text x="460" y="34" class="table-cell-gray">视觉上"不抢镜"的尺寸</text>
+      <text x="660" y="22" class="table-cell">1.5-2.5× 主角</text>
+      <text x="660" y="34" class="table-cell-gray">Boss 需有压迫感但不至"无限大"</text>
+    </g>
+
+    <!-- Row 6: 剪影区分 -->
+    <g transform="translate(0, 222)">
+      <rect x="0" y="0" width="760" height="38" fill="#fff"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
+      <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">剪影区分度</text>
+      <text x="15" y="30" class="formula" fill="#999">Silhouette Distinct</text>
+      <text x="260" y="22" class="table-cell">复杂轮廓·武器/披风外轮廓</text>
+      <text x="260" y="34" class="table-cell-gray">3米外可辨是主角</text>
+      <text x="460" y="22" class="table-cell">简单圆形/人形·无武器</text>
+      <text x="460" y="34" class="table-cell-gray">3米外可知"是人但不是主角"</text>
+      <text x="660" y="22" class="table-cell">尖锐/不对称/有角/有大武器</text>
+      <text x="660" y="34" class="table-cell-gray">3米外可知"是威胁"</text>
+    </g>
+
+    <!-- Row 7: 细节密度 -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="760" height="38" fill="#FAFAFA"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
+      <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">细节密度</text>
+      <text x="15" y="30" class="formula" fill="#999">Detail Density</text>
+      <text x="260" y="22" class="table-cell">高——装饰/花纹/装备可见</text>
+      <text x="260" y="34" class="table-cell-gray">玩家注视主角最久</text>
+      <text x="460" y="22" class="table-cell">低——纯色块，最少纹理</text>
+      <text x="460" y="34" class="table-cell-gray">不抢视觉焦点</text>
+      <text x="660" y="22" class="table-cell">中高——集中在武器/眼睛</text>
+      <text x="660" y="34" class="table-cell-gray">威胁区的细节密度极高——其他区低</text>
+    </g>
+
+    <!-- Row 8: 换色方案 -->
+    <g transform="translate(0, 298)">
+      <rect x="0" y="0" width="760" height="38" fill="#fff"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
+      <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">换色方案</text>
+      <text x="15" y="30" class="formula" fill="#999">Palette Swap</text>
+      <text x="260" y="22" class="table-cell">装备换色→3套基础+2套稀有</text>
+      <text x="260" y="34" class="table-cell-gray">同一角色，不同装备颜色方案</text>
+      <text x="460" y="22" class="table-cell">2套基础换色</text>
+      <text x="460" y="34" class="table-cell-gray">小镇居民 A/B/C 靠换色区分</text>
+      <text x="660" y="22" class="table-cell">3-5 套换色——区分等级</text>
+      <text x="660" y="34" class="table-cell-gray">小怪（绿）→精英（蓝）→Boss（红）</text>
+    </g>
+
+    <!-- Bottom: note about total animation time estimate -->
+    <g transform="translate(0, 336)">
+      <rect x="0" y="0" width="760" height="84" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="0.5" rx="0 0 6 6"/>
+      <text x="20" y="20" style="font-size:10px; font-weight:bold; fill:#E74C3C;">总动画帧估算公式：</text>
+      <text x="20" y="38" style="font-size:9px; fill:#333;">主演动画总帧数 = 状态数（Idle/Walk/Run/Attack/Death/…）× 每状态帧数 × 方向数（2/4/8）× 换色套数</text>
+      <text x="20" y="56" style="font-size:9px; fill:#333;">示例：主角 = 6状态 × (4+8+6+8+10)帧/状态 = 36帧 × 4方向 × 3套换色 = 432帧总长</text>
+      <text x="20" y="74" style="font-size:9px; fill:#999;">▸ 如果每帧平均 25 分钟（32×32像素角色），432帧 ≈ 180 工时 ≈ 4.5 周全职。这就是为什么帧预算必须在项目前锁定。</text>
+    </g>
+  </g>
+</svg>

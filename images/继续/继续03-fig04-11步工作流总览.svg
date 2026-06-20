@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580"
+     width="900" height="580"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .title { font-size: 22px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .subtitle { font-size: 13px; fill: #666; text-anchor: middle; }
+    .part-name { font-size: 17px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .part-num { font-size: 22px; font-weight: bold; text-anchor: middle; }
+    .part-sub { font-size: 11px; fill: #555; text-anchor: middle; }
+    .step-name { font-size: 11px; fill: #333; }
+    .step-ref { font-size: 10px; fill: #888; }
+    .step-num { font-size: 13px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .caption { font-size: 12px; fill: #666; text-anchor: middle; }
+    .flow-line { stroke: #555; stroke-width: 2; fill: none; marker-end: url(#ah); }
+    .cycle-line { stroke: #7E57C2; stroke-width: 2; fill: none; stroke-dasharray: 6,4; }
+  </style>
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="ah-cycle" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7E57C2"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <text x="450" y="32" class="title">一个人的美术工作流总览</text>
+  <text x="450" y="56" class="subtitle">11 步映射到全书五部——步骤号为工作流顺序，所在列为所属部</text>
+
+  <!-- 五部表头 -->
+  <rect x="11" y="78" width="166" height="52" rx="8" fill="#E8F4FD" stroke="#4A90D9" stroke-width="2"/>
+  <text x="94" y="100" class="part-num" fill="#4A90D9">I</text>
+  <text x="94" y="121" class="part-name">观察</text>
+  <text x="94" y="146" class="part-sub">感知与词汇</text>
+
+  <rect x="189" y="78" width="166" height="52" rx="8" fill="#E0F5E0" stroke="#27AE60" stroke-width="2"/>
+  <text x="272" y="100" class="part-num" fill="#27AE60">II</text>
+  <text x="272" y="121" class="part-name">练手</text>
+  <text x="272" y="146" class="part-sub">八概念与像素技法</text>
+
+  <rect x="367" y="78" width="166" height="52" rx="8" fill="#FFF3CD" stroke="#E6A817" stroke-width="2"/>
+  <text x="450" y="100" class="part-num" fill="#E6A817">III</text>
+  <text x="450" y="121" class="part-name">风格</text>
+  <text x="450" y="146" class="part-sub">选你的像素子风格</text>
+
+  <rect x="545" y="78" width="166" height="52" rx="8" fill="#FCE4EC" stroke="#E91E63" stroke-width="2"/>
+  <text x="628" y="100" class="part-num" fill="#E91E63">IV</text>
+  <text x="628" y="121" class="part-name">制作</text>
+  <text x="628" y="146" class="part-sub">从素材到游戏</text>
+
+  <rect x="723" y="78" width="166" height="52" rx="8" fill="#EDE7F6" stroke="#7E57C2" stroke-width="2"/>
+  <text x="806" y="100" class="part-num" fill="#7E57C2">V</text>
+  <text x="806" y="121" class="part-name">继续</text>
+  <text x="806" y="146" class="part-sub">维持与扩展</text>
+
+  <!-- 步骤框 -->
+  <!-- 观察: step 11 -->
+  <rect x="18" y="162" width="152" height="54" rx="6" fill="#fff" stroke="#4A90D9" stroke-width="1.5"/>
+  <circle cx="36" cy="189" r="14" fill="#4A90D9"/>
+  <text x="36" y="194" class="step-num">11</text>
+  <text x="56" y="184" class="step-name">发布反馈→重新自评</text>
+  <text x="56" y="202" class="step-ref">→观察01·附录D</text>
+
+  <!-- 练手: steps 5, 6, 8 -->
+  <rect x="196" y="162" width="152" height="54" rx="6" fill="#fff" stroke="#27AE60" stroke-width="1.5"/>
+  <circle cx="214" cy="189" r="14" fill="#27AE60"/>
+  <text x="214" y="194" class="step-num">5</text>
+  <text x="234" y="184" class="step-name">F.I.G.H.T. 循环</text>
+  <text x="234" y="202" class="step-ref">→继续02</text>
+
+  <rect x="196" y="226" width="152" height="54" rx="6" fill="#fff" stroke="#27AE60" stroke-width="1.5"/>
+  <circle cx="214" cy="253" r="14" fill="#27AE60"/>
+  <text x="214" y="258" class="step-num">6</text>
+  <text x="234" y="248" class="step-name">最低承诺 5min/天</text>
+  <text x="234" y="266" class="step-ref">→继续02</text>
+
+  <rect x="196" y="290" width="152" height="54" rx="6" fill="#fff" stroke="#27AE60" stroke-width="1.5"/>
+  <circle cx="214" cy="317" r="14" fill="#27AE60"/>
+  <text x="214" y="322" class="step-num">8</text>
+  <text x="234" y="312" class="step-name">进步追踪·月度重画</text>
+  <text x="234" y="330" class="step-ref">→继续02</text>
+
+  <!-- 风格: steps 2, 10 -->
+  <rect x="374" y="162" width="152" height="54" rx="6" fill="#fff" stroke="#E6A817" stroke-width="1.5"/>
+  <circle cx="392" cy="189" r="14" fill="#E6A817"/>
+  <text x="392" y="194" class="step-num">2</text>
+  <text x="412" y="184" class="step-name">约束→选风格</text>
+  <text x="412" y="202" class="step-ref">→风格03</text>
+
+  <rect x="374" y="226" width="152" height="54" rx="6" fill="#fff" stroke="#E6A817" stroke-width="1.5"/>
+  <circle cx="392" cy="253" r="14" fill="#E6A817"/>
+  <text x="392" y="258" class="step-num">10</text>
+  <text x="412" y="248" class="step-name">风格执行度评估</text>
+  <text x="412" y="266" class="step-ref">→制作09</text>
+
+  <!-- 制作: steps 3, 4, 9 -->
+  <rect x="552" y="162" width="152" height="54" rx="6" fill="#fff" stroke="#E91E63" stroke-width="1.5"/>
+  <circle cx="570" cy="189" r="14" fill="#E91E63"/>
+  <text x="570" y="194" class="step-num">3</text>
+  <text x="590" y="184" class="step-name">资产清单·体验权重</text>
+  <text x="590" y="202" class="step-ref">→制作08</text>
+
+  <rect x="552" y="226" width="152" height="54" rx="6" fill="#fff" stroke="#E91E63" stroke-width="1.5"/>
+  <circle cx="570" cy="253" r="14" fill="#E91E63"/>
+  <text x="570" y="258" class="step-num">4</text>
+  <text x="590" y="248" class="step-name">外包/买/自己做</text>
+  <text x="590" y="266" class="step-ref">→继续03</text>
+
+  <rect x="552" y="290" width="152" height="54" rx="6" fill="#fff" stroke="#E91E63" stroke-width="1.5"/>
+  <circle cx="570" cy="317" r="14" fill="#E91E63"/>
+  <text x="570" y="322" class="step-num">9</text>
+  <text x="590" y="312" class="step-name">赛后四维复盘</text>
+  <text x="590" y="330" class="step-ref">→继续01</text>
+
+  <!-- 继续: steps 1, 7 -->
+  <rect x="730" y="162" width="152" height="54" rx="6" fill="#fff" stroke="#7E57C2" stroke-width="1.5"/>
+  <circle cx="748" cy="189" r="14" fill="#7E57C2"/>
+  <text x="748" y="194" class="step-num">1</text>
+  <text x="768" y="184" class="step-name">回答决策三角</text>
+  <text x="768" y="202" class="step-ref">→继续03</text>
+
+  <rect x="730" y="226" width="152" height="54" rx="6" fill="#fff" stroke="#7E57C2" stroke-width="1.5"/>
+  <circle cx="748" cy="253" r="14" fill="#7E57C2"/>
+  <text x="748" y="258" class="step-num">7</text>
+  <text x="768" y="248" class="step-name">三重人格议事</text>
+  <text x="768" y="266" class="step-ref">→继续03</text>
+
+  <!-- 五部递进箭头 -->
+  <line x1="177" y1="380" x2="189" y2="380" class="flow-line"/>
+  <line x1="355" y1="380" x2="367" y2="380" class="flow-line"/>
+  <line x1="533" y1="380" x2="545" y2="380" class="flow-line"/>
+  <line x1="711" y1="380" x2="723" y2="380" class="flow-line"/>
+  <text x="450" y="402" class="caption">全书五部递进：观察 → 练手 → 风格 → 制作 → 继续</text>
+
+  <!-- 闭环说明 -->
+  <rect x="60" y="425" width="780" height="44" rx="8" fill="#EDE7F6" stroke="#7E57C2" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="450" y="443" font-size="12" fill="#7E57C2" text-anchor="middle" font-weight="bold">↻ 闭环：步骤 11 提取的视觉改进方向 → 喂回观察01 自评（附录D）→ 下一款游戏从步骤 1 重新开始</text>
+  <text x="450" y="461" font-size="11" fill="#555" text-anchor="middle">工作流是闭环，不是直线——每一款游戏的反馈都是下一款的起点</text>
+
+  <!-- 图注 -->
+  <text x="450" y="510" class="caption">图 继续03.4：一个人的美术工作流总览——11 步映射到全书五部，步骤 11 的发布反馈闭环回观察。</text>
+</svg>

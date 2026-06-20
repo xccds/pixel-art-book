@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .cell-bg { fill: #fafafa; }
+    .cell-line { stroke: #e0e0e0; stroke-width: 0.5; }
+    .cell-fill { fill: #555; }
+    .jag-fill { fill: #333; }
+    .badge-bad { fill: #E74C3C; font-size: 10px; font-weight: bold; }
+    .badge-good { fill: #27AE60; font-size: 10px; font-weight: bold; }
+    .annot { font-size: 9px; fill: #E74C3C; }
+    .annot-green { font-size: 9px; fill: #27AE60; }
+    .step-label { font-size: 9px; fill: #888; }
+    .rule-box { fill: none; stroke: #E74C3C; stroke-width: 1.5; rx: 3; }
+    .grid-border { fill: none; stroke: #bbb; stroke-width: 1; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手01.2 锯齿感（Jaggies）错误 vs 正确斜率修正</text>
+
+  <!-- ===== LEFT: JAGGED ===== -->
+  <g transform="translate(30, 55)">
+    <text x="140" y="0" style="font-size:13px;font-weight:bold;fill:#E74C3C;text-anchor:middle;">✗ 锯齿曲线 · 斜率不一致</text>
+
+    <!-- grid background: 20 cols x 12 rows, cell 14px = 280x168 -->
+    <rect x="0" y="10" width="280" height="168" class="cell-bg" rx="2"/>
+
+    <!-- grid lines -->
+    <g class="cell-line">
+      <line x1="14"  y1="10" x2="14"  y2="178"/><line x1="28"  y1="10" x2="28"  y2="178"/>
+      <line x1="42"  y1="10" x2="42"  y2="178"/><line x1="56"  y1="10" x2="56"  y2="178"/>
+      <line x1="70"  y1="10" x2="70"  y2="178"/><line x1="84"  y1="10" x2="84"  y2="178"/>
+      <line x1="98"  y1="10" x2="98"  y2="178"/><line x1="112" y1="10" x2="112" y2="178"/>
+      <line x1="126" y1="10" x2="126" y2="178"/><line x1="140" y1="10" x2="140" y2="178"/>
+      <line x1="154" y1="10" x2="154" y2="178"/><line x1="168" y1="10" x2="168" y2="178"/>
+      <line x1="182" y1="10" x2="182" y2="178"/><line x1="196" y1="10" x2="196" y2="178"/>
+      <line x1="210" y1="10" x2="210" y2="178"/><line x1="224" y1="10" x2="224" y2="178"/>
+      <line x1="238" y1="10" x2="238" y2="178"/><line x1="252" y1="10" x2="252" y2="178"/>
+      <line x1="266" y1="10" x2="266" y2="178"/>
+      <line x1="0"   y1="24" x2="280" y2="24"/><line x1="0"   y1="38" x2="280"  y2="38"/>
+      <line x1="0"   y1="52" x2="280" y2="52"/><line x1="0"   y1="66" x2="280"  y2="66"/>
+      <line x1="0"   y1="80" x2="280" y2="80"/><line x1="0"   y1="94" x2="280"  y2="94"/>
+      <line x1="0"   y1="108" x2="280" y2="108"/><line x1="0"   y1="122" x2="280" y2="122"/>
+      <line x1="0"   y1="136" x2="280" y2="136"/><line x1="0"   y1="150" x2="280" y2="150"/>
+      <line x1="0"   y1="164" x2="280" y2="164"/>
+    </g>
+
+    <!-- Jagged curve: widths 5,1,5,3,1,3,2,1,1,2 = 24 -->
+    <g class="jag-fill">
+      <!-- row 1 (y=24): cols 0-4 (5) -->
+      <rect x="0"  y="10" width="14" height="14"/><rect x="14" y="10" width="14" height="14"/><rect x="28" y="10" width="14" height="14"/>
+      <rect x="42" y="10" width="14" height="14"/><rect x="56" y="10" width="14" height="14"/>
+      <!-- row 2 (y=38): col 5 (1) -->
+      <rect x="70" y="24" width="14" height="14"/>
+      <!-- row 3 (y=52): cols 6-10 (5) -->
+      <rect x="84" y="38" width="14" height="14"/><rect x="98" y="38" width="14" height="14"/><rect x="112" y="38" width="14" height="14"/>
+      <rect x="126" y="38" width="14" height="14"/><rect x="140" y="38" width="14" height="14"/>
+      <!-- row 4 (y=66): cols 11-13 (3) -->
+      <rect x="154" y="52" width="14" height="14"/><rect x="168" y="52" width="14" height="14"/><rect x="182" y="52" width="14" height="14"/>
+      <!-- row 5 (y=80): col 14 (1) -->
+      <rect x="196" y="66" width="14" height="14"/>
+      <!-- row 6 (y=94): cols 15-17 (3) -->
+      <rect x="210" y="80" width="14" height="14"/><rect x="224" y="80" width="14" height="14"/><rect x="238" y="80" width="14" height="14"/>
+      <!-- row 7 (y=108): cols 18-19 (2) -->
+      <rect x="252" y="94" width="14" height="14"/><rect x="266" y="94" width="14" height="14"/>
+    </g>
+
+    <!-- Red warning boxes on abrupt changes -->
+    <!-- 5→1 jump: row 1-2 border -->
+    <rect x="56" y="24" width="16" height="28" fill="none" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="2,1.5" rx="2"/>
+    <text x="84" y="34" class="annot">5→1</text>
+    <text x="84" y="46" class="annot">突变</text>
+
+    <!-- 1→5 jump -->
+    <rect x="70" y="38" width="56" height="28" fill="none" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="2,1.5" rx="2"/>
+    <text x="130" y="48" class="annot">1→5</text>
+    <text x="130" y="60" class="annot">突变</text>
+
+    <!-- 3→1 jump -->
+    <rect x="182" y="66" width="16" height="28" fill="none" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="2,1.5" rx="2"/>
+
+    <!-- Side annotation: what makes it jagged -->
+    <text x="290" y="50" style="font-size:10px;fill:#E74C3C;font-weight:bold;">问题</text>
+    <text x="290" y="66" style="font-size:9px;fill:#555;">水平段长度</text>
+    <text x="290" y="80" style="font-size:9px;fill:#555;">变化剧烈</text>
+    <text x="290" y="94" style="font-size:9px;fill:#555;">→ 视觉感知</text>
+    <text x="290" y="108" style="font-size:9px;fill:#555;">为锯齿边缘</text>
+
+    <text x="140" y="198" class="step-label" text-anchor="middle">段长序列: 5, 1, 5, 3, 1, 3, 2 — 无规律</text>
+  </g>
+
+  <!-- ===== RIGHT: SMOOTH ===== -->
+  <g transform="translate(430, 55)">
+    <text x="140" y="0" style="font-size:13px;font-weight:bold;fill:#27AE60;text-anchor:middle;">✓ 平滑曲线 · 斜率一致</text>
+
+    <rect x="0" y="10" width="280" height="168" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="14"  y1="10" x2="14"  y2="178"/><line x1="28"  y1="10" x2="28"  y2="178"/>
+      <line x1="42"  y1="10" x2="42"  y2="178"/><line x1="56"  y1="10" x2="56"  y2="178"/>
+      <line x1="70"  y1="10" x2="70"  y2="178"/><line x1="84"  y1="10" x2="84"  y2="178"/>
+      <line x1="98"  y1="10" x2="98"  y2="178"/><line x1="112" y1="10" x2="112" y2="178"/>
+      <line x1="126" y1="10" x2="126" y2="178"/><line x1="140" y1="10" x2="140" y2="178"/>
+      <line x1="154" y1="10" x2="154" y2="178"/><line x1="168" y1="10" x2="168" y2="178"/>
+      <line x1="182" y1="10" x2="182" y2="178"/><line x1="196" y1="10" x2="196" y2="178"/>
+      <line x1="210" y1="10" x2="210" y2="178"/><line x1="224" y1="10" x2="224" y2="178"/>
+      <line x1="238" y1="10" x2="238" y2="178"/><line x1="252" y1="10" x2="252" y2="178"/>
+      <line x1="266" y1="10" x2="266" y2="178"/>
+      <line x1="0"   y1="24" x2="280" y2="24"/><line x1="0"   y1="38" x2="280"  y2="38"/>
+      <line x1="0"   y1="52" x2="280" y2="52"/><line x1="0"   y1="66" x2="280"  y2="66"/>
+      <line x1="0"   y1="80" x2="280" y2="80"/><line x1="0"   y1="94" x2="280"  y2="94"/>
+      <line x1="0"   y1="108" x2="280" y2="108"/><line x1="0"   y1="122" x2="280" y2="122"/>
+      <line x1="0"   y1="136" x2="280" y2="136"/><line x1="0"   y1="150" x2="280" y2="150"/>
+      <line x1="0"   y1="164" x2="280" y2="164"/>
+    </g>
+
+    <!-- Smooth curve: widths 5,4,3,2,2,1,1,1,1,2,3 — gradual -->
+    <!-- total = 25, grid has 28 columns to play with -->
+    <g class="cell-fill">
+      <!-- row 1 (y=24): cols 0-4 (5) -->
+      <rect x="0"  y="10" width="14" height="14"/><rect x="14" y="10" width="14" height="14"/><rect x="28" y="10" width="14" height="14"/>
+      <rect x="42" y="10" width="14" height="14"/><rect x="56" y="10" width="14" height="14"/>
+      <!-- row 2 (y=38): cols 5-8 (4) -->
+      <rect x="70" y="24" width="14" height="14"/><rect x="84" y="24" width="14" height="14"/>
+      <rect x="98" y="24" width="14" height="14"/><rect x="112" y="24" width="14" height="14"/>
+      <!-- row 3 (y=52): cols 9-11 (3) -->
+      <rect x="126" y="38" width="14" height="14"/><rect x="140" y="38" width="14" height="14"/><rect x="154" y="38" width="14" height="14"/>
+      <!-- row 4 (y=66): cols 12-13 (2) -->
+      <rect x="168" y="52" width="14" height="14"/><rect x="182" y="52" width="14" height="14"/>
+      <!-- row 5 (y=80): cols 14-15 (2) -->
+      <rect x="196" y="66" width="14" height="14"/><rect x="210" y="66" width="14" height="14"/>
+      <!-- row 6 (y=94): col 16 (1) -->
+      <rect x="224" y="80" width="14" height="14"/>
+      <!-- row 7 (y=108): col 17 (1) -->
+      <rect x="238" y="94" width="14" height="14"/>
+      <!-- row 8 (y=122): col 18 (1) -->
+      <rect x="252" y="108" width="14" height="14"/>
+      <!-- row 9 (y=136): cols 19-20 (2) -->
+      <rect x="266" y="122" width="14" height="14"/><rect x="280" y="122" width="14" height="14"/>
+    </g>
+
+    <!-- Green check annotations on gradual transitions -->
+    <!-- 5→4 gradual -->
+    <rect x="56" y="24" width="29" height="28" fill="none" stroke="#27AE60" stroke-width="1.5" stroke-dasharray="2,1.5" rx="2"/>
+    <!-- 4→3, 3→2, 2→2 gradual paths -->
+    <rect x="154" y="52" width="29" height="28" fill="none" stroke="#27AE60" stroke-width="1.5" stroke-dasharray="2,1.5" rx="2"/>
+    <!-- 1→1→1 steady in the middle -->
+    <rect x="224" y="80" width="29" height="42" fill="none" stroke="#27AE60" stroke-width="1.5" stroke-dasharray="2,1.5" rx="2"/>
+
+    <!-- Side annotation -->
+    <text x="290" y="50" style="font-size:10px;fill:#27AE60;font-weight:bold;">正确</text>
+    <text x="290" y="66" style="font-size:9px;fill:#555;">段长每次变化</text>
+    <text x="290" y="80" style="font-size:9px;fill:#555;">不超过 ±1</text>
+    <text x="290" y="94" style="font-size:9px;fill:#555;">→ 视觉感知</text>
+    <text x="290" y="108" style="font-size:9px;fill:#555;">为平滑曲线</text>
+
+    <text x="140" y="198" class="step-label" text-anchor="middle">段长序列: 5, 4, 3, 2, 2, 1, 1, 1, 1, 2, 3 — 逐渐变化</text>
+  </g>
+
+  <!-- Bottom explanation -->
+  <g transform="translate(0, 310)">
+    <rect x="30" y="0" width="740" height="180" fill="#F8F9FA" rx="4"/>
+
+    <text x="50" y="25" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：像素曲线 = 楼梯函数的平滑度</text>
+
+    <text x="50" y="50" style="font-size:11px;fill:#555;">把像素曲线想象成一个"台阶函数"——每下一行，水平走 N 步。N 的序列就是你的"信号"。</text>
+    <text x="50" y="70" style="font-size:11px;fill:#555;">左图：信号是 [5, 1, 5, 3, 1, 3, ...] — 相邻值跳变 4→0→4 → 就是信号里的高频噪声，人眼感知为"锯齿"。</text>
+    <text x="50" y="90" style="font-size:11px;fill:#555;">右图：信号是 [5, 4, 3, 2, 2, 1, 1, 1, 1, 2, 3] — 相邻值每次只变 0 或 1 → 信号平滑，人眼感知为"曲线"。</text>
+
+    <line x1="50" y1="105" x2="750" y2="105" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="50" y="128" style="font-size:11px;fill:#E74C3C;font-weight:bold;">诊断法：</text>
+    <text x="50" y="146" style="font-size:11px;fill:#555;">如果你在画布上画了一条曲线，总觉得边缘"像锯齿"——数一数你每段水平走了多少像素。</text>
+    <text x="50" y="164" style="font-size:11px;fill:#555;">如果相邻段的像素数差值超过 1 → 那就是 jaggies 的来源。把它调成渐变序列。</text>
+  </g>
+</svg>

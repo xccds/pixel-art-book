@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 16px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .grid-line { stroke: #ddd; stroke-width: 0.5; }
+    .grid-fill-1-1 { fill: #2C3E50; }
+    .grid-fill-2-1 { fill: #3498DB; }
+    .grid-fill-1-0 { fill: #27AE60; }
+    .grid-bg { fill: #fafafa; }
+    .label-ratio { font-size: 13px; font-weight: bold; fill: #333; }
+    .label-angle { font-size: 11px; fill: #888; }
+    .step-arrow { stroke: #E74C3C; stroke-width: 1.2; fill: none; marker-end: url(#arrowhead); }
+    .step-text { font-size: 10px; fill: #E74C3C; }
+    .func-label { font-size: 10px; fill: #999; font-style: italic; }
+    .highlight-box { fill: none; stroke: #E74C3C; stroke-width: 1.5; stroke-dasharray: 4,3; opacity: 0.7; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0,0 6,2 0,4" fill="#E74C3C"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手01.1 像素线条的三种基本斜率规则</text>
+
+  <!-- ========== 1:1 Grid ========== -->
+  <g transform="translate(40, 55)">
+    <text x="80" y="0" class="label-ratio" text-anchor="middle">斜率 1:1</text>
+    <text x="80" y="16" class="label-angle" text-anchor="middle">45° 对角线</text>
+
+    <!-- grid background -->
+    <rect x="0" y="24" width="160" height="160" class="grid-bg" rx="2"/>
+
+    <!-- grid lines vert -->
+    <line x1="20" y1="24" x2="20" y2="184" class="grid-line"/><line x1="40" y1="24" x2="40" y2="184" class="grid-line"/>
+    <line x1="60" y1="24" x2="60" y2="184" class="grid-line"/><line x1="80" y1="24" x2="80" y2="184" class="grid-line"/>
+    <line x1="100" y1="24" x2="100" y2="184" class="grid-line"/><line x1="120" y1="24" x2="120" y2="184" class="grid-line"/>
+    <line x1="140" y1="24" x2="140" y2="184" class="grid-line"/><!-- hz -->
+    <line x1="0" y1="44" x2="160" y2="44" class="grid-line"/><line x1="0" y1="64" x2="160" y2="64" class="grid-line"/>
+    <line x1="0" y1="84" x2="160" y2="84" class="grid-line"/><line x1="0" y1="104" x2="160" y2="104" class="grid-line"/>
+    <line x1="0" y1="124" x2="160" y2="124" class="grid-line"/><line x1="0" y1="144" x2="160" y2="144" class="grid-line"/>
+    <line x1="0" y1="164" x2="160" y2="164" class="grid-line"/>
+
+    <!-- 1:1 filled cells: (0,0),(1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(7,7) -->
+    <rect x="0"  y="24" width="20" height="20" class="grid-fill-1-1"/>
+    <rect x="20" y="44" width="20" height="20" class="grid-fill-1-1"/>
+    <rect x="40" y="64" width="20" height="20" class="grid-fill-1-1"/>
+    <rect x="60" y="84" width="20" height="20" class="grid-fill-1-1"/>
+    <rect x="80" y="104" width="20" height="20" class="grid-fill-1-1"/>
+    <rect x="100" y="124" width="20" height="20" class="grid-fill-1-1"/>
+    <rect x="120" y="144" width="20" height="20" class="grid-fill-1-1"/>
+    <rect x="140" y="164" width="20" height="20" class="grid-fill-1-1"/>
+
+    <!-- step annotation: right 1, down 1 -->
+    <line x1="20" y1="34" x2="40" y2="34" class="step-arrow"/>
+    <line x1="20" y1="44" x2="20" y2="54" class="step-arrow"/>
+    <text x="46" y="38" class="step-text">+1 x</text>
+    <text x="4" y="56" class="step-text">+1 y</text>
+
+    <text x="80" y="204" class="func-label" text-anchor="middle">每步 x+1, y+1 → 8方向全对称</text>
+  </g>
+
+  <!-- ========== 2:1 Grid ========== -->
+  <g transform="translate(280, 55)">
+    <text x="120" y="0" class="label-ratio" text-anchor="middle">斜率 2:1</text>
+    <text x="120" y="16" class="label-angle" text-anchor="middle">约 26.6° 浅角</text>
+
+    <!-- grid background 12 cols x 8 rows -->
+    <rect x="0" y="24" width="240" height="160" class="grid-bg" rx="2"/>
+
+    <!-- grid lines vert -->
+    <line x1="20"  y1="24" x2="20"  y2="184" class="grid-line"/><line x1="40"  y1="24" x2="40"  y2="184" class="grid-line"/>
+    <line x1="60"  y1="24" x2="60"  y2="184" class="grid-line"/><line x1="80"  y1="24" x2="80"  y2="184" class="grid-line"/>
+    <line x1="100" y1="24" x2="100" y2="184" class="grid-line"/><line x1="120" y1="24" x2="120" y2="184" class="grid-line"/>
+    <line x1="140" y1="24" x2="140" y2="184" class="grid-line"/><line x1="160" y1="24" x2="160" y2="184" class="grid-line"/>
+    <line x1="180" y1="24" x2="180" y2="184" class="grid-line"/><line x1="200" y1="24" x2="200" y2="184" class="grid-line"/>
+    <line x1="220" y1="24" x2="220" y2="184" class="grid-line"/>
+    <!-- hz -->
+    <line x1="0" y1="44" x2="240" y2="44" class="grid-line"/><line x1="0" y1="64" x2="240" y2="64" class="grid-line"/>
+    <line x1="0" y1="84" x2="240" y2="84" class="grid-line"/><line x1="0" y1="104" x2="240" y2="104" class="grid-line"/>
+    <line x1="0" y1="124" x2="240" y2="124" class="grid-line"/><line x1="0" y1="144" x2="240" y2="144" class="grid-line"/>
+    <line x1="0" y1="164" x2="240" y2="164" class="grid-line"/>
+
+    <!-- 2:1 filled cells: 2 cells per row, 1 row down each step -->
+    <rect x="0"   y="24"  width="20" height="20" class="grid-fill-2-1"/><rect x="20"  y="24"  width="20" height="20" class="grid-fill-2-1"/>
+    <rect x="40"  y="44"  width="20" height="20" class="grid-fill-2-1"/><rect x="60"  y="44"  width="20" height="20" class="grid-fill-2-1"/>
+    <rect x="80"  y="64"  width="20" height="20" class="grid-fill-2-1"/><rect x="100" y="64"  width="20" height="20" class="grid-fill-2-1"/>
+    <rect x="120" y="84"  width="20" height="20" class="grid-fill-2-1"/><rect x="140" y="84"  width="20" height="20" class="grid-fill-2-1"/>
+    <rect x="160" y="104" width="20" height="20" class="grid-fill-2-1"/><rect x="180" y="104" width="20" height="20" class="grid-fill-2-1"/>
+    <rect x="200" y="124" width="20" height="20" class="grid-fill-2-1"/><rect x="220" y="124" width="20" height="20" class="grid-fill-2-1"/>
+
+    <!-- step annotation -->
+    <line x1="20" y1="34" x2="40" y2="34" class="step-arrow"/>
+    <text x="46" y="38" class="step-text">+2 x</text>
+    <line x1="40" y1="44" x2="40" y2="54" class="step-arrow"/>
+    <text x="26" y="56" class="step-text">+1 y</text>
+
+    <text x="120" y="204" class="func-label" text-anchor="middle">每步 x+2, y+1 → 像素"台阶"更长</text>
+  </g>
+
+  <!-- ========== 1:0 Grid ========== -->
+  <g transform="translate(580, 55)">
+    <text x="80" y="0" class="label-ratio" text-anchor="middle">斜率 1:0</text>
+    <text x="80" y="16" class="label-angle" text-anchor="middle">0° 水平 / 90° 垂直</text>
+
+    <rect x="0" y="24" width="160" height="160" class="grid-bg" rx="2"/>
+
+    <!-- grid lines -->
+    <line x1="20" y1="24" x2="20" y2="184" class="grid-line"/><line x1="40" y1="24" x2="40" y2="184" class="grid-line"/>
+    <line x1="60" y1="24" x2="60" y2="184" class="grid-line"/><line x1="80" y1="24" x2="80" y2="184" class="grid-line"/>
+    <line x1="100" y1="24" x2="100" y2="184" class="grid-line"/><line x1="120" y1="24" x2="120" y2="184" class="grid-line"/>
+    <line x1="140" y1="24" x2="140" y2="184" class="grid-line"/>
+    <line x1="0" y1="44" x2="160" y2="44" class="grid-line"/><line x1="0" y1="64" x2="160" y2="64" class="grid-line"/>
+    <line x1="0" y1="84" x2="160" y2="84" class="grid-line"/><line x1="0" y1="104" x2="160" y2="104" class="grid-line"/>
+    <line x1="0" y1="124" x2="160" y2="124" class="grid-line"/><line x1="0" y1="144" x2="160" y2="144" class="grid-line"/>
+    <line x1="0" y1="164" x2="160" y2="164" class="grid-line"/>
+
+    <!-- 1:0 horizontal line: row 4, all cols filled -->
+    <rect x="0"   y="104" width="20" height="20" class="grid-fill-1-0"/>
+    <rect x="20"  y="104" width="20" height="20" class="grid-fill-1-0"/>
+    <rect x="40"  y="104" width="20" height="20" class="grid-fill-1-0"/>
+    <rect x="60"  y="104" width="20" height="20" class="grid-fill-1-0"/>
+    <rect x="80"  y="104" width="20" height="20" class="grid-fill-1-0"/>
+    <rect x="100" y="104" width="20" height="20" class="grid-fill-1-0"/>
+    <rect x="120" y="104" width="20" height="20" class="grid-fill-1-0"/>
+    <rect x="140" y="104" width="20" height="20" class="grid-fill-1-0"/>
+
+    <!-- 1:0 vertical line: col 3, all rows filled (offset slightly for clarity) -->
+    <!-- show as a line within the horizontal line context -->
+    <rect x="60" y="24"  width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="44"  width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="64"  width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="84"  width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+    <!-- horizontal continues at y=104 -->
+    <rect x="60" y="124" width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="144" width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="164" width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+
+    <!-- step annotation -->
+    <line x1="130" y1="114" x2="145" y2="114" class="step-arrow"/>
+    <text x="140" y="100" class="step-text">+1 x</text>
+    <line x1="65" y1="134" x2="65" y2="150" class="step-arrow"/>
+    <text x="72" y="148" class="step-text">0 y</text>
+
+    <text x="80" y="204" class="func-label" text-anchor="middle">Δy=0 (水平) 或 Δx=0 (垂直)</text>
+  </g>
+
+  <!-- Bottom explanation -->
+  <g transform="translate(0, 320)">
+    <rect x="40" y="0" width="720" height="170" fill="#F8F9FA" rx="4"/>
+
+    <text x="60" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：像素斜率 = CSS Grid 中的列宽比例</text>
+
+    <text x="60" y="52" style="font-size:11px;fill:#555;">你在 CSS 里定义 grid-template-columns: 1fr 1fr 时，两列宽度相等——这就像 1:1 斜率，每个方向步长一致。</text>
+    <text x="60" y="72" style="font-size:11px;fill:#555;">当你写 2fr 1fr 时，第一列是第二列的两倍——这就是 2:1 斜率：水平方向每次跨两格，垂直方向跨一格。</text>
+
+    <line x1="60" y1="92" x2="740" y2="92" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="60" y="115" style="font-size:11px;fill:#E74C3C;font-weight:bold;">关键洞察：像素画中每一条线，本质上是一串"(x偏移, y偏移)"指令的序列。</text>
+    <text x="60" y="135" style="font-size:11px;fill:#555;">当序列中斜率规则突变（比如从 2:1 跳到 3:1 再跳回 2:1），肉眼就会感知为"锯齿"。保持斜率一致性 = 保持视觉平滑。</text>
+  </g>
+
+  <!-- Grid legend -->
+  <g transform="translate(40, 455)">
+    <rect x="0" y="0" width="12" height="12" fill="#2C3E50"/><text x="18" y="11" style="font-size:10px;fill:#666;">1:1 像素</text>
+    <rect x="90" y="0" width="12" height="12" fill="#3498DB"/><text x="108" y="11" style="font-size:10px;fill:#666;">2:1 像素</text>
+    <rect x="180" y="0" width="12" height="12" fill="#27AE60"/><text x="198" y="11" style="font-size:10px;fill:#666;">1:0 像素</text>
+    <rect x="270" y="0" width="12" height="12" fill="#fafafa" stroke="#ddd" stroke-width="0.5"/><text x="288" y="11" style="font-size:10px;fill:#666;">背景网格</text>
+  </g>
+</svg>

@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .cell-bg { fill: #fafafa; }
+    .cell-line { stroke: #e5e5e5; stroke-width: 0.5; }
+    .cell-fill { fill: #555; }
+    .seq-num { font-size: 13px; font-weight: bold; fill: #E74C3C; text-anchor: middle; }
+    .seq-conn { stroke: #E74C3C; stroke-width: 0.8; stroke-dasharray: 3,2; }
+    .step-bar { fill: #3498DB; opacity: 0.7; }
+    .step-label { font-size: 9px; fill: #666; text-anchor: middle; }
+    .grid-border { fill: none; stroke: #bbb; stroke-width: 1; }
+    .insight { font-size: 10px; fill: #555; }
+    .arrow-up { stroke: #3498DB; stroke-width: 1; fill: none; }
+    .arrow-text { font-size: 9px; fill: #3498DB; }
+  </style>
+
+  <defs>
+    <marker id="arr-blue" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+      <polygon points="0,0 5,2 0,4" fill="#3498DB"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="28" class="title" text-anchor="middle">
+    图 练手01.3 曲线平滑核心技巧——台阶宽度渐变序列
+  </text>
+
+  <!-- ===== Main pixel curve grid ===== -->
+  <!-- grid: 24 cols × 10 rows, cell 18px = 432×180 -->
+  <!-- centered at x=184 -->
+
+  <g transform="translate(184, 50)">
+    <!-- grid background -->
+    <rect x="0" y="0" width="432" height="180" class="cell-bg" rx="2"/>
+
+    <!-- grid lines vertical -->
+    <g class="cell-line">
+      <line x1="18"  y1="0" x2="18"  y2="180"/><line x1="36"  y1="0" x2="36"  y2="180"/>
+      <line x1="54"  y1="0" x2="54"  y2="180"/><line x1="72"  y1="0" x2="72"  y2="180"/>
+      <line x1="90"  y1="0" x2="90"  y2="180"/><line x1="108" y1="0" x2="108" y2="180"/>
+      <line x1="126" y1="0" x2="126" y2="180"/><line x1="144" y1="0" x2="144" y2="180"/>
+      <line x1="162" y1="0" x2="162" y2="180"/><line x1="180" y1="0" x2="180" y2="180"/>
+      <line x1="198" y1="0" x2="198" y2="180"/><line x1="216" y1="0" x2="216" y2="180"/>
+      <line x1="234" y1="0" x2="234" y2="180"/><line x1="252" y1="0" x2="252" y2="180"/>
+      <line x1="270" y1="0" x2="270" y2="180"/><line x1="288" y1="0" x2="288" y2="180"/>
+      <line x1="306" y1="0" x2="306" y2="180"/><line x1="324" y1="0" x2="324" y2="180"/>
+      <line x1="342" y1="0" x2="342" y2="180"/><line x1="360" y1="0" x2="360" y2="180"/>
+      <line x1="378" y1="0" x2="378" y2="180"/><line x1="396" y1="0" x2="396" y2="180"/>
+      <line x1="414" y1="0" x2="414" y2="180"/>
+      <!-- horizontal -->
+      <line x1="0" y1="18" x2="432" y2="18"/><line x1="0" y1="36" x2="432" y2="36"/>
+      <line x1="0" y1="54" x2="432" y2="54"/><line x1="0" y1="72" x2="432" y2="72"/>
+      <line x1="0" y1="90" x2="432" y2="90"/><line x1="0" y1="108" x2="432" y2="108"/>
+      <line x1="0" y1="126" x2="432" y2="126"/><line x1="0" y1="144" x2="432" y2="144"/>
+      <line x1="0" y1="162" x2="432" y2="162"/>
+    </g>
+
+    <!-- Filled cells: curve with sequence [5,4,3,2,2,1,1,1,2,3] -->
+    <g class="cell-fill">
+      <!-- row 0 (y=0): 5 cells -->
+      <rect x="0"  y="0"  width="18" height="18"/><rect x="18" y="0"  width="18" height="18"/>
+      <rect x="36" y="0"  width="18" height="18"/><rect x="54" y="0"  width="18" height="18"/>
+      <rect x="72" y="0"  width="18" height="18"/>
+      <!-- row 1 (y=18): 4 cells -->
+      <rect x="90" y="18" width="18" height="18"/><rect x="108" y="18" width="18" height="18"/>
+      <rect x="126" y="18" width="18" height="18"/><rect x="144" y="18" width="18" height="18"/>
+      <!-- row 2 (y=36): 3 cells -->
+      <rect x="162" y="36" width="18" height="18"/><rect x="180" y="36" width="18" height="18"/>
+      <rect x="198" y="36" width="18" height="18"/>
+      <!-- row 3 (y=54): 2 cells -->
+      <rect x="216" y="54" width="18" height="18"/><rect x="234" y="54" width="18" height="18"/>
+      <!-- row 4 (y=72): 2 cells -->
+      <rect x="252" y="72" width="18" height="18"/><rect x="270" y="72" width="18" height="18"/>
+      <!-- row 5 (y=90): 1 cell -->
+      <rect x="288" y="90" width="18" height="18"/>
+      <!-- row 6 (y=108): 1 cell -->
+      <rect x="306" y="108" width="18" height="18"/>
+      <!-- row 7 (y=126): 1 cell -->
+      <rect x="324" y="126" width="18" height="18"/>
+      <!-- row 8 (y=144): 2 cells -->
+      <rect x="342" y="144" width="18" height="18"/><rect x="360" y="144" width="18" height="18"/>
+      <!-- row 9 (y=162): 3 cells -->
+      <rect x="378" y="162" width="18" height="18"/><rect x="396" y="162" width="18" height="18"/>
+      <rect x="414" y="162" width="18" height="18"/>
+    </g>
+
+    <!-- Sequence numbers ABOVE grid -->
+    <!-- Row 0: 5 -->
+    <text x="45" y="-12" class="seq-num">5</text>
+    <line x1="45" y1="-4" x2="45" y2="4" class="seq-conn"/>
+    <!-- Row 1: 4 -->
+    <text x="126" y="-12" class="seq-num">4</text>
+    <line x1="126" y1="-4" x2="126" y2="22" class="seq-conn"/>
+    <!-- Row 2: 3 -->
+    <text x="189" y="-12" class="seq-num">3</text>
+    <line x1="189" y1="-4" x2="189" y2="40" class="seq-conn"/>
+    <!-- Row 3-4: 2 -->
+    <text x="243" y="-12" class="seq-num">2</text>
+    <line x1="243" y1="-4" x2="243" y2="58" class="seq-conn"/>
+    <!-- Row 5-7: 1 -->
+    <text x="315" y="-12" class="seq-num">1</text>
+    <line x1="315" y1="-4" x2="315" y2="94" class="seq-conn"/>
+    <!-- Row 8: 2 -->
+    <text x="360" y="-12" class="seq-num">2</text>
+    <line x1="360" y1="-4" x2="360" y2="148" class="seq-conn"/>
+    <!-- Row 9: 3 -->
+    <text x="405" y="-12" class="seq-num">3</text>
+    <line x1="405" y1="-4" x2="405" y2="166" class="seq-conn"/>
+
+    <!-- Arrow showing gradually decreasing then increasing -->
+    <path d="M50,-28 Q220,-40 220,-28 Q220,-16 380,-28" stroke="#3498DB" stroke-width="1.2" fill="none" stroke-dasharray="5,3" marker-end="url(#arr-blue)"/>
+    <text x="220" y="-34" class="arrow-text" text-anchor="middle">逐渐减少 → 持平 → 逐渐增加</text>
+
+    <!-- Step bar chart BELOW grid: showing the stair-step pattern -->
+    <g transform="translate(0, 195)">
+      <!-- bars representing step widths -->
+      <rect x="0"   y="40"  width="90"  height="16" class="step-bar" rx="2"/>
+      <rect x="90"  y="22"  width="72"  height="16" class="step-bar" rx="2"/>
+      <rect x="162" y="4"   width="54"  height="16" class="step-bar" rx="2"/>
+      <rect x="216" y="-14" width="36"  height="16" class="step-bar" rx="2"/>
+      <rect x="252" y="-14" width="36"  height="16" class="step-bar" rx="2"/>
+      <rect x="288" y="-32" width="18"  height="16" class="step-bar" rx="2"/>
+      <rect x="306" y="-32" width="18"  height="16" class="step-bar" rx="2"/>
+      <rect x="324" y="-32" width="18"  height="16" class="step-bar" rx="2"/>
+      <rect x="342" y="-14" width="36"  height="16" class="step-bar" rx="2"/>
+      <rect x="378" y="4"   width="54"  height="16" class="step-bar" rx="2"/>
+
+      <!-- connecting line showing the "stair" pattern -->
+      <polyline points="0,40 90,40 90,22 162,22 162,4 216,4 216,-14 252,-14 252,-14 288,-14 288,-32 306,-32 306,-32 324,-32 324,-14 342,-14 342,4 378,4 378,22 432,22"
+        fill="none" stroke="#2C3E50" stroke-width="1.5" stroke-linejoin="round"/>
+
+      <!-- labels -->
+      <text x="45"  y="72" class="step-label">5</text>
+      <text x="126" y="72" class="step-label">4</text>
+      <text x="189" y="72" class="step-label">3</text>
+      <text x="234" y="72" class="step-label">2</text>
+      <text x="270" y="72" class="step-label">2</text>
+      <text x="297" y="72" class="step-label">1</text>
+      <text x="315" y="72" class="step-label">1</text>
+      <text x="333" y="72" class="step-label">1</text>
+      <text x="360" y="72" class="step-label">2</text>
+      <text x="405" y="72" class="step-label">3</text>
+
+      <text x="216" y="95" style="font-size:9px;fill:#888;text-anchor:middle;">
+        每段水平像素数（↓ = 换行）
+      </text>
+    </g>
+  </g>
+
+  <!-- Right side insight panel -->
+  <g transform="translate(630, 70)">
+    <rect x="0" y="0" width="150" height="220" fill="#F8F9FA" rx="4" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="12" y="22" style="font-size:11px;font-weight:bold;fill:#333;">程序员类比</text>
+    <text x="12" y="42" style="font-size:10px;fill:#555;">这像一个阶梯函数</text>
+    <text x="12" y="56" style="font-size:10px;fill:#555;">f(n)：</text>
+    <text x="12" y="72" style="font-size:10px;fill:#555;font-family:monospace;">[5,4,3,2,2,1,1,1,2,3]</text>
+
+    <line x1="12" y1="88" x2="138" y2="88" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="12" y="108" style="font-size:10px;fill:#555;">相邻元素差值：</text>
+    <text x="12" y="124" style="font-size:10px;fill:#555;font-family:monospace;">[-1,-1,-1,0,-1,0,0,+1,+1]</text>
+
+    <line x1="12" y1="138" x2="138" y2="138" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="12" y="158" style="font-size:10px;fill:#E74C3C;font-weight:bold;">规则：|diff| ≤ 1</text>
+    <text x="12" y="176" style="font-size:10px;fill:#555;">相邻段像素数变化</text>
+    <text x="12" y="192" style="font-size:10px;fill:#555;">不超过 1，曲线就平滑。</text>
+
+    <line x1="12" y1="206" x2="138" y2="206" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="12" y="220" style="font-size:9px;fill:#999;">来源: ashes999 GitHub</text>
+  </g>
+
+  <!-- Bottom insight -->
+  <g transform="translate(0, 460)">
+    <text x="400" y="14" style="font-size:11px;fill:#666;text-anchor:middle;">
+      核心技巧：画曲线时，逐行写出水平段像素数，确保每一次变化不超过 1
+    </text>
+    <text x="400" y="36" style="font-size:10px;fill:#999;text-anchor:middle;">
+      把每一行当成一个"bin"，曲线的平滑度取决于相邻 bin 的宽度差是否 ≤ 1
+    </text>
+  </g>
+</svg>

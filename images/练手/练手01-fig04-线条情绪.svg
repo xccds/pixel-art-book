@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .emotion-bg { fill: #1a1a2e; rx: 6; }
+    .emotion-box { fill: none; stroke: #444; stroke-width: 1; rx: 6; }
+    .emotion-label { font-size: 12px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .emotion-desc { font-size: 9px; fill: #999; text-anchor: middle; }
+    .line-calm { stroke: #AED6F1; stroke-width: 2; fill: none; stroke-linecap: round; }
+    .line-tense { stroke: #F1948A; stroke-width: 2; fill: none; stroke-linecap: round; }
+    .line-flow { stroke: #A9DFBF; stroke-width: 2; fill: none; stroke-linecap: round; }
+    .line-burst { stroke: #F9E79F; stroke-width: 2; fill: none; stroke-linecap: round; }
+    .line-curl { stroke: #D7BDE2; stroke-width: 2; fill: none; stroke-linecap: round; }
+    .grid-dot { fill: #3a3a5c; }
+  </style>
+
+  <text x="400" y="28" class="title" text-anchor="middle">图 练手01.4 线条情绪——用三根线传达五种不同的情绪状态</text>
+
+  <!-- ===== Row 1: 平静, 紧张, 流动 ===== -->
+
+  <!-- 1. CALM -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="140" height="140" class="emotion-bg"/>
+    <rect x="0" y="0" width="140" height="140" class="emotion-box"/>
+
+    <!-- subtle grid -->
+    <circle cx="35" cy="35" r="0.8" class="grid-dot"/><circle cx="70" cy="35" r="0.8" class="grid-dot"/><circle cx="105" cy="35" r="0.8" class="grid-dot"/>
+    <circle cx="35" cy="70" r="0.8" class="grid-dot"/><circle cx="70" cy="70" r="0.8" class="grid-dot"/><circle cx="105" cy="70" r="0.8" class="grid-dot"/>
+    <circle cx="35" cy="105" r="0.8" class="grid-dot"/><circle cx="70" cy="105" r="0.8" class="grid-dot"/><circle cx="105" cy="105" r="0.8" class="grid-dot"/>
+
+    <!-- calm lines: gentle horizontal curves, evenly spaced -->
+    <path d="M8,38 Q70,28 132,40" class="line-calm" opacity="0.9"/>
+    <path d="M8,62 Q70,56 132,64" class="line-calm" opacity="0.85"/>
+    <path d="M8,86 Q70,84 132,88" class="line-calm" opacity="0.8"/>
+    <path d="M8,108 Q70,112 132,106" class="line-calm" opacity="0.75"/>
+
+    <text x="70" y="162" class="emotion-label">平静</text>
+    <text x="70" y="176" class="emotion-desc">缓慢 · 水平 · 等间距</text>
+  </g>
+
+  <!-- 2. TENSION -->
+  <g transform="translate(230, 50)">
+    <rect x="0" y="0" width="140" height="140" class="emotion-bg"/>
+    <rect x="0" y="0" width="140" height="140" class="emotion-box"/>
+
+    <circle cx="35" cy="35" r="0.8" class="grid-dot"/><circle cx="70" cy="35" r="0.8" class="grid-dot"/><circle cx="105" cy="35" r="0.8" class="grid-dot"/>
+    <circle cx="35" cy="70" r="0.8" class="grid-dot"/><circle cx="70" cy="70" r="0.8" class="grid-dot"/><circle cx="105" cy="70" r="0.8" class="grid-dot"/>
+    <circle cx="35" cy="105" r="0.8" class="grid-dot"/><circle cx="70" cy="105" r="0.8" class="grid-dot"/><circle cx="105" cy="105" r="0.8" class="grid-dot"/>
+
+    <!-- tension: sharp zigzag lines crossing -->
+    <polyline points="12,130 50,80 78,110 130,20" class="line-tense" opacity="0.95"/>
+    <polyline points="15,25 60,100 95,70 128,120" class="line-tense" opacity="0.85"/>
+    <polyline points="10,75 45,30 72,95 125,55" class="line-tense" opacity="0.75"/>
+    <line x1="40" y1="10" x2="100" y2="130" class="line-tense" opacity="0.5" stroke-dasharray="6,4"/>
+
+    <text x="70" y="162" class="emotion-label">紧张</text>
+    <text x="70" y="176" class="emotion-desc">锐角 · 交叉 · 不规则</text>
+  </g>
+
+  <!-- 3. FLOW -->
+  <g transform="translate(410, 50)">
+    <rect x="0" y="0" width="140" height="140" class="emotion-bg"/>
+    <rect x="0" y="0" width="140" height="140" class="emotion-box"/>
+
+    <circle cx="35" cy="35" r="0.8" class="grid-dot"/><circle cx="70" cy="35" r="0.8" class="grid-dot"/><circle cx="105" cy="35" r="0.8" class="grid-dot"/>
+    <circle cx="35" cy="70" r="0.8" class="grid-dot"/><circle cx="70" cy="70" r="0.8" class="grid-dot"/><circle cx="105" cy="70" r="0.8" class="grid-dot"/>
+    <circle cx="35" cy="105" r="0.8" class="grid-dot"/><circle cx="70" cy="105" r="0.8" class="grid-dot"/><circle cx="105" cy="105" r="0.8" class="grid-dot"/>
+
+    <!-- flow: continuous sine waves following each other -->
+    <path d="M8,25 C40,60 80,-10 130,25" class="line-flow" opacity="0.95"/>
+    <path d="M8,55 C40,90 80,20 130,55" class="line-flow" opacity="0.85"/>
+    <path d="M8,85 C40,115 80,55 130,85" class="line-flow" opacity="0.75"/>
+    <path d="M8,110 C40,135 80,90 130,110" class="line-flow" opacity="0.65"/>
+
+    <text x="70" y="162" class="emotion-label">流动</text>
+    <text x="70" y="176" class="emotion-desc">连续 · 跟随 · 正弦</text>
+  </g>
+
+  <!-- ===== Row 2: 爆发, 蜷缩 (centered) ===== -->
+
+  <!-- 4. EXPLOSION -->
+  <g transform="translate(200, 240)">
+    <rect x="0" y="0" width="140" height="140" class="emotion-bg"/>
+    <rect x="0" y="0" width="140" height="140" class="emotion-box"/>
+
+    <circle cx="70" cy="70" r="0.8" class="grid-dot"/>
+
+    <!-- burst: lines radiating from center -->
+    <line x1="70" y1="70" x2="25" y2="10" class="line-burst" opacity="0.9"/>
+    <line x1="70" y1="70" x2="110" y2="8" class="line-burst" opacity="0.85"/>
+    <line x1="70" y1="70" x2="130" y2="55" class="line-burst" opacity="0.8"/>
+    <line x1="70" y1="70" x2="128" y2="110" class="line-burst" opacity="0.75"/>
+    <line x1="70" y1="70" x2="100" y2="135" class="line-burst" opacity="0.7"/>
+    <line x1="70" y1="70" x2="15" y2="130" class="line-burst" opacity="0.65"/>
+    <line x1="70" y1="70" x2="5" y2="75" class="line-burst" opacity="0.6"/>
+    <line x1="70" y1="70" x2="20" y2="20" class="line-burst" opacity="0.55"/>
+
+    <text x="70" y="162" class="emotion-label">爆发</text>
+    <text x="70" y="176" class="emotion-desc">放射 · 离心 · 动态</text>
+  </g>
+
+  <!-- 5. CURLED UP -->
+  <g transform="translate(420, 240)">
+    <rect x="0" y="0" width="140" height="140" class="emotion-bg"/>
+    <rect x="0" y="0" width="140" height="140" class="emotion-box"/>
+
+    <circle cx="35" cy="35" r="0.8" class="grid-dot"/><circle cx="70" cy="35" r="0.8" class="grid-dot"/><circle cx="105" cy="35" r="0.8" class="grid-dot"/>
+    <circle cx="35" cy="70" r="0.8" class="grid-dot"/><circle cx="70" cy="70" r="0.8" class="grid-dot"/><circle cx="105" cy="70" r="0.8" class="grid-dot"/>
+    <circle cx="35" cy="105" r="0.8" class="grid-dot"/><circle cx="70" cy="105" r="0.8" class="grid-dot"/><circle cx="105" cy="105" r="0.8" class="grid-dot"/>
+
+    <!-- curl: tight inward spirals and wrapping lines -->
+    <path d="M70,70 Q90,50 85,35 Q78,22 62,28 Q48,34 52,50 Q58,66 78,62" class="line-curl" opacity="0.9"/>
+    <path d="M70,70 Q98,82 90,100 Q80,120 62,115 Q46,108 50,90 Q56,72 72,78" class="line-curl" opacity="0.8"/>
+    <path d="M70,70 Q38,58 30,40 Q22,22 42,18 Q64,16 68,35 Q72,52 50,55" class="line-curl" opacity="0.7"/>
+
+    <text x="70" y="162" class="emotion-label">蜷缩</text>
+    <text x="70" y="176" class="emotion-desc">内卷 · 收紧 · 防御</text>
+  </g>
+
+  <!-- Bottom insight -->
+  <g transform="translate(0, 440)">
+    <text x="400" y="14" style="font-size:11px;fill:#666;text-anchor:middle;">
+      三根线就有足够的词汇量来表达情绪——关键不是数量，是线的方向、曲率和间距
+    </text>
+  </g>
+</svg>

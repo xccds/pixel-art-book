@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"
+     width="800" height="500"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .label { font-size: 16px; fill: #333; }
+    .title { font-size: 20px; font-weight: bold; fill: #222; }
+    .caption { font-size: 14px; fill: #666; }
+    .arrow-line { stroke: #555; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .box1 { fill: #E8F4FD; stroke: #4A90D9; stroke-width: 2; }
+    .box2 { fill: #E0F5E0; stroke: #27AE60; stroke-width: 2; }
+    .box3 { fill: #FFF3CD; stroke: #E6A817; stroke-width: 2; }
+    .box4 { fill: #FCE4EC; stroke: #E91E63; stroke-width: 2; }
+    .box5 { fill: #EDE7F6; stroke: #7E57C2; stroke-width: 2; }
+    .box6 { fill: #E0F2F1; stroke: #00897B; stroke-width: 2; }
+    .box-title { font-size: 18px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .box-subtitle { font-size: 13px; fill: #555; text-anchor: middle; }
+    .num { font-size: 28px; font-weight: bold; fill: #4A90D9; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="35" class="title" text-anchor="middle">全书五部递进结构</text>
+
+  <!-- Box 1: 第一部 观察 -->
+  <rect x="50" y="55" width="160" height="60" rx="8" class="box1"/>
+  <text x="130" y="80" class="num">I</text>
+  <text x="130" y="103" class="box-title">观察</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="210" y1="85" x2="270" y2="85" class="arrow-line"/>
+
+  <!-- Box 2: 第二部 练手 -->
+  <rect x="280" y="55" width="160" height="60" rx="8" class="box2"/>
+  <text x="360" y="80" class="num" fill="#27AE60">II</text>
+  <text x="360" y="103" class="box-title">练手</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="440" y1="85" x2="500" y2="85" class="arrow-line"/>
+
+  <!-- Box 3: 第三部 风格 -->
+  <rect x="510" y="55" width="160" height="60" rx="8" class="box3"/>
+  <text x="590" y="80" class="num" fill="#E6A817">III</text>
+  <text x="590" y="103" class="box-title">风格</text>
+
+  <!-- Arrow 3→4 (straight down, aligned under Box 3) -->
+  <line x1="590" y1="115" x2="590" y2="275" class="arrow-line"/>
+
+  <!-- Box 4: 第四部 制作 -->
+  <rect x="510" y="275" width="160" height="60" rx="8" class="box4"/>
+  <text x="590" y="300" class="num" fill="#E91E63">IV</text>
+  <text x="590" y="323" class="box-title">制作</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="510" y1="305" x2="450" y2="305" class="arrow-line"/>
+
+  <!-- Box 5: 第五部 继续 -->
+  <rect x="280" y="275" width="160" height="60" rx="8" class="box5"/>
+  <text x="360" y="300" class="num" fill="#7E57C2">V</text>
+  <text x="360" y="323" class="box-title">继续</text>
+
+  <!-- Subtitle row -->
+  <text x="130" y="130" class="box-subtitle">感知与词汇</text>
+  <text x="360" y="130" class="box-subtitle">八概念与像素技法</text>
+  <text x="590" y="130" class="box-subtitle">选你的像素子风格</text>
+  <text x="590" y="348" class="box-subtitle">从素材到游戏</text>
+  <text x="360" y="348" class="box-subtitle">维持与扩展</text>
+
+  <!-- Bottom annotation -->
+  <text x="400" y="460" class="caption" text-anchor="middle">图 0.1：全书五部——从“观察”到“制作”到“继续”，每一步都是下一步的前置条件。</text>
+</svg>

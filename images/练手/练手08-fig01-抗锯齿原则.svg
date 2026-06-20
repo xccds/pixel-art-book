@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .cell-bg { fill: #fafafa; }
+    .cell-line { stroke: #e0e0e0; stroke-width: 0.5; }
+    .line-fill { fill: #2C3E50; }
+    .aa-fill { fill: #7F8C8D; }
+    .step-label { font-size: 9px; fill: #888; }
+    .annot-blue { font-size: 9px; fill: #3498DB; }
+    .annot-green { font-size: 9px; fill: #27AE60; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手08.1 抗锯齿原则——中间色像素的放置</text>
+
+  <!-- ===== LEFT: NO AA ===== -->
+  <g transform="translate(30, 55)">
+    <text x="140" y="0" style="font-size:13px;font-weight:bold;fill:#E74C3C;text-anchor:middle;">✗ 无 AA · 合规但生硬</text>
+
+    <rect x="0" y="10" width="280" height="140" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="14" y1="10" x2="14" y2="150"/><line x1="28" y1="10" x2="28" y2="150"/>
+      <line x1="42" y1="10" x2="42" y2="150"/><line x1="56" y1="10" x2="56" y2="150"/>
+      <line x1="70" y1="10" x2="70" y2="150"/><line x1="84" y1="10" x2="84" y2="150"/>
+      <line x1="98" y1="10" x2="98" y2="150"/><line x1="112" y1="10" x2="112" y2="150"/>
+      <line x1="126" y1="10" x2="126" y2="150"/><line x1="140" y1="10" x2="140" y2="150"/>
+      <line x1="154" y1="10" x2="154" y2="150"/><line x1="168" y1="10" x2="168" y2="150"/>
+      <line x1="182" y1="10" x2="182" y2="150"/><line x1="196" y1="10" x2="196" y2="150"/>
+      <line x1="210" y1="10" x2="210" y2="150"/><line x1="224" y1="10" x2="224" y2="150"/>
+      <line x1="238" y1="10" x2="238" y2="150"/><line x1="252" y1="10" x2="252" y2="150"/>
+      <line x1="266" y1="10" x2="266" y2="150"/>
+      <line x1="0" y1="24" x2="280" y2="24"/><line x1="0" y1="38" x2="280" y2="38"/>
+      <line x1="0" y1="52" x2="280" y2="52"/><line x1="0" y1="66" x2="280" y2="66"/>
+      <line x1="0" y1="80" x2="280" y2="80"/><line x1="0" y1="94" x2="280" y2="94"/>
+      <line x1="0" y1="108" x2="280" y2="108"/><line x1="0" y1="122" x2="280" y2="122"/>
+      <line x1="0" y1="136" x2="280" y2="136"/>
+    </g>
+
+    <!-- Smooth staircase line: step widths [5,4,3,2,2,1,1] -->
+    <g class="line-fill">
+      <rect x="0" y="10" width="14" height="14"/><rect x="14" y="10" width="14" height="14"/><rect x="28" y="10" width="14" height="14"/><rect x="42" y="10" width="14" height="14"/><rect x="56" y="10" width="14" height="14"/>
+      <rect x="70" y="24" width="14" height="14"/><rect x="84" y="24" width="14" height="14"/><rect x="98" y="24" width="14" height="14"/><rect x="112" y="24" width="14" height="14"/>
+      <rect x="126" y="38" width="14" height="14"/><rect x="140" y="38" width="14" height="14"/><rect x="154" y="38" width="14" height="14"/>
+      <rect x="168" y="52" width="14" height="14"/><rect x="182" y="52" width="14" height="14"/>
+      <rect x="196" y="66" width="14" height="14"/><rect x="210" y="66" width="14" height="14"/>
+      <rect x="224" y="80" width="14" height="14"/>
+      <rect x="238" y="94" width="14" height="14"/>
+    </g>
+
+    <!-- Red circles on hard corners -->
+    <circle cx="70" cy="17" r="8" fill="none" stroke="#E74C3C" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+    <circle cx="126" cy="31" r="8" fill="none" stroke="#E74C3C" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+    <circle cx="168" cy="45" r="8" fill="none" stroke="#E74C3C" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+
+    <text x="290" y="60" style="font-size:10px;fill:#E74C3C;font-weight:bold;">硬转角</text>
+    <text x="290" y="76" style="font-size:9px;fill:#555;">阶梯原理合规</text>
+    <text x="290" y="90" style="font-size:9px;fill:#555;">但转角生硬</text>
+
+    <text x="140" y="172" class="step-label" text-anchor="middle">段长: 5, 4, 3, 2, 2, 1, 1 — 渐变合规</text>
+  </g>
+
+  <!-- ===== RIGHT: WITH AA ===== -->
+  <g transform="translate(430, 55)">
+    <text x="140" y="0" style="font-size:13px;font-weight:bold;fill:#27AE60;text-anchor:middle;">✓ 有 AA · 内角柔化</text>
+
+    <rect x="0" y="10" width="280" height="140" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="14" y1="10" x2="14" y2="150"/><line x1="28" y1="10" x2="28" y2="150"/>
+      <line x1="42" y1="10" x2="42" y2="150"/><line x1="56" y1="10" x2="56" y2="150"/>
+      <line x1="70" y1="10" x2="70" y2="150"/><line x1="84" y1="10" x2="84" y2="150"/>
+      <line x1="98" y1="10" x2="98" y2="150"/><line x1="112" y1="10" x2="112" y2="150"/>
+      <line x1="126" y1="10" x2="126" y2="150"/><line x1="140" y1="10" x2="140" y2="150"/>
+      <line x1="154" y1="10" x2="154" y2="150"/><line x1="168" y1="10" x2="168" y2="150"/>
+      <line x1="182" y1="10" x2="182" y2="150"/><line x1="196" y1="10" x2="196" y2="150"/>
+      <line x1="210" y1="10" x2="210" y2="150"/><line x1="224" y1="10" x2="224" y2="150"/>
+      <line x1="238" y1="10" x2="238" y2="150"/><line x1="252" y1="10" x2="252" y2="150"/>
+      <line x1="266" y1="10" x2="266" y2="150"/>
+      <line x1="0" y1="24" x2="280" y2="24"/><line x1="0" y1="38" x2="280" y2="38"/>
+      <line x1="0" y1="52" x2="280" y2="52"/><line x1="0" y1="66" x2="280" y2="66"/>
+      <line x1="0" y1="80" x2="280" y2="80"/><line x1="0" y1="94" x2="280" y2="94"/>
+      <line x1="0" y1="108" x2="280" y2="108"/><line x1="0" y1="122" x2="280" y2="122"/>
+      <line x1="0" y1="136" x2="280" y2="136"/>
+    </g>
+
+    <!-- Same staircase line -->
+    <g class="line-fill">
+      <rect x="0" y="10" width="14" height="14"/><rect x="14" y="10" width="14" height="14"/><rect x="28" y="10" width="14" height="14"/><rect x="42" y="10" width="14" height="14"/><rect x="56" y="10" width="14" height="14"/>
+      <rect x="70" y="24" width="14" height="14"/><rect x="84" y="24" width="14" height="14"/><rect x="98" y="24" width="14" height="14"/><rect x="112" y="24" width="14" height="14"/>
+      <rect x="126" y="38" width="14" height="14"/><rect x="140" y="38" width="14" height="14"/><rect x="154" y="38" width="14" height="14"/>
+      <rect x="168" y="52" width="14" height="14"/><rect x="182" y="52" width="14" height="14"/>
+      <rect x="196" y="66" width="14" height="14"/><rect x="210" y="66" width="14" height="14"/>
+      <rect x="224" y="80" width="14" height="14"/>
+      <rect x="238" y="94" width="14" height="14"/>
+    </g>
+
+    <!-- AA pixels at concave (inner) corners: medium gray -->
+    <g class="aa-fill">
+      <rect x="70" y="10" width="14" height="14"/>
+      <rect x="126" y="24" width="14" height="14"/>
+      <rect x="168" y="38" width="14" height="14"/>
+      <rect x="196" y="52" width="14" height="14"/>
+      <rect x="224" y="66" width="14" height="14"/>
+      <rect x="238" y="80" width="14" height="14"/>
+    </g>
+
+    <!-- Green arrows pointing to AA pixels -->
+    <circle cx="77" cy="17" r="8" fill="none" stroke="#27AE60" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+    <circle cx="133" cy="31" r="8" fill="none" stroke="#27AE60" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+    <circle cx="175" cy="45" r="8" fill="none" stroke="#27AE60" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+
+    <text x="290" y="60" style="font-size:10px;fill:#27AE60;font-weight:bold;">AA 像素</text>
+    <text x="290" y="76" style="font-size:9px;fill:#555;">灰色 = 中间色</text>
+    <text x="290" y="90" style="font-size:9px;fill:#555;">只放内角转角</text>
+
+    <text x="140" y="172" class="step-label" text-anchor="middle">内角处加 1 种中间色 → 视觉感知为平滑曲线</text>
+  </g>
+
+  <!-- Bottom explanation -->
+  <g transform="translate(0, 280)">
+    <rect x="30" y="0" width="740" height="200" fill="#F8F9FA" rx="4"/>
+
+    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：AA = 亚像素插值（subpixel rendering）</text>
+
+    <text x="50" y="52" style="font-size:11px;fill:#555;">浏览器在非整数 DPI 屏幕上渲染 1px 边框时，会用灰度抗锯齿——一个像素的位置无法精确表示那条线，就用相邻像素的亮度去"投票"。</text>
+    <text x="50" y="72" style="font-size:11px;fill:#555;">像素画的 AA 完全一样：你不是真的在亚像素位置画了东西，而是在硬边缘旁放一个中间色像素，让视觉系统自己做插值。</text>
+
+    <line x1="50" y1="90" x2="750" y2="90" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="50" y="115" style="font-size:11px;fill:#3498DB;font-weight:bold;">三条规则：</text>
+    <text x="50" y="135" style="font-size:11px;fill:#555;">① 放多少？台阶长度的一半。太少比太多好。</text>
+    <text x="50" y="155" style="font-size:11px;fill:#555;">② 几种过渡色？入门 1 种，熟练 2 种，最多 3 种。超过 3 种 = 在画矢量图。</text>
+    <text x="50" y="175" style="font-size:11px;fill:#555;">③ 放哪里？只放内角（弯曲内侧），外角保持锐利。AA 是"内侧柔化"不是"外侧晕染"。</text>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .cell-bg { fill: #fafafa; }
+    .cell-line { stroke: #e0e0e0; stroke-width: 0.5; }
+    .line-fill { fill: #2C3E50; }
+    .aa1 { fill: #7F8C8D; }
+    .aa2 { fill: #95A5A6; }
+    .aa3 { fill: #BDC3C7; }
+    .step-label { font-size: 9px; fill: #888; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手08.2 过度 AA 对比——锐利像素 vs 模糊过度</text>
+
+  <!-- ===== LEFT: PROPER AA ===== -->
+  <g transform="translate(30, 55)">
+    <text x="140" y="0" style="font-size:13px;font-weight:bold;fill:#27AE60;text-anchor:middle;">✓ 适量 AA · 像素身份清晰</text>
+
+    <rect x="0" y="10" width="280" height="140" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="14" y1="10" x2="14" y2="150"/><line x1="28" y1="10" x2="28" y2="150"/>
+      <line x1="42" y1="10" x2="42" y2="150"/><line x1="56" y1="10" x2="56" y2="150"/>
+      <line x1="70" y1="10" x2="70" y2="150"/><line x1="84" y1="10" x2="84" y2="150"/>
+      <line x1="98" y1="10" x2="98" y2="150"/><line x1="112" y1="10" x2="112" y2="150"/>
+      <line x1="126" y1="10" x2="126" y2="150"/><line x1="140" y1="10" x2="140" y2="150"/>
+      <line x1="154" y1="10" x2="154" y2="150"/><line x1="168" y1="10" x2="168" y2="150"/>
+      <line x1="182" y1="10" x2="182" y2="150"/><line x1="196" y1="10" x2="196" y2="150"/>
+      <line x1="210" y1="10" x2="210" y2="150"/><line x1="224" y1="10" x2="224" y2="150"/>
+      <line x1="238" y1="10" x2="238" y2="150"/><line x1="252" y1="10" x2="252" y2="150"/>
+      <line x1="266" y1="10" x2="266" y2="150"/>
+      <line x1="0" y1="24" x2="280" y2="24"/><line x1="0" y1="38" x2="280" y2="38"/>
+      <line x1="0" y1="52" x2="280" y2="52"/><line x1="0" y1="66" x2="280" y2="66"/>
+      <line x1="0" y1="80" x2="280" y2="80"/><line x1="0" y1="94" x2="280" y2="94"/>
+      <line x1="0" y1="108" x2="280" y2="108"/><line x1="0" y1="122" x2="280" y2="122"/>
+      <line x1="0" y1="136" x2="280" y2="136"/>
+    </g>
+
+    <g class="line-fill">
+      <rect x="0" y="10" width="14" height="14"/><rect x="14" y="10" width="14" height="14"/><rect x="28" y="10" width="14" height="14"/><rect x="42" y="10" width="14" height="14"/><rect x="56" y="10" width="14" height="14"/>
+      <rect x="70" y="24" width="14" height="14"/><rect x="84" y="24" width="14" height="14"/><rect x="98" y="24" width="14" height="14"/><rect x="112" y="24" width="14" height="14"/>
+      <rect x="126" y="38" width="14" height="14"/><rect x="140" y="38" width="14" height="14"/><rect x="154" y="38" width="14" height="14"/>
+      <rect x="168" y="52" width="14" height="14"/><rect x="182" y="52" width="14" height="14"/>
+      <rect x="196" y="66" width="14" height="14"/><rect x="210" y="66" width="14" height="14"/>
+      <rect x="224" y="80" width="14" height="14"/>
+      <rect x="238" y="94" width="14" height="14"/>
+    </g>
+
+    <!-- 1 shade AA at inner corners only -->
+    <g class="aa1">
+      <rect x="70" y="10" width="14" height="14"/>
+      <rect x="126" y="24" width="14" height="14"/>
+      <rect x="168" y="38" width="14" height="14"/>
+      <rect x="196" y="52" width="14" height="14"/>
+      <rect x="224" y="66" width="14" height="14"/>
+      <rect x="238" y="80" width="14" height="14"/>
+    </g>
+
+    <text x="290" y="60" style="font-size:10px;fill:#27AE60;font-weight:bold;">1 种过渡色</text>
+    <text x="290" y="76" style="font-size:9px;fill:#555;">只放内角</text>
+    <text x="290" y="90" style="font-size:9px;fill:#555;">格子清晰可辨</text>
+
+    <text x="140" y="172" class="step-label" text-anchor="middle">转角柔和 · 像素身份保留</text>
+  </g>
+
+  <!-- ===== RIGHT: OVER-AA ===== -->
+  <g transform="translate(430, 55)">
+    <text x="140" y="0" style="font-size:13px;font-weight:bold;fill:#E74C3C;text-anchor:middle;">✗ 过度 AA · 模糊发糊</text>
+
+    <rect x="0" y="10" width="280" height="140" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="14" y1="10" x2="14" y2="150"/><line x1="28" y1="10" x2="28" y2="150"/>
+      <line x1="42" y1="10" x2="42" y2="150"/><line x1="56" y1="10" x2="56" y2="150"/>
+      <line x1="70" y1="10" x2="70" y2="150"/><line x1="84" y1="10" x2="84" y2="150"/>
+      <line x1="98" y1="10" x2="98" y2="150"/><line x1="112" y1="10" x2="112" y2="150"/>
+      <line x1="126" y1="10" x2="126" y2="150"/><line x1="140" y1="10" x2="140" y2="150"/>
+      <line x1="154" y1="10" x2="154" y2="150"/><line x1="168" y1="10" x2="168" y2="150"/>
+      <line x1="182" y1="10" x2="182" y2="150"/><line x1="196" y1="10" x2="196" y2="150"/>
+      <line x1="210" y1="10" x2="210" y2="150"/><line x1="224" y1="10" x2="224" y2="150"/>
+      <line x1="238" y1="10" x2="238" y2="150"/><line x1="252" y1="10" x2="252" y2="150"/>
+      <line x1="266" y1="10" x2="266" y2="150"/>
+      <line x1="0" y1="24" x2="280" y2="24"/><line x1="0" y1="38" x2="280" y2="38"/>
+      <line x1="0" y1="52" x2="280" y2="52"/><line x1="0" y1="66" x2="280" y2="66"/>
+      <line x1="0" y1="80" x2="280" y2="80"/><line x1="0" y1="94" x2="280" y2="94"/>
+      <line x1="0" y1="108" x2="280" y2="108"/><line x1="0" y1="122" x2="280" y2="122"/>
+      <line x1="0" y1="136" x2="280" y2="136"/>
+    </g>
+
+    <g class="line-fill">
+      <rect x="0" y="10" width="14" height="14"/><rect x="14" y="10" width="14" height="14"/><rect x="28" y="10" width="14" height="14"/><rect x="42" y="10" width="14" height="14"/><rect x="56" y="10" width="14" height="14"/>
+      <rect x="70" y="24" width="14" height="14"/><rect x="84" y="24" width="14" height="14"/><rect x="98" y="24" width="14" height="14"/><rect x="112" y="24" width="14" height="14"/>
+      <rect x="126" y="38" width="14" height="14"/><rect x="140" y="38" width="14" height="14"/><rect x="154" y="38" width="14" height="14"/>
+      <rect x="168" y="52" width="14" height="14"/><rect x="182" y="52" width="14" height="14"/>
+      <rect x="196" y="66" width="14" height="14"/><rect x="210" y="66" width="14" height="14"/>
+      <rect x="224" y="80" width="14" height="14"/>
+      <rect x="238" y="94" width="14" height="14"/>
+    </g>
+
+    <!-- Over-AA: 3 shades, inner AND outer corners, extra pixels -->
+    <g class="aa1">
+      <rect x="70" y="10" width="14" height="14"/><rect x="126" y="24" width="14" height="14"/><rect x="168" y="38" width="14" height="14"/><rect x="196" y="52" width="14" height="14"/><rect x="224" y="66" width="14" height="14"/><rect x="238" y="80" width="14" height="14"/>
+      <!-- outer corners too (wrong!) -->
+      <rect x="56" y="24" width="14" height="14"/><rect x="112" y="38" width="14" height="14"/><rect x="154" y="52" width="14" height="14"/><rect x="182" y="66" width="14" height="14"/><rect x="210" y="80" width="14" height="14"/>
+    </g>
+    <g class="aa2">
+      <rect x="84" y="10" width="14" height="14"/><rect x="140" y="24" width="14" height="14"/><rect x="182" y="38" width="14" height="14"/><rect x="210" y="52" width="14" height="14"/><rect x="238" y="66" width="14" height="14"/>
+      <rect x="42" y="24" width="14" height="14"/><rect x="98" y="38" width="14" height="14"/><rect x="140" y="52" width="14" height="14"/><rect x="168" y="66" width="14" height="14"/>
+    </g>
+    <g class="aa3">
+      <rect x="98" y="10" width="14" height="14"/><rect x="154" y="24" width="14" height="14"/><rect x="196" y="38" width="14" height="14"/><rect x="224" y="52" width="14" height="14"/>
+      <rect x="28" y="24" width="14" height="14"/><rect x="84" y="38" width="14" height="14"/><rect x="126" y="52" width="14" height="14"/>
+    </g>
+
+    <text x="290" y="60" style="font-size:10px;fill:#E74C3C;font-weight:bold;">3 种过渡色</text>
+    <text x="290" y="76" style="font-size:9px;fill:#555;">内外角都放</text>
+    <text x="290" y="90" style="font-size:9px;fill:#555;">格子被淹没</text>
+
+    <text x="140" y="172" class="step-label" text-anchor="middle">像缩放的矢量图 · 像素身份丢失</text>
+  </g>
+
+  <!-- Bottom explanation -->
+  <g transform="translate(0, 280)">
+    <rect x="30" y="0" width="740" height="200" fill="#F8F9FA" rx="4"/>
+
+    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：过度 AA = 把强类型全改成 any</text>
+
+    <text x="50" y="52" style="font-size:11px;fill:#555;">TypeScript 的价值在于类型让错误在编译期暴露；像素艺术的价值在于离散网格让边缘清晰可读。</text>
+    <text x="50" y="72" style="font-size:11px;fill:#555;">你把每个边缘都"柔化"成 3 级过渡 + 内外角都放，等于把每个变量都标成 any——类型系统形同虚设。</text>
+
+    <line x1="50" y1="90" x2="750" y2="90" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="50" y="115" style="font-size:11px;fill:#E74C3C;font-weight:bold;">三个危害：</text>
+    <text x="50" y="135" style="font-size:11px;fill:#555;">① 模糊感——看起来像高斯模糊过的矢量图，丧失"颗粒锐利感"。</text>
+    <text x="50" y="155" style="font-size:11px;fill:#555;">② 颜色浪费——每多一种过渡色就多吃一个调色板槽位。</text>
+    <text x="50" y="175" style="font-size:11px;fill:#555;">③ 身份丢失——像素艺术建立在"能看见格子"上，过度 AA 把格子藏了。</text>
+  </g>
+</svg>

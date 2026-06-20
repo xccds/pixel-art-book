@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .cell-bg { fill: #fafafa; }
+    .cell-line { stroke: #e0e0e0; stroke-width: 0.5; }
+    .fill-light { fill: #D5E8D4; }
+    .outline-dark { fill: #2C3E50; }
+    .inner-shadow { fill: #5D6D7E; }
+    .banding-box { fill: none; stroke: #E74C3C; stroke-width: 1.5; stroke-dasharray: 3,2; }
+    .step-label { font-size: 9px; fill: #888; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手08.3 Banding 示例——平行阶梯条纹</text>
+
+  <!-- ===== LEFT: BANDING SHOWN ===== -->
+  <g transform="translate(30, 55)">
+    <text x="160" y="0" style="font-size:13px;font-weight:bold;fill:#E74C3C;text-anchor:middle;">✗ Banding · 两排像素完全平行紧贴</text>
+
+    <rect x="0" y="10" width="320" height="210" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="16" y1="10" x2="16" y2="220"/><line x1="32" y1="10" x2="32" y2="220"/>
+      <line x1="48" y1="10" x2="48" y2="220"/><line x1="64" y1="10" x2="64" y2="220"/>
+      <line x1="80" y1="10" x2="80" y2="220"/><line x1="96" y1="10" x2="96" y2="220"/>
+      <line x1="112" y1="10" x2="112" y2="220"/><line x1="128" y1="10" x2="128" y2="220"/>
+      <line x1="144" y1="10" x2="144" y2="220"/><line x1="160" y1="10" x2="160" y2="220"/>
+      <line x1="176" y1="10" x2="176" y2="220"/><line x1="192" y1="10" x2="192" y2="220"/>
+      <line x1="208" y1="10" x2="208" y2="220"/><line x1="224" y1="10" x2="224" y2="220"/>
+      <line x1="240" y1="10" x2="240" y2="220"/><line x1="256" y1="10" x2="256" y2="220"/>
+      <line x1="272" y1="10" x2="272" y2="220"/><line x1="288" y1="10" x2="288" y2="220"/>
+      <line x1="304" y1="10" x2="304" y2="220"/>
+      <line x1="0" y1="26" x2="320" y2="26"/><line x1="0" y1="42" x2="320" y2="42"/>
+      <line x1="0" y1="58" x2="320" y2="58"/><line x1="0" y1="74" x2="320" y2="74"/>
+      <line x1="0" y1="90" x2="320" y2="90"/><line x1="0" y1="106" x2="320" y2="106"/>
+      <line x1="0" y1="122" x2="320" y2="122"/><line x1="0" y1="138" x2="320" y2="138"/>
+      <line x1="0" y1="154" x2="320" y2="154"/><line x1="0" y1="170" x2="320" y2="170"/>
+      <line x1="0" y1="186" x2="320" y2="186"/><line x1="0" y1="202" x2="320" y2="202"/>
+    </g>
+
+    <!-- A shape: filled circle area (simplified as a quarter arc) with outline + inner shadow -->
+    <!-- Light fill: a block representing the shape interior -->
+    <g class="fill-light">
+      <rect x="48" y="42" width="208" height="16"/><rect x="48" y="58" width="224" height="16"/>
+      <rect x="48" y="74" width="240" height="16"/><rect x="48" y="90" width="256" height="16"/>
+      <rect x="48" y="106" width="256" height="16"/><rect x="48" y="122" width="272" height="16"/>
+      <rect x="48" y="138" width="272" height="16"/><rect x="64" y="154" width="272" height="16"/>
+      <rect x="80" y="170" width="256" height="16"/><rect x="112" y="186" width="224" height="16"/>
+    </g>
+
+    <!-- Outer outline (dark) - a diagonal staircase -->
+    <g class="outline-dark">
+      <rect x="48" y="42" width="16" height="16"/>
+      <rect x="32" y="58" width="16" height="16"/>
+      <rect x="32" y="74" width="16" height="16"/>
+      <rect x="32" y="90" width="16" height="16"/>
+      <rect x="32" y="106" width="16" height="16"/>
+      <rect x="48" y="122" width="16" height="16"/>
+      <rect x="64" y="138" width="16" height="16"/>
+      <rect x="80" y="154" width="16" height="16"/>
+      <rect x="112" y="170" width="16" height="16"/>
+      <rect x="112" y="186" width="16" height="16"/>
+      <!-- top edge -->
+      <rect x="64" y="26" width="16" height="16"/><rect x="80" y="26" width="16" height="16"/>
+      <rect x="96" y="26" width="16" height="16"/><rect x="112" y="26" width="16" height="16"/>
+      <rect x="128" y="26" width="16" height="16"/><rect x="144" y="26" width="16" height="16"/>
+      <rect x="160" y="26" width="16" height="16"/><rect x="176" y="26" width="16" height="16"/>
+      <rect x="192" y="26" width="16" height="16"/><rect x="208" y="26" width="16" height="16"/>
+      <rect x="224" y="26" width="16" height="16"/><rect x="240" y="26" width="16" height="16"/>
+      <rect x="256" y="42" width="16" height="16"/>
+    </g>
+
+    <!-- Inner shadow row — parallel to outline = BANDING! -->
+    <g class="inner-shadow">
+      <rect x="64" y="58" width="16" height="16"/>
+      <rect x="48" y="74" width="16" height="16"/>
+      <rect x="48" y="90" width="16" height="16"/>
+      <rect x="48" y="106" width="16" height="16"/>
+      <rect x="64" y="122" width="16" height="16"/>
+      <rect x="80" y="138" width="16" height="16"/>
+      <rect x="96" y="154" width="16" height="16"/>
+      <rect x="128" y="170" width="16" height="16"/>
+      <rect x="128" y="186" width="16" height="16"/>
+    </g>
+
+    <!-- Red boxes highlighting banding (parallel rows) -->
+    <rect x="28" y="56" width="36" height="52" class="banding-box"/>
+    <text x="20" y="88" style="font-size:9px;fill:#E74C3C;font-weight:bold;" text-anchor="end">梯子!</text>
+
+    <rect x="76" y="152" width="36" height="52" class="banding-box"/>
+    <text x="68" y="184" style="font-size:9px;fill:#E74C3C;font-weight:bold;" text-anchor="end">梯子!</text>
+
+    <text x="160" y="242" class="step-label" text-anchor="middle">外轮廓（深色）与内阴影（灰色）完全平行 → 视觉感知为"梯子"</text>
+  </g>
+
+  <!-- Right side: what eye sees -->
+  <g transform="translate(420, 55)">
+    <text x="160" y="0" style="font-size:13px;font-weight:bold;fill:#333;text-anchor:middle;">眼睛读到的 vs 你想表达的</text>
+
+    <rect x="0" y="20" width="320" height="100" fill="#F8F9FA" rx="4"/>
+    <text x="160" y="45" style="font-size:12px;font-weight:bold;fill:#E74C3C;text-anchor:middle;">你想表达：一条平滑的边</text>
+    <line x1="40" y1="75" x2="280" y2="75" stroke="#2C3E50" stroke-width="4"/>
+    <text x="160" y="100" style="font-size:10px;fill:#888;text-anchor:middle;">（一条轮廓线）</text>
+
+    <rect x="0" y="140" width="320" height="100" fill="#FFF3F3" rx="4"/>
+    <text x="160" y="165" style="font-size:12px;font-weight:bold;fill:#E74C3C;text-anchor:middle;">眼睛读到：一架梯子</text>
+    <g transform="translate(40, 180)">
+      <rect x="0" y="0" width="240" height="12" fill="#2C3E50"/>
+      <rect x="0" y="16" width="240" height="12" fill="#5D6D7E"/>
+      <rect x="0" y="32" width="240" height="12" fill="#2C3E50"/>
+    </g>
+    <text x="160" y="230" style="font-size:10px;fill:#888;text-anchor:middle;">（三排平行结构 = 梯子）</text>
+  </g>
+
+  <!-- Bottom explanation -->
+  <g transform="translate(0, 330)">
+    <rect x="30" y="0" width="740" height="150" fill="#F8F9FA" rx="4"/>
+
+    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：Banding = 规律性冗余行（lint 该警告）</text>
+
+    <text x="50" y="52" style="font-size:11px;fill:#555;">想象三行几乎一模一样的代码紧挨着，只有变量名差一个字符——你的第一反应是"这该抽成一个函数"。</text>
+    <text x="50" y="72" style="font-size:11px;fill:#555;">眼睛对 Banding 的反应一样：它不读成"一条边"，它读成"三排重复的结构"，然后开始找"为什么重复"——注意力被引到了本不该被注意的地方。</text>
+
+    <line x1="50" y1="88" x2="750" y2="88" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="50" y="112" style="font-size:11px;fill:#E74C3C;font-weight:bold;">识别方法：</text>
+    <text x="50" y="132" style="font-size:11px;fill:#555;">沿边缘逐行看——如果连续两三行的像素在相同相对位置形成完全平行的阶梯 = Banding。去色后更容易发现（颜色对比去掉后平行结构更突出）。</text>
+  </g>
+</svg>

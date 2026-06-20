@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .panel-label { font-size: 12px; font-weight: bold; fill: #2C3E50; }
+    .panel-sub { font-size: 9px; fill: #888; }
+    .face-top { fill: #5DADE2; }
+    .face-left { fill: #2E86C1; }
+    .face-right { fill: #1B4F72; }
+    .face-front { fill: #85C1E9; }
+    .face-side { fill: #3498DB; }
+    .face-flat { fill: #AED6F1; stroke: #2C3E50; stroke-width: 1.5; }
+    .edge { stroke: #2C3E50; stroke-width: 1.5; fill: none; }
+    .panel-bg { fill: #fafafa; stroke: #ddd; stroke-width: 1; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手08.5 透视类型对比——同一个立方体的五种视角</text>
+
+  <!-- ===== 1. SIDE VIEW ===== -->
+  <g transform="translate(20, 55)">
+    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <text x="70" y="20" class="panel-label" text-anchor="middle">侧视 Side View</text>
+    <text x="70" y="34" class="panel-sub" text-anchor="middle">平台跳跃标配</text>
+    <!-- Just a flat square (front face only) -->
+    <rect x="40" y="60" width="60" height="60" class="face-flat"/>
+    <text x="70" y="145" class="panel-sub" text-anchor="middle">一维移动 · 2方向动画</text>
+  </g>
+
+  <!-- ===== 2. TOP-DOWN ===== -->
+  <g transform="translate(175, 55)">
+    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <text x="70" y="20" class="panel-label" text-anchor="middle">俯视 Top-Down</text>
+    <text x="70" y="34" class="panel-sub" text-anchor="middle">RPG/动作标配</text>
+    <!-- A square seen from above -->
+    <rect x="40" y="60" width="60" height="60" class="face-flat"/>
+    <!-- Grid lines to indicate tile -->
+    <line x1="55" y1="60" x2="55" y2="120" stroke="#2C3E50" stroke-width="0.5" opacity="0.4"/>
+    <line x1="70" y1="60" x2="70" y2="120" stroke="#2C3E50" stroke-width="0.5" opacity="0.4"/>
+    <line x1="85" y1="60" x2="85" y2="120" stroke="#2C3E50" stroke-width="0.5" opacity="0.4"/>
+    <line x1="40" y1="75" x2="100" y2="75" stroke="#2C3E50" stroke-width="0.5" opacity="0.4"/>
+    <line x1="40" y1="90" x2="100" y2="90" stroke="#2C3E50" stroke-width="0.5" opacity="0.4"/>
+    <line x1="40" y1="105" x2="100" y2="105" stroke="#2C3E50" stroke-width="0.5" opacity="0.4"/>
+    <text x="70" y="145" class="panel-sub" text-anchor="middle">二维网格 · 4-8方向</text>
+  </g>
+
+  <!-- ===== 3. ISOMETRIC ===== -->
+  <g transform="translate(330, 55)">
+    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <text x="70" y="20" class="panel-label" text-anchor="middle">等距 Isometric</text>
+    <text x="70" y="34" class="panel-sub" text-anchor="middle">策略/模拟标配</text>
+    <!-- Iso cube: top diamond + left + right, using 2:1 ratio -->
+    <!-- Center at (70, 95), edge ~30 -->
+    <polygon points="70,60 100,75 70,90 40,75" class="face-top"/>
+    <polygon points="40,75 70,90 70,125 40,110" class="face-left"/>
+    <polygon points="100,75 70,90 70,125 100,110" class="face-right"/>
+    <text x="70" y="145" class="panel-sub" text-anchor="middle">菱形网格 · 2:1阶梯</text>
+  </g>
+
+  <!-- ===== 4. DIMETRIC ===== -->
+  <g transform="translate(485, 55)">
+    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <text x="70" y="20" class="panel-label" text-anchor="middle">45°二测 Dimetric</text>
+    <text x="70" y="34" class="panel-sub" text-anchor="middle">高大建筑场景</text>
+    <!-- Dimetric cube: top is wider/flatter, vertical edges shorter -->
+    <polygon points="70,65 105,78 70,91 35,78" class="face-top"/>
+    <polygon points="35,78 70,91 70,115 35,102" class="face-left"/>
+    <polygon points="105,78 70,91 70,115 105,102" class="face-right"/>
+    <text x="70" y="145" class="panel-sub" text-anchor="middle">不等比 · 压扁竖轴</text>
+  </g>
+
+  <!-- ===== 5. OBLIQUE ===== -->
+  <g transform="translate(640, 55)">
+    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <text x="70" y="20" class="panel-label" text-anchor="middle">斜视 Oblique</text>
+    <text x="70" y="34" class="panel-sub" text-anchor="middle">建筑内部/正面</text>
+    <!-- Oblique: front face square, depth lines going back at 45° -->
+    <polygon points="50,75 80,75 95,60 65,60" class="face-top"/>
+    <rect x="50" y="75" width="30" height="35" class="face-front"/>
+    <polygon points="80,75 95,60 95,95 80,110" class="face-side"/>
+    <text x="70" y="145" class="panel-sub" text-anchor="middle">正面平 · 侧面斜</text>
+  </g>
+
+  <!-- Bottom explanation -->
+  <g transform="translate(0, 260)">
+    <rect x="30" y="0" width="740" height="220" fill="#F8F9FA" rx="4"/>
+
+    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：选透视 = 选数据结构</text>
+
+    <text x="50" y="52" style="font-size:11px;fill:#555;">侧视 = 一维数组 positions: number[] —— 碰撞检测只查 x 轴，动画只需 facing: 'left' | 'right'。</text>
+    <text x="50" y="72" style="font-size:11px;fill:#555;">俯视 = 二维数组 tilemap: Tile[x][y] —— 碰撞查 x+y 两轴，动画需 4-8 方向，Tile 天然适配。</text>
+    <text x="50" y="92" style="font-size:11px;fill:#555;">等距 = 带变换矩阵的二维数组 —— 还是 grid[x][y]，但渲染时乘 2:1 坐标变换，画成菱形。</text>
+
+    <line x1="50" y1="108" x2="750" y2="108" stroke="#e0e0e0" stroke-width="1"/>
+
+    <text x="50" y="132" style="font-size:11px;fill:#E74C3C;font-weight:bold;">核心原则：游戏玩法优先</text>
+    <text x="50" y="152" style="font-size:11px;fill:#555;">透视服务于游戏设计，不是反过来。你不会因为"等距好看"就给平台跳跃用等距——</text>
+    <text x="50" y="172" style="font-size:11px;fill:#555;">那等于给一维数据硬套二维变换，工程上全是不必要的复杂度。</text>
+
+    <text x="50" y="196" style="font-size:11px;fill:#E74C3C;font-weight:bold;">选错透视 = 选错数据结构 = 后面所有系统都要为这个错误买单。</text>
+  </g>
+</svg>

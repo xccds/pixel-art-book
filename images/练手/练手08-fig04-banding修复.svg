@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .cell-bg { fill: #fafafa; }
+    .cell-line { stroke: #e0e0e0; stroke-width: 0.5; }
+    .fill-light { fill: #D5E8D4; }
+    .outline-dark { fill: #2C3E50; }
+    .inner-shadow { fill: #5D6D7E; }
+    .deeper-aa { fill: #34495E; }
+    .fix-box { fill: none; stroke: #27AE60; stroke-width: 1.5; stroke-dasharray: 3,2; }
+    .panel-label { font-size: 12px; font-weight: bold; fill: #27AE60; }
+    .method-label { font-size: 11px; font-weight: bold; fill: #333; }
+    .step-label { font-size: 9px; fill: #888; }
+  </style>
+
+  <text x="400" y="30" class="title" text-anchor="middle">图 练手08.4 Banding 修复——三种"打破平行"的手法</text>
+
+  <!-- ===== METHOD 1: REMOVE A PIXEL ===== -->
+  <g transform="translate(20, 55)">
+    <text x="120" y="0" class="panel-label" text-anchor="middle">方法 ① 移除一个像素</text>
+
+    <rect x="0" y="15" width="240" height="150" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="16" y1="15" x2="16" y2="165"/><line x1="32" y1="15" x2="32" y2="165"/>
+      <line x1="48" y1="15" x2="48" y2="165"/><line x1="64" y1="15" x2="64" y2="165"/>
+      <line x1="80" y1="15" x2="80" y2="165"/><line x1="96" y1="15" x2="96" y2="165"/>
+      <line x1="112" y1="15" x2="112" y2="165"/><line x1="128" y1="15" x2="128" y2="165"/>
+      <line x1="144" y1="15" x2="144" y2="165"/><line x1="160" y1="15" x2="160" y2="165"/>
+      <line x1="176" y1="15" x2="176" y2="165"/><line x1="192" y1="15" x2="192" y2="165"/>
+      <line x1="208" y1="15" x2="208" y2="165"/><line x1="224" y1="15" x2="224" y2="165"/>
+      <line x1="0" y1="31" x2="240" y2="31"/><line x1="0" y1="47" x2="240" y2="47"/>
+      <line x1="0" y1="63" x2="240" y2="63"/><line x1="0" y1="79" x2="240" y2="79"/>
+      <line x1="0" y1="95" x2="240" y2="95"/><line x1="0" y1="111" x2="240" y2="111"/>
+      <line x1="0" y1="127" x2="240" y2="127"/><line x1="0" y1="143" x2="240" y2="143"/>
+    </g>
+
+    <!-- Outline (dark) — diagonal -->
+    <g class="outline-dark">
+      <rect x="32" y="31" width="16" height="16"/>
+      <rect x="48" y="47" width="16" height="16"/>
+      <rect x="64" y="63" width="16" height="16"/>
+      <rect x="80" y="79" width="16" height="16"/>
+      <rect x="96" y="95" width="16" height="16"/>
+      <rect x="112" y="111" width="16" height="16"/>
+    </g>
+
+    <!-- Inner shadow — was parallel, now one pixel removed (gap at row 3) -->
+    <g class="inner-shadow">
+      <rect x="48" y="31" width="16" height="16"/>
+      <rect x="64" y="47" width="16" height="16"/>
+      <!-- REMOVED: rect at (80, 63) — breaks parallel! -->
+      <rect x="96" y="79" width="16" height="16"/>
+      <rect x="112" y="95" width="16" height="16"/>
+      <rect x="128" y="111" width="16" height="16"/>
+    </g>
+
+    <!-- Green box on the removed pixel location -->
+    <rect x="76" y="59" width="20" height="20" fill="none" stroke="#27AE60" stroke-width="2" stroke-dasharray="2,1.5"/>
+    <line x1="86" y1="62" x2="86" y2="76" stroke="#27AE60" stroke-width="2"/>
+    <line x1="79" y1="69" x2="93" y2="69" stroke="#27AE60" stroke-width="2"/>
+
+    <text x="120" y="185" class="step-label" text-anchor="middle">删掉一个内阴影像素 → 平行断开</text>
+  </g>
+
+  <!-- ===== METHOD 2: ADD A PIXEL ===== -->
+  <g transform="translate(290, 55)">
+    <text x="120" y="0" class="panel-label" text-anchor="middle">方法 ② 添加一个像素</text>
+
+    <rect x="0" y="15" width="240" height="150" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="16" y1="15" x2="16" y2="165"/><line x1="32" y1="15" x2="32" y2="165"/>
+      <line x1="48" y1="15" x2="48" y2="165"/><line x1="64" y1="15" x2="64" y2="165"/>
+      <line x1="80" y1="15" x2="80" y2="165"/><line x1="96" y1="15" x2="96" y2="165"/>
+      <line x1="112" y1="15" x2="112" y2="165"/><line x1="128" y1="15" x2="128" y2="165"/>
+      <line x1="144" y1="15" x2="144" y2="165"/><line x1="160" y1="15" x2="160" y2="165"/>
+      <line x1="176" y1="15" x2="176" y2="165"/><line x1="192" y1="15" x2="192" y2="165"/>
+      <line x1="208" y1="15" x2="208" y2="165"/><line x1="224" y1="15" x2="224" y2="165"/>
+      <line x1="0" y1="31" x2="240" y2="31"/><line x1="0" y1="47" x2="240" y2="47"/>
+      <line x1="0" y1="63" x2="240" y2="63"/><line x1="0" y1="79" x2="240" y2="79"/>
+      <line x1="0" y1="95" x2="240" y2="95"/><line x1="0" y1="111" x2="240" y2="111"/>
+      <line x1="0" y1="127" x2="240" y2="127"/><line x1="0" y1="143" x2="240" y2="143"/>
+    </g>
+
+    <g class="outline-dark">
+      <rect x="32" y="31" width="16" height="16"/>
+      <rect x="48" y="47" width="16" height="16"/>
+      <rect x="64" y="63" width="16" height="16"/>
+      <rect x="80" y="79" width="16" height="16"/>
+      <rect x="96" y="95" width="16" height="16"/>
+      <rect x="112" y="111" width="16" height="16"/>
+    </g>
+
+    <!-- Inner shadow — offset by adding extra pixel at row 2 -->
+    <g class="inner-shadow">
+      <rect x="48" y="31" width="16" height="16"/>
+      <rect x="64" y="47" width="16" height="16"/>
+      <rect x="80" y="63" width="16" height="16"/>
+      <!-- ADDED extra pixel at (96, 63) — changes alignment! -->
+      <rect x="96" y="63" width="16" height="16"/>
+      <rect x="96" y="79" width="16" height="16"/>
+      <rect x="112" y="95" width="16" height="16"/>
+      <rect x="128" y="111" width="16" height="16"/>
+    </g>
+
+    <!-- Green highlight on added pixel -->
+    <rect x="92" y="59" width="24" height="24" fill="none" stroke="#27AE60" stroke-width="2" stroke-dasharray="2,1.5"/>
+    <text x="104" y="54" style="font-size:9px;fill:#27AE60;font-weight:bold;text-anchor:middle;">+1</text>
+
+    <text x="120" y="185" class="step-label" text-anchor="middle">多塞一个像素 → 对齐方式改变</text>
+  </g>
+
+  <!-- ===== METHOD 3: DEEPER AA COLOR ===== -->
+  <g transform="translate(560, 55)">
+    <text x="120" y="0" class="panel-label" text-anchor="middle">方法 ③ 换更深的 AA 色</text>
+
+    <rect x="0" y="15" width="240" height="150" class="cell-bg" rx="2"/>
+
+    <g class="cell-line">
+      <line x1="16" y1="15" x2="16" y2="165"/><line x1="32" y1="15" x2="32" y2="165"/>
+      <line x1="48" y1="15" x2="48" y2="165"/><line x1="64" y1="15" x2="64" y2="165"/>
+      <line x1="80" y1="15" x2="80" y2="165"/><line x1="96" y1="15" x2="96" y2="165"/>
+      <line x1="112" y1="15" x2="112" y2="165"/><line x1="128" y1="15" x2="128" y2="165"/>
+      <line x1="144" y1="15" x2="144" y2="165"/><line x1="160" y1="15" x2="160" y2="165"/>
+      <line x1="176" y1="15" x2="176" y2="165"/><line x1="192" y1="15" x2="192" y2="165"/>
+      <line x1="208" y1="15" x2="208" y2="165"/><line x1="224" y1="15" x2="224" y2="165"/>
+      <line x1="0" y1="31" x2="240" y2="31"/><line x1="0" y1="47" x2="240" y2="47"/>
+      <line x1="0" y1="63" x2="240" y2="63"/><line x1="0" y1="79" x2="240" y2="79"/>
+      <line x1="0" y1="95" x2="240" y2="95"/><line x1="0" y1="111" x2="240" y2="111"/>
+      <line x1="0" y1="127" x2="240" y2="127"/><line x1="0" y1="143" x2="240" y2="143"/>
+    </g>
+
+    <g class="outline-dark">
+      <rect x="32" y="31" width="16" height="16"/>
+      <rect x="48" y="47" width="16" height="16"/>
+      <rect x="64" y="63" width="16" height="16"/>
+      <rect x="80" y="79" width="16" height="16"/>
+      <rect x="96" y="95" width="16" height="16"/>
+      <rect x="112" y="111" width="16" height="16"/>
+    </g>
+
+    <!-- Inner shadow — some rows now use deeper color -->
+    <g class="inner-shadow">
+      <rect x="48" y="31" width="16" height="16"/>
+      <rect x="64" y="47" width="16" height="16"/>
+    </g>
+    <g class="deeper-aa">
+      <rect x="80" y="63" width="16" height="16"/>
+      <rect x="96" y="79" width="16" height="16"/>
+    </g>
+    <g class="inner-shadow">
+      <rect x="112" y="95" width="16" height="16"/>
+      <rect x="128" y="111" width="16" height="16"/>
+    </g>
+
+    <!-- Green highlight on deeper color rows -->
+    <rect x="76" y="59" width="40" height="40" fill="none" stroke="#27AE60" stroke-width="2" stroke-dasharray="2,1.5"/>
+    <text x="96" y="54" style="font-size:8px;fill:#27AE60;font-weight:bold;text-anchor:middle;">更深色</text>
+
+    <text x="120" y="185" class="step-label" text-anchor="middle">中间两排换更深色 → "重复行"变"渐变行"</text>
+  </g>
+
+  <!-- Bottom explanation -->
+  <g transform="translate(0, 290)">
+    <rect x="30" y="0" width="740" height="190" fill="#F8F9FA" rx="4"/>
+
+    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">核心逻辑：打破平行 — 让每一行都"有理由在那里"</text>
+
+    <text x="50" y="52" style="font-size:11px;fill:#555;">三种手法对应代码里发现重复行后的三种处理：</text>
+
+    <text x="50" y="76" style="font-size:11px;fill:#27AE60;font-weight:bold;">① 移除像素 = 删掉冗余行</text>
+    <text x="50" y="94" style="font-size:11px;fill:#555;">  平行结构中最少改动的方案——删一个像素，那一排断开，梯子消失。</text>
+
+    <text x="50" y="116" style="font-size:11px;fill:#27AE60;font-weight:bold;">② 添加像素 = 把一行改成有意义的差异</text>
+    <text x="50" y="134" style="font-size:11px;fill:#555;">  多塞一个像素改变对齐方式——两排不再严格平行。</text>
+
+    <text x="50" y="156" style="font-size:11px;fill:#27AE60;font-weight:bold;">③ 换更深色 = 用更精确的类型让"看似重复"的行产生实质区别</text>
+    <text x="50" y="174" style="font-size:11px;fill:#555;">  换其中一排的过渡色 → 平行区域产生层次差 → "重复行"变"渐变行"。</text>
+  </g>
+</svg>

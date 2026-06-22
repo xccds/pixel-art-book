@@ -1,82 +1,146 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
-  <defs>
-    <style>
-      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
-      .title { font-size: 22px; font-weight: bold; fill: #333; }
-      .subtitle { font-size: 14px; fill: #666; }
-      .label { font-size: 14px; font-weight: bold; fill: #333; }
-      .note { font-size: 12px; fill: #666; }
-      .highlight { font-size: 13px; fill: #E74C3C; font-weight: bold; }
-    </style>
-  </defs>
-  <rect width="800" height="500" fill="#FAFAFA"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
+  <style>
+    .title { font-family: sans-serif; font-size: 17px; font-weight: bold; fill: #222; }
+    .subtitle { font-family: sans-serif; font-size: 11px; fill: #777; }
+    .panel-title { font-family: sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+    .badge-bad { fill: #C0392B; font-weight: bold; }
+    .badge-good { fill: #27AE60; font-weight: bold; }
+    .label { font-family: sans-serif; font-size: 10px; }
+    .note { font-family: sans-serif; font-size: 10px; fill: #666; text-anchor: middle; }
+    .frame { fill: none; stroke: #bbb; stroke-width: 2; rx: 4; }
+    .callout-line { stroke: #27AE60; stroke-width: 1; }
+    .callout-text { font-family: sans-serif; font-size: 9px; fill: #27AE60; font-weight: bold; }
+  </style>
 
-  <text x="400" y="32" text-anchor="middle" class="title">游戏中的明度分层——可读性设计</text>
-  <text x="400" y="54" text-anchor="middle" class="subtitle">玩家需要在0.3秒内分辨出"什么能交互、什么是背景"</text>
+  <text x="400" y="28" class="title" text-anchor="middle">游戏明度分层——可读性来自明度对比</text>
+  <text x="400" y="46" class="subtitle" text-anchor="middle">去色后还能分清主角、敌人和背景的，才算合格的游戏画面</text>
 
-  <!-- Example 1: Player vs Background -->
-  <rect x="30" y="75" width="350" height="180" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <text x="205" y="98" text-anchor="middle" class="label">明度分离 = 可读性</text>
+  <!-- ===== LEFT: Bad — all same value ===== -->
+  <g transform="translate(30, 65)">
+    <rect x="0" y="0" width="355" height="240" class="frame"/>
+    <text x="177" y="-14" class="panel-title" fill="#C0392B">&#x2717; 错误：明度混在一起</text>
 
-  <!-- Background blocks (low contrast, murky) -->
-  <rect x="55" y="110" width="300" height="60" fill="#999" rx="2"/>
-  <text x="205" y="144" text-anchor="middle" class="note" fill="#FFF" font-size="13">背景（低对比，灰度接近）</text>
-  <rect x="65" y="130" width="60" height="20" fill="#AAA" rx="1"/>
-  <rect x="135" y="125" width="40" height="25" fill="#888" rx="1"/>
-  <rect x="185" y="135" width="35" height="15" fill="#AAA" rx="1"/>
+    <!-- Sky — mid-gray -->
+    <rect x="0" y="0" width="355" height="150" fill="#999"/>
 
-  <!-- Player character (high contrast, stands out) -->
-  <rect x="185" y="175" width="40" height="50" fill="#333" rx="3" stroke="#FFF" stroke-width="2"/>
-  <circle cx="205" cy="190" r="14" fill="#333" stroke="#FFF" stroke-width="2"/>
-  <text x="205" y="240" text-anchor="middle" class="highlight">主角：高对比 → 0.3秒识别</text>
+    <!-- Far hill — barely different from sky -->
+    <polygon points="0,150 60,100 140,140 220,90 300,130 355,110 355,150" fill="#8A8A8A"/>
 
-  <!-- Example 2: Vignette / Direction -->
-  <rect x="420" y="75" width="350" height="180" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <text x="595" y="98" text-anchor="middle" class="label">暗角（Vignette）= 视线引导</text>
+    <!-- Ground — mid-gray, barely different from hill -->
+    <rect x="0" y="165" width="355" height="75" fill="#888"/>
+    <rect x="0" y="160" width="355" height="5" fill="#7A7A7A"/>
 
-  <!-- Vignette simulation -->
-  <rect x="420" y="100" width="350" height="155" fill="#2C2C2C"/>
-  <rect x="470" y="120" width="250" height="115" fill="#3A3A3A"/>
-  <rect x="510" y="140" width="170" height="75" fill="#555"/>
-  <rect x="545" y="157" width="100" height="40" fill="#777"/>
-  <circle cx="595" cy="177" r="12" fill="#EEE"/>
+    <!-- Trees/obstacles — same value as ground -->
+    <rect x="40" y="130" width="10" height="30" fill="#7A7A7A"/>
+    <rect x="120" y="125" width="12" height="35" fill="#7A7A7A"/>
+    <rect x="220" y="135" width="10" height="25" fill="#7A7A7A"/>
+    <rect x="300" y="128" width="10" height="32" fill="#7A7A7A"/>
 
-  <!-- Arrow showing eye direction -->
-  <text x="660" y="130" text-anchor="middle" class="note" font-size="10">← 暗角推视线</text>
-  <text x="530" y="130" text-anchor="middle" class="note" font-size="10">暗角推视线 →</text>
-  <text x="430" y="177" text-anchor="middle" class="note" font-size="10" fill="#AAA">暗</text>
-  <text x="760" y="177" text-anchor="middle" class="note" font-size="10" fill="#AAA">暗</text>
-  <text x="595" y="177" text-anchor="middle" class="note" fill="#FFF" font-size="12">玩家眼睛 → 聚向中心</text>
+    <!-- Player — similar to ground, barely pops -->
+    <rect x="160" y="144" width="14" height="16" fill="#7E7E7E"/>
+    <rect x="162" y="136" width="10" height="8" fill="#7E7E7E"/>
 
-  <text x="595" y="240" text-anchor="middle" class="highlight">暗角 = 镜头级的注意力控制</text>
+    <!-- Enemy — same value, hard to see -->
+    <rect x="260" y="145" width="12" height="15" fill="#7E7E7E"/>
+    <rect x="262" y="138" width="8" height="7" fill="#7E7E7E"/>
+    <rect x="258" y="143" width="4" height="4" fill="#7E7E7E"/>
 
-  <!-- Example 3: Global moods -->
-  <rect x="30" y="275" width="740" height="140" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <text x="400" y="298" text-anchor="middle" class="label">全局明度 = 情绪基线</text>
+    <!-- Collectible — same value, invisible -->
+    <circle cx="100" cy="150" r="4" fill="#7E7E7E"/>
 
-  <!-- Safe scene (bright) -->
-  <rect x="50" y="312" width="220" height="85" rx="3" fill="#EAEAEA"/>
-  <rect x="60" y="320" width="200" height="14" fill="#DDD" rx="2"/>
-  <rect x="80" y="345" width="160" height="14" fill="#DDD" rx="2"/>
-  <ellipse cx="150" cy="360" rx="12" ry="8" fill="#CCC"/>
-  <text x="160" y="392" text-anchor="middle" class="note" font-size="12">全局亮 = 安全</text>
+    <!-- HUD — same mid value -->
+    <rect x="10" y="10" width="80" height="12" fill="#8A8A8A" rx="2"/>
 
-  <!-- Dangerous scene (dark with bright spot) -->
-  <rect x="290" y="312" width="220" height="85" rx="3" fill="#1A1A1A"/>
-  <rect x="300" y="320" width="200" height="14" fill="#333" rx="2"/>
-  <rect x="320" y="345" width="160" height="14" fill="#333" rx="2"/>
-  <ellipse cx="400" cy="360" rx="25" ry="12" fill="#666"/>
-  <ellipse cx="400" cy="365" rx="10" ry="5" fill="#FFF9C4"/>
-  <text x="400" y="392" text-anchor="middle" class="note" font-size="12">全局暗+局部亮 = 危险</text>
+    <text x="177" y="225" class="note" fill="#C0392B">所有元素明度相近 → 糊成一片</text>
+  </g>
 
-  <!-- Tension scene (high contrast) -->
-  <rect x="530" y="312" width="220" height="85" rx="3" fill="#333"/>
-  <rect x="540" y="322" width="100" height="50" fill="#FFF" rx="2"/>
-  <rect x="660" y="340" width="80" height="25" fill="#111" rx="2"/>
-  <text x="640" y="392" text-anchor="middle" class="note" font-size="12">亮暗极端并置 = 紧张</text>
+  <!-- ===== RIGHT: Good — value layering ===== -->
+  <g transform="translate(415, 65)">
+    <rect x="0" y="0" width="355" height="240" class="frame"/>
+    <text x="177" y="-14" class="panel-title" fill="#27AE60">&#x2713; 正确：明度分层清晰</text>
 
-  <!-- Summary bar -->
-  <rect x="30" y="430" width="740" height="48" rx="4" fill="#E8F4FD"/>
-  <text x="400" y="450" text-anchor="middle" class="label" font-size="15">核心规则：游戏画面的明度结构服务于"可读性"——</text>
-  <text x="400" y="468" text-anchor="middle" class="note" font-size="13">主角 > 敌人 > 可交互物 > 装饰 > 远景背景（明度对比依次递减）</text>
+    <!-- Sky — lightest -->
+    <rect x="0" y="0" width="355" height="150" fill="#E8E8E8"/>
+
+    <!-- Far hill — lighter than midground -->
+    <polygon points="0,150 60,100 140,140 220,90 300,130 355,110 355,150" fill="#CCC"/>
+
+    <!-- Ground — mid-dark -->
+    <rect x="0" y="165" width="355" height="75" fill="#666"/>
+    <rect x="0" y="160" width="355" height="5" fill="#555"/>
+
+    <!-- Trees — darker than ground -->
+    <rect x="40" y="130" width="10" height="30" fill="#444"/>
+    <rect x="120" y="125" width="12" height="35" fill="#444"/>
+    <rect x="220" y="135" width="10" height="25" fill="#444"/>
+    <rect x="300" y="128" width="10" height="32" fill="#444"/>
+
+    <!-- Player — darkest, highest contrast -->
+    <rect x="160" y="140" width="14" height="20" fill="#111"/>
+    <rect x="162" y="132" width="10" height="8" fill="#111"/>
+    <rect x="150" y="140" width="4" height="10" fill="#111"/>
+    <rect x="180" y="140" width="4" height="10" fill="#111"/>
+
+    <!-- Enemy — medium-dark, between player and bg -->
+    <rect x="260" y="145" width="12" height="15" fill="#333"/>
+    <rect x="262" y="138" width="8" height="7" fill="#333"/>
+    <rect x="258" y="143" width="4" height="4" fill="#555"/>
+
+    <!-- Collectible — bright accent -->
+    <circle cx="100" cy="150" r="5" fill="#FAFAFA"/>
+
+    <!-- HUD — darkest overlay -->
+    <rect x="10" y="10" width="80" height="13" fill="#222" rx="2"/>
+
+    <!-- Value strip overlay on the right -->
+    <rect x="345" y="0" width="10" height="240" fill="#E8E8E8"/>
+    <rect x="345" y="150" width="10" height="30" fill="#CCC"/>
+    <rect x="345" y="160" width="10" height="80" fill="#666"/>
+    <rect x="345" y="140" width="10" height="20" fill="#111"/>
+
+    <!-- Callout arrows pointing to value zones -->
+    <line x1="355" y1="10" x2="375" y2="10" class="callout-line"/>
+    <text x="378" y="13" class="callout-text" fill="#222">HUD</text>
+
+    <line x1="355" y1="60" x2="380" y2="60" class="callout-line" stroke="#999"/>
+    <text x="383" y="63" class="label" fill="#999">天空 最浅</text>
+
+    <line x1="355" y1="115" x2="380" y2="115" class="callout-line" stroke="#CCC"/>
+    <text x="383" y="118" class="label" fill="#AAA">远山</text>
+
+    <line x1="355" y1="175" x2="380" y2="175" class="callout-line" stroke="#666"/>
+    <text x="383" y="178" class="label" fill="#666">地面 中灰</text>
+
+    <line x1="355" y1="145" x2="400" y2="145" class="callout-line" stroke="#111"/>
+    <text x="403" y="148" class="callout-text">主角 最暗</text>
+
+    <text x="177" y="225" class="note" fill="#27AE60">四层明度从浅到深拉开 → 一目了然</text>
+  </g>
+
+  <!-- Bottom: value priority pyramid -->
+  <g transform="translate(30, 340)">
+    <text x="370" y="0" class="label" fill="#888" text-anchor="middle" font-size="11">明度优先级金字塔：对比度从高到低</text>
+
+    <!-- Pyramid layers (top=highest contrast for gameplay, bottom=lowest for bg) -->
+    <rect x="300" y="12" width="140" height="24" rx="2" fill="#111"/>
+    <text x="370" y="27" class="label" fill="#FAFAFA" text-anchor="middle" font-size="9" font-weight="bold">主角 · 最高对比度</text>
+
+    <rect x="280" y="36" width="180" height="22" rx="2" fill="#333"/>
+    <text x="370" y="50" class="label" fill="#E0E0E0" text-anchor="middle" font-size="9">敌人 / 可交互物</text>
+
+    <rect x="260" y="58" width="220" height="22" rx="2" fill="#666"/>
+    <text x="370" y="72" class="label" fill="#E0E0E0" text-anchor="middle" font-size="9">HUD / 前景装饰</text>
+
+    <rect x="240" y="80" width="260" height="22" rx="2" fill="#999"/>
+    <text x="370" y="94" class="label" fill="#555" text-anchor="middle" font-size="9">中景 / 远景地形</text>
+
+    <rect x="220" y="102" width="300" height="22" rx="2" fill="#CCC"/>
+    <text x="370" y="116" class="label" fill="#888" text-anchor="middle" font-size="9">天空 / 远山 · 最低对比度</text>
+
+    <!-- Priority arrow on left -->
+    <text x="10" y="27" class="label" fill="#E74C3C" font-weight="bold" font-size="10">对比度最高的</text>
+    <text x="10" y="42" class="label" fill="#888" font-size="9">= 玩家最先看到</text>
+    <text x="10" y="94" class="label" fill="#888" font-size="9">对比度最低的</text>
+    <text x="10" y="109" class="label" fill="#888" font-size="9">= 玩家最后注意</text>
+  </g>
 </svg>

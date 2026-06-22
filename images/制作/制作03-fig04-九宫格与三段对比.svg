@@ -1,36 +1,129 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 15px; font-weight: bold; fill: #333; }
     .subtitle { font-size: 10px; fill: #666; }
-    .col-header { font-size: 13px; font-weight: bold; fill: #fff; text-anchor: middle; }
-    .col-sub { font-size: 9px; fill: #fff; text-anchor: middle; opacity: 0.85; }
-    .cell-label { font-size: 9px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .col-header { font-size: 13px; font-weight: bold; text-anchor: middle; }
+    .cell-label { font-size: 9px; text-anchor: middle; font-weight: bold; }
     .cell-sub { font-size: 7.5px; fill: #666; text-anchor: middle; }
-    .seg-label { font-size: 9px; fill: #333; text-anchor: middle; font-weight: bold; }
-    .seg-sub { font-size: 7.5px; fill: #666; text-anchor: middle; }
-    .analogy-title { font-size: 9px; font-weight: bold; fill: #E74C3C; }
-    .analogy-text { font-size: 8px; fill: #555; }
-    .pros-label { font-size: 8.5px; fill: #27AE60; font-weight: bold; }
-    .cons-label { font-size: 8.5px; fill: #E74C3C; font-weight: bold; }
-    .meta-text { font-size: 8px; fill: #555; }
+    .pros { font-size: 8.5px; fill: #27AE60; font-weight: bold; }
+    .cons { font-size: 8.5px; fill: #C0392B; font-weight: bold; }
+    .note { font-size: 8px; fill: #666; }
   </style>
 
-  <!-- Title -->
-  <text x="400" y="26" class="title" text-anchor="middle">图 制作03.4  9-Slice vs 3-Tile——两种地形过渡方法的工程量与效果对比</text>
-  <text x="400" y="42" class="subtitle" text-anchor="middle">左：9-Slice 切九宫格适配任意尺寸 2D 地形 · 右：3-Tile 切三段适合 1D 重复边界</text>
+  <text x="400" y="24" class="title" text-anchor="middle">9-Slice vs 3-Tile——两种地形过渡方法</text>
+  <text x="400" y="38" class="subtitle" text-anchor="middle">左：9-Slice 切九宫格适配任意尺寸 · 右：3-Tile 切三段适合 1D 边界</text>
 
-  <!-- Vertical divider -->
-  <line x1="400" y1="52" x2="400" y2="475" stroke="#E0E0E0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="400" y1="48" x2="400" y2="365" stroke="#ddd" stroke-width="1.5" stroke-dasharray="4,3"/>
 
-  <!-- ============ LEFT: 9-Slice ============ -->
+  <!-- ===== LEFT: 9-Slice ===== -->
+  <g transform="translate(25, 55)">
+    <rect x="0" y="0" width="370" height="28" fill="#3498DB" rx="4"/>
+    <text x="185" y="19" class="col-header" fill="#fff">9-Slice（九宫格）</text>
 
-  <!-- ============ RIGHT: 3-Tile ============ -->
+    <!-- 9-Slice grid: show the 3x3 grid with labels -->
+    <g transform="translate(35, 44)">
+      <text x="150" y="0" class="cell-label" fill="#3498DB">原 tile 被切成 3×3 = 9 个区域</text>
 
-  <!-- Bottom note: how to choose -->
-  <g transform="translate(20, 432)">
-    <rect x="0" y="0" width="760" height="38" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.8" rx="4"/>
-    <text x="380" y="16" style="font-size:9px; fill:#7D6608; text-anchor:middle; font-weight:bold;">怎么选？2D 任意形状地形 → 9-Slice ｜ 1D 重复边界 → 3-Tile ｜ 预算紧先 3-Tile 跑起来</text>
-    <text x="380" y="30" style="font-size:8px; fill:#7D6608; text-anchor:middle;">3-Tile 翻转 tile 的光源穿帮要么补非翻转版、要么手动修光影——这是它牺牲精度换工作量的代价</text>
+      <!-- 3x3 grid -->
+      <g transform="translate(0, 12)">
+        <!-- Grid background -->
+        <!-- Row 1 -->
+        <rect x="0" y="0" width="50" height="40" fill="#D4E6F1" stroke="#3498DB" stroke-width="1.5"/>
+        <rect x="50" y="0" width="200" height="40" fill="#E8F4FD" stroke="#3498DB" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <rect x="250" y="0" width="50" height="40" fill="#D4E6F1" stroke="#3498DB" stroke-width="1.5"/>
+        <!-- Row 2 -->
+        <rect x="0" y="40" width="50" height="100" fill="#E8F4FD" stroke="#3498DB" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <rect x="50" y="40" width="200" height="100" fill="#EBF5FB" stroke="#3498DB" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <rect x="250" y="40" width="50" height="100" fill="#E8F4FD" stroke="#3498DB" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <!-- Row 3 -->
+        <rect x="0" y="140" width="50" height="40" fill="#D4E6F1" stroke="#3498DB" stroke-width="1.5"/>
+        <rect x="50" y="140" width="200" height="40" fill="#E8F4FD" stroke="#3498DB" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <rect x="250" y="140" width="50" height="40" fill="#D4E6F1" stroke="#3498DB" stroke-width="1.5"/>
+
+        <!-- Labels inside cells -->
+        <text x="25" y="23" class="cell-label">角</text>
+        <text x="150" y="23" class="cell-label">上边（水平拉伸）</text>
+        <text x="275" y="23" class="cell-label">角</text>
+        <text x="25" y="93" class="cell-label">左边</text>
+        <text x="150" y="93" class="cell-label">中心（双向拉伸）</text>
+        <text x="275" y="93" class="cell-label">右边</text>
+        <text x="25" y="163" class="cell-label">角</text>
+        <text x="150" y="163" class="cell-label">下边（水平拉伸）</text>
+        <text x="275" y="163" class="cell-label">角</text>
+      </g>
+
+      <!-- Arrow to stretched result -->
+      <text x="150" y="218" class="note" text-anchor="middle" fill="#3498DB">↓ 拉伸到任意尺寸</text>
+
+      <!-- Stretched result -->
+      <g transform="translate(0, 228)">
+        <rect x="0" y="0" width="50" height="26" fill="#D4E6F1" stroke="#3498DB" stroke-width="1.5"/>
+        <rect x="50" y="0" width="200" height="26" fill="#A9CCE3" stroke="#3498DB" stroke-width="1"/>
+        <rect x="250" y="0" width="50" height="26" fill="#D4E6F1" stroke="#3498DB" stroke-width="1.5"/>
+        <rect x="0" y="26" width="50" height="30" fill="#A9CCE3" stroke="#3498DB" stroke-width="1"/>
+        <rect x="50" y="26" width="200" height="30" fill="#D6EAF8" stroke="#3498DB" stroke-width="1"/>
+        <rect x="250" y="26" width="50" height="30" fill="#A9CCE3" stroke="#3498DB" stroke-width="1"/>
+        <text x="150" y="42" class="cell-label" fill="#3498DB">四角固定 · 四边拉伸 · 中心填充</text>
+      </g>
+    </g>
+
+    <!-- Pros/Cons -->
+    <g transform="translate(15, 345)">
+      <text x="0" y="0" class="pros">✓ 一个 tile 适配任意宽高的矩形</text>
+      <text x="0" y="14" class="cons">✗ 9 区各需设计 · 素材量大</text>
+      <text x="0" y="28" class="note">适合：面板/对话框/2D 地形</text>
+    </g>
   </g>
+
+  <!-- ===== RIGHT: 3-Tile ===== -->
+  <g transform="translate(425, 55)">
+    <rect x="0" y="0" width="370" height="28" fill="#27AE60" rx="4"/>
+    <text x="185" y="19" class="col-header" fill="#fff">3-Tile（三段式）</text>
+
+    <g transform="translate(35, 44)">
+      <text x="150" y="0" class="cell-label" fill="#27AE60">3 个独立 tile：左端 → 中间（可重复）→ 右端</text>
+
+      <!-- Three tiles -->
+      <g transform="translate(0, 18)">
+        <rect x="0" y="0" width="60" height="80" fill="#D5F5E3" stroke="#27AE60" stroke-width="1.5"/>
+        <rect x="60" y="0" width="180" height="80" fill="#EAFAF1" stroke="#27AE60" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <rect x="240" y="0" width="60" height="80" fill="#D5F5E3" stroke="#27AE60" stroke-width="1.5"/>
+
+        <!-- Labels -->
+        <text x="30" y="95" class="cell-label">左端</text>
+        <text x="150" y="95" class="cell-label">中间（重复 N 次）</text>
+        <text x="270" y="95" class="cell-label">右端</text>
+
+        <!-- Decorative content to show tile variety -->
+        <rect x="15" y="50" width="30" height="8" fill="#27AE60" opacity="0.5"/>
+        <rect x="90" y="50" width="30" height="8" fill="#27AE60" opacity="0.5"/>
+        <rect x="165" y="30" width="30" height="8" fill="#27AE60" opacity="0.5"/>
+        <rect x="255" y="50" width="30" height="8" fill="#27AE60" opacity="0.5"/>
+      </g>
+
+      <!-- Assembly example -->
+      <text x="150" y="132" class="note" text-anchor="middle" fill="#27AE60">↓ 组装（左端+中间×3+右端）</text>
+
+      <g transform="translate(0, 142)">
+        <rect x="0" y="0" width="60" height="40" fill="#D5F5E3" stroke="#27AE60" stroke-width="1"/>
+        <rect x="60" y="0" width="60" height="40" fill="#EAFAF1" stroke="#27AE60" stroke-width="0.5"/>
+        <rect x="120" y="0" width="60" height="40" fill="#EAFAF1" stroke="#27AE60" stroke-width="0.5"/>
+        <rect x="180" y="0" width="60" height="40" fill="#EAFAF1" stroke="#27AE60" stroke-width="0.5"/>
+        <rect x="240" y="0" width="60" height="40" fill="#D5F5E3" stroke="#27AE60" stroke-width="1"/>
+        <text x="150" y="22" class="cell-label" fill="#27AE60">左+中+中+中+右 = 任意宽度</text>
+      </g>
+    </g>
+
+    <!-- Pros/Cons -->
+    <g transform="translate(15, 345)">
+      <text x="0" y="0" class="pros">✓ 简单 · 3 个 tile 即可 · 素材量低</text>
+      <text x="0" y="14" class="cons">✗ 仅 1D（水平方向）· 无法拉伸</text>
+      <text x="0" y="28" class="note">适合：平台边缘 / 围墙 / 水平条</text>
+    </g>
+  </g>
+
+  <!-- Bottom note -->
+  <rect x="25" y="380" width="750" height="28" rx="4" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.8"/>
+  <text x="400" y="398" style="font-size:9px;fill:#7D6608;text-anchor:middle;font-weight:bold;">怎么选？2D 任意形状地形 → 9-Slice ｜ 1D 重复边界 → 3-Tile ｜ 预算紧先 3-Tile 跑起来</text>
 </svg>

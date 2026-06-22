@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 15px; font-weight: bold; fill: #333; }
@@ -11,7 +11,7 @@
     .annot-green { font-size: 9px; fill: #27AE60; }
   </style>
 
-  <text x="400" y="30" class="title" text-anchor="middle">图 练手08.1 抗锯齿原则——中间色像素的放置</text>
+  <text x="400" y="30" class="title" text-anchor="middle">抗锯齿原则——中间色像素的放置</text>
 
   <!-- ===== LEFT: NO AA ===== -->
   <g transform="translate(30, 55)">

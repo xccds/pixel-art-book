@@ -1,78 +1,127 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
-  <defs>
-    <style>
-      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
-      .title { font-size: 22px; font-weight: bold; fill: #333; }
-      .subtitle { font-size: 14px; fill: #666; }
-      .note { font-size: 12px; fill: #666; }
-      .gamut-label { font-size: 13px; font-weight: bold; fill: #333; }
-    </style>
-  </defs>
-  <rect width="800" height="500" fill="#FAFAFA"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 17px; font-weight: bold; fill: #222; }
+    .subtitle { font-size: 11px; fill: #888; }
+    .panel-label { font-size: 12px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .swatch-label { font-size: 9px; fill: #666; text-anchor: middle; }
+    .note { font-size: 10px; fill: #888; }
+  </style>
 
-  <text x="400" y="32" text-anchor="middle" class="title">色域映射（Gamut Mapping）——限制 = 和谐</text>
-  <text x="400" y="54" text-anchor="middle" class="subtitle">Gurney的色彩限制理论：限制使用的色相范围，画面反而更和谐</text>
+  <text x="400" y="26" class="title" text-anchor="middle">色域遮罩（Gamut Masking）——在色轮上画个三角形，只用里面的颜色</text>
 
-  <!-- Color wheel with gamut mask -->
-  <g transform="translate(260, 280)">
-    <!-- Full color wheel (grayed outer) -->
-    <circle cx="0" cy="0" r="140" fill="none" stroke="#DDD" stroke-width="1"/>
-    <circle cx="0" cy="0" r="125" fill="none" stroke="#DDD" stroke-width="0.5"/>
+  <!-- ===== Panel 1: Warm gamut ===== -->
+  <g transform="translate(25, 50)">
+    <rect x="0" y="0" width="235" height="310" fill="#fafafa" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+    <text x="117" y="22" class="panel-label" fill="#E67E22">暖色遮罩</text>
 
-    <!-- Outer ring - all colors subdued -->
-    <path d="M 0,-135 A 135,135 0 0,1 67,-117" fill="none" stroke="#E8C8C8" stroke-width="18"/>
-    <path d="M 67,-117 A 135,135 0 0,1 117,-67" fill="none" stroke="#E8D8C8" stroke-width="18"/>
-    <path d="M 117,-67 A 135,135 0 0,1 135,0" fill="none" stroke="#E8E8C8" stroke-width="18"/>
-    <path d="M 135,0 A 135,135 0 0,1 117,67" fill="none" stroke="#C8E8C8" stroke-width="18"/>
-    <path d="M 117,67 A 135,135 0 0,1 67,117" fill="none" stroke="#C8E8E8" stroke-width="18"/>
-    <path d="M 67,117 A 135,135 0 0,1 0,135" fill="none" stroke="#C8C8E8" stroke-width="18"/>
-    <path d="M 0,135 A 135,135 0 0,1 -67,117" fill="none" stroke="#E8C8E8" stroke-width="18"/>
-    <path d="M -67,117 A 135,135 0 0,1 -117,67" fill="none" stroke="#E8C8C8" stroke-width="18"/>
-    <path d="M -117,67 A 135,135 0 0,1 -135,0" fill="none" stroke="#E8C8C8" stroke-width="18"/>
-    <path d="M -135,0 A 135,135 0 0,1 -117,-67" fill="none" stroke="#E8C8C8" stroke-width="18"/>
-    <path d="M -117,-67 A 135,135 0 0,1 -67,-117" fill="none" stroke="#E8D8C8" stroke-width="18"/>
-    <path d="M -67,-117 A 135,135 0 0,1 0,-135" fill="none" stroke="#E8C8C8" stroke-width="18"/>
+    <!-- Color wheel ring -->
+    <g transform="translate(117, 115)">
+      <circle cx="0" cy="0" r="70" fill="none" stroke="#ddd" stroke-width="1"/>
+      <!-- Colored arcs around the wheel -->
+      <path d="M 0,-70 A 70,70 0 0,1 49,-49" stroke="#E74C3C" stroke-width="8" fill="none"/>
+      <path d="M 49,-49 A 70,70 0 0,1 70,0" stroke="#E67E22" stroke-width="8" fill="none"/>
+      <path d="M 70,0 A 70,70 0 0,1 49,49" stroke="#F1C40F" stroke-width="8" fill="none"/>
+      <path d="M 49,49 A 70,70 0 0,1 0,70" stroke="#2ECC71" stroke-width="8" fill="none"/>
+      <path d="M 0,70 A 70,70 0 0,1 -49,49" stroke="#3498DB" stroke-width="8" fill="none"/>
+      <path d="M -49,49 A 70,70 0 0,1 -70,0" stroke="#9B59B6" stroke-width="8" fill="none"/>
+      <path d="M -70,0 A 70,70 0 0,1 -49,-49" stroke="#E74C3C" stroke-width="8" fill="none"/>
+      <path d="M -49,-49 A 70,70 0 0,1 0,-70" stroke="#E67E22" stroke-width="8" fill="none"/>
 
-    <!-- Inside area: bright warm colors representing the gamut -->
-    <path d="M 0,-110 A 110,110 0 0,1 45,-100" fill="none" stroke="#E74C3C" stroke-width="12" opacity="0.9"/>
-    <path d="M 45,-100 A 110,110 0 0,1 90,-62" fill="none" stroke="#E67E22" stroke-width="12" opacity="0.9"/>
-    <path d="M 90,-62 A 110,110 0 0,1 35,85" fill="none" stroke="#F1C40F" stroke-width="12" opacity="0.9"/>
-    <path d="M 35,85 A 110,110 0 0,1 0,-110" fill="none" stroke="#E74C3C" stroke-width="12" opacity="0.5"/>
+      <!-- Triangle mask: red-orange-yellow area -->
+      <polygon points="0,-45 35,40 -55,20" fill="none" stroke="#E67E22" stroke-width="2" stroke-dasharray="5,3"/>
+      <circle cx="0" cy="-45" r="3" fill="#E74C3C"/>
+      <circle cx="35" cy="40" r="3" fill="#F1C40F"/>
+      <circle cx="-55" cy="20" r="3" fill="#E67E22"/>
 
-    <!-- Triangle gamut mask overlay -->
-    <polygon points="0,-90 70,60 -50,50" fill="none" stroke="#E74C3C" stroke-width="2.5" stroke-dasharray="8,4"/>
-    <text x="10" y="20" class="note" font-size="10" fill="#E74C3C">gamut mask</text>
-    <text x="10" y="32" class="note" font-size="10" fill="#E74C3C">（可用色域）</text>
+      <!-- Gray out excluded area -->
+      <circle cx="0" cy="0" r="58" fill="#fafafa" opacity="0.5"/>
+      <polygon points="0,-45 35,40 -55,20" fill="#FFF3E0" opacity="0.4"/>
+    </g>
 
-    <!-- Cross marks for excluded colors -->
-    <text x="-80" y="-95" class="note" font-size="14" fill="#999">✕</text>
-    <text x="95" y="-85" class="note" font-size="14" fill="#999">✕</text>
-    <text x="-105" y="5" class="note" font-size="14" fill="#999">✕</text>
-    <text x="0" y="115" class="note" font-size="14" fill="#999">✕</text>
-    <text x="-50" y="0" class="note" font-size="11" fill="#E74C3C">可用色域</text>
+    <!-- Resulting palette -->
+    <rect x="15" y="235" width="35" height="22" rx="2" fill="#C0392B"/>
+    <rect x="55" y="235" width="35" height="22" rx="2" fill="#E74C3C"/>
+    <rect x="95" y="235" width="35" height="22" rx="2" fill="#E67E22"/>
+    <rect x="135" y="235" width="35" height="22" rx="2" fill="#F1C40F"/>
+    <rect x="175" y="235" width="35" height="22" rx="2" fill="#FFF3E0"/>
+    <text x="117" y="275" class="swatch-label">红→橙→黄 五色暖调调色板</text>
+
+    <text x="117" y="298" class="note" text-anchor="middle">蓝/绿被排除，画面自然温暖</text>
   </g>
 
-  <!-- Explanation on the right -->
-  <text x="540" y="180" class="gamut-label">核心原理：</text>
-  <text x="540" y="205" class="note">1. 在全色环上选择一个三角形遮罩</text>
-  <text x="540" y="225" class="note">2. 三角形内 = 可用色相（饱和）</text>
-  <text x="540" y="245" class="note">3. 三角形外 = 禁用或灰化（低饱和）</text>
-  <text x="540" y="270" class="note">4. 画面由"主角色"主导</text>
-  <text x="540" y="290" class="note">→ 自动获得色彩和谐</text>
+  <!-- ===== Panel 2: Cool gamut ===== -->
+  <g transform="translate(282, 50)">
+    <rect x="0" y="0" width="235" height="310" fill="#fafafa" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+    <text x="117" y="22" class="panel-label" fill="#3498DB">冷色遮罩</text>
 
-  <!-- Code analogy -->
-  <rect x="540" y="310" width="220" height="50" rx="3" fill="#333"/>
-  <text x="650" y="330" text-anchor="middle" class="note" fill="#0F0" font-size="10" font-family="monospace">// 代码类比</text>
-  <text x="650" y="348" text-anchor="middle" class="note" fill="#0F0" font-size="10" font-family="monospace">const COLORS = palette.slice(0,3)</text>
+    <g transform="translate(117, 115)">
+      <circle cx="0" cy="0" r="70" fill="none" stroke="#ddd" stroke-width="1"/>
+      <path d="M 0,-70 A 70,70 0 0,1 49,-49" stroke="#E74C3C" stroke-width="8" fill="none"/>
+      <path d="M 49,-49 A 70,70 0 0,1 70,0" stroke="#E67E22" stroke-width="8" fill="none"/>
+      <path d="M 70,0 A 70,70 0 0,1 49,49" stroke="#F1C40F" stroke-width="8" fill="none"/>
+      <path d="M 49,49 A 70,70 0 0,1 0,70" stroke="#2ECC71" stroke-width="8" fill="none"/>
+      <path d="M 0,70 A 70,70 0 0,1 -49,49" stroke="#3498DB" stroke-width="8" fill="none"/>
+      <path d="M -49,49 A 70,70 0 0,1 -70,0" stroke="#9B59B6" stroke-width="8" fill="none"/>
+      <path d="M -70,0 A 70,70 0 0,1 -49,-49" stroke="#E74C3C" stroke-width="8" fill="none"/>
+      <path d="M -49,-49 A 70,70 0 0,1 0,-70" stroke="#E67E22" stroke-width="8" fill="none"/>
 
-  <!-- Example strips -->
-  <text x="540" y="390" class="gamut-label" font-size="12">示例：暖色调场景的 gamut mask</text>
-  <rect x="540" y="400" width="40" height="20" rx="2" fill="#E74C3C"/>
-  <rect x="584" y="400" width="40" height="20" rx="2" fill="#E67E22"/>
-  <rect x="628" y="400" width="40" height="20" rx="2" fill="#F1C40F"/>
-  <rect x="672" y="400" width="40" height="20" rx="2" fill="#E8D8B0"/>
-  <text x="540" y="438" class="note">全部色彩来自红-橙-黄三角，</text>
-  <text x="540" y="454" class="note">蓝/绿仅以灰化形式出现 → 和谐</text>
+      <!-- Triangle mask: blue-purple-cyan area -->
+      <polygon points="0,45 55,-30 -55,-30" fill="none" stroke="#3498DB" stroke-width="2" stroke-dasharray="5,3"/>
+      <circle cx="0" cy="45" r="3" fill="#3498DB"/>
+      <circle cx="55" cy="-30" r="3" fill="#2ECC71"/>
+      <circle cx="-55" cy="-30" r="3" fill="#9B59B6"/>
 
-  <text x="30" y="472" class="note" font-size="11" fill="#999">来源：James Gurney "Gamut Masking" 理论 · 《Color and Light》第4章</text>
+      <circle cx="0" cy="0" r="58" fill="#fafafa" opacity="0.5"/>
+      <polygon points="0,45 55,-30 -55,-30" fill="#E8F0FE" opacity="0.4"/>
+    </g>
+
+    <rect x="15" y="235" width="35" height="22" rx="2" fill="#1A5276"/>
+    <rect x="55" y="235" width="35" height="22" rx="2" fill="#2980B9"/>
+    <rect x="95" y="235" width="35" height="22" rx="2" fill="#27AE60"/>
+    <rect x="135" y="235" width="35" height="22" rx="2" fill="#8E44AD"/>
+    <rect x="175" y="235" width="35" height="22" rx="2" fill="#D6EAF8"/>
+    <text x="117" y="275" class="swatch-label">蓝→绿→紫 五色冷调调色板</text>
+
+    <text x="117" y="298" class="note" text-anchor="middle">红/橙被排除，画面自然冷静</text>
+  </g>
+
+  <!-- ===== Panel 3: Complementary gamut ===== -->
+  <g transform="translate(540, 50)">
+    <rect x="0" y="0" width="235" height="310" fill="#fafafa" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+    <text x="117" y="22" class="panel-label" fill="#8E44AD">互补遮罩</text>
+
+    <g transform="translate(117, 115)">
+      <circle cx="0" cy="0" r="70" fill="none" stroke="#ddd" stroke-width="1"/>
+      <path d="M 0,-70 A 70,70 0 0,1 49,-49" stroke="#E74C3C" stroke-width="8" fill="none"/>
+      <path d="M 49,-49 A 70,70 0 0,1 70,0" stroke="#E67E22" stroke-width="8" fill="none"/>
+      <path d="M 70,0 A 70,70 0 0,1 49,49" stroke="#F1C40F" stroke-width="8" fill="none"/>
+      <path d="M 49,49 A 70,70 0 0,1 0,70" stroke="#2ECC71" stroke-width="8" fill="none"/>
+      <path d="M 0,70 A 70,70 0 0,1 -49,49" stroke="#3498DB" stroke-width="8" fill="none"/>
+      <path d="M -49,49 A 70,70 0 0,1 -70,0" stroke="#9B59B6" stroke-width="8" fill="none"/>
+      <path d="M -70,0 A 70,70 0 0,1 -49,-49" stroke="#E74C3C" stroke-width="8" fill="none"/>
+      <path d="M -49,-49 A 70,70 0 0,1 0,-70" stroke="#E67E22" stroke-width="8" fill="none"/>
+
+      <!-- Triangle mask: warm base + blue accent (spanning opposite sides) -->
+      <polygon points="-40,-35 30,50 -10,-60" fill="none" stroke="#8E44AD" stroke-width="2" stroke-dasharray="5,3"/>
+      <circle cx="-40" cy="-35" r="3" fill="#E67E22"/>
+      <circle cx="30" cy="50" r="3" fill="#F1C40F"/>
+      <circle cx="-10" cy="-60" r="3" fill="#3498DB"/>
+
+      <circle cx="0" cy="0" r="58" fill="#fafafa" opacity="0.5"/>
+      <polygon points="-40,-35 30,50 -10,-60" fill="#F3E5F5" opacity="0.3"/>
+    </g>
+
+    <rect x="15" y="235" width="35" height="22" rx="2" fill="#F1C40F"/>
+    <rect x="55" y="235" width="35" height="22" rx="2" fill="#E67E22"/>
+    <rect x="95" y="235" width="35" height="22" rx="2" fill="#8D6E63"/>
+    <rect x="135" y="235" width="35" height="22" rx="2" fill="#3498DB"/>
+    <rect x="175" y="235" width="35" height="22" rx="2" fill="#FFFDE7"/>
+    <text x="117" y="275" class="swatch-label">暖色主导 + 蓝色点缀 互补配色</text>
+
+    <text x="117" y="298" class="note" text-anchor="middle">三角跨暖冷两侧，冷暖对比强烈</text>
+  </g>
+
+  <!-- Bottom tao -->
+  <text x="400" y="370" class="note" text-anchor="middle" fill="#999">James Gurney "Gamut Masking" · 限制色相范围 = 自动获得色彩和谐</text>
 </svg>

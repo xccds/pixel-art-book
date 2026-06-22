@@ -47,8 +47,4 @@
   <text x="110" y="110" class="example" font-size="12" fill="#E74C3C">《蔚蓝》：冷紫=危险区</text>
   <text x="110" y="128" class="example" font-size="12" fill="#E74C3C">暖橙=安全平台</text>
   <text x="110" y="155" class="example" font-size="12" fill="#E67E22">→ 交互层示例</text>
-
-  <!-- Code analogy -->
-  <rect x="30" y="455" width="140" height="28" rx="3" fill="#333"/>
-  <text x="100" y="474" text-anchor="middle" class="example" fill="#0F0" font-size="10" font-family="monospace">// 代码类比: z-index</text>
 </svg>

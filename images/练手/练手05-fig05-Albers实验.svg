@@ -1,77 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
-  <defs>
-    <style>
-      text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
-      .title { font-size: 22px; font-weight: bold; fill: #333; }
-      .subtitle { font-size: 14px; fill: #666; }
-      .panel-label { font-size: 15px; font-weight: bold; fill: #333; }
-      .note { font-size: 13px; fill: #666; }
-      .big-note { font-size: 15px; font-weight: bold; fill: #E74C3C; }
-    </style>
-  </defs>
-  <rect width="800" height="500" fill="#FAFAFA"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 370" width="800" height="370">
+  <style>
+    text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
+    .title { font-size: 17px; font-weight: bold; fill: #222; }
+    .subtitle { font-size: 12px; fill: #888; }
+    .panel-label { font-size: 13px; font-weight: bold; fill: #333; }
+    .note { font-size: 11px; fill: #666; }
+    .big-note { font-size: 14px; font-weight: bold; fill: #C0392B; }
+  </style>
 
-  <text x="400" y="32" text-anchor="middle" class="title">Albers 色彩相对性实验</text>
-  <text x="400" y="54" text-anchor="middle" class="subtitle">同一个颜色，在不同背景下看起来截然不同</text>
+  <text x="400" y="26" class="title" text-anchor="middle">Albers 色彩相对性实验</text>
+  <text x="400" y="43" class="subtitle" text-anchor="middle">同一个颜色，在不同的底色上看起来截然不同——这不是色变了，是你的眼睛在骗你</text>
 
-  <!-- Panel 1: White background -->
-  <rect x="30" y="75" width="230" height="180" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <text x="145" y="98" text-anchor="middle" class="panel-label">白色背景</text>
-  <rect x="145" y="80" width="230" height="175" fill="#FFFFFF"/>
-  <rect x="110" y="120" width="70" height="70" rx="2" fill="#2E6B3E"/>
-  <text x="145" y="210" text-anchor="middle" class="note">看起来：暗、深、浓郁</text>
-  <text x="145" y="228" text-anchor="middle" class="note" font-size="11" fill="#999">→ 深绿色显得很"实"</text>
+  <!-- ===== Panel 1: White ===== -->
+  <g transform="translate(30, 62)">
+    <rect x="0" y="0" width="235" height="170" fill="#fafafa" stroke="#ddd" stroke-width="1" rx="4"/>
+    <rect x="0" y="0" width="235" height="170" fill="#FFFFFF" rx="4"/>
+    <text x="117" y="22" text-anchor="middle" class="panel-label" fill="#333" font-weight="bold">白色背景</text>
+    <rect x="82" y="55" width="70" height="70" rx="2" fill="#2E6B3E"/>
+    <text x="117" y="145" text-anchor="middle" class="note">看起来：暗、深、浓郁</text>
+  </g>
 
-  <!-- Panel 2: Red background -->
-  <rect x="285" y="75" width="230" height="180" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <text x="400" y="98" text-anchor="middle" class="panel-label">红色背景</text>
-  <rect x="285" y="80" width="230" height="175" fill="#E74C3C"/>
-  <rect x="365" y="120" width="70" height="70" rx="2" fill="#2E6B3E"/>
-  <text x="400" y="210" text-anchor="middle" class="note">看起来：偏蓝、偏冷</text>
-  <text x="400" y="228" text-anchor="middle" class="note" font-size="11" fill="#999">→ 红色让绿色"变冷"</text>
+  <!-- ===== Panel 2: Red ===== -->
+  <g transform="translate(282, 62)">
+    <rect x="0" y="0" width="235" height="170" fill="#fafafa" stroke="#ddd" stroke-width="1" rx="4"/>
+    <rect x="0" y="0" width="235" height="170" fill="#C0392B" rx="4"/>
+    <text x="117" y="22" text-anchor="middle" class="panel-label" fill="#FFF">红色背景</text>
+    <rect x="82" y="55" width="70" height="70" rx="2" fill="#2E6B3E"/>
+    <text x="117" y="145" text-anchor="middle" class="note" fill="#F5B7B1">看起来：偏蓝、偏冷</text>
+  </g>
 
-  <!-- Panel 3: Same green background -->
-  <rect x="540" y="75" width="230" height="180" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <text x="655" y="98" text-anchor="middle" class="panel-label">同色背景</text>
-  <rect x="540" y="80" width="230" height="175" fill="#2E6B3E"/>
-  <rect x="620" y="120" width="70" height="70" rx="2" fill="#2E6B3E"/>
-  <text x="655" y="210" text-anchor="middle" class="note">看起来：几乎消失</text>
-  <text x="655" y="228" text-anchor="middle" class="note" font-size="11" fill="#999">→ 同化效应、边界模糊</text>
+  <!-- ===== Panel 3: Same Green ===== -->
+  <g transform="translate(535, 62)">
+    <rect x="0" y="0" width="235" height="170" fill="#fafafa" stroke="#ddd" stroke-width="1" rx="4"/>
+    <rect x="0" y="0" width="235" height="170" fill="#2E6B3E" rx="4"/>
+    <text x="117" y="22" text-anchor="middle" class="panel-label" fill="#FFF">同色背景</text>
+    <rect x="82" y="55" width="70" height="70" rx="2" fill="#2E6B3E" stroke="#1B4A27" stroke-width="1"/>
+    <text x="117" y="145" text-anchor="middle" class="note" fill="#A8C9B0">看起来：几乎消失</text>
+  </g>
 
   <!-- Key insight -->
-  <rect x="30" y="270" width="740" height="50" rx="4" fill="#FFF3E0"/>
-  <text x="400" y="290" text-anchor="middle" class="big-note">同一个墨绿色 → 三个背景 → 三种截然不同的视觉感受</text>
-  <text x="400" y="310" text-anchor="middle" class="note">这就是色彩相对性（Color Relativity）——Albers一书的核心发现</text>
+  <rect x="30" y="250" width="740" height="55" rx="4" fill="#FFF3E0"/>
+  <text x="400" y="272" text-anchor="middle" class="big-note">同一个墨绿色 · 三个底色 · 三种截然不同的视觉感受</text>
+  <text x="400" y="294" text-anchor="middle" class="note">色彩相对性：颜色不是绝对值，它在相邻色对比中"被定义"——Albers 整本书的核心发现</text>
 
-  <!-- Three more experiments -->
-  <text x="400" y="348" text-anchor="middle" class="panel-label">更多 Albers 实验（建议你在屏幕上自己试试）</text>
+  <!-- Bottom: three quick experiments strip -->
+  <g transform="translate(30, 320)">
+    <rect x="0" y="0" width="235" height="38" rx="3" fill="#F5F5F5"/>
+    <rect x="14" y="12" width="16" height="14" rx="1" fill="#E67E22"/>
+    <rect x="185" y="12" width="16" height="14" rx="1" fill="#E67E22"/>
+    <text x="117" y="22" text-anchor="middle" class="note" font-size="10">同色不同底 · 冷暖偏移</text>
 
-  <!-- Exp 4 -->
-  <rect x="30" y="362" width="230" height="55" rx="3" fill="#F0F0F0"/>
-  <rect x="45" y="375" width="20" height="18" rx="1" fill="#E67E22"/>
-  <rect x="185" y="375" width="20" height="18" rx="1" fill="#E67E22"/>
-  <text x="125" y="380" text-anchor="middle" class="note" font-size="11">同一橙色，灰底上偏暖，蓝底上偏亮</text>
-  <text x="125" y="400" text-anchor="middle" class="note" font-size="10" fill="#999">实验4：同色不同背景的冷暖偏移</text>
+    <rect x="252" y="0" width="235" height="38" rx="3" fill="#F5F5F5"/>
+    <rect x="278" y="12" width="12" height="14" rx="1" fill="#3498DB"/>
+    <rect x="295" y="16" width="12" height="10" rx="1" fill="#3498DB"/>
+    <rect x="312" y="20" width="12" height="6" rx="1" fill="#3498DB"/>
+    <rect x="425" y="12" width="12" height="14" rx="1" fill="#3498DB"/>
+    <text x="370" y="22" text-anchor="middle" class="note" font-size="10">不同明度底上 · 明度感不同</text>
 
-  <!-- Exp 5 -->
-  <rect x="285" y="362" width="230" height="55" rx="3" fill="#F0F0F0"/>
-  <rect x="310" y="375" width="15" height="18" rx="1" fill="#3498DB"/>
-  <rect x="335" y="375" width="15" height="18" rx="1" fill="#3498DB"/>
-  <rect x="440" y="375" width="15" height="18" rx="1" fill="#3498DB"/>
-  <rect x="465" y="375" width="15" height="18" rx="1" fill="#3498DB"/>
-  <text x="400" y="400" text-anchor="middle" class="note" font-size="10" fill="#999">实验5：同一蓝在不同明度底上，明度感不同</text>
-
-  <!-- Exp 6 -->
-  <rect x="540" y="362" width="230" height="55" rx="3" fill="#F0F0F0"/>
-  <rect x="555" y="378" width="12" height="12" rx="1" fill="#E74C3C"/>
-  <rect x="572" y="378" width="12" height="12" rx="1" fill="#E74C3C"/>
-  <rect x="589" y="378" width="12" height="12" rx="1" fill="#F1C40F"/>
-  <rect x="606" y="378" width="12" height="12" rx="1" fill="#F1C40F"/>
-  <rect x="700" y="378" width="12" height="12" rx="1" fill="#E74C3C"/>
-  <rect x="717" y="378" width="12" height="12" rx="1" fill="#E74C3C"/>
-  <text x="655" y="395" text-anchor="middle" class="note" font-size="11">红黄交替→产生视觉混合</text>
-  <text x="655" y="410" text-anchor="middle" class="note" font-size="10" fill="#999">实验6：两色交替产生第三色视错觉</text>
-
-  <text x="400" y="460" text-anchor="middle" class="note" font-size="12">来源：Josef Albers《Interaction of Color》（1963）——不需要买书，做这6个实验就掌握了核心</text>
-  <text x="400" y="478" text-anchor="middle" class="note" font-size="11" fill="#999">所有实验可在任何绘图软件中15分钟完成</text>
+    <rect x="505" y="0" width="235" height="38" rx="3" fill="#F5F5F5"/>
+    <rect x="525" y="14" width="8" height="8" rx="1" fill="#E74C3C"/>
+    <rect x="537" y="14" width="8" height="8" rx="1" fill="#E74C3C"/>
+    <rect x="549" y="14" width="8" height="8" rx="1" fill="#F1C40F"/>
+    <rect x="561" y="14" width="8" height="8" rx="1" fill="#F1C40F"/>
+    <rect x="665" y="14" width="8" height="8" rx="1" fill="#E74C3C"/>
+    <rect x="677" y="14" width="8" height="8" rx="1" fill="#E74C3C"/>
+    <text x="617" y="22" text-anchor="middle" class="note" font-size="10">红黄交替 · 产生视错觉混合</text>
+  </g>
 </svg>

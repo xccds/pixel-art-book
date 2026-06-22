@@ -1,200 +1,170 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <defs>
     <marker id="arrowR" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#E74C3C"/>
     </marker>
-    <marker id="arrowDown" markerWidth="8" markerHeight="6" refX="4" refY="5" orient="auto">
-      <polygon points="0 0, 8 0, 4 6" fill="#666"/>
-    </marker>
   </defs>
 
-  <rect width="800" height="500" fill="#FAFBFC"/>
+  <rect width="800" height="470" fill="#FAFBFC"/>
 
-  <text x="400" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">一张像素资产的完整生命周期</text>
-  <text x="400" y="54" text-anchor="middle" font-size="12" fill="#666">Asset Lifecycle — 从"我要一个史莱姆"到"史莱姆在引擎里能用了"</text>
+  <text x="400" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">一张像素资产的完整生命周期</text>
+  <text x="400" y="48" text-anchor="middle" font-size="11" fill="#888">Asset Lifecycle · 从"我要一个史莱姆"到"史莱姆在引擎里能用了"</text>
 
-  <!-- ===== 6 Stages ===== -->
+  <!-- Six stages: 110px wide, 15px gap, starting at x=25 -->
+  <!-- Stage positions: 25, 150, 275, 400, 525, 650 -->
 
-  <!-- Stage 1: Reference -->
-  <rect x="15" y="75" width="120" height="380" rx="8" fill="#FFF" stroke="#9C27B0" stroke-width="2"/>
-  <rect x="15" y="75" width="120" height="34" rx="8" fill="#9C27B0"/>
-  <rect x="15" y="93" width="120" height="16" fill="#9C27B0"/>
-  <text x="75" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFF">① 参考收集</text>
+  <g id="stages">
+    <!-- Stage 1 -->
+    <g transform="translate(25, 68)">
+      <rect x="0" y="0" width="110" height="325" rx="6" fill="#FFF" stroke="#9C27B0" stroke-width="2"/>
+      <rect x="0" y="0" width="110" height="30" rx="6" fill="#9C27B0"/>
+      <rect x="0" y="15" width="110" height="15" fill="#9C27B0"/>
+      <text x="55" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFF">① 参考收集</text>
+      <text x="55" y="50" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">输入</text>
+      <text x="55" y="63" text-anchor="middle" font-size="8" fill="#555">需求描述 · 风格方向</text>
+      <line x1="10" y1="72" x2="100" y2="72" stroke="#9C27B0" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="86" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">操作</text>
+      <text x="55" y="99" text-anchor="middle" font-size="8" fill="#555">搜索 · 截图</text>
+      <text x="55" y="112" text-anchor="middle" font-size="8" fill="#555">建 Mood Board</text>
+      <line x1="10" y1="121" x2="100" y2="121" stroke="#9C27B0" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="136" text-anchor="middle" font-size="8" font-weight="bold" fill="#E74C3C">输出</text>
+      <text x="55" y="150" text-anchor="middle" font-size="8" fill="#555">参考图板</text>
+      <rect x="10" y="168" width="90" height="20" rx="3" fill="#F3E5F5"/>
+      <text x="55" y="182" text-anchor="middle" font-size="7" fill="#9C27B0">✓ 风格一致？≥3张参考？</text>
+      <text x="55" y="210" text-anchor="middle" font-size="10" fill="#9C27B0" font-weight="bold">~10%</text>
+    </g>
 
-  <text x="75" y="135" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">输入</text>
-  <text x="75" y="150" text-anchor="middle" font-size="9" fill="#444">需求描述</text>
-  <text x="75" y="165" text-anchor="middle" font-size="9" fill="#444">风格方向</text>
+    <!-- Arrow 1→2 -->
+    <line x1="140" y1="230" x2="148" y2="230" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
 
-  <line x1="30" y1="178" x2="120" y2="178" stroke="#9C27B0" stroke-width="0.5" opacity="0.3"/>
+    <!-- Stage 2 -->
+    <g transform="translate(150, 68)">
+      <rect x="0" y="0" width="110" height="325" rx="6" fill="#FFF" stroke="#3498DB" stroke-width="2"/>
+      <rect x="0" y="0" width="110" height="30" rx="6" fill="#3498DB"/>
+      <rect x="0" y="15" width="110" height="15" fill="#3498DB"/>
+      <text x="55" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFF">② 草稿</text>
+      <text x="55" y="50" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">输入</text>
+      <text x="55" y="63" text-anchor="middle" font-size="8" fill="#555">参考图板</text>
+      <line x1="10" y1="72" x2="100" y2="72" stroke="#3498DB" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="86" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">操作</text>
+      <text x="55" y="99" text-anchor="middle" font-size="8" fill="#555">缩略图 · 像素草图</text>
+      <text x="55" y="112" text-anchor="middle" font-size="8" fill="#555">比例探索</text>
+      <line x1="10" y1="121" x2="100" y2="121" stroke="#3498DB" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="136" text-anchor="middle" font-size="8" font-weight="bold" fill="#E74C3C">输出</text>
+      <text x="55" y="150" text-anchor="middle" font-size="8" fill="#555">粗草稿 1-3版</text>
+      <rect x="10" y="168" width="90" height="20" rx="3" fill="#E8F4FD"/>
+      <text x="55" y="182" text-anchor="middle" font-size="7" fill="#3498DB">✓ 轮廓可辨？比例不崩？</text>
+      <text x="55" y="210" text-anchor="middle" font-size="10" fill="#3498DB" font-weight="bold">~15%</text>
+    </g>
 
-  <text x="75" y="195" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">操作</text>
-  <text x="75" y="212" text-anchor="middle" font-size="9" fill="#444">Pinterest搜索</text>
-  <text x="75" y="227" text-anchor="middle" font-size="9" fill="#444">截图同类游戏</text>
-  <text x="75" y="242" text-anchor="middle" font-size="9" fill="#444">建Mood Board</text>
+    <!-- Arrow 2→3 -->
+    <line x1="265" y1="230" x2="273" y2="230" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
 
-  <line x1="30" y1="255" x2="120" y2="255" stroke="#9C27B0" stroke-width="0.5" opacity="0.3"/>
+    <!-- Stage 3 -->
+    <g transform="translate(275, 68)">
+      <rect x="0" y="0" width="110" height="325" rx="6" fill="#FFF" stroke="#F39C12" stroke-width="2"/>
+      <rect x="0" y="0" width="110" height="30" rx="6" fill="#F39C12"/>
+      <rect x="0" y="15" width="110" height="15" fill="#F39C12"/>
+      <text x="55" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFF">③ 粗胚</text>
+      <text x="55" y="50" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">输入</text>
+      <text x="55" y="63" text-anchor="middle" font-size="8" fill="#555">选定的草稿</text>
+      <line x1="10" y1="72" x2="100" y2="72" stroke="#F39C12" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="86" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">操作</text>
+      <text x="55" y="99" text-anchor="middle" font-size="8" fill="#555">定大型 · 铺底色</text>
+      <text x="55" y="112" text-anchor="middle" font-size="8" fill="#555">粗略光影</text>
+      <line x1="10" y1="121" x2="100" y2="121" stroke="#F39C12" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="136" text-anchor="middle" font-size="8" font-weight="bold" fill="#E74C3C">输出</text>
+      <text x="55" y="150" text-anchor="middle" font-size="8" fill="#555">粗胚资产</text>
+      <rect x="10" y="168" width="90" height="20" rx="3" fill="#FFF8E1"/>
+      <text x="55" y="182" text-anchor="middle" font-size="7" fill="#F39C12">✓ 比例定型？不用大改？</text>
+      <text x="55" y="210" text-anchor="middle" font-size="10" fill="#F39C12" font-weight="bold">~20%</text>
+    </g>
 
-  <text x="75" y="275" text-anchor="middle" font-size="9" font-weight="bold" fill="#E74C3C">输出</text>
-  <text x="75" y="292" text-anchor="middle" font-size="9" fill="#444">参考图板</text>
+    <!-- Arrow 3→4 -->
+    <line x1="390" y1="230" x2="398" y2="230" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
 
-  <rect x="25" y="308" width="100" height="22" rx="4" fill="#F3E5F5"/>
-  <text x="75" y="323" text-anchor="middle" font-size="8" fill="#9C27B0">检查点 ✓</text>
-  <text x="75" y="342" text-anchor="middle" font-size="8" fill="#666">风格一致？</text>
-  <text x="75" y="356" text-anchor="middle" font-size="8" fill="#666">至少3张参考？</text>
-  <text x="75" y="370" text-anchor="middle" font-size="8" fill="#666">包含细节特写？</text>
+    <!-- Stage 4 -->
+    <g transform="translate(400, 68)">
+      <rect x="0" y="0" width="110" height="325" rx="6" fill="#FFF" stroke="#27AE60" stroke-width="2"/>
+      <rect x="0" y="0" width="110" height="30" rx="6" fill="#27AE60"/>
+      <rect x="0" y="15" width="110" height="15" fill="#27AE60"/>
+      <text x="55" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFF">④ 精修</text>
+      <text x="55" y="50" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">输入</text>
+      <text x="55" y="63" text-anchor="middle" font-size="8" fill="#555">粗胚资产</text>
+      <line x1="10" y1="72" x2="100" y2="72" stroke="#27AE60" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="86" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">操作</text>
+      <text x="55" y="99" text-anchor="middle" font-size="8" fill="#555">细化线条 · 深入渲染</text>
+      <text x="55" y="112" text-anchor="middle" font-size="8" fill="#555">纹理/做旧</text>
+      <line x1="10" y1="121" x2="100" y2="121" stroke="#27AE60" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="136" text-anchor="middle" font-size="8" font-weight="bold" fill="#E74C3C">输出</text>
+      <text x="55" y="150" text-anchor="middle" font-size="8" fill="#555">最终资产</text>
+      <rect x="10" y="168" width="90" height="20" rx="3" fill="#E8F5E9"/>
+      <text x="55" y="182" text-anchor="middle" font-size="7" fill="#27AE60">✓ 与参考一致？尺寸规范？</text>
+      <text x="55" y="210" text-anchor="middle" font-size="10" fill="#27AE60" font-weight="bold">~35%</text>
+    </g>
 
-  <!-- Arrow 1→2 -->
-  <line x1="135" y1="265" x2="155" y2="265" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
+    <!-- Arrow 4→5 -->
+    <line x1="515" y1="230" x2="523" y2="230" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
 
-  <!-- Stage 2: Draft -->
-  <rect x="160" y="75" width="120" height="380" rx="8" fill="#FFF" stroke="#4A90D9" stroke-width="2"/>
-  <rect x="160" y="75" width="120" height="34" rx="8" fill="#4A90D9"/>
-  <rect x="160" y="93" width="120" height="16" fill="#4A90D9"/>
-  <text x="220" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFF">② 草稿</text>
+    <!-- Stage 5 -->
+    <g transform="translate(525, 68)">
+      <rect x="0" y="0" width="110" height="325" rx="6" fill="#FFF" stroke="#E67E22" stroke-width="2"/>
+      <rect x="0" y="0" width="110" height="30" rx="6" fill="#E67E22"/>
+      <rect x="0" y="15" width="110" height="15" fill="#E67E22"/>
+      <text x="55" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFF">⑤ 导出</text>
+      <text x="55" y="50" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">输入</text>
+      <text x="55" y="63" text-anchor="middle" font-size="8" fill="#555">最终资产</text>
+      <line x1="10" y1="72" x2="100" y2="72" stroke="#E67E22" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="86" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">操作</text>
+      <text x="55" y="99" text-anchor="middle" font-size="8" fill="#555">裁剪 · 格式转换</text>
+      <text x="55" y="112" text-anchor="middle" font-size="8" fill="#555">规范命名</text>
+      <line x1="10" y1="121" x2="100" y2="121" stroke="#E67E22" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="136" text-anchor="middle" font-size="8" font-weight="bold" fill="#E74C3C">输出</text>
+      <text x="55" y="150" text-anchor="middle" font-size="8" fill="#E74C3C">.png</text>
+      <rect x="10" y="168" width="90" height="20" rx="3" fill="#FFF3E0"/>
+      <text x="55" y="182" text-anchor="middle" font-size="7" fill="#E67E22">✓ 尺寸/透明/命名？</text>
+      <text x="55" y="210" text-anchor="middle" font-size="10" fill="#E67E22" font-weight="bold">~10%</text>
+    </g>
 
-  <text x="220" y="135" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">输入</text>
-  <text x="220" y="150" text-anchor="middle" font-size="9" fill="#444">参考图板</text>
+    <!-- Arrow 5→6 -->
+    <line x1="640" y1="230" x2="648" y2="230" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
 
-  <line x1="175" y1="178" x2="265" y2="178" stroke="#4A90D9" stroke-width="0.5" opacity="0.3"/>
+    <!-- Stage 6 -->
+    <g transform="translate(650, 68)">
+      <rect x="0" y="0" width="110" height="325" rx="6" fill="#FFF" stroke="#E74C3C" stroke-width="2"/>
+      <rect x="0" y="0" width="110" height="30" rx="6" fill="#E74C3C"/>
+      <rect x="0" y="15" width="110" height="15" fill="#E74C3C"/>
+      <text x="55" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFF">⑥ 引擎验证</text>
+      <text x="55" y="50" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">输入</text>
+      <text x="55" y="63" text-anchor="middle" font-size="8" fill="#555">导出的 .png</text>
+      <line x1="10" y1="72" x2="100" y2="72" stroke="#E74C3C" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="86" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">操作</text>
+      <text x="55" y="99" text-anchor="middle" font-size="8" fill="#555">导入引擎</text>
+      <text x="55" y="112" text-anchor="middle" font-size="8" fill="#555">调参数 · 看效果</text>
+      <line x1="10" y1="121" x2="100" y2="121" stroke="#E74C3C" stroke-width="0.5" opacity="0.3"/>
+      <text x="55" y="136" text-anchor="middle" font-size="8" font-weight="bold" fill="#E74C3C">输出</text>
+      <text x="55" y="150" text-anchor="middle" font-size="8" fill="#E74C3C">完成 / 回到④</text>
+      <rect x="10" y="168" width="90" height="20" rx="3" fill="#FDEDEC"/>
+      <text x="55" y="182" text-anchor="middle" font-size="7" fill="#E74C3C">✓ 效果通过？循环迭代</text>
+      <text x="55" y="210" text-anchor="middle" font-size="10" fill="#E74C3C" font-weight="bold">~10%</text>
+    </g>
+  </g>
 
-  <text x="220" y="195" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">操作</text>
-  <text x="220" y="212" text-anchor="middle" font-size="9" fill="#444">缩略图草稿</text>
-  <text x="220" y="227" text-anchor="middle" font-size="9" fill="#444">像素草图</text>
-  <text x="220" y="242" text-anchor="middle" font-size="9" fill="#444">比例探索</text>
-
-  <line x1="175" y1="255" x2="265" y2="255" stroke="#4A90D9" stroke-width="0.5" opacity="0.3"/>
-
-  <text x="220" y="275" text-anchor="middle" font-size="9" font-weight="bold" fill="#E74C3C">输出</text>
-  <text x="220" y="292" text-anchor="middle" font-size="9" fill="#444">粗草稿 1-3版</text>
-
-  <rect x="170" y="308" width="100" height="22" rx="4" fill="#E8F4FD"/>
-  <text x="220" y="323" text-anchor="middle" font-size="8" fill="#4A90D9">检查点 ✓</text>
-  <text x="220" y="342" text-anchor="middle" font-size="8" fill="#666">轮廓可辨识？</text>
-  <text x="220" y="356" text-anchor="middle" font-size="8" fill="#666">比例不崩？</text>
-  <text x="220" y="370" text-anchor="middle" font-size="8" fill="#666">选了最佳角度？</text>
-
-  <!-- Arrow 2→3 -->
-  <line x1="280" y1="265" x2="300" y2="265" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
-
-  <!-- Stage 3: Blockout / Rough -->
-  <rect x="305" y="75" width="120" height="380" rx="8" fill="#FFF" stroke="#F0A030" stroke-width="2"/>
-  <rect x="305" y="75" width="120" height="34" rx="8" fill="#F0A030"/>
-  <rect x="305" y="93" width="120" height="16" fill="#F0A030"/>
-  <text x="365" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFF">③ 粗胚</text>
-
-  <text x="365" y="135" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">输入</text>
-  <text x="365" y="150" text-anchor="middle" font-size="9" fill="#444">选定的草稿</text>
-
-  <line x1="320" y1="178" x2="410" y2="178" stroke="#F0A030" stroke-width="0.5" opacity="0.3"/>
-
-  <text x="365" y="195" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">操作</text>
-  <text x="365" y="212" text-anchor="middle" font-size="9" fill="#444">定大型/体块</text>
-  <text x="365" y="227" text-anchor="middle" font-size="9" fill="#444">铺底色</text>
-  <text x="365" y="242" text-anchor="middle" font-size="9" fill="#444">粗略光影</text>
-
-  <line x1="320" y1="255" x2="410" y2="255" stroke="#F0A030" stroke-width="0.5" opacity="0.3"/>
-
-  <text x="365" y="275" text-anchor="middle" font-size="9" font-weight="bold" fill="#E74C3C">输出</text>
-  <text x="365" y="292" text-anchor="middle" font-size="9" fill="#444">粗胚资产</text>
-
-  <rect x="315" y="308" width="100" height="22" rx="4" fill="#FFF8E1"/>
-  <text x="365" y="323" text-anchor="middle" font-size="8" fill="#F0A030">检查点 ✓</text>
-  <text x="365" y="342" text-anchor="middle" font-size="8" fill="#666">比例定型？</text>
-  <text x="365" y="356" text-anchor="middle" font-size="8" fill="#666">色块读得懂？</text>
-  <text x="365" y="370" text-anchor="middle" font-size="8" fill="#666">不用再大改？</text>
-
-  <!-- Arrow 3→4 -->
-  <line x1="425" y1="265" x2="445" y2="265" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
-
-  <!-- Stage 4: Polish -->
-  <rect x="450" y="75" width="120" height="380" rx="8" fill="#FFF" stroke="#43A047" stroke-width="2"/>
-  <rect x="450" y="75" width="120" height="34" rx="8" fill="#43A047"/>
-  <rect x="450" y="93" width="120" height="16" fill="#43A047"/>
-  <text x="510" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFF">④ 精修</text>
-
-  <text x="510" y="135" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">输入</text>
-  <text x="510" y="150" text-anchor="middle" font-size="9" fill="#444">粗胚资产</text>
-
-  <line x1="465" y1="178" x2="555" y2="178" stroke="#43A047" stroke-width="0.5" opacity="0.3"/>
-
-  <text x="510" y="195" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">操作</text>
-  <text x="510" y="212" text-anchor="middle" font-size="9" fill="#444">细化线条</text>
-  <text x="510" y="227" text-anchor="middle" font-size="9" fill="#444">深入渲染</text>
-  <text x="510" y="242" text-anchor="middle" font-size="9" fill="#444">做旧/纹理</text>
-
-  <line x1="465" y1="255" x2="555" y2="255" stroke="#43A047" stroke-width="0.5" opacity="0.3"/>
-
-  <text x="510" y="275" text-anchor="middle" font-size="9" font-weight="bold" fill="#E74C3C">输出</text>
-  <text x="510" y="292" text-anchor="middle" font-size="9" fill="#444">最终资产</text>
-
-  <rect x="460" y="308" width="100" height="22" rx="4" fill="#E8F5E9"/>
-  <text x="510" y="323" text-anchor="middle" font-size="8" fill="#43A047">检查点 ✓</text>
-  <text x="510" y="342" text-anchor="middle" font-size="8" fill="#666">与参考一致？</text>
-  <text x="510" y="356" text-anchor="middle" font-size="8" fill="#666">无杂线/漏洞？</text>
-  <text x="510" y="370" text-anchor="middle" font-size="8" fill="#666">尺寸规范？</text>
-
-  <!-- Arrow 4→5 -->
-  <line x1="570" y1="265" x2="590" y2="265" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
-
-  <!-- Stage 5: Export -->
-  <rect x="595" y="75" width="120" height="380" rx="8" fill="#FFF" stroke="#EF6C00" stroke-width="2"/>
-  <rect x="595" y="75" width="120" height="34" rx="8" fill="#EF6C00"/>
-  <rect x="595" y="93" width="120" height="16" fill="#EF6C00"/>
-  <text x="655" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFF">⑤ 导出</text>
-
-  <text x="655" y="135" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">输入</text>
-  <text x="655" y="150" text-anchor="middle" font-size="9" fill="#444">最终资产</text>
-
-  <line x1="610" y1="178" x2="700" y2="178" stroke="#EF6C00" stroke-width="0.5" opacity="0.3"/>
-
-  <text x="655" y="195" text-anchor="middle" font-size="9" font-weight="bold" fill="#666">操作</text>
-  <text x="655" y="212" text-anchor="middle" font-size="9" fill="#444">裁剪/调整</text>
-  <text x="655" y="227" text-anchor="middle" font-size="9" fill="#444">格式转换</text>
-  <text x="655" y="242" text-anchor="middle" font-size="9" fill="#444">规范命名</text>
-
-  <line x1="610" y1="255" x2="700" y2="255" stroke="#EF6C00" stroke-width="0.5" opacity="0.3"/>
-
-  <text x="655" y="275" text-anchor="middle" font-size="9" font-weight="bold" fill="#E74C3C">输出</text>
-  <text x="655" y="292" text-anchor="middle" font-size="9" fill="#E74C3C">.png</text>
-
-  <rect x="605" y="308" width="100" height="22" rx="4" fill="#FFF3E0"/>
-  <text x="655" y="323" text-anchor="middle" font-size="8" fill="#EF6C00">检查点 ✓</text>
-  <text x="655" y="342" text-anchor="middle" font-size="8" fill="#666">尺寸符合规范？</text>
-  <text x="655" y="356" text-anchor="middle" font-size="8" fill="#666">透明通道？</text>
-  <text x="655" y="370" text-anchor="middle" font-size="8" fill="#666">命名正确？</text>
-
-  <!-- Arrow 5→6 -->
-  <line x1="715" y1="265" x2="735" y2="265" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowR)"/>
-
-  <!-- Stage 6: Engine Verify -->
-  <rect x="740" y="75" width="50" height="380" rx="8" fill="#FFF" stroke="#E74C3C" stroke-width="2"/>
-  <rect x="740" y="75" width="50" height="34" rx="8" fill="#E74C3C"/>
-  <rect x="740" y="93" width="50" height="16" fill="#E74C3C"/>
-  <text x="765" y="97" text-anchor="middle" font-size="11" font-weight="bold" fill="#FFF">⑥引擎验证</text>
-
-  <text x="765" y="150" text-anchor="middle" font-size="9" fill="#E74C3C">导入</text>
-  <text x="765" y="165" text-anchor="middle" font-size="9" fill="#E74C3C">引擎</text>
-  <text x="765" y="185" text-anchor="middle" font-size="9" fill="#E74C3C">看效果</text>
-  <text x="765" y="200" text-anchor="middle" font-size="9" fill="#E74C3C">调参数</text>
-  <text x="765" y="240" text-anchor="middle" font-size="9" fill="#E74C3C">通过？</text>
-  <text x="765" y="260" text-anchor="middle" font-size="9" fill="#666">→回到④</text>
-  <text x="765" y="275" text-anchor="middle" font-size="9" fill="#666">否则</text>
-  <text x="765" y="295" text-anchor="middle" font-size="9" fill="#43A047">完成 ✓</text>
-
-  <!-- Time estimate bar at bottom -->
-  <text x="400" y="465" text-anchor="middle" font-size="10" fill="#666">典型时间占比</text>
-  <rect x="25" y="473" width="750" height="16" rx="4" fill="#EEE"/>
-  <rect x="25" y="473" width="75" height="16" rx="4" fill="#9C27B0"/>
-  <rect x="100" y="473" width="112" height="16" fill="#4A90D9"/>
-  <rect x="212" y="473" width="150" height="16" fill="#F0A030"/>
-  <rect x="362" y="473" width="262" height="16" fill="#43A047"/>
-  <rect x="624" y="473" width="75" height="16" fill="#EF6C00"/>
-  <rect x="699" y="473" width="76" height="16" fill="#E74C3C"/>
-
-  <text x="62" y="485" text-anchor="middle" font-size="8" fill="#FFF">10%</text>
-  <text x="156" y="485" text-anchor="middle" font-size="8" fill="#FFF">15%</text>
-  <text x="287" y="485" text-anchor="middle" font-size="8" fill="#FFF">20%</text>
-  <text x="493" y="485" text-anchor="middle" font-size="8" fill="#FFF">35%</text>
-  <text x="661" y="485" text-anchor="middle" font-size="8" fill="#FFF">10%</text>
-  <text x="737" y="485" text-anchor="middle" font-size="8" fill="#FFF">10%</text>
+  <!-- Time bar -->
+  <text x="400" y="410" text-anchor="middle" font-size="10" fill="#888">典型时间占比</text>
+  <g transform="translate(25, 416)">
+    <rect x="0" y="0" width="750" height="16" rx="3" fill="#EEE"/>
+    <rect x="0" y="0" width="75" height="16" rx="3" fill="#9C27B0"/>
+    <rect x="75" y="0" width="112" height="16" fill="#3498DB"/>
+    <rect x="187" y="0" width="150" height="16" fill="#F39C12"/>
+    <rect x="337" y="0" width="262" height="16" fill="#27AE60"/>
+    <rect x="599" y="0" width="75" height="16" fill="#E67E22"/>
+    <rect x="674" y="0" width="76" height="16" fill="#E74C3C"/>
+    <text x="37" y="12" text-anchor="middle" font-size="7" fill="#FFF" font-weight="bold">10%</text>
+    <text x="131" y="12" text-anchor="middle" font-size="7" fill="#FFF" font-weight="bold">15%</text>
+    <text x="262" y="12" text-anchor="middle" font-size="7" fill="#FFF" font-weight="bold">20%</text>
+    <text x="468" y="12" text-anchor="middle" font-size="7" fill="#FFF" font-weight="bold">35%</text>
+    <text x="636" y="12" text-anchor="middle" font-size="7" fill="#FFF" font-weight="bold">10%</text>
+    <text x="712" y="12" text-anchor="middle" font-size="7" fill="#FFF" font-weight="bold">10%</text>
+  </g>
 </svg>

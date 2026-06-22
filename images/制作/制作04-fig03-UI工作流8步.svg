@@ -1,143 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
-    .title { font-size: 16px; font-weight: bold; fill: #333; }
-    .subtitle { font-size: 11px; fill: #666; }
-    .step-num { font-size: 14px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .step-num { font-size: 13px; font-weight: bold; fill: #fff; text-anchor: middle; }
     .step-name { font-size: 11px; font-weight: bold; fill: #333; }
-    .step-en { font-size: 8px; fill: #999; }
-    .step-desc { font-size: 8.5px; fill: #555; }
-    .step-detail { font-size: 8px; fill: #888; }
-    .arrow-label { font-size: 8px; fill: #E74C3C; font-weight: bold; }
-    .source { font-size: 7.5px; fill: #aaa; }
+    .step-desc { font-size: 9px; fill: #555; }
+    .arrow { stroke: #ccc; stroke-width: 1.5; fill: none; }
   </style>
 
-  <text x="400" y="28" class="title" text-anchor="middle">图 制作04.3  8 步 UI 工作顺序——从布局到真人测试，不可跳级</text>
-  <text x="400" y="46" class="subtitle" text-anchor="middle">来源：Respawn Entertainment UI 设计指南——独立开发者可以跳过像素精度，但不可以跳过"验证"</text>
+  <text x="400" y="22" class="title" text-anchor="middle">8 步 UI 工作顺序——从布局到真人测试</text>
 
-  <text x="42" y="53" class="source">来源：Respawn Guide "8-Step UI Workflow"</text>
-
+  <!-- ===== LEFT column: Steps 1-4 ===== -->
   <!-- Step 1 -->
-  <g transform="translate(30, 62)">
-    <rect x="0" y="0" width="340" height="50" fill="#E74C3C" rx="4" opacity="0.08"/>
-    <circle cx="25" cy="25" r="16" fill="#E74C3C"/>
-    <text x="25" y="30" class="step-num" font-size="14">1</text>
-    <text x="50" y="18" class="step-name">布局层次（Layout Hierarchy）</text>
-    <text x="50" y="32" class="step-desc">决定什么在最前/最中/最后。核心信息（血/魔/弹药）→ 位置固定在</text>
-    <text x="50" y="44" class="step-detail">屏幕四角；次要信息（buff/debuff）→ 中央偏下；临时信息（伤害数字）→ 顶部弹出</text>
+  <g transform="translate(25, 42)">
+    <rect x="0" y="0" width="365" height="52" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="52" rx="4" fill="#E74C3C"/>
+    <rect x="4" y="0" width="4" height="52" fill="#E74C3C"/>
+    <text x="22" y="18" class="step-name">布局层次 Layout</text>
+    <text x="22" y="34" class="step-desc">决定信息层级——核心信息（血/魔）固定四角，次要信息中央偏下，临时信息顶部弹出</text>
   </g>
 
-  <g transform="translate(195, 110)">
-    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
-    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
-    <text x="10" y="10" class="arrow-label">↓ 验证布局在不同分辨率下是否合理</text>
-  </g>
+  <line x1="207" y1="94" x2="207" y2="102" class="arrow"/>
+  <polygon points="207,108 202,100 212,100" fill="#ccc"/>
 
   <!-- Step 2 -->
-  <g transform="translate(30, 122)">
-    <rect x="0" y="0" width="340" height="50" fill="#E67E22" rx="4" opacity="0.08"/>
-    <circle cx="25" cy="25" r="16" fill="#E67E22"/>
-    <text x="25" y="30" class="step-num">2</text>
-    <text x="50" y="18" class="step-name">安全区（Safe Zone）</text>
-    <text x="50" y="32" class="step-desc">不同屏幕有不同的裁剪/过扫描区。UI 元素必须在安全区内——</text>
-    <text x="50" y="44" class="step-detail">16:9 安全区 ≈ 90% 屏幕面积；手机安全区 ≈ 85%（避开刘海/圆角/手势条）</text>
+  <g transform="translate(25, 112)">
+    <rect x="0" y="0" width="365" height="52" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="52" rx="4" fill="#E67E22"/>
+    <rect x="4" y="0" width="4" height="52" fill="#E67E22"/>
+    <text x="22" y="18" class="step-name">安全区 Safe Zone</text>
+    <text x="22" y="34" class="step-desc">16:9 安全区≈90%屏幕面积 / 手机≈85%（避开刘海圆角手势条）</text>
   </g>
 
-  <g transform="translate(195, 170)">
-    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
-    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
-    <text x="10" y="10" class="arrow-label">↓ 比例完成 → 切入引擎实现</text>
-  </g>
+  <line x1="207" y1="164" x2="207" y2="172" class="arrow"/>
+  <polygon points="207,178 202,170 212,170" fill="#ccc"/>
 
   <!-- Step 3 -->
-  <g transform="translate(30, 182)">
-    <rect x="0" y="0" width="340" height="50" fill="#2ECC71" rx="4" opacity="0.08"/>
-    <circle cx="25" cy="25" r="16" fill="#2ECC71"/>
-    <text x="25" y="30" class="step-num">3</text>
-    <text x="50" y="18" class="step-name">先建 HUD（HUD First）</text>
-    <text x="50" y="32" class="step-desc">在引擎中实现 HUD 原型——不是"先做完整界面再做 HUD"。用</text>
-    <text x="50" y="44" class="step-detail">引擎的 UI Canvas 系统存放矩形色块占位——先让数据"流"出来</text>
+  <g transform="translate(25, 182)">
+    <rect x="0" y="0" width="365" height="52" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="52" rx="4" fill="#27AE60"/>
+    <rect x="4" y="0" width="4" height="52" fill="#27AE60"/>
+    <text x="22" y="18" class="step-name">先建 HUD First</text>
+    <text x="22" y="34" class="step-desc">引擎中先放矩形色块占位让数据流出来，再替换为美术——先功能后视觉</text>
   </g>
 
-  <g transform="translate(195, 230)">
-    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
-    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
-    <text x="10" y="10" class="arrow-label">↓ HUD 可用 → 进入测试循环</text>
-  </g>
+  <line x1="207" y1="234" x2="207" y2="242" class="arrow"/>
+  <polygon points="207,248 202,240 212,240" fill="#ccc"/>
 
   <!-- Step 4 -->
-  <g transform="translate(30, 242)">
-    <rect x="0" y="0" width="340" height="50" fill="#3498DB" rx="4" opacity="0.08"/>
-    <circle cx="25" cy="25" r="16" fill="#3498DB"/>
-    <text x="25" y="30" class="step-num">4</text>
-    <text x="50" y="18" class="step-name">测试可读性（Readability Test）</text>
-    <text x="50" y="32" class="step-desc">不同距离/光照/运动状态下 HUD 可读吗？关键测试：</text>
-    <text x="50" y="44" class="step-detail">①退后2米看屏幕 ②在强烈背光下看 ③在角色高速移动中读HUD数字</text>
+  <g transform="translate(25, 252)">
+    <rect x="0" y="0" width="365" height="52" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="52" rx="4" fill="#3498DB"/>
+    <rect x="4" y="0" width="4" height="52" fill="#3498DB"/>
+    <text x="22" y="18" class="step-name">测试可读性 Readability Test</text>
+    <text x="22" y="34" class="step-desc">退后2米看屏幕 / 强烈背光下看 / 高速移动中读HUD数字——三项全过</text>
   </g>
 
-  <g transform="translate(195, 290)">
-    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
-    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
-    <text x="10" y="10" class="arrow-label">↓ 可读性通过 → 考虑不同视觉能力的人</text>
-  </g>
-
+  <!-- ===== RIGHT column: Steps 5-8 ===== -->
   <!-- Step 5 -->
-  <g transform="translate(30, 302)">
-    <rect x="0" y="0" width="340" height="50" fill="#9B59B6" rx="4" opacity="0.08"/>
-    <circle cx="25" cy="25" r="16" fill="#9B59B6"/>
-    <text x="25" y="30" class="step-num">5</text>
-    <text x="50" y="18" class="step-name">色盲模拟（Color Blindness Simulation）</text>
-    <text x="50" y="32" class="step-desc">至少模拟红色盲（Protanopia）和绿色盲（Deuteranopia）。</text>
-    <text x="50" y="44" class="step-detail">关掉颜色只看明度——如果信息在灰度中仍然可辨识→通过</text>
+  <g transform="translate(410, 42)">
+    <rect x="0" y="0" width="365" height="52" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="52" rx="4" fill="#8E44AD"/>
+    <rect x="4" y="0" width="4" height="52" fill="#8E44AD"/>
+    <text x="22" y="18" class="step-name">色盲模拟 Color Blindness</text>
+    <text x="22" y="34" class="step-desc">模拟红/绿色盲——关颜色只看明度，灰度中信息仍可辨识→通过</text>
   </g>
 
-  <g transform="translate(195, 350)">
-    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
-    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
-    <text x="10" y="10" class="arrow-label">↓ 色盲通过 → UI 已经是"真实的"了 → 让它"活的"</text>
-  </g>
+  <line x1="592" y1="94" x2="592" y2="102" class="arrow"/>
+  <polygon points="592,108 587,100 597,100" fill="#ccc"/>
 
   <!-- Step 6 -->
-  <g transform="translate(30, 362)">
-    <rect x="0" y="0" width="340" height="50" fill="#F1C40F" rx="4" opacity="0.08"/>
-    <circle cx="25" cy="25" r="16" fill="#F1C40F"/>
-    <text x="25" y="30" class="step-num" fill="#333">6</text>
-    <text x="50" y="18" class="step-name">添加 Juice 反馈（Juice &amp; Feedback）</text>
-    <text x="50" y="32" class="step-desc">血量低于 25% 的闪红/抖动、升级弹窗的弹出动画、</text>
-    <text x="50" y="44" class="step-detail">获得物品的飞入效果。这些是"让HUD有生命"的微交互——但必须在前5步全过之后再加</text>
+  <g transform="translate(410, 112)">
+    <rect x="0" y="0" width="365" height="52" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="52" rx="4" fill="#F1C40F"/>
+    <rect x="4" y="0" width="4" height="52" fill="#F1C40F"/>
+    <text x="22" y="18" class="step-name">添加 Juice 反馈</text>
+    <text x="22" y="34" class="step-desc">血量低于25%闪红抖动 / 升级弹窗动画 / 物品飞入——前5步全过之后再加</text>
   </g>
 
-  <g transform="translate(195, 410)">
-    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
-    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
-    <text x="10" y="10" class="arrow-label">↓ Juice 完成 → 接入无障碍系统</text>
-  </g>
+  <line x1="592" y1="164" x2="592" y2="172" class="arrow"/>
+  <polygon points="592,178 587,170 597,170" fill="#ccc"/>
 
   <!-- Step 7 -->
-  <g transform="translate(30, 422)">
-    <rect x="0" y="0" width="340" height="50" fill="#1ABC9C" rx="4" opacity="0.08"/>
-    <circle cx="25" cy="25" r="16" fill="#1ABC9C"/>
-    <text x="25" y="30" class="step-num">7</text>
-    <text x="50" y="18" class="step-name">集成无障碍（Accessibility Integration）</text>
-    <text x="50" y="32" class="step-desc">HUD缩放选项、对比度增强模式、色觉辅助模式、</text>
-    <text x="50" y="44" class="step-detail">字体大小调节。这些不是"额外功能"——是让更多人玩到你的游戏的"基础设施"</text>
+  <g transform="translate(410, 182)">
+    <rect x="0" y="0" width="365" height="52" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="52" rx="4" fill="#1ABC9C"/>
+    <rect x="4" y="0" width="4" height="52" fill="#1ABC9C"/>
+    <text x="22" y="18" class="step-name">集成无障碍 Accessibility</text>
+    <text x="22" y="34" class="step-desc">HUD缩放 / 对比度增强 / 色觉辅助 / 字体大小——让更多人玩到的基础设施</text>
   </g>
 
-  <g transform="translate(195, 470)">
-    <line x1="0" y1="0" x2="0" y2="8" stroke="#E74C3C" stroke-width="2"/>
-    <polygon points="0,12 -4,4 4,4" fill="#E74C3C"/>
-    <text x="10" y="10" class="arrow-label">↓ 无障碍集成 → 最终验证：真人</text>
-  </g>
+  <line x1="592" y1="234" x2="592" y2="242" class="arrow"/>
+  <polygon points="592,248 587,240 597,240" fill="#ccc"/>
 
   <!-- Step 8 -->
-  <g transform="translate(30, 482)">
-    <rect x="0" y="0" width="340" height="50" fill="#E74C3C" rx="4" opacity="0.12"/>
-    <circle cx="25" cy="25" r="16" fill="#E74C3C"/>
-    <text x="25" y="30" class="step-num">8</text>
-    <text x="50" y="18" class="step-name">观察真人使用（Live User Observation）</text>
-    <text x="50" y="32" class="step-desc">找人玩——不说话——只看。看他们：在哪里犹豫了？</text>
-    <text x="50" y="44" class="step-detail">在哪里点错了？在哪里反复看 UI？在哪里完全忽略 UI 提示？</text>
+  <g transform="translate(410, 252)">
+    <rect x="0" y="0" width="365" height="52" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+    <rect x="0" y="0" width="8" height="52" rx="4" fill="#E74C3C"/>
+    <rect x="4" y="0" width="4" height="52" fill="#E74C3C"/>
+    <text x="22" y="18" class="step-name">观察真人使用 Live Observation</text>
+    <text x="22" y="34" class="step-desc">找人玩不说话只看——在哪犹豫？在哪点错？在哪反复看UI？在哪忽略提示？</text>
   </g>
 
-  <!-- Right side: notes column -->
+  <!-- Bottom principle -->
+  <rect x="25" y="325" width="750" height="24" rx="4" fill="#E8F4FD"/>
+  <text x="400" y="341" style="font-size:9px;fill:#2E6BA6;text-anchor:middle;font-weight:bold;">核心：前 5 步不通过绝不跳到下一步——UI 是功能不是美术，跳步的代价是返工</text>
 </svg>

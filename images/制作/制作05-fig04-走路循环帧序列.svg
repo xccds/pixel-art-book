@@ -1,132 +1,134 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310" width="800" height="310">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
-    .title { font-size: 16px; font-weight: bold; fill: #333; }
-    .subtitle { font-size: 11px; fill: #666; }
-    .frame-label { font-size: 10px; font-weight: bold; fill: #333; text-anchor: middle; }
-    .pose-name { font-size: 8px; fill: #555; text-anchor: middle; }
-    .duration { font-size: 8.5px; font-weight: bold; text-anchor: middle; }
-    .note { font-size: 7.5px; fill: #999; }
-    .axis { stroke: #bbb; stroke-width: 0.8; fill: none; }
-    .bob { stroke: #E67E22; stroke-width: 1.6; fill: none; }
-    .analogy-title { font-size: 9px; font-weight: bold; fill: #E74C3C; }
-    .analogy-text { font-size: 8px; fill: #555; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 10px; fill: #888; }
+    .frame-label { font-size: 11px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .pose-name { font-size: 9px; fill: #555; text-anchor: middle; }
+    .duration { font-size: 10px; font-weight: bold; text-anchor: middle; }
+    .note { font-size: 8px; fill: #888; }
+    .axis { stroke: #bbb; stroke-width: 0.8; }
   </style>
 
-  <text x="400" y="24" class="title" text-anchor="middle">图 制作05.4  走路循环 6 帧——接触/低位/过步/高位四关键位 + 身体高度起伏</text>
-  <text x="400" y="42" class="subtitle" text-anchor="middle">帧时序不等长——接触帧 150ms 是重音，过渡帧 80ms 是连读（不等长 interval 制造节奏）</text>
+  <text x="400" y="22" class="title" text-anchor="middle">走路循环 6 帧——接触/低位/过步/高位四关键位</text>
+  <text x="400" y="38" class="subtitle" text-anchor="middle">帧时序不等长——接触帧 150ms 是重音，过渡帧 80-90ms 是连读</text>
 
-  <!-- ground line -->
-  <line x1="40" y1="180" x2="750" y2="180" class="axis"/>
-  <text x="752" y="183" class="note">地面</text>
+  <line x1="40" y1="190" x2="750" y2="190" class="axis"/>
+  <text x="752" y="193" class="note">地面</text>
 
-  <!-- ============ 6 frame cells ============ -->
-  <!-- F1 Contact cx=95 -->
-  <g>
-    <rect x="40" y="68" width="110" height="132" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.8" rx="3"/>
-    <text x="95" y="82" class="frame-label">F1</text>
-    <text x="95" y="94" class="pose-name">接触 Contact</text>
-    <rect x="91" y="156" width="8" height="8" fill="#D4A574"/>
-    <rect x="91" y="164" width="8" height="12" fill="#2E86C1"/>
-    <rect x="89" y="166" width="4" height="8" fill="#D4A574"/>
-    <rect x="97" y="160" width="4" height="6" fill="#D4A574"/>
-    <rect x="89" y="176" width="4" height="4" fill="#2E4053"/>
-    <rect x="97" y="176" width="4" height="4" fill="#2E4053"/>
-    <text x="95" y="196" class="duration" fill="#E74C3C">150ms</text>
+  <!-- F1 Contact x=95 -->
+  <g transform="translate(40, 52)">
+    <rect x="0" y="0" width="110" height="150" fill="#fafafa" stroke="#e0e0e0" stroke-width="0.8" rx="3"/>
+    <text x="55" y="16" class="frame-label">F1</text>
+    <text x="55" y="30" class="pose-name">接触 Contact</text>
+    <g transform="translate(55, 78) scale(2.8)">
+      <rect x="-4" y="0" width="8" height="8" fill="#D4A574"/>
+      <rect x="-4" y="8" width="8" height="12" fill="#2E86C1"/>
+      <rect x="-6" y="10" width="4" height="8" fill="#D4A574"/>
+      <rect x="2" y="4" width="4" height="6" fill="#D4A574"/>
+      <rect x="-6" y="20" width="4" height="4" fill="#2E4053"/>
+      <rect x="2" y="20" width="4" height="4" fill="#2E4053"/>
+    </g>
+    <text x="55" y="148" class="duration" fill="#E74C3C">150ms · 重音</text>
   </g>
 
-  <!-- F2 Recoil cx=215 -->
-  <g>
-    <rect x="160" y="68" width="110" height="132" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.8" rx="3"/>
-    <text x="215" y="82" class="frame-label">F2</text>
-    <text x="215" y="94" class="pose-name">低位 Recoil</text>
-    <rect x="211" y="158" width="8" height="8" fill="#D4A574"/>
-    <rect x="211" y="166" width="8" height="12" fill="#2E86C1"/>
-    <rect x="209" y="168" width="4" height="6" fill="#D4A574"/>
-    <rect x="217" y="162" width="4" height="8" fill="#D4A574"/>
-    <rect x="211" y="178" width="4" height="2" fill="#2E4053"/>
-    <rect x="215" y="178" width="4" height="2" fill="#2E4053"/>
-    <text x="215" y="196" class="duration" fill="#333">90ms</text>
+  <!-- F2 Recoil x=215 -->
+  <g transform="translate(160, 52)">
+    <rect x="0" y="0" width="110" height="150" fill="#fafafa" stroke="#e0e0e0" stroke-width="0.8" rx="3"/>
+    <text x="55" y="16" class="frame-label">F2</text>
+    <text x="55" y="30" class="pose-name">低位 Recoil</text>
+    <g transform="translate(55, 82) scale(2.8)">
+      <rect x="-4" y="0" width="8" height="8" fill="#D4A574"/>
+      <rect x="-4" y="8" width="8" height="12" fill="#2E86C1"/>
+      <rect x="-6" y="10" width="4" height="6" fill="#D4A574"/>
+      <rect x="2" y="6" width="4" height="8" fill="#D4A574"/>
+      <rect x="-4" y="20" width="4" height="2" fill="#2E4053"/>
+      <rect x="0" y="20" width="4" height="2" fill="#2E4053"/>
+    </g>
+    <text x="55" y="148" class="duration" fill="#555">90ms</text>
   </g>
 
-  <!-- F3 Passing cx=335 -->
-  <g>
-    <rect x="280" y="68" width="110" height="132" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.8" rx="3"/>
-    <text x="335" y="82" class="frame-label">F3</text>
-    <text x="335" y="94" class="pose-name">过步 Passing</text>
-    <rect x="331" y="150" width="8" height="8" fill="#D4A574"/>
-    <rect x="331" y="158" width="8" height="12" fill="#2E86C1"/>
-    <rect x="329" y="156" width="4" height="6" fill="#D4A574"/>
-    <rect x="337" y="162" width="4" height="8" fill="#D4A574"/>
-    <rect x="333" y="170" width="4" height="10" fill="#2E4053"/>
-    <rect x="336" y="170" width="4" height="10" fill="#2E4053"/>
-    <text x="335" y="196" class="duration" fill="#333">80ms</text>
+  <!-- F3 Passing x=335 -->
+  <g transform="translate(280, 52)">
+    <rect x="0" y="0" width="110" height="150" fill="#fafafa" stroke="#e0e0e0" stroke-width="0.8" rx="3"/>
+    <text x="55" y="16" class="frame-label">F3</text>
+    <text x="55" y="30" class="pose-name">过步 Passing</text>
+    <g transform="translate(55, 74) scale(2.8)">
+      <rect x="-4" y="0" width="8" height="8" fill="#D4A574"/>
+      <rect x="-4" y="8" width="8" height="12" fill="#2E86C1"/>
+      <rect x="-6" y="6" width="4" height="6" fill="#D4A574"/>
+      <rect x="2" y="10" width="4" height="8" fill="#D4A574"/>
+      <rect x="-3" y="20" width="4" height="10" fill="#2E4053"/>
+      <rect x="0" y="20" width="4" height="10" fill="#2E4053"/>
+    </g>
+    <text x="55" y="148" class="duration" fill="#555">80ms</text>
   </g>
 
-  <!-- F4 High cx=455 -->
-  <g>
-    <rect x="400" y="68" width="110" height="132" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.8" rx="3"/>
-    <text x="455" y="82" class="frame-label">F4</text>
-    <text x="455" y="94" class="pose-name">高位 High</text>
-    <rect x="451" y="144" width="8" height="8" fill="#D4A574"/>
-    <rect x="451" y="152" width="8" height="12" fill="#2E86C1"/>
-    <rect x="449" y="154" width="4" height="8" fill="#D4A574"/>
-    <rect x="457" y="150" width="4" height="6" fill="#D4A574"/>
-    <rect x="453" y="164" width="4" height="16" fill="#2E4053"/>
-    <rect x="456" y="164" width="4" height="16" fill="#2E4053"/>
-    <text x="455" y="196" class="duration" fill="#333">110ms</text>
+  <!-- F4 High x=455 -->
+  <g transform="translate(400, 52)">
+    <rect x="0" y="0" width="110" height="150" fill="#fafafa" stroke="#e0e0e0" stroke-width="0.8" rx="3"/>
+    <text x="55" y="16" class="frame-label">F4</text>
+    <text x="55" y="30" class="pose-name">高位 High</text>
+    <g transform="translate(55, 64) scale(2.8)">
+      <rect x="-4" y="0" width="8" height="8" fill="#D4A574"/>
+      <rect x="-4" y="8" width="8" height="12" fill="#2E86C1"/>
+      <rect x="-6" y="10" width="4" height="8" fill="#D4A574"/>
+      <rect x="2" y="4" width="4" height="6" fill="#D4A574"/>
+      <rect x="-3" y="20" width="4" height="16" fill="#2E4053"/>
+      <rect x="0" y="20" width="4" height="16" fill="#2E4053"/>
+    </g>
+    <text x="55" y="148" class="duration" fill="#555">110ms</text>
   </g>
 
-  <!-- F5 Contact (mirror) cx=575 -->
-  <g>
-    <rect x="520" y="68" width="110" height="132" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.8" rx="3"/>
-    <text x="575" y="82" class="frame-label">F5</text>
-    <text x="575" y="94" class="pose-name">接触 Contact</text>
-    <rect x="571" y="156" width="8" height="8" fill="#D4A574"/>
-    <rect x="571" y="164" width="8" height="12" fill="#2E86C1"/>
-    <rect x="569" y="160" width="4" height="6" fill="#D4A574"/>
-    <rect x="577" y="166" width="4" height="8" fill="#D4A574"/>
-    <rect x="573" y="176" width="4" height="4" fill="#2E4053"/>
-    <rect x="569" y="176" width="4" height="4" fill="#2E4053"/>
-    <text x="575" y="196" class="duration" fill="#E74C3C">150ms</text>
+  <!-- F5 Contact mirror x=575 -->
+  <g transform="translate(520, 52)">
+    <rect x="0" y="0" width="110" height="150" fill="#fafafa" stroke="#e0e0e0" stroke-width="0.8" rx="3"/>
+    <text x="55" y="16" class="frame-label">F5</text>
+    <text x="55" y="30" class="pose-name">接触 Contact</text>
+    <g transform="translate(55, 78) scale(2.8)">
+      <rect x="-4" y="0" width="8" height="8" fill="#D4A574"/>
+      <rect x="-4" y="8" width="8" height="12" fill="#2E86C1"/>
+      <rect x="2" y="4" width="4" height="6" fill="#D4A574"/>
+      <rect x="-6" y="10" width="4" height="8" fill="#D4A574"/>
+      <rect x="2" y="20" width="4" height="4" fill="#2E4053"/>
+      <rect x="-6" y="20" width="4" height="4" fill="#2E4053"/>
+    </g>
+    <text x="55" y="148" class="duration" fill="#E74C3C">150ms · 重音</text>
   </g>
 
-  <!-- F6 Passing (mirror) cx=695 -->
-  <g>
-    <rect x="640" y="68" width="110" height="132" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.8" rx="3"/>
-    <text x="695" y="82" class="frame-label">F6</text>
-    <text x="695" y="94" class="pose-name">过步 Passing</text>
-    <rect x="691" y="150" width="8" height="8" fill="#D4A574"/>
-    <rect x="691" y="158" width="8" height="12" fill="#2E86C1"/>
-    <rect x="689" y="162" width="4" height="8" fill="#D4A574"/>
-    <rect x="697" y="156" width="4" height="6" fill="#D4A574"/>
-    <rect x="693" y="170" width="4" height="10" fill="#2E4053"/>
-    <rect x="696" y="170" width="4" height="10" fill="#2E4053"/>
-    <text x="695" y="196" class="duration" fill="#333">80ms</text>
+  <!-- F6 Passing mirror x=695 -->
+  <g transform="translate(640, 52)">
+    <rect x="0" y="0" width="110" height="150" fill="#fafafa" stroke="#e0e0e0" stroke-width="0.8" rx="3"/>
+    <text x="55" y="16" class="frame-label">F6</text>
+    <text x="55" y="30" class="pose-name">过步 Passing</text>
+    <g transform="translate(55, 74) scale(2.8)">
+      <rect x="-4" y="0" width="8" height="8" fill="#D4A574"/>
+      <rect x="-4" y="8" width="8" height="12" fill="#2E86C1"/>
+      <rect x="2" y="10" width="4" height="8" fill="#D4A574"/>
+      <rect x="-6" y="6" width="4" height="6" fill="#D4A574"/>
+      <rect x="0" y="20" width="4" height="10" fill="#2E4053"/>
+      <rect x="-3" y="20" width="4" height="10" fill="#2E4053"/>
+    </g>
+    <text x="55" y="148" class="duration" fill="#555">80ms</text>
   </g>
 
-  <!-- ============ body height bob curve ============ -->
-  <text x="40" y="222" class="note" fill="#E67E22" font-weight="bold">身体高度起伏：</text>
-  <text x="40" y="234" class="note">双腿交叉时波峰（高位 F4）、双腿分开时波谷（接触 F1/F5）</text>
-  <line x1="40" y1="262" x2="750" y2="262" class="axis"/>
-  <text x="752" y="265" class="note">时间→</text>
-  <text x="34" y="248" class="note" text-anchor="end">高</text>
-  <text x="34" y="266" class="note" text-anchor="end">低</text>
-  <!-- bob curve through frame body_y points (cx, body_y): 95,164 / 215,166 / 335,158 / 455,152 / 575,164 / 695,158 -->
-  <path class="bob" d="M 95,264 C 150,264 160,252 215,250 C 270,250 280,244 335,242 C 390,242 400,236 455,236 C 510,236 520,250 575,252 C 630,252 640,244 695,242"/>
-  <!-- dots at frame positions (mapped: high=240, low=264; body_y 152->236, 166->250) -->
-  <circle cx="95" cy="252" r="3" fill="#E67E22"/>
-  <circle cx="215" cy="250" r="3" fill="#E67E22"/>
-  <circle cx="335" cy="244" r="3" fill="#E67E22"/>
-  <circle cx="455" cy="236" r="3.5" fill="#E67E22"/>
-  <circle cx="575" cy="252" r="3" fill="#E67E22"/>
-  <circle cx="695" cy="244" r="3" fill="#E67E22"/>
-  <text x="95" y="278" class="note" text-anchor="middle">F1</text>
-  <text x="215" y="278" class="note" text-anchor="middle">F2</text>
-  <text x="335" y="278" class="note" text-anchor="middle">F3</text>
-  <text x="455" y="278" class="note" text-anchor="middle">F4</text>
-  <text x="575" y="278" class="note" text-anchor="middle">F5</text>
-  <text x="695" y="278" class="note" text-anchor="middle">F6</text>
-
-  <!-- ============ frame-timing interval analogy ============ -->
+  <!-- Body height curve -->
+  <g transform="translate(40, 225)">
+    <text x="0" y="0" class="note" fill="#E67E22" font-weight="bold">身体高度起伏：</text>
+    <line x1="0" y1="28" x2="710" y2="28" class="axis"/>
+    <text x="712" y="31" class="note">时间→</text>
+    <path d="M 55,30 C 110,30 120,26 175,26 C 230,26 240,20 295,20 C 350,20 360,14 415,14 C 470,14 480,26 535,26 C 590,26 600,20 655,20" stroke="#E67E22" stroke-width="1.6" fill="none"/>
+    <circle cx="55" cy="28" r="3" fill="#E67E22"/>
+    <circle cx="175" cy="26" r="3" fill="#E67E22"/>
+    <circle cx="295" cy="22" r="3" fill="#E67E22"/>
+    <circle cx="415" cy="14" r="4" fill="#E67E22"/>
+    <circle cx="535" cy="28" r="3" fill="#E67E22"/>
+    <circle cx="655" cy="22" r="3" fill="#E67E22"/>
+    <text x="55" y="44" class="note" text-anchor="middle">F1接触</text>
+    <text x="175" y="44" class="note" text-anchor="middle">F2低位</text>
+    <text x="295" y="44" class="note" text-anchor="middle">F3过步</text>
+    <text x="415" y="44" class="note" text-anchor="middle">F4高位·波峰</text>
+    <text x="535" y="44" class="note" text-anchor="middle">F5接触</text>
+    <text x="655" y="44" class="note" text-anchor="middle">F6过步</text>
+  </g>
 </svg>

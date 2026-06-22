@@ -116,18 +116,4 @@
   </g>
 
   <!-- Bottom explanation -->
-  <g transform="translate(0, 310)">
-    <rect x="30" y="0" width="740" height="170" fill="#F8F9FA" rx="4"/>
-
-    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：塞尔达透视问题 = 坐标系不匹配 / 类型不一致</text>
-
-    <text x="50" y="52" style="font-size:11px;fill:#555;">你的角色数据是 {x, y, facing}——带"朝向"信息；你的场景数据是 {x, y}——纯网格。</text>
-    <text x="50" y="72" style="font-size:11px;fill:#555;">两套坐标系混在一起渲染就会出现"类型错误"——角色靠南墙时视觉崩坏。</text>
-
-    <line x1="50" y1="90" x2="750" y2="90" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="50" y="115" style="font-size:11px;fill:#E74C3C;font-weight:bold;">核心教训：</text>
-    <text x="50" y="135" style="font-size:11px;fill:#555;">选了 45° 角色就得接受 45° 场景的复杂度。你不能两边都占——</text>
-    <text x="50" y="155" style="font-size:11px;fill:#555;">统一视角是俯视 RPG 的第一工程决策。角色和场景必须是同一套坐标系。</text>
-  </g>
 </svg>

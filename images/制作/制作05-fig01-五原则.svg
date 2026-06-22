@@ -300,24 +300,6 @@
   </g>
 
   <!-- Bottom: comparison row -->
-  <g transform="translate(18, 262)">
-    <rect x="0" y="0" width="765" height="70" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="6"/>
-
-    <text x="15" y="18" style="font-size:10px;font-weight:bold;fill:#2980B9;">💻 程序员类比：动画 = 关键帧之间的"插值"——但你不是用 lerp() 做匀速运动</text>
-
-    <g transform="translate(15, 30)">
-      <!-- Bad easing -->
-      <rect x="0" y="0" width="340" height="32" fill="#fff" rx="3"/>
-      <text x="10" y="13" class="note" fill="#666">❌ 引擎的默认匀速：<tspan fill="#E74C3C" font-weight="bold">position = lerp(start, end, t)</tspan> ——每一步的视觉间距相同</text>
-      <text x="10" y="26" class="note" fill="#999">结果：你的动画"机器人感"——因为真实世界没有东西是匀速运动的</text>
-    </g>
-
-    <g transform="translate(390, 30)">
-      <rect x="0" y="0" width="360" height="32" fill="#fff" rx="3"/>
-      <text x="10" y="13" class="note" fill="#666">✅ 用缓动公式：<tspan fill="#27AE60" font-weight="bold">position = lerp(start, end, easeInOut(t))</tspan></text>
-      <text x="10" y="26" class="note" fill="#999">——开头的帧密集（慢）、中间稀疏（快）、末尾再密集（慢）</text>
-    </g>
-  </g>
 
   <!-- Bottom: 5 principles summary bar -->
   <g transform="translate(18, 342)">

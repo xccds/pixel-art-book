@@ -119,8 +119,7 @@
   <text x="400" y="396" text-anchor="middle" class="small">右侧：模糊的块状轮廓 → 缩小后变成一坨圆形，无法判断是什么</text>
 
   <rect x="40" y="420" width="720" height="56" rx="4" fill="#2C3E50"/>
-  <text x="400" y="444" text-anchor="middle" class="label" fill="#E8F4FD">程序员类比</text>
-  <text x="400" y="462" text-anchor="middle" class="small" fill="#BDC3C7">剪影测试 ≈ 单元测试：只测"最小可验证单元"（纯黑轮廓）。通过了，加细节就是锦上添花；失败，细节再多也无法挽救。</text>
+    <text x="400" y="462" text-anchor="middle" class="small" fill="#BDC3C7">剪影测试 ≈ 单元测试：只测"最小可验证单元"（纯黑轮廓）。通过了，加细节就是锦上添花；失败，细节再多也无法挽救。</text>
 
   <defs>
     <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">

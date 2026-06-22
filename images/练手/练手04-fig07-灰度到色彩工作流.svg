@@ -76,8 +76,7 @@
 
   <!-- analogy bar -->
   <rect x="30" y="352" width="740" height="128" rx="4" fill="#FFF3E0" stroke="#FFCC80" stroke-width="1"/>
-  <text x="50" y="378" class="box-title">程序员类比：灰度→上色 = 先写 HTML，再加 CSS</text>
-  <text x="50" y="404" class="box-note">灰度草图 = HTML——定义画面的结构（明度关系、层次、焦点）；Overlay/Color 图层 = CSS——定义画面的样式（色相、饱和度）。</text>
+    <text x="50" y="404" class="box-note">灰度草图 = HTML——定义画面的结构（明度关系、层次、焦点）；Overlay/Color 图层 = CSS——定义画面的样式（色相、饱和度）。</text>
   <text x="50" y="427" class="box-note">结构（明度）对了，样式（色彩）怎么改都不会塌：换一套配色 = 换一套主题 CSS，骨架不动。</text>
   <text x="50" y="450" class="box-note">反过来先画彩色再调明度 = 在没写 HTML 的情况下硬塞 CSS——改一个样式，整个布局就崩。</text>
   <text x="50" y="472" class="box-note" fill="#E67E22">核心：强制你在最影响可读性的维度（明度）上先做对，再考虑色彩表现。</text>

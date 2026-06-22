@@ -146,21 +146,6 @@
     <text x="80" y="204" class="func-label" text-anchor="middle">Δy=0 (水平) 或 Δx=0 (垂直)</text>
   </g>
 
-  <!-- Bottom explanation -->
-  <g transform="translate(0, 320)">
-    <rect x="40" y="0" width="720" height="170" fill="#F8F9FA" rx="4"/>
-
-    <text x="60" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：像素斜率 = CSS Grid 中的列宽比例</text>
-
-    <text x="60" y="52" style="font-size:11px;fill:#555;">你在 CSS 里定义 grid-template-columns: 1fr 1fr 时，两列宽度相等——这就像 1:1 斜率，每个方向步长一致。</text>
-    <text x="60" y="72" style="font-size:11px;fill:#555;">当你写 2fr 1fr 时，第一列是第二列的两倍——这就是 2:1 斜率：水平方向每次跨两格，垂直方向跨一格。</text>
-
-    <line x1="60" y1="92" x2="740" y2="92" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="60" y="115" style="font-size:11px;fill:#E74C3C;font-weight:bold;">关键洞察：像素画中每一条线，本质上是一串"(x偏移, y偏移)"指令的序列。</text>
-    <text x="60" y="135" style="font-size:11px;fill:#555;">当序列中斜率规则突变（比如从 2:1 跳到 3:1 再跳回 2:1），肉眼就会感知为"锯齿"。保持斜率一致性 = 保持视觉平滑。</text>
-  </g>
-
   <!-- Grid legend -->
   <g transform="translate(40, 455)">
     <rect x="0" y="0" width="12" height="12" fill="#2C3E50"/><text x="18" y="11" style="font-size:10px;fill:#666;">1:1 像素</text>

@@ -113,17 +113,4 @@
   </g>
 
   <!-- Bottom explanation -->
-  <g transform="translate(0, 330)">
-    <rect x="30" y="0" width="740" height="150" fill="#F8F9FA" rx="4"/>
-
-    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：Banding = 规律性冗余行（lint 该警告）</text>
-
-    <text x="50" y="52" style="font-size:11px;fill:#555;">想象三行几乎一模一样的代码紧挨着，只有变量名差一个字符——你的第一反应是"这该抽成一个函数"。</text>
-    <text x="50" y="72" style="font-size:11px;fill:#555;">眼睛对 Banding 的反应一样：它不读成"一条边"，它读成"三排重复的结构"，然后开始找"为什么重复"——注意力被引到了本不该被注意的地方。</text>
-
-    <line x1="50" y1="88" x2="750" y2="88" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="50" y="112" style="font-size:11px;fill:#E74C3C;font-weight:bold;">识别方法：</text>
-    <text x="50" y="132" style="font-size:11px;fill:#555;">沿边缘逐行看——如果连续两三行的像素在相同相对位置形成完全平行的阶梯 = Banding。去色后更容易发现（颜色对比去掉后平行结构更突出）。</text>
-  </g>
 </svg>

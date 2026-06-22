@@ -19,8 +19,7 @@
     .note { font-size: 9px; fill: #666; text-anchor: middle; }
   </style>
 
-  <text x="410" y="28" class="title" text-anchor="middle">图 制作06.1 四条非手绘管线对比矩阵——五个维度 × 程序员类比</text>
-
+  
   <!-- Column headers (5 axes) -->
   <rect x="170" y="48" width="600" height="34" class="header-bg" rx="3"/>
   <text x="230" y="69" class="col-head">效率</text>

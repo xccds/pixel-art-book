@@ -157,19 +157,4 @@
   </g>
 
   <!-- Bottom explanation -->
-  <g transform="translate(0, 310)">
-    <rect x="30" y="0" width="740" height="180" fill="#F8F9FA" rx="4"/>
-
-    <text x="50" y="25" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：像素曲线 = 楼梯函数的平滑度</text>
-
-    <text x="50" y="50" style="font-size:11px;fill:#555;">把像素曲线想象成一个"台阶函数"——每下一行，水平走 N 步。N 的序列就是你的"信号"。</text>
-    <text x="50" y="70" style="font-size:11px;fill:#555;">左图：信号是 [5, 1, 5, 3, 1, 3, ...] — 相邻值跳变 4→0→4 → 就是信号里的高频噪声，人眼感知为"锯齿"。</text>
-    <text x="50" y="90" style="font-size:11px;fill:#555;">右图：信号是 [5, 4, 3, 2, 2, 1, 1, 1, 1, 2, 3] — 相邻值每次只变 0 或 1 → 信号平滑，人眼感知为"曲线"。</text>
-
-    <line x1="50" y1="105" x2="750" y2="105" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="50" y="128" style="font-size:11px;fill:#E74C3C;font-weight:bold;">诊断法：</text>
-    <text x="50" y="146" style="font-size:11px;fill:#555;">如果你在画布上画了一条曲线，总觉得边缘"像锯齿"——数一数你每段水平走了多少像素。</text>
-    <text x="50" y="164" style="font-size:11px;fill:#555;">如果相邻段的像素数差值超过 1 → 那就是 jaggies 的来源。把它调成渐变序列。</text>
-  </g>
 </svg>

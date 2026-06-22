@@ -133,5 +133,4 @@
   <text x="650" y="419" text-anchor="middle" class="label">四角 Tetradic</text>
   <text x="650" y="437" text-anchor="middle" class="desc">两组互补 · 降饱和控冲突</text>
   <rect x="30" y="455" width="740" height="32" rx="4" fill="#333"/>
-  <text x="40" y="475" class="analogy">// 程序员类比: 和谐方案 = 色轮上的取色算法（enum/几何约束）；60-30-10 = 主色/辅色/点缀色的面积权重配比</text>
-</svg>
+  </svg>

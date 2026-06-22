@@ -89,5 +89,4 @@
   </g>
 
   <rect x="25" y="440" width="750" height="36" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
-  <text x="400" y="463" text-anchor="middle" class="note" fill="#2C3E50">程序员类比：就像 CSS 盒模型中 margin 和 content 的比例——margin:0 的密集文字让人头大，margin:40px 才有呼吸感</text>
-</svg>
+  </svg>

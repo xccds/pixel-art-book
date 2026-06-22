@@ -121,6 +121,5 @@
   </g>
 
   <rect x="40" y="432" width="720" height="52" rx="4" fill="#2C3E50"/>
-  <text x="400" y="454" text-anchor="middle" style="font-family:sans-serif;font-size:12px;font-weight:bold;fill:#E8F4FD;">程序员类比：可读性 = API 的最小惊讶原则</text>
-  <text x="400" y="472" text-anchor="middle" style="font-family:sans-serif;font-size:10px;fill:#BDC3C7;">小尺寸下信息密度要克制——接口暴露的字段越少，调用方越不容易误用。模糊测试 = 压测：扛住降级的字段才是真契约。</text>
+    <text x="400" y="472" text-anchor="middle" style="font-family:sans-serif;font-size:10px;fill:#BDC3C7;">小尺寸下信息密度要克制——接口暴露的字段越少，调用方越不容易误用。模糊测试 = 压测：扛住降级的字段才是真契约。</text>
 </svg>

@@ -106,5 +106,4 @@
   <!-- Legend -->
   <rect x="25" y="418" width="750" height="50" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
   <text x="400" y="438" text-anchor="middle" class="note" fill="#2C3E50" font-size="10">设计原则：90% 的区域承载信息，但必须有至少 10% 的区域“什么都没有”——它是画面的减压阀</text>
-  <text x="400" y="456" text-anchor="middle" class="note" fill="#666" font-size="10">程序员类比：就像代码中的空行——没有空行的代码块像一堵墙；有空行的代码，逻辑边界一眼可辨</text>
-</svg>
+  </svg>

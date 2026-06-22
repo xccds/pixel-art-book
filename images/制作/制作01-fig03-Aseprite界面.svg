@@ -124,11 +124,4 @@
   </g>
 
   <!-- Bottom analogy note -->
-  <g transform="translate(40, 400)">
-    <rect x="0" y="0" width="720" height="80" fill="#F8F9FA" rx="4"/>
-    <text x="20" y="24" class="note-title">程序员类比：Aseprite 界面 ≈ IDE 布局</text>
-    <text x="20" y="44" class="note-text">菜单栏=IDE 顶部菜单；工具栏=左侧活动工具栏；画布=编辑区；</text>
-    <text x="20" y="60" class="note-text">图层=文件树/标签页（多文件并行）；调色板=命令面板；时间轴=Git 时间线（每帧=一次 commit）。</text>
-    <text x="20" y="76" class="note-text">你不需要"学 Aseprite"——把每个区域映射到你熟悉的 IDE 概念，操作直觉就来了。</text>
-  </g>
 </svg>

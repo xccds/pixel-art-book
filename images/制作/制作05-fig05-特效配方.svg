@@ -200,15 +200,4 @@
   </g>
 
   <!-- analogy panel on right -->
-  <g transform="translate(495, 350)">
-    <rect x="0" y="0" width="265" height="130" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="6"/>
-    <text x="12" y="18" class="analogy-title">程序员类比（换色复用）</text>
-    <text x="12" y="36" class="analogy-text">同一特效 sprite 换 palette index</text>
-    <text x="12" y="50" class="analogy-text">——火→毒→冰→诅咒，零额外绘制，</text>
-    <text x="12" y="64" class="analogy-text">像换主题（dark/light 切 CSS 变量）。</text>
-    <text x="12" y="84" class="analogy-text" fill="#666">像素图颜色存独立的调色板表，</text>
-    <text x="12" y="98" class="analogy-text" fill="#666">sprite 存的是索引——改表里几个</text>
-    <text x="12" y="112" class="analogy-text" fill="#666">RGB 值，所有引用该 index 的像素</text>
-    <text x="12" y="124" class="analogy-text" fill="#666">自动变色。1 份 sprite + 4 调色板 = 4 种特效。</text>
-  </g>
 </svg>

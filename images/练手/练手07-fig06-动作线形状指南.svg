@@ -114,12 +114,6 @@
   </g>
 
   <!-- Bottom analogy annotation -->
-  <g transform="translate(30, 385)">
-    <rect x="0" y="0" width="740" height="58" fill="#FFF5F5" stroke="#E74C3C" stroke-width="1" rx="4"/>
-    <text x="370" y="20" class="panel-title" fill="#E74C3C" text-anchor="middle">程序员类比：动作线 = 函数签名（function signature）</text>
-    <text x="370" y="38" class="analogy" text-anchor="middle">先定动作线再画细节 = 先写函数签名再填实现。动作线是主返回值，细节是副作用（side effects）。</text>
-    <text x="370" y="52" class="analogy" text-anchor="middle">动作线错了 = 签名错了 = 实现再优雅也是死代码。</text>
-  </g>
 
   <!-- Bottom notes -->
   <text x="400" y="460" class="subtitle" text-anchor="middle">五种动作线形状对应五种能量趋势。角色草稿第一笔是动作线，不是眼睛或盔甲。</text>

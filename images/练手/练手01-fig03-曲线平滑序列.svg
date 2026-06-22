@@ -148,29 +148,6 @@
   </g>
 
   <!-- Right side insight panel -->
-  <g transform="translate(630, 70)">
-    <rect x="0" y="0" width="150" height="220" fill="#F8F9FA" rx="4" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="12" y="22" style="font-size:11px;font-weight:bold;fill:#333;">程序员类比</text>
-    <text x="12" y="42" style="font-size:10px;fill:#555;">这像一个阶梯函数</text>
-    <text x="12" y="56" style="font-size:10px;fill:#555;">f(n)：</text>
-    <text x="12" y="72" style="font-size:10px;fill:#555;font-family:monospace;">[5,4,3,2,2,1,1,1,2,3]</text>
-
-    <line x1="12" y1="88" x2="138" y2="88" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="12" y="108" style="font-size:10px;fill:#555;">相邻元素差值：</text>
-    <text x="12" y="124" style="font-size:10px;fill:#555;font-family:monospace;">[-1,-1,-1,0,-1,0,0,+1,+1]</text>
-
-    <line x1="12" y1="138" x2="138" y2="138" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="12" y="158" style="font-size:10px;fill:#E74C3C;font-weight:bold;">规则：|diff| ≤ 1</text>
-    <text x="12" y="176" style="font-size:10px;fill:#555;">相邻段像素数变化</text>
-    <text x="12" y="192" style="font-size:10px;fill:#555;">不超过 1，曲线就平滑。</text>
-
-    <line x1="12" y1="206" x2="138" y2="206" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="12" y="220" style="font-size:9px;fill:#999;">来源: ashes999 GitHub</text>
-  </g>
 
   <!-- Bottom insight -->
   <g transform="translate(0, 460)">

@@ -103,8 +103,7 @@
 
   <!-- ====== Analogy box ====== -->
   <rect x="40" y="370" width="720" height="115" rx="5" fill="#F8F0FB" stroke="#D2B4DE" stroke-width="1"/>
-  <text x="60" y="394" class="box-title">程序员类比：风格化抖动 = 自定义采样核（custom convolution kernel）</text>
-  <text x="60" y="416" class="box-note">Bayer = <tspan class="code">固定查表 kernel</tspan>：4×4 阈值矩阵 M[r][c]，采样形状恒为"点"，你只改阈值 T（亮暗），几何不变——所以 Bayer 永远像 Bayer。</text>
+    <text x="60" y="416" class="box-note">Bayer = <tspan class="code">固定查表 kernel</tspan>：4×4 阈值矩阵 M[r][c]，采样形状恒为"点"，你只改阈值 T（亮暗），几何不变——所以 Bayer 永远像 Bayer。</text>
   <text x="60" y="436" class="box-note">风格化 = <tspan class="code">自定义 shape kernel</tspan>：你定义采样的形状（斜线 / 人字 / 十字 / 圆 / 小短线），抖动像素按那个形状分布——换 kernel = 换纹理语言。</text>
   <text x="60" y="456" class="box-note">普通抖动是 <tspan class="code">if (r+c)%2==0</tspan>，风格化是 <tspan class="code">if matches_custom_pattern(r,c)</tspan>——前者调参数，后者写形状函数。</text>
   <text x="60" y="476" class="box-note" fill="#8E44AD">耀西岛的手绘斜线、Etrian Odyssey 的网格点，都是"自己定义采样核"的产物——核函数不同，采样几何就不同。</text>

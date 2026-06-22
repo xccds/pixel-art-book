@@ -121,19 +121,4 @@
   </g>
 
   <!-- Bottom explanation -->
-  <g transform="translate(0, 280)">
-    <rect x="30" y="0" width="740" height="200" fill="#F8F9FA" rx="4"/>
-
-    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：过度 AA = 把强类型全改成 any</text>
-
-    <text x="50" y="52" style="font-size:11px;fill:#555;">TypeScript 的价值在于类型让错误在编译期暴露；像素艺术的价值在于离散网格让边缘清晰可读。</text>
-    <text x="50" y="72" style="font-size:11px;fill:#555;">你把每个边缘都"柔化"成 3 级过渡 + 内外角都放，等于把每个变量都标成 any——类型系统形同虚设。</text>
-
-    <line x1="50" y1="90" x2="750" y2="90" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="50" y="115" style="font-size:11px;fill:#E74C3C;font-weight:bold;">三个危害：</text>
-    <text x="50" y="135" style="font-size:11px;fill:#555;">① 模糊感——看起来像高斯模糊过的矢量图，丧失"颗粒锐利感"。</text>
-    <text x="50" y="155" style="font-size:11px;fill:#555;">② 颜色浪费——每多一种过渡色就多吃一个调色板槽位。</text>
-    <text x="50" y="175" style="font-size:11px;fill:#555;">③ 身份丢失——像素艺术建立在"能看见格子"上，过度 AA 把格子藏了。</text>
-  </g>
 </svg>

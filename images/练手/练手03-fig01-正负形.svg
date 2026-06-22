@@ -104,5 +104,4 @@
 
   <!-- Bottom analogy -->
   <rect x="50" y="435" width="700" height="36" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
-  <text x="400" y="458" text-anchor="middle" class="note" fill="#2C3E50">程序员类比：正形 = HTML 中有内容的元素（div 里的文字、图片）；负形 = margin + padding —— 没有 margin 的页面让人窒息，没有负空间的画面同理</text>
-</svg>
+  </svg>

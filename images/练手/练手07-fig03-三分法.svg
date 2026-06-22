@@ -79,6 +79,5 @@
   <text x="587" y="398" class="subtitle" text-anchor="middle">右 1/3</text>
 
   <!-- Bottom note -->
-  <text x="400" y="455" class="subtitle" text-anchor="middle">程序员类比：三分法 ≈ CSS Grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr；四个交点是自然的视觉焦点位置</text>
-  <text x="400" y="485" class="subtitle" text-anchor="middle">两条横线和两条竖线将画面切成 3×3。四个交点（红点）是放置主体的最佳位置。人眼自然遵循 Z 型从左到右、从上到下的扫描路径。</text>
+    <text x="400" y="485" class="subtitle" text-anchor="middle">两条横线和两条竖线将画面切成 3×3。四个交点（红点）是放置主体的最佳位置。人眼自然遵循 Z 型从左到右、从上到下的扫描路径。</text>
 </svg>

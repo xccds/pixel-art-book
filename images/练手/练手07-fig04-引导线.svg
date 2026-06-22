@@ -117,6 +117,5 @@
   </g>
 
   <!-- Bottom note -->
-  <text x="400" y="455" class="subtitle" text-anchor="middle">程序员类比：引导线 ≈ 页面上的 &lt;a href="#focal-point"&gt; 锚点链接——告诉眼睛"从这里往那里看"</text>
-  <text x="400" y="485" class="subtitle" text-anchor="middle">三条不同来源的引导线（道路、栏杆、光线）将观众视线导向不同焦点。就像页面上有多条 hyperlink 指向不同锚点。</text>
+    <text x="400" y="485" class="subtitle" text-anchor="middle">三条不同来源的引导线（道路、栏杆、光线）将观众视线导向不同焦点。就像页面上有多条 hyperlink 指向不同锚点。</text>
 </svg>

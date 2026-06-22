@@ -102,17 +102,4 @@
   </g>
 
   <!-- Bottom explanation -->
-  <g transform="translate(0, 320)">
-    <rect x="30" y="0" width="740" height="160" fill="#F8F9FA" rx="4"/>
-
-    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：等距 2:1 = 固定坐标变换矩阵</text>
-
-    <text x="50" y="52" style="font-size:11px;fill:#555;">把正方形网格 [x, y] 乘以变换矩阵 → 旋转成菱形等距视角。2:1 之所以是"最简整数比"，是因为它在像素网格上能用整数运算精确表达。</text>
-
-    <line x1="50" y1="70" x2="750" y2="70" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="50" y="94" style="font-size:11px;fill:#3498DB;font-weight:bold;">两种用法：</text>
-    <text x="50" y="114" style="font-size:11px;fill:#555;">自由形式——不严格对齐网格，适合插画式像素画。</text>
-    <text x="50" y="134" style="font-size:11px;fill:#555;">Tile 形式——严格对齐菱形网格，适合游戏开发。每个菱形 = 一个 Tile = 数组一个元素。</text>
-  </g>
 </svg>

@@ -96,30 +96,4 @@
   </g>
 
   <!-- Bottom: programmer analogy (outline = type-system boundary check strictness) -->
-  <g transform="translate(0, 250)">
-    <rect x="40" y="0" width="720" height="270" fill="#F8F9FA" rx="4"/>
-
-    <text x="60" y="28" class="analogy-title">程序员类比：轮廓 = 类型系统的边界检查策略</text>
-
-    <text x="60" y="58" class="analogy-key">无轮廓</text>
-    <text x="180" y="58" class="analogy-text">= any / 不检查 — 快、灵活，但形状易与背景粘连（运行时边界出错）</text>
-
-    <text x="60" y="82" class="analogy-key">黑色内描</text>
-    <text x="180" y="82" class="analogy-text">= 到处显式标注 — 像每个变量都写 Array&lt;number&gt; 的遗留代码，安全但啰嗦（"脏"）</text>
-
-    <text x="60" y="106" class="analogy-key">黑色外轮廓</text>
-    <text x="180" y="106" class="analogy-text">= 严格外边界 + 内部推断 — 默认 strict 模式，API 表面清晰、内部不啰嗦</text>
-
-    <text x="60" y="130" class="analogy-key">彩色轮廓</text>
-    <text x="180" y="130" class="analogy-text">= 泛型 / 参数化类型 — 每个边界按各自域类型着色，精确表达领域语义</text>
-
-    <text x="60" y="154" class="analogy-key">着色轮廓</text>
-    <text x="180" y="154" class="analogy-text">= refinement types / 依赖类型 — 边界携带运行时变化信息（光与影），最强也最复杂</text>
-
-    <line x1="60" y1="178" x2="740" y2="178" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="60" y="204" class="analogy-text" style="font-weight:bold;fill:#E74C3C;">选择原则</text>
-    <text x="60" y="226" class="analogy-text">不是"哪个最好"，是"你的项目需要多严格的边界、能负担多复杂的类型系统"。</text>
-    <text x="60" y="248" class="analogy-text">背景 tile 用 any（无轮廓）省事；主角用 strict（黑色外轮廓）保证可读；大 BOSS 用 refinement（着色轮廓）追求融合。</text>
-  </g>
 </svg>

@@ -56,5 +56,4 @@
   <rect x="806.0" y="395.0" width="58.0" height="34.0" fill="#FFE890" stroke="#999" stroke-width="0.5"/>
   <text x="835.0" y="443" text-anchor="middle" class="swatch-label">高光</text>
   <rect x="30" y="460" width="740" height="30" rx="4" fill="#333"/>
-  <text x="40" y="479" class="analogy">// 程序员类比: 色相偏移 = 给 ramp 加 HSL 空间曲线插值（非线性灰阶），暗部往冷色偏、亮部往暖色偏，像给数值加相位偏移</text>
-</svg>
+  </svg>

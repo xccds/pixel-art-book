@@ -125,28 +125,6 @@
   </g>
 
   <!-- ====== Right sidebar: Rules ====== -->
-  <g transform="translate(490, 105)">
-    <rect x="0" y="0" width="280" height="88" fill="#FFF5F5" stroke="#E74C3C" stroke-width="0.8" rx="4"/>
-    <text x="12" y="20" font-size="11px" font-weight="bold" fill="#E74C3C">排查铁律</text>
-    <text x="12" y="38" font-size="10px" fill="#555">❶ 永远从明度开始。明度是骨架，骨架歪了，</text>
-    <text x="12" y="52" font-size="10px" fill="#555">&#8194;&#8194;后面的构图和色彩都是白费力气。</text>
-    <text x="12" y="68" font-size="10px" fill="#555">❷ 每次只改一个维度。改完明度再动构图；</text>
-    <text x="12" y="82" font-size="10px" fill="#555">&#8194;&#8194;否则你不知道修好画面的到底是哪个改动。</text>
-
-    <rect x="0" y="100" width="280" height="88" fill="#F0F8FF" stroke="#3498DB" stroke-width="0.8" rx="4"/>
-    <text x="12" y="120" font-size="11px" font-weight="bold" fill="#3498DB">程序员类比</text>
-    <text x="12" y="138" font-size="10px" fill="#555">这套排查顺序就是视觉版的 bug 优先级：</text>
-    <text x="12" y="154" font-size="10px" fill="#555">明度 = NullPointerException（基础崩溃）</text>
-    <text x="12" y="168" font-size="10px" fill="#555">构图 = Control Flow（逻辑错误）</text>
-    <text x="12" y="182" font-size="10px" fill="#555">色彩 = UI Polish（显示层），质感 = Edge Case</text>
-
-    <rect x="0" y="200" width="280" height="70" fill="#F5F0FF" stroke="#8E44AD" stroke-width="0.8" rx="4"/>
-    <text x="12" y="220" font-size="11px" font-weight="bold" fill="#8E44AD">常见反模式</text>
-    <text x="12" y="238" font-size="10px" fill="#555">⚠ 在明度没调好的情况下反复换颜色</text>
-    <text x="12" y="254" font-size="10px" fill="#555">⚠ 在构图散乱的前提下增加细节（越加越乱）</text>
-    <text x="12" y="270" font-size="10px" fill="#555">⚠ 同时调三四个参数，修好了也不知道是哪</text>
-    <text x="12" y="286" font-size="10px" fill="#555">&#8194;&#8194;个改对了</text>
-  </g>
 
   <text x="400" y="510" font-size="10px" fill="#888" text-anchor="middle">八概念优先级诊断流程。优先级的顺序不是随意的——它对应视觉信息在大脑中的处理层级：明度 &gt; 构图 &gt; 色彩 &gt; 质感。</text>
 </svg>

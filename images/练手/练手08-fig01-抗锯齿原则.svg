@@ -118,19 +118,4 @@
   </g>
 
   <!-- Bottom explanation -->
-  <g transform="translate(0, 280)">
-    <rect x="30" y="0" width="740" height="200" fill="#F8F9FA" rx="4"/>
-
-    <text x="50" y="28" style="font-size:13px;font-weight:bold;fill:#333;">程序员类比：AA = 亚像素插值（subpixel rendering）</text>
-
-    <text x="50" y="52" style="font-size:11px;fill:#555;">浏览器在非整数 DPI 屏幕上渲染 1px 边框时，会用灰度抗锯齿——一个像素的位置无法精确表示那条线，就用相邻像素的亮度去"投票"。</text>
-    <text x="50" y="72" style="font-size:11px;fill:#555;">像素画的 AA 完全一样：你不是真的在亚像素位置画了东西，而是在硬边缘旁放一个中间色像素，让视觉系统自己做插值。</text>
-
-    <line x1="50" y1="90" x2="750" y2="90" stroke="#e0e0e0" stroke-width="1"/>
-
-    <text x="50" y="115" style="font-size:11px;fill:#3498DB;font-weight:bold;">三条规则：</text>
-    <text x="50" y="135" style="font-size:11px;fill:#555;">① 放多少？台阶长度的一半。太少比太多好。</text>
-    <text x="50" y="155" style="font-size:11px;fill:#555;">② 几种过渡色？入门 1 种，熟练 2 种，最多 3 种。超过 3 种 = 在画矢量图。</text>
-    <text x="50" y="175" style="font-size:11px;fill:#555;">③ 放哪里？只放内角（弯曲内侧），外角保持锐利。AA 是"内侧柔化"不是"外侧晕染"。</text>
-  </g>
 </svg>

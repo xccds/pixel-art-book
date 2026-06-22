@@ -129,31 +129,4 @@
   <text x="695" y="278" class="note" text-anchor="middle">F6</text>
 
   <!-- ============ frame-timing interval analogy ============ -->
-  <g transform="translate(40, 300)">
-    <rect x="0" y="0" width="710" height="160" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="6"/>
-    <text x="14" y="20" class="analogy-title">程序员类比（帧时序）：帧时长 = 定时器 interval，不等长 interval 制造节奏</text>
-
-    <!-- timeline of unequal intervals: 150,90,80,110,150,80 (total 660 -> scale to 660px) -->
-    <text x="14" y="40" class="analogy-text">每个 keyframe 配不同的 duration —— 全等长 = 节拍器（机械感）；不等长 = 乐句（活感）：</text>
-    <g transform="translate(25, 56)">
-      <!-- interval bars -->
-      <rect x="0" y="0" width="150" height="18" fill="#E74C3C" opacity="0.75" rx="2"/>
-      <rect x="150" y="0" width="90" height="18" fill="#F39C12" opacity="0.55" rx="2"/>
-      <rect x="240" y="0" width="80" height="18" fill="#F39C12" opacity="0.55" rx="2"/>
-      <rect x="320" y="0" width="110" height="18" fill="#F39C12" opacity="0.55" rx="2"/>
-      <rect x="430" y="0" width="150" height="18" fill="#E74C3C" opacity="0.75" rx="2"/>
-      <rect x="580" y="0" width="80" height="18" fill="#F39C12" opacity="0.55" rx="2"/>
-      <text x="75" y="13" class="frame-label" fill="#fff">F1 150ms</text>
-      <text x="195" y="13" class="frame-label" fill="#fff">F2 90</text>
-      <text x="280" y="13" class="frame-label" fill="#fff">F3 80</text>
-      <text x="375" y="13" class="frame-label" fill="#fff">F4 110</text>
-      <text x="505" y="13" class="frame-label" fill="#fff">F5 150ms</text>
-      <text x="620" y="13" class="frame-label" fill="#fff">F6 80</text>
-      <text x="0" y="36" class="analogy-text" fill="#E74C3C">接触帧 150ms = 重音（accent）</text>
-      <text x="240" y="36" class="analogy-text">过渡帧 60-110ms = 连读（连音）</text>
-    </g>
-    <text x="14" y="118" class="analogy-text">→ 4 帧动画 [60,160,60,120]ms 比 12 帧全 80ms 的"匀速"打击感强得多——帧时长的变化 = 动画的灵魂。</text>
-    <text x="14" y="134" class="analogy-text">→ 步速 = 地速：脚步 1px/帧，地面平移也必须 1px/帧，否则"滑行感"（5.4 最小移动的直接应用）。</text>
-    <text x="14" y="150" class="analogy-text" fill="#999">像素角色 12×22 block（head 8×8 / body 8×12 / 四肢 4×n）——每帧重画，洋葱皮（5.3）保一致。</text>
-  </g>
 </svg>

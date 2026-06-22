@@ -390,6 +390,5 @@
   <text x="400" y="325" class="subtitle" text-anchor="middle">选择抖动模式的三条规则：</text>
   <text x="400" y="345" class="subtitle" text-anchor="middle">① 大面积均匀过渡 → 有序或Bayer　② 自然有机物表面 → 随机　③ 风格化需求 → 自定义图案</text>
 
-  <text x="400" y="380" class="subtitle" text-anchor="middle">程序员类比：Dithering = 图片压缩中的量化误差扩散。用 2-3 个色阶模拟 8 级过渡，就像用 256 色 GIF 模拟真彩色——</text>
-  <text x="400" y="396" class="subtitle" text-anchor="middle">原理都是"用离散值模拟连续信号"，只是画面上你要手动控制每个"采样点"的位置。</text>
+    <text x="400" y="396" class="subtitle" text-anchor="middle">原理都是"用离散值模拟连续信号"，只是画面上你要手动控制每个"采样点"的位置。</text>
 </svg>

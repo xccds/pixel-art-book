@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"
-     width="800" height="500"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 480"
+     width="800" height="480"
      font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <style>
     .label { font-size: 16px; fill: #333; }
@@ -21,21 +21,21 @@
   <text x="400" y="35" class="title" text-anchor="middle">三种阅读路径</text>
 
   <!-- Path 1: Fast (12 weeks) -->
-  <rect x="40" y="60" width="230" height="45" rx="6" class="path-fast"/>
+  <rect x="40" y="60" width="230" height="480" rx="6" class="path-fast"/>
   <text x="155" y="88" class="path-label">12 周速通版</text>
   <text x="155" y="125" class="path-desc">每周 8-10 小时，快速建立</text>
   <text x="155" y="143" class="path-desc">独立游戏视觉能力</text>
   <text x="155" y="168" class="path-desc" fill="#E74C3C">适合：有项目截止压力</text>
 
   <!-- Path 2: Balanced (24 weeks) -->
-  <rect x="285" y="60" width="230" height="45" rx="6" class="path-balanced"/>
+  <rect x="285" y="60" width="230" height="480" rx="6" class="path-balanced"/>
   <text x="400" y="88" class="path-label">24 周平衡版</text>
   <text x="400" y="125" class="path-desc">每周 4-6 小时，稳步构建</text>
   <text x="400" y="143" class="path-desc">扎实的审美与执行能力</text>
   <text x="400" y="168" class="path-desc" fill="#27AE60">适合：边学边做项目</text>
 
   <!-- Path 3: Skip -->
-  <rect x="530" y="60" width="230" height="45" rx="6" class="path-skip"/>
+  <rect x="530" y="60" width="230" height="480" rx="6" class="path-skip"/>
   <text x="645" y="88" class="path-label">按需跳读版</text>
   <text x="645" y="125" class="path-desc">先做自评量表，从匹配</text>
   <text x="645" y="143" class="path-desc">你当前能力的章节开始</text>
@@ -43,12 +43,12 @@
 
   <!-- Time bar: Fast -->
   <text x="155" y="210" class="label" text-anchor="middle" font-weight="bold">12 周速通节奏</text>
-  <rect x="30" y="225" width="250" height="20" rx="4" fill="#F5F5F5" stroke="#DDD"/>
-  <rect x="30" y="225" width="42" height="20" rx="4" fill="#E74C3C"/>
-  <rect x="72" y="225" width="84" height="20" rx="0" fill="#E74C3C" opacity="0.5"/>
-  <rect x="156" y="225" width="42" height="20" rx="0" fill="#F39C12" opacity="0.6"/>
-  <rect x="198" y="225" width="42" height="20" rx="0" fill="#E74C3C" opacity="0.7"/>
-  <rect x="240" y="225" width="40" height="20" rx="4" fill="#C0392B"/>
+  <rect x="30" y="225" width="250" height="480" rx="4" fill="#F5F5F5" stroke="#DDD"/>
+  <rect x="30" y="225" width="42" height="480" rx="4" fill="#E74C3C"/>
+  <rect x="72" y="225" width="84" height="480" rx="0" fill="#E74C3C" opacity="0.5"/>
+  <rect x="156" y="225" width="42" height="480" rx="0" fill="#F39C12" opacity="0.6"/>
+  <rect x="198" y="225" width="42" height="480" rx="0" fill="#E74C3C" opacity="0.7"/>
+  <rect x="240" y="225" width="40" height="480" rx="4" fill="#C0392B"/>
   <text x="155" y="238" font-size="10" fill="#FFF" text-anchor="middle">2 周</text>
   <text x="240" y="238" font-size="10" fill="#FFF" text-anchor="middle">4 周</text>
   <text x="198" y="238" font-size="10" fill="#333" text-anchor="middle">2 周</text>
@@ -57,11 +57,11 @@
 
   <!-- Time bar: Balanced -->
   <text x="400" y="210" class="label" text-anchor="middle" font-weight="bold">24 周平衡节奏</text>
-  <rect x="300" y="225" width="200" height="20" rx="4" fill="#F5F5F5" stroke="#DDD"/>
-  <rect x="300" y="225" width="50" height="20" rx="4" fill="#2ECC71"/>
-  <rect x="350" y="225" width="50" height="20" rx="0" fill="#27AE60" opacity="0.7"/>
-  <rect x="400" y="225" width="50" height="20" rx="0" fill="#2ECC71" opacity="0.5"/>
-  <rect x="450" y="225" width="50" height="20" rx="4" fill="#1ABC9C"/>
+  <rect x="300" y="225" width="200" height="480" rx="4" fill="#F5F5F5" stroke="#DDD"/>
+  <rect x="300" y="225" width="50" height="480" rx="4" fill="#2ECC71"/>
+  <rect x="350" y="225" width="50" height="480" rx="0" fill="#27AE60" opacity="0.7"/>
+  <rect x="400" y="225" width="50" height="480" rx="0" fill="#2ECC71" opacity="0.5"/>
+  <rect x="450" y="225" width="50" height="480" rx="4" fill="#1ABC9C"/>
   <text x="400" y="238" font-size="10" fill="#FFF" text-anchor="middle">12 周</text>
   <text x="400" y="260" class="caption" text-anchor="middle">前半学习 + 后半实战</text>
 
@@ -69,27 +69,27 @@
   <text x="400" y="300" class="label" text-anchor="middle" font-weight="bold">无论选哪条路径，核心阶段不变</text>
 
   <!-- Stage flow -->
-  <rect x="60" y="320" width="110" height="36" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
+  <rect x="60" y="320" width="110" height="480" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
   <text x="115" y="343" class="label" text-anchor="middle">自评→定位</text>
 
   <line x1="170" y1="338" x2="195" y2="338" stroke="#4A90D9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 
-  <rect x="200" y="320" width="110" height="36" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
+  <rect x="200" y="320" width="110" height="480" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
   <text x="255" y="343" class="label" text-anchor="middle">学习→练习</text>
 
   <line x1="310" y1="338" x2="335" y2="338" stroke="#4A90D9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 
-  <rect x="340" y="320" width="110" height="36" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
+  <rect x="340" y="320" width="110" height="480" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
   <text x="395" y="343" class="label" text-anchor="middle">实战→反馈</text>
 
   <line x1="450" y1="338" x2="475" y2="338" stroke="#4A90D9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 
-  <rect x="480" y="320" width="110" height="36" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
+  <rect x="480" y="320" width="110" height="480" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
   <text x="535" y="343" class="label" text-anchor="middle">迭代→持续</text>
 
   <line x1="590" y1="338" x2="615" y2="338" stroke="#4A90D9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 
-  <rect x="620" y="320" width="110" height="36" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
+  <rect x="620" y="320" width="110" height="480" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5"/>
   <text x="675" y="343" class="label" text-anchor="middle">发布</text>
 
   <!-- Bottom annotation -->

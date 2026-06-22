@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 488" width="800" height="488">
   <defs>
     <style>
       text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
@@ -13,7 +13,7 @@
       .box-note { font-size: 13px; fill: #555; }
     </style>
   </defs>
-  <rect width="800" height="500" fill="#FAFAFA"/>
+  <rect width="800" height="488" fill="#FAFAFA"/>
 
   <text x="400" y="36" text-anchor="middle" class="title">九级明度阶（9-Step Value Scale）</text>
   <text x="400" y="58" text-anchor="middle" class="subtitle">把 0–255 灰度量化成 9 个离散档位 · 像素画常用其中 4–6 级</text>
@@ -24,15 +24,15 @@
   <line x1="120" y1="86" x2="680" y2="86" stroke="#999" stroke-width="1" marker-end="url(#arrR)"/>
 
   <!-- 9 value rectangles: 1=white ... 9=black -->
-  <rect x="65"  y="105" width="70" height="165" fill="#FFFFFF" stroke="#CCC" stroke-width="1"/>
-  <rect x="140" y="105" width="70" height="165" fill="#E0E0E0" stroke="#CCC" stroke-width="1"/>
-  <rect x="215" y="105" width="70" height="165" fill="#C0C0C0" stroke="#CCC" stroke-width="1"/>
-  <rect x="290" y="105" width="70" height="165" fill="#A0A0A0" stroke="#CCC" stroke-width="1"/>
-  <rect x="365" y="105" width="70" height="165" fill="#808080" stroke="#CCC" stroke-width="1"/>
-  <rect x="440" y="105" width="70" height="165" fill="#606060" stroke="#CCC" stroke-width="1"/>
-  <rect x="515" y="105" width="70" height="165" fill="#404040" stroke="#CCC" stroke-width="1"/>
-  <rect x="590" y="105" width="70" height="165" fill="#202020" stroke="#CCC" stroke-width="1"/>
-  <rect x="665" y="105" width="70" height="165" fill="#000000" stroke="#CCC" stroke-width="1"/>
+  <rect x="65"  y="105" width="70" height="488" fill="#FFFFFF" stroke="#CCC" stroke-width="1"/>
+  <rect x="140" y="105" width="70" height="488" fill="#E0E0E0" stroke="#CCC" stroke-width="1"/>
+  <rect x="215" y="105" width="70" height="488" fill="#C0C0C0" stroke="#CCC" stroke-width="1"/>
+  <rect x="290" y="105" width="70" height="488" fill="#A0A0A0" stroke="#CCC" stroke-width="1"/>
+  <rect x="365" y="105" width="70" height="488" fill="#808080" stroke="#CCC" stroke-width="1"/>
+  <rect x="440" y="105" width="70" height="488" fill="#606060" stroke="#CCC" stroke-width="1"/>
+  <rect x="515" y="105" width="70" height="488" fill="#404040" stroke="#CCC" stroke-width="1"/>
+  <rect x="590" y="105" width="70" height="488" fill="#202020" stroke="#CCC" stroke-width="1"/>
+  <rect x="665" y="105" width="70" height="488" fill="#000000" stroke="#CCC" stroke-width="1"/>
 
   <!-- number labels (1-9) centered on each rect -->
   <text x="100" y="295" text-anchor="middle" class="num">1</text>
@@ -83,7 +83,7 @@
   <text x="662" y="352" text-anchor="middle" class="tier">闭塞</text>
 
   <!-- squint-test annotation -->
-  <rect x="40" y="372" width="720" height="108" rx="4" fill="#FFF8E1" stroke="#FFE082" stroke-width="1"/>
+  <rect x="40" y="372" width="720" height="488" rx="4" fill="#FFF8E1" stroke="#FFE082" stroke-width="1"/>
   <text x="60" y="397" class="box-title">眯眼测试（Squint Test）</text>
   <text x="60" y="422" class="box-note">眯起眼看上面这 9 级——它们会合并成 3–4 个大块。那几个大块就是你画面的明度骨架。</text>
   <text x="60" y="445" class="box-note">模糊后还立得住 = 明度结构扎实；模糊后塌成一坨 = 你在靠色相这种高频细节撑场面。</text>

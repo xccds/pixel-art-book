@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="492" viewBox="0.0 0.0 800.0 492" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <defs>
     <marker id="arrowFight" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <polygon points="0 0, 8 3, 0 6" fill="#E74C3C"/>
@@ -73,6 +73,6 @@
   <text x="236" y="146" text-anchor="middle" font-size="10" fill="#999">"画3张不同的树"</text>
 
   <!-- 底部注释 -->
-  <rect x="140" y="448" width="520" height="36" rx="6" fill="#E8F4FD" stroke="#ccc" stroke-width="1"/>
+  <rect x="140" y="448" width="520" height="492" rx="6" fill="#E8F4FD" stroke="#ccc" stroke-width="1"/>
   <text x="400" y="472" text-anchor="middle" font-size="12" fill="#333">💡 关键：每次循环聚焦一个技能点，完成后评估，调整难度，保持动机，进入下一轮</text>
 </svg>

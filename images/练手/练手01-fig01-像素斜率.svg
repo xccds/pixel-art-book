@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 486" width="800" height="486">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -30,7 +30,7 @@
     <text x="80" y="16" class="label-angle" text-anchor="middle">45° 对角线</text>
 
     <!-- grid background -->
-    <rect x="0" y="24" width="160" height="160" class="grid-bg" rx="2"/>
+    <rect x="0" y="24" width="160" height="486" class="grid-bg" rx="2"/>
 
     <!-- grid lines vert -->
     <line x1="20" y1="24" x2="20" y2="184" class="grid-line"/><line x1="40" y1="24" x2="40" y2="184" class="grid-line"/>
@@ -43,14 +43,14 @@
     <line x1="0" y1="164" x2="160" y2="164" class="grid-line"/>
 
     <!-- 1:1 filled cells: (0,0),(1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(7,7) -->
-    <rect x="0"  y="24" width="20" height="20" class="grid-fill-1-1"/>
-    <rect x="20" y="44" width="20" height="20" class="grid-fill-1-1"/>
-    <rect x="40" y="64" width="20" height="20" class="grid-fill-1-1"/>
-    <rect x="60" y="84" width="20" height="20" class="grid-fill-1-1"/>
-    <rect x="80" y="104" width="20" height="20" class="grid-fill-1-1"/>
-    <rect x="100" y="124" width="20" height="20" class="grid-fill-1-1"/>
-    <rect x="120" y="144" width="20" height="20" class="grid-fill-1-1"/>
-    <rect x="140" y="164" width="20" height="20" class="grid-fill-1-1"/>
+    <rect x="0"  y="24" width="20" height="486" class="grid-fill-1-1"/>
+    <rect x="20" y="44" width="20" height="486" class="grid-fill-1-1"/>
+    <rect x="40" y="64" width="20" height="486" class="grid-fill-1-1"/>
+    <rect x="60" y="84" width="20" height="486" class="grid-fill-1-1"/>
+    <rect x="80" y="104" width="20" height="486" class="grid-fill-1-1"/>
+    <rect x="100" y="124" width="20" height="486" class="grid-fill-1-1"/>
+    <rect x="120" y="144" width="20" height="486" class="grid-fill-1-1"/>
+    <rect x="140" y="164" width="20" height="486" class="grid-fill-1-1"/>
 
     <!-- step annotation: right 1, down 1 -->
     <line x1="20" y1="34" x2="40" y2="34" class="step-arrow"/>
@@ -67,7 +67,7 @@
     <text x="120" y="16" class="label-angle" text-anchor="middle">约 26.6° 浅角</text>
 
     <!-- grid background 12 cols x 8 rows -->
-    <rect x="0" y="24" width="240" height="160" class="grid-bg" rx="2"/>
+    <rect x="0" y="24" width="240" height="486" class="grid-bg" rx="2"/>
 
     <!-- grid lines vert -->
     <line x1="20"  y1="24" x2="20"  y2="184" class="grid-line"/><line x1="40"  y1="24" x2="40"  y2="184" class="grid-line"/>
@@ -83,12 +83,12 @@
     <line x1="0" y1="164" x2="240" y2="164" class="grid-line"/>
 
     <!-- 2:1 filled cells: 2 cells per row, 1 row down each step -->
-    <rect x="0"   y="24"  width="20" height="20" class="grid-fill-2-1"/><rect x="20"  y="24"  width="20" height="20" class="grid-fill-2-1"/>
-    <rect x="40"  y="44"  width="20" height="20" class="grid-fill-2-1"/><rect x="60"  y="44"  width="20" height="20" class="grid-fill-2-1"/>
-    <rect x="80"  y="64"  width="20" height="20" class="grid-fill-2-1"/><rect x="100" y="64"  width="20" height="20" class="grid-fill-2-1"/>
-    <rect x="120" y="84"  width="20" height="20" class="grid-fill-2-1"/><rect x="140" y="84"  width="20" height="20" class="grid-fill-2-1"/>
-    <rect x="160" y="104" width="20" height="20" class="grid-fill-2-1"/><rect x="180" y="104" width="20" height="20" class="grid-fill-2-1"/>
-    <rect x="200" y="124" width="20" height="20" class="grid-fill-2-1"/><rect x="220" y="124" width="20" height="20" class="grid-fill-2-1"/>
+    <rect x="0"   y="24"  width="20" height="486" class="grid-fill-2-1"/><rect x="20"  y="24"  width="20" height="486" class="grid-fill-2-1"/>
+    <rect x="40"  y="44"  width="20" height="486" class="grid-fill-2-1"/><rect x="60"  y="44"  width="20" height="486" class="grid-fill-2-1"/>
+    <rect x="80"  y="64"  width="20" height="486" class="grid-fill-2-1"/><rect x="100" y="64"  width="20" height="486" class="grid-fill-2-1"/>
+    <rect x="120" y="84"  width="20" height="486" class="grid-fill-2-1"/><rect x="140" y="84"  width="20" height="486" class="grid-fill-2-1"/>
+    <rect x="160" y="104" width="20" height="486" class="grid-fill-2-1"/><rect x="180" y="104" width="20" height="486" class="grid-fill-2-1"/>
+    <rect x="200" y="124" width="20" height="486" class="grid-fill-2-1"/><rect x="220" y="124" width="20" height="486" class="grid-fill-2-1"/>
 
     <!-- step annotation -->
     <line x1="20" y1="34" x2="40" y2="34" class="step-arrow"/>
@@ -104,7 +104,7 @@
     <text x="80" y="0" class="label-ratio" text-anchor="middle">斜率 1:0</text>
     <text x="80" y="16" class="label-angle" text-anchor="middle">0° 水平 / 90° 垂直</text>
 
-    <rect x="0" y="24" width="160" height="160" class="grid-bg" rx="2"/>
+    <rect x="0" y="24" width="160" height="486" class="grid-bg" rx="2"/>
 
     <!-- grid lines -->
     <line x1="20" y1="24" x2="20" y2="184" class="grid-line"/><line x1="40" y1="24" x2="40" y2="184" class="grid-line"/>
@@ -117,25 +117,25 @@
     <line x1="0" y1="164" x2="160" y2="164" class="grid-line"/>
 
     <!-- 1:0 horizontal line: row 4, all cols filled -->
-    <rect x="0"   y="104" width="20" height="20" class="grid-fill-1-0"/>
-    <rect x="20"  y="104" width="20" height="20" class="grid-fill-1-0"/>
-    <rect x="40"  y="104" width="20" height="20" class="grid-fill-1-0"/>
-    <rect x="60"  y="104" width="20" height="20" class="grid-fill-1-0"/>
-    <rect x="80"  y="104" width="20" height="20" class="grid-fill-1-0"/>
-    <rect x="100" y="104" width="20" height="20" class="grid-fill-1-0"/>
-    <rect x="120" y="104" width="20" height="20" class="grid-fill-1-0"/>
-    <rect x="140" y="104" width="20" height="20" class="grid-fill-1-0"/>
+    <rect x="0"   y="104" width="20" height="486" class="grid-fill-1-0"/>
+    <rect x="20"  y="104" width="20" height="486" class="grid-fill-1-0"/>
+    <rect x="40"  y="104" width="20" height="486" class="grid-fill-1-0"/>
+    <rect x="60"  y="104" width="20" height="486" class="grid-fill-1-0"/>
+    <rect x="80"  y="104" width="20" height="486" class="grid-fill-1-0"/>
+    <rect x="100" y="104" width="20" height="486" class="grid-fill-1-0"/>
+    <rect x="120" y="104" width="20" height="486" class="grid-fill-1-0"/>
+    <rect x="140" y="104" width="20" height="486" class="grid-fill-1-0"/>
 
     <!-- 1:0 vertical line: col 3, all rows filled (offset slightly for clarity) -->
     <!-- show as a line within the horizontal line context -->
-    <rect x="60" y="24"  width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
-    <rect x="60" y="44"  width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
-    <rect x="60" y="64"  width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
-    <rect x="60" y="84"  width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="24"  width="20" height="486" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="44"  width="20" height="486" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="64"  width="20" height="486" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="84"  width="20" height="486" class="grid-fill-1-0" opacity="0.5"/>
     <!-- horizontal continues at y=104 -->
-    <rect x="60" y="124" width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
-    <rect x="60" y="144" width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
-    <rect x="60" y="164" width="20" height="20" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="124" width="20" height="486" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="144" width="20" height="486" class="grid-fill-1-0" opacity="0.5"/>
+    <rect x="60" y="164" width="20" height="486" class="grid-fill-1-0" opacity="0.5"/>
 
     <!-- step annotation -->
     <line x1="130" y1="114" x2="145" y2="114" class="step-arrow"/>
@@ -148,9 +148,9 @@
 
   <!-- Grid legend -->
   <g transform="translate(40, 455)">
-    <rect x="0" y="0" width="12" height="12" fill="#2C3E50"/><text x="18" y="11" style="font-size:10px;fill:#666;">1:1 像素</text>
-    <rect x="90" y="0" width="12" height="12" fill="#3498DB"/><text x="108" y="11" style="font-size:10px;fill:#666;">2:1 像素</text>
-    <rect x="180" y="0" width="12" height="12" fill="#27AE60"/><text x="198" y="11" style="font-size:10px;fill:#666;">1:0 像素</text>
-    <rect x="270" y="0" width="12" height="12" fill="#fafafa" stroke="#ddd" stroke-width="0.5"/><text x="288" y="11" style="font-size:10px;fill:#666;">背景网格</text>
+    <rect x="0" y="0" width="12" height="486" fill="#2C3E50"/><text x="18" y="11" style="font-size:10px;fill:#666;">1:1 像素</text>
+    <rect x="90" y="0" width="12" height="486" fill="#3498DB"/><text x="108" y="11" style="font-size:10px;fill:#666;">2:1 像素</text>
+    <rect x="180" y="0" width="12" height="486" fill="#27AE60"/><text x="198" y="11" style="font-size:10px;fill:#666;">1:0 像素</text>
+    <rect x="270" y="0" width="12" height="486" fill="#fafafa" stroke="#ddd" stroke-width="0.5"/><text x="288" y="11" style="font-size:10px;fill:#666;">背景网格</text>
   </g>
 </svg>

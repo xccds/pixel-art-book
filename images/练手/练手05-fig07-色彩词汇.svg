@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 490" width="800" height="490">
   <defs>
     <style>
       text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
@@ -9,35 +9,35 @@
       .note { font-size: 12px; fill: #666; }
     </style>
   </defs>
-  <rect width="800" height="500" fill="#FAFAFA"/>
+  <rect width="800" height="490" fill="#FAFAFA"/>
 
   <text x="400" y="32" text-anchor="middle" class="title">色彩 = 功能词汇——Beast Breaker 案例</text>
   <text x="400" y="54" text-anchor="middle" class="subtitle">每个颜色在游戏中都是一个"单词"，有明确的语义——玩家不用阅读就能理解</text>
 
   <!-- Yellow vocabulary -->
-  <rect x="60" y="80" width="680" height="95" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <rect x="70" y="90" width="70" height="70" rx="6" fill="#F1C40F"/>
+  <rect x="60" y="80" width="680" height="490" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <rect x="70" y="90" width="70" height="490" rx="6" fill="#F1C40F"/>
   <text x="165" y="115" class="vocab-label" fill="#E67E22">黄色 = "安全" / "归属"</text>
   <text x="165" y="140" class="meaning">在 Beast Breaker 中，黄色标记安全区域、家园、可返回的营地。</text>
   <text x="165" y="160" class="note">设计逻辑：暖黄色是最温暖、最不具威胁性的颜色。玩家看到黄色 → 下意识放松。</text>
 
   <!-- White vocabulary -->
-  <rect x="60" y="190" width="680" height="95" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <rect x="70" y="200" width="70" height="70" rx="6" fill="#FFFFFF"/>
-  <rect x="70" y="200" width="70" height="70" rx="6" fill="#F8F8F8" stroke="#DDD" stroke-width="1"/>
+  <rect x="60" y="190" width="680" height="490" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <rect x="70" y="200" width="70" height="490" rx="6" fill="#FFFFFF"/>
+  <rect x="70" y="200" width="70" height="490" rx="6" fill="#F8F8F8" stroke="#DDD" stroke-width="1"/>
   <text x="165" y="225" class="vocab-label" fill="#999">白色 = "主角，与任何背景都好搭配"</text>
   <text x="165" y="250" class="meaning">主角小白鼠的身体是白色的——它能和所有背景形成对比，永远可读。</text>
   <text x="165" y="270" class="note">设计逻辑：白 = 最高明度 = 最高对比度 = 永远是最显眼的角色。</text>
 
   <!-- Magenta vocabulary -->
-  <rect x="60" y="300" width="680" height="95" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-  <rect x="70" y="310" width="70" height="70" rx="6" fill="#C2185B"/>
+  <rect x="60" y="300" width="680" height="490" rx="4" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <rect x="70" y="310" width="70" height="490" rx="6" fill="#C2185B"/>
   <text x="165" y="335" class="vocab-label" fill="#E74C3C">洋红色 = "腐败" / "危险" / "异类"</text>
   <text x="165" y="360" class="meaning">敌人和腐败区域的标志色是洋红色。玩家看到洋红 → 立刻警觉。</text>
   <text x="165" y="380" class="note">设计逻辑：洋红在自然界中极少见 → 自动标记为"不自然/危险"。</text>
 
   <!-- Summary -->
-  <rect x="60" y="410" width="680" height="65" rx="4" fill="#FFF3E0"/>
+  <rect x="60" y="410" width="680" height="490" rx="4" fill="#FFF3E0"/>
   <text x="400" y="432" text-anchor="middle" class="vocab-label" fill="#E67E22" font-size="16">建立你的色彩词汇表（Color Vocabulary）</text>
   <text x="400" y="452" text-anchor="middle" class="meaning">选3-5个核心色 → 给每个色赋予一个"功能词汇" → 在全游戏中坚持这个词汇表</text>
   <text x="400" y="470" text-anchor="middle" class="note">来源：Beast Breaker（Vodeo Games 2021）开发日志 · https://vodeogames.medium.com</text>

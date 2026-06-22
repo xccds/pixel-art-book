@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 220" width="800" height="220">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 15px; font-weight: bold; fill: #333; }
@@ -18,21 +18,21 @@
 
   <!-- ===== 1. SIDE VIEW ===== -->
   <g transform="translate(20, 55)">
-    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <rect x="0" y="0" width="140" height="220" class="panel-bg" rx="3"/>
     <text x="70" y="20" class="panel-label" text-anchor="middle">侧视 Side View</text>
     <text x="70" y="34" class="panel-sub" text-anchor="middle">平台跳跃标配</text>
     <!-- Just a flat square (front face only) -->
-    <rect x="40" y="60" width="60" height="60" class="face-flat"/>
+    <rect x="40" y="60" width="60" height="220" class="face-flat"/>
     <text x="70" y="145" class="panel-sub" text-anchor="middle">一维移动 · 2方向动画</text>
   </g>
 
   <!-- ===== 2. TOP-DOWN ===== -->
   <g transform="translate(175, 55)">
-    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <rect x="0" y="0" width="140" height="220" class="panel-bg" rx="3"/>
     <text x="70" y="20" class="panel-label" text-anchor="middle">俯视 Top-Down</text>
     <text x="70" y="34" class="panel-sub" text-anchor="middle">RPG/动作标配</text>
     <!-- A square seen from above -->
-    <rect x="40" y="60" width="60" height="60" class="face-flat"/>
+    <rect x="40" y="60" width="60" height="220" class="face-flat"/>
     <!-- Grid lines to indicate tile -->
     <line x1="55" y1="60" x2="55" y2="120" stroke="#2C3E50" stroke-width="0.5" opacity="0.4"/>
     <line x1="70" y1="60" x2="70" y2="120" stroke="#2C3E50" stroke-width="0.5" opacity="0.4"/>
@@ -45,7 +45,7 @@
 
   <!-- ===== 3. ISOMETRIC ===== -->
   <g transform="translate(330, 55)">
-    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <rect x="0" y="0" width="140" height="220" class="panel-bg" rx="3"/>
     <text x="70" y="20" class="panel-label" text-anchor="middle">等距 Isometric</text>
     <text x="70" y="34" class="panel-sub" text-anchor="middle">策略/模拟标配</text>
     <!-- Iso cube: top diamond + left + right, using 2:1 ratio -->
@@ -58,7 +58,7 @@
 
   <!-- ===== 4. DIMETRIC ===== -->
   <g transform="translate(485, 55)">
-    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <rect x="0" y="0" width="140" height="220" class="panel-bg" rx="3"/>
     <text x="70" y="20" class="panel-label" text-anchor="middle">45°二测 Dimetric</text>
     <text x="70" y="34" class="panel-sub" text-anchor="middle">高大建筑场景</text>
     <!-- Dimetric cube: top is wider/flatter, vertical edges shorter -->
@@ -70,12 +70,12 @@
 
   <!-- ===== 5. OBLIQUE ===== -->
   <g transform="translate(640, 55)">
-    <rect x="0" y="0" width="140" height="160" class="panel-bg" rx="3"/>
+    <rect x="0" y="0" width="140" height="220" class="panel-bg" rx="3"/>
     <text x="70" y="20" class="panel-label" text-anchor="middle">斜视 Oblique</text>
     <text x="70" y="34" class="panel-sub" text-anchor="middle">建筑内部/正面</text>
     <!-- Oblique: front face square, depth lines going back at 45° -->
     <polygon points="50,75 80,75 95,60 65,60" class="face-top"/>
-    <rect x="50" y="75" width="30" height="35" class="face-front"/>
+    <rect x="50" y="75" width="30" height="220" class="face-front"/>
     <polygon points="80,75 95,60 95,95 80,110" class="face-side"/>
     <text x="70" y="145" class="panel-sub" text-anchor="middle">正面平 · 侧面斜</text>
   </g>

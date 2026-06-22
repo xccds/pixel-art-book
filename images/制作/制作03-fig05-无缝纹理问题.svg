@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 482" width="800" height="482">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 15px; font-weight: bold; fill: #333; }
@@ -20,54 +20,54 @@
 
   <!-- ============ LEFT: seam visible (fail) ============ -->
   <g transform="translate(20, 56)">
-    <rect x="0" y="0" width="240" height="34" fill="#C0392B" rx="6"/>
-    <rect x="0" y="17" width="240" height="17" fill="#C0392B"/>
+    <rect x="0" y="0" width="240" height="482" fill="#C0392B" rx="6"/>
+    <rect x="0" y="17" width="240" height="482" fill="#C0392B"/>
     <text x="120" y="15" class="col-header">失败 ①：接缝线可见</text>
     <text x="120" y="29" class="col-sub">边界像素不连续</text>
 
     <!-- 2x2 tile grid showing seam -->
     <g transform="translate(20, 48)">
       <!-- 4 tiles, each 90x90 -->
-      <rect x="0" y="0" width="90" height="90" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
-      <rect x="90" y="0" width="90" height="90" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
-      <rect x="0" y="90" width="90" height="90" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
-      <rect x="90" y="90" width="90" height="90" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
+      <rect x="0" y="0" width="90" height="482" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
+      <rect x="90" y="0" width="90" height="482" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
+      <rect x="0" y="90" width="90" height="482" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
+      <rect x="90" y="90" width="90" height="482" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
 
       <!-- Random grass pixels but edges don't match -->
       <!-- tile top-left -->
-      <rect x="10" y="12" width="3" height="6" fill="#27AE60"/>
-      <rect x="25" y="20" width="2" height="5" fill="#1E8449"/>
-      <rect x="40" y="8" width="3" height="7" fill="#27AE60"/>
-      <rect x="60" y="30" width="2" height="5" fill="#1E8449"/>
-      <rect x="75" y="15" width="3" height="6" fill="#27AE60"/>
-      <rect x="15" y="50" width="2" height="5" fill="#1E8449"/>
-      <rect x="55" y="60" width="3" height="6" fill="#27AE60"/>
+      <rect x="10" y="12" width="3" height="482" fill="#27AE60"/>
+      <rect x="25" y="20" width="2" height="482" fill="#1E8449"/>
+      <rect x="40" y="8" width="3" height="482" fill="#27AE60"/>
+      <rect x="60" y="30" width="2" height="482" fill="#1E8449"/>
+      <rect x="75" y="15" width="3" height="482" fill="#27AE60"/>
+      <rect x="15" y="50" width="2" height="482" fill="#1E8449"/>
+      <rect x="55" y="60" width="3" height="482" fill="#27AE60"/>
       <!-- right edge has a dark pixel that doesn't continue -->
-      <rect x="86" y="40" width="4" height="8" fill="#145A20"/>
-      <rect x="70" y="75" width="3" height="6" fill="#27AE60"/>
+      <rect x="86" y="40" width="4" height="482" fill="#145A20"/>
+      <rect x="70" y="75" width="3" height="482" fill="#27AE60"/>
 
       <!-- tile top-right: left edge has no matching dark pixel -->
-      <rect x="105" y="18" width="3" height="6" fill="#27AE60"/>
-      <rect x="125" y="10" width="2" height="5" fill="#1E8449"/>
-      <rect x="145" y="25" width="3" height="7" fill="#27AE60"/>
-      <rect x="165" y="40" width="2" height="5" fill="#1E8449"/>
-      <rect x="110" y="55" width="3" height="6" fill="#27AE60"/>
-      <rect x="150" y="65" width="2" height="5" fill="#1E8449"/>
+      <rect x="105" y="18" width="3" height="482" fill="#27AE60"/>
+      <rect x="125" y="10" width="2" height="482" fill="#1E8449"/>
+      <rect x="145" y="25" width="3" height="482" fill="#27AE60"/>
+      <rect x="165" y="40" width="2" height="482" fill="#1E8449"/>
+      <rect x="110" y="55" width="3" height="482" fill="#27AE60"/>
+      <rect x="150" y="65" width="2" height="482" fill="#1E8449"/>
 
       <!-- tile bottom-left -->
-      <rect x="10" y="105" width="3" height="6" fill="#27AE60"/>
-      <rect x="30" y="120" width="2" height="5" fill="#1E8449"/>
-      <rect x="50" y="110" width="3" height="7" fill="#27AE60"/>
-      <rect x="70" y="135" width="2" height="5" fill="#1E8449"/>
+      <rect x="10" y="105" width="3" height="482" fill="#27AE60"/>
+      <rect x="30" y="120" width="2" height="482" fill="#1E8449"/>
+      <rect x="50" y="110" width="3" height="482" fill="#27AE60"/>
+      <rect x="70" y="135" width="2" height="482" fill="#1E8449"/>
       <!-- top edge has bright pixel that doesn't match tile above's bottom -->
-      <rect x="35" y="92" width="4" height="6" fill="#F4D03F"/>
-      <rect x="15" y="150" width="3" height="6" fill="#27AE60"/>
+      <rect x="35" y="92" width="4" height="482" fill="#F4D03F"/>
+      <rect x="15" y="150" width="3" height="482" fill="#27AE60"/>
 
       <!-- tile bottom-right -->
-      <rect x="105" y="108" width="3" height="6" fill="#27AE60"/>
-      <rect x="130" y="125" width="2" height="5" fill="#1E8449"/>
-      <rect x="155" y="115" width="3" height="7" fill="#27AE60"/>
-      <rect x="170" y="140" width="2" height="5" fill="#1E8449"/>
+      <rect x="105" y="108" width="3" height="482" fill="#27AE60"/>
+      <rect x="130" y="125" width="2" height="482" fill="#1E8449"/>
+      <rect x="155" y="115" width="3" height="482" fill="#27AE60"/>
+      <rect x="170" y="140" width="2" height="482" fill="#1E8449"/>
 
       <!-- Highlight the visible seams -->
       <line x1="90" y1="0" x2="90" y2="180" stroke="#E74C3C" stroke-width="2" opacity="0.7"/>
@@ -79,7 +79,7 @@
 
     <!-- Diagnosis -->
     <g transform="translate(15, 282)">
-      <rect x="0" y="0" width="210" height="56" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.8" rx="4"/>
+      <rect x="0" y="0" width="210" height="482" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.8" rx="4"/>
       <text x="10" y="16" class="fail-label">原因：</text>
       <text x="10" y="30" class="meta-text">tile 右边的暗像素 #145A20</text>
       <text x="10" y="42" class="meta-text">没有在下一个 tile 左边延续</text>
@@ -88,7 +88,7 @@
 
     <!-- Analogy -->
     <g transform="translate(15, 348)">
-      <rect x="0" y="0" width="210" height="68" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.8" rx="4"/>
+      <rect x="0" y="0" width="210" height="482" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.8" rx="4"/>
       <text x="10" y="16" class="analogy-title">修复：</text>
       <text x="10" y="30" class="analogy-text">开 Wrap-around Mode</text>
       <text x="10" y="42" class="analogy-text">（Aseprite Tile Mode / Krita W）</text>
@@ -99,8 +99,8 @@
 
   <!-- ============ MIDDLE: internal gradient -> stripes (fail) ============ -->
   <g transform="translate(280, 56)">
-    <rect x="0" y="0" width="240" height="34" fill="#E67E22" rx="6"/>
-    <rect x="0" y="17" width="240" height="17" fill="#E67E22"/>
+    <rect x="0" y="0" width="240" height="482" fill="#E67E22" rx="6"/>
+    <rect x="0" y="17" width="240" height="482" fill="#E67E22"/>
     <text x="120" y="15" class="col-header">失败 ②：重复后变条纹</text>
     <text x="120" y="29" class="col-sub">tile 内部有方向性渐变</text>
 
@@ -113,10 +113,10 @@
           <stop offset="100%" stop-color="#ABEBC6"/>
         </linearGradient>
       </defs>
-      <rect x="0" y="0" width="90" height="90" fill="url(#gradStripe)" stroke="#999" stroke-width="0.5"/>
-      <rect x="90" y="0" width="90" height="90" fill="url(#gradStripe)" stroke="#999" stroke-width="0.5"/>
-      <rect x="0" y="90" width="90" height="90" fill="url(#gradStripe)" stroke="#999" stroke-width="0.5"/>
-      <rect x="90" y="90" width="90" height="90" fill="url(#gradStripe)" stroke="#999" stroke-width="0.5"/>
+      <rect x="0" y="0" width="90" height="482" fill="url(#gradStripe)" stroke="#999" stroke-width="0.5"/>
+      <rect x="90" y="0" width="90" height="482" fill="url(#gradStripe)" stroke="#999" stroke-width="0.5"/>
+      <rect x="0" y="90" width="90" height="482" fill="url(#gradStripe)" stroke="#999" stroke-width="0.5"/>
+      <rect x="90" y="90" width="90" height="482" fill="url(#gradStripe)" stroke="#999" stroke-width="0.5"/>
 
       <!-- Show the resulting stripes pattern: alternating dark-bright-dark-bright horizontally -->
       <!-- Vertical bands where dark meets bright and bright meets dark -->
@@ -130,7 +130,7 @@
 
     <!-- Diagnosis -->
     <g transform="translate(15, 282)">
-      <rect x="0" y="0" width="210" height="56" fill="#FEF9E7" stroke="#E67E22" stroke-width="0.8" rx="4"/>
+      <rect x="0" y="0" width="210" height="482" fill="#FEF9E7" stroke="#E67E22" stroke-width="0.8" rx="4"/>
       <text x="10" y="16" class="fail-label" fill="#E67E22">原因：</text>
       <text x="10" y="30" class="meta-text">tile 内左→右渐变（左暗右亮）</text>
       <text x="10" y="42" class="meta-text">相邻 tile 的"左暗"紧挨"右亮"</text>
@@ -139,7 +139,7 @@
 
     <!-- Fix -->
     <g transform="translate(15, 348)">
-      <rect x="0" y="0" width="210" height="68" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.8" rx="4"/>
+      <rect x="0" y="0" width="210" height="482" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.8" rx="4"/>
       <text x="10" y="16" class="analogy-title">修复：</text>
       <text x="10" y="30" class="analogy-text">让明度中心回到几何中心</text>
       <text x="10" y="42" class="analogy-text">检查 tile 四边平均明度一致</text>
@@ -150,86 +150,86 @@
 
   <!-- ============ RIGHT: success (seamless) ============ -->
   <g transform="translate(540, 56)">
-    <rect x="0" y="0" width="240" height="34" fill="#27AE60" rx="6"/>
-    <rect x="0" y="17" width="240" height="17" fill="#27AE60"/>
+    <rect x="0" y="0" width="240" height="482" fill="#27AE60" rx="6"/>
+    <rect x="0" y="17" width="240" height="482" fill="#27AE60"/>
     <text x="120" y="15" class="col-header">成功：真正无缝</text>
     <text x="120" y="29" class="col-sub">均匀分布 · 无焦点 · 无方向渐变</text>
 
     <!-- 2x2 tile grid: seamless -->
     <g transform="translate(20, 48)">
-      <rect x="0" y="0" width="90" height="90" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
-      <rect x="90" y="0" width="90" height="90" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
-      <rect x="0" y="90" width="90" height="90" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
-      <rect x="90" y="90" width="90" height="90" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
+      <rect x="0" y="0" width="90" height="482" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
+      <rect x="90" y="0" width="90" height="482" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
+      <rect x="0" y="90" width="90" height="482" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
+      <rect x="90" y="90" width="90" height="482" fill="#A9DFBF" stroke="#999" stroke-width="0.5"/>
 
       <!-- Uniform random grass pixels, density balanced, no focal point, edges continuous -->
       <!-- Distribute pixels symmetrically so edges match -->
-      <rect x="8" y="10" width="2" height="5" fill="#27AE60"/>
-      <rect x="22" y="18" width="2" height="5" fill="#1E8449"/>
-      <rect x="40" y="12" width="2" height="6" fill="#27AE60"/>
-      <rect x="58" y="22" width="2" height="5" fill="#1E8449"/>
-      <rect x="72" y="14" width="2" height="6" fill="#27AE60"/>
-      <rect x="12" y="35" width="2" height="5" fill="#1E8449"/>
-      <rect x="35" y="40" width="2" height="6" fill="#27AE60"/>
-      <rect x="55" y="38" width="2" height="5" fill="#1E8449"/>
-      <rect x="68" y="45" width="2" height="6" fill="#27AE60"/>
-      <rect x="20" y="58" width="2" height="5" fill="#27AE60"/>
-      <rect x="45" y="62" width="2" height="6" fill="#1E8449"/>
-      <rect x="65" y="68" width="2" height="5" fill="#27AE60"/>
-      <rect x="15" y="75" width="2" height="6" fill="#1E8449"/>
-      <rect x="38" y="78" width="2" height="5" fill="#27AE60"/>
-      <rect x="60" y="80" width="2" height="6" fill="#1E8449"/>
+      <rect x="8" y="10" width="2" height="482" fill="#27AE60"/>
+      <rect x="22" y="18" width="2" height="482" fill="#1E8449"/>
+      <rect x="40" y="12" width="2" height="482" fill="#27AE60"/>
+      <rect x="58" y="22" width="2" height="482" fill="#1E8449"/>
+      <rect x="72" y="14" width="2" height="482" fill="#27AE60"/>
+      <rect x="12" y="35" width="2" height="482" fill="#1E8449"/>
+      <rect x="35" y="40" width="2" height="482" fill="#27AE60"/>
+      <rect x="55" y="38" width="2" height="482" fill="#1E8449"/>
+      <rect x="68" y="45" width="2" height="482" fill="#27AE60"/>
+      <rect x="20" y="58" width="2" height="482" fill="#27AE60"/>
+      <rect x="45" y="62" width="2" height="482" fill="#1E8449"/>
+      <rect x="65" y="68" width="2" height="482" fill="#27AE60"/>
+      <rect x="15" y="75" width="2" height="482" fill="#1E8449"/>
+      <rect x="38" y="78" width="2" height="482" fill="#27AE60"/>
+      <rect x="60" y="80" width="2" height="482" fill="#1E8449"/>
 
       <!-- tile top-right: mirror distribution so left edge matches -->
-      <rect x="98" y="10" width="2" height="5" fill="#27AE60"/>
-      <rect x="112" y="18" width="2" height="5" fill="#1E8449"/>
-      <rect x="130" y="12" width="2" height="6" fill="#27AE60"/>
-      <rect x="148" y="22" width="2" height="5" fill="#1E8449"/>
-      <rect x="162" y="14" width="2" height="6" fill="#27AE60"/>
-      <rect x="102" y="35" width="2" height="5" fill="#1E8449"/>
-      <rect x="125" y="40" width="2" height="6" fill="#27AE60"/>
-      <rect x="145" y="38" width="2" height="5" fill="#1E8449"/>
-      <rect x="158" y="45" width="2" height="6" fill="#27AE60"/>
-      <rect x="110" y="58" width="2" height="5" fill="#27AE60"/>
-      <rect x="135" y="62" width="2" height="6" fill="#1E8449"/>
-      <rect x="155" y="68" width="2" height="5" fill="#27AE60"/>
-      <rect x="105" y="75" width="2" height="6" fill="#1E8449"/>
-      <rect x="128" y="78" width="2" height="5" fill="#27AE60"/>
-      <rect x="150" y="80" width="2" height="6" fill="#1E8449"/>
+      <rect x="98" y="10" width="2" height="482" fill="#27AE60"/>
+      <rect x="112" y="18" width="2" height="482" fill="#1E8449"/>
+      <rect x="130" y="12" width="2" height="482" fill="#27AE60"/>
+      <rect x="148" y="22" width="2" height="482" fill="#1E8449"/>
+      <rect x="162" y="14" width="2" height="482" fill="#27AE60"/>
+      <rect x="102" y="35" width="2" height="482" fill="#1E8449"/>
+      <rect x="125" y="40" width="2" height="482" fill="#27AE60"/>
+      <rect x="145" y="38" width="2" height="482" fill="#1E8449"/>
+      <rect x="158" y="45" width="2" height="482" fill="#27AE60"/>
+      <rect x="110" y="58" width="2" height="482" fill="#27AE60"/>
+      <rect x="135" y="62" width="2" height="482" fill="#1E8449"/>
+      <rect x="155" y="68" width="2" height="482" fill="#27AE60"/>
+      <rect x="105" y="75" width="2" height="482" fill="#1E8449"/>
+      <rect x="128" y="78" width="2" height="482" fill="#27AE60"/>
+      <rect x="150" y="80" width="2" height="482" fill="#1E8449"/>
 
       <!-- tile bottom-left: top edge continues from above bottom -->
-      <rect x="8" y="100" width="2" height="5" fill="#27AE60"/>
-      <rect x="22" y="108" width="2" height="5" fill="#1E8449"/>
-      <rect x="40" y="102" width="2" height="6" fill="#27AE60"/>
-      <rect x="58" y="112" width="2" height="5" fill="#1E8449"/>
-      <rect x="72" y="104" width="2" height="6" fill="#27AE60"/>
-      <rect x="12" y="125" width="2" height="5" fill="#1E8449"/>
-      <rect x="35" y="130" width="2" height="6" fill="#27AE60"/>
-      <rect x="55" y="128" width="2" height="5" fill="#1E8449"/>
-      <rect x="68" y="135" width="2" height="6" fill="#27AE60"/>
-      <rect x="20" y="148" width="2" height="5" fill="#27AE60"/>
-      <rect x="45" y="152" width="2" height="6" fill="#1E8449"/>
-      <rect x="65" y="158" width="2" height="5" fill="#27AE60"/>
-      <rect x="15" y="165" width="2" height="6" fill="#1E8449"/>
-      <rect x="38" y="168" width="2" height="5" fill="#27AE60"/>
-      <rect x="60" y="170" width="2" height="6" fill="#1E8449"/>
+      <rect x="8" y="100" width="2" height="482" fill="#27AE60"/>
+      <rect x="22" y="108" width="2" height="482" fill="#1E8449"/>
+      <rect x="40" y="102" width="2" height="482" fill="#27AE60"/>
+      <rect x="58" y="112" width="2" height="482" fill="#1E8449"/>
+      <rect x="72" y="104" width="2" height="482" fill="#27AE60"/>
+      <rect x="12" y="125" width="2" height="482" fill="#1E8449"/>
+      <rect x="35" y="130" width="2" height="482" fill="#27AE60"/>
+      <rect x="55" y="128" width="2" height="482" fill="#1E8449"/>
+      <rect x="68" y="135" width="2" height="482" fill="#27AE60"/>
+      <rect x="20" y="148" width="2" height="482" fill="#27AE60"/>
+      <rect x="45" y="152" width="2" height="482" fill="#1E8449"/>
+      <rect x="65" y="158" width="2" height="482" fill="#27AE60"/>
+      <rect x="15" y="165" width="2" height="482" fill="#1E8449"/>
+      <rect x="38" y="168" width="2" height="482" fill="#27AE60"/>
+      <rect x="60" y="170" width="2" height="482" fill="#1E8449"/>
 
       <!-- tile bottom-right -->
-      <rect x="98" y="100" width="2" height="5" fill="#27AE60"/>
-      <rect x="112" y="108" width="2" height="5" fill="#1E8449"/>
-      <rect x="130" y="102" width="2" height="6" fill="#27AE60"/>
-      <rect x="148" y="112" width="2" height="5" fill="#1E8449"/>
-      <rect x="162" y="104" width="2" height="6" fill="#27AE60"/>
-      <rect x="102" y="125" width="2" height="5" fill="#1E8449"/>
-      <rect x="125" y="130" width="2" height="6" fill="#27AE60"/>
-      <rect x="145" y="128" width="2" height="5" fill="#1E8449"/>
-      <rect x="158" y="135" width="2" height="6" fill="#27AE60"/>
-      <rect x="110" y="148" width="2" height="5" fill="#27AE60"/>
-      <rect x="135" y="152" width="2" height="6" fill="#1E8449"/>
-      <rect x="155" y="158" width="2" height="5" fill="#27AE60"/>
-      <rect x="105" y="165" width="2" height="6" fill="#1E8449"/>
-      <rect x="128" y="168" width="2" height="5" fill="#27AE60"/>
-      <rect x="150" y="170" width="2" height="6" fill="#1E8449"/>
+      <rect x="98" y="100" width="2" height="482" fill="#27AE60"/>
+      <rect x="112" y="108" width="2" height="482" fill="#1E8449"/>
+      <rect x="130" y="102" width="2" height="482" fill="#27AE60"/>
+      <rect x="148" y="112" width="2" height="482" fill="#1E8449"/>
+      <rect x="162" y="104" width="2" height="482" fill="#27AE60"/>
+      <rect x="102" y="125" width="2" height="482" fill="#1E8449"/>
+      <rect x="125" y="130" width="2" height="482" fill="#27AE60"/>
+      <rect x="145" y="128" width="2" height="482" fill="#1E8449"/>
+      <rect x="158" y="135" width="2" height="482" fill="#27AE60"/>
+      <rect x="110" y="148" width="2" height="482" fill="#27AE60"/>
+      <rect x="135" y="152" width="2" height="482" fill="#1E8449"/>
+      <rect x="155" y="158" width="2" height="482" fill="#27AE60"/>
+      <rect x="105" y="165" width="2" height="482" fill="#1E8449"/>
+      <rect x="128" y="168" width="2" height="482" fill="#27AE60"/>
+      <rect x="150" y="170" width="2" height="482" fill="#1E8449"/>
 
       <!-- No seam lines highlighted - green checkmark instead -->
       <circle cx="90" cy="90" r="20" fill="none" stroke="#27AE60" stroke-width="2" opacity="0.6"/>
@@ -240,7 +240,7 @@
 
     <!-- Success criteria -->
     <g transform="translate(15, 282)">
-      <rect x="0" y="0" width="210" height="56" fill="#E8F8F0" stroke="#27AE60" stroke-width="0.8" rx="4"/>
+      <rect x="0" y="0" width="210" height="482" fill="#E8F8F0" stroke="#27AE60" stroke-width="0.8" rx="4"/>
       <text x="10" y="16" class="pass-label">为什么成功：</text>
       <text x="10" y="30" class="meta-text">· 像素均匀分布（无焦点）</text>
       <text x="10" y="42" class="meta-text">· 无方向性渐变</text>
@@ -249,7 +249,7 @@
 
     <!-- Analogy -->
     <g transform="translate(15, 348)">
-      <rect x="0" y="0" width="210" height="68" fill="#E8F8F0" stroke="#A8D8F0" stroke-width="0.8" rx="4"/>
+      <rect x="0" y="0" width="210" height="482" fill="#E8F8F0" stroke="#A8D8F0" stroke-width="0.8" rx="4"/>
       <text x="10" y="16" class="analogy-title">数学本质：</text>
       <text x="10" y="30" class="analogy-text">无缝 = 周期边界条件</text>
       <text x="10" y="42" class="analogy-text">tile 四边粘成 torus（环面）</text>
@@ -260,7 +260,7 @@
 
   <!-- Bottom note -->
   <g transform="translate(20, 432)">
-    <rect x="0" y="0" width="760" height="38" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.8" rx="4"/>
+    <rect x="0" y="0" width="760" height="482" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="0.8" rx="4"/>
     <text x="380" y="16" style="font-size:9px; fill:#333; text-anchor:middle; font-weight:bold;">环境 tile 对比度应低于角色精灵——背景不抢角色注意力（3.1 中景规则）</text>
     <text x="380" y="30" style="font-size:8px; fill:#666; text-anchor:middle;">检验工具：Aseprite Tile Mode / Krita W 键 = 周期边界检查器 · 4×4 重复眯眼检验 = 练手06 四步法 Step 3</text>
   </g>

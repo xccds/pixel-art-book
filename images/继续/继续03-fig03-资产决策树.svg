@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 496" width="800" height="496" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <!-- 标题 -->
   <text x="400" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">资产决策树</text>
   <text x="400" y="52" text-anchor="middle" font-size="12" fill="#666">Asset Decision Tree — 外包 / 买素材 / 自己做</text>
 
   <!-- 根节点 -->
-  <rect x="250" y="72" width="300" height="36" rx="6" fill="#E74C3C"/>
+  <rect x="250" y="72" width="300" height="496" rx="6" fill="#E74C3C"/>
   <text x="400" y="95" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">这个资产对成品体验有多重要？</text>
 
   <!-- 分岔线 -->
@@ -16,101 +16,101 @@
 
   <!-- 第一层：三个分支 -->
   <!-- 左：核心（自己做） -->
-  <rect x="65" y="144" width="190" height="32" rx="5" fill="#C0392B"/>
+  <rect x="65" y="144" width="190" height="496" rx="5" fill="#C0392B"/>
   <text x="160" y="165" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">核心资产（玩家天天看）</text>
   <line x1="160" y1="176" x2="160" y2="192" stroke="#333" stroke-width="1.5"/>
 
   <!-- 中：重要但不核心 -->
-  <rect x="310" y="144" width="180" height="32" rx="5" fill="#E74C3C" opacity="0.8"/>
+  <rect x="310" y="144" width="180" height="496" rx="5" fill="#E74C3C" opacity="0.8"/>
   <text x="400" y="165" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">重要但非核心</text>
   <line x1="400" y1="176" x2="400" y2="192" stroke="#333" stroke-width="1.5"/>
 
   <!-- 右：非核心 -->
-  <rect x="545" y="144" width="190" height="32" rx="5" fill="#E67E22"/>
+  <rect x="545" y="144" width="190" height="496" rx="5" fill="#E67E22"/>
   <text x="640" y="165" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">非核心/一次性</text>
   <line x1="640" y1="176" x2="640" y2="192" stroke="#333" stroke-width="1.5"/>
 
   <!-- 左支继续 -->
   <!-- 技能够吗？ -->
-  <rect x="65" y="192" width="190" height="30" rx="5" fill="#E8F4FD" stroke="#333" stroke-width="1"/>
+  <rect x="65" y="192" width="190" height="496" rx="5" fill="#E8F4FD" stroke="#333" stroke-width="1"/>
   <text x="160" y="212" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">你的技能够吗？</text>
   <line x1="120" y1="222" x2="120" y2="236" stroke="#333" stroke-width="1"/>
   <line x1="200" y1="222" x2="200" y2="236" stroke="#333" stroke-width="1"/>
 
-  <rect x="30" y="236" width="140" height="28" rx="4" fill="#2ECC71"/>
+  <rect x="30" y="236" width="140" height="496" rx="4" fill="#2ECC71"/>
   <text x="100" y="254" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">够 → 自己做 反复迭代</text>
 
-  <rect x="180" y="236" width="140" height="28" rx="4" fill="#E74C3C"/>
+  <rect x="180" y="236" width="140" height="496" rx="4" fill="#E74C3C"/>
   <text x="250" y="254" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">不够 → 找合伙美术</text>
 
   <!-- 中支继续 -->
-  <rect x="310" y="192" width="180" height="30" rx="5" fill="#E8F4FD" stroke="#333" stroke-width="1"/>
+  <rect x="310" y="192" width="180" height="496" rx="5" fill="#E8F4FD" stroke="#333" stroke-width="1"/>
   <text x="400" y="212" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">时间充裕吗？</text>
   <line x1="365" y1="222" x2="365" y2="236" stroke="#333" stroke-width="1"/>
   <line x1="435" y1="222" x2="435" y2="236" stroke="#333" stroke-width="1"/>
 
-  <rect x="290" y="236" width="125" height="28" rx="4" fill="#2ECC71"/>
+  <rect x="290" y="236" width="125" height="496" rx="4" fill="#2ECC71"/>
   <text x="352" y="254" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">充裕 → 自己做</text>
 
-  <rect x="425" y="236" width="125" height="28" rx="4" fill="#E74C3C"/>
+  <rect x="425" y="236" width="125" height="496" rx="4" fill="#E74C3C"/>
   <text x="487" y="254" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">不够 → 买素材包</text>
 
   <!-- 右支继续 -->
-  <rect x="545" y="192" width="190" height="30" rx="5" fill="#E8F4FD" stroke="#333" stroke-width="1"/>
+  <rect x="545" y="192" width="190" height="496" rx="5" fill="#E8F4FD" stroke="#333" stroke-width="1"/>
   <text x="640" y="212" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">有现成素材可用吗？</text>
   <line x1="605" y1="222" x2="605" y2="236" stroke="#333" stroke-width="1"/>
   <line x1="675" y1="222" x2="675" y2="236" stroke="#333" stroke-width="1"/>
 
-  <rect x="530" y="236" width="125" height="28" rx="4" fill="#2ECC71"/>
+  <rect x="530" y="236" width="125" height="496" rx="4" fill="#2ECC71"/>
   <text x="592" y="254" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">有 → 买/用免费</text>
 
-  <rect x="665" y="236" width="125" height="28" rx="4" fill="#999"/>
+  <rect x="665" y="236" width="125" height="496" rx="4" fill="#999"/>
   <text x="727" y="254" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">无 → 可跳过</text>
 
   <!-- 三条路径最终标注 -->
   <!-- 左 -->
   <line x1="100" y1="264" x2="100" y2="310" stroke="#999" stroke-width="1"/>
-  <rect x="20" y="310" width="160" height="22" rx="4" fill="#C0392B"/>
+  <rect x="20" y="310" width="160" height="496" rx="4" fill="#C0392B"/>
   <text x="100" y="325" text-anchor="middle" font-size="10" fill="#fff">路径A：长期投入，核心掌控</text>
 
   <line x1="250" y1="264" x2="250" y2="310" stroke="#999" stroke-width="1"/>
-  <rect x="180" y="310" width="140" height="22" rx="4" fill="#C0392B"/>
+  <rect x="180" y="310" width="140" height="496" rx="4" fill="#C0392B"/>
   <text x="250" y="325" text-anchor="middle" font-size="10" fill="#fff">路径B：专业合作</text>
 
   <!-- 中 -->
   <line x1="352" y1="264" x2="352" y2="310" stroke="#999" stroke-width="1"/>
-  <rect x="280" y="310" width="144" height="22" rx="4" fill="#E74C3C"/>
+  <rect x="280" y="310" width="144" height="496" rx="4" fill="#E74C3C"/>
   <text x="352" y="325" text-anchor="middle" font-size="10" fill="#fff">路径C：自己解决</text>
 
   <line x1="487" y1="264" x2="487" y2="310" stroke="#999" stroke-width="1"/>
-  <rect x="420" y="310" width="134" height="22" rx="4" fill="#E74C3C"/>
+  <rect x="420" y="310" width="134" height="496" rx="4" fill="#E74C3C"/>
   <text x="487" y="325" text-anchor="middle" font-size="10" fill="#fff">路径D：资产商店</text>
 
   <!-- 右 -->
   <line x1="592" y1="264" x2="592" y2="310" stroke="#999" stroke-width="1"/>
-  <rect x="520" y="310" width="144" height="22" rx="4" fill="#E67E22"/>
+  <rect x="520" y="310" width="144" height="496" rx="4" fill="#E67E22"/>
   <text x="592" y="325" text-anchor="middle" font-size="10" fill="#fff">路径E：低成本解决</text>
 
   <line x1="727" y1="264" x2="727" y2="310" stroke="#999" stroke-width="1"/>
-  <rect x="665" y="310" width="124" height="22" rx="4" fill="#999"/>
+  <rect x="665" y="310" width="124" height="496" rx="4" fill="#999"/>
   <text x="727" y="325" text-anchor="middle" font-size="10" fill="#fff">路径F：裁剪掉</text>
 
   <!-- 底部提示 -->
-  <rect x="120" y="355" width="560" height="36" rx="6" fill="#333"/>
+  <rect x="120" y="355" width="560" height="496" rx="6" fill="#333"/>
   <text x="400" y="378" text-anchor="middle" font-size="12" fill="#fff">判断标准不是"我做不做得到"，而是"这个资产值不值得我用最宝贵的资源（时间）去换"</text>
 
   <!-- 右侧核心原则 -->
-  <rect x="120" y="402" width="560" height="42" rx="6" fill="#E8F4FD" stroke="#E74C3C" stroke-width="1"/>
+  <rect x="120" y="402" width="560" height="496" rx="6" fill="#E8F4FD" stroke="#E74C3C" stroke-width="1"/>
   <text x="400" y="420" text-anchor="middle" font-size="11" fill="#E74C3C" font-weight="bold">核心判断公式</text>
   <text x="400" y="436" text-anchor="middle" font-size="11" fill="#333">资产对玩家的可见度 × 玩家看到的时长 = 资产的体验权重 → 权重越高，越值得自己掌控</text>
 
   <!-- 底部三个框：决策速查 -->
-  <rect x="30" y="456" width="230" height="32" rx="5" fill="#C0392B"/>
+  <rect x="30" y="456" width="230" height="496" rx="5" fill="#C0392B"/>
   <text x="145" y="476" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">自己做：主角/核心loop/NPC</text>
 
-  <rect x="285" y="456" width="230" height="32" rx="5" fill="#E67E22"/>
+  <rect x="285" y="456" width="230" height="496" rx="5" fill="#E67E22"/>
   <text x="400" y="476" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">外包/买：背景/UI/音效/粒子</text>
 
-  <rect x="540" y="456" width="230" height="32" rx="5" fill="#999"/>
+  <rect x="540" y="456" width="230" height="496" rx="5" fill="#999"/>
   <text x="655" y="476" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">可跳过：过场动画/cutscene</text>
 </svg>

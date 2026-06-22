@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 494" width="800" height="494">
   <defs>
     <style>
       text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
@@ -9,7 +9,7 @@
       .priority { font-size: 12px; fill: #E74C3C; font-weight: bold; }
     </style>
   </defs>
-  <rect width="800" height="500" fill="#FAFAFA"/>
+  <rect width="800" height="494" fill="#FAFAFA"/>
 
   <text x="400" y="32" text-anchor="middle" class="title">色彩功能分层（Color Function Hierarchy）</text>
   <text x="400" y="54" text-anchor="middle" class="subtitle">在游戏中，颜色首先是信号，其次才是装饰——就像代码的优先级</text>
@@ -49,6 +49,6 @@
   <text x="110" y="155" class="example" font-size="12" fill="#E67E22">→ 交互层示例</text>
 
   <!-- Code analogy -->
-  <rect x="30" y="455" width="140" height="28" rx="3" fill="#333"/>
+  <rect x="30" y="455" width="140" height="494" rx="3" fill="#333"/>
   <text x="100" y="474" text-anchor="middle" class="example" fill="#0F0" font-size="10" font-family="monospace">// 代码类比: z-index</text>
 </svg>

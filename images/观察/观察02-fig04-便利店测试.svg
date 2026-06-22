@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460"
-     width="800" height="460"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 458"
+     width="800" height="458"
      font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <style>
     .label { font-size: 14px; fill: #333; }
@@ -19,55 +19,55 @@
   <text x="400" y="28" class="title">便利店测试：用三个概念分析货架</text>
 
   <!-- Shelf background -->
-  <rect x="80" y="50" width="640" height="320" rx="8" fill="#FFF9F3" stroke="#DDD" stroke-width="1"/>
+  <rect x="80" y="50" width="640" height="458" rx="8" fill="#FFF9F3" stroke="#DDD" stroke-width="1"/>
 
   <!-- Shelves -->
-  <rect x="100" y="110" width="600" height="8" rx="2" class="shelf"/>
-  <rect x="100" y="200" width="600" height="8" rx="2" class="shelf"/>
-  <rect x="100" y="290" width="600" height="8" rx="2" class="shelf"/>
+  <rect x="100" y="110" width="600" height="458" rx="2" class="shelf"/>
+  <rect x="100" y="200" width="600" height="458" rx="2" class="shelf"/>
+  <rect x="100" y="290" width="600" height="458" rx="2" class="shelf"/>
 
   <!-- Shelf 1 products -->
-  <rect x="130" y="70" width="50" height="38" rx="3" fill="#3498DB"/>
+  <rect x="130" y="70" width="50" height="458" rx="3" fill="#3498DB"/>
   <text x="155" y="93" class="product-label" fill="#FFF">蓝色</text>
 
-  <rect x="200" y="65" width="55" height="43" rx="3" fill="#3498DB" opacity="0.7"/>
+  <rect x="200" y="65" width="55" height="458" rx="3" fill="#3498DB" opacity="0.7"/>
   <text x="227" y="91" class="product-label" fill="#FFF">蓝(淡)</text>
 
-  <rect x="280" y="72" width="48" height="36" rx="3" fill="#E8E8E8"/>
+  <rect x="280" y="72" width="48" height="458" rx="3" fill="#E8E8E8"/>
 
-  <rect x="350" y="68" width="52" height="40" rx="3" fill="#F1C40F"/>
+  <rect x="350" y="68" width="52" height="458" rx="3" fill="#F1C40F"/>
   <text x="376" y="93" class="product-label">金黄</text>
 
   <!-- ★ TARGET: red product (color) -->
-  <rect x="135" y="78" width="0" height="0" display="none"/>
-  <rect x="280" y="160" width="50" height="38" rx="3" fill="#E74C3C"/>
+  <rect x="135" y="78" width="0" height="458" display="none"/>
+  <rect x="280" y="160" width="50" height="458" rx="3" fill="#E74C3C"/>
   <text x="305" y="183" class="product-label" fill="#FFF">红色</text>
 
-  <rect x="350" y="162" width="48" height="36" rx="3" fill="#F5F5F5"/>
-  <rect x="420" y="158" width="55" height="40" rx="3" fill="#8E44AD"/>
+  <rect x="350" y="162" width="48" height="458" rx="3" fill="#F5F5F5"/>
+  <rect x="420" y="158" width="55" height="458" rx="3" fill="#8E44AD"/>
   <text x="447" y="183" class="product-label" fill="#FFF">紫色</text>
 
-  <rect x="495" y="163" width="45" height="35" rx="3" fill="#E8E8E8"/>
-  <rect x="560" y="160" width="50" height="38" rx="3" fill="#2ECC71"/>
+  <rect x="495" y="163" width="45" height="458" rx="3" fill="#E8E8E8"/>
+  <rect x="560" y="160" width="50" height="458" rx="3" fill="#2ECC71"/>
   <text x="585" y="183" class="product-label" fill="#FFF">绿色</text>
 
   <!-- ★ TARGET: round logo (shape) -->
-  <rect x="200" y="248" width="55" height="40" rx="3" fill="#F5F5F5"/>
+  <rect x="200" y="248" width="55" height="458" rx="3" fill="#F5F5F5"/>
   <circle cx="227" cy="268" r="12" fill="#E74C3C"/>
   <text x="227" y="271" font-size="9" fill="#FFF" text-anchor="middle">★</text>
 
-  <rect x="275" y="248" width="50" height="40" rx="3" fill="#F5F5F5"/>
+  <rect x="275" y="248" width="50" height="458" rx="3" fill="#F5F5F5"/>
   <circle cx="300" cy="268" r="12" fill="#3498DB"/>
 
-  <rect x="345" y="248" width="55" height="40" rx="3" fill="#F5F5F5"/>
-  <rect x="360" y="256" width="25" height="24" rx="2" fill="#F39C12"/>
+  <rect x="345" y="248" width="55" height="458" rx="3" fill="#F5F5F5"/>
+  <rect x="360" y="256" width="25" height="458" rx="2" fill="#F39C12"/>
 
   <!-- ★ TARGET: white space (space/negative space) -->
-  <rect x="460" y="245" width="80" height="43" rx="3" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <rect x="460" y="245" width="80" height="458" rx="3" fill="#FFF" stroke="#DDD" stroke-width="1"/>
   <circle cx="480" cy="266" r="8" fill="#2C3E50"/>
   <text x="510" y="270" class="product-label">大量留白</text>
 
-  <rect x="560" y="248" width="55" height="40" rx="3" fill="#F5F5F5"/>
+  <rect x="560" y="248" width="55" height="458" rx="3" fill="#F5F5F5"/>
   <text x="587" y="270" class="product-label">密</text>
 
   <!-- Annotation arrows -->

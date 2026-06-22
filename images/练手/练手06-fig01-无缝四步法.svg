@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 344" width="800" height="344">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 434" width="800" height="434">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -31,10 +31,10 @@
 
   <!-- ====== Step 1: Seed Unit ====== -->
   <g transform="translate(30, 55)">
-    <rect x="0" y="0" width="165" height="344" class="step-box" rx="4"/>
-    <rect x="0" y="0" width="165" height="344" fill="#E74C3C" rx="4"/>
-    <rect x="0" y="14" width="165" height="344" fill="#E74C3C" rx="4"/>
-    <rect x="165" y="0" width="0" height="344" fill="#E74C3C"/>
+    <rect x="0" y="0" width="165" height="434" class="step-box" rx="4"/>
+    <rect x="0" y="0" width="165" height="434" fill="#E74C3C" rx="4"/>
+    <rect x="0" y="14" width="165" height="434" fill="#E74C3C" rx="4"/>
+    <rect x="165" y="0" width="0" height="434" fill="#E74C3C"/>
     <text x="82" y="19" class="tag" text-anchor="middle">STEP 1</text>
 
     <text x="82" y="48" class="step-title" text-anchor="middle">种子单元</text>
@@ -43,7 +43,7 @@
 
     <!-- 16x16 grid with a simple pattern -->
     <g transform="translate(18, 90)">
-      <rect x="0" y="0" width="128" height="344" class="grid-bg" rx="2"/>
+      <rect x="0" y="0" width="128" height="434" class="grid-bg" rx="2"/>
       <!-- grid lines -->
       <g stroke="#e0e0e0" stroke-width="0.3">
         <line x1="0" y1="8" x2="128" y2="8"/><line x1="0" y1="16" x2="128" y2="16"/>
@@ -64,31 +64,31 @@
         <line x1="120" y1="0" x2="120" y2="128"/>
       </g>
       <!-- random stone pattern: some dark cells, some light -->
-      <rect x="8"  y="8"  width="8" height="344" class="grid-fill"/>
-      <rect x="24" y="8"  width="8" height="344" class="grid-fill-mid"/>
-      <rect x="40" y="16" width="8" height="344" class="grid-fill"/>
-      <rect x="56" y="8"  width="8" height="344" class="grid-fill-light"/>
-      <rect x="72" y="16" width="8" height="344" class="grid-fill"/>
-      <rect x="96" y="8"  width="8" height="344" class="grid-fill-mid"/>
-      <rect x="112" y="16" width="8" height="344" class="grid-fill"/>
-      <rect x="16" y="32" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="40" y="40" width="8" height="344" class="grid-fill"/>
-      <rect x="64" y="32" width="8" height="344" class="grid-fill-light"/>
-      <rect x="80" y="40" width="8" height="344" class="grid-fill"/>
-      <rect x="104" y="32" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="8"  y="56" width="8" height="344" class="grid-fill-light"/>
-      <rect x="32" y="56" width="8" height="344" class="grid-fill"/>
-      <rect x="56" y="64" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="88" y="56" width="8" height="344" class="grid-fill"/>
-      <rect x="112" y="64" width="8" height="344" class="grid-fill-light"/>
-      <rect x="24" y="80" width="8" height="344" class="grid-fill"/>
-      <rect x="48" y="88" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="72" y="80" width="8" height="344" class="grid-fill-light"/>
-      <rect x="96" y="88" width="8" height="344" class="grid-fill"/>
-      <rect x="16" y="104" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="40" y="112" width="8" height="344" class="grid-fill-light"/>
-      <rect x="64" y="104" width="8" height="344" class="grid-fill"/>
-      <rect x="88" y="112" width="8" height="344" class="grid-fill-mid"/>
+      <rect x="8"  y="8"  width="8" height="434" class="grid-fill"/>
+      <rect x="24" y="8"  width="8" height="434" class="grid-fill-mid"/>
+      <rect x="40" y="16" width="8" height="434" class="grid-fill"/>
+      <rect x="56" y="8"  width="8" height="434" class="grid-fill-light"/>
+      <rect x="72" y="16" width="8" height="434" class="grid-fill"/>
+      <rect x="96" y="8"  width="8" height="434" class="grid-fill-mid"/>
+      <rect x="112" y="16" width="8" height="434" class="grid-fill"/>
+      <rect x="16" y="32" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="40" y="40" width="8" height="434" class="grid-fill"/>
+      <rect x="64" y="32" width="8" height="434" class="grid-fill-light"/>
+      <rect x="80" y="40" width="8" height="434" class="grid-fill"/>
+      <rect x="104" y="32" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="8"  y="56" width="8" height="434" class="grid-fill-light"/>
+      <rect x="32" y="56" width="8" height="434" class="grid-fill"/>
+      <rect x="56" y="64" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="88" y="56" width="8" height="434" class="grid-fill"/>
+      <rect x="112" y="64" width="8" height="434" class="grid-fill-light"/>
+      <rect x="24" y="80" width="8" height="434" class="grid-fill"/>
+      <rect x="48" y="88" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="72" y="80" width="8" height="434" class="grid-fill-light"/>
+      <rect x="96" y="88" width="8" height="434" class="grid-fill"/>
+      <rect x="16" y="104" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="40" y="112" width="8" height="434" class="grid-fill-light"/>
+      <rect x="64" y="104" width="8" height="434" class="grid-fill"/>
+      <rect x="88" y="112" width="8" height="434" class="grid-fill-mid"/>
     </g>
   </g>
 
@@ -97,9 +97,9 @@
 
   <!-- ====== Step 2: Edge Processing ====== -->
   <g transform="translate(235, 55)">
-    <rect x="0" y="0" width="165" height="344" class="step-box" rx="4"/>
-    <rect x="0" y="0" width="165" height="344" fill="#3498DB" rx="4"/>
-    <rect x="0" y="14" width="165" height="344" fill="#3498DB" rx="4"/>
+    <rect x="0" y="0" width="165" height="434" class="step-box" rx="4"/>
+    <rect x="0" y="0" width="165" height="434" fill="#3498DB" rx="4"/>
+    <rect x="0" y="14" width="165" height="434" fill="#3498DB" rx="4"/>
     <text x="82" y="19" class="tag" text-anchor="middle">STEP 2</text>
 
     <text x="82" y="48" class="step-title" text-anchor="middle">边界处理</text>
@@ -107,7 +107,7 @@
     <text x="82" y="78" class="step-desc" text-anchor="middle">接缝处无跳变</text>
 
     <g transform="translate(18, 90)">
-      <rect x="0" y="0" width="128" height="344" class="grid-bg" rx="2"/>
+      <rect x="0" y="0" width="128" height="434" class="grid-bg" rx="2"/>
       <!-- Wrap-around arrows on edges -->
       <line x1="64" y1="-6" x2="64" y2="0" class="arrow-cyan"/>
       <line x1="64" y1="134" x2="64" y2="128" class="arrow-cyan"/>
@@ -115,10 +115,10 @@
       <line x1="134" y1="64" x2="128" y2="64" class="arrow-cyan"/>
 
       <!-- Edge copy indicators -->
-      <rect x="0" y="0" width="128" height="344" fill="#3498DB" opacity="0.15"/>
-      <rect x="0" y="122" width="128" height="344" fill="#3498DB" opacity="0.15"/>
-      <rect x="0" y="0" width="6" height="344" fill="#3498DB" opacity="0.15"/>
-      <rect x="122" y="0" width="6" height="344" fill="#3498DB" opacity="0.15"/>
+      <rect x="0" y="0" width="128" height="434" fill="#3498DB" opacity="0.15"/>
+      <rect x="0" y="122" width="128" height="434" fill="#3498DB" opacity="0.15"/>
+      <rect x="0" y="0" width="6" height="434" fill="#3498DB" opacity="0.15"/>
+      <rect x="122" y="0" width="6" height="434" fill="#3498DB" opacity="0.15"/>
 
       <text x="64" y="-10" class="step-desc" text-anchor="middle" fill="#3498DB">↑ 顶部 ↔ 底部</text>
       <text x="64" y="144" class="step-desc" text-anchor="middle" fill="#3498DB">像素连续</text>
@@ -133,10 +133,10 @@
       </g>
 
       <!-- Small pattern cells at edges to show they're coordinated -->
-      <rect x="0"  y="0"  width="8" height="344" class="grid-fill-mid"/>
-      <rect x="120" y="0"  width="8" height="344" class="grid-fill-mid"/>
-      <rect x="0"  y="120" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="120" y="120" width="8" height="344" class="grid-fill-mid"/>
+      <rect x="0"  y="0"  width="8" height="434" class="grid-fill-mid"/>
+      <rect x="120" y="0"  width="8" height="434" class="grid-fill-mid"/>
+      <rect x="0"  y="120" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="120" y="120" width="8" height="434" class="grid-fill-mid"/>
     </g>
   </g>
 
@@ -145,9 +145,9 @@
 
   <!-- ====== Step 3: Repetition Test ====== -->
   <g transform="translate(440, 55)">
-    <rect x="0" y="0" width="165" height="344" class="step-box" rx="4"/>
-    <rect x="0" y="0" width="165" height="344" fill="#27AE60" rx="4"/>
-    <rect x="0" y="14" width="165" height="344" fill="#27AE60" rx="4"/>
+    <rect x="0" y="0" width="165" height="434" class="step-box" rx="4"/>
+    <rect x="0" y="0" width="165" height="434" fill="#27AE60" rx="4"/>
+    <rect x="0" y="14" width="165" height="434" fill="#27AE60" rx="4"/>
     <text x="82" y="19" class="tag" text-anchor="middle">STEP 3</text>
 
     <text x="82" y="48" class="step-title" text-anchor="middle">重复检验</text>
@@ -155,7 +155,7 @@
     <text x="82" y="78" class="step-desc" text-anchor="middle">检查有无接缝/网格</text>
 
     <g transform="translate(18, 90)">
-      <rect x="0" y="0" width="128" height="344" class="grid-bg" rx="2"/>
+      <rect x="0" y="0" width="128" height="434" class="grid-bg" rx="2"/>
 
       <!-- 2x2 tiling with a small pattern -->
       <g stroke="#e0e0e0" stroke-width="0.3">
@@ -166,31 +166,31 @@
       </g>
 
       <!-- Tile borders shown as dashed -->
-      <rect x="0" y="0" width="64" height="344" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
-      <rect x="64" y="0" width="64" height="344" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
-      <rect x="0" y="64" width="64" height="344" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
-      <rect x="64" y="64" width="64" height="344" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
+      <rect x="0" y="0" width="64" height="434" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
+      <rect x="64" y="0" width="64" height="434" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
+      <rect x="0" y="64" width="64" height="434" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
+      <rect x="64" y="64" width="64" height="434" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
 
       <!-- Pattern fills -->
-      <rect x="8" y="8" width="8" height="344" class="grid-fill"/>
-      <rect x="40" y="16" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="16" y="40" width="8" height="344" class="grid-fill-light"/>
-      <rect x="48" y="48" width="8" height="344" class="grid-fill"/>
+      <rect x="8" y="8" width="8" height="434" class="grid-fill"/>
+      <rect x="40" y="16" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="16" y="40" width="8" height="434" class="grid-fill-light"/>
+      <rect x="48" y="48" width="8" height="434" class="grid-fill"/>
 
-      <rect x="72" y="8" width="8" height="344" class="grid-fill"/>
-      <rect x="104" y="16" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="80" y="40" width="8" height="344" class="grid-fill-light"/>
-      <rect x="112" y="48" width="8" height="344" class="grid-fill"/>
+      <rect x="72" y="8" width="8" height="434" class="grid-fill"/>
+      <rect x="104" y="16" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="80" y="40" width="8" height="434" class="grid-fill-light"/>
+      <rect x="112" y="48" width="8" height="434" class="grid-fill"/>
 
-      <rect x="8" y="72" width="8" height="344" class="grid-fill"/>
-      <rect x="40" y="80" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="16" y="104" width="8" height="344" class="grid-fill-light"/>
-      <rect x="48" y="112" width="8" height="344" class="grid-fill"/>
+      <rect x="8" y="72" width="8" height="434" class="grid-fill"/>
+      <rect x="40" y="80" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="16" y="104" width="8" height="434" class="grid-fill-light"/>
+      <rect x="48" y="112" width="8" height="434" class="grid-fill"/>
 
-      <rect x="72" y="72" width="8" height="344" class="grid-fill"/>
-      <rect x="104" y="80" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="80" y="104" width="8" height="344" class="grid-fill-light"/>
-      <rect x="112" y="112" width="8" height="344" class="grid-fill"/>
+      <rect x="72" y="72" width="8" height="434" class="grid-fill"/>
+      <rect x="104" y="80" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="80" y="104" width="8" height="434" class="grid-fill-light"/>
+      <rect x="112" y="112" width="8" height="434" class="grid-fill"/>
 
       <!-- Label: 2×2 -->
       <text x="64" y="140" class="step-desc" text-anchor="middle" fill="#E74C3C">2×2 平铺测试</text>
@@ -202,9 +202,9 @@
 
   <!-- ====== Step 4: Variation Injection ====== -->
   <g transform="translate(645, 55)">
-    <rect x="0" y="0" width="135" height="344" class="step-box" rx="4"/>
-    <rect x="0" y="0" width="135" height="344" fill="#8E44AD" rx="4"/>
-    <rect x="0" y="14" width="135" height="344" fill="#8E44AD" rx="4"/>
+    <rect x="0" y="0" width="135" height="434" class="step-box" rx="4"/>
+    <rect x="0" y="0" width="135" height="434" fill="#8E44AD" rx="4"/>
+    <rect x="0" y="14" width="135" height="434" fill="#8E44AD" rx="4"/>
     <text x="67" y="19" class="tag" text-anchor="middle">STEP 4</text>
 
     <text x="67" y="48" class="step-title" text-anchor="middle">变化注入</text>
@@ -212,34 +212,34 @@
     <text x="67" y="78" class="step-desc" text-anchor="middle">消除重复感</text>
 
     <g transform="translate(3, 90)">
-      <rect x="0" y="0" width="128" height="344" class="grid-bg" rx="2"/>
+      <rect x="0" y="0" width="128" height="434" class="grid-bg" rx="2"/>
 
       <!-- 4 subtiles showing variations -->
-      <rect x="0" y="0" width="64" height="344" fill="none" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="2,2"/>
-      <rect x="64" y="0" width="64" height="344" fill="none" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="2,2"/>
-      <rect x="0" y="64" width="64" height="344" fill="none" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="2,2"/>
-      <rect x="64" y="64" width="64" height="344" fill="none" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <rect x="0" y="0" width="64" height="434" fill="none" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <rect x="64" y="0" width="64" height="434" fill="none" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <rect x="0" y="64" width="64" height="434" fill="none" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <rect x="64" y="64" width="64" height="434" fill="none" stroke="#8E44AD" stroke-width="0.8" stroke-dasharray="2,2"/>
 
       <!-- Var 1 -->
-      <rect x="8" y="8" width="8" height="344" class="grid-fill"/>
-      <rect x="24" y="24" width="8" height="344" class="grid-fill-mid"/>
+      <rect x="8" y="8" width="8" height="434" class="grid-fill"/>
+      <rect x="24" y="24" width="8" height="434" class="grid-fill-mid"/>
       <text x="32" y="54" class="step-desc" text-anchor="middle">A</text>
 
       <!-- Var 2 (slightly different) -->
-      <rect x="72" y="12" width="8" height="344" class="grid-fill"/>
-      <rect x="88" y="20" width="8" height="344" class="grid-fill-light"/>
-      <rect x="104" y="28" width="8" height="344" class="grid-fill-mid"/>
+      <rect x="72" y="12" width="8" height="434" class="grid-fill"/>
+      <rect x="88" y="20" width="8" height="434" class="grid-fill-light"/>
+      <rect x="104" y="28" width="8" height="434" class="grid-fill-mid"/>
       <text x="96" y="54" class="step-desc" text-anchor="middle">B</text>
 
       <!-- Var 3 -->
-      <rect x="8" y="72" width="8" height="344" class="grid-fill-mid"/>
-      <rect x="40" y="76" width="8" height="344" class="grid-fill"/>
+      <rect x="8" y="72" width="8" height="434" class="grid-fill-mid"/>
+      <rect x="40" y="76" width="8" height="434" class="grid-fill"/>
       <text x="32" y="118" class="step-desc" text-anchor="middle">C</text>
 
       <!-- Var 4 -->
-      <rect x="80" y="68" width="8" height="344" class="grid-fill-light"/>
-      <rect x="104" y="88" width="8" height="344" class="grid-fill"/>
-      <rect x="72" y="100" width="8" height="344" class="grid-fill-mid"/>
+      <rect x="80" y="68" width="8" height="434" class="grid-fill-light"/>
+      <rect x="104" y="88" width="8" height="434" class="grid-fill"/>
+      <rect x="72" y="100" width="8" height="434" class="grid-fill-mid"/>
       <text x="96" y="118" class="step-desc" text-anchor="middle">D</text>
     </g>
   </g>

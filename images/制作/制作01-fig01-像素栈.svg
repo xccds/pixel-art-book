@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 510" width="800" height="510">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -20,9 +20,9 @@
 
   <!-- Left: Pixel Stack panel -->
   <g transform="translate(20, 45)">
-    <rect x="0" y="0" width="360" height="510" class="box-border" fill="#FAFAFA" rx="6"/>
-    <rect x="0" y="0" width="360" height="510" class="header-bg" rx="6"/>
-    <rect x="0" y="36" width="360" height="510" fill="#E8F4FD"/>
+    <rect x="0" y="0" width="360" height="430" class="box-border" fill="#FAFAFA" rx="6"/>
+    <rect x="0" y="0" width="360" height="42" class="header-bg" rx="6"/>
+    <rect x="0" y="36" width="360" height="6" fill="#E8F4FD"/>
     <text x="180" y="26" class="stack-title">像素栈（本书锁定）</text>
 
     <text x="180" y="65" class="tool-name">Aseprite</text>
@@ -57,7 +57,7 @@
 
   <!-- Right: Impossible triangle -->
   <g transform="translate(420, 45)">
-    <rect x="0" y="0" width="360" height="510" fill="#FAFAFA" stroke="#bbb" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="360" height="430" fill="#FAFAFA" stroke="#bbb" stroke-width="1.5" rx="6"/>
     <text x="180" y="26" class="stack-title">三原则的不可能三角</text>
 
     <!-- Triangle -->

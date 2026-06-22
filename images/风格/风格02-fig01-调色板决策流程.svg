@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 634"
-     width="800" height="634"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 625"
+     width="800" height="625"
      font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <style>
     .title { font-size: 18px; font-weight: bold; fill: #222; text-anchor: middle; }
@@ -39,22 +39,22 @@
 
   <!-- Row 1: four constraint input boxes -->
   <g>
-    <rect x="25" y="50" width="175" height="634" rx="8" class="in-box"/>
+    <rect x="25" y="50" width="175" height="72" rx="8" class="in-box"/>
     <text x="112" y="72" class="in-title">① 平台限制</text>
     <text x="112" y="90" class="in-text">NES 4色 / SNES 256</text>
     <text x="112" y="106" class="in-text">现代无限制</text>
 
-    <rect x="215" y="50" width="175" height="634" rx="8" class="in-box"/>
+    <rect x="215" y="50" width="175" height="72" rx="8" class="in-box"/>
     <text x="302" y="72" class="in-title">② 情绪基调</text>
     <text x="302" y="90" class="in-text">冷/暖/黑白</text>
     <text x="302" y="106" class="in-text">高饱和/低饱和</text>
 
-    <rect x="405" y="50" width="175" height="634" rx="8" class="in-box"/>
+    <rect x="405" y="50" width="175" height="72" rx="8" class="in-box"/>
     <text x="492" y="72" class="in-title">③ 团队规模</text>
     <text x="492" y="90" class="in-text">solo / 小队</text>
     <text x="492" y="106" class="in-text">固定板=一致性</text>
 
-    <rect x="595" y="50" width="175" height="634" rx="8" class="in-box"/>
+    <rect x="595" y="50" width="175" height="72" rx="8" class="in-box"/>
     <text x="682" y="72" class="in-title">④ 动画/换色需求</text>
     <text x="682" y="90" class="in-text">多帧 / 多换色</text>
     <text x="682" y="106" class="in-text">色少→swap 快</text>
@@ -67,7 +67,7 @@
   <path d="M 682 122 Q 682 138 460 150" class="arrow"/>
 
   <!-- Row 2: decision 1 -->
-  <rect x="280" y="150" width="240" height="634" rx="8" class="step-box"/>
+  <rect x="280" y="150" width="240" height="52" rx="8" class="step-box"/>
   <text x="400" y="173" class="step-title">第一步：定色数</text>
   <text x="400" y="192" class="analog">类比：给项目定 enum 的取值集合大小</text>
 
@@ -80,35 +80,35 @@
 
   <!-- Row 3: five color-count option boxes -->
   <g>
-    <rect x="30" y="250" width="130" height="634" rx="6" class="opt-box"/>
+    <rect x="30" y="250" width="130" height="98" rx="6" class="opt-box"/>
     <text x="95" y="272" class="opt-num">3 色</text>
     <text x="95" y="289" class="opt-desc">1-bit / 三色</text>
     <text x="95" y="304" class="opt-desc">极简·签名</text>
     <text x="95" y="320" class="opt-desc">solo + 少帧</text>
     <text x="95" y="338" class="opt-game">Downwell 黑白红</text>
 
-    <rect x="175" y="250" width="130" height="634" rx="6" class="opt-box"/>
+    <rect x="175" y="250" width="130" height="98" rx="6" class="opt-box"/>
     <text x="240" y="272" class="opt-num">4 色</text>
     <text x="240" y="289" class="opt-desc">NES / ARQ4</text>
     <text x="240" y="304" class="opt-desc">复古·Game Jam</text>
     <text x="240" y="320" class="opt-desc">快速原型</text>
     <text x="240" y="338" class="opt-game">Shovel Knight</text>
 
-    <rect x="320" y="250" width="130" height="634" rx="6" class="opt-box-sweet"/>
+    <rect x="320" y="250" width="130" height="98" rx="6" class="opt-box-sweet"/>
     <text x="385" y="272" class="opt-num-sweet">16 色 ⭐</text>
     <text x="385" y="289" class="opt-desc">PICO-8/DB16</text>
     <text x="385" y="304" class="opt-desc">大众化·甜点</text>
     <text x="385" y="320" class="opt-desc">swap 最友好</text>
     <text x="385" y="338" class="opt-game">多数独立像素</text>
 
-    <rect x="465" y="250" width="130" height="634" rx="6" class="opt-box"/>
+    <rect x="465" y="250" width="130" height="98" rx="6" class="opt-box"/>
     <text x="530" y="272" class="opt-num">8 色</text>
     <text x="530" y="289" class="opt-desc">Game Boy 色</text>
     <text x="530" y="304" class="opt-desc">怀旧·统一氛围</text>
     <text x="530" y="320" class="opt-desc">规划每色用途</text>
     <text x="530" y="338" class="opt-game">Gato Roboto</text>
 
-    <rect x="610" y="250" width="130" height="634" rx="6" class="opt-box"/>
+    <rect x="610" y="250" width="130" height="98" rx="6" class="opt-box"/>
     <text x="675" y="272" class="opt-num">32 色</text>
     <text x="675" y="289" class="opt-desc">Endesga32</text>
     <text x="675" y="304" class="opt-desc">丰富材质·高比特</text>
@@ -118,11 +118,11 @@
 
   <!-- arrow: count strip -> decision2 -->
   <path d="M 400 348 L 400 380" class="arrow"/>
-  <rect x="355" y="356" width="90" height="634" rx="3" class="arrow-label-bg"/>
+  <rect x="355" y="356" width="90" height="18" rx="3" class="arrow-label-bg"/>
   <text x="400" y="370" class="arrow-label">选定色数后</text>
 
   <!-- Row 4: decision 2 -->
-  <rect x="270" y="380" width="260" height="634" rx="8" class="step-box"/>
+  <rect x="270" y="380" width="260" height="52" rx="8" class="step-box"/>
   <text x="400" y="403" class="step-title">第二步：固定板 还是 自定义？</text>
   <text x="400" y="422" class="analog">类比：用标准库预设 还是 自己实现一个等价物</text>
 
@@ -131,13 +131,13 @@
   <path d="M 460 432 Q 500 446 625 460" class="arrow"/>
 
   <!-- Row 5: two branch boxes -->
-  <rect x="60" y="460" width="230" height="634" rx="8" class="branch-box"/>
+  <rect x="60" y="460" width="230" height="72" rx="8" class="branch-box"/>
   <text x="175" y="482" class="branch-title">固定调色板 · 约束即自由</text>
   <text x="175" y="500" class="branch-text">PICO-8 / DB16 / Endesga32</text>
   <text x="175" y="515" class="branch-text">省决策开销 · 团队一致 · 即时合法</text>
   <text x="175" y="528" class="branch-text">约束逼出设计（少即是多）</text>
 
-  <rect x="510" y="460" width="230" height="634" rx="8" class="branch-box-cust"/>
+  <rect x="510" y="460" width="230" height="72" rx="8" class="branch-box-cust"/>
   <text x="625" y="482" class="branch-title-cust">自定义调色板</text>
   <text x="625" y="500" class="branch-text">情绪不合任何固定板</text>
   <text x="625" y="515" class="branch-text">需专属视觉签名</text>
@@ -148,7 +148,7 @@
   <path d="M 625 532 Q 625 548 450 558" class="arrow"/>
 
   <!-- Row 6: output -->
-  <rect x="250" y="556" width="300" height="634" rx="8" class="out-box"/>
+  <rect x="250" y="556" width="300" height="40" rx="8" class="out-box"/>
   <text x="400" y="575" class="out-text">锁定调色板</text>
   <text x="400" y="590" class="out-text">→ 写入视觉宪法（风格04）</text>
 

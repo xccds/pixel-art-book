@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 480" width="800" height="480">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 388" width="800" height="388">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -15,9 +15,9 @@
 
   <!-- Principle 1: Squash & Stretch -->
   <g transform="translate(18, 52)">
-    <rect x="0" y="0" width="145" height="480" fill="#FAFAFA" stroke="#E74C3C" stroke-width="1.5" rx="6"/>
-    <rect x="0" y="0" width="145" height="480" fill="#E74C3C" opacity="0.12" rx="6"/>
-    <rect x="0" y="14" width="145" height="480" fill="#E74C3C" opacity="0.12"/>
+    <rect x="0" y="0" width="145" height="388" fill="#FAFAFA" stroke="#E74C3C" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="388" fill="#E74C3C" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="388" fill="#E74C3C" opacity="0.12"/>
     <text x="72" y="12" class="principle-name" fill="#E74C3C">挤压拉伸</text>
     <text x="72" y="24" class="principle-en">Squash &amp; Stretch</text>
 
@@ -66,15 +66,15 @@
     <text x="72" y="142" class="principle-desc" style="font-size:7.5px;">跳起时身体被"拉长"——</text>
     <text x="72" y="154" class="principle-desc" style="font-size:7.5px;">体积不变，形状变</text>
 
-    <rect x="15" y="168" width="115" height="480" fill="#E74C3C" opacity="0.08" rx="3"/>
+    <rect x="15" y="168" width="115" height="388" fill="#E74C3C" opacity="0.08" rx="3"/>
     <text x="72" y="183" class="note" fill="#E74C3C" text-anchor="middle">游戏感核心来源</text>
   </g>
 
   <!-- Principle 2: Anticipation -->
   <g transform="translate(173, 52)">
-    <rect x="0" y="0" width="145" height="480" fill="#FAFAFA" stroke="#E67E22" stroke-width="1.5" rx="6"/>
-    <rect x="0" y="0" width="145" height="480" fill="#E67E22" opacity="0.12" rx="6"/>
-    <rect x="0" y="14" width="145" height="480" fill="#E67E22" opacity="0.12"/>
+    <rect x="0" y="0" width="145" height="388" fill="#FAFAFA" stroke="#E67E22" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="388" fill="#E67E22" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="388" fill="#E67E22" opacity="0.12"/>
     <text x="72" y="12" class="principle-name" fill="#E67E22">预备动作</text>
     <text x="72" y="24" class="principle-en">Anticipation</text>
 
@@ -124,15 +124,15 @@
     <text x="72" y="142" class="principle-desc" style="font-size:7.5px;">摆一下——给玩家大脑</text>
     <text x="72" y="154" class="principle-desc" style="font-size:7.5px;">0.1秒的"预判时间"</text>
 
-    <rect x="15" y="168" width="115" height="480" fill="#E67E22" opacity="0.08" rx="3"/>
+    <rect x="15" y="168" width="115" height="388" fill="#E67E22" opacity="0.08" rx="3"/>
     <text x="72" y="183" class="note" fill="#E67E22" text-anchor="middle">攻击可读性的关键</text>
   </g>
 
   <!-- Principle 3: Slow In & Slow Out -->
   <g transform="translate(328, 52)">
-    <rect x="0" y="0" width="145" height="480" fill="#FAFAFA" stroke="#2ECC71" stroke-width="1.5" rx="6"/>
-    <rect x="0" y="0" width="145" height="480" fill="#2ECC71" opacity="0.12" rx="6"/>
-    <rect x="0" y="14" width="145" height="480" fill="#2ECC71" opacity="0.12"/>
+    <rect x="0" y="0" width="145" height="388" fill="#FAFAFA" stroke="#2ECC71" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="388" fill="#2ECC71" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="388" fill="#2ECC71" opacity="0.12"/>
     <text x="72" y="12" class="principle-name" fill="#27AE60">缓入缓出</text>
     <text x="72" y="24" class="principle-en">Slow In &amp; Slow Out</text>
 
@@ -180,15 +180,15 @@
     <text x="72" y="167" class="principle-desc" style="font-size:7.5px;">——不用匀速！相邻帧的</text>
     <text x="72" y="179" class="principle-desc" style="font-size:7.5px;">间距就是"速度"</text>
 
-    <rect x="15" y="168" width="115" height="480" fill="#27AE60" opacity="0.08" rx="3"/>
+    <rect x="15" y="168" width="115" height="388" fill="#27AE60" opacity="0.08" rx="3"/>
     <text x="72" y="183" class="note" fill="#27AE60" text-anchor="middle">区别"机械"与"自然"</text>
   </g>
 
   <!-- Principle 4: Follow Through -->
   <g transform="translate(483, 52)">
-    <rect x="0" y="0" width="145" height="480" fill="#FAFAFA" stroke="#3498DB" stroke-width="1.5" rx="6"/>
-    <rect x="0" y="0" width="145" height="480" fill="#3498DB" opacity="0.12" rx="6"/>
-    <rect x="0" y="14" width="145" height="480" fill="#3498DB" opacity="0.12"/>
+    <rect x="0" y="0" width="145" height="388" fill="#FAFAFA" stroke="#3498DB" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="388" fill="#3498DB" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="388" fill="#3498DB" opacity="0.12"/>
     <text x="72" y="12" class="principle-name" fill="#2980B9">跟随动作</text>
     <text x="72" y="24" class="principle-en">Follow Through</text>
 
@@ -240,15 +240,15 @@
     <text x="72" y="142" class="principle-desc" style="font-size:7.5px;">（头发、披风、尾巴）</text>
     <text x="72" y="154" class="principle-desc" style="font-size:7.5px;">继续运动、再回弹静止</text>
 
-    <rect x="15" y="168" width="115" height="480" fill="#2980B9" opacity="0.08" rx="3"/>
+    <rect x="15" y="168" width="115" height="388" fill="#2980B9" opacity="0.08" rx="3"/>
     <text x="72" y="183" class="note" fill="#2980B9" text-anchor="middle">"活"的权重感</text>
   </g>
 
   <!-- Principle 5: Exaggeration -->
   <g transform="translate(638, 52)">
-    <rect x="0" y="0" width="145" height="480" fill="#FAFAFA" stroke="#9B59B6" stroke-width="1.5" rx="6"/>
-    <rect x="0" y="0" width="145" height="480" fill="#9B59B6" opacity="0.12" rx="6"/>
-    <rect x="0" y="14" width="145" height="480" fill="#9B59B6" opacity="0.12"/>
+    <rect x="0" y="0" width="145" height="388" fill="#FAFAFA" stroke="#9B59B6" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="145" height="388" fill="#9B59B6" opacity="0.12" rx="6"/>
+    <rect x="0" y="14" width="145" height="388" fill="#9B59B6" opacity="0.12"/>
     <text x="72" y="12" class="principle-name" fill="#8E44AD">夸张</text>
     <text x="72" y="24" class="principle-en">Exaggeration</text>
 
@@ -295,7 +295,7 @@
     <text x="72" y="142" class="principle-desc" style="font-size:7.5px;">——游戏不是模拟器</text>
     <text x="72" y="154" class="principle-desc" style="font-size:7.5px;">你的角色不是真人</text>
 
-    <rect x="15" y="168" width="115" height="480" fill="#8E44AD" opacity="0.08" rx="3"/>
+    <rect x="15" y="168" width="115" height="388" fill="#8E44AD" opacity="0.08" rx="3"/>
     <text x="72" y="183" class="note" fill="#8E44AD" text-anchor="middle">从"真实"到"好玩"</text>
   </g>
 
@@ -303,13 +303,13 @@
 
   <!-- Bottom: 5 principles summary bar -->
   <g transform="translate(18, 342)">
-    <rect x="0" y="0" width="765" height="480" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="6"/>
+    <rect x="0" y="0" width="765" height="388" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="6"/>
 
     <text x="15" y="20" style="font-size:10px;font-weight:bold;fill:#333;">五条原则在游戏中的应用对照</text>
     <line x1="15" y1="26" x2="750" y2="26" stroke="#E0E0E0" stroke-width="0.5"/>
 
     <g transform="translate(15, 40)">
-      <rect x="0" y="0" width="140" height="480" fill="#fff" stroke="#E74C3C" stroke-width="0.8" rx="3"/>
+      <rect x="0" y="0" width="140" height="388" fill="#fff" stroke="#E74C3C" stroke-width="0.8" rx="3"/>
       <text x="70" y="16" class="note" fill="#E74C3C" text-anchor="middle" font-weight="bold">挤压拉伸</text>
       <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">跳跃的压缩/拉长</text>
       <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">受击的身体变形</text>
@@ -318,7 +318,7 @@
     </g>
 
     <g transform="translate(165, 40)">
-      <rect x="0" y="0" width="140" height="480" fill="#fff" stroke="#E67E22" stroke-width="0.8" rx="3"/>
+      <rect x="0" y="0" width="140" height="388" fill="#fff" stroke="#E67E22" stroke-width="0.8" rx="3"/>
       <text x="70" y="16" class="note" fill="#E67E22" text-anchor="middle" font-weight="bold">预备动作</text>
       <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">Boss 攻击前摇</text>
       <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">跳跃前下蹲</text>
@@ -327,7 +327,7 @@
     </g>
 
     <g transform="translate(315, 40)">
-      <rect x="0" y="0" width="140" height="480" fill="#fff" stroke="#27AE60" stroke-width="0.8" rx="3"/>
+      <rect x="0" y="0" width="140" height="388" fill="#fff" stroke="#27AE60" stroke-width="0.8" rx="3"/>
       <text x="70" y="16" class="note" fill="#27AE60" text-anchor="middle" font-weight="bold">缓入缓出</text>
       <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">所有 UI 过渡</text>
       <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">摄像机平滑跟随</text>
@@ -336,7 +336,7 @@
     </g>
 
     <g transform="translate(465, 40)">
-      <rect x="0" y="0" width="140" height="480" fill="#fff" stroke="#2980B9" stroke-width="0.8" rx="3"/>
+      <rect x="0" y="0" width="140" height="388" fill="#fff" stroke="#2980B9" stroke-width="0.8" rx="3"/>
       <text x="70" y="16" class="note" fill="#2980B9" text-anchor="middle" font-weight="bold">跟随动作</text>
       <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">角色停步后披风飘</text>
       <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">武器挥砍后回弹</text>
@@ -345,7 +345,7 @@
     </g>
 
     <g transform="translate(615, 40)">
-      <rect x="0" y="0" width="140" height="480" fill="#fff" stroke="#8E44AD" stroke-width="0.8" rx="3"/>
+      <rect x="0" y="0" width="140" height="388" fill="#fff" stroke="#8E44AD" stroke-width="0.8" rx="3"/>
       <text x="70" y="16" class="note" fill="#8E44AD" text-anchor="middle" font-weight="bold">夸张</text>
       <text x="70" y="32" class="note" fill="#555" text-anchor="middle" font-size="7">攻击特效的放大</text>
       <text x="70" y="46" class="note" fill="#555" text-anchor="middle" font-size="7">死亡动画的戏剧化</text>

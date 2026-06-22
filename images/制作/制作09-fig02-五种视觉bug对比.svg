@@ -1,231 +1,176 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 15px; font-weight: bold; fill: #333; }
-    .subtitle { font-size: 10px; fill: #666; }
-    .bug-label { font-size: 11px; font-weight: bold; fill: #E74C3C; }
-    .fix-label { font-size: 11px; font-weight: bold; fill: #27AE60; }
-    .bug-desc { font-size: 8px; fill: #666; }
-    .bug-num { font-size: 9px; font-weight: bold; fill: #999; }
+    .subtitle { font-size: 10px; fill: #888; }
+    .bug-num { font-size: 10px; font-weight: bold; fill: #E74C3C; }
+    .bug-name { font-size: 11px; font-weight: bold; fill: #333; }
+    .sym-label { font-size: 9px; fill: #E74C3C; font-weight: bold; }
+    .fix-label { font-size: 9px; fill: #27AE60; font-weight: bold; }
+    .desc { font-size: 8px; fill: #666; }
+    .row-bg { fill: #fafafa; stroke: #eee; stroke-width: 0.5; rx: 4; }
   </style>
 
-  <text x="400" y="22" class="title" text-anchor="middle">图 制作09.2  5 种常见视觉 Bug——症状与修复对比</text>
-  <text x="400" y="38" class="subtitle" text-anchor="middle">左列：Bug 症状（异常） · 右列：修复后（正常）——每行对应一种 Bug</text>
+  <text x="400" y="22" class="title" text-anchor="middle">5 种常见视觉 Bug——症状与修复对比</text>
+  <text x="400" y="36" class="subtitle" text-anchor="middle">左列 Bug 症状（异常）· 右列修复后（正常）——每行对应一种 Bug</text>
 
-  <!-- ===== Bug 1: Line Weight ===== -->
-  <g transform="translate(20, 50)">
-    <text x="0" y="0" class="bug-num">Bug 1</text>
-    <text x="30" y="0" class="bug-label">线宽不统一</text>
-    <text x="110" y="0" class="bug-desc">有些边缘 1px、有些 3px → "拼凑感"</text>
+  <!-- Row 1: Line Weight -->
+  <g transform="translate(25, 52)">
+    <rect x="0" y="0" width="750" height="68" fill="#fafafa" stroke="#eee" stroke-width="0.5" rx="4"/>
+    <text x="12" y="16" class="bug-num">Bug 1</text>
+    <text x="55" y="16" class="bug-name">线宽不统一</text>
+    <text x="150" y="16" class="desc">不同素材的边缘粗细不一致——有的 1px、有的 3px，拼在一起像"拼凑"出来的</text>
 
-    <!-- Bug side: inconsistent line widths -->
-    <g transform="translate(0, 10)">
-      <rect x="0" y="0" width="110" height="58" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="3"/>
-      <text x="55" y="10" font-size="7" fill="#E74C3C" text-anchor="middle">✗ 症状：线宽混乱</text>
-
-      <!-- Small building: some thick lines, some thin -->
-      <rect x="12" y="18" width="10" height="20" fill="#E8F4FD" stroke="#333" stroke-width="3"/>
-      <rect x="22" y="18" width="12" height="8" fill="#E8F4FD" stroke="#333" stroke-width="1"/>
-      <rect x="28" y="12" width="18" height="14" fill="#E8F4FD" stroke="#333" stroke-width="0.5"/>
-      <!-- Roof -->
-      <polygon points="22,18 32,6 44,18" fill="#D5F5E3" stroke="#333" stroke-width="2.5"/>
-
-      <text x="55" y="56" font-size="7" fill="#999" text-anchor="middle">不同 Sprite 线宽不一</text>
+    <!-- Symptom -->
+    <g transform="translate(12, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="sym-label">✗ 症状</text>
+      <rect x="60" y="8" width="10" height="14" fill="#E8F4FD" stroke="#333" stroke-width="3"/>
+      <rect x="73" y="8" width="10" height="14" fill="#E8F4FD" stroke="#333" stroke-width="1"/>
+      <rect x="86" y="8" width="10" height="14" fill="#E8F4FD" stroke="#333" stroke-width="0.5"/>
+      <polygon points="76,8 86,-4 96,8" fill="#D5F5E3" stroke="#333" stroke-width="2.5"/>
+      <text x="180" y="19" class="desc">不同线宽混在一起</text>
     </g>
-
-    <!-- Fix side: consistent line widths -->
-    <g transform="translate(0, 10)">
-      <rect x="120" y="0" width="110" height="58" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="3"/>
-      <text x="175" y="10" font-size="7" fill="#27AE60" text-anchor="middle">✓ 修复：统一 2px</text>
-
-      <rect x="132" y="18" width="10" height="20" fill="#E8F4FD" stroke="#333" stroke-width="2"/>
-      <rect x="142" y="18" width="12" height="8" fill="#E8F4FD" stroke="#333" stroke-width="2"/>
-      <rect x="148" y="12" width="18" height="14" fill="#E8F4FD" stroke="#333" stroke-width="2"/>
-      <polygon points="142,18 152,6 164,18" fill="#D5F5E3" stroke="#333" stroke-width="2"/>
-
-      <text x="175" y="56" font-size="7" fill="#999" text-anchor="middle">全部统一描边宽度</text>
+    <!-- Fix -->
+    <g transform="translate(383, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="fix-label">✓ 修复</text>
+      <rect x="60" y="8" width="10" height="14" fill="#E8F4FD" stroke="#333" stroke-width="2"/>
+      <rect x="73" y="8" width="10" height="14" fill="#E8F4FD" stroke="#333" stroke-width="2"/>
+      <rect x="86" y="8" width="10" height="14" fill="#E8F4FD" stroke="#333" stroke-width="2"/>
+      <polygon points="76,8 86,-4 96,8" fill="#D5F5E3" stroke="#333" stroke-width="2"/>
+      <text x="180" y="19" class="desc" fill="#555">全部统一 2px 描边</text>
     </g>
   </g>
 
-  <!-- ===== Bug 2: Palette Pollution ===== -->
-  <g transform="translate(280, 50)">
-    <text x="0" y="0" class="bug-num">Bug 2</text>
-    <text x="30" y="0" class="bug-label">色板污染</text>
-    <text x="110" y="0" class="bug-desc">外来颜色混入 → "另一个游戏"</text>
+  <!-- Row 2: Palette Pollution -->
+  <g transform="translate(25, 126)">
+    <rect x="0" y="0" width="750" height="68" fill="#fafafa" stroke="#eee" stroke-width="0.5" rx="4"/>
+    <text x="12" y="16" class="bug-num">Bug 2</text>
+    <text x="55" y="16" class="bug-name">色板污染</text>
+    <text x="150" y="16" class="desc">使用了调色板之外的颜色——高饱和尼龙色出现在复古像素画面中，像"另一个游戏的颜色"</text>
 
-    <!-- Bug side: wrong color -->
-    <g transform="translate(0, 10)">
-      <rect x="0" y="0" width="110" height="58" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="3"/>
-      <text x="55" y="10" font-size="7" fill="#E74C3C" text-anchor="middle">✗ 症状：外来颜色</text>
-
-      <!-- Tree with wrong color (neon green instead of palette green) -->
-      <rect x="22" y="30" width="8" height="16" fill="#8B6914"/>  <!-- trunk OK -->
-      <circle cx="26" cy="24" r="12" fill="#E8F4FD"/>  <!-- bg -->
-      <circle cx="26" cy="24" r="10" fill="#00FF00"/>  <!-- WRONG: neon green -->
-      <circle cx="26" cy="24" r="10" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="2,2"/>
-
-      <text x="55" y="56" font-size="7" fill="#999" text-anchor="middle">高饱和绿色=色板外</text>
+    <g transform="translate(12, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="sym-label">✗ 症状</text>
+      <rect x="72" y="6" width="8" height="18" fill="#8B6914"/>
+      <circle cx="84" cy="10" r="10" fill="#00FF00"/>
+      <circle cx="84" cy="10" r="10" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="2,2"/>
+      <text x="120" y="14" class="desc">外来高饱和绿色→突兀</text>
     </g>
-
-    <!-- Fix side: correct palette color -->
-    <g transform="translate(0, 10)">
-      <rect x="120" y="0" width="110" height="58" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="3"/>
-      <text x="175" y="10" font-size="7" fill="#27AE60" text-anchor="middle">✓ 修复：使用色板颜色</text>
-
-      <rect x="142" y="30" width="8" height="16" fill="#8B6914"/>
-      <circle cx="146" cy="24" r="10" fill="#27AE60"/>  <!-- CORRECT: palette green -->
-      <circle cx="146" cy="24" r="10" fill="none" stroke="#27AE60" stroke-width="1" stroke-dasharray="2,2"/>
-
-      <text x="175" y="56" font-size="7" fill="#999" text-anchor="middle">使用色板内的绿色</text>
+    <g transform="translate(383, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="fix-label">✓ 修复</text>
+      <rect x="72" y="6" width="8" height="18" fill="#8B6914"/>
+      <circle cx="84" cy="10" r="10" fill="#27AE60"/>
+      <circle cx="84" cy="10" r="10" fill="none" stroke="#27AE60" stroke-width="1" stroke-dasharray="2,2"/>
+      <text x="120" y="14" class="desc" fill="#555">替换为色板内的绿色</text>
     </g>
   </g>
 
-  <!-- ===== Bug 3: Detail Density Jump ===== -->
-  <g transform="translate(540, 50)">
-    <text x="0" y="0" class="bug-num">Bug 3</text>
-    <text x="30" y="0" class="bug-label">细节密度跳跃</text>
-    <text x="110" y="0" class="bug-desc">一繁一简 → "不像同一个游戏"</text>
+  <!-- Row 3: Detail Density -->
+  <g transform="translate(25, 200)">
+    <rect x="0" y="0" width="750" height="68" fill="#fafafa" stroke="#eee" stroke-width="0.5" rx="4"/>
+    <text x="12" y="16" class="bug-num">Bug 3</text>
+    <text x="55" y="16" class="bug-name">细节密度跳跃</text>
+    <text x="150" y="16" class="desc">同一屏幕内角色A极简（3色纯块）角色B繁复（8色+纹理）——像两个不同游戏的素材放在一起</text>
 
-    <!-- Bug side: inconsistent detail -->
-    <g transform="translate(0, 10)">
-      <rect x="0" y="0" width="110" height="58" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="3"/>
-      <text x="55" y="10" font-size="7" fill="#E74C3C" text-anchor="middle">✗ 症状：密度不一致</text>
-
-      <!-- Simple character (3 details) -->
-      <circle cx="28" cy="22" r="6" fill="#F5C6A0" stroke="#333" stroke-width="1.5"/>
-      <rect x="22" y="28" width="12" height="14" fill="#4A90D9" stroke="#333" stroke-width="1.5"/>
-      <rect x="24" y="42" width="4" height="8" fill="#3C3C3C"/>
-      <rect x="28" y="42" width="4" height="8" fill="#3C3C3C"/>
-      <text x="28" y="62" font-size="6" fill="#999" text-anchor="middle">只有 3 色</text>
-
-      <!-- Complex character (many details) -->
-      <g transform="translate(58, 12)">
-        <circle cx="12" cy="10" r="7" fill="#F5C6A0" stroke="#333" stroke-width="1.5"/>
-        <rect x="10" y="7" width="2" height="2" fill="#222"/>  <!-- eye1 -->
-        <rect x="14" y="7" width="2" height="2" fill="#222"/>  <!-- eye2 -->
-        <rect x="12" y="11" width="1" height="1" fill="#333"/> <!-- mouth -->
-        <rect x="6" y="17" width="14" height="16" fill="#4A90D9" stroke="#333" stroke-width="1.5"/>
-        <line x1="12" y1="21" x2="12" y2="33" stroke="#F5C6A0" stroke-width="1"/> <!-- belt line -->
-        <rect x="3" y="19" width="3" height="6" fill="#4A90D9"/>
-        <rect x="20" y="19" width="3" height="6" fill="#4A90D9"/>
-        <rect x="9" y="33" width="4" height="8" fill="#3C3C3C"/>
-        <rect x="15" y="33" width="4" height="8" fill="#3C3C3C"/>
-        <rect x="3" y="23" width="2" height="2" fill="#C0C0C0"/> <!-- accessory -->
-      </g>
-      <text x="60" y="62" font-size="6" fill="#999" text-anchor="middle">8 颜色+配饰</text>
-      <text x="55" y="74" font-size="6" fill="#E74C3C" text-anchor="middle">← 跳跃巨大</text>
+    <g transform="translate(12, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="sym-label">✗ 症状</text>
+      <!-- Simple character -->
+      <circle cx="66" cy="10" r="4" fill="#F5C6A0"/>
+      <rect x="60" y="14" width="12" height="12" fill="#4A90D9"/>
+      <rect x="62" y="26" width="4" height="4" fill="#3C3C3C"/>
+      <rect x="66" y="26" width="4" height="4" fill="#3C3C3C"/>
+      <!-- Complex character -->
+      <circle cx="100" cy="10" r="6" fill="#F5C6A0"/>
+      <rect x="96" y="7" width="2" height="2" fill="#222"/>
+      <rect x="102" y="7" width="2" height="2" fill="#222"/>
+      <rect x="94" y="16" width="12" height="12" fill="#4A90D9"/>
+      <line x1="100" y1="20" x2="100" y2="28" stroke="#C0C0C0" stroke-width="1"/>
+      <rect x="95" y="28" width="4" height="4" fill="#3C3C3C"/>
+      <rect x="101" y="28" width="4" height="4" fill="#3C3C3C"/>
+      <rect x="91" y="18" width="3" height="3" fill="#F1C40F"/>
+      <text x="150" y="14" class="desc">极简 vs 繁复→密度跳跃巨大</text>
     </g>
-
-    <!-- Fix side: balanced detail -->
-    <g transform="translate(0, 10)">
-      <rect x="120" y="0" width="110" height="58" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="3"/>
-      <text x="175" y="10" font-size="7" fill="#27AE60" text-anchor="middle">✓ 修复：密度匹配</text>
-
-      <circle cx="148" cy="22" r="6" fill="#F5C6A0" stroke="#333" stroke-width="1.5"/>
-      <rect x="142" y="28" width="12" height="14" fill="#4A90D9" stroke="#333" stroke-width="1.5"/>
-      <rect x="145" y="32" width="6" height="1" fill="#3A7BC8"/>
-      <rect x="144" y="42" width="4" height="8" fill="#3C3C3C"/>
-      <rect x="148" y="42" width="4" height="8" fill="#3C3C3C"/>
-
-      <g transform="translate(178, 12)">
-        <circle cx="12" cy="10" r="7" fill="#F5C6A0" stroke="#333" stroke-width="1.5"/>
-        <rect x="10" y="7" width="2" height="2" fill="#222"/>
-        <rect x="14" y="7" width="2" height="2" fill="#222"/>
-        <rect x="6" y="17" width="14" height="16" fill="#4A90D9" stroke="#333" stroke-width="1.5"/>
-        <rect x="9" y="33" width="4" height="8" fill="#3C3C3C"/>
-        <rect x="15" y="33" width="4" height="8" fill="#3C3C3C"/>
-      </g>
-
-      <text x="175" y="56" font-size="7" fill="#999" text-anchor="middle">密度接近——风格统一</text>
+    <g transform="translate(383, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="fix-label">✓ 修复</text>
+      <circle cx="66" cy="10" r="4" fill="#F5C6A0"/>
+      <rect x="60" y="14" width="14" height="12" fill="#4A90D9"/>
+      <rect x="62" y="26" width="4" height="4" fill="#3C3C3C"/>
+      <rect x="66" y="26" width="4" height="4" fill="#3C3C3C"/>
+      <circle cx="100" cy="10" r="5" fill="#F5C6A0"/>
+      <rect x="96" y="7" width="2" height="2" fill="#222"/>
+      <rect x="102" y="7" width="2" height="2" fill="#222"/>
+      <rect x="95" y="15" width="11" height="12" fill="#4A90D9"/>
+      <rect x="96" y="27" width="4" height="4" fill="#3C3C3C"/>
+      <rect x="101" y="27" width="4" height="4" fill="#3C3C3C"/>
+      <text x="145" y="14" class="desc" fill="#555">两角色密度接近</text>
     </g>
   </g>
 
-  <!-- ===== Bug 4: Anti-aliasing ===== -->
-  <g transform="translate(20, 200)">
-    <text x="0" y="0" class="bug-num">Bug 4</text>
-    <text x="30" y="0" class="bug-label">抗锯齿不一致</text>
-    <text x="110" y="0" class="bug-desc">硬边+软边混用 → "不干净"</text>
+  <!-- Row 4: Anti-aliasing -->
+  <g transform="translate(25, 274)">
+    <rect x="0" y="0" width="750" height="68" fill="#fafafa" stroke="#eee" stroke-width="0.5" rx="4"/>
+    <text x="12" y="16" class="bug-num">Bug 4</text>
+    <text x="55" y="16" class="bug-name">抗锯齿不一致</text>
+    <text x="150" y="16" class="desc">同一画面里有的素材硬边(无AA)、有的软边(过度AA)——边界处理策略不统一，画面像"没做完"</text>
 
-    <!-- Bug side: mixed AA -->
-    <g transform="translate(0, 10)">
-      <rect x="0" y="0" width="110" height="58" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="3"/>
-      <text x="55" y="10" font-size="7" fill="#E74C3C" text-anchor="middle">✗ 症状：硬边+软边</text>
-
-      <!-- Hard edge circle (no AA, jaggy) -->
-      <circle cx="28" cy="32" r="12" fill="#F39C12" opacity="0.7"/>
-      <text x="28" y="58" font-size="6" fill="#999" text-anchor="middle">硬边</text>
-
-      <!-- Soft edge circle (with AA, smooth) -->
-      <circle cx="72" cy="32" r="12" fill="#F39C12" opacity="0.7"/>
-      <!-- Simulate AA with inner blur-like shadow -->
-      <circle cx="72" cy="32" r="12" fill="none" stroke="#E67E22" stroke-width="2" opacity="0.3"/>
-      <text x="72" y="58" font-size="6" fill="#999" text-anchor="middle">软边</text>
-
-      <text x="55" y="74" font-size="6" fill="#E74C3C" text-anchor="middle">两个 Sprite 边处理不同</text>
+    <g transform="translate(12, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="sym-label">✗ 症状</text>
+      <circle cx="72" cy="14" r="8" fill="#F39C12"/>
+      <rect x="72" y="14" width="12" height="12" fill="#F39C12"/>
+      <text x="92" y="18" class="desc">硬边</text>
+      <circle cx="150" cy="14" r="8" fill="#F39C12" opacity="0.5"/>
+      <circle cx="150" cy="14" r="10" fill="none" stroke="#E67E22" stroke-width="1.5" opacity="0.4"/>
+      <text x="170" y="18" class="desc">过度AA</text>
+      <text x="240" y="18" class="desc" fill="#E74C3C">硬边+软边混用</text>
     </g>
-
-    <!-- Fix side: unified AA -->
-    <g transform="translate(0, 10)">
-      <rect x="120" y="0" width="110" height="58" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="3"/>
-      <text x="175" y="10" font-size="7" fill="#27AE60" text-anchor="middle">✓ 修复：统一硬边</text>
-
-      <circle cx="148" cy="32" r="12" fill="#F39C12" opacity="0.7"/>
-      <circle cx="148" cy="32" r="12" fill="none" stroke="#D68910" stroke-width="1.5"/>
-
-      <circle cx="202" cy="32" r="12" fill="#F39C12" opacity="0.7"/>
-      <circle cx="202" cy="32" r="12" fill="none" stroke="#D68910" stroke-width="1.5"/>
-
-      <text x="175" y="56" font-size="7" fill="#999" text-anchor="middle">全部统一硬边处理</text>
+    <g transform="translate(383, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="fix-label">✓ 修复</text>
+      <circle cx="72" cy="14" r="8" fill="#F39C12"/>
+      <rect x="72" y="14" width="12" height="12" fill="#F39C12"/>
+      <circle cx="150" cy="14" r="8" fill="#F39C12"/>
+      <rect x="150" y="14" width="12" height="12" fill="#F39C12"/>
+      <text x="180" y="18" class="desc" fill="#555">全部统一硬边（像素本来就不该AA）</text>
     </g>
   </g>
 
-  <!-- ===== Bug 5: UI Style Mutation ===== -->
-  <g transform="translate(280, 200)">
-    <text x="0" y="0" class="bug-num">Bug 5</text>
-    <text x="30" y="0" class="bug-label">UI 风格突变</text>
-    <text x="110" y="0" class="bug-desc">不同场景 UI 风格不一 → "割裂"</text>
+  <!-- Row 5: UI Style -->
+  <g transform="translate(25, 348)">
+    <rect x="0" y="0" width="750" height="68" fill="#fafafa" stroke="#eee" stroke-width="0.5" rx="4"/>
+    <text x="12" y="16" class="bug-num">Bug 5</text>
+    <text x="55" y="16" class="bug-name">UI 风格突变</text>
+    <text x="150" y="16" class="desc">不同场景/界面的 UI 风格不统一——一个面板是像素风、另一个是矢量的、第三个是手绘的——同一个游戏有三种 UI 语言</text>
 
-    <!-- Bug side: UI style mismatch -->
-    <g transform="translate(0, 10)">
-      <rect x="0" y="0" width="110" height="58" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="3"/>
-      <text x="55" y="10" font-size="7" fill="#E74C3C" text-anchor="middle">✗ 症状：两套 UI 风格</text>
-
-      <!-- Fantasy-style HP bar -->
-      <rect x="8" y="18" width="50" height="8" fill="#3C3C3C" rx="2"/>
-      <rect x="8" y="18" width="38" height="8" fill="#E74C3C" rx="2"/>
-      <text x="12" y="33" font-size="6" fill="#666">奇幻风 HP 条</text>
-
-      <!-- Sci-fi-style HP bar -->
-      <rect x="8" y="40" width="50" height="8" fill="#111" stroke="#0FF" stroke-width="1" rx="0"/>
-      <rect x="8" y="40" width="30" height="8" fill="#0FF" opacity="0.6" rx="0"/>
-      <text x="12" y="55" font-size="6" fill="#666">科幻风 HP 条</text>
-
-      <text x="55" y="74" font-size="6" fill="#E74C3C" text-anchor="middle">风格不统一=两个游戏</text>
+    <g transform="translate(12, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#FFF5F5" stroke="#FFCCCC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="sym-label">✗ 症状</text>
+      <rect x="60" y="6" width="70" height="8" rx="2" fill="#333"/>
+      <rect x="60" y="6" width="50" height="8" rx="2" fill="#E74C3C"/>
+      <text x="140" y="13" class="desc" font-size="7">像素风</text>
+      <rect x="185" y="6" width="70" height="8" rx="0" fill="#111" stroke="#0FF" stroke-width="0.8"/>
+      <rect x="185" y="6" width="45" height="8" rx="0" fill="#0FF" opacity="0.6"/>
+      <text x="265" y="13" class="desc" font-size="7">科幻风</text>
+      <text x="240" y="26" class="desc" fill="#E74C3C">风格冲突→两个游戏</text>
     </g>
-
-    <!-- Fix side: unified UI style -->
-    <g transform="translate(0, 10)">
-      <rect x="120" y="0" width="110" height="58" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="3"/>
-      <text x="175" y="10" font-size="7" fill="#27AE60" text-anchor="middle">✓ 修复：统一风格</text>
-
-      <!-- Both fantasy-style -->
-      <rect x="128" y="18" width="50" height="8" fill="#3C3C3C" rx="2"/>
-      <rect x="128" y="18" width="38" height="8" fill="#E74C3C" rx="2"/>
-      <text x="132" y="33" font-size="6" fill="#666">场景A HP 条</text>
-
-      <rect x="128" y="40" width="50" height="8" fill="#3C3C3C" rx="2"/>
-      <rect x="128" y="40" width="25" height="8" fill="#E74C3C" rx="2"/>
-      <text x="132" y="55" font-size="6" fill="#666">场景B HP 条</text>
-
-      <text x="175" y="56" font-size="7" fill="#999" text-anchor="middle">统一风格=一个游戏</text>
+    <g transform="translate(383, 28)">
+      <rect x="0" y="0" width="355" height="32" fill="#F0FFF0" stroke="#CCEECC" stroke-width="0.5" rx="2"/>
+      <text x="8" y="14" class="fix-label">✓ 修复</text>
+      <rect x="60" y="6" width="70" height="8" rx="2" fill="#333"/>
+      <rect x="60" y="6" width="50" height="8" rx="2" fill="#E74C3C"/>
+      <rect x="185" y="6" width="70" height="8" rx="2" fill="#333"/>
+      <rect x="185" y="6" width="40" height="8" rx="2" fill="#E74C3C"/>
+      <text x="260" y="13" class="desc" fill="#555">统一像素风格</text>
     </g>
   </g>
 
   <!-- Bottom summary -->
-  <g transform="translate(20, 385)">
-    <rect x="0" y="0" width="760" height="55" fill="#E8F4FD" rx="6"/>
-    <text x="380" y="18" font-size="11" font-weight="bold" fill="#333" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">快速自查法：把游戏截图并排——用手遮住 UI——还能认出是同一个游戏吗？</text>
-    <text x="380" y="36" font-size="9" fill="#666" text-anchor="middle">如果能——视觉一致。如果不能——上面的 5 种 Bug 中至少中了 1 个。</text>
-    <text x="380" y="48" font-size="8" fill="#aaa" text-anchor="middle">参考：Braid 开发者 David Hellman 说——"非游戏性区域用更少细节，避免干扰"——一致性不是所有都"一样多"，是"不一样多但很协调"。</text>
-  </g>
+  <rect x="25" y="432" width="750" height="42" rx="4" fill="#E8F4FD"/>
+  <text x="400" y="452" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">快速自查：截图并排——遮住 UI——还能认出是同一个游戏吗？</text>
+  <text x="400" y="467" font-size="8" fill="#666" text-anchor="middle">如果能——视觉一致。如果不能——上面 5 种 Bug 至少中了 1 个。</text>
 </svg>

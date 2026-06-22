@@ -37,11 +37,11 @@
     <line x1="20" y1="200" x2="340" y2="200" class="divider"/>
 
     <text x="20" y="220" class="star-text" text-anchor="start">入门成本</text>
-    <text x="340" y="220" class="star-text" text-anchor="end">★★☆☆☆ 低（15 分钟出第一张）</text>
+    <text x="330" y="220" class="star-text" text-anchor="end">★★☆☆☆ 低（15 分钟出第一张）</text>
     <text x="20" y="240" class="star-text" text-anchor="start">产出效率</text>
-    <text x="340" y="240" class="star-text" text-anchor="end">★★★★☆ 高（色板/模板复用）</text>
+    <text x="330" y="240" class="star-text" text-anchor="end">★★★★☆ 高（色板/模板复用）</text>
     <text x="20" y="260" class="star-text" text-anchor="start">天花板高度</text>
-    <text x="340" y="260" class="star-text" text-anchor="end">★★★★★ 极高（上限=设计力）</text>
+    <text x="330" y="260" class="star-text" text-anchor="end">★★★★★ 极高（上限=设计力）</text>
 
     <line x1="20" y1="275" x2="340" y2="275" class="divider"/>
 

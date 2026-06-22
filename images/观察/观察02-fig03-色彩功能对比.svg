@@ -75,5 +75,5 @@
   <text x="400" y="360" class="label" text-anchor="middle" font-weight="bold" fill="#C0392B">同一工具，两种用法——取决于你的设计目标</text>
 
   <!-- Bottom annotation -->
-  <text x="400" y="392" class="caption" text-anchor="middle" display="none">图 2.3：色彩可以"发出指令"（左），也可以"建立情绪"（右）。好的游戏美术通常两者兼有。</text>
+  <text x="400" y="392" class="caption" text-anchor="middle" display="none">色彩可以"发出指令"（左），也可以"建立情绪"（右）。好的游戏美术通常两者兼有。</text>
 </svg>

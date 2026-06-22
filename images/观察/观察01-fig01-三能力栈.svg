@@ -21,7 +21,7 @@
   <rect x="70" y="60" width="340" height="92" rx="8" fill="#7E57C2"/>
   <text x="240" y="88" class="layer-title">整 · Integrate</text>
   <text x="240" y="111" class="layer-sub">整合：素材进引擎、风格统一、运行时一致</text>
-  <text x="240" y="133" class="layer-tag">训练：第四部 制作后半（制作07 / 08 / 09）</text>
+  <text x="240" y="133" class="layer-tag">训练：第四部 制作07-09（上引擎 / 管线 / 一致性）</text>
   <text x="430" y="100" class="problem">「素材进引擎后总跟画布上不一样」</text>
 
   <!-- dependency arrow gap 1 -->
@@ -47,15 +47,13 @@
   <!-- dependency direction label -->
   <text x="50" y="385" class="dep">底层支撑上层</text>
 
-  <!-- 5→3 collapse mapping panel -->
-  <rect x="70" y="402" width="660" height="64" rx="6" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
-  <text x="400" y="423" class="map-title">原五子能力 ⟶ 三能力（为什么从五变三）</text>
-  <text x="400" y="444" class="map-line">感知+词汇⟶看 ｜ 执行+工具⟶做 ｜ 整合⟶整</text>
-  <text x="400" y="460" class="map-line">工具已固定（Aseprite + Godot），“选兵器”坍缩——从全门类版收窄为像素专版的唯一结构改动。</text>
+  <!-- collapse mapping panel -->
+  <rect x="70" y="402" width="660" height="48" rx="6" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="400" y="425" class="map-title">感知+词汇 ⟶ 看 ｜ 执行+工具 ⟶ 做 ｜ 整合 ⟶ 整</text>
+  <text x="400" y="443" class="map-line">工具固定（Aseprite + Godot），从全门类版收窄为像素专版的结构调整。</text>
 
   <!-- tagline -->
   <text x="400" y="492" class="tagline">底层没通，上层再努力也没用。</text>
 
-  <!-- caption -->
-  <text x="400" y="525" class="caption">图 1.1：三能力像三层协议栈——底层没通，上面再努力也没用。大多数程序员的问题出在最底下的“看”。</text>
+
 </svg>

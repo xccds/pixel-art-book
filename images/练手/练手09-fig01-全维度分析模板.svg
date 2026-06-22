@@ -127,5 +127,5 @@
     <line x1="160" y1="364" x2="160" y2="439" class="col-divider"/>
   </g>
 
-  <text x="400" y="510" font-size="10px" fill="#888" text-anchor="middle">图 练手09.1：全维度分析模板。填完这张表，你对这张截图的理解就从"好看/不好看"变成了可复现的配方。</text>
+  <text x="400" y="510" font-size="10px" fill="#888" text-anchor="middle">全维度分析模板。填完这张表，你对这张截图的理解就从"好看/不好看"变成了可复现的配方。</text>
 </svg>

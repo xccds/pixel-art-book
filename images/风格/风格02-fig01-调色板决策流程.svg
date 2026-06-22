@@ -152,5 +152,5 @@
   <text x="400" y="575" class="out-text">锁定调色板</text>
   <text x="400" y="590" class="out-text">→ 写入视觉宪法（风格04）</text>
 
-  <text x="400" y="614" class="caption">图 风格02.1：调色板决策流程——四约束 → 定色数（16 色为甜点）→ 固定/自定义 → 锁定。</text>
+  <text x="400" y="614" class="caption">调色板决策流程——四约束 → 定色数（16 色为甜点）→ 固定/自定义 → 锁定。</text>
 </svg>

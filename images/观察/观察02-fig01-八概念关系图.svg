@@ -69,5 +69,5 @@
   <line x1="240" y1="130" x2="360" y2="275" class="connector"/>
 
   <!-- Annotation -->
-  <text x="400" y="498" class="caption" text-anchor="middle">图 2.1：八个概念不是孤立的——它们全部作用于"视觉权重"这个核心。一个元素在哪方面权重高，玩家的眼睛就会先看到它。</text>
+  <text x="400" y="498" class="caption" text-anchor="middle">八个概念不是孤立的——它们全部作用于"视觉权重"这个核心。一个元素在哪方面权重高，玩家的眼睛就会先看到它。</text>
 </svg>

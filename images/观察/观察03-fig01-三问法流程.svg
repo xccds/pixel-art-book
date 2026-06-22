@@ -61,5 +61,5 @@
   <!-- Cycle annotation -->
   <text x="400" y="415" fill="#666" font-size="13" text-anchor="middle">每轮循环，分析深度递增——第一轮看到"有什么"，第三轮看到"为什么有效/为什么垮了"</text>
 
-  <text x="400" y="488" class="caption">图 3.1：VTS 三问法核心流程——三个问题形成闭环，每一轮循环都将分析推深一层。</text>
+  <text x="400" y="488" class="caption">VTS 三问法核心流程——三个问题形成闭环，每一轮循环都将分析推深一层。</text>
 </svg>

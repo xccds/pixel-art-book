@@ -16,7 +16,7 @@
     .note-text { font-size: 9.5px; fill: #666; text-anchor: middle; }
   </style>
 
-  <text x="400" y="28" class="title" text-anchor="middle">图 制作01.1 像素栈——本书锁定的工具链与三原则位置</text>
+  <text x="400" y="28" class="title" text-anchor="middle">像素栈——本书锁定的工具链与三原则位置</text>
 
   <!-- Left: Pixel Stack panel -->
   <g transform="translate(20, 45)">
@@ -89,7 +89,7 @@
     <text x="20" y="340" class="suit-text">• Godot：免费开源，纹理默认 Nearest Neighbor，</text>
     <text x="20" y="355" class="suit-text">  导入 PNG 不抗锯齿，像素不糊</text>
     <text x="20" y="376" class="suit-text">• 管线极短：.aseprite → PNG → Godot 即可上线</text>
-    <text x="20" y="397" class="suit-text">• 选兵器就此坍缩——你直接开始画</text>
+    <text x="20" y="397" class="suit-text">• 工具选择就此定案——你直接开始画</text>
   </g>
 
   <text x="400" y="490" class="note-text">不是选"最强的工具"——是选"在你当前项目规模上最不慢的"。像素栈入门低 × 效率高 = 第一个月生存概率最高。</text>

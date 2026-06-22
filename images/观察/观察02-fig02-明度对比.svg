@@ -66,5 +66,5 @@
   <text x="595" y="400" class="caption" text-anchor="middle">高对比区域依然明显</text>
 
   <!-- Bottom annotation -->
-  <text x="400" y="420" class="caption" text-anchor="middle" display="none">图 2.2：无论画面是极暗还是极亮，明度结构决定了画面的第一印象。去色后还能看出层次和焦点 = 明度扎实。</text>
+  <text x="400" y="420" class="caption" text-anchor="middle" display="none">无论画面是极暗还是极亮，明度结构决定了画面的第一印象。去色后还能看出层次和焦点 = 明度扎实。</text>
 </svg>

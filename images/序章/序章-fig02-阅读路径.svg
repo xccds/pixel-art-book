@@ -93,5 +93,5 @@
   <text x="675" y="343" class="label" text-anchor="middle">发布</text>
 
   <!-- Bottom annotation -->
-  <text x="400" y="460" class="caption" text-anchor="middle">图 0.2：三条路径共享相同的学习阶段——区别在于节奏和深度。选一条，坚持走完。</text>
+  <text x="400" y="460" class="caption" text-anchor="middle">三条路径共享相同的学习阶段——区别在于节奏和深度。选一条，坚持走完。</text>
 </svg>

@@ -1,30 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
   <style>
     .bg { fill: #FAFAFA; }
     .title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #2C3E50; }
-    .label-shape { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
-    .label-text { font-family: sans-serif; font-size: 12px; fill: #333; }
+    .shape-title { font-family: sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .shape-desc { font-family: sans-serif; font-size: 12px; text-anchor: middle; }
+    .shape-emotion { font-family: sans-serif; font-size: 11px; text-anchor: middle; }
+    .label-text { font-family: sans-serif; font-size: 13px; fill: #333; }
     .label-small { font-family: sans-serif; font-size: 10px; fill: #666; }
     .line { stroke: #BDC3C7; stroke-width: 1; }
-    .hline { stroke: #E0E0E0; stroke-width: 0.5; }
+    .panel { fill: #fafafa; stroke: #e0e0e0; stroke-width: 1.5; rx: 6; }
   </style>
-  <rect class="bg" width="800" height="500"/>
+  <rect class="bg" width="800" height="420"/>
 
-  <!-- Title -->
   <text x="400" y="36" text-anchor="middle" class="title">形状心理学：三种基本形状的语言</text>
 
-  <!-- Three columns -->
   <!-- Column 1: Circle -->
+  <g transform="translate(60, 65)">
+    <rect x="0" y="0" width="200" height="260" class="panel"/>
+    <circle cx="100" cy="90" r="55" fill="#5DADE2" opacity="0.85"/>
+    <text x="100" y="28" class="shape-title" fill="#2E86C1">圆形</text>
+    <text x="100" y="175" class="shape-desc" fill="#333">安全 · 友好 · 亲和</text>
+    <text x="100" y="195" class="shape-emotion" fill="#888">无威胁感的视觉信号</text>
+    <text x="100" y="215" class="shape-emotion" fill="#888">角色用圆 = 让玩家放下警惕</text>
+    <text x="100" y="240" class="shape-emotion" fill="#999" font-style="italic">例：卡比、史莱姆、马力欧蘑菇</text>
+  </g>
 
   <!-- Column 2: Square -->
+  <g transform="translate(300, 65)">
+    <rect x="0" y="0" width="200" height="260" class="panel"/>
+    <rect x="45" y="35" width="110" height="110" fill="#27AE60" opacity="0.85" rx="4"/>
+    <text x="100" y="28" class="shape-title" fill="#1E8449">方形</text>
+    <text x="100" y="175" class="shape-desc" fill="#333">稳定 · 可靠 · 坚固</text>
+    <text x="100" y="195" class="shape-emotion" fill="#888">视觉锚点，不易动摇</text>
+    <text x="100" y="215" class="shape-emotion" fill="#888">角色用方 = 可依靠/防御型</text>
+    <text x="100" y="240" class="shape-emotion" fill="#999" font-style="italic">例：城墙、宝箱、坦克型角色</text>
+  </g>
 
   <!-- Column 3: Triangle -->
+  <g transform="translate(540, 65)">
+    <rect x="0" y="0" width="200" height="260" class="panel"/>
+    <polygon points="100,40 20,140 180,140" fill="#E74C3C" opacity="0.85"/>
+    <text x="100" y="28" class="shape-title" fill="#C0392B">三角形</text>
+    <text x="100" y="175" class="shape-desc" fill="#333">危险 · 方向 · 尖锐</text>
+    <text x="100" y="195" class="shape-emotion" fill="#888">视觉张力，引起警觉</text>
+    <text x="100" y="215" class="shape-emotion" fill="#888">角色用三角 = 攻击性/威胁</text>
+    <text x="100" y="240" class="shape-emotion" fill="#999" font-style="italic">例：尖刺、爪、反派剪影</text>
+  </g>
 
   <!-- Bottom summary -->
-  <line x1="40" y1="370" x2="760" y2="370" class="line"/>
-  <text x="400" y="398" text-anchor="middle" class="label-text">核心原则：玩家在看到颜色和细节之前，形状已经在传递信息</text>
-  <text x="400" y="420" text-anchor="middle" class="label-small">基本形状组合可以产生无限变化：六边形 = 科技感 · 星形 = 魔法/特殊 · 有机形 = 自然/生物</text>
-
-  <!-- Context: just rectangles + triangles at bottom -->
-  <rect x="40" y="440" width="720" height="38" rx="4" fill="#E8F4FD" stroke="#3498DB" stroke-width="1"/>
-  </svg>
+  <line x1="40" y1="350" x2="760" y2="350" class="line"/>
+  <text x="400" y="378" text-anchor="middle" class="label-text">核心原则：玩家在看到颜色和细节之前，形状已经在传递信息</text>
+  <text x="400" y="400" text-anchor="middle" class="label-small">基本形状组合产生无限变化：六边形 = 科技感 · 星形 = 魔法/特殊 · 有机形 = 自然/生物</text>
+</svg>

@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
     .layer-label { font-size: 12px; font-weight: bold; fill: #fff; }
     .layer-sub { font-size: 9px; fill: #ddd; }
-    .layer-desc { font-size: 9px; fill: #888; }
+    .layer-desc { font-size: 9px; fill: #eee; }
     .layer-num { font-size: 18px; font-weight: bold; fill: #fff; opacity: 0.7; }
-    .demo-label { font-size: 9px; fill: #666; }
+    .demo-label { font-size: 9px; fill: #ddd; }
     .note { font-size: 10px; fill: #888; }
     .arrow { stroke: #888; stroke-width: 1; fill: none; }
     .divider { stroke: #BDC3C7; stroke-width: 1; }
@@ -133,7 +133,4 @@
       <text x="130" y="55" class="demo-label">近</text>
     </g>
   </g>
-
-  <!-- Summary -->
-  <rect x="30" y="452" width="740" height="34" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
-  </svg>
+</svg>

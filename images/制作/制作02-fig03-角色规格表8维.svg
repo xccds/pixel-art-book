@@ -2,17 +2,17 @@
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
-    .subtitle { font-size: 11px; fill: #666; }
+    .subtitle { font-size: 11px; fill: #444; }
     .table-header { font-size: 10px; font-weight: bold; fill: #fff; text-anchor: middle; }
     .table-cell { font-size: 9px; fill: #333; text-anchor: middle; }
     .table-cell-left { font-size: 9px; fill: #333; }
-    .table-cell-accent { font-size: 9px; fill: #E74C3C; font-weight: bold; text-anchor: middle; }
-    .table-cell-gray { font-size: 9px; fill: #666; text-anchor: middle; }
+    .table-cell-accent { font-size: 9px; fill: #C0392B; font-weight: bold; text-anchor: middle; }
+    .table-cell-gray { font-size: 9px; fill: #555; text-anchor: middle; }
     .table-row-label { font-size: 10px; font-weight: bold; fill: #fff; }
-    .formula { font-size: 8px; fill: #999; font-style: italic; }
+    .formula { font-size: 8px; fill: #666; font-style: italic; }
   </style>
 
-  <text x="400" y="28" class="title" text-anchor="middle">图 制作02.3  角色规格表模板——一个角色在项目开始前必须回答的 8 个问题</text>
+  <text x="400" y="28" class="title" text-anchor="middle">角色规格表模板——一个角色在项目开始前必须回答的 8 个问题</text>
   <text x="400" y="46" class="subtitle" text-anchor="middle">这不是"画着画着就知道了"——这是在第一个像素/第一个面之前填完的约束，否则角色之间必然不一致</text>
 
   <!-- Main table -->

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 485" width="800" height="485">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -16,12 +16,12 @@
 
   <!-- Main scene canvas -->
   <g transform="translate(20, 65)">
-    <rect x="0" y="0" width="760" height="320" fill="#E8F4FD" stroke="#B0C4DE" stroke-width="1.5" rx="4"/>
+    <rect x="0" y="0" width="760" height="485" fill="#E8F4FD" stroke="#B0C4DE" stroke-width="1.5" rx="4"/>
 
     <!-- Background layer (distant) -->
     <g>
       <!-- Sky gradient -->
-      <rect x="10" y="10" width="740" height="120" fill="#A9CCE3" opacity="0.7"/>
+      <rect x="10" y="10" width="740" height="485" fill="#A9CCE3" opacity="0.7"/>
       <!-- Sun/moon -->
       <circle cx="600" cy="45" r="25" fill="#FAD7A1" opacity="0.6"/>
       <!-- Distant mountains -->
@@ -31,27 +31,27 @@
       <polygon points="400,130 500,55 600,130" fill="#7D9BB5" opacity="0.6"/>
       <polygon points="550,130 650,65 760,130" fill="#85A5C2" opacity="0.5"/>
       <!-- Fog/atmosphere band -->
-      <rect x="10" y="120" width="740" height="15" fill="#D4E6F1" opacity="0.5"/>
+      <rect x="10" y="120" width="740" height="485" fill="#D4E6F1" opacity="0.5"/>
     </g>
 
     <!-- Midground layer -->
     <g>
       <!-- Ground plane -->
-      <rect x="10" y="170" width="740" height="160" fill="#ABEBC6" opacity="0.5"/>
+      <rect x="10" y="170" width="740" height="485" fill="#ABEBC6" opacity="0.5"/>
       <!-- Midground hill -->
       <ellipse cx="380" cy="200" rx="350" ry="50" fill="#82E0AA" opacity="0.5"/>
       <!-- House -->
       <g transform="translate(90, 120)">
-        <rect x="0" y="15" width="60" height="45" fill="#D4A574" stroke="#A0522D" stroke-width="0.5"/>
+        <rect x="0" y="15" width="60" height="485" fill="#D4A574" stroke="#A0522D" stroke-width="0.5"/>
         <polygon points="-5,15 30,-10 65,15" fill="#C0392B" stroke="#922B21" stroke-width="0.5"/>
-        <rect x="20" y="32" width="20" height="28" fill="#6E2C00"/>
-        <rect x="8" y="25" width="14" height="12" fill="#AED6F1" stroke="#5DADE2" stroke-width="0.5"/>
-        <rect x="38" y="25" width="14" height="12" fill="#AED6F1" stroke="#5DADE2" stroke-width="0.5"/>
-        <rect x="30" y="5" width="8" height="28" fill="#95A5A6"/>
+        <rect x="20" y="32" width="20" height="485" fill="#6E2C00"/>
+        <rect x="8" y="25" width="14" height="485" fill="#AED6F1" stroke="#5DADE2" stroke-width="0.5"/>
+        <rect x="38" y="25" width="14" height="485" fill="#AED6F1" stroke="#5DADE2" stroke-width="0.5"/>
+        <rect x="30" y="5" width="8" height="485" fill="#95A5A6"/>
       </g>
       <!-- Midground tree -->
       <g transform="translate(580, 110)">
-        <rect x="12" y="30" width="8" height="40" fill="#6E2C00"/>
+        <rect x="12" y="30" width="8" height="485" fill="#6E2C00"/>
         <ellipse cx="16" cy="25" rx="20" ry="25" fill="#27AE60" opacity="0.7"/>
         <ellipse cx="10" cy="30" rx="15" ry="20" fill="#2ECC71" opacity="0.5"/>
       </g>
@@ -59,19 +59,19 @@
       <path d="M 200,230 Q 300,260 500,240 Q 600,230 760,250" fill="none" stroke="#85C1E9" stroke-width="20" opacity="0.5"/>
       <!-- Bridge over river -->
       <g transform="translate(350, 215)">
-        <rect x="0" y="0" width="60" height="8" fill="#6E2C00" rx="2"/>
-        <rect x="5" y="8" width="8" height="15" fill="#6E2C00"/>
-        <rect x="47" y="8" width="8" height="15" fill="#6E2C00"/>
+        <rect x="0" y="0" width="60" height="485" fill="#6E2C00" rx="2"/>
+        <rect x="5" y="8" width="8" height="485" fill="#6E2C00"/>
+        <rect x="47" y="8" width="8" height="485" fill="#6E2C00"/>
       </g>
     </g>
 
     <!-- Foreground layer -->
     <g>
       <!-- Foreground ground -->
-      <rect x="10" y="265" width="740" height="70" fill="#27AE60" opacity="0.3"/>
+      <rect x="10" y="265" width="740" height="485" fill="#27AE60" opacity="0.3"/>
       <!-- Left foreground tree -->
       <g transform="translate(20, 180)">
-        <rect x="22" y="40" width="12" height="70" fill="#4A2311"/>
+        <rect x="22" y="40" width="12" height="485" fill="#4A2311"/>
         <ellipse cx="28" cy="35" rx="30" ry="35" fill="#1E8449" opacity="0.8"/>
       </g>
       <!-- Right foreground bush -->
@@ -82,11 +82,11 @@
 
     <!-- Brackets and labels for each layer -->
     <!-- Background bracket -->
-    <rect x="15" y="15" width="155" height="115" fill="none" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
+    <rect x="15" y="15" width="155" height="485" fill="none" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
     <line x1="170" y1="72" x2="190" y2="72" stroke="#E74C3C" stroke-width="1"/>
     <line x1="190" y1="20" x2="190" y2="120" stroke="#E74C3C" stroke-width="1"/>
     <g transform="translate(195, 8)">
-      <rect x="0" y="0" width="150" height="112" fill="#fff" stroke="#E74C3C" stroke-width="1.5" rx="4"/>
+      <rect x="0" y="0" width="150" height="485" fill="#fff" stroke="#E74C3C" stroke-width="1.5" rx="4"/>
       <text x="75" y="16" style="font-size:12px; font-weight:bold; fill:#E74C3C;" text-anchor="middle">远景（Background）</text>
       <text x="75" y="30" class="layer-question" fill="#C0392B" text-anchor="middle">暗示什么？</text>
       <line x1="10" y1="36" x2="140" y2="36" stroke="#E0E0E0" stroke-width="0.5"/>
@@ -97,10 +97,10 @@
     </g>
 
     <!-- Midground bracket -->
-    <rect x="295" y="145" width="140" height="110" fill="none" stroke="#F39C12" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
+    <rect x="295" y="145" width="140" height="485" fill="none" stroke="#F39C12" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
     <line x1="435" y1="200" x2="520" y2="200" stroke="#F39C12" stroke-width="1"/>
     <g transform="translate(525, 145)">
-      <rect x="0" y="0" width="155" height="112" fill="#fff" stroke="#F39C12" stroke-width="1.5" rx="4"/>
+      <rect x="0" y="0" width="155" height="485" fill="#fff" stroke="#F39C12" stroke-width="1.5" rx="4"/>
       <text x="77" y="16" style="font-size:12px; font-weight:bold; fill:#F39C12;" text-anchor="middle">中景（Midground）</text>
       <text x="77" y="30" class="layer-question" fill="#D4AC0D" text-anchor="middle">正在发生什么？</text>
       <line x1="10" y1="36" x2="145" y2="36" stroke="#E0E0E0" stroke-width="0.5"/>
@@ -111,11 +111,11 @@
     </g>
 
     <!-- Foreground bracket -->
-    <rect x="15" y="255" width="105" height="70" fill="none" stroke="#27AE60" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
+    <rect x="15" y="255" width="105" height="485" fill="none" stroke="#27AE60" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
     <line x1="120" y1="290" x2="195" y2="290" stroke="#27AE60" stroke-width="1"/>
     <line x1="195" y1="255" x2="195" y2="325" stroke="#27AE60" stroke-width="1"/>
     <g transform="translate(200, 250)">
-      <rect x="0" y="0" width="155" height="80" fill="#fff" stroke="#27AE60" stroke-width="1.5" rx="4"/>
+      <rect x="0" y="0" width="155" height="485" fill="#fff" stroke="#27AE60" stroke-width="1.5" rx="4"/>
       <text x="77" y="16" style="font-size:12px; font-weight:bold; fill:#27AE60;" text-anchor="middle">前景（Foreground）</text>
       <text x="77" y="30" class="layer-question" fill="#1E8449" text-anchor="middle">谁的视角？</text>
       <line x1="10" y1="36" x2="145" y2="36" stroke="#E0E0E0" stroke-width="0.5"/>
@@ -127,24 +127,24 @@
 
   <!-- Bottom comparison -->
   <g transform="translate(20, 400)">
-    <rect x="0" y="0" width="760" height="80" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="6"/>
+    <rect x="0" y="0" width="760" height="485" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="6"/>
 
     <text x="20" y="20" style="font-size:11px; font-weight:bold; fill:#333;">三层叙事检查法——画完场景后问自己：</text>
 
     <g transform="translate(20, 35)">
-      <rect x="0" y="0" width="230" height="35" fill="#FDEDEC" rx="4"/>
+      <rect x="0" y="0" width="230" height="485" fill="#FDEDEC" rx="4"/>
       <text x="10" y="15" style="font-size:9px; fill:#E74C3C; font-weight:bold;">远景关掉 → 场景还有氛围吗？</text>
       <text x="10" y="30" style="font-size:8px; fill:#999;">如果关掉远景只剩中景+前景，世界感还在吗？</text>
     </g>
 
     <g transform="translate(265, 35)">
-      <rect x="0" y="0" width="230" height="35" fill="#FEF9E7" rx="4"/>
+      <rect x="0" y="0" width="230" height="485" fill="#FEF9E7" rx="4"/>
       <text x="10" y="15" style="font-size:9px; fill:#F39C12; font-weight:bold;">中景关掉 → 还有"玩什么"的信息吗？</text>
       <text x="10" y="30" style="font-size:8px; fill:#999;">中景承载着游戏性信息——关掉后玩家还能理解目标吗？</text>
     </g>
 
     <g transform="translate(510, 35)">
-      <rect x="0" y="0" width="230" height="35" fill="#E8F8F0" rx="4"/>
+      <rect x="0" y="0" width="230" height="485" fill="#E8F8F0" rx="4"/>
       <text x="10" y="15" style="font-size:9px; fill:#27AE60; font-weight:bold;">前景关掉 → 场景变"平"了吗？</text>
       <text x="10" y="30" style="font-size:8px; fill:#999;">前景提供深度感和沉浸感——没有前景的场景是"2D壁画"</text>
     </g>

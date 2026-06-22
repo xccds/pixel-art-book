@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"
-     width="800" height="400"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 412"
+     width="800" height="412"
      font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <style>
     .label { font-size: 14px; fill: #333; }
@@ -14,26 +14,26 @@
   <text x="400" y="28" class="title">色彩功能对比：功能信号 vs 情绪氛围</text>
 
   <!-- Left panel: Celeste style - color as function -->
-  <rect x="30" y="45" width="360" height="310" rx="6" fill="#FAFAFA" stroke="#CCC" stroke-width="1.5"/>
+  <rect x="30" y="45" width="360" height="412" rx="6" fill="#FAFAFA" stroke="#CCC" stroke-width="1.5"/>
   <text x="210" y="70" class="tag">—— 蔚蓝 式：色彩 = 功能信号 ——</text>
 
   <!-- Color blocks with function labels -->
-  <rect x="70" y="90" width="100" height="36" rx="4" fill="#7B2D8B"/>
+  <rect x="70" y="90" width="100" height="412" rx="4" fill="#7B2D8B"/>
   <text x="120" y="113" class="color-label">冷紫 · 危险区</text>
   <line x1="170" y1="108" x2="230" y2="108" stroke="#555" stroke-width="1" stroke-dasharray="3,3"/>
   <text x="240" y="113" class="label" fill="#555">不让玩家误入</text>
 
-  <rect x="70" y="140" width="100" height="36" rx="4" fill="#E67E22"/>
+  <rect x="70" y="140" width="100" height="412" rx="4" fill="#E67E22"/>
   <text x="120" y="163" class="color-label">暖橙 · 安全平台</text>
   <line x1="170" y1="158" x2="230" y2="158" stroke="#555" stroke-width="1" stroke-dasharray="3,3"/>
   <text x="240" y="163" class="label" fill="#555">引导移动路径</text>
 
-  <rect x="70" y="190" width="100" height="36" rx="4" fill="#27AE60"/>
+  <rect x="70" y="190" width="100" height="412" rx="4" fill="#27AE60"/>
   <text x="120" y="213" class="color-label">翠绿 · 可收集物</text>
   <line x1="170" y1="208" x2="230" y2="208" stroke="#555" stroke-width="1" stroke-dasharray="3,3"/>
   <text x="240" y="213" class="label" fill="#555">吸引注意力</text>
 
-  <rect x="70" y="240" width="100" height="36" rx="4" fill="#3498DB"/>
+  <rect x="70" y="240" width="100" height="412" rx="4" fill="#3498DB"/>
   <text x="120" y="263" class="color-label">冰蓝 · 主角</text>
   <line x1="170" y1="258" x2="230" y2="258" stroke="#555" stroke-width="1" stroke-dasharray="3,3"/>
   <text x="240" y="263" class="label" fill="#555">从背景中分离</text>
@@ -42,31 +42,31 @@
   <text x="210" y="325" class="desc">玩家不需要看教程就知道该做什么</text>
 
   <!-- Right panel: Stardew Valley style - color as emotion (dusk palette) -->
-  <rect x="410" y="45" width="360" height="310" rx="6" fill="#FAFAFA" stroke="#CCC" stroke-width="1.5"/>
+  <rect x="410" y="45" width="360" height="412" rx="6" fill="#FAFAFA" stroke="#CCC" stroke-width="1.5"/>
   <text x="590" y="70" class="tag">—— 星露谷 式：色彩 = 情绪氛围 ——</text>
 
   <!-- Gradient blocks -->
-  <rect x="450" y="90" width="60" height="24" rx="3" fill="#FAD7A1"/>
-  <rect x="515" y="90" width="60" height="24" rx="3" fill="#F5B041"/>
-  <rect x="580" y="90" width="60" height="24" rx="3" fill="#E67E22"/>
-  <rect x="645" y="90" width="60" height="24" rx="3" fill="#D35400"/>
+  <rect x="450" y="90" width="60" height="412" rx="3" fill="#FAD7A1"/>
+  <rect x="515" y="90" width="60" height="412" rx="3" fill="#F5B041"/>
+  <rect x="580" y="90" width="60" height="412" rx="3" fill="#E67E22"/>
+  <rect x="645" y="90" width="60" height="412" rx="3" fill="#D35400"/>
   <text x="590" y="135" class="desc">暖色渐变 → 黄昏、怀旧、孤独中的温暖</text>
 
   <!-- Scene block -->
-  <rect x="450" y="155" width="280" height="100" rx="6" fill="#2C3E50" opacity="0.1"/>
+  <rect x="450" y="155" width="280" height="412" rx="6" fill="#2C3E50" opacity="0.1"/>
   <!-- Sky gradient -->
-  <rect x="450" y="155" width="280" height="40" rx="6" fill="#E8A87C"/>
-  <rect x="450" y="195" width="280" height="60" fill="#2D572C"/>
+  <rect x="450" y="155" width="280" height="412" rx="6" fill="#E8A87C"/>
+  <rect x="450" y="195" width="280" height="412" fill="#2D572C"/>
   <!-- Trees silhouette -->
-  <rect x="460" y="180" width="10" height="40" fill="#1A3A1A"/>
-  <rect x="480" y="185" width="8" height="35" fill="#1A3A1A"/>
-  <rect x="500" y="178" width="12" height="42" fill="#1A3A1A"/>
-  <rect x="530" y="182" width="8" height="38" fill="#1A3A1A"/>
-  <rect x="560" y="175" width="10" height="45" fill="#1A3A1A"/>
-  <rect x="590" y="184" width="8" height="36" fill="#1A3A1A"/>
-  <rect x="620" y="180" width="12" height="40" fill="#1A3A1A"/>
-  <rect x="650" y="182" width="8" height="38" fill="#1A3A1A"/>
-  <rect x="680" y="178" width="10" height="42" fill="#1A3A1A"/>
+  <rect x="460" y="180" width="10" height="412" fill="#1A3A1A"/>
+  <rect x="480" y="185" width="8" height="412" fill="#1A3A1A"/>
+  <rect x="500" y="178" width="12" height="412" fill="#1A3A1A"/>
+  <rect x="530" y="182" width="8" height="412" fill="#1A3A1A"/>
+  <rect x="560" y="175" width="10" height="412" fill="#1A3A1A"/>
+  <rect x="590" y="184" width="8" height="412" fill="#1A3A1A"/>
+  <rect x="620" y="180" width="12" height="412" fill="#1A3A1A"/>
+  <rect x="650" y="182" width="8" height="412" fill="#1A3A1A"/>
+  <rect x="680" y="178" width="10" height="412" fill="#1A3A1A"/>
 
   <text x="590" y="275" class="desc">颜色 = 可以被感受到的情绪</text>
   <text x="590" y="295" class="desc">玩法本身不依赖颜色</text>

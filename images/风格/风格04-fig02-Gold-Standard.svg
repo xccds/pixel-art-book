@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 375" width="800" height="375">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 470" width="800" height="470">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -20,7 +20,7 @@
 
   <!-- Center: Visual Constitution -->
   <g transform="translate(290, 60)">
-    <rect x="0" y="0" width="220" height="375" fill="#E74C3C" opacity="0.12" stroke="#E74C3C" stroke-width="2" rx="10"/>
+    <rect x="0" y="0" width="220" height="470" fill="#E74C3C" opacity="0.12" stroke="#E74C3C" stroke-width="2" rx="10"/>
     <text x="110" y="28" class="center-title" fill="#E74C3C">视觉宪法</text>
     <text x="110" y="46" class="center-text">Visual Constitution</text>
     <text x="110" y="62" class="center-small">分辨率·色板·AA·轮廓·抖动·帧数·Tile</text>
@@ -41,7 +41,7 @@
 
   <!-- Top: 角色配色 -->
   <g transform="translate(310, 145)">
-    <rect x="0" y="0" width="180" height="375" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="180" height="470" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5" rx="6"/>
     <text x="90" y="18" class="quad-title">角色配色</text>
     <text x="90" y="34" class="quad-item" text-anchor="middle">主角色板：5 色的准确色号</text>
     <text x="90" y="50" class="quad-sub" text-anchor="middle">NPC/敌人从这 5 色派生 + 同一轮廓类型</text>
@@ -55,7 +55,7 @@
 
   <!-- Bottom: 光照规范 -->
   <g transform="translate(310, 215)">
-    <rect x="0" y="0" width="180" height="375" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="180" height="470" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5" rx="6"/>
     <text x="90" y="18" class="quad-title">光照规范</text>
     <text x="90" y="34" class="quad-item" text-anchor="middle">主光源：右上 30° · 暖色 (FFF2E0)</text>
     <text x="90" y="50" class="quad-sub" text-anchor="middle">环境光：全局 0.15 · 冷色 (E8F0FF)</text>
@@ -69,7 +69,7 @@
 
   <!-- Left: 场景氛围 -->
   <g transform="translate(30, 118)">
-    <rect x="0" y="0" width="180" height="375" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="180" height="470" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5" rx="6"/>
     <text x="90" y="18" class="quad-title">场景氛围</text>
     <text x="90" y="34" class="quad-item" text-anchor="middle">每个场景的情绪·对比度·dithering</text>
     <text x="90" y="50" class="quad-sub" text-anchor="middle">安全区暖色 · 紧张区冷色 · 过渡区中色</text>
@@ -83,7 +83,7 @@
 
   <!-- Right: UI基准 -->
   <g transform="translate(590, 118)">
-    <rect x="0" y="0" width="180" height="375" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5" rx="6"/>
+    <rect x="0" y="0" width="180" height="470" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="1.5" rx="6"/>
     <text x="90" y="18" class="quad-title">UI 基准</text>
     <text x="90" y="34" class="quad-item" text-anchor="middle">像素字体 · 字号 · 间距 · 色板</text>
     <text x="90" y="50" class="quad-sub" text-anchor="middle">对话面板 800×200px · 底部锚定</text>
@@ -91,42 +91,42 @@
 
   <!-- Bottom section: Gold Standard concept art rules -->
   <g transform="translate(30, 310)">
-    <rect x="0" y="0" width="740" height="375" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="8"/>
+    <rect x="0" y="0" width="740" height="470" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="8"/>
 
     <text x="370" y="22" text-anchor="middle" style="font-size:12px; font-weight:bold; fill:#333;">Gold Standard 概念图的四条铁律</text>
 
     <g transform="translate(25, 40)">
-      <rect x="0" y="0" width="8" height="375" fill="#E74C3C" rx="2"/>
+      <rect x="0" y="0" width="8" height="470" fill="#E74C3C" rx="2"/>
       <text x="16" y="9" class="rule-text" font-weight="bold">不是最好看的，是平均水平的</text>
       <text x="16" y="24" class="rule-text" fill="#999">它展示的是"玩家每天看到的样子"——不是"宣传片里最好的那一秒"</text>
     </g>
 
     <g transform="translate(25, 78)">
-      <rect x="0" y="0" width="8" height="375" fill="#E74C3C" rx="2"/>
+      <rect x="0" y="0" width="8" height="470" fill="#E74C3C" rx="2"/>
       <text x="16" y="9" class="rule-text" font-weight="bold">它不是一张，是一套——角色 + 场景 + UI 同框</text>
       <text x="16" y="24" class="rule-text" fill="#999">三元素在同一张图里——看不到三者的互动关系，你就看不到风格一致性的裂缝</text>
     </g>
 
     <g transform="translate(25, 116)">
-      <rect x="0" y="0" width="8" height="375" fill="#E74C3C" rx="2"/>
+      <rect x="0" y="0" width="8" height="470" fill="#E74C3C" rx="2"/>
       <text x="16" y="9" class="rule-text" font-weight="bold">用引擎抓帧，不要用 Aseprite/PS 画</text>
       <text x="16" y="24" class="rule-text" fill="#999">你画的和你引擎里渲染的是两个世界——Gold Standard 必须是引擎里截图，否则是"美术幻想"</text>
     </g>
 
     <g transform="translate(390, 40)">
-      <rect x="0" y="0" width="8" height="375" fill="#E74C3C" rx="2"/>
+      <rect x="0" y="0" width="8" height="470" fill="#E74C3C" rx="2"/>
       <text x="16" y="9" class="rule-text" font-weight="bold">做完第一版就更新它</text>
       <text x="16" y="24" class="rule-text" fill="#999">它不是"最终目标"——它是"当前标准"。每次加新内容，对着它校准</text>
     </g>
 
     <g transform="translate(390, 78)">
-      <rect x="0" y="0" width="8" height="375" fill="#E74C3C" rx="2"/>
+      <rect x="0" y="0" width="8" height="470" fill="#E74C3C" rx="2"/>
       <text x="16" y="9" class="rule-text" font-weight="bold">它回答"做完了吗"而非"好看吗"</text>
       <text x="16" y="24" class="rule-text" fill="#999">新做的门——和 Gold Standard 里的场景对比：颜色在色板内？细节密度一致？是→过</text>
     </g>
 
     <g transform="translate(390, 116)">
-      <rect x="0" y="0" width="8" height="375" fill="#E74C3C" rx="2"/>
+      <rect x="0" y="0" width="8" height="470" fill="#E74C3C" rx="2"/>
       <text x="16" y="9" class="rule-text" font-weight="bold">错误检测器——不是灵感来源</text>
       <text x="16" y="24" class="rule-text" fill="#999">当你觉得"这个新资产好像不太对"——放到 Gold Standard 旁边比。不对的地方会自己跳出来</text>
     </g>

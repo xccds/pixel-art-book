@@ -1,28 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 517" width="800" height="517" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
     </filter>
   </defs>
 
-  <rect width="800" height="500" fill="#FAFBFC"/>
+  <rect width="800" height="517" fill="#FAFBFC"/>
 
   <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">命名的艺术：为什么程序员会秒懂</text>
   <text x="400" y="58" text-anchor="middle" font-size="12" fill="#666">Naming Convention — 类比：就像代码里的变量名，`tmp`和`player_health`是两种人生</text>
 
   <!-- ===== LEFT: BAD ===== -->
-  <rect x="20" y="80" width="370" height="395" rx="12" fill="#FFF" stroke="#E74C3C" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="20" y="80" width="370" height="517" rx="12" fill="#FFF" stroke="#E74C3C" stroke-width="2" filter="url(#shadow)"/>
 
-  <rect x="20" y="80" width="370" height="40" rx="12" fill="#E74C3C"/>
-  <rect x="20" y="100" width="370" height="20" fill="#E74C3C"/>
+  <rect x="20" y="80" width="370" height="517" rx="12" fill="#E74C3C"/>
+  <rect x="20" y="100" width="370" height="517" fill="#E74C3C"/>
   <text x="205" y="106" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFF">❌ 反面教材：混乱是常态</text>
 
   <!-- Mock folder with bad files -->
-  <rect x="40" y="135" width="330" height="200" rx="8" fill="#1E1E1E"/>
+  <rect x="40" y="135" width="330" height="517" rx="8" fill="#1E1E1E"/>
 
   <!-- Title bar -->
-  <rect x="40" y="135" width="330" height="28" rx="8" fill="#2D2D2D"/>
-  <rect x="40" y="147" width="330" height="16" fill="#2D2D2D"/>
+  <rect x="40" y="135" width="330" height="517" rx="8" fill="#2D2D2D"/>
+  <rect x="40" y="147" width="330" height="517" fill="#2D2D2D"/>
   <text x="55" y="154" font-size="10" fill="#999">📁 project_assets/sprites/</text>
 
   <!-- Bad file entries -->
@@ -65,18 +65,18 @@
   <text x="395" y="280" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFF">VS</text>
 
   <!-- ===== RIGHT: GOOD ===== -->
-  <rect x="410" y="80" width="370" height="395" rx="12" fill="#FFF" stroke="#43A047" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="410" y="80" width="370" height="517" rx="12" fill="#FFF" stroke="#43A047" stroke-width="2" filter="url(#shadow)"/>
 
-  <rect x="410" y="80" width="370" height="40" rx="12" fill="#43A047"/>
-  <rect x="410" y="100" width="370" height="20" fill="#43A047"/>
+  <rect x="410" y="80" width="370" height="517" rx="12" fill="#43A047"/>
+  <rect x="410" y="100" width="370" height="517" fill="#43A047"/>
   <text x="595" y="106" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFF">✓ 正面范例：一看就懂</text>
 
   <!-- Mock folder with good files -->
-  <rect x="430" y="135" width="330" height="200" rx="8" fill="#1E1E1E"/>
+  <rect x="430" y="135" width="330" height="517" rx="8" fill="#1E1E1E"/>
 
   <!-- Title bar -->
-  <rect x="430" y="135" width="330" height="28" rx="8" fill="#2D2D2D"/>
-  <rect x="430" y="147" width="330" height="16" fill="#2D2D2D"/>
+  <rect x="430" y="135" width="330" height="517" rx="8" fill="#2D2D2D"/>
+  <rect x="430" y="147" width="330" height="517" fill="#2D2D2D"/>
   <text x="445" y="154" font-size="10" fill="#999">📁 project_assets/sprites/</text>
 
   <!-- Good file entries -->
@@ -112,6 +112,6 @@
   <text x="595" y="440" text-anchor="middle" font-size="11" fill="#999">↑ 这就是命名的自动化收益</text>
 
   <!-- Bottom: naming convention formula -->
-  <rect x="20" y="480" width="760" height="1" fill="#EEE"/>
+  <rect x="20" y="480" width="760" height="517" fill="#EEE"/>
   <text x="400" y="497" text-anchor="middle" font-size="10" fill="#666">命名公式：类型_对象_动作_序号.png → 如 spr_hero_idle_01.png | tile_grass_01.png | ui_btn_start_01.png</text>
 </svg>

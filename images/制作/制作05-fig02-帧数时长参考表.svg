@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 524" width="800" height="524">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -19,8 +19,8 @@
   <!-- Table -->
   <g transform="translate(25, 60)">
     <!-- Table header -->
-    <rect x="0" y="0" width="750" height="32" fill="#333" rx="3"/>
-    <rect x="0" y="16" width="750" height="16" fill="#333"/>
+    <rect x="0" y="0" width="750" height="524" fill="#333" rx="3"/>
+    <rect x="0" y="16" width="750" height="524" fill="#333"/>
 
     <text x="130" y="14" class="header-text" text-anchor="middle">动作</text>
     <text x="260" y="14" class="header-text" text-anchor="middle">帧数</text>
@@ -35,7 +35,7 @@
     <line x1="610" y1="0" x2="610" y2="32" stroke="#555" stroke-width="0.5"/>
 
     <!-- Row 1: Idle -->
-    <rect x="0" y="34" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="34" width="750" height="524" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 34)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">空闲呼吸 Idle</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">站立不动时的微小浮动</text>
@@ -54,7 +54,7 @@
     </g>
 
     <!-- Row 2: Walk -->
-    <rect x="0" y="80" width="750" height="46" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="80" width="750" height="524" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 80)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">行走 Walk</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">正常速度的走路</text>
@@ -73,7 +73,7 @@
     </g>
 
     <!-- Row 3: Run -->
-    <rect x="0" y="126" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="126" width="750" height="524" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 126)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">跑步 Run</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">快速移动</text>
@@ -92,7 +92,7 @@
     </g>
 
     <!-- Row 4: Attack Wind-up -->
-    <rect x="0" y="172" width="750" height="46" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="172" width="750" height="524" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 172)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">攻击蓄力 Attack Windup</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">举起武器/拉弓</text>
@@ -111,7 +111,7 @@
     </g>
 
     <!-- Row 5: Attack Hit -->
-    <rect x="0" y="218" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="218" width="750" height="524" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 218)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">攻击命中 Attack Hit</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">攻击帧（出拳/挥砍/射击）</text>
@@ -130,7 +130,7 @@
     </g>
 
     <!-- Row 6: Hurt -->
-    <rect x="0" y="264" width="750" height="46" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="264" width="750" height="524" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 264)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">受击 Hurt</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">被敌人击中后的反应</text>
@@ -149,7 +149,7 @@
     </g>
 
     <!-- Row 7: Jump Takeoff -->
-    <rect x="0" y="310" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="310" width="750" height="524" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 310)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">跳跃腾空 Jump Takeoff</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">从地面离开的瞬间</text>
@@ -168,7 +168,7 @@
     </g>
 
     <!-- Row 8: Jump Apex -->
-    <rect x="0" y="356" width="750" height="46" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="356" width="750" height="524" fill="#fff" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 356)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">跳跃顶点 Jump Apex</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">上升到最高点的停顿</text>
@@ -187,7 +187,7 @@
     </g>
 
     <!-- Row 9: Land -->
-    <rect x="0" y="402" width="750" height="46" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
+    <rect x="0" y="402" width="750" height="524" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="0.5"/>
     <g transform="translate(0, 402)">
       <text x="130" y="28" class="cell-text" text-anchor="middle" font-weight="bold">落地压缩 Land</text>
       <text x="130" y="42" class="cell-sub" text-anchor="middle">落地瞬间的下蹲+回弹</text>
@@ -208,7 +208,7 @@
 
   <!-- Bottom summary -->
   <g transform="translate(25, 468)">
-    <rect x="0" y="0" width="750" height="22" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="3"/>
+    <rect x="0" y="0" width="750" height="524" fill="#E8F4FD" stroke="#B0D4F1" stroke-width="1" rx="3"/>
     <text x="12" y="15" class="note" fill="#2980B9">
       <tspan font-weight="bold">记忆法则：</tspan>
       <tspan fill="#E74C3C">攻击</tspan> = 蓄力快(60-80ms) + 命中长(120-200ms) ——

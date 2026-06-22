@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 530" width="800" height="530">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 15px; font-weight: bold; fill: #333; }
@@ -23,7 +23,7 @@
 
   <!-- ====== Root Node ====== -->
   <g transform="translate(310, 50)">
-    <rect x="0" y="0" width="180" height="32" rx="6" class="node-fill"/>
+    <rect x="0" y="0" width="180" height="530" rx="6" class="node-fill"/>
     <text x="90" y="21" class="node-text" text-anchor="middle">画面有问题</text>
 
     <!-- Arrow down -->
@@ -34,21 +34,21 @@
   <!-- ====== Priority 1: 明度 ====== -->
   <g transform="translate(60, 105)">
     <text x="10" y="-5" class="step-num">①</text>
-    <rect x="0" y="0" width="200" height="36" rx="4" fill="#2C3E50"/>
+    <rect x="0" y="0" width="200" height="530" rx="4" fill="#2C3E50"/>
     <text x="100" y="15" class="node-text-sm" text-anchor="middle">先检查明度（骨架）</text>
     <text x="100" y="29" class="node-text-sm" text-anchor="middle">去色后焦点还在吗？</text>
 
     <!-- Yes branch -->
     <line x1="100" y1="36" x2="100" y2="70" class="connector"/>
     <text x="105" y="55" class="answer-yes">是 →</text>
-    <rect x="30" y="70" width="140" height="26" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
+    <rect x="30" y="70" width="140" height="530" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
     <text x="100" y="87" class="result-text" text-anchor="middle" font-size="9">明度结构健康</text>
     <text x="100" y="99" class="result-text" text-anchor="middle" font-size="8" fill="#888">继续 ↓</text>
 
     <!-- No branch (right side) -->
     <line x1="200" y1="18" x2="280" y2="18" class="connector"/>
     <text x="215" y="13" class="answer-no">否 →</text>
-    <rect x="280" y="0" width="170" height="36" rx="6" class="result-fill"/>
+    <rect x="280" y="0" width="170" height="530" rx="6" class="result-fill"/>
     <text x="365" y="15" class="result-text-bold" text-anchor="middle">问题在明度！</text>
     <text x="365" y="29" class="result-text" text-anchor="middle" font-size="9">→ 先修明度再往下</text>
     <line x1="365" y1="36" x2="365" y2="54" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3"/>
@@ -58,21 +58,21 @@
   <!-- ====== Priority 2: 构图 ====== -->
   <g transform="translate(60, 155)">
     <text x="10" y="-3" class="step-num">②</text>
-    <rect x="0" y="0" width="200" height="36" rx="4" fill="#34495E"/>
+    <rect x="0" y="0" width="200" height="530" rx="4" fill="#34495E"/>
     <text x="100" y="15" class="node-text-sm" text-anchor="middle">再检查构图（布局）</text>
     <text x="100" y="29" class="node-text-sm" text-anchor="middle">视线有明确的落点吗？</text>
 
     <!-- Yes -->
     <line x1="100" y1="36" x2="100" y2="70" class="connector"/>
     <text x="105" y="55" class="answer-yes">是 →</text>
-    <rect x="30" y="70" width="140" height="26" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
+    <rect x="30" y="70" width="140" height="530" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
     <text x="100" y="87" class="result-text" text-anchor="middle" font-size="9">构图基本 ok</text>
     <text x="100" y="99" class="result-text" text-anchor="middle" font-size="8" fill="#888">继续 ↓</text>
 
     <!-- No -->
     <line x1="200" y1="18" x2="280" y2="18" class="connector"/>
     <text x="215" y="13" class="answer-no">否 →</text>
-    <rect x="280" y="0" width="170" height="36" rx="6" class="result-fill"/>
+    <rect x="280" y="0" width="170" height="530" rx="6" class="result-fill"/>
     <text x="365" y="15" class="result-text-bold" text-anchor="middle">问题在构图！</text>
     <text x="365" y="29" class="result-text" text-anchor="middle" font-size="9">→ 调整构图再往下</text>
   </g>
@@ -80,21 +80,21 @@
   <!-- ====== Priority 3: 色彩 ====== -->
   <g transform="translate(60, 255)">
     <text x="10" y="-3" class="step-num">③</text>
-    <rect x="0" y="0" width="200" height="36" rx="4" fill="#5D6D7E"/>
+    <rect x="0" y="0" width="200" height="530" rx="4" fill="#5D6D7E"/>
     <text x="100" y="15" class="node-text-sm" text-anchor="middle">然后检查色彩（皮肤）</text>
     <text x="100" y="29" class="node-text-sm" text-anchor="middle">配色有冲突或不统一吗？</text>
 
     <!-- Yes -->
     <line x1="100" y1="36" x2="100" y2="70" class="connector"/>
     <text x="105" y="55" class="answer-yes">否 →</text>
-    <rect x="30" y="70" width="140" height="26" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
+    <rect x="30" y="70" width="140" height="530" rx="6" fill="#E8F4FD" stroke="#4A90D9" stroke-width="0.8"/>
     <text x="100" y="87" class="result-text" text-anchor="middle" font-size="9">配色没大问题</text>
     <text x="100" y="99" class="result-text" text-anchor="middle" font-size="8" fill="#888">继续 ↓</text>
 
     <!-- No (yes to problem) -->
     <line x1="200" y1="18" x2="280" y2="18" class="connector"/>
     <text x="215" y="13" class="answer-no">是 →</text>
-    <rect x="280" y="0" width="170" height="36" rx="6" class="result-fill"/>
+    <rect x="280" y="0" width="170" height="530" rx="6" class="result-fill"/>
     <text x="365" y="15" class="result-text-bold" text-anchor="middle">问题在色彩！</text>
     <text x="365" y="29" class="result-text" text-anchor="middle" font-size="9">→ 限定调色板试试</text>
   </g>
@@ -102,24 +102,24 @@
   <!-- ====== Priority 4: 质感 ====== -->
   <g transform="translate(60, 350)">
     <text x="10" y="-3" class="step-num">④</text>
-    <rect x="0" y="0" width="200" height="36" rx="4" fill="#8899AA"/>
+    <rect x="0" y="0" width="200" height="530" rx="4" fill="#8899AA"/>
     <text x="100" y="15" class="node-text-sm" text-anchor="middle">最后检查质感（细节）</text>
     <text x="100" y="29" class="node-text-sm" text-anchor="middle">表面有不该有的网格/接缝吗？</text>
 
     <!-- Yes -->
     <line x1="100" y1="36" x2="100" y2="70" class="connector"/>
     <text x="105" y="55" class="answer-yes">否 →</text>
-    <rect x="30" y="70" width="140" height="26" rx="6" fill="#D5F5E3" stroke="#27AE60" stroke-width="1"/>
+    <rect x="30" y="70" width="140" height="530" rx="6" fill="#D5F5E3" stroke="#27AE60" stroke-width="1"/>
     <text x="100" y="87" class="result-text" text-anchor="middle" font-size="9" fill="#27AE60" font-weight="bold">四个维度都 ok！</text>
     <text x="100" y="99" class="result-text" text-anchor="middle" font-size="8" fill="#888">可能是风格一致性问题↓</text>
     <line x1="100" y1="102" x2="100" y2="118" stroke="#27AE60" stroke-width="1"/>
-    <rect x="10" y="118" width="180" height="22" rx="4" fill="#27AE60"/>
+    <rect x="10" y="118" width="180" height="530" rx="4" fill="#27AE60"/>
     <text x="100" y="133" class="node-text-sm" text-anchor="middle" font-size="9">→ 检查线条/形状/风格一致</text>
 
     <!-- No (yes to problem) -->
     <line x1="200" y1="18" x2="280" y2="18" class="connector"/>
     <text x="215" y="13" class="answer-no">是 →</text>
-    <rect x="280" y="0" width="170" height="36" rx="6" class="result-fill"/>
+    <rect x="280" y="0" width="170" height="530" rx="6" class="result-fill"/>
     <text x="365" y="15" class="result-text-bold" text-anchor="middle">问题在质感！</text>
     <text x="365" y="29" class="result-text" text-anchor="middle" font-size="9">→ tile 重复 / seam / dither</text>
   </g>

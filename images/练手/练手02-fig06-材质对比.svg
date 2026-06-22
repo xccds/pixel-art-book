@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 492" width="800" height="492">
   <style>
     .bg { fill: #FAFAFA; }
     .title { font-family: sans-serif; font-size: 17px; font-weight: bold; fill: #2C3E50; }
@@ -7,7 +7,7 @@
     .panel-bg { fill: #fff; stroke: #E0E0E0; stroke-width: 1; }
     .tag { font-family: sans-serif; font-size: 9px; fill: #E74C3C; }
   </style>
-  <rect class="bg" width="800" height="500"/>
+  <rect class="bg" width="800" height="492"/>
   <text x="400" y="32" text-anchor="middle" class="title">材质区分：同一形体换五种皮肤</text>
   <text x="400" y="50" text-anchor="middle" class="desc">同一个球体 · 光源不变 · 只改"着色器参数"</text>
 
@@ -51,7 +51,7 @@
 
   <!-- 金属 -->
   <g transform="translate(20, 70)">
-    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <rect class="panel-bg" x="0" y="0" width="148" height="492" rx="6"/>
     <text x="74" y="22" text-anchor="middle" class="panel-title">金 属</text>
     <circle cx="74" cy="130" r="48" fill="url(#m-metal)" stroke="#2C3E50" stroke-width="0.6"/>
     <circle cx="56" cy="112" r="3" fill="#FFFFFF"/>
@@ -62,7 +62,7 @@
 
   <!-- 布料 -->
   <g transform="translate(178, 70)">
-    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <rect class="panel-bg" x="0" y="0" width="148" height="492" rx="6"/>
     <text x="74" y="22" text-anchor="middle" class="panel-title">布 料</text>
     <circle cx="74" cy="130" r="48" fill="url(#m-fabric)" stroke="#6E5238" stroke-width="0.6"/>
     <path d="M40,140 Q74,150 108,138" stroke="#6E5238" stroke-width="0.7" fill="none" opacity="0.6"/>
@@ -74,7 +74,7 @@
 
   <!-- 皮肤 -->
   <g transform="translate(336, 70)">
-    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <rect class="panel-bg" x="0" y="0" width="148" height="492" rx="6"/>
     <text x="74" y="22" text-anchor="middle" class="panel-title">皮 肤</text>
     <circle cx="74" cy="130" r="48" fill="url(#m-skin)" stroke="#6E3028" stroke-width="0.6"/>
     <ellipse cx="62" cy="118" rx="10" ry="7" fill="#FFE4D2" opacity="0.55"/>
@@ -85,7 +85,7 @@
 
   <!-- 水/玻璃 -->
   <g transform="translate(494, 70)">
-    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <rect class="panel-bg" x="0" y="0" width="148" height="492" rx="6"/>
     <text x="74" y="22" text-anchor="middle" class="panel-title">水/玻璃</text>
     <circle cx="74" cy="130" r="48" fill="url(#m-glass)" stroke="#2E5566" stroke-width="0.8"/>
     <circle cx="56" cy="110" r="6" fill="#FFFFFF" opacity="0.9"/>
@@ -97,7 +97,7 @@
 
   <!-- 木材 -->
   <g transform="translate(652, 70)">
-    <rect class="panel-bg" x="0" y="0" width="148" height="340" rx="6"/>
+    <rect class="panel-bg" x="0" y="0" width="148" height="492" rx="6"/>
     <text x="74" y="22" text-anchor="middle" class="panel-title">木 材</text>
     <circle cx="74" cy="130" r="48" fill="url(#m-wood)" stroke="#523820" stroke-width="0.6"/>
     <ellipse cx="74" cy="130" rx="34" ry="9" fill="none" stroke="#523820" stroke-width="0.5" opacity="0.5"/>
@@ -108,6 +108,6 @@
     <text x="74" y="252" text-anchor="middle" class="tag">pure diffuse + grain</text>
   </g>
 
-  <rect x="40" y="432" width="720" height="52" rx="4" fill="#2C3E50"/>
+  <rect x="40" y="432" width="720" height="492" rx="4" fill="#2C3E50"/>
     <text x="400" y="472" text-anchor="middle" style="font-family:sans-serif;font-size:10px;fill:#BDC3C7;">同一网格，换一套 specular/diffuse/subsurface/transmission 参数 = 换一种材质。光影结构不变，只是"渲染管线"换了配置。</text>
 </svg>

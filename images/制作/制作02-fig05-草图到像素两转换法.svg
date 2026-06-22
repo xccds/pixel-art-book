@@ -1,37 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 15px; font-weight: bold; fill: #333; }
-    .col-header { font-size: 13px; font-weight: bold; fill: #fff; text-anchor: middle; }
-    .col-sub { font-size: 9px; fill: #fff; text-anchor: middle; opacity: 0.85; }
-    .step-label { font-size: 9.5px; fill: #333; text-anchor: middle; font-weight: bold; }
-    .step-desc { font-size: 8px; fill: #666; text-anchor: middle; }
-    .arrow-label { font-size: 8.5px; fill: #E74C3C; font-weight: bold; text-anchor: middle; }
-    .analogy-title { font-size: 9px; font-weight: bold; fill: #E74C3C; }
-    .analogy-text { font-size: 8px; fill: #555; }
-    .panel { fill: #FAFAFA; stroke: #ccc; stroke-width: 0.8; }
-    .sketch { fill: none; stroke: #888; stroke-width: 1.5; }
-    .pixel-fill { fill: #555; }
-    .pixel-fill-2 { fill: #888; }
-    .pixel-fill-3 { fill: #aaa; }
-    .grid-line { stroke: #ddd; stroke-width: 0.3; }
-    .layer-line { stroke: #3498DB; stroke-width: 1.5; fill: none; }
+    .col-title { font-size: 13px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .col-desc { font-size: 10px; fill: #555; text-anchor: middle; }
+    .step-label { font-size: 10px; fill: #333; font-weight: bold; text-anchor: middle; }
+    .step-num { font-size: 11px; fill: #E74C3C; font-weight: bold; text-anchor: middle; }
+    .small-label { font-size: 8px; fill: #888; text-anchor: middle; }
+    .panel { fill: #fafafa; stroke: #ddd; stroke-width: 1; rx: 4; }
+    .arrow { stroke: #E74C3C; stroke-width: 1.5; fill: none; }
   </style>
 
-  <!-- Title -->
-  <text x="400" y="26" class="title" text-anchor="middle">图 制作02.5  草图→像素的两种转换法——两条入口都从 Step 4 接回管线</text>
+  <text x="400" y="24" class="title" text-anchor="middle">草图→像素的两种转换法——两条入口都从 Step 4 接回管线</text>
 
   <!-- Vertical divider -->
-  <line x1="400" y1="40" x2="400" y2="475" stroke="#E0E0E0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="400" y1="38" x2="400" y2="380" stroke="#ddd" stroke-width="1.5" stroke-dasharray="4,3"/>
 
-  <!-- ============ LEFT: 方法一 最近邻缩放 ============ -->
+  <!-- ===== LEFT: 最近邻缩放 ===== -->
+  <g transform="translate(25, 50)">
+    <rect x="0" y="0" width="370" height="24" fill="#E74C3C" rx="4"/>
+    <text x="185" y="16" class="col-title">方法一 · 最近邻缩放</text>
 
-  <!-- ============ RIGHT: 方法二 图层描摹 ============ -->
+    <!-- Step 1: 高分辨率草图 -->
+    <text x="185" y="44" class="step-num">① 高分辨率草图</text>
+    <rect x="100" y="50" width="170" height="100" fill="#f5f5f5" stroke="#ddd" stroke-width="0.8" rx="2"/>
+    <!-- A simple character sketch: oval head, body, limbs -->
+    <ellipse cx="185" cy="72" rx="16" ry="14" fill="none" stroke="#999" stroke-width="2"/>
+    <line x1="185" y1="86" x2="185" y2="120" stroke="#999" stroke-width="2"/>
+    <line x1="185" y1="95" x2="165" y2="110" stroke="#999" stroke-width="1.5"/>
+    <line x1="185" y1="95" x2="205" y2="110" stroke="#999" stroke-width="1.5"/>
+    <line x1="185" y1="120" x2="170" y2="140" stroke="#999" stroke-width="1.5"/>
+    <line x1="185" y1="120" x2="200" y2="140" stroke="#999" stroke-width="1.5"/>
+    <text x="185" y="162" class="small-label">在纸上/数位板/参考图上打草稿</text>
 
-  <!-- Bottom note: both converge to Step 4 -->
-  <g transform="translate(20, 432)">
-    <rect x="0" y="0" width="760" height="38" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.8" rx="4"/>
-    <text x="380" y="16" style="font-size:9px; fill:#7D6608; text-anchor:middle; font-weight:bold;">两条入口都最终汇入同一条 10 步生产线——转完后回到 Step 4 加内部结构</text>
-    <text x="380" y="30" style="font-size:8px; fill:#7D6608; text-anchor:middle;">草图细节多想保留构图 → 描摹法 ｜ 草图只是粗略示意想快速起型 → 缩放法</text>
+    <!-- Arrow down -->
+    <line x1="185" y1="168" x2="185" y2="182" class="arrow"/>
+    <text x="205" y="180" class="step-label" fill="#E74C3C">↓ 降采样</text>
+
+    <!-- Step 2: 最近邻缩放到像素尺寸 -->
+    <text x="185" y="200" class="step-num">② 最近邻缩放</text>
+    <rect x="120" y="206" width="130" height="70" fill="#f5f5f5" stroke="#3498DB" stroke-width="1" rx="2"/>
+    <!-- Pixel grid version of the same character -->
+    <g transform="translate(170, 214) scale(3)">
+      <rect x="-6" y="-2" width="12" height="8" fill="#666"/><!-- head -->
+      <rect x="-2" y="6" width="4" height="8" fill="#666"/><!-- body -->
+      <rect x="-8" y="8" width="4" height="6" fill="#555"/><!-- left arm -->
+      <rect x="4" y="8" width="4" height="6" fill="#555"/><!-- right arm -->
+      <rect x="-3" y="14" width="3" height="6" fill="#555"/><!-- left leg -->
+      <rect x="1" y="14" width="3" height="6" fill="#555"/><!-- right leg -->
+    </g>
+    <text x="185" y="288" class="small-label">图像缩放选 INTER_NEAREST</text>
+
+    <!-- Arrow down -->
+    <line x1="185" y1="294" x2="185" y2="308" class="arrow"/>
+
+    <!-- Step 3: 清理像素 -->
+    <text x="185" y="326" class="step-num">③ 手动清理</text>
+    <text x="185" y="344" class="col-desc">删掉缩放产生的噪点像素</text>
+    <text x="185" y="358" class="col-desc">补丢失的轮廓 → 接回 Step 4</text>
+
+    <text x="185" y="390" class="small-label" fill="#E74C3C">适合：构图已确定，不想重新摆位</text>
   </g>
+
+  <!-- ===== RIGHT: 图层描摹 ===== -->
+  <g transform="translate(425, 50)">
+    <rect x="0" y="0" width="370" height="24" fill="#3498DB" rx="4"/>
+    <text x="185" y="16" class="col-title">方法二 · 图层描摹</text>
+
+    <!-- Step 1: 导入草图作为底层 -->
+    <text x="185" y="44" class="step-num">① 草图放底层</text>
+    <rect x="100" y="50" width="170" height="100" fill="#f5f5f5" stroke="#ddd" stroke-width="0.8" rx="2"/>
+    <!-- Same sketch, lighter -->
+    <ellipse cx="185" cy="72" rx="16" ry="14" fill="none" stroke="#ccc" stroke-width="2"/>
+    <line x1="185" y1="86" x2="185" y2="120" stroke="#ccc" stroke-width="2"/>
+    <line x1="185" y1="95" x2="165" y2="110" stroke="#ccc" stroke-width="1.5"/>
+    <line x1="185" y1="95" x2="205" y2="110" stroke="#ccc" stroke-width="1.5"/>
+    <line x1="185" y1="120" x2="170" y2="140" stroke="#ccc" stroke-width="1.5"/>
+    <line x1="185" y1="120" x2="200" y2="140" stroke="#ccc" stroke-width="1.5"/>
+    <!-- Transparent layer indicator -->
+    <rect x="104" y="54" width="60" height="14" fill="#e0e0e0" stroke="#ccc" stroke-width="0.5" rx="2"/>
+    <text x="134" y="63" style="font-size:7px;fill:#999;text-anchor:middle;">底层(半透明)</text>
+    <text x="185" y="162" class="small-label">把参考图拖进 Aseprite 放最底层</text>
+
+    <!-- Arrow down -->
+    <line x1="185" y1="168" x2="185" y2="182" class="arrow"/>
+    <text x="205" y="180" class="step-label" fill="#3498DB">↓ 描摹</text>
+
+    <!-- Step 2: 新建图层 + 描 -->
+    <text x="185" y="200" class="step-num">② 新图层手动描</text>
+    <rect x="120" y="206" width="130" height="70" fill="#f5f5f5" stroke="#27AE60" stroke-width="1" rx="2"/>
+    <g transform="translate(170, 214) scale(3)">
+      <!-- Dark pixel version overlaying the sketch -->
+      <rect x="-6" y="-2" width="12" height="8" fill="#222"/>
+      <rect x="-2" y="6" width="4" height="8" fill="#222"/>
+      <rect x="-8" y="8" width="4" height="6" fill="#222"/>
+      <rect x="4" y="8" width="4" height="6" fill="#222"/>
+      <rect x="-3" y="14" width="3" height="6" fill="#222"/>
+      <rect x="1" y="14" width="3" height="6" fill="#222"/>
+    </g>
+    <!-- "new layer" indicator -->
+    <rect x="170" y="254" width="36" height="12" fill="#27AE60" rx="2"/>
+    <text x="188" y="263" style="font-size:7px;fill:#fff;text-anchor:middle;">新图层</text>
+    <text x="185" y="288" class="small-label">新建像素图层，照着底层描</text>
+
+    <!-- Arrow down -->
+    <line x1="185" y1="294" x2="185" y2="308" class="arrow"/>
+
+    <!-- Step 3: 删除底层 -->
+    <text x="185" y="326" class="step-num">③ 删底层 + 清理</text>
+    <text x="185" y="344" class="col-desc">删掉参考草图，清理杂色像素</text>
+    <text x="185" y="358" class="col-desc">→ 接回 Step 4 加内部结构</text>
+
+    <text x="185" y="390" class="small-label" fill="#3498DB">适合：想保留草图构图，手动精确控制</text>
+  </g>
+
+  <!-- Bottom convergence bar -->
+  <rect x="25" y="395" width="750" height="32" rx="4" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.8"/>
+  <text x="400" y="414" style="font-size:10px;fill:#7D6608;text-anchor:middle;font-weight:bold;">两条入口都汇入同一条生产线——转完后统一从 Step 4（加内部结构）接回 10 步管线</text>
 </svg>

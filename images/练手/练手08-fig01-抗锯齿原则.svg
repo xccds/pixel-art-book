@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 247" width="800" height="247">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 15px; font-weight: bold; fill: #333; }
@@ -17,7 +17,7 @@
   <g transform="translate(30, 55)">
     <text x="140" y="0" style="font-size:13px;font-weight:bold;fill:#E74C3C;text-anchor:middle;">✗ 无 AA · 合规但生硬</text>
 
-    <rect x="0" y="10" width="280" height="247" class="cell-bg" rx="2"/>
+    <rect x="0" y="10" width="280" height="140" class="cell-bg" rx="2"/>
 
     <g class="cell-line">
       <line x1="14" y1="10" x2="14" y2="150"/><line x1="28" y1="10" x2="28" y2="150"/>
@@ -39,13 +39,13 @@
 
     <!-- Smooth staircase line: step widths [5,4,3,2,2,1,1] -->
     <g class="line-fill">
-      <rect x="0" y="10" width="14" height="247"/><rect x="14" y="10" width="14" height="247"/><rect x="28" y="10" width="14" height="247"/><rect x="42" y="10" width="14" height="247"/><rect x="56" y="10" width="14" height="247"/>
-      <rect x="70" y="24" width="14" height="247"/><rect x="84" y="24" width="14" height="247"/><rect x="98" y="24" width="14" height="247"/><rect x="112" y="24" width="14" height="247"/>
-      <rect x="126" y="38" width="14" height="247"/><rect x="140" y="38" width="14" height="247"/><rect x="154" y="38" width="14" height="247"/>
-      <rect x="168" y="52" width="14" height="247"/><rect x="182" y="52" width="14" height="247"/>
-      <rect x="196" y="66" width="14" height="247"/><rect x="210" y="66" width="14" height="247"/>
-      <rect x="224" y="80" width="14" height="247"/>
-      <rect x="238" y="94" width="14" height="247"/>
+      <rect x="0" y="10" width="14" height="14"/><rect x="14" y="10" width="14" height="14"/><rect x="28" y="10" width="14" height="14"/><rect x="42" y="10" width="14" height="14"/><rect x="56" y="10" width="14" height="14"/>
+      <rect x="70" y="24" width="14" height="14"/><rect x="84" y="24" width="14" height="14"/><rect x="98" y="24" width="14" height="14"/><rect x="112" y="24" width="14" height="14"/>
+      <rect x="126" y="38" width="14" height="14"/><rect x="140" y="38" width="14" height="14"/><rect x="154" y="38" width="14" height="14"/>
+      <rect x="168" y="52" width="14" height="14"/><rect x="182" y="52" width="14" height="14"/>
+      <rect x="196" y="66" width="14" height="14"/><rect x="210" y="66" width="14" height="14"/>
+      <rect x="224" y="80" width="14" height="14"/>
+      <rect x="238" y="94" width="14" height="14"/>
     </g>
 
     <!-- Red circles on hard corners -->
@@ -64,7 +64,7 @@
   <g transform="translate(430, 55)">
     <text x="140" y="0" style="font-size:13px;font-weight:bold;fill:#27AE60;text-anchor:middle;">✓ 有 AA · 内角柔化</text>
 
-    <rect x="0" y="10" width="280" height="247" class="cell-bg" rx="2"/>
+    <rect x="0" y="10" width="280" height="140" class="cell-bg" rx="2"/>
 
     <g class="cell-line">
       <line x1="14" y1="10" x2="14" y2="150"/><line x1="28" y1="10" x2="28" y2="150"/>
@@ -86,23 +86,23 @@
 
     <!-- Same staircase line -->
     <g class="line-fill">
-      <rect x="0" y="10" width="14" height="247"/><rect x="14" y="10" width="14" height="247"/><rect x="28" y="10" width="14" height="247"/><rect x="42" y="10" width="14" height="247"/><rect x="56" y="10" width="14" height="247"/>
-      <rect x="70" y="24" width="14" height="247"/><rect x="84" y="24" width="14" height="247"/><rect x="98" y="24" width="14" height="247"/><rect x="112" y="24" width="14" height="247"/>
-      <rect x="126" y="38" width="14" height="247"/><rect x="140" y="38" width="14" height="247"/><rect x="154" y="38" width="14" height="247"/>
-      <rect x="168" y="52" width="14" height="247"/><rect x="182" y="52" width="14" height="247"/>
-      <rect x="196" y="66" width="14" height="247"/><rect x="210" y="66" width="14" height="247"/>
-      <rect x="224" y="80" width="14" height="247"/>
-      <rect x="238" y="94" width="14" height="247"/>
+      <rect x="0" y="10" width="14" height="14"/><rect x="14" y="10" width="14" height="14"/><rect x="28" y="10" width="14" height="14"/><rect x="42" y="10" width="14" height="14"/><rect x="56" y="10" width="14" height="14"/>
+      <rect x="70" y="24" width="14" height="14"/><rect x="84" y="24" width="14" height="14"/><rect x="98" y="24" width="14" height="14"/><rect x="112" y="24" width="14" height="14"/>
+      <rect x="126" y="38" width="14" height="14"/><rect x="140" y="38" width="14" height="14"/><rect x="154" y="38" width="14" height="14"/>
+      <rect x="168" y="52" width="14" height="14"/><rect x="182" y="52" width="14" height="14"/>
+      <rect x="196" y="66" width="14" height="14"/><rect x="210" y="66" width="14" height="14"/>
+      <rect x="224" y="80" width="14" height="14"/>
+      <rect x="238" y="94" width="14" height="14"/>
     </g>
 
     <!-- AA pixels at concave (inner) corners: medium gray -->
     <g class="aa-fill">
-      <rect x="70" y="10" width="14" height="247"/>
-      <rect x="126" y="24" width="14" height="247"/>
-      <rect x="168" y="38" width="14" height="247"/>
-      <rect x="196" y="52" width="14" height="247"/>
-      <rect x="224" y="66" width="14" height="247"/>
-      <rect x="238" y="80" width="14" height="247"/>
+      <rect x="70" y="10" width="14" height="14"/>
+      <rect x="126" y="24" width="14" height="14"/>
+      <rect x="168" y="38" width="14" height="14"/>
+      <rect x="196" y="52" width="14" height="14"/>
+      <rect x="224" y="66" width="14" height="14"/>
+      <rect x="238" y="80" width="14" height="14"/>
     </g>
 
     <!-- Green arrows pointing to AA pixels -->

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 475" width="800" height="475">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
     <style>
       text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
@@ -10,7 +10,7 @@
       .analogy { font-size: 10px; fill: #0F0; font-family: monospace; }
     </style>
   </defs>
-  <rect width="800" height="475" fill="#FAFAFA"/>
+  <rect width="800" height="500" fill="#FAFAFA"/>
   <text x="400" y="32" text-anchor="middle" class="title">六种色彩和谐方案速查</text>
   <text x="400" y="52" text-anchor="middle" class="subtitle">色轮上按几何规律取色 · 配 60-30-10 主辅比</text>
   <circle cx="150" cy="135" r="58" fill="none" stroke="#D8D8D8" stroke-width="2"/>
@@ -132,5 +132,5 @@
   <circle cx="599.8" cy="306.0" r="9" fill="#EA2EEA" stroke="#FFF" stroke-width="2"/>
   <text x="650" y="419" text-anchor="middle" class="label">四角 Tetradic</text>
   <text x="650" y="437" text-anchor="middle" class="desc">两组互补 · 降饱和控冲突</text>
-  <rect x="30" y="455" width="740" height="475" rx="4" fill="#333"/>
+  <rect x="30" y="455" width="740" height="32" rx="4" fill="#333"/>
   </svg>

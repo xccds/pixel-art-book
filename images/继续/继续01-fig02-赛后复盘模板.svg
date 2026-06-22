@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="492" viewBox="0.0 0.0 800.0 492" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
@@ -11,9 +11,9 @@
 
   <!-- 四象限背景 -->
   <!-- 左上：视觉一致性 -->
-  <rect x="40" y="80" width="350" height="492" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
-  <rect x="40" y="80" width="350" height="492" rx="10" fill="#333"/>
-  <rect x="40" y="100" width="350" height="492" fill="#333"/>
+  <rect x="40" y="80" width="350" height="200" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="80" width="350" height="40" rx="10" fill="#333"/>
+  <rect x="40" y="100" width="350" height="20" fill="#333"/>
   <text x="215" y="106" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">🎨 视觉一致性 Visual Consistency</text>
 
   <text x="60" y="145" font-size="12" fill="#666">• 所有素材放在同一个画面里，像一个人画的吗？</text>
@@ -24,9 +24,9 @@
   <text x="60" y="262" font-size="11" fill="#999">结构一个项目里应该一致，视觉同理。</text>
 
   <!-- 右上：动画流畅度 -->
-  <rect x="410" y="80" width="350" height="492" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
-  <rect x="410" y="80" width="350" height="492" rx="10" fill="#E74C3C"/>
-  <rect x="410" y="100" width="350" height="492" fill="#E74C3C"/>
+  <rect x="410" y="80" width="350" height="200" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="410" y="80" width="350" height="40" rx="10" fill="#E74C3C"/>
+  <rect x="410" y="100" width="350" height="20" fill="#E74C3C"/>
   <text x="585" y="106" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">🏃 动画流畅度 Animation Fluidity</text>
 
   <text x="430" y="145" font-size="12" fill="#666">• 关键帧之间是否有突兀跳帧？</text>
@@ -37,9 +37,9 @@
   <text x="430" y="262" font-size="11" fill="#999">动画少几帧没人怪你，跳帧一定有人注意到。</text>
 
   <!-- 左下：UI清晰度 -->
-  <rect x="40" y="290" width="350" height="492" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
-  <rect x="40" y="290" width="350" height="492" rx="10" fill="#E74C3C"/>
-  <rect x="40" y="310" width="350" height="492" fill="#E74C3C"/>
+  <rect x="40" y="290" width="350" height="193" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="290" width="350" height="40" rx="10" fill="#E74C3C"/>
+  <rect x="40" y="310" width="350" height="20" fill="#E74C3C"/>
   <text x="215" y="316" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">📱 UI清晰度 UI Clarity</text>
 
   <text x="60" y="355" font-size="12" fill="#666">• 血条/分数/按钮——3秒内能看懂吗？</text>
@@ -50,9 +50,9 @@
   <text x="60" y="472" font-size="11" fill="#999">才是好接口，不需要看说明的UI才是好UI。</text>
 
   <!-- 右下：配色统一性 -->
-  <rect x="410" y="290" width="350" height="492" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
-  <rect x="410" y="290" width="350" height="492" rx="10" fill="#333"/>
-  <rect x="410" y="310" width="350" height="492" fill="#333"/>
+  <rect x="410" y="290" width="350" height="193" rx="10" fill="#E8F4FD" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="410" y="290" width="350" height="40" rx="10" fill="#333"/>
+  <rect x="410" y="310" width="350" height="20" fill="#333"/>
   <text x="585" y="316" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">🎯 配色统一性 Color Unity</text>
 
   <text x="430" y="355" font-size="12" fill="#666">• 主色不超过3种，辅助色不超过2种？</text>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 430" width="800" height="430">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -17,11 +17,11 @@
 
   <!-- Main table -->
   <g transform="translate(20, 62)">
-    <rect x="0" y="0" width="760" height="430" fill="#fff" stroke="#D0D0D0" stroke-width="1" rx="6"/>
+    <rect x="0" y="0" width="760" height="420" fill="#fff" stroke="#D0D0D0" stroke-width="1" rx="6"/>
 
     <!-- Header row -->
-    <rect x="0" y="0" width="760" height="430" fill="#2C3E50" rx="6"/>
-    <rect x="0" y="16" width="760" height="430" fill="#2C3E50"/>
+    <rect x="0" y="0" width="760" height="32" fill="#2C3E50" rx="6"/>
+    <rect x="0" y="16" width="760" height="16" fill="#2C3E50"/>
     <text x="20" y="21" class="table-row-label">规格维度</text>
     <text x="200" y="21" class="table-header">主角</text>
     <text x="400" y="21" class="table-header">NPC</text>
@@ -29,8 +29,8 @@
 
     <!-- Row 1: 头身比 -->
     <g transform="translate(0, 32)">
-      <rect x="0" y="0" width="760" height="430" fill="#FAFAFA"/>
-      <rect x="0" y="0" width="180" height="430" fill="#E8F4FD"/>
+      <rect x="0" y="0" width="760" height="38" fill="#FAFAFA"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
       <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">头身比</text>
       <text x="15" y="30" class="formula" fill="#999">Head-to-Body Ratio</text>
       <text x="260" y="22" class="table-cell">2-3 头身</text>
@@ -43,8 +43,8 @@
 
     <!-- Row 2: 颜色配额 -->
     <g transform="translate(0, 70)">
-      <rect x="0" y="0" width="760" height="430" fill="#fff"/>
-      <rect x="0" y="0" width="180" height="430" fill="#E8F4FD"/>
+      <rect x="0" y="0" width="760" height="38" fill="#fff"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
       <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">颜色配额</text>
       <text x="15" y="30" class="formula" fill="#999">Color Quota</text>
       <text x="260" y="22" class="table-cell-accent">8-12 色</text>
@@ -57,8 +57,8 @@
 
     <!-- Row 3: 帧预算(动画) -->
     <g transform="translate(0, 108)">
-      <rect x="0" y="0" width="760" height="430" fill="#FAFAFA"/>
-      <rect x="0" y="0" width="180" height="430" fill="#E8F4FD"/>
+      <rect x="0" y="0" width="760" height="38" fill="#FAFAFA"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
       <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">帧预算（动画）</text>
       <text x="15" y="30" class="formula" fill="#999">Frame Budget</text>
       <text x="260" y="22" class="table-cell-accent">Idle 4f · Walk 6-8f · Run 6f</text>
@@ -71,8 +71,8 @@
 
     <!-- Row 4: 尺寸(px) -->
     <g transform="translate(0, 146)">
-      <rect x="0" y="0" width="760" height="430" fill="#fff"/>
-      <rect x="0" y="0" width="180" height="430" fill="#E8F4FD"/>
+      <rect x="0" y="0" width="760" height="38" fill="#fff"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
       <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">尺寸（像素/面数）</text>
       <text x="15" y="30" class="formula" fill="#999">Sprite/Model Size</text>
       <text x="260" y="22" class="table-cell">32×32px / 300面</text>
@@ -85,8 +85,8 @@
 
     <!-- Row 5: 与其他角色比例 -->
     <g transform="translate(0, 184)">
-      <rect x="0" y="0" width="760" height="430" fill="#FAFAFA"/>
-      <rect x="0" y="0" width="180" height="430" fill="#E8F4FD"/>
+      <rect x="0" y="0" width="760" height="38" fill="#FAFAFA"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
       <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">与其他角色比例</text>
       <text x="15" y="30" class="formula" fill="#999">Relative Scale</text>
       <text x="260" y="22" class="table-cell">基准 = 1.0×</text>
@@ -99,8 +99,8 @@
 
     <!-- Row 6: 剪影区分 -->
     <g transform="translate(0, 222)">
-      <rect x="0" y="0" width="760" height="430" fill="#fff"/>
-      <rect x="0" y="0" width="180" height="430" fill="#E8F4FD"/>
+      <rect x="0" y="0" width="760" height="38" fill="#fff"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
       <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">剪影区分度</text>
       <text x="15" y="30" class="formula" fill="#999">Silhouette Distinct</text>
       <text x="260" y="22" class="table-cell">复杂轮廓·武器/披风外轮廓</text>
@@ -113,8 +113,8 @@
 
     <!-- Row 7: 细节密度 -->
     <g transform="translate(0, 260)">
-      <rect x="0" y="0" width="760" height="430" fill="#FAFAFA"/>
-      <rect x="0" y="0" width="180" height="430" fill="#E8F4FD"/>
+      <rect x="0" y="0" width="760" height="38" fill="#FAFAFA"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
       <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">细节密度</text>
       <text x="15" y="30" class="formula" fill="#999">Detail Density</text>
       <text x="260" y="22" class="table-cell">高——装饰/花纹/装备可见</text>
@@ -127,8 +127,8 @@
 
     <!-- Row 8: 换色方案 -->
     <g transform="translate(0, 298)">
-      <rect x="0" y="0" width="760" height="430" fill="#fff"/>
-      <rect x="0" y="0" width="180" height="430" fill="#E8F4FD"/>
+      <rect x="0" y="0" width="760" height="38" fill="#fff"/>
+      <rect x="0" y="0" width="180" height="38" fill="#E8F4FD"/>
       <text x="15" y="15" class="table-row-label" font-size="10" fill="#333">换色方案</text>
       <text x="15" y="30" class="formula" fill="#999">Palette Swap</text>
       <text x="260" y="22" class="table-cell">装备换色→3套基础+2套稀有</text>
@@ -141,7 +141,7 @@
 
     <!-- Bottom: note about total animation time estimate -->
     <g transform="translate(0, 336)">
-      <rect x="0" y="0" width="760" height="430" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="0.5" rx="0 0 6 6"/>
+      <rect x="0" y="0" width="760" height="84" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="0.5" rx="0 0 6 6"/>
       <text x="20" y="20" style="font-size:10px; font-weight:bold; fill:#E74C3C;">总动画帧估算公式：</text>
       <text x="20" y="38" style="font-size:9px; fill:#333;">主演动画总帧数 = 状态数（Idle/Walk/Run/Attack/Death/…）× 每状态帧数 × 方向数（2/4/8）× 换色套数</text>
       <text x="20" y="56" style="font-size:9px; fill:#333;">示例：主角 = 6状态 × (4+8+6+8+10)帧/状态 = 36帧 × 4方向 × 3套换色 = 432帧总长</text>

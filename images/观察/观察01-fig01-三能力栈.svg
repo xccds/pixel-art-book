@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 512"
-     width="800" height="512"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 545"
+     width="800" height="545"
      font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <style>
     .title { font-size: 20px; font-weight: bold; fill: #222; text-anchor: middle; }
@@ -18,7 +18,7 @@
   <text x="400" y="30" class="title">三能力分层架构</text>
 
   <!-- Layer 整 (top) -->
-  <rect x="70" y="60" width="340" height="512" rx="8" fill="#7E57C2"/>
+  <rect x="70" y="60" width="340" height="92" rx="8" fill="#7E57C2"/>
   <text x="240" y="88" class="layer-title">整 · Integrate</text>
   <text x="240" y="111" class="layer-sub">整合：素材进引擎、风格统一、运行时一致</text>
   <text x="240" y="133" class="layer-tag">训练：第四部 制作07-09（上引擎 / 管线 / 一致性）</text>
@@ -28,7 +28,7 @@
   <text x="50" y="163" class="dep">▲</text>
 
   <!-- Layer 做 (middle) -->
-  <rect x="70" y="170" width="340" height="512" rx="8" fill="#26A69A"/>
+  <rect x="70" y="170" width="340" height="92" rx="8" fill="#26A69A"/>
   <text x="240" y="198" class="layer-title">做 · Make</text>
   <text x="240" y="221" class="layer-sub">执行 + 工具（Aseprite + Godot，工具已固定）</text>
   <text x="240" y="243" class="layer-tag">训练：第二部 练手 + 第四部 制作</text>
@@ -38,7 +38,7 @@
   <text x="50" y="273" class="dep">▲</text>
 
   <!-- Layer 看 (bottom) -->
-  <rect x="70" y="280" width="340" height="512" rx="8" fill="#EF5350"/>
+  <rect x="70" y="280" width="340" height="92" rx="8" fill="#EF5350"/>
   <text x="240" y="308" class="layer-title">看 · See</text>
   <text x="240" y="331" class="layer-sub">感知 + 词汇（明度、构图、负空间……）</text>
   <text x="240" y="353" class="layer-tag">训练：第一部 观察（你正在读的这一部）</text>
@@ -48,7 +48,7 @@
   <text x="50" y="385" class="dep">底层支撑上层</text>
 
   <!-- collapse mapping panel -->
-  <rect x="70" y="402" width="660" height="512" rx="6" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <rect x="70" y="402" width="660" height="48" rx="6" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
   <text x="400" y="425" class="map-title">感知+词汇 ⟶ 看 ｜ 执行+工具 ⟶ 做 ｜ 整合 ⟶ 整</text>
   <text x="400" y="443" class="map-line">工具固定（Aseprite + Godot），从全门类版收窄为像素专版的结构调整。</text>
 

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 498" width="800" height="498">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
     <style>
       text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
@@ -9,43 +9,43 @@
       .usage { font-size: 12px; fill: #555; }
     </style>
   </defs>
-  <rect width="800" height="498" fill="#FAFAFA"/>
+  <rect width="800" height="500" fill="#FAFAFA"/>
 
   <text x="400" y="32" text-anchor="middle" class="title">色彩脚本（Color Script）——5色模板</text>
   <text x="400" y="54" text-anchor="middle" class="subtitle">来源：gamineai 90分钟色彩脚本管线——5个色号锁定你的游戏色彩身份</text>
 
   <!-- Bar 1: Dark -->
-  <rect x="60" y="85" width="680" height="498" rx="4" fill="#2C3E50"/>
+  <rect x="60" y="85" width="680" height="55" rx="4" fill="#2C3E50"/>
   <text x="80" y="108" class="bar-label" fill="#FFF">① 暗色（Dark）</text>
   <text x="80" y="130" class="note" fill="#AAA">用于：阴影、暗部、背景深处、夜晚场景基调</text>
   <text x="540" y="118" class="usage" fill="#BDC3C7">示例：#2C3E50 深蓝灰</text>
 
   <!-- Bar 2: Mid Warm -->
-  <rect x="60" y="152" width="680" height="498" rx="4" fill="#D4A574"/>
+  <rect x="60" y="152" width="680" height="55" rx="4" fill="#D4A574"/>
   <text x="80" y="175" class="bar-label" fill="#FFF">② 中暖色（Mid Warm）</text>
   <text x="80" y="197" class="note" fill="#FFF" opacity="0.8">用于：地面、皮肤、木质、暖色区域中间调</text>
   <text x="540" y="185" class="usage" fill="#FFF">示例：#D4A574 皮革棕</text>
 
   <!-- Bar 3: Mid Cool -->
-  <rect x="60" y="219" width="680" height="498" rx="4" fill="#7FB3D8"/>
+  <rect x="60" y="219" width="680" height="55" rx="4" fill="#7FB3D8"/>
   <text x="80" y="242" class="bar-label" fill="#FFF">③ 中冷色（Mid Cool）</text>
   <text x="80" y="264" class="note" fill="#FFF" opacity="0.8">用于：天空、水面、阴影补光（Fill Light）、金属冷部</text>
   <text x="540" y="252" class="usage" fill="#FFF">示例：#7FB3D8 天空蓝</text>
 
   <!-- Bar 4: Saturated Accent -->
-  <rect x="60" y="286" width="680" height="498" rx="4" fill="#E74C3C"/>
+  <rect x="60" y="286" width="680" height="55" rx="4" fill="#E74C3C"/>
   <text x="80" y="309" class="bar-label" fill="#FFF">④ 饱和强调色（Saturated Accent）</text>
   <text x="80" y="331" class="note" fill="#FFF" opacity="0.8">用于：交互元素、主角标识、危险警告、特效高亮——这是画面中饱和度最高的颜色</text>
   <text x="540" y="319" class="usage" fill="#FFF">示例：#E74C3C 警示红</text>
 
   <!-- Bar 5: Highlight -->
-  <rect x="60" y="353" width="680" height="498" rx="4" fill="#F9F3E7"/>
+  <rect x="60" y="353" width="680" height="55" rx="4" fill="#F9F3E7"/>
   <text x="80" y="376" class="bar-label" fill="#333">⑤ 高亮色（Highlight）</text>
   <text x="80" y="398" class="note">用于：高光、UI文字、最亮区域、光源方向指示</text>
   <text x="540" y="386" class="usage" fill="#666">示例：#F9F3E7 暖白</text>
 
   <!-- Usage method -->
-  <rect x="60" y="425" width="680" height="498" rx="4" fill="#E8F4FD"/>
+  <rect x="60" y="425" width="680" height="55" rx="4" fill="#E8F4FD"/>
   <text x="400" y="445" text-anchor="middle" class="bar-label" fill="#3498DB" font-size="14">90分钟色彩脚本工作流</text>
   <text x="400" y="465" text-anchor="middle" class="note" font-size="13">选5个色 → 用这5色画3个关键帧（开场/转折/结尾）→ 检验色彩弧线 → 扩展为完整色板</text>
   <text x="400" y="478" text-anchor="middle" class="note" font-size="11" fill="#999">来源：gamineai 色彩脚本管线 · https://gamineai.substack.com</text>

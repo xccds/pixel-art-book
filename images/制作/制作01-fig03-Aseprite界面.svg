@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 398" width="800" height="398">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -14,95 +14,95 @@
   <text x="400" y="28" class="title" text-anchor="middle">图 制作01.3 Aseprite 界面简化布局——六个区域各管一件事</text>
 
   <!-- App window frame -->
-  <rect x="40" y="50" width="600" height="398" fill="#F4F4F4" stroke="#888" stroke-width="1.5" rx="4"/>
+  <rect x="40" y="50" width="600" height="340" fill="#F4F4F4" stroke="#888" stroke-width="1.5" rx="4"/>
 
   <!-- 1 Menu bar -->
-  <rect x="40" y="50" width="600" height="398" fill="#2C3E50" rx="4"/>
-  <rect x="40" y="62" width="600" height="398" fill="#2C3E50"/>
+  <rect x="40" y="50" width="600" height="20" fill="#2C3E50" rx="4"/>
+  <rect x="40" y="62" width="600" height="8" fill="#2C3E50"/>
   <text x="50" y="64" class="region-num" fill="#fff">①</text>
   <text x="64" y="64" fill="#fff" font-size="9.5" font-weight="bold">菜单栏</text>
   <text x="120" y="64" class="menu-text">File  Edit  Sprite  Layer  Frame  View  Help</text>
 
   <!-- 2 Tabs -->
-  <rect x="40" y="70" width="600" height="398" fill="#D5D5D5" stroke="#888" stroke-width="0.5"/>
+  <rect x="40" y="70" width="600" height="20" fill="#D5D5D5" stroke="#888" stroke-width="0.5"/>
   <text x="50" y="84" class="region-num">②</text>
   <text x="64" y="84" class="small">标签栏</text>
-  <rect x="118" y="74" width="126" height="398" fill="#F4F4F4" stroke="#aaa" stroke-width="0.5"/>
+  <rect x="118" y="74" width="126" height="16" fill="#F4F4F4" stroke="#aaa" stroke-width="0.5"/>
   <text x="181" y="86" class="tiny" text-anchor="middle">character.aseprite</text>
-  <rect x="248" y="74" width="92" height="398" fill="#E8E8E8" stroke="#aaa" stroke-width="0.5"/>
+  <rect x="248" y="74" width="92" height="16" fill="#E8E8E8" stroke="#aaa" stroke-width="0.5"/>
   <text x="294" y="86" class="tiny" text-anchor="middle">tileset.ase</text>
 
   <!-- 3 Toolbar (left vertical) -->
-  <rect x="40" y="90" width="48" height="398" fill="#E0E0E0" stroke="#888" stroke-width="0.5"/>
+  <rect x="40" y="90" width="48" height="220" fill="#E0E0E0" stroke="#888" stroke-width="0.5"/>
   <text x="44" y="104" class="region-num">③</text>
   <g fill="#fff" stroke="#aaa" stroke-width="0.5">
-    <rect x="50" y="112" width="28" height="398"/>
-    <rect x="50" y="134" width="28" height="398"/>
-    <rect x="50" y="156" width="28" height="398"/>
-    <rect x="50" y="178" width="28" height="398"/>
-    <rect x="50" y="200" width="28" height="398"/>
-    <rect x="50" y="222" width="28" height="398"/>
-    <rect x="50" y="244" width="28" height="398"/>
-    <rect x="50" y="266" width="28" height="398"/>
+    <rect x="50" y="112" width="28" height="18"/>
+    <rect x="50" y="134" width="28" height="18"/>
+    <rect x="50" y="156" width="28" height="18"/>
+    <rect x="50" y="178" width="28" height="18"/>
+    <rect x="50" y="200" width="28" height="18"/>
+    <rect x="50" y="222" width="28" height="18"/>
+    <rect x="50" y="244" width="28" height="18"/>
+    <rect x="50" y="266" width="28" height="18"/>
   </g>
   <text x="64" y="298" class="tiny" text-anchor="middle">工具栏</text>
 
   <!-- 4 Canvas (center) -->
-  <rect x="88" y="90" width="350" height="398" fill="#C8C8C8" stroke="#888" stroke-width="0.5"/>
+  <rect x="88" y="90" width="350" height="220" fill="#C8C8C8" stroke="#888" stroke-width="0.5"/>
   <text x="92" y="104" class="region-num">④</text>
-  <rect x="140" y="120" width="240" height="398" fill="#fff" stroke="#bbb" stroke-width="0.5"/>
+  <rect x="140" y="120" width="240" height="160" fill="#fff" stroke="#bbb" stroke-width="0.5"/>
   <g fill="#dcdcdc">
-    <rect x="140" y="120" width="16" height="398"/><rect x="172" y="120" width="16" height="398"/><rect x="204" y="120" width="16" height="398"/>
-    <rect x="156" y="136" width="16" height="398"/><rect x="188" y="136" width="16" height="398"/><rect x="220" y="136" width="16" height="398"/>
-    <rect x="140" y="152" width="16" height="398"/><rect x="172" y="152" width="16" height="398"/><rect x="204" y="152" width="16" height="398"/>
-    <rect x="156" y="168" width="16" height="398"/><rect x="188" y="168" width="16" height="398"/>
+    <rect x="140" y="120" width="16" height="16"/><rect x="172" y="120" width="16" height="16"/><rect x="204" y="120" width="16" height="16"/>
+    <rect x="156" y="136" width="16" height="16"/><rect x="188" y="136" width="16" height="16"/><rect x="220" y="136" width="16" height="16"/>
+    <rect x="140" y="152" width="16" height="16"/><rect x="172" y="152" width="16" height="16"/><rect x="204" y="152" width="16" height="16"/>
+    <rect x="156" y="168" width="16" height="16"/><rect x="188" y="168" width="16" height="16"/>
   </g>
   <text x="260" y="294" class="tiny" text-anchor="middle">画布 Canvas（32×32，灰格=透明）</text>
 
   <!-- 5 Palette (bottom-left under canvas) -->
-  <rect x="88" y="310" width="350" height="398" fill="#F0F0F0" stroke="#888" stroke-width="0.5"/>
+  <rect x="88" y="310" width="350" height="80" fill="#F0F0F0" stroke="#888" stroke-width="0.5"/>
   <text x="92" y="324" class="region-num">⑤</text>
   <text x="106" y="324" class="region-label">调色板 Palette</text>
   <g stroke="#aaa" stroke-width="0.3">
-    <rect x="100" y="332" width="18" height="398" fill="#1a1c2c"/><rect x="120" y="332" width="18" height="398" fill="#5d275d"/>
-    <rect x="140" y="332" width="18" height="398" fill="#b13e53"/><rect x="160" y="332" width="18" height="398" fill="#ef7d57"/>
-    <rect x="180" y="332" width="18" height="398" fill="#ffcd75"/><rect x="200" y="332" width="18" height="398" fill="#a7f070"/>
-    <rect x="220" y="332" width="18" height="398" fill="#38b764"/><rect x="240" y="332" width="18" height="398" fill="#257179"/>
-    <rect x="260" y="332" width="18" height="398" fill="#29366f"/><rect x="280" y="332" width="18" height="398" fill="#3b5dc9"/>
-    <rect x="300" y="332" width="18" height="398" fill="#41a6f6"/><rect x="320" y="332" width="18" height="398" fill="#73eff7"/>
-    <rect x="340" y="332" width="18" height="398" fill="#f4f4f4"/><rect x="360" y="332" width="18" height="398" fill="#94b0c2"/>
-    <rect x="380" y="332" width="18" height="398" fill="#566c86"/><rect x="400" y="332" width="18" height="398" fill="#333c57"/>
+    <rect x="100" y="332" width="18" height="18" fill="#1a1c2c"/><rect x="120" y="332" width="18" height="18" fill="#5d275d"/>
+    <rect x="140" y="332" width="18" height="18" fill="#b13e53"/><rect x="160" y="332" width="18" height="18" fill="#ef7d57"/>
+    <rect x="180" y="332" width="18" height="18" fill="#ffcd75"/><rect x="200" y="332" width="18" height="18" fill="#a7f070"/>
+    <rect x="220" y="332" width="18" height="18" fill="#38b764"/><rect x="240" y="332" width="18" height="18" fill="#257179"/>
+    <rect x="260" y="332" width="18" height="18" fill="#29366f"/><rect x="280" y="332" width="18" height="18" fill="#3b5dc9"/>
+    <rect x="300" y="332" width="18" height="18" fill="#41a6f6"/><rect x="320" y="332" width="18" height="18" fill="#73eff7"/>
+    <rect x="340" y="332" width="18" height="18" fill="#f4f4f4"/><rect x="360" y="332" width="18" height="18" fill="#94b0c2"/>
+    <rect x="380" y="332" width="18" height="18" fill="#566c86"/><rect x="400" y="332" width="18" height="18" fill="#333c57"/>
   </g>
-  <rect x="100" y="360" width="40" height="398" fill="#b13e53" stroke="#333" stroke-width="1"/>
-  <rect x="124" y="372" width="28" height="398" fill="#41a6f6" stroke="#333" stroke-width="1"/>
+  <rect x="100" y="360" width="40" height="24" fill="#b13e53" stroke="#333" stroke-width="1"/>
+  <rect x="124" y="372" width="28" height="12" fill="#41a6f6" stroke="#333" stroke-width="1"/>
   <text x="172" y="378" class="tiny">前景色 / 背景色</text>
 
   <!-- 6 Layers (right top) -->
-  <rect x="438" y="90" width="202" height="398" fill="#F0F0F0" stroke="#888" stroke-width="0.5"/>
+  <rect x="438" y="90" width="202" height="160" fill="#F0F0F0" stroke="#888" stroke-width="0.5"/>
   <text x="442" y="104" class="region-num">⑥</text>
   <text x="456" y="104" class="region-label">图层面板 Layers</text>
   <g>
-    <rect x="448" y="116" width="182" height="398" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+    <rect x="448" y="116" width="182" height="20" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
     <text x="456" y="130" class="tiny">[眼] outline</text>
-    <rect x="448" y="138" width="182" height="398" fill="#ddeeff" stroke="#ccc" stroke-width="0.5"/>
+    <rect x="448" y="138" width="182" height="20" fill="#ddeeff" stroke="#ccc" stroke-width="0.5"/>
     <text x="456" y="152" class="tiny">[眼] base color  (active)</text>
-    <rect x="448" y="160" width="182" height="398" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+    <rect x="448" y="160" width="182" height="20" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
     <text x="456" y="174" class="tiny">[眼] shading</text>
-    <rect x="448" y="182" width="182" height="398" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+    <rect x="448" y="182" width="182" height="20" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
     <text x="456" y="196" class="tiny">[眼] details</text>
-    <rect x="448" y="204" width="182" height="398" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+    <rect x="448" y="204" width="182" height="20" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
     <text x="456" y="218" class="tiny">[锁] background</text>
   </g>
   <text x="539" y="240" class="tiny" text-anchor="middle">眼=可见 · 锁=禁改</text>
 
   <!-- 7 Timeline (right bottom) -->
-  <rect x="438" y="252" width="202" height="398" fill="#F0F0F0" stroke="#888" stroke-width="0.5"/>
+  <rect x="438" y="252" width="202" height="58" fill="#F0F0F0" stroke="#888" stroke-width="0.5"/>
   <text x="442" y="266" class="region-num">⑦</text>
   <text x="456" y="266" class="region-label">时间轴 Timeline</text>
   <g fill="#fff" stroke="#aaa" stroke-width="0.3">
-    <rect x="448" y="276" width="26" height="398"/><rect x="476" y="276" width="26" height="398"/>
-    <rect x="504" y="276" width="26" height="398"/><rect x="532" y="276" width="26" height="398"/>
-    <rect x="560" y="276" width="26" height="398"/><rect x="588" y="276" width="26" height="398"/>
+    <rect x="448" y="276" width="26" height="26"/><rect x="476" y="276" width="26" height="26"/>
+    <rect x="504" y="276" width="26" height="26"/><rect x="532" y="276" width="26" height="26"/>
+    <rect x="560" y="276" width="26" height="26"/><rect x="588" y="276" width="26" height="26"/>
   </g>
 
   <!-- Region legend on far right -->

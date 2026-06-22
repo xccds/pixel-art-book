@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 480"
-     width="800" height="480"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"
+     width="800" height="500"
      font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <style>
     .label { font-size: 16px; fill: #333; }
@@ -25,7 +25,7 @@
   <text x="400" y="35" class="title" text-anchor="middle">全书五部递进结构</text>
 
   <!-- Box 1: 第一部 观察 -->
-  <rect x="50" y="55" width="160" height="480" rx="8" class="box1"/>
+  <rect x="50" y="55" width="160" height="60" rx="8" class="box1"/>
   <text x="130" y="80" class="num">I</text>
   <text x="130" y="103" class="box-title">观察</text>
 
@@ -33,7 +33,7 @@
   <line x1="210" y1="85" x2="270" y2="85" class="arrow-line"/>
 
   <!-- Box 2: 第二部 练手 -->
-  <rect x="280" y="55" width="160" height="480" rx="8" class="box2"/>
+  <rect x="280" y="55" width="160" height="60" rx="8" class="box2"/>
   <text x="360" y="80" class="num" fill="#27AE60">II</text>
   <text x="360" y="103" class="box-title">练手</text>
 
@@ -41,7 +41,7 @@
   <line x1="440" y1="85" x2="500" y2="85" class="arrow-line"/>
 
   <!-- Box 3: 第三部 风格 -->
-  <rect x="510" y="55" width="160" height="480" rx="8" class="box3"/>
+  <rect x="510" y="55" width="160" height="60" rx="8" class="box3"/>
   <text x="590" y="80" class="num" fill="#E6A817">III</text>
   <text x="590" y="103" class="box-title">风格</text>
 
@@ -49,7 +49,7 @@
   <line x1="590" y1="115" x2="590" y2="275" class="arrow-line"/>
 
   <!-- Box 4: 第四部 制作 -->
-  <rect x="510" y="275" width="160" height="480" rx="8" class="box4"/>
+  <rect x="510" y="275" width="160" height="60" rx="8" class="box4"/>
   <text x="590" y="300" class="num" fill="#E91E63">IV</text>
   <text x="590" y="323" class="box-title">制作</text>
 
@@ -57,7 +57,7 @@
   <line x1="510" y1="305" x2="450" y2="305" class="arrow-line"/>
 
   <!-- Box 5: 第五部 继续 -->
-  <rect x="280" y="275" width="160" height="480" rx="8" class="box5"/>
+  <rect x="280" y="275" width="160" height="60" rx="8" class="box5"/>
   <text x="360" y="300" class="num" fill="#7E57C2">V</text>
   <text x="360" y="323" class="box-title">继续</text>
 

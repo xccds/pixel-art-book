@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 460" width="800" height="460">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <style>
     .bg { fill: #FAFAFA; }
     .title { font-family: sans-serif; font-size: 18px; font-weight: bold; fill: #2C3E50; }
@@ -8,7 +8,7 @@
     .line { stroke: #BDC3C7; stroke-width: 1; }
     .hline { stroke: #E0E0E0; stroke-width: 0.5; }
   </style>
-  <rect class="bg" width="800" height="460"/>
+  <rect class="bg" width="800" height="500"/>
 
   <!-- Title -->
   <text x="400" y="36" text-anchor="middle" class="title">形状心理学：三种基本形状的语言</text>
@@ -26,5 +26,5 @@
   <text x="400" y="420" text-anchor="middle" class="label-small">基本形状组合可以产生无限变化：六边形 = 科技感 · 星形 = 魔法/特殊 · 有机形 = 自然/生物</text>
 
   <!-- Context: just rectangles + triangles at bottom -->
-  <rect x="40" y="440" width="720" height="460" rx="4" fill="#E8F4FD" stroke="#3498DB" stroke-width="1"/>
+  <rect x="40" y="440" width="720" height="38" rx="4" fill="#E8F4FD" stroke="#3498DB" stroke-width="1"/>
   </svg>

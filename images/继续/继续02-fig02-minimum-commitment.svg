@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="492" viewBox="0.0 0.0 800.0 492" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <!-- 标题 -->
   <text x="400" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">最低承诺系统</text>
   <text x="400" y="58" text-anchor="middle" font-size="13" fill="#666">Minimum Commitment System — 在最差的一天，你也能做到</text>
@@ -35,6 +35,6 @@
   </defs>
 
   <!-- 底部原则 -->
-  <rect x="100" y="448" width="600" height="492" rx="6" fill="#333"/>
+  <rect x="100" y="448" width="600" height="36" rx="6" fill="#333"/>
   <text x="400" y="472" text-anchor="middle" font-size="13" fill="#fff">核心原则：完成的丑画 &gt; 完美的未完成 · 不是鼓励你少做，是确保你在最差的一天也能做到</text>
 </svg>

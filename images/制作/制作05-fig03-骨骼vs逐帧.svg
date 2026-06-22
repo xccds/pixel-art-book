@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 800.0 440" width="800" height="440">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
@@ -17,11 +17,11 @@
 
   <!-- Left column: Bone Animation -->
   <g transform="translate(18, 60)">
-    <rect x="0" y="0" width="375" height="440" fill="#FAFAFA" stroke="#2980B9" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="375" height="425" fill="#FAFAFA" stroke="#2980B9" stroke-width="2" rx="8"/>
 
     <!-- Column header -->
-    <rect x="0" y="0" width="375" height="440" fill="#2980B9" rx="8"/>
-    <rect x="0" y="21" width="375" height="440" fill="#2980B9"/>
+    <rect x="0" y="0" width="375" height="42" fill="#2980B9" rx="8"/>
+    <rect x="0" y="21" width="375" height="21" fill="#2980B9"/>
     <text x="188" y="16" class="col-title">骨骼动画 Bone Animation</text>
     <text x="188" y="34" class="col-sub">Spine / DragonBones / Unity 2D Animation</text>
 
@@ -38,13 +38,13 @@
         <circle cx="26" cy="16" r="2" fill="#333"/>
         <circle cx="34" cy="16" r="2" fill="#333"/>
         <!-- Body -->
-        <rect x="22" y="28" width="16" height="440" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5"/>
+        <rect x="22" y="28" width="16" height="28" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5"/>
         <!-- Arms (from shoulder joints) -->
-        <rect x="10" y="30" width="8" height="440" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-8,14,30)"/>
-        <rect x="42" y="30" width="8" height="440" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(8,46,30)"/>
+        <rect x="10" y="30" width="8" height="24" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-8,14,30)"/>
+        <rect x="42" y="30" width="8" height="24" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(8,46,30)"/>
         <!-- Legs (from hip joints) -->
-        <rect x="24" y="56" width="8" height="440" fill="#2E4053" rx="3"/>
-        <rect x="32" y="56" width="8" height="440" fill="#2E4053" rx="3"/>
+        <rect x="24" y="56" width="8" height="20" fill="#2E4053" rx="3"/>
+        <rect x="32" y="56" width="8" height="20" fill="#2E4053" rx="3"/>
         <!-- Joint dots -->
         <circle cx="14" cy="30" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
         <circle cx="46" cy="30" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
@@ -60,13 +60,13 @@
         <circle cx="25" cy="14" r="2" fill="#333"/>
         <circle cx="33" cy="14" r="2" fill="#333"/>
         <!-- Body tilted -->
-        <rect x="20" y="28" width="16" height="440" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5" transform="rotate(-8,28,42)"/>
+        <rect x="20" y="28" width="16" height="28" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5" transform="rotate(-8,28,42)"/>
         <!-- Arms rotated -->
-        <rect x="10" y="26" width="8" height="440" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(20,14,30)"/>
-        <rect x="40" y="28" width="8" height="440" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-15,44,30)"/>
+        <rect x="10" y="26" width="8" height="24" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(20,14,30)"/>
+        <rect x="40" y="28" width="8" height="24" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-15,44,30)"/>
         <!-- Legs rotated -->
-        <rect x="22" y="56" width="8" height="440" fill="#2E4053" rx="3" transform="rotate(10,26,60)"/>
-        <rect x="34" y="54" width="8" height="440" fill="#2E4053" rx="3" transform="rotate(-12,38,60)"/>
+        <rect x="22" y="56" width="8" height="20" fill="#2E4053" rx="3" transform="rotate(10,26,60)"/>
+        <rect x="34" y="54" width="8" height="20" fill="#2E4053" rx="3" transform="rotate(-12,38,60)"/>
         <!-- Same joint dots -->
         <circle cx="12" cy="28" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
         <circle cx="44" cy="28" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
@@ -80,17 +80,17 @@
         <circle cx="30" cy="15" r="10" fill="#D4A574" stroke="#A0845C" stroke-width="0.8"/>
         <circle cx="26" cy="13" r="2" fill="#333"/>
         <circle cx="34" cy="13" r="2" fill="#333"/>
-        <rect x="22" y="25" width="16" height="440" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5" transform="rotate(-12,30,39)"/>
+        <rect x="22" y="25" width="16" height="28" fill="#2E86C1" rx="3" stroke="#2471A3" stroke-width="0.5" transform="rotate(-12,30,39)"/>
         <!-- Sword arm: extreme rotation forward -->
-        <rect x="38" y="22" width="8" height="440" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-40,42,22)"/>
+        <rect x="38" y="22" width="8" height="26" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(-40,42,22)"/>
         <!-- Sword -->
-        <rect x="44" y="0" width="4" height="440" fill="#BDC3C7" rx="1" transform="rotate(-40,46,4)"/>
+        <rect x="44" y="0" width="4" height="26" fill="#BDC3C7" rx="1" transform="rotate(-40,46,4)"/>
         <circle cx="40" cy="24" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
         <!-- Other arm -->
-        <rect x="10" y="30" width="8" height="440" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(8,14,30)"/>
+        <rect x="10" y="30" width="8" height="22" fill="#D4A574" rx="3" stroke="#A0845C" stroke-width="0.5" transform="rotate(8,14,30)"/>
         <circle cx="14" cy="30" r="3" fill="#E74C3C" stroke="#C0392B" stroke-width="0.5"/>
-        <rect x="24" y="56" width="8" height="440" fill="#2E4053" rx="3"/>
-        <rect x="32" y="56" width="8" height="440" fill="#2E4053" rx="3"/>
+        <rect x="24" y="56" width="8" height="20" fill="#2E4053" rx="3"/>
+        <rect x="32" y="56" width="8" height="20" fill="#2E4053" rx="3"/>
         <circle cx="26" cy="56" r="3" fill="#3498DB"/>
         <circle cx="38" cy="56" r="3" fill="#3498DB"/>
       </g>
@@ -120,7 +120,7 @@
 
     <!-- Recommendation badge -->
     <g transform="translate(20, 365)">
-      <rect x="0" y="0" width="335" height="440" fill="#2980B9" opacity="0.1" rx="4"/>
+      <rect x="0" y="0" width="335" height="40" fill="#2980B9" opacity="0.1" rx="4"/>
       <text x="10" y="16" class="step-label" fill="#2980B9">推荐场景：</text>
       <text x="10" y="30" class="step-desc" fill="#333">手绘 2D 风格 + 多方向角色 + 频繁迭代动画 + 需要换装系统</text>
     </g>
@@ -128,11 +128,11 @@
 
   <!-- Right column: Frame-by-Frame Animation -->
   <g transform="translate(408, 60)">
-    <rect x="0" y="0" width="375" height="440" fill="#FAFAFA" stroke="#E74C3C" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="375" height="425" fill="#FAFAFA" stroke="#E74C3C" stroke-width="2" rx="8"/>
 
     <!-- Column header -->
-    <rect x="0" y="0" width="375" height="440" fill="#E74C3C" rx="8"/>
-    <rect x="0" y="21" width="375" height="440" fill="#E74C3C"/>
+    <rect x="0" y="0" width="375" height="42" fill="#E74C3C" rx="8"/>
+    <rect x="0" y="21" width="375" height="21" fill="#E74C3C"/>
     <text x="188" y="16" class="col-title">逐帧动画 Frame-by-Frame</text>
     <text x="188" y="34" class="col-sub">Aseprite / Photoshop Timeline / Krita</text>
 
@@ -142,58 +142,58 @@
 
       <!-- Frame strip: 9 frames of a character -->
       <!-- F1 -->
-      <rect x="2" y="10" width="36" height="440" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <rect x="2" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="15" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="18" y="41" width="5" height="440" fill="#2E4053"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="18" y="41" width="5" height="10" fill="#2E4053"/>
 
       <!-- F2 -->
-      <rect x="42" y="10" width="36" height="440" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <rect x="42" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="14" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="16" y="41" width="6" height="440" fill="#2E4053"/>
+      <rect x="14" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="16" y="41" width="6" height="10" fill="#2E4053"/>
 
       <!-- F3 -->
-      <rect x="82" y="10" width="36" height="440" fill="#1A1A2E" stroke="#E74C3C" stroke-width="0.8" rx="2"/>
+      <rect x="82" y="10" width="36" height="48" fill="#1A1A2E" stroke="#E74C3C" stroke-width="0.8" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="15" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="19" y="41" width="5" height="440" fill="#2E4053"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="19" y="41" width="5" height="10" fill="#2E4053"/>
 
       <!-- F4 -->
-      <rect x="122" y="10" width="36" height="440" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <rect x="122" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="16" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="20" y="41" width="5" height="440" fill="#2E4053"/>
+      <rect x="16" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="20" y="41" width="5" height="10" fill="#2E4053"/>
 
       <!-- F5 -->
-      <rect x="162" y="10" width="36" height="440" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <rect x="162" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="15" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="17" y="41" width="5" height="440" fill="#2E4053"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="17" y="41" width="5" height="10" fill="#2E4053"/>
 
       <!-- F6 -->
-      <rect x="202" y="10" width="36" height="440" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <rect x="202" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="14" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="15" y="41" width="6" height="440" fill="#2E4053"/>
+      <rect x="14" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="15" y="41" width="6" height="10" fill="#2E4053"/>
 
       <!-- F7 -->
-      <rect x="242" y="10" width="36" height="440" fill="#1A1A2E" stroke="#E74C3C" stroke-width="0.8" rx="2"/>
+      <rect x="242" y="10" width="36" height="48" fill="#1A1A2E" stroke="#E74C3C" stroke-width="0.8" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="15" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="18" y="41" width="5" height="440" fill="#2E4053"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="18" y="41" width="5" height="10" fill="#2E4053"/>
 
       <!-- F8 -->
-      <rect x="282" y="10" width="36" height="440" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <rect x="282" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="16" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="20" y="41" width="5" height="440" fill="#2E4053"/>
+      <rect x="16" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="20" y="41" width="5" height="10" fill="#2E4053"/>
 
       <!-- F9 -->
-      <rect x="322" y="10" width="36" height="440" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
+      <rect x="322" y="10" width="36" height="48" fill="#1A1A2E" stroke="#555" stroke-width="0.5" rx="2"/>
       <ellipse cx="20" cy="20" rx="6" ry="6" fill="#D4A574"/>
-      <rect x="15" y="25" width="10" height="440" fill="#2E86C1"/>
-      <rect x="17" y="41" width="5" height="440" fill="#2E4053"/>
+      <rect x="15" y="25" width="10" height="16" fill="#2E86C1"/>
+      <rect x="17" y="41" width="5" height="10" fill="#2E4053"/>
 
       <!-- Frame numbering -->
       <text x="20" y="72" class="note" text-anchor="middle">F1</text>
@@ -231,7 +231,7 @@
 
     <!-- Recommendation badge -->
     <g transform="translate(20, 365)">
-      <rect x="0" y="0" width="335" height="440" fill="#E74C3C" opacity="0.1" rx="4"/>
+      <rect x="0" y="0" width="335" height="40" fill="#E74C3C" opacity="0.1" rx="4"/>
       <text x="10" y="16" class="step-label" fill="#E74C3C">推荐场景：</text>
       <text x="10" y="30" class="step-desc" fill="#333">像素艺术 + 帧数少 + 单方向 + 追求独特"手感" + 不需要换装</text>
     </g>

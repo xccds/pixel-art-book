@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <radialGradient id="pixelGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7E57C2" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7E57C2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 标题 -->
+  <text x="450" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">能力扩展路径</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#666">Ability Extension Path — 像素为中心，三条相邻方向</text>
+
+  <!-- 分叉箭头（先画线，后画框/圆，框盖住线端） -->
+  <line x1="365" y1="267" x2="272" y2="215" stroke="#555" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="535" y1="267" x2="628" y2="215" stroke="#555" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="450" y1="405" x2="450" y2="458" stroke="#555" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- 中心：像素（已掌握） -->
+  <circle cx="450" cy="310" r="95" fill="url(#pixelGlow)" stroke="#7E57C2" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="450" cy="310" r="42" fill="#7E57C2"/>
+  <text x="450" y="306" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">像素</text>
+  <text x="450" y="324" text-anchor="middle" font-size="10" fill="#EDE7F6">Pixel · 已掌握</text>
+  <text x="450" y="370" text-anchor="middle" font-size="11" fill="#7E57C2" font-weight="bold">约束训练 · 公共底座</text>
+  <text x="450" y="386" text-anchor="middle" font-size="10" fill="#666">明度·色彩·构图·形状·剪影·有限调色板</text>
+
+  <!-- 方向一：矢量（左上） -->
+  <rect x="40" y="90" width="230" height="140" rx="10" fill="#E8F4FD" stroke="#2E86C1" stroke-width="2"/>
+  <text x="155" y="116" text-anchor="middle" font-size="15" fill="#2E86C1" font-weight="bold">矢量 · Inkscape</text>
+  <text x="155" y="134" text-anchor="middle" font-size="10" fill="#2E86C1">Vector — raster → SVG</text>
+  <line x1="55" y1="143" x2="255" y2="143" stroke="#2E86C1" stroke-width="0.5" opacity="0.4"/>
+  <text x="55" y="161" font-size="11" fill="#333" font-weight="bold">何时转向</text>
+  <text x="55" y="177" font-size="10" fill="#555">分辨率无关 · UI 图标系统</text>
+  <text x="55" y="191" font-size="10" fill="#555">几何 Logo · 多分辨率适配</text>
+  <text x="55" y="210" font-size="11" fill="#333" font-weight="bold">什么迁移</text>
+  <text x="55" y="224" font-size="10" fill="#555">形状心理学 · 硬边思维 · 配色克制</text>
+
+  <!-- 方向二：手绘（右上） -->
+  <rect x="630" y="90" width="230" height="140" rx="10" fill="#FDECEA" stroke="#E74C3C" stroke-width="2"/>
+  <text x="745" y="116" text-anchor="middle" font-size="15" fill="#E74C3C" font-weight="bold">手绘 · Krita</text>
+  <text x="745" y="134" text-anchor="middle" font-size="10" fill="#E74C3C">Digital Painting — 强类型→动态</text>
+  <line x1="645" y1="143" x2="845" y2="143" stroke="#E74C3C" stroke-width="0.5" opacity="0.4"/>
+  <text x="645" y="161" font-size="11" fill="#333" font-weight="bold">何时转向</text>
+  <text x="645" y="177" font-size="10" fill="#555">柔和边缘 · 笔触温度</text>
+  <text x="645" y="191" font-size="10" fill="#555">painterly 氛围 · 连续渐变</text>
+  <text x="645" y="210" font-size="11" fill="#333" font-weight="bold">什么迁移</text>
+  <text x="645" y="224" font-size="10" fill="#555">明度·色彩·构图·形状（语义层）</text>
+
+  <!-- 方向三：3D 低模（下方） -->
+  <rect x="335" y="460" width="230" height="140" rx="10" fill="#E8F8E8" stroke="#27AE60" stroke-width="2"/>
+  <text x="450" y="486" text-anchor="middle" font-size="15" fill="#27AE60" font-weight="bold">3D 低模 · Blender</text>
+  <text x="450" y="504" text-anchor="middle" font-size="10" fill="#27AE60">Low-poly 3D — 2D 数组→3D 数组</text>
+  <line x1="350" y1="513" x2="550" y2="513" stroke="#27AE60" stroke-width="0.5" opacity="0.4"/>
+  <text x="350" y="531" font-size="11" fill="#333" font-weight="bold">何时转向</text>
+  <text x="350" y="547" font-size="10" fill="#555">真 3D 相机 · 物理交互</text>
+  <text x="350" y="561" font-size="10" fill="#555">多角度复用资产 · 纵深透视</text>
+  <text x="350" y="580" font-size="11" fill="#333" font-weight="bold">什么迁移</text>
+  <text x="350" y="594" font-size="10" fill="#555">顶点色克制·剪影可读·约束藏瑕</text>
+
+  <!-- 底部标注：元点 -->
+  <rect x="120" y="612" width="660" height="22" rx="5" fill="#333"/>
+  <text x="450" y="627" text-anchor="middle" font-size="11" fill="#fff">元点：约束训练可迁移——三条路径共享"在约束下做决策"的底座</text>
+</svg>

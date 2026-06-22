@@ -1,0 +1,15 @@
+# 不上传的设计文档
+SPEC.md
+PLAN.md
+AUDIT-SVG.md
+
+# 源书软链接目录
+源书/
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# Python 脚本缓存
+__pycache__/
+*.pyc

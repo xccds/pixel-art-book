@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
     .title { font-size: 16px; font-weight: bold; fill: #333; }
-    .subtitle { font-size: 11px; fill: #666; }
+    .subtitle { font-size: 11px; fill: #444; }
     .col-header { font-size: 14px; font-weight: bold; fill: #fff; text-anchor: middle; }
     .col-sub { font-size: 10px; fill: #fff; text-anchor: middle; opacity: 0.85; }
     .section-title { font-size: 11px; font-weight: bold; fill: #333; text-anchor: middle; }
     .section-sub { font-size: 8px; fill: #999; text-anchor: middle; }
-    .item-label { font-size: 8.5px; fill: #555; }
+    .item-label { font-size: 8.5px; fill: #444; }
     .item-accent { font-size: 8.5px; fill: #E74C3C; font-weight: bold; }
     .swatch-label { font-size: 7px; fill: #666; text-anchor: middle; }
   </style>
 
-  <text x="400" y="28" class="title" text-anchor="middle">图 制作02.4  主角/NPC/敌人的三层区分——从剪影到细节的三个维度的差异化策略</text>
+  <text x="400" y="28" class="title" text-anchor="middle">主角/NPC/敌人的三层区分——从剪影到细节的三个维度的差异化策略</text>
 
   <!-- Column 1: Hero -->
   <g transform="translate(15, 50)">
-    <rect x="0" y="0" width="250" height="435" fill="#fff" stroke="#27AE60" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="250" height="395" fill="#fff" stroke="#27AE60" stroke-width="2" rx="8"/>
     <rect x="0" y="0" width="250" height="40" fill="#27AE60" rx="8"/>
     <rect x="0" y="20" width="250" height="20" fill="#27AE60"/>
     <text x="125" y="17" class="col-header">主角</text>
     <text x="125" y="33" class="col-sub">Hero / Protagonist</text>
 
     <!-- Silhouette section -->
-    <g transform="translate(12, 52)">
+    <g transform="translate(12, 48)">
       <text x="0" y="0" class="section-title">剪影层（3米可辨原则）</text>
-      <rect x="0" y="8" width="226" height="85" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="75" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <!-- Hero silhouette drawing -->
       <g transform="translate(15, 15)">
         <ellipse cx="30" cy="10" rx="18" ry="16" fill="#1A1A1A"/>
@@ -46,9 +46,9 @@
     </g>
 
     <!-- Color palette section -->
-    <g transform="translate(12, 152)">
+    <g transform="translate(12, 132)">
       <text x="0" y="0" class="section-title">色板层（主角专用色系）</text>
-      <rect x="0" y="8" width="226" height="65" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="55" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <g transform="translate(15, 20)">
         <circle cx="10" cy="10" r="7" fill="#E74C3C"/>
         <circle cx="35" cy="10" r="7" fill="#F1C40F"/>
@@ -64,16 +64,16 @@
     </g>
 
     <!-- Detail section -->
-    <g transform="translate(12, 228)">
+    <g transform="translate(12, 198)">
       <text x="0" y="0" class="section-title">细节密度层</text>
-      <rect x="0" y="8" width="226" height="45" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="38" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <text x="10" y="24" class="item-label">高细节 · 装备花纹/盔甲纹路可见</text>
       <text x="10" y="40" class="item-accent">细节密度最高——玩家注视最久</text>
     </g>
 
     <!-- Summary box -->
-    <g transform="translate(12, 288)">
-      <rect x="0" y="0" width="226" height="110" fill="#E8F8F0" stroke="#27AE60" stroke-width="0.5" rx="4"/>
+    <g transform="translate(12, 248)">
+      <rect x="0" y="0" width="226" height="90" fill="#E8F8F0" stroke="#27AE60" stroke-width="0.5" rx="4"/>
       <text x="10" y="16" style="font-size:10px; font-weight:bold; fill:#27AE60;">主角策略总结：</text>
       <text x="10" y="34" class="item-label">"视觉复杂度 = 视觉重要性"</text>
       <text x="10" y="52" class="item-label">· 最高剪影复杂度——最"破"的轮廓</text>
@@ -85,15 +85,15 @@
 
   <!-- Column 2: NPC -->
   <g transform="translate(275, 50)">
-    <rect x="0" y="0" width="250" height="435" fill="#fff" stroke="#7F8C8D" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="250" height="395" fill="#fff" stroke="#7F8C8D" stroke-width="2" rx="8"/>
     <rect x="0" y="0" width="250" height="40" fill="#7F8C8D" rx="8"/>
     <rect x="0" y="20" width="250" height="20" fill="#7F8C8D"/>
     <text x="125" y="17" class="col-header">NPC</text>
     <text x="125" y="33" class="col-sub">Non-Player Character</text>
 
-    <g transform="translate(12, 52)">
+    <g transform="translate(12, 48)">
       <text x="0" y="0" class="section-title">剪影层</text>
-      <rect x="0" y="8" width="226" height="85" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="75" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <g transform="translate(15, 15)">
         <circle cx="30" cy="12" r="14" fill="#1A1A1A"/>
         <rect x="20" y="26" width="20" height="26" fill="#1A1A1A" rx="2"/>
@@ -109,9 +109,9 @@
       </g>
     </g>
 
-    <g transform="translate(12, 152)">
+    <g transform="translate(12, 132)">
       <text x="0" y="0" class="section-title">色板层（与主角拉开距离）</text>
-      <rect x="0" y="8" width="226" height="65" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="55" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <g transform="translate(15, 20)">
         <circle cx="10" cy="10" r="7" fill="#BDC3C7"/>
         <circle cx="35" cy="10" r="7" fill="#95A5A6"/>
@@ -123,15 +123,15 @@
       <text x="20" y="62" class="item-accent">绝对不能抢主角的强调色</text>
     </g>
 
-    <g transform="translate(12, 228)">
+    <g transform="translate(12, 198)">
       <text x="0" y="0" class="section-title">细节密度层</text>
-      <rect x="0" y="8" width="226" height="45" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="38" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <text x="10" y="24" class="item-label">中低细节 · 纯色块面 · 无纹理</text>
       <text x="10" y="40" class="item-accent">"背景的一部分"——不抢视觉焦点</text>
     </g>
 
-    <g transform="translate(12, 288)">
-      <rect x="0" y="0" width="226" height="110" fill="#F2F3F4" stroke="#7F8C8D" stroke-width="0.5" rx="4"/>
+    <g transform="translate(12, 248)">
+      <rect x="0" y="0" width="226" height="90" fill="#F2F3F4" stroke="#7F8C8D" stroke-width="0.5" rx="4"/>
       <text x="10" y="16" style="font-size:10px; font-weight:bold; fill:#7F8C8D;">NPC策略总结：</text>
       <text x="10" y="34" class="item-label">"少即是够——不给不必要的信息"</text>
       <text x="10" y="52" class="item-label">· 最简剪影——光滑、对称、无武器</text>
@@ -143,15 +143,15 @@
 
   <!-- Column 3: Enemy -->
   <g transform="translate(535, 50)">
-    <rect x="0" y="0" width="250" height="435" fill="#fff" stroke="#E74C3C" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="250" height="395" fill="#fff" stroke="#E74C3C" stroke-width="2" rx="8"/>
     <rect x="0" y="0" width="250" height="40" fill="#E74C3C" rx="8"/>
     <rect x="0" y="20" width="250" height="20" fill="#E74C3C"/>
     <text x="125" y="17" class="col-header">敌人</text>
     <text x="125" y="33" class="col-sub">Enemy / Boss</text>
 
-    <g transform="translate(12, 52)">
+    <g transform="translate(12, 48)">
       <text x="0" y="0" class="section-title">剪影层</text>
-      <rect x="0" y="8" width="226" height="85" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="75" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <g transform="translate(15, 15)">
         <ellipse cx="30" cy="10" rx="12" ry="14" fill="#1A1A1A"/>
         <polygon points="16,10 12,2 20,6" fill="#1A1A1A"/>
@@ -170,9 +170,9 @@
       </g>
     </g>
 
-    <g transform="translate(12, 152)">
+    <g transform="translate(12, 132)">
       <text x="0" y="0" class="section-title">色板层（危险信号色系）</text>
-      <rect x="0" y="8" width="226" height="65" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="55" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <g transform="translate(15, 20)">
         <circle cx="10" cy="10" r="7" fill="#E74C3C"/>
         <circle cx="35" cy="10" r="7" fill="#C0392B"/>
@@ -185,15 +185,15 @@
       <text x="20" y="62" class="item-accent">红色/紫色/黑色→本能威胁信号</text>
     </g>
 
-    <g transform="translate(12, 228)">
+    <g transform="translate(12, 198)">
       <text x="0" y="0" class="section-title">细节密度层</text>
-      <rect x="0" y="8" width="226" height="45" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
+      <rect x="0" y="8" width="226" height="38" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="0.5" rx="4"/>
       <text x="10" y="24" class="item-label">中高细节 · 集中在武器/眼睛/爪牙</text>
       <text x="10" y="40" class="item-accent">"威胁区高密度，非威胁区低密度"——引导玩家注意力</text>
     </g>
 
-    <g transform="translate(12, 288)">
-      <rect x="0" y="0" width="226" height="110" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.5" rx="4"/>
+    <g transform="translate(12, 248)">
+      <rect x="0" y="0" width="226" height="90" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.5" rx="4"/>
       <text x="10" y="16" style="font-size:10px; font-weight:bold; fill:#E74C3C;">敌人策略总结：</text>
       <text x="10" y="34" class="item-label">"威胁必须被看见——但不是被欣赏"</text>
       <text x="10" y="52" class="item-label">· 尖锐剪影——角/刺/武器外轮廓</text>

@@ -70,7 +70,7 @@
     <rect x="0" y="0" width="220" height="40" rx="4" fill="url(#valGrad)" stroke="#CCC" stroke-width="1"/>
     <text x="-5" y="25" text-anchor="end" class="note" font-size="11">黑</text>
     <text x="245" y="25" text-anchor="start" class="note" font-size="11">白</text>
-    <text x="110" y="60" text-anchor="middle" class="note" font-size="11">V = "有多亮"——见第9章</text>
+    <text x="110" y="60" text-anchor="middle" class="note" font-size="11">V = "有多亮"——详见练手04</text>
   </g>
 
   <!-- Code analogy box -->

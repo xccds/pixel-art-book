@@ -19,7 +19,7 @@
 
   <!-- Left panel: Downwell-style (low key, B/W + red) -->
   <rect x="40" y="50" width="330" height="240" rx="6" fill="#1A1A1A" stroke="#444" stroke-width="2"/>
-  <text x="205" y="28" class="tag" fill="#444">—— Downwell 式 · 低调画面 ——</text>
+  <text x="205" y="46" class="tag" fill="#666">Downwell 式 · 低调画面</text>
 
   <!-- Dark blocks in low-key -->
   <rect x="70" y="80" width="120" height="50" rx="3" fill="#333"/>
@@ -36,7 +36,7 @@
 
   <!-- Right panel: high contrast (Celeste-style inspiration) -->
   <rect x="430" y="50" width="330" height="240" rx="6" fill="#FAFAFA" stroke="#CCC" stroke-width="2"/>
-  <text x="595" y="28" class="tag" fill="#CCC">—— 高对比 · 明亮画面 ——</text>
+  <text x="595" y="46" class="tag" fill="#666">高对比 · 明亮画面</text>
 
   <!-- Bright blocks with contrast -->
   <rect x="460" y="80" width="100" height="60" rx="3" fill="#2C3E50"/>
@@ -64,7 +64,4 @@
   <rect x="580" y="355" width="140" height="12" rx="2" fill="#DDD"/>
   <rect x="500" y="380" width="80" height="16" rx="2" fill="#888"/>
   <text x="595" y="400" class="caption" text-anchor="middle">高对比区域依然明显</text>
-
-  <!-- Bottom annotation -->
-  <text x="400" y="420" class="caption" text-anchor="middle" display="none">无论画面是极暗还是极亮，明度结构决定了画面的第一印象。去色后还能看出层次和焦点 = 明度扎实。</text>
 </svg>

@@ -1,202 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360">
   <style>
     text { font-family: 'PingFang SC','Microsoft YaHei',Arial,sans-serif; }
-    .title { font-size: 16px; font-weight: bold; fill: #333; }
-    .subtitle { font-size: 11px; fill: #666; }
-    .light-label { font-size: 10px; font-weight: bold; fill: #333; }
-    .light-detail { font-size: 8.5px; fill: #555; }
-    .light-value { font-size: 8.5px; fill: #E74C3C; font-weight: bold; }
-    .param-label { font-size: 8px; fill: #666; }
-    .param-value { font-size: 8px; fill: #333; font-weight: bold; }
+    .title { font-size: 15px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 10px; fill: #888; }
+    .light-name { font-size: 12px; font-weight: bold; }
+    .light-desc { font-size: 9px; fill: #555; }
   </style>
 
-  <text x="400" y="28" class="title" text-anchor="middle">图 制作03.2  三光源场景布局——Key / Fill / Ambient 的完整参数</text>
-  <text x="400" y="46" class="subtitle" text-anchor="middle">三光源不是"三个灯"——是三个不同功能的光线角色，每一个解决不同的视觉问题</text>
+  <text x="400" y="22" class="title" text-anchor="middle">三光源布局——Key / Fill / Ambient</text>
+  <text x="400" y="37" class="subtitle" text-anchor="middle">三光源不是三个灯，是三个不同功能的光线角色</text>
 
-  <!-- Scene area -->
-  <g transform="translate(30, 65)">
-    <rect x="0" y="0" width="520" height="340" fill="#1A1A2E" stroke="#333" stroke-width="1" rx="6"/>
+  <!-- Scene floor -->
+  <rect x="80" y="230" width="640" height="110" fill="#E8E0D5" rx="2"/>
 
-    <!-- Ambient light glow (global uniform) -->
-    <rect x="0" y="0" width="520" height="340" fill="#1B2A4A" opacity="0.6" rx="6"/>
+  <!-- Ambient glow (subtle overall) -->
+  <rect x="80" y="60" width="640" height="170" fill="#D4E0F0" opacity="0.15"/>
 
-    <!-- Ground -->
-    <rect x="0" y="220" width="520" height="120" fill="#2E4053" opacity="0.6"/>
+  <!-- Character silhouette in center -->
+  <g transform="translate(400, 160)">
+    <!-- Shadow on ground from Key light -->
+    <ellipse cx="35" cy="72" rx="30" ry="8" fill="#C0B090" opacity="0.6"/>
 
-    <!-- Ground plane line -->
-    <line x1="0" y1="220" x2="520" y2="220" stroke="#4A6A8A" stroke-width="0.5" opacity="0.5"/>
-
-    <!-- Tree (left) -->
-    <g transform="translate(80, 80)">
-      <rect x="16" y="60" width="10" height="80" fill="#3E2723"/>
-      <ellipse cx="21" cy="55" rx="35" ry="45" fill="#2E7D32" opacity="0.7"/>
-      <ellipse cx="10" cy="60" rx="25" ry="30" fill="#388E3C" opacity="0.5"/>
-    </g>
-
-    <!-- House (center-right) -->
-    <g transform="translate(280, 120)">
-      <rect x="0" y="30" width="90" height="70" fill="#5D6D7E"/>
-      <polygon points="-10,30 45,-10 100,30" fill="#943126"/>
-      <rect x="30" y="55" width="30" height="45" fill="#3E2723"/>
-      <rect x="10" y="45" width="22" height="20" fill="#AED6F1"/>
-      <rect x="58" y="45" width="22" height="20" fill="#AED6F1"/>
-      <rect x="40" y="10" width="10" height="35" fill="#7F8C8D"/>
-    </g>
-
-    <!-- Character (center) -->
-    <g transform="translate(200, 160)">
-      <ellipse cx="0" cy="0" rx="10" ry="12" fill="#D4A574"/>
-      <rect x="-10" y="12" width="20" height="25" fill="#2E86C1"/>
-      <rect x="-14" y="16" width="8" height="4" fill="#D4A574" rx="2"/>
-      <rect x="6" y="16" width="8" height="4" fill="#D4A574" rx="2"/>
-      <rect x="-8" y="37" width="7" height="20" fill="#2E4053" rx="2"/>
-      <rect x="1" y="37" width="7" height="20" fill="#2E4053" rx="2"/>
-      <!-- Shadow on ground -->
-      <ellipse cx="0" cy="58" rx="12" ry="4" fill="#1A1A1A" opacity="0.5"/>
-    </g>
-
-    <!-- Key light arrow (top right 30°) -->
-    <g>
-      <!-- Light source icon -->
-      <g transform="translate(430, 40)">
-        <circle cx="0" cy="0" r="12" fill="#F1C40F" opacity="0.9"/>
-        <circle cx="0" cy="0" r="6" fill="#fff" opacity="0.7"/>
-        <line x1="-16" y1="-16" x2="-10" y2="-10" stroke="#F1C40F" stroke-width="1.5"/>
-        <line x1="-18" y1="-10" x2="-12" y2="-4" stroke="#F1C40F" stroke-width="1.5"/>
-        <line x1="-10" y1="-18" x2="-4" y2="-12" stroke="#F1C40F" stroke-width="1.5"/>
-      </g>
-      <!-- Arrow down-left to scene center -->
-      <line x1="430" y1="60" x2="280" y2="180" stroke="#F1C40F" stroke-width="1.5" stroke-dasharray="8,4"/>
-      <polygon points="280,180 288,172 282,178 276,176" fill="#F1C40F"/>
-
-      <!-- Key light info box -->
-      <g transform="translate(440, 65)">
-        <rect x="0" y="0" width="155" height="90" fill="#fff" stroke="#F1C40F" stroke-width="1.5" rx="5"/>
-        <text x="10" y="16" class="light-label" fill="#F39C12">主光源 Key Light</text>
-        <line x1="8" y1="22" x2="147" y2="22" stroke="#E0E0E0" stroke-width="0.5"/>
-        <text x="10" y="36" class="param-label">角度：右上 30°-45°</text>
-        <text x="10" y="50" class="param-label">颜色：暖色 #FFF2E0</text>
-        <text x="10" y="64" class="param-label">强度：1.0</text>
-        <text x="10" y="78" class="param-value">职责：定义主要形体，产生阴影，决定"光源方向在哪"</text>
-      </g>
-    </g>
-
-    <!-- Fill light arrow (bottom left) -->
-    <g>
-      <g transform="translate(50, 350)">
-        <circle cx="0" cy="0" r="10" fill="#85C1E9" opacity="0.8"/>
-        <circle cx="0" cy="0" r="5" fill="#D4E6F1" opacity="0.6"/>
-        <line x1="-12" y1="12" x2="-8" y2="8" stroke="#85C1E9" stroke-width="1"/>
-        <line x1="-14" y1="6" x2="-10" y2="2" stroke="#85C1E9" stroke-width="1"/>
-        <line x1="-8" y1="14" x2="-4" y2="10" stroke="#85C1E9" stroke-width="1"/>
-      </g>
-      <!-- Arrow up-right to scene -->
-      <line x1="60" y1="350" x2="210" y2="240" stroke="#85C1E9" stroke-width="1.5" stroke-dasharray="8,4"/>
-      <polygon points="210,240 202,248 208,244 214,246" fill="#85C1E9"/>
-
-      <!-- Fill light info box -->
-      <g transform="translate(10, 370)">
-        <rect x="0" y="0" width="155" height="80" fill="#fff" stroke="#85C1E9" stroke-width="1.5" rx="5"/>
-        <text x="10" y="16" class="light-label" fill="#2980B9">补光 Fill Light</text>
-        <line x1="8" y1="22" x2="147" y2="22" stroke="#E0E0E0" stroke-width="0.5"/>
-        <text x="10" y="36" class="param-label">角度：主光对面（左下）</text>
-        <text x="10" y="50" class="param-label">颜色：冷色 #D4E6F1</text>
-        <text x="10" y="64" class="param-label">强度：0.3-0.5</text>
-        <text x="10" y="74" class="param-value">职责：照亮主光产生的暗面，但不消除明暗对比</text>
-      </g>
-    </g>
-
-    <!-- Ambient light notation (bottom center) -->
-    <g>
-      <g transform="translate(250, 380)">
-        <rect x="0" y="0" width="155" height="65" fill="#fff" stroke="#BDC3C7" stroke-width="1.5" rx="5"/>
-        <text x="10" y="16" class="light-label" fill="#7F8C8D">环境光 Ambient</text>
-        <line x1="8" y1="22" x2="147" y2="22" stroke="#E0E0E0" stroke-width="0.5"/>
-        <text x="10" y="36" class="param-label">类型：全局均匀（无方向）</text>
-        <text x="10" y="50" class="param-label">颜色：极淡冷色 #E8F0FF</text>
-        <text x="10" y="60" class="param-label">强度：0.1-0.2</text>
-      </g>
-      <!-- Dotted circle around scene indicating ambient -->
-      <ellipse cx="290" cy="235" rx="250" ry="170" fill="none" stroke="#BDC3C7" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
-    </g>
+    <!-- Body -->
+    <rect x="-12" y="10" width="24" height="35" fill="#5D6D7E" rx="3"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="2" rx="14" ry="16" fill="#D4A574"/>
+    <!-- Eyes -->
+    <circle cx="-5" cy="0" r="2" fill="#2C3E50"/>
+    <circle cx="6" cy="0" r="2" fill="#2C3E50"/>
+    <!-- Legs -->
+    <rect x="-10" y="45" width="8" height="22" fill="#2E4053" rx="2"/>
+    <rect x="2" y="45" width="8" height="22" fill="#2E4053" rx="2"/>
+    <!-- Arms -->
+    <rect x="-20" y="14" width="8" height="20" fill="#5D6D7E" rx="2"/>
+    <rect x="12" y="14" width="8" height="20" fill="#5D6D7E" rx="2"/>
   </g>
 
-  <!-- Right side: parameter summary -->
-  <g transform="translate(565, 65)">
-    <rect x="0" y="0" width="220" height="340" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1" rx="6"/>
+  <!-- ===== Key Light (top-right, warm) ===== -->
+  <!-- Arrow from light source to character -->
+  <g>
+    <line x1="650" y1="55" x2="435" y2="155" stroke="#F1C40F" stroke-width="2" stroke-dasharray="8,4" opacity="0.8"/>
+    <polygon points="435,155 443,147 437,153 431,151" fill="#F1C40F" opacity="0.8"/>
 
-    <text x="110" y="20" text-anchor="middle" style="font-size:11px; font-weight:bold; fill:#333;">三光源参数对照表</text>
-    <line x1="15" y1="28" x2="205" y2="28" stroke="#E0E0E0" stroke-width="0.5"/>
-
-    <!-- Table -->
-    <g transform="translate(15, 40)">
-      <!-- Headers -->
-      <rect x="0" y="0" width="190" height="22" fill="#2C3E50" rx="3"/>
-      <text x="12" y="15" style="font-size:8px; font-weight:bold; fill:#fff;">参数</text>
-      <text x="70" y="15" style="font-size:8px; font-weight:bold; fill:#fff; text-anchor:middle;">Key 主光</text>
-      <text x="133" y="15" style="font-size:8px; font-weight:bold; fill:#fff; text-anchor:middle;">Fill 补光</text>
-      <text x="175" y="15" style="font-size:8px; font-weight:bold; fill:#fff; text-anchor:middle;">Ambient</text>
-
-      <!-- Row 1: 强度 -->
-      <rect x="0" y="24" width="190" height="18" fill="#fff"/>
-      <text x="8" y="37" class="param-label">强度</text>
-      <text x="70" y="37" class="param-value" fill="#E74C3C" text-anchor="middle">1.0</text>
-      <text x="133" y="37" class="param-value" fill="#2980B9" text-anchor="middle">0.3-0.5</text>
-      <text x="175" y="37" class="param-value" fill="#7F8C8D" text-anchor="middle">0.1-0.2</text>
-
-      <!-- Row 2: 方向 -->
-      <rect x="0" y="42" width="190" height="18" fill="#F8F8F8"/>
-      <text x="8" y="55" class="param-label">方向</text>
-      <text x="70" y="55" class="param-label" fill="#E74C3C" text-anchor="middle">右上30°</text>
-      <text x="133" y="55" class="param-label" fill="#2980B9" text-anchor="middle">左下</text>
-      <text x="175" y="55" class="param-label" fill="#7F8C8D" text-anchor="middle">无方向</text>
-
-      <!-- Row 3: 颜色 -->
-      <rect x="0" y="60" width="190" height="18" fill="#fff"/>
-      <text x="8" y="73" class="param-label">色温</text>
-      <text x="70" y="73" class="param-label" fill="#E74C3C" text-anchor="middle">暖</text>
-      <text x="133" y="73" class="param-label" fill="#2980B9" text-anchor="middle">冷</text>
-      <text x="175" y="73" class="param-label" fill="#7F8C8D" text-anchor="middle">中冷</text>
-
-      <!-- Row 4: 产生阴影 -->
-      <rect x="0" y="78" width="190" height="18" fill="#F8F8F8"/>
-      <text x="8" y="91" class="param-label">阴影</text>
-      <text x="70" y="91" class="param-label" fill="#E74C3C" text-anchor="middle">是</text>
-      <text x="133" y="91" class="param-label" fill="#2980B9" text-anchor="middle">否</text>
-      <text x="175" y="91" class="param-label" fill="#7F8C8D" text-anchor="middle">否</text>
-
-      <!-- Row 5: 职责 -->
-      <rect x="0" y="96" width="190" height="18" fill="#fff"/>
-      <text x="8" y="109" class="param-label">职责</text>
-      <text x="70" y="109" style="font-size:7px; fill:#E74C3C;" text-anchor="middle">定义形体</text>
-      <text x="133" y="109" style="font-size:7px; fill:#2980B9;" text-anchor="middle">照亮暗面</text>
-      <text x="175" y="109" style="font-size:7px; fill:#7F8C8D;" text-anchor="middle">消除死黑</text>
+    <!-- Light source icon -->
+    <g transform="translate(670, 45)">
+      <circle cx="0" cy="0" r="16" fill="#F1C40F" opacity="0.3"/>
+      <circle cx="0" cy="0" r="10" fill="#F1C40F" opacity="0.7"/>
+      <circle cx="0" cy="0" r="5" fill="#FFF9C4"/>
+      <line x1="-18" y1="-18" x2="-12" y2="-12" stroke="#F1C40F" stroke-width="2"/>
+      <line x1="-22" y1="-8" x2="-14" y2="-2" stroke="#F1C40F" stroke-width="2"/>
+      <line x1="-10" y1="-20" x2="-4" y2="-12" stroke="#F1C40F" stroke-width="2"/>
     </g>
 
-    <!-- Engine implementation tips -->
-    <g transform="translate(15, 175)">
-      <text x="0" y="0" style="font-size:10px; font-weight:bold; fill:#333;">引擎中的对应实现：</text>
+    <!-- Label -->
+    <text x="680" y="78" class="light-name" fill="#F39C12">Key 主光源</text>
+    <text x="680" y="92" class="light-desc">右上 30-45°</text>
+    <text x="680" y="104" class="light-desc">暖色 · 产生阴影</text>
+    <text x="680" y="116" class="light-desc">定义形体与方向</text>
+  </g>
 
-      <g transform="translate(0, 12)">
-        <rect x="0" y="0" width="190" height="55" fill="#E8F4FD" stroke="#A8D8F0" stroke-width="0.5" rx="4"/>
-        <text x="8" y="14" style="font-size:8px; fill:#333; font-weight:bold;">Unity：</text>
-        <text x="8" y="28" style="font-size:8px; fill:#555;">Key = Directional Light (Rotation)</text>
-        <text x="8" y="40" style="font-size:8px; fill:#555;">Fill = 第二个 Directional Light (强度0.3)</text>
-        <text x="8" y="52" style="font-size:8px; fill:#555;">Ambient = Lighting→Environment→Ambient Color</text>
-      </g>
+  <!-- ===== Fill Light (bottom-left, cool) ===== -->
+  <g>
+    <line x1="180" y1="310" x2="340" y2="210" stroke="#85C1E9" stroke-width="2" stroke-dasharray="8,4" opacity="0.8"/>
+    <polygon points="340,210 332,218 338,214 344,216" fill="#85C1E9" opacity="0.8"/>
 
-      <g transform="translate(0, 75)">
-        <rect x="0" y="0" width="190" height="42" fill="#E8F8F0" stroke="#A8D8F0" stroke-width="0.5" rx="4"/>
-        <text x="8" y="14" style="font-size:8px; fill:#333; font-weight:bold;">Godot：</text>
-        <text x="8" y="28" style="font-size:8px; fill:#555;">Key = DirectionalLight3D (可设置旋转)</text>
-        <text x="8" y="40" style="font-size:8px; fill:#555;">Ambient = WorldEnvironment→Environment→Ambient Light</text>
-      </g>
+    <g transform="translate(160, 320)">
+      <circle cx="0" cy="0" r="14" fill="#85C1E9" opacity="0.3"/>
+      <circle cx="0" cy="0" r="8" fill="#85C1E9" opacity="0.7"/>
+      <circle cx="0" cy="0" r="4" fill="#D6EAF8"/>
+      <line x1="16" y1="16" x2="10" y2="10" stroke="#85C1E9" stroke-width="2"/>
+      <line x1="20" y1="6" x2="12" y2="0" stroke="#85C1E9" stroke-width="2"/>
+      <line x1="8" y1="18" x2="2" y2="12" stroke="#85C1E9" stroke-width="2"/>
     </g>
 
-    <!-- Key takeaway -->
-    <g transform="translate(15, 305)">
-      <rect x="0" y="0" width="190" height="28" fill="#FDEDEC" stroke="#E74C3C" stroke-width="0.5" rx="4"/>
-      <text x="95" y="18" text-anchor="middle" style="font-size:8px; fill:#E74C3C; font-weight:bold;">关键：三光的独立性 = 视觉的可调节性</text>
-    </g>
+    <text x="148" y="350" class="light-name" fill="#2980B9" text-anchor="end">Fill 补光</text>
+    <text x="148" y="364" class="light-desc" text-anchor="end">主光对面（左下）</text>
+    <text x="148" y="376" class="light-desc" text-anchor="end">冷色 · 强度 0.3-0.5</text>
+    <text x="148" y="388" class="light-desc" text-anchor="end">照亮暗面不消明暗</text>
+  </g>
+
+  <!-- ===== Ambient Light (subtle, center) ===== -->
+  <g>
+    <!-- Dotted circle indicating global ambient -->
+    <ellipse cx="400" cy="180" rx="280" ry="120" fill="none" stroke="#95A5A6" stroke-width="1.2" stroke-dasharray="6,4" opacity="0.5"/>
+
+    <text x="400" y="55" class="light-name" fill="#7F8C8D" text-anchor="middle">Ambient 环境光</text>
+    <text x="400" y="69" class="light-desc" text-anchor="middle">全局均匀 · 无方向 · 强度 0.1-0.2</text>
+    <text x="400" y="81" class="light-desc" text-anchor="middle">消除死黑 · 给画面最低亮度</text>
+  </g>
+
+  <!-- Bottom summary -->
+  <g transform="translate(80, 295)">
+    <rect x="0" y="0" width="640" height="30" rx="3" fill="#F9E79F" stroke="#F1C40F" stroke-width="0.5"/>
+    <text x="200" y="13" style="font-size:8px;fill:#7D6608;text-anchor:middle;font-weight:bold;">Key 定义方向 + Fill 消除死黑 + Ambient 设定最低亮度</text>
+    <text x="480" y="21" style="font-size:8px;fill:#7D6608;text-anchor:middle;">三者独立调节 = 场景光照的三个"参数旋钮"</text>
   </g>
 </svg>

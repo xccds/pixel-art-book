@@ -1,59 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 545"
-     width="800" height="545"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380"
+     width="800" height="380"
      font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
   <style>
     .title { font-size: 20px; font-weight: bold; fill: #222; text-anchor: middle; }
-    .caption { font-size: 14px; fill: #666; text-anchor: middle; }
-    .layer-title { font-size: 19px; font-weight: bold; fill: #FFF; text-anchor: middle; }
-    .layer-sub { font-size: 13px; fill: rgba(255,255,255,0.9); text-anchor: middle; }
-    .layer-tag { font-size: 12px; fill: rgba(255,255,255,0.75); text-anchor: middle; }
-    .problem { font-size: 13px; fill: #C0392B; text-anchor: start; }
-    .problem-strong { font-size: 14px; font-weight: bold; fill: #C0392B; text-anchor: start; }
-    .map-title { font-size: 14px; font-weight: bold; fill: #333; text-anchor: middle; }
-    .map-line { font-size: 13px; fill: #555; text-anchor: middle; }
-    .tagline { font-size: 15px; font-weight: bold; fill: #555; text-anchor: middle; }
-    .dep { font-size: 11px; fill: #999; text-anchor: middle; }
+    .layer-title { font-size: 18px; font-weight: bold; fill: #FFF; text-anchor: start; }
+    .layer-sub { font-size: 13px; fill: rgba(255,255,255,0.88); text-anchor: start; }
+    .layer-role { font-size: 12px; fill: rgba(255,255,255,0.70); text-anchor: start; }
+    .arrow { font-size: 16px; fill: #888; text-anchor: middle; }
+    .dep-text { font-size: 12px; fill: #999; text-anchor: start; }
+    .tagline { font-size: 16px; font-weight: bold; fill: #444; text-anchor: middle; }
   </style>
 
-  <text x="400" y="30" class="title">三能力分层架构</text>
+  <text x="400" y="28" class="title">三能力分层架构：看 → 做 → 整</text>
 
   <!-- Layer 整 (top) -->
-  <rect x="70" y="60" width="340" height="92" rx="8" fill="#7E57C2"/>
-  <text x="240" y="88" class="layer-title">整 · Integrate</text>
-  <text x="240" y="111" class="layer-sub">整合：素材进引擎、风格统一、运行时一致</text>
-  <text x="240" y="133" class="layer-tag">训练：第四部 制作07-09（上引擎 / 管线 / 一致性）</text>
-  <text x="430" y="100" class="problem">「素材进引擎后总跟画布上不一样」</text>
+  <rect x="60" y="48" width="680" height="82" rx="6" fill="#7E57C2"/>
+  <text x="84" y="75" class="layer-title">整 · Integrate（部署系统）</text>
+  <text x="84" y="98" class="layer-sub">把素材导入引擎、跑通、确保一切看起来统一</text>
+  <text x="84" y="118" class="layer-role">训练：第四部 制作07-09（上引擎 / 管线 / 一致性审计）</text>
 
-  <!-- dependency arrow gap 1 -->
-  <text x="50" y="163" class="dep">▲</text>
+  <text x="400" y="150" class="arrow">▲ 依赖上层接口；底层出错，上层不可用</text>
 
   <!-- Layer 做 (middle) -->
-  <rect x="70" y="170" width="340" height="92" rx="8" fill="#26A69A"/>
-  <text x="240" y="198" class="layer-title">做 · Make</text>
-  <text x="240" y="221" class="layer-sub">执行 + 工具（Aseprite + Godot，工具已固定）</text>
-  <text x="240" y="243" class="layer-tag">训练：第二部 练手 + 第四部 制作</text>
-  <text x="430" y="210" class="problem">「线是抖的、角色像土豆、Aseprite 卡壳」</text>
+  <rect x="60" y="156" width="680" height="82" rx="6" fill="#26A69A"/>
+  <text x="84" y="183" class="layer-title">做 · Make（实现系统）</text>
+  <text x="84" y="206" class="layer-sub">把东西画出来——控制线条、形状、明度、色彩、质感</text>
+  <text x="84" y="226" class="layer-role">训练：第二部 练手（基础）+ 第四部 制作01-06（应用）</text>
 
-  <!-- dependency arrow gap 2 -->
-  <text x="50" y="273" class="dep">▲</text>
+  <text x="400" y="258" class="arrow">▲ 依赖上层接口；底层出错，上层不可用</text>
 
   <!-- Layer 看 (bottom) -->
-  <rect x="70" y="280" width="340" height="92" rx="8" fill="#EF5350"/>
-  <text x="240" y="308" class="layer-title">看 · See</text>
-  <text x="240" y="331" class="layer-sub">感知 + 词汇（明度、构图、负空间……）</text>
-  <text x="240" y="353" class="layer-tag">训练：第一部 观察（你正在读的这一部）</text>
-  <text x="430" y="320" class="problem-strong">【大多数程序员的真正短板】</text>
+  <rect x="60" y="264" width="680" height="82" rx="6" fill="#EF5350"/>
+  <text x="84" y="291" class="layer-title">看 · See（输入系统）</text>
+  <text x="84" y="314" class="layer-sub">判断什么是好、说出哪里不好——感知 + 词汇</text>
+  <text x="84" y="334" class="layer-role">训练：第一部 观察（你正在读的这一部）◀ 大多数程序员的问题出在这一层</text>
 
-  <!-- dependency direction label -->
-  <text x="50" y="385" class="dep">底层支撑上层</text>
-
-  <!-- collapse mapping panel -->
-  <rect x="70" y="402" width="660" height="48" rx="6" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
-  <text x="400" y="425" class="map-title">感知+词汇 ⟶ 看 ｜ 执行+工具 ⟶ 做 ｜ 整合 ⟶ 整</text>
-  <text x="400" y="443" class="map-line">工具固定（Aseprite + Godot），从全门类版收窄为像素专版的结构调整。</text>
-
-  <!-- tagline -->
-  <text x="400" y="492" class="tagline">底层没通，上层再努力也没用。</text>
-
-
+  <text x="400" y="368" class="tagline">三层不能跳。跳过"看"直接"做"，等于没写测试用例就开始写代码。</text>
 </svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 390"
+     width="480" height="390"
+     font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <style>
+    .title { font-size: 18px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .axis-label { font-size: 15px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .axis-sub { font-size: 12px; fill: #666; text-anchor: middle; }
+    .corner-label { font-size: 13px; font-weight: bold; text-anchor: middle; }
+    .corner-sub { font-size: 11px; fill: #555; text-anchor: middle; }
+    .tagline { font-size: 14px; font-weight: bold; fill: #555; text-anchor: middle; }
+  </style>
+
+  <!-- Triangle -->
+  <polygon points="240,60 60,330 420,330" fill="#F0F4FF" stroke="#4A90D9" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Vertex labels -->
+  <!-- Top: 审美 -->
+  <text x="240" y="45" class="corner-label" fill="#E74C3C">审美能力</text>
+  <text x="240" y="62" class="corner-sub" fill="#E74C3C">你觉得好不好看</text>
+  <text x="240" y="78" class="corner-sub" fill="#C0392B">决定视觉上限</text>
+
+  <!-- Bottom-left: 表达 -->
+  <text x="60" y="355" class="corner-label" fill="#27AE60">表达能力</text>
+  <text x="60" y="372" class="corner-sub" fill="#27AE60">能不能做出来</text>
+  <text x="60" y="388" class="corner-sub" fill="#1E8449">决定单件资产质量</text>
+
+  <!-- Bottom-right: 系统 -->
+  <text x="420" y="355" class="corner-label" fill="#2980B9">系统能力</text>
+  <text x="420" y="372" class="corner-sub" fill="#2980B9">能不能规模化做出来</text>
+  <text x="420" y="388" class="corner-sub" fill="#1F618D">决定你能不能做完</text>
+
+  <!-- Center tagline -->
+  <rect x="160" y="175" width="160" height="36" rx="18" fill="#FFF" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="240" y="197" class="tagline">三条轴决定一切</text>
+
+  <!-- Linking arcs on triangle edges -->
+  <text x="145" y="148" font-size="11" fill="#999" text-anchor="middle">视觉上限</text>
+  <text x="340" y="148" font-size="11" fill="#999" text-anchor="middle">生产效率</text>
+  <text x="240" y="315" font-size="11" fill="#999" text-anchor="middle">资产质量</text>
+</svg>

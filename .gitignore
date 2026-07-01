@@ -13,3 +13,5 @@ Thumbs.db
 # Python 脚本缓存
 __pycache__/
 *.pyc
+
+WIKI-审阅报告.md

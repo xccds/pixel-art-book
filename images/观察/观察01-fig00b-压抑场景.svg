@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 270" width="360" height="270">
+  <style>
+    .pixel { shape-rendering: crispEdges; }
+  </style>
+
+  <!-- Dark sky with cold tones -->
+  <g class="pixel">
+    <rect x="0" y="0" width="360" height="30" fill="#1A1A2E"/>
+    <rect x="0" y="30" width="360" height="30" fill="#16213E"/>
+    <rect x="0" y="60" width="360" height="30" fill="#0F3460"/>
+    <rect x="0" y="90" width="360" height="30" fill="#1A1A2E"/>
+    <rect x="0" y="120" width="360" height="30" fill="#16213E"/>
+  </g>
+
+  <!-- Dim cold moon/slit of light -->
+  <g class="pixel">
+    <rect x="60" y="30" width="12" height="12" fill="#2D4A6B"/>
+    <rect x="72" y="42" width="12" height="12" fill="#2D4A6B"/>
+    <rect x="84" y="42" width="12" height="12" fill="#2D4A6B"/>
+  </g>
+
+  <!-- Background: distant jagged spires/mountains -->
+  <g class="pixel">
+    <rect x="0" y="150" width="12" height="18" fill="#1A2634"/>
+    <rect x="12" y="138" width="12" height="12" fill="#1A2634"/>
+    <rect x="24" y="138" width="12" height="30" fill="#1A2634"/>
+    <rect x="36" y="126" width="12" height="24" fill="#1A2634"/>
+    <rect x="48" y="138" width="12" height="30" fill="#1A2634"/>
+    <rect x="60" y="150" width="12" height="18" fill="#1A2634"/>
+    <rect x="72" y="138" width="12" height="12" fill="#1A2634"/>
+    <rect x="84" y="138" width="12" height="30" fill="#243447"/>
+    <rect x="96" y="120" width="12" height="30" fill="#243447"/>
+    <rect x="108" y="108" width="12" height="42" fill="#243447"/>
+    <rect x="120" y="120" width="12" height="30" fill="#1A2634"/>
+    <rect x="132" y="138" width="12" height="30" fill="#1A2634"/>
+    <rect x="144" y="114" width="12" height="36" fill="#243447"/>
+    <rect x="156" y="126" width="12" height="24" fill="#243447"/>
+    <rect x="168" y="138" width="12" height="30" fill="#1A2634"/>
+    <rect x="180" y="126" width="12" height="42" fill="#243447"/>
+    <rect x="192" y="114" width="12" height="36" fill="#243447"/>
+    <rect x="204" y="126" width="12" height="24" fill="#1A2634"/>
+    <rect x="216" y="138" width="12" height="30" fill="#1A2634"/>
+    <rect x="228" y="138" width="12" height="12" fill="#1A2634"/>
+    <rect x="240" y="138" width="12" height="30" fill="#243447"/>
+    <rect x="252" y="114" width="12" height="36" fill="#243447"/>
+    <rect x="264" y="126" width="12" height="24" fill="#243447"/>
+    <rect x="276" y="138" width="12" height="30" fill="#1A2634"/>
+    <rect x="288" y="132" width="12" height="18" fill="#1A2634"/>
+    <rect x="300" y="126" width="12" height="42" fill="#243447"/>
+    <rect x="312" y="120" width="12" height="30" fill="#1A2634"/>
+    <rect x="324" y="138" width="12" height="30" fill="#1A2634"/>
+    <rect x="336" y="150" width="12" height="18" fill="#1A2634"/>
+    <rect x="348" y="144" width="12" height="24" fill="#1A2634"/>
+  </g>
+
+  <!-- Midground dark barren ground -->
+  <g class="pixel">
+    <rect x="0" y="168" width="360" height="12" fill="#141E2B"/>
+  </g>
+
+  <!-- Narrow corridor walls closing in -->
+  <g class="pixel">
+    <rect x="0" y="180" width="96" height="90" fill="#0D1117"/>
+    <rect x="264" y="180" width="96" height="90" fill="#0D1117"/>
+  </g>
+
+  <!-- Rough wall texture -->
+  <g class="pixel">
+    <rect x="0" y="180" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="12" y="192" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="36" y="180" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="72" y="204" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="0" y="216" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="48" y="228" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="84" y="240" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="24" y="252" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="288" y="186" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="324" y="198" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="276" y="210" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="312" y="222" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="348" y="234" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="288" y="246" width="12" height="12" fill="#1A1A2E"/>
+    <rect x="336" y="258" width="12" height="12" fill="#1A1A2E"/>
+  </g>
+
+  <!-- Floor: cold stone -->
+  <g class="pixel">
+    <rect x="96" y="180" width="168" height="12" fill="#1A2634"/>
+    <rect x="96" y="192" width="168" height="12" fill="#141E2B"/>
+    <rect x="96" y="204" width="168" height="12" fill="#1A2634"/>
+    <rect x="96" y="216" width="168" height="12" fill="#141E2B"/>
+    <rect x="96" y="228" width="168" height="12" fill="#1A2634"/>
+    <rect x="96" y="240" width="168" height="12" fill="#141E2B"/>
+    <rect x="96" y="252" width="168" height="12" fill="#1A2634"/>
+    <rect x="96" y="264" width="168" height="6" fill="#0D1117"/>
+  </g>
+
+  <!-- Floor tile lines -->
+  <g class="pixel">
+    <rect x="96" y="186" width="168" height="1" fill="#0D1117"/>
+    <rect x="96" y="198" width="168" height="1" fill="#0D1117"/>
+    <rect x="96" y="210" width="168" height="1" fill="#0D1117"/>
+    <rect x="96" y="222" width="168" height="1" fill="#0D1117"/>
+    <rect x="96" y="234" width="168" height="1" fill="#0D1117"/>
+    <rect x="96" y="246" width="168" height="1" fill="#0D1117"/>
+    <rect x="96" y="258" width="168" height="1" fill="#0D1117"/>
+  </g>
+
+  <!-- Sharp angular shapes at corridor edges -->
+  <g class="pixel">
+    <rect x="82" y="180" width="14" height="2" fill="#2D4A6B"/>
+    <rect x="264" y="180" width="14" height="2" fill="#2D4A6B"/>
+  </g>
+
+  <!-- Dim red glow near end of corridor -->
+  <g class="pixel">
+    <rect x="168" y="192" width="12" height="6" fill="#3D1A1A"/>
+    <rect x="180" y="198" width="6" height="6" fill="#5C2020"/>
+  </g>
+
+  <!-- Scattered debris on floor -->
+  <g class="pixel">
+    <rect x="120" y="210" width="6" height="6" fill="#2D3A4A"/>
+    <rect x="204" y="226" width="12" height="6" fill="#2D3A4A"/>
+    <rect x="156" y="242" width="6" height="6" fill="#2D3A4A"/>
+    <rect x="240" y="212" width="6" height="6" fill="#3D2A2A"/>
+  </g>
+</svg>
